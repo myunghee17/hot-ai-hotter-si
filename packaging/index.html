@@ -55,6 +55,175 @@
     }
     a { color: inherit; }
     button { font: inherit; }
+    [hidden] { display: none !important; }
+    .tab-shell {
+      width: min(1180px, calc(100% - 44px));
+      margin: 0 auto;
+      padding-top: 18px;
+    }
+    .publication-tabs {
+      display: flex;
+      gap: 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .publication-tab {
+      appearance: none;
+      border: 0;
+      border-right: 1px solid var(--line);
+      background: transparent;
+      color: var(--muted);
+      padding: 11px 18px 10px;
+      cursor: pointer;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .publication-tab:first-child { border-left: 1px solid var(--line); }
+    .publication-tab:hover { color: var(--orange-ink); }
+    .publication-tab[aria-pressed="true"] { background: var(--orange); color: #fffaf0; }
+    .publication-tab:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+    .foundry-edition {
+      background: var(--paper);
+      color: var(--ink);
+      padding: 28px 16px 72px;
+    }
+    .foundry-inner { max-width: 840px; margin: 0 auto; }
+    .foundry-date {
+      margin: 0 0 8px;
+      color: var(--orange-ink);
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .foundry-title {
+      margin: 0 0 8px;
+      color: var(--ink);
+      font-family: "Newsreader", Georgia, serif;
+      font-size: clamp(42px, 7vw, 66px);
+      font-weight: 750;
+      line-height: .98;
+      letter-spacing: -.035em;
+    }
+    .foundry-subtitle {
+      margin: 0 0 26px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+    .foundry-why {
+      display: grid;
+      grid-template-columns: 150px minmax(0, 1fr);
+      gap: 24px;
+      margin-bottom: 30px;
+      padding: 22px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .foundry-why-label {
+      margin: 2px 0 0;
+      color: var(--orange-ink);
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .foundry-why-copy {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Newsreader", Georgia, serif;
+      font-size: 20px;
+      line-height: 1.45;
+    }
+    .foundry-cover {
+      overflow: hidden;
+      margin-bottom: 30px;
+      border: 1px solid var(--line);
+      border-top: 6px solid var(--orange);
+      background: var(--paper-2);
+      box-shadow: var(--shadow);
+    }
+    .foundry-cover-head {
+      padding: 30px 30px 26px;
+      background: var(--inverse);
+      color: var(--inverse-ink);
+    }
+    .foundry-cover-kicker {
+      margin: 0 0 12px;
+      color: #ff8359;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .foundry-cover h2 {
+      margin: 0 0 16px;
+      color: var(--inverse-ink);
+      font-family: "Newsreader", Georgia, serif;
+      font-size: clamp(31px, 5vw, 46px);
+      font-weight: 750;
+      line-height: 1.04;
+      letter-spacing: -.025em;
+    }
+    .foundry-pills { display: flex; flex-wrap: wrap; gap: 7px; margin: 0; }
+    .foundry-pills span {
+      border: 1px solid color-mix(in srgb, var(--inverse-ink) 32%, transparent);
+      padding: 5px 9px;
+      color: var(--inverse-ink);
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 10px;
+      font-weight: 600;
+    }
+    .foundry-cover-body { padding: 24px 30px 28px; }
+    .foundry-cover-body p,
+    .foundry-story p { margin: 0 0 10px; color: var(--muted); font-size: 15px; line-height: 1.7; }
+    .foundry-cover-body p:last-child,
+    .foundry-story p:last-child { margin-bottom: 0; }
+    .foundry-story {
+      display: grid;
+      grid-template-columns: 48px minmax(0, 1fr);
+      gap: 18px;
+      padding: 26px 0;
+      border-top: 1px solid var(--line);
+    }
+    .foundry-story-no {
+      margin: 1px 0 0;
+      color: var(--orange);
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .foundry-story h3 {
+      margin: 0 0 10px;
+      color: var(--ink);
+      font-family: "Newsreader", Georgia, serif;
+      font-size: clamp(25px, 4vw, 34px);
+      font-weight: 650;
+      line-height: 1.08;
+      letter-spacing: -.02em;
+    }
+    .foundry-story strong { color: var(--ink); }
+    .foundry-edition a {
+      color: var(--orange-ink);
+      font-weight: 700;
+      text-decoration-color: var(--orange);
+      text-underline-offset: 3px;
+    }
+    .foundry-signoff {
+      margin: 30px 0 0;
+      padding-top: 24px;
+      border-top: 3px solid var(--ink);
+      color: var(--ink);
+      font-family: "Newsreader", Georgia, serif;
+      font-size: 24px;
+      font-style: italic;
+      text-align: center;
+    }
     .page {
       width: min(1180px, calc(100% - 44px));
       margin: 0 auto;
@@ -331,6 +500,8 @@
     }
     .snapshot-note { max-width: 520px; color: var(--muted); font-size: 11px; text-align: right; }
     @media (max-width: 850px) {
+      .tab-shell { width: min(100% - 30px, 700px); }
+      .foundry-why { grid-template-columns: 1fr; gap: 8px; }
       .page { width: min(100% - 30px, 700px); padding-top: 16px; }
       .hero { min-height: 760px; }
       .hero img { object-position: 64% center; }
@@ -342,6 +513,14 @@
       .signal-card { position: static; }
     }
     @media (max-width: 520px) {
+      .tab-shell { width: calc(100% - 22px); }
+      .publication-tab { flex: 1 1 50%; padding: 10px 8px 9px; font-size: 11px; }
+      .foundry-edition { padding: 24px 12px 54px; }
+      .foundry-subtitle { font-size: 15px; }
+      .foundry-why-copy { font-size: 18px; }
+      .foundry-cover-head, .foundry-cover-body { padding-left: 19px; padding-right: 19px; }
+      .foundry-story { grid-template-columns: 34px minmax(0, 1fr); gap: 10px; padding: 23px 0; }
+      .foundry-story-no { font-size: 12px; }
       .page { width: calc(100% - 22px); }
       .issue-strip { align-items: flex-start; font-size: 10px; }
       .issue-strip .status { max-width: 45%; text-align: right; }
@@ -365,7 +544,14 @@
   </style>
 </head>
 <body>
-  <main class="page">
+  <div class="tab-shell">
+    <nav class="publication-tabs" aria-label="Publication sections">
+      <button class="publication-tab" id="packaging-tab" type="button" data-publication-tab="packaging-panel" aria-controls="packaging-panel" aria-pressed="true">Packaging</button>
+      <button class="publication-tab" id="foundry-tab" type="button" data-publication-tab="foundry-panel" aria-controls="foundry-panel" aria-pressed="false">Foundry</button>
+    </nav>
+  </div>
+
+  <main class="page" id="packaging-panel" role="tabpanel" aria-labelledby="packaging-tab">
     <div class="issue-strip">
       <span><strong>Daily briefing</strong> / 17 SEP 2026</span>
       <span class="status">Advanced packaging intelligence</span>
@@ -490,7 +676,116 @@
     </footer>
   </main>
 
+  <section class="foundry-edition" id="foundry-panel" role="tabpanel" aria-labelledby="foundry-tab" hidden>
+    <div class="foundry-inner">
+      <p class="foundry-date">September 17, 2026 &middot; Debut Edition</p>
+      <h1 class="foundry-title">Foundry Technology Trends</h1>
+      <p class="foundry-subtitle">Process nodes, transistor architectures, yield ramps, and lithography shaping the next generation of chips.</p>
+
+      <div class="foundry-why">
+        <p class="foundry-why-label">Takeaway</p>
+        <p class="foundry-why-copy">2nm is the industry's battleground: MediaTek ships the first commercial 2nm-class chip, Intel pulls 14A risk production into 2027 on improving defect density, and High-NA EUV crosses into volume production with a million wafers. Samsung's yields are recovering, and TSMC is already engineering the masks for the High-NA era.</p>
+      </div>
+
+      <article class="foundry-cover">
+        <div class="foundry-cover-head">
+          <p class="foundry-cover-kicker">01 &middot; Cover Story</p>
+          <h2>MediaTek Fires the Starting Gun on 2nm Phones with the Dimensity 9600 Pro</h2>
+          <div class="foundry-pills">
+            <span>TSMC 2nm (N2)</span>
+            <span>+51% LLM prefill</span>
+            <span>Sept 15 launch</span>
+          </div>
+        </div>
+        <div class="foundry-cover-body">
+          <p>MediaTek unveiled the Dimensity 9600 Pro on September 15 &mdash; its first mobile processor built on TSMC's cutting-edge 2-nanometer process &mdash; alongside the 3nm Dimensity 9600M for the broader flagship tier. The 9600 Pro's neural processor delivers a claimed 51% improvement in LLM prefill over the prior generation, a direct play at Qualcomm in premium phones where on-device AI commands better margins.</p>
+          <p>It lands one week after Apple unveiled its own 2nm A20 Pro for the iPhone 18 Pro line, confirming the N2 ramp is now a volume mobile story &mdash; not just HPC. With MediaTek's market value having already overtaken Qualcomm's this year, the first 9600 Pro phones (Xiaomi, Oppo, Vivo) will be the market's first real read on 2nm yields at consumer scale. <a href="https://www.reuters.com/business/media-telecom/mediatek-launches-new-mobile-chip-using-tsmcs-most-advanced-technology-2026-09-15/" target="_blank" rel="noopener">Source: Reuters &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="foundry-story">
+        <p class="foundry-story-no">02</p>
+        <div>
+          <h3>Intel pulls 14A risk production into H2 2027 as defect density races toward target</h3>
+          <p>Intel has accelerated risk production for its 14A (1.4nm-class) process &mdash; combining second-generation RibbonFET gate-all-around transistors with PowerDirect backside power delivery &mdash; to the second half of 2027 from 2028. Volume production remains confirmed for Q1 2028. CFO David Zinsner says 14A is improving at Intel's fastest pace since the 22nm era in 2012.</p>
+          <p><strong>Key numbers:</strong> defect density improved to D0 0.5 in June 2026, with a 0.1&ndash;0.2 target for Q1 2027; analyst Jeff Pu puts Intel 18A yield at roughly 80% on Panther Lake; projected 14A output is 6,000 wafers started per month in 2027 and 24,000 in 2028. <a href="https://wccftech.com/intel-ceo-lip-bu-tan-reportedly-moves-up-14a-risk-production-to-q1-2027-as-the-nodes-defect-density-races-toward-target/" target="_blank" rel="noopener">Source: Wccftech &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="foundry-story">
+        <p class="foundry-story-no">03</p>
+        <div>
+          <h3>Intel passes one million wafers on High-NA EUV; TSMC commits from 2030</h3>
+          <p>Intel and ASML say High-NA EUV is already in high-volume manufacturing on selected layers of Intel 18A for Panther Lake and Core Ultra Series 3. More than one million wafers have been processed across tool certification, R&amp;D, and production; overlay, throughput, and availability are meeting expectations, while High-NA layers deliver performance meeting or exceeding comparable layers patterned on ASML's existing NXE platform.</p>
+          <p>TSMC has committed to High-NA from 2030, Samsung and SK Hynix plan memory adoption from 2028, and Micron has ordered systems. <strong>Key numbers:</strong> over 1 million wafers processed; roughly $400M per High-NA tool, about twice the ~$200M price of existing EUV; today's 6-inch mask format remains usable directly or through stitching, while Intel is pushing toward 6&times;12-inch masks. <a href="https://www.calcalistech.com/ctechnews/article/xmnsuqleq" target="_blank" rel="noopener">Source: CTech / Calcalistech &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="foundry-story">
+        <p class="foundry-story-no">04</p>
+        <div>
+          <h3>TSMC Outlines 2027 Ramp: 2nm Capacity +22%, 3nm +16%</h3>
+          <p>Citing supply-chain sources, Economic Daily News reports TSMC is targeting 2nm capacity growth from 90,000 to 110,000 wafers/month and 3nm from 180,000+ to 210,000 wafers/month between end-2026 and mid-2027 &mdash; its first public 2027 expansion outline. Three new 3nm fabs are planned across Taiwan, Arizona, and Japan, with 5nm equipment in Taiwan being converted to 3nm, as 3nm prepares to overtake 5nm as TSMC's largest revenue contributor.</p>
+          <p><strong>Key numbers:</strong> 2026 capex $60&ndash;64B, 70&ndash;80% on advanced nodes. <a href="https://www.trendforce.com/news/2026/09/14/news-tsmc-reportedly-targets-22-2nm-16-3nm-capacity-boost-by-mid-2027-cowos-to-double-by-2028/" target="_blank" rel="noopener">Source: TrendForce &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="foundry-story">
+        <p class="foundry-story-no">05</p>
+        <div>
+          <h3>Samsung's 2nm Yields Top 70% &mdash; but Qualcomm Deal May Slip to 2027 on Price</h3>
+          <p>Samsung's 2nm GAA yields have climbed past 70%, up from below 50% at the start of 2026, and the process is now considered "largely stabilized" &mdash; yet Qualcomm's return as a foundry customer may slip into next year. Per The Bell, the holdup is pricing, not technology: with Tesla and Broadcom already signed, Samsung is resisting the discounts it once offered, and the modest volumes under discussion make concessions harder to justify.</p>
+          <p>The subtext: Samsung finally has the yield to bargain &mdash; and it's using it. <a href="https://www.trendforce.com/news/2026/09/11/news-samsung-qualcomm-2nm-deal-may-slip-to-2027-foundry-resists-lower-pricing-as-process-stabilizes/" target="_blank" rel="noopener">Source: TrendForce &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="foundry-story">
+        <p class="foundry-story-no">06</p>
+        <div>
+          <h3>Samsung Takes 2nm Beyond Mobile: AI, HPC, Automotive &mdash; Tesla AI5 in Trial at Taylor</h3>
+          <p>Samsung is broadening its second-generation 2nm customer base into AI, HPC, and automotive rather than chasing TSMC head-on in mobile. Edge-AI firm Ambarella is developing a next-gen robotics/drone platform on Samsung 2nm, and Tesla's AI5 chip has reportedly begun trial production and yield verification at the Taylor, Texas fab.</p>
+          <p>The pitch is differentiation: memory, foundry, and advanced packaging from a single source &mdash; something TSMC can't match. <a href="https://www.ajupress.com/view/20260916180470372" target="_blank" rel="noopener">Source: Aju Press &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="foundry-story">
+        <p class="foundry-story-no">07</p>
+        <div>
+          <h3>GlobalFoundries and Marvell Expand SiGe Capacity for AI Data-Center Optics</h3>
+          <p>GlobalFoundries and Marvell expanded their multi-year agreement to grow silicon-germanium (SiGe) capacity at GF's Burlington, Vermont fab, targeting high-speed optical networking &mdash; pluggable transceivers, near-packaged and co-packaged optics &mdash; for AI data centers. GF shares rose ~6% premarket on the news.</p>
+          <p>Specialty nodes are having a moment: AI's bandwidth hunger is pulling mature-process capacity along with it. <a href="https://www.reuters.com/business/globalfoundries-marvell-expand-chip-capacity-deal-ai-data-center-connectivity-2026-09-17/" target="_blank" rel="noopener">Source: Reuters &rarr;</a></p>
+        </div>
+      </article>
+
+      <article class="foundry-story">
+        <p class="foundry-story-no">08</p>
+        <div>
+          <h3>ASML and TSMC's 12-Inch High-NA Mask Plan Resets Fab Timelines</h3>
+          <p>ASML and TSMC are formalizing a 12-inch High-NA mask-format program that resets timelines, supply chains, and cost models for the sub-2nm era &mdash; with TSMC's third Arizona fab slated for N2/A16-class technologies by decade's end. The analysis underscores that "onshoring" wafer fabs doesn't localize the toolchain: optics still come from ZEISS in Germany, mask blanks from HOYA's Singapore expansion, and inspection from Lasertec in Japan.</p>
+          <p>High-NA is no longer just a scanner roadmap &mdash; it's a mask-format conversion program with a date attached. <a href="https://biztechweekly.com/asml-and-tsmcs-12-inch-high-na-mask-plan-resets-fab-timelines-supply-chains-and-cost-models/" target="_blank" rel="noopener">Source: BizTech Weekly &rarr;</a></p>
+        </div>
+      </article>
+
+      <p class="foundry-signoff">by Your Tech Sommelier</p>
+    </div>
+  </section>
+
   <script>
+    const publicationTabs = [...document.querySelectorAll('[data-publication-tab]')];
+    const publicationPanels = [
+      document.getElementById('packaging-panel'),
+      document.getElementById('foundry-panel')
+    ];
+
+    publicationTabs.forEach(button => {
+      button.addEventListener('click', () => {
+        const activePanelId = button.dataset.publicationTab;
+        publicationTabs.forEach(tab => tab.setAttribute('aria-pressed', String(tab === button)));
+        publicationPanels.forEach(panel => { panel.hidden = panel.id !== activePanelId; });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+
     const filters = [...document.querySelectorAll('.filter')];
     const stories = [...document.querySelectorAll('.story')];
     const count = document.getElementById('storyCount');
