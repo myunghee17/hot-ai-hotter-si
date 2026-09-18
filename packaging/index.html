@@ -24,6 +24,8 @@
       --chip: #e8e3d5;
       --inverse: #10161a;
       --inverse-ink: #f9f5ea;
+      --disclaimer-bg: #e44d1b;
+      --disclaimer-ink: #fffaf0;
       --shadow: 0 18px 45px rgba(33, 27, 17, .11);
     }
     @media (prefers-color-scheme: dark) {
@@ -40,6 +42,8 @@
         --chip: #222a2d;
         --inverse: #eef0e8;
         --inverse-ink: #111719;
+        --disclaimer-bg: #ff7548;
+        --disclaimer-ink: #111719;
         --shadow: 0 20px 50px rgba(0, 0, 0, .32);
       }
     }
@@ -106,6 +110,31 @@
     .publication-tab:hover { color: var(--orange-ink); }
     .publication-tab[aria-pressed="true"] { background: var(--orange); color: #fffaf0; }
     .publication-tab:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+    .reader-disclaimer {
+      display: grid;
+      grid-template-columns: minmax(150px, .34fr) minmax(0, 1fr);
+      gap: 24px;
+      align-items: center;
+      margin-top: 18px;
+      padding: 22px 24px;
+      background: var(--disclaimer-bg);
+      color: var(--disclaimer-ink);
+    }
+    .reader-disclaimer strong {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reader-disclaimer p {
+      margin: 0;
+      font-family: "Newsreader", Georgia, serif;
+      font-size: clamp(22px, 3vw, 30px);
+      font-weight: 650;
+      line-height: 1.14;
+      letter-spacing: -.015em;
+    }
     .edition-switcher {
       display: flex;
       flex-wrap: wrap;
@@ -559,6 +588,7 @@
     .snapshot-note { max-width: 520px; color: var(--muted); font-size: 11px; text-align: right; }
     @media (max-width: 850px) {
       .tab-shell { width: min(100% - 30px, 700px); }
+      .reader-disclaimer { grid-template-columns: 1fr; gap: 8px; }
       .foundry-why { grid-template-columns: 1fr; gap: 8px; }
       .page { width: min(100% - 30px, 700px); padding-top: 16px; }
       .hero { min-height: 760px; }
@@ -573,6 +603,8 @@
     @media (max-width: 520px) {
       .tab-shell { width: calc(100% - 22px); }
       .publication-tab { flex: 1 1 50%; padding: 10px 8px 9px; font-size: 11px; }
+      .reader-disclaimer { padding: 18px 16px; }
+      .reader-disclaimer p { font-size: 21px; }
       .foundry-edition { padding: 24px 12px 54px; }
       .foundry-subtitle { font-size: 15px; }
       .foundry-why-copy { font-size: 18px; }
@@ -610,6 +642,10 @@
       <button class="publication-tab" id="packaging-tab" type="button" data-publication-tab="packaging-panel" aria-controls="packaging-panel" aria-pressed="true">Packaging</button>
       <button class="publication-tab" id="foundry-tab" type="button" data-publication-tab="foundry-panel" aria-controls="foundry-panel" aria-pressed="false">Foundry</button>
     </nav>
+    <aside class="reader-disclaimer" aria-label="Information disclaimer">
+      <strong>Reader disclaimer</strong>
+      <p>All information in this blog comes from publicly available sources and has not been independently verified.</p>
+    </aside>
   </div>
 
   <main class="page" id="packaging-panel" role="tabpanel" aria-labelledby="packaging-tab">
