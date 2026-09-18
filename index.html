@@ -191,6 +191,30 @@
       border-bottom: 1px solid var(--line);
     }
 
+    .disclaimer {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 18px;
+      align-items: center;
+      margin: 22px 0 0;
+      padding: 22px 24px;
+      border: 2px solid var(--ink);
+      background: var(--yellow-soft);
+      box-shadow: 8px 8px 0 var(--pink);
+    }
+    .disclaimer strong {
+      font-family: var(--serif);
+      font-size: clamp(1.3rem, 2.2vw, 1.85rem);
+      line-height: 1.05;
+    }
+    .disclaimer p {
+      margin: 0;
+      color: var(--ink);
+      font-size: clamp(.98rem, 1.4vw, 1.08rem);
+      font-weight: 600;
+      line-height: 1.55;
+    }
+
     /* ---- LLM section ---- */
     .hero-note {
       max-width: 700px;
@@ -619,6 +643,7 @@
       .section-switcher { width: 100%; }
       .section-btn { flex: 1; padding: 10px 12px; }
       .archive-bar { display: block; }
+      .disclaimer { grid-template-columns: 1fr; gap: 8px; padding: 19px 18px; box-shadow: 6px 6px 0 var(--pink); }
       .hero-map { order: -1; min-height: 0; border-left: 0; border-bottom: 1px solid var(--line); }
       .llm-grid { grid-template-columns: 1fr; gap: 40px; padding: 32px 0; }
       .llm-toc { position: static; }
@@ -684,6 +709,11 @@
         </div>
       </nav>
     </div>
+
+    <aside class="disclaimer" role="note" aria-label="Important disclaimer">
+      <strong>Important disclaimer</strong>
+      <p>All information in this blog comes from publicly available sources and has not been independently verified. Please check the linked original sources before relying on it.</p>
+    </aside>
 
     <article id="issue" aria-live="polite">
       <section class="hero" aria-labelledby="heroTitle">
