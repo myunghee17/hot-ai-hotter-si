@@ -106,6 +106,43 @@
     .publication-tab:hover { color: var(--orange-ink); }
     .publication-tab[aria-pressed="true"] { background: var(--orange); color: #fffaf0; }
     .publication-tab:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+    .edition-switcher {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 0 0 18px;
+      border-bottom: 1px solid var(--line);
+    }
+    .edition-choice {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--ink);
+      padding: 8px 12px;
+      cursor: pointer;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .03em;
+    }
+    .edition-choice:hover { border-color: var(--orange); color: var(--orange-ink); }
+    .edition-choice[aria-pressed="true"] { background: var(--inverse); border-color: var(--inverse); color: var(--inverse-ink); }
+    .edition-choice:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+    .edition-panel { margin-top: 18px; }
+    .email-edition { overflow: hidden; }
+    .email-edition a:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+    @media (prefers-color-scheme: dark) {
+      .email-edition > div { background-color: var(--paper) !important; }
+      .email-edition [style*="background:#ffffff"] { background: var(--paper-2) !important; }
+      .email-edition [style*="background:#eef2ff"] { background: var(--chip) !important; }
+      .email-edition [style*="color:#0f172a"],
+      .email-edition [style*="color:#334155"] { color: var(--ink) !important; }
+      .email-edition [style*="color:#64748b"],
+      .email-edition [style*="color:#94a3b8"] { color: var(--muted) !important; }
+      .email-edition [style*="color:#4f46e5"],
+      .email-edition [style*="color:#4338ca"] { color: var(--cyan) !important; }
+      .email-edition [style*="color:#e0e7ff"] { color: var(--line) !important; }
+    }
     .foundry-edition {
       background: var(--paper);
       color: var(--ink);
@@ -576,6 +613,121 @@
   </div>
 
   <main class="page" id="packaging-panel" role="tabpanel" aria-labelledby="packaging-tab">
+    <div class="edition-switcher" aria-label="Packaging edition archive">
+      <button class="edition-choice" type="button" data-edition="packaging-2026-09-18" aria-pressed="true">Sep 18, 2026</button>
+      <button class="edition-choice" type="button" data-edition="packaging-2026-09-17" aria-pressed="false">Sep 17, 2026</button>
+    </div>
+
+    <section class="edition-panel email-edition" id="packaging-2026-09-18">
+      <div style="background-color:#f8fafc;padding:24px 12px;">
+        <div style="max-width:640px;margin:0 auto;">
+          <div style="text-align:center;padding:8px 0 16px;">
+            <div style="font-size:12px;letter-spacing:3px;color:#64748b;text-transform:uppercase;font-weight:600;">Stacked &amp; Packed</div>
+            <div style="font-size:14px;color:#64748b;margin-top:4px;">Friday, September 18, 2026</div>
+          </div>
+
+          <div style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:8px;padding:16px 18px;margin-bottom:20px;">
+            <div style="font-size:12px;letter-spacing:2px;color:#4f46e5;font-weight:700;text-transform:uppercase;margin-bottom:8px;">Why it matters</div>
+            <p style="font-size:15px;line-height:1.6;color:#334155;margin:0;">The package is the bottleneck and the escape hatch at once. TSMC is doubling CoWoS capacity to 260,000 wafers a month by 2028, yet a 30%-plus supply shortfall could still bite in 2027 — so every alternative is suddenly credible: Intel's EMIB-T going from pilot to pipeline, organic-bridge 2.1D from Samsung and Qualcomm to sidestep EMIB IP, and CoWoS-L buying time as interposers hit physical size limits. HBM is so dominant that Samsung is cannibalizing its own mobile-AP packaging lines to feed it, while the back-end map keeps redrawing — toward India, toward Arizona — and glass substrates cross from roadmap slides into real process equipment.</p>
+          </div>
+
+          <div style="background:#ffffff;border-radius:12px;padding:28px 24px;margin-bottom:20px;box-shadow:0 1px 3px rgba(15,23,42,0.08);border-top:6px solid #4f46e5;">
+            <div style="font-size:12px;letter-spacing:2px;color:#4f46e5;font-weight:700;text-transform:uppercase;margin-bottom:10px;">Cover Story</div>
+            <h1 style="font-size:30px;line-height:1.25;color:#0f172a;margin:0 0 14px;font-weight:800;">TSMC to Double CoWoS Capacity by 2028 — And It Still Won't Be Enough</h1>
+            <div style="margin:0 0 14px;">
+              <span style="display:inline-block;background:#eef2ff;color:#4338ca;font-weight:700;font-size:13px;padding:6px 12px;border-radius:20px;margin:0 6px 6px 0;">CoWoS: 130K → 260K wafers/month by end-2028</span>
+              <span style="display:inline-block;background:#eef2ff;color:#4338ca;font-weight:700;font-size:13px;padding:6px 12px;border-radius:20px;margin:0 6px 6px 0;">2027 shortfall could top 700K wafers (&gt;30%)</span>
+              <span style="display:inline-block;background:#eef2ff;color:#4338ca;font-weight:700;font-size:13px;padding:6px 12px;border-radius:20px;margin:0 6px 6px 0;">Intel EMIB-T: 15–20K wpm in 2027, 40–45K in 2028</span>
+            </div>
+            <p style="font-size:16px;line-height:1.65;color:#334155;margin:0 0 12px;">TSMC's 2027 expansion targets outline aggressive advanced-packaging growth: CoWoS capacity will double from roughly 130,000 wafers a month by end-2026 to 260,000 by end-2028, centered on AP7 in Taiwan and Arizona's AP9/10 — with the company's first U.S. advanced packaging facility coming online before 2029. Alongside, front-end targets call for 2nm capacity up 22% (90K to 110K wafers a month by mid-2027) and 3nm up over 16% (180K to 210K+), backed by 2026 capex of $60–64 billion, 70–80% of it on advanced processes.</p>
+            <p style="font-size:16px;line-height:1.65;color:#334155;margin:0 0 12px;">Even so, the math doesn't close: a ~20% supply-demand gap today is expected to narrow to ~10% by end-2026, but 2027 could still face a shortfall exceeding 700,000 wafers (over 30%) because interposer TSV drilling and microbump bonding carry long equipment lead times — and CoWoS can't ship without matched HBM supply. The same supply-chain reporting quantifies Intel's EMIB-T at 15,000–20,000 CoWoS-equivalent 12-inch wafers a month in 2027 growing to 40,000–45,000 in 2028, with MediaTek publicly calling its EMIB packaging "very good" — fresh validation of Intel Foundry's packaging progress. Non-TSMC players are estimated to add another ~110,000 CoWoS-equivalent wafers a month by end-2028 as customers qualify alternatives: ASE's SPIL is in final planning for an Arizona facility (with a TWD 100B CoWoS-capable Douliu plant online from 2028) and Amkor raised its Arizona phase-2 investment from $7B to $12B under a 10-year packaging/test agreement with TSMC.</p>
+            <div style="font-size:12px;color:#64748b;">Source: <a href="https://www.trendforce.com/news/2026/09/14/news-tsmc-reportedly-targets-22-2nm-16-3nm-capacity-boost-by-mid-2027-cowos-to-double-by-2028/" style="color:#4f46e5;text-decoration:none;" target="_blank" rel="noopener">TrendForce</a> (Sept 14) · Related: <a href="https://www.trendforce.com/news/2026/09/15/news-ases-spil-reportedly-nears-arizona-expansion-as-tsmc-amkor-step-up-u-s-advanced-packaging-push/" style="color:#4f46e5;text-decoration:none;" target="_blank" rel="noopener">ASE/SPIL/Amkor U.S. push</a></div>
+          </div>
+
+          <div style="font-size:12px;letter-spacing:2px;color:#64748b;font-weight:700;text-transform:uppercase;margin:6px 0 12px;text-align:center;">— The Rest of the Week in Packaging —</div>
+
+          <div style="margin-bottom:16px;">
+            <div class="email-story" style="background:#ffffff;border-radius:10px;padding:20px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,0.08);">
+              <div style="font-size:24px;font-weight:800;color:#e0e7ff;letter-spacing:1px;margin-bottom:4px;">02</div>
+              <h2 style="font-size:20px;line-height:1.35;color:#0f172a;margin:0 0 10px;font-weight:700;">CoWoS-L Goes Mainstream Through 2028; EMIB-T Looms as the Challenger</h2>
+              <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">As silicon interposers near physical size limits, TrendForce says CoWoS-S (two SoCs/chiplets plus eight HBM modules) stays on for ASICs like Microsoft's Maia 200, while everything bigger migrates to CoWoS-L, which embeds silicon bridge dies inside the interposer. NVIDIA and AMD accelerators plus Meta's MTIA 400 have already adopted CoWoS-L; AWS and Microsoft are expected to follow in 2027.</p>
+              <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">Intel's EMIB-T — bridges plus TSVs — is the main rival, with Google expected to adopt EMIB-T in 2027 and AWS testing EMIB. CoWoS-L wins on maturity and yield, but TSMC's persistent capacity constraints are creating a real spillover opening for Intel — and hyperscalers are actively dual-sourcing.</p>
+              <div style="font-size:12px;color:#64748b;">Source: <a href="https://www.trendforce.com/presscenter/news/20260918-13241.html" style="color:#4f46e5;text-decoration:none;" target="_blank" rel="noopener">TrendForce</a></div>
+            </div>
+
+            <div class="email-story" style="background:#ffffff;border-radius:10px;padding:20px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,0.08);">
+              <div style="font-size:24px;font-weight:800;color:#e0e7ff;letter-spacing:1px;margin-bottom:4px;">03</div>
+              <h2 style="font-size:20px;line-height:1.35;color:#0f172a;margin:0 0 10px;font-weight:700;">Samsung Cannibalizes Mobile-AP Packaging for HBM — and Drops Fan-Out on the Exynos 2700</h2>
+              <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">Samsung is reportedly phasing out Exynos mobile-AP packaging at its Cheonan site and converting the equipment to HBM packaging, with the transition set to begin next year — on top of a reported KRW 10 trillion investment to modernize HBM facilities there. Separately, the Exynos 2700 will reportedly drop fan-out wafer-level packaging for a side-by-side structure, after WLP's process complexity and yield challenges drove up costs.</p>
+              <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">The starkest illustration of the HBM capacity crunch yet: Samsung is sacrificing mobile-AP lines and outsourcing most conventional memory-module production (DDR5, SSDs) to OSAT partners, reallocating back-end capacity from commodity packaging toward HBM. Early HBM4 mass production drove Samsung's strongest quarter-over-quarter bit-shipment growth among the big three.</p>
+              <div style="font-size:12px;color:#64748b;">Source: <a href="https://www.trendforce.com/news/2026/09/16/news-samsung-reportedly-shifts-cheonan-capacity-to-hbm-packaging-outsource-conventional-memory-modules/" style="color:#4f46e5;text-decoration:none;" target="_blank" rel="noopener">TrendForce</a></div>
+            </div>
+
+            <div class="email-story" style="background:#ffffff;border-radius:10px;padding:20px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,0.08);">
+              <div style="font-size:24px;font-weight:800;color:#e0e7ff;letter-spacing:1px;margin-bottom:4px;">04</div>
+              <h2 style="font-size:20px;line-height:1.35;color:#0f172a;margin:0 0 10px;font-weight:700;">Samsung and Qualcomm Build an Organic-Bridge Rival to Intel's EMIB</h2>
+              <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">Samsung Electro-Mechanics and Qualcomm have been quietly co-developing organic-bridge 2.1D packaging for over a year — the same bridge-in-substrate role as Intel's EMIB, but built from organic materials rather than silicon, explicitly to sidestep EMIB IP. The bridges target 5–7 RDL circuit layers, 1.5–2 µm line/space, 4–5 µm vias, and 500–1,000 die-to-die connections per millimeter, and the technology debuted publicly at KPCA Show 2026.</p>
+              <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">SEM is producing pilot quantities of FC-BGA substrates with embedded-bridge cavities on its own line, and Samsung is separately pursuing EMIB-T substrate supply-chain qualification against incumbents Ibiden, Shinko, Unimicron, and AT&amp;S. With Samsung Foundry also pushing Cube-E (silicon bridge) and Cube-R (organic RDL interposer), Korea's 2.xD offensive is now three-pronged.</p>
+              <div style="font-size:12px;color:#64748b;">Source: <a href="https://www.trendforce.com/news/2026/09/16/news-samsung-electro-mechanics-qualcomm-reportedly-develop-organic-bridge-packaging-target-intel-emib-alternative/" style="color:#4f46e5;text-decoration:none;" target="_blank" rel="noopener">TrendForce</a></div>
+            </div>
+
+            <div class="email-story" style="background:#ffffff;border-radius:10px;padding:20px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,0.08);">
+              <div style="font-size:24px;font-weight:800;color:#e0e7ff;letter-spacing:1px;margin-bottom:4px;">05</div>
+              <h2 style="font-size:20px;line-height:1.35;color:#0f172a;margin:0 0 10px;font-weight:700;">Nexperia Partners Tata to Make and Package Chips in India</h2>
+              <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">Dutch chipmaker Nexperia announced a strategic partnership with Tata Electronics to manufacture and package chips in India: front-end production of Nexperia's MOSFET portfolio at Tata's planned $11 billion 300mm fab in Dholera, Gujarat, plus assembly and testing of discrete products at Tata's packaging facility in Jagiroad, Assam. The agreement also spans joint technology development.</p>
+              <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">It matters because it follows Nexperia's fallout with its Chinese parent Wingtech, which disrupted wafer production and reportedly cost Nexperia's European operations ~70% of their back-end capacity — the Tata deal is a decisive geographic rebalancing toward India, with back-end capacity expected to be restored by end of 2026.</p>
+              <div style="font-size:12px;color:#64748b;">Source: <a href="https://www.reuters.com/world/china/nexperia-says-it-will-partner-with-tata-chip-production-packaging-india-2026-09-17/" style="color:#4f46e5;text-decoration:none;" target="_blank" rel="noopener">Reuters</a></div>
+            </div>
+
+            <div class="email-story" style="background:#ffffff;border-radius:10px;padding:20px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,0.08);">
+              <div style="font-size:24px;font-weight:800;color:#e0e7ff;letter-spacing:1px;margin-bottom:4px;">06</div>
+              <h2 style="font-size:20px;line-height:1.35;color:#0f172a;margin:0 0 10px;font-weight:700;">Modi Switches On Commercial Production at Suchi Semicon's OSAT Plant</h2>
+              <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">On September 17, during Semicon India 2026 in New Delhi, Prime Minister Modi virtually inaugurated commercial production at Suchi Semicon's state-of-the-art OSAT plant in Palsana, Surat — approved by the Union Cabinet in May 2026 under the India Semiconductor Mission. Cleanrooms are operational, the first consumer shipment has already been dispatched, and a technology collaboration with Japan's ROHM Semiconductor gives the plant advanced-technology credibility.</p>
+              <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">The numbers: roughly ₹868 crore invested, ~1,033.2 million chips of annual capacity, and capabilities spanning SOIC, QFN, and advanced IC packaging for power electronics, automotive/EV, industrial automation, and consumer electronics — India's first wave of homegrown commercial OSAT output, clustering with the Tata-PSMC Dholera fab and Micron/CG Semi/Kaynes projects in Sanand.</p>
+              <div style="font-size:12px;color:#64748b;">Source: <a href="https://www.indiannewsnetwork.net/prime-minister-narendra-modi-inaugurates-commercial-production-at-state-of-the-art-osat-plant-in-surat20260918141649/" style="color:#4f46e5;text-decoration:none;" target="_blank" rel="noopener">Indian News Network</a></div>
+            </div>
+
+            <div class="email-story" style="background:#ffffff;border-radius:10px;padding:20px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,0.08);">
+              <div style="font-size:24px;font-weight:800;color:#e0e7ff;letter-spacing:1px;margin-bottom:4px;">07</div>
+              <h2 style="font-size:20px;line-height:1.35;color:#0f172a;margin:0 0 10px;font-weight:700;">Signaloid Takes Its Stochastic-Compute ASIC to the Open Chiplet Atlas</h2>
+              <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">Signaloid joined the Tenstorrent-led Open Chiplet Atlas (OCA) alliance and announced plans to make its UxHw stochastic-compute accelerator ASICs available as chiplets through OCA's five-layer open architecture for multi-vendor chiplet interoperability — an alternative to the UCIe-only ecosystem. The UxHw device claims orders-of-magnitude speedups and up to 1000× lower energy for Monte Carlo workloads central to quant finance, robotics, and physical AI.</p>
+              <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">This is exactly the kind of differentiated, off-the-shelf chiplet an open marketplace needs to prove out: it follows Signaloid's recent tapeout of a UxHw ASIC for robotics in an ultra-low-power TSMC process, with backing quotes from Tenstorrent's Chief CPU Architect Wei-han Lien and a base of ~3,000 existing platform users.</p>
+              <div style="font-size:12px;color:#64748b;">Source: <a href="https://www.businesswire.com/news/home/20260914112374/en/Signaloid-joins-Open-Chiplet-Atlas-Alliance-and-Announces-Plans-to-Make-Its-UxHw-ASICs-Available-via-OCA-Ecosystem" style="color:#4f46e5;text-decoration:none;" target="_blank" rel="noopener">Business Wire</a></div>
+            </div>
+
+            <div class="email-story" style="background:#ffffff;border-radius:10px;padding:20px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,0.08);">
+              <div style="font-size:24px;font-weight:800;color:#e0e7ff;letter-spacing:1px;margin-bottom:4px;">08</div>
+              <h2 style="font-size:20px;line-height:1.35;color:#0f172a;margin:0 0 10px;font-weight:700;">Synopsys Pushes UCIe IP to 40 Gbps — 25% Past the Spec</h2>
+              <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">Synopsys launched a complete UCIe IP stack (PHY plus controller plus verification IP, tied to 3DIC Compiler) running at up to 40 Gbps per pin — 25% more bandwidth than the UCIe 2.0 specification calls for, delivering 12.9 Tbps/mm of die-to-die bandwidth without extra energy or silicon footprint. It supports both organic substrates and high-density advanced packaging, plus sideband telemetry and hardware-based link bring-up to cut firmware load.</p>
+              <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">Notable: Samsung Electronics (Jongwoo Lee, VP System LSI IP) is quoted saying it enables new memory chiplets for data-intensive AI — a direct signal of the AI chiplet-memory use case. (Note: this is vendor launch coverage via EDN partner content, so read it as a product announcement rather than independent review.)</p>
+              <div style="font-size:12px;color:#64748b;">Source: <a href="https://www.edn.com/new-ucie-ip-raises-the-chiplet-bandwidth-bar-to-40-gbps/" style="color:#4f46e5;text-decoration:none;" target="_blank" rel="noopener">EDN</a></div>
+            </div>
+
+            <div class="email-story" style="background:#ffffff;border-radius:10px;padding:20px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,0.08);">
+              <div style="font-size:24px;font-weight:800;color:#e0e7ff;letter-spacing:1px;margin-bottom:4px;">09</div>
+              <h2 style="font-size:20px;line-height:1.35;color:#0f172a;margin:0 0 10px;font-weight:700;">Arteris FlexGen Multi-Die Makes NoCs Cross Chip Boundaries</h2>
+              <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">Arteris extended its data-movement portfolio with FlexGen Multi-Die for non-coherent AI/HPC architectures, complementing its cache-coherent Ncore Multi-Die. The pitch: NoC connectivity becomes transparent across die-to-die links so multiple dies operate as a unified architecture — attacking the central pain point of chiplet migration, where traffic that used to stay inside one SoC now crosses physical chip boundaries.</p>
+              <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">Ecosystem validation came from Cadence (Physical AI platform tie-in), Silitronics (OCP-derived chiplet architecture), plus mentions of a UCIe-based multi-die solution and Magillem/Cycuity integration automation with hardware security built in.</p>
+              <div style="font-size:12px;color:#64748b;">Source: <a href="https://www.globenewswire.com/news-release/2026/09/15/3362787/0/en/arteris-accelerates-industry-transition-to-multi-die-chiplet-based-architecture.html" style="color:#4f46e5;text-decoration:none;" target="_blank" rel="noopener">GlobeNewswire</a></div>
+            </div>
+
+            <div class="email-story" style="background:#ffffff;border-radius:10px;padding:20px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,0.08);">
+              <div style="font-size:24px;font-weight:800;color:#e0e7ff;letter-spacing:1px;margin-bottom:4px;">10</div>
+              <h2 style="font-size:20px;line-height:1.35;color:#0f172a;margin:0 0 10px;font-weight:700;">Glass Substrates Cross Into HVM: Spirox's TGV Inspection and Taesung's 2mm Glass</h2>
+              <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">Spirox unveiled the SP7000G high-speed through-glass-via (TGV) crack inspection system at its 2026 Advanced Packaging Technology Forum: laser-tomography scanning that non-destructively detects internal microcracks after metallization and ABF build-up, scanning a full 510 mm × 515 mm glass panel in under 20 minutes. Corning and DNP both publicly endorsed it as critical for glass-core reliability at AI-server scale — exactly the yield bottleneck glass needs to cross from R&amp;D into high-volume manufacturing.</p>
+              <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">Meanwhile Korean equipment maker Taesung demonstrated a physical sample of 2.0mm-thick glass with working TGVs at KPCA Show 2026 — presented as an actual product, not a roadmap — along with its process suite (TGV etch, cleaning, bottom-up copper plating), and says it's in mass-production discussions with Korean and overseas customers. The money is moving too: SKC is injecting ₩281B (~$208.5M) into its U.S. subsidiary Absolics for glass-core commercialization, while CINNO Research sees glass-core shipments of $500M–$1B in 2026 growing to $2–5B a year in 2027–28 and ~$10B by 2030 if penetration in large AI chips reaches 20–30%.</p>
+              <div style="font-size:12px;color:#64748b;">Sources: <a href="https://iconnect007.com/article/151619/spirox-launches-high-speed-tgv-crack-inspection-system-to-support-high-volume-glass-substrate-inspection/151616/aep" style="color:#4f46e5;text-decoration:none;" target="_blank" rel="noopener">I-Connect007</a> · <a href="https://www.thelec.net/news/articleView.html?idxno=13892" style="color:#4f46e5;text-decoration:none;" target="_blank" rel="noopener">The Elec</a></div>
+            </div>
+          </div>
+
+          <div style="text-align:center;padding:16px 0 8px;">
+            <div style="font-size:15px;color:#94a3b8;font-style:italic;">by Your Tech Sommelier</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="edition-panel" id="packaging-2026-09-17" hidden>
     <div class="issue-strip">
       <span><strong>Daily briefing</strong> / 17 SEP 2026</span>
       <span class="status">Advanced packaging intelligence</span>
@@ -698,9 +850,93 @@
       <div class="signoff">by Your Tech Sommelier</div>
       <div class="snapshot-note">Daily briefing · Thursday, September 17, 2026</div>
     </footer>
+    </section>
   </main>
 
   <section class="foundry-edition" id="foundry-panel" role="tabpanel" aria-labelledby="foundry-tab" hidden>
+    <section style="background:#f6f2e7;font-family:Georgia,'Times New Roman',serif;padding:36px 18px;color:#171a1c;">
+  <div style="max-width:740px;margin:0 auto;">
+
+    <p style="margin:0 0 8px;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#8a7a55;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">September 18, 2026 &middot; Weekly Edition</p>
+    <h1 style="margin:0 0 10px;font-size:42px;line-height:1.05;color:#171a1c;font-weight:800;">Foundry Technology Trends</h1>
+    <p style="margin:0 0 24px;font-size:16px;color:#55534a;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-style:italic;">Process nodes, yields, lithography, and the angstrom-era tooling race.</p>
+
+    <div style="border-top:3px double #e44d1b;border-bottom:3px double #e44d1b;padding:16px 4px;margin-bottom:26px;">
+      <p style="margin:0 0 6px;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:#e44d1b;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">Why it matters</p>
+      <p style="margin:0;font-size:15.5px;line-height:1.65;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">The 2nm capacity crunch is this week&rsquo;s defining force. TSMC&rsquo;s N2 is effectively sold out &mdash; Apple alone is taking at least half of the roughly 60,000 wafers a month coming online by year-end &mdash; and the squeeze is redrawing the foundry map: Qualcomm is moving toward dual-sourcing its flagship Snapdragon on Samsung 2nm, while Tesla&rsquo;s AI5 enters 2nm production at Samsung. Meanwhile the angstrom-era tooling stack advanced on two fronts: imec proved conventional resists can single-print High-NA EUV patterns for A14/A10 logic, and Intel Foundry teamed with ASML on reticle stitching. This week&rsquo;s scaling story isn&rsquo;t about a smaller transistor &mdash; it&rsquo;s about who gets the capacity, and whether the tools are ready.</p>
+    </div>
+
+    <article style="background:#fffdf7;border:1px solid #ddd3b8;border-top:5px solid #e44d1b;padding:0;margin-bottom:26px;box-shadow:0 3px 10px rgba(23,26,28,.08);">
+      <div style="padding:24px 26px 6px;">
+        <p style="margin:0 0 8px;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:#e44d1b;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">01 &middot; Cover Story</p>
+        <h2 style="margin:0 0 14px;font-size:30px;line-height:1.15;font-weight:800;color:#171a1c;">Capacity Crunch Forces Qualcomm&rsquo;s Hand: Snapdragon 8 Elite Gen 6 Splits Between TSMC and Samsung 2nm</h2>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+          <span style="background:#171a1c;color:#f6f2e7;border-radius:3px;padding:5px 12px;font-size:12px;font-weight:700;">Samsung SF2 yields &gt;70%</span>
+          <span style="background:#171a1c;color:#f6f2e7;border-radius:3px;padding:5px 12px;font-size:12px;font-weight:700;">TSMC N2 &sim;60K wpm by end-2026</span>
+          <span style="background:#e44d1b;color:#ffffff;border-radius:3px;padding:5px 12px;font-size:12px;font-weight:700;">&ldquo;Extreme&rdquo; stays on TSMC</span>
+        </div>
+      </div>
+      <div style="padding:0 26px 24px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+        <p style="margin:0 0 10px;font-size:15px;line-height:1.65;color:#3a3833;">After years of TSMC exclusivity for its flagship Snapdragon line, Qualcomm is in serious talks to dual-source the Snapdragon 8 Elite Gen 6: the top &ldquo;Extreme&rdquo; SKUs would stay on TSMC&rsquo;s N2 while standard configurations shift to Samsung&rsquo;s 2nm GAA process. The driver is capacity, not just cost &mdash; TSMC is targeting roughly 60,000 wafers a month of 2nm by the end of 2026, with Apple locking up at least half for the A20 Pro and M6, while Nvidia and AMD have 3nm capacity booked through 2027.</p>
+        <p style="margin:0 0 10px;font-size:15px;line-height:1.65;color:#3a3833;">What reopened the conversation is yield: Samsung&rsquo;s 2nm GAA yields have climbed from under 50% to over 70%, narrowing the gap with TSMC&rsquo;s reported 80&ndash;90% enough to make a second source viable. The sticking point is pricing &mdash; Samsung, fresh off Tesla and Broadcom wins, is resisting the discounts it once offered for modest volumes &mdash; but CEO Cristiano Amon&rsquo;s recent meetings in South Korea suggest this is advanced negotiation, not casual exploration.</p>
+        <p style="margin:0;font-size:14px;line-height:1.6;color:#3a3833;"><strong style="color:#171a1c;">Key numbers:</strong> TSMC N2 &sim;$30K/wafer; Apple &ge;50% of 2nm capacity through 2026. <a href="https://www.gizmochina.com/2026/09/15/standard-snapdragon-8-elite-gen-6-could-use-samsungs-2nm-node-instead-of-tsmcs/" style="color:#e44d1b;font-weight:700;text-decoration:none;">Source: Gizmochina &rarr;</a></p>
+      </div>
+    </article>
+
+    <article style="background:#fffdf7;border:1px solid #ddd3b8;padding:20px 24px;margin-bottom:14px;box-shadow:0 1px 4px rgba(23,26,28,.05);">
+      <p style="margin:0 0 6px;font-size:11px;letter-spacing:2.5px;color:#e44d1b;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">02</p>
+      <h3 style="margin:0 0 8px;font-size:20px;line-height:1.3;color:#171a1c;font-weight:700;">Samsung Fires Up 2nm Production for Tesla&rsquo;s AI5</h3>
+      <p style="margin:0 0 8px;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">Samsung has begun production of Tesla&rsquo;s AI5 self-driving chip on its 2nm GAA process, per industry reports this week &mdash; advancing last week&rsquo;s tape-out and trial-production news into actual silicon for FSD and Optimus. Tesla is dual-sourcing AI5, with a 3nm variant at TSMC running alongside Samsung&rsquo;s 2nm version, and the Taylor, Texas fab remains on track for customer production in 2027 with the enhanced SF2P+ process to follow.</p>
+      <p style="margin:0;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;"><strong style="color:#171a1c;">Key numbers:</strong> $16.5B Tesla&ndash;Samsung deal through 2033; Taylor customer production from 2027. <a href="https://www.basenor.com/blogs/news/samsung-starts-2nm-ai5-chip-production-for-tesla-fsd-and-optimus" style="color:#e44d1b;font-weight:700;text-decoration:none;">Source: Basenor &rarr;</a></p>
+    </article>
+
+    <article style="background:#fffdf7;border:1px solid #ddd3b8;padding:20px 24px;margin-bottom:14px;box-shadow:0 1px 4px rgba(23,26,28,.05);">
+      <p style="margin:0 0 6px;font-size:11px;letter-spacing:2.5px;color:#e44d1b;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">03</p>
+      <h3 style="margin:0 0 8px;font-size:20px;line-height:1.3;color:#171a1c;font-weight:700;">Silicon Photonics Hits Volume: Tower and NewPhotonics Ship Laser-Integrated Optical Engines</h3>
+      <p style="margin:0 0 8px;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">Tower Semiconductor and NewPhotonics announced high-volume shipments of laser-integrated, serviceable optical-engine PICs for AI interconnect &mdash; 800G to 1.6T pluggable and near-packaged-optics solutions today, with 6.4T NPO on the roadmap. The chips are built on Tower&rsquo;s PH18DA silicon-photonics platform with heterogeneously integrated InP components &mdash; lasers, semiconductor optical amplifiers, modulators, and detectors &mdash; monolithically integrated on a single photonic IC.</p>
+      <p style="margin:0;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">The technical win is monolithic laser integration: doing it all on one PIC cuts manufacturing variability and improves yield, reliability, and time-to-market versus hybrid assembly &mdash; specialty foundry process technology pulling its weight in the AI buildout. <a href="https://towersemi.com/2026/09/17/09172026/" style="color:#e44d1b;font-weight:700;text-decoration:none;">Source: Tower Semiconductor &rarr;</a></p>
+    </article>
+
+    <article style="background:#fffdf7;border:1px solid #ddd3b8;padding:20px 24px;margin-bottom:14px;box-shadow:0 1px 4px rgba(23,26,28,.05);">
+      <p style="margin:0 0 6px;font-size:11px;letter-spacing:2.5px;color:#e44d1b;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">04</p>
+      <h3 style="margin:0 0 8px;font-size:20px;line-height:1.3;color:#171a1c;font-weight:700;">High-NA EUV Gets Manufacturable: Resists and Reticle Stitching</h3>
+      <p style="margin:0 0 8px;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">At the SPIE Photomask Technology + EUV Lithography conference, imec demonstrated that conventional chemically amplified resists (CAR) can single-print tight-pitch random logic after a High-NA EUV exposure &mdash; lines/spaces down to 22nm pitch and vias at 28nm center-to-center &mdash; clearing a path for several A14/A10 logic layers without waiting on exotic new resist chemistries. Separately, Intel Foundry and ASML presented updates on half-field reticle stitching, the technique that lets designers use High-NA EUV with today&rsquo;s standard 6-inch masks, removing a key tooling-format blocker for sub-2nm insertion.</p>
+      <p style="margin:0;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">Together the two advances move High-NA from &ldquo;can it print&rdquo; to &ldquo;can we build with it&rdquo; &mdash; the manufacturing-readiness work the angstrom era depends on. <a href="https://www.imec-int.com/en/press/imec-demonstrates-extension-chemically-amplified-resists-high-na-euv-lithography" style="color:#e44d1b;font-weight:700;text-decoration:none;">Source: imec &rarr;</a> &middot; <a href="https://stockhouse.com/news/press-releases/2026/09/08/intel-foundry-and-asml-collaborate-to-accelerate-industry-readiness-for-high-na" style="color:#e44d1b;font-weight:700;text-decoration:none;">Intel Foundry + ASML &rarr;</a></p>
+    </article>
+
+    <article style="background:#fffdf7;border:1px solid #ddd3b8;padding:20px 24px;margin-bottom:14px;box-shadow:0 1px 4px rgba(23,26,28,.05);">
+      <p style="margin:0 0 6px;font-size:11px;letter-spacing:2.5px;color:#e44d1b;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">05</p>
+      <h3 style="margin:0 0 8px;font-size:20px;line-height:1.3;color:#171a1c;font-weight:700;">Intel Pulls 14A Risk Production Forward to Q1 2027</h3>
+      <p style="margin:0 0 8px;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">Per the Economic Daily, Intel has moved 14A risk production to the first quarter of 2027 from the second half of 2027, with Intel confirming to press that volume production still targets 2028. The node reportedly reached a defect density (D0) of 0.5 in June 2026 and is targeting 0.1&ndash;0.2 by Q1 2027, with CEO Lip-Bu Tan saying 14A is ahead of where 18A was on both defect density and transistor performance at the same stage; PDK 0.9 remains on track for October.</p>
+      <p style="margin:0;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;"><strong style="color:#171a1c;">Technology:</strong> 14A will use ASML High-NA EUV and a second-generation backside-power implementation, PowerDirect, connecting power wires directly to each transistor&rsquo;s source and drain. <a href="https://wccftech.com/intel-ceo-lip-bu-tan-reportedly-moves-up-14a-risk-production-to-q1-2027-as-the-nodes-defect-density-races-toward-target/" style="color:#e44d1b;font-weight:700;text-decoration:none;">Source: Wccftech &rarr;</a></p>
+    </article>
+
+    <article style="background:#fffdf7;border:1px solid #ddd3b8;padding:20px 24px;margin-bottom:14px;box-shadow:0 1px 4px rgba(23,26,28,.05);">
+      <p style="margin:0 0 6px;font-size:11px;letter-spacing:2.5px;color:#e44d1b;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">06</p>
+      <h3 style="margin:0 0 8px;font-size:20px;line-height:1.3;color:#171a1c;font-weight:700;">ASML Denies US Allegations of EUV Shipments to China</h3>
+      <p style="margin:0 0 8px;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">Bloomberg reported that US Commerce Secretary Howard Lutnick raised concerns with ASML executives about possible EUV exports to China in violation of export controls; ASML denied the allegations, stating it is fully committed to compliance and calling prior rumors &ldquo;unfounded.&rdquo; Shares dipped, then recovered.</p>
+      <p style="margin:0;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">It matters for the roadmap because the export-control wall around EUV remains the single biggest determinant of who can chase leading-edge logic &mdash; and of China&rsquo;s DUV multi-patterning detour. <a href="https://www.lse.co.uk/news/asml-denies-us-allegations-of-euv-machine-shipments-to-china-59oj3pmjge45esw.html" style="color:#e44d1b;font-weight:700;text-decoration:none;">Source: Sharecast / Bloomberg &rarr;</a></p>
+    </article>
+
+    <article style="background:#fffdf7;border:1px solid #ddd3b8;padding:20px 24px;margin-bottom:14px;box-shadow:0 1px 4px rgba(23,26,28,.05);">
+      <p style="margin:0 0 6px;font-size:11px;letter-spacing:2.5px;color:#e44d1b;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">07</p>
+      <h3 style="margin:0 0 8px;font-size:20px;line-height:1.3;color:#171a1c;font-weight:700;">2nm Is Still a Rounding Error in TSMC&rsquo;s Revenue &mdash; for Now</h3>
+      <p style="margin:0 0 8px;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">Two-nanometer products were just 3% of TSMC&rsquo;s Q2 wafer revenue, versus 30% for 3nm and 33% for 5nm &mdash; the ramp is real but early. MediaTek&rsquo;s two-node split (2nm 9600 Pro for the premium tier, 3nm 9600M for volume) shows the commercial playbook: frontier silicon at the top, mature capacity filling the middle.</p>
+      <p style="margin:0;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">The question now is utilization: can phone and AI adoption scale N2 fast enough while TSMC protects the yields that make advanced nodes so valuable? <a href="https://www.tradingview.com/news/gurufocus:09d456c44094b:0-tsmc-gains-1-65-as-2-nanometer-phones-leave-the-lab/" style="color:#e44d1b;font-weight:700;text-decoration:none;">Source: GuruFocus &rarr;</a></p>
+    </article>
+
+    <article style="background:#fffdf7;border:1px solid #ddd3b8;padding:20px 24px;margin-bottom:24px;box-shadow:0 1px 4px rgba(23,26,28,.05);">
+      <p style="margin:0 0 6px;font-size:11px;letter-spacing:2.5px;color:#e44d1b;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">08</p>
+      <h3 style="margin:0 0 8px;font-size:20px;line-height:1.3;color:#171a1c;font-weight:700;">On the Radar: The Angstrom Queue Forms</h3>
+      <p style="margin:0 0 8px;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">Three sub-2nm milestones are now converging: TSMC aims to deliver initial A16 parts &mdash; nanosheet transistors plus its Super Power Rail backside-power architecture &mdash; by the end of 2026; Samsung&rsquo;s third-generation SF2P+ 2nm node targets mass production in 2027&ndash;2028 with the HBM5 base die slated to ride the same GAA process; and Intel&rsquo;s 14A (High-NA EUV + PowerDirect) is racing toward risk production in Q1 2027.</p>
+      <p style="margin:0;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">Backside power delivery is the common thread &mdash; PowerVia, Super Power Rail, and PowerDirect all arrive within roughly a year of each other, making 2027 the first true head-to-head of the angstrom era.</p>
+    </article>
+
+    <p style="text-align:center;font-style:italic;color:#8a7a55;font-size:14px;margin:8px 0 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">by Your Tech Sommelier</p>
+
+  </div>
+</section>
+
     <div class="foundry-inner">
       <p class="foundry-date">September 17, 2026 &middot; Debut Edition</p>
       <h1 class="foundry-title">Foundry Technology Trends</h1>
@@ -807,6 +1043,17 @@
         publicationTabs.forEach(tab => tab.setAttribute('aria-pressed', String(tab === button)));
         publicationPanels.forEach(panel => { panel.hidden = panel.id !== activePanelId; });
         window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+
+    const editionButtons = [...document.querySelectorAll('[data-edition]')];
+    const editionPanels = [...document.querySelectorAll('.edition-panel')];
+
+    editionButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const activeEditionId = button.dataset.edition;
+        editionButtons.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+        editionPanels.forEach(panel => { panel.hidden = panel.id !== activeEditionId; });
       });
     });
 
