@@ -854,7 +854,14 @@
   </main>
 
   <section class="foundry-edition" id="foundry-panel" role="tabpanel" aria-labelledby="foundry-tab" hidden>
-    <section style="background:#f6f2e7;font-family:Georgia,'Times New Roman',serif;padding:36px 18px;color:#171a1c;">
+    <div class="foundry-inner">
+      <div class="edition-switcher" aria-label="Foundry edition archive">
+        <button class="edition-choice" type="button" data-edition="foundry-2026-09-18" aria-pressed="true">Sep 18, 2026</button>
+        <button class="edition-choice" type="button" data-edition="foundry-2026-09-17" aria-pressed="false">Sep 17, 2026</button>
+      </div>
+    </div>
+
+    <section class="edition-panel" id="foundry-2026-09-18" style="background:#f6f2e7;font-family:Georgia,'Times New Roman',serif;padding:36px 18px;color:#171a1c;">
   <div style="max-width:740px;margin:0 auto;">
 
     <p style="margin:0 0 8px;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#8a7a55;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">September 18, 2026 &middot; Weekly Edition</p>
@@ -937,6 +944,7 @@
   </div>
 </section>
 
+    <section class="edition-panel" id="foundry-2026-09-17" hidden>
     <div class="foundry-inner">
       <p class="foundry-date">September 17, 2026 &middot; Debut Edition</p>
       <h1 class="foundry-title">Foundry Technology Trends</h1>
@@ -1028,6 +1036,7 @@
 
       <p class="foundry-signoff">by Your Tech Sommelier</p>
     </div>
+    </section>
   </section>
 
   <script>
@@ -1046,14 +1055,17 @@
       });
     });
 
-    const editionButtons = [...document.querySelectorAll('[data-edition]')];
-    const editionPanels = [...document.querySelectorAll('.edition-panel')];
+    document.querySelectorAll('.edition-switcher').forEach(switcher => {
+      const editionButtons = [...switcher.querySelectorAll('[data-edition]')];
+      const publicationPanel = switcher.closest('[role="tabpanel"]');
+      const editionPanels = [...publicationPanel.querySelectorAll('.edition-panel')];
 
-    editionButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const activeEditionId = button.dataset.edition;
-        editionButtons.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
-        editionPanels.forEach(panel => { panel.hidden = panel.id !== activeEditionId; });
+      editionButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const activeEditionId = button.dataset.edition;
+          editionButtons.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+          editionPanels.forEach(panel => { panel.hidden = panel.id !== activeEditionId; });
+        });
       });
     });
 
