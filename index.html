@@ -662,15 +662,15 @@
         <div class="edition-group">
           <span class="edition-label">Daily</span>
           <div class="archive-controls" role="group" aria-label="Choose a daily edition">
-            <button class="edition-btn" type="button" data-issue="2026-09-18" aria-pressed="true">Sep 18</button>
+            <button class="edition-btn" type="button" data-issue="2026-09-18" aria-pressed="false">Sep 18</button>
             <button class="edition-btn" type="button" data-issue="2026-09-17" aria-pressed="false">Sep 17</button>
             <button class="edition-btn" type="button" data-issue="2026-09-16" aria-pressed="false">Sep 16</button>
             <button class="edition-btn" type="button" data-issue="2026-09-15" aria-pressed="false">Sep 15</button>
           </div>
         </div>
-        <div class="edition-group weekly-group" aria-label="Weekly summaries publish Fridays">
+        <div class="edition-group weekly-group" aria-label="Choose a weekly summary">
           <span class="edition-label">Weekly</span>
-          <span class="weekly-note">Fridays</span>
+          <button class="edition-btn" type="button" data-issue="weekly-2026-09-18" aria-pressed="true">Sep 18</button>
         </div>
       </nav>
       <nav class="archive-navigation" id="navLlm" aria-label="AI Trends edition navigation" hidden>
@@ -917,6 +917,127 @@
 
   <script>
     const issues = {
+      "weekly-2026-09-18": {
+        date: "Week of September 18, 2026 · covering September 14–18",
+        heroMasthead: "AI Hardware Weekly",
+        heroCategory: "Cover Story",
+        heroTitle: "Crusoe Raises $3.9B at $30.9B Valuation to Build Out AI Factories",
+        heroDeck: "AI infrastructure provider Crusoe said Thursday it has raised $3.9 billion at a post-money valuation of $30.9 billion, as demand for compute capacity to power AI workloads continues to surge. The Series F round was co-led by Atreides Management, Mubadala Capital, and Valor Equity Partners, with significant backing from Founders Fund, Nvidia, and Qatar Investment Authority. Founded in 2018 as a cryptocurrency business, Crusoe pivoted to AI infrastructure and has become one of the leading \"neoclouds\" providing specialized AI cloud and data center services.",
+        heroExtra: [
+          "Crusoe says it has more than $140 billion in total contracted value and over 6 gigawatts of contracted capacity, with 1 GW already operational — numbers that put it in the same weight class as CoreWeave in the race to sell gigawatt-scale compute. Proceeds will fund expansion of existing programs and the build-out of its own AI factories. The raise underscores a structural shift: specialized clouds backed by sovereign and private capital are now competing head-to-head with hyperscalers for the AI buildout, and investors are underwriting capacity years before it exists."
+        ],
+        heroSource: { label: "Reuters", url: "https://www.reuters.com/business/ai-infrastructure-provider-crusoe-valued-309-billion-latest-funding-round-2026-09-17/" },
+        sourcePrefix: true,
+        reviewFirst: true,
+        artLabel: "Capital formation meets gigawatt-scale AI infrastructure",
+        statMode: "badges",
+        stats: [
+          ["$3.9B Series F", ""],
+          ["$30.9B post-money valuation", ""],
+          ["$140B+ contracted value", ""],
+          ["6 GW contracted, 1 GW live", ""]
+        ],
+        takeaway: "This was a capital-formation week for AI hardware. Crusoe raised $3.9B at a $30.9B valuation while CoreWeave lined up nearly $6B in debt and equity — the neocloud buildout is now measured in tens of billions per announcement. Memory remained the industry's binding constraint: an HBM shortage pushed Chinese AI-chip prices up as much as 50%, SK Hynix explored manufacturing memory in the U.S. with Intel, and TSMC committed to a 70% expansion of advanced-node output through mid-2027. Underneath it all, agentic AI is reshaping the infrastructure stack itself — from CoreWeave's multi-rack Rubin cluster to Nvidia's Groq 3 LPX inference companion and a double hit of optical-interconnect investment.",
+        storiesTitle: "The Week’s Biggest Stories",
+        stories: [
+          {
+            n: "02",
+            title: "CoreWeave Deploys Multi-Rack Rubin NVL72 and Lines Up ~$6B in Financing",
+            body: [
+              "CoreWeave brought up multi-rack Nvidia Vera Rubin NVL72 on its cloud — stitching hundreds of Rubin GPUs into a single scale-out cluster aimed at agentic AI workloads, where data-access latency compounds across repeated model calls. The company says it was the first AI cloud provider to validate and bring up a single Vera Rubin NVL72 rack; the multi-rack step scales that into one production cluster, a first real-world proof that rack-scale Rubin systems can operate as cloud services.",
+              "Follow-up: days later CoreWeave said it plans to raise $3 billion through a convertible debt offering (plus up to $500M more from initial buyers) and launched an at-the-market stock sale of up to 35 million shares, potentially worth about $2.92 billion. It also disclosed Q3 short-term compute contracts pricing at roughly $40M per megawatt annualized, with contracted power at 4.2 GW. The neocloud capital arms race is now measured in tens of billions per announcement."
+            ],
+            sources: [
+              { label: "Business Wire / CoreWeave", url: "https://www.businesswire.com/news/home/20260916102944/en/CoreWeave-Brings-Up-Multi-Rack-NVIDIA-Vera-Rubin-NVL72-Cluster" },
+              { label: "Reuters", url: "https://www.reuters.com/legal/transactional/coreweave-launches-3-billion-convertible-debt-sale-2026-09-17/" }
+            ]
+          },
+          {
+            n: "03",
+            title: "TSMC to Boost Advanced Chip Output ~70% Over 18 Months on AI Demand",
+            body: [
+              "TSMC has begun expanding 2nm and 3nm output as AI chip demand keeps orders secured through 2029–2030. Monthly 3nm wafer output is expected to rise from 120,000–130,000 at the end of last year to 180,000 by the end of 2026 and 210,000 by mid-2027; 2nm monthly output is set to reach 90,000 units by year-end and 110,000 by mid-2027. The ramp follows TSMC’s mid-July capex increase to $60–64 billion annually, with 70–80% earmarked for advanced processes.",
+              "TSMC doesn’t expand a mature node lightly — the 3nm buildout breaks its own convention of freezing capacity once a node reaches target, which tells you how far ahead hyperscaler orders now run. For Nvidia, AMD, and the custom-silicon crowd, this is the foundry officially underwriting the next two AI capex cycles."
+            ],
+            source: "Seoul Economic Daily",
+            url: "https://en.sedaily.com/international/2026/09/14/tsmc-to-boost-advanced-chip-output-70-percent-in-18-months"
+          },
+          {
+            n: "04",
+            title: "SK Hynix in Talks With Intel to Make Memory Chips in the U.S. for the First Time",
+            body: [
+              "South Korea’s SK Hynix is in exploratory talks with Intel about manufacturing memory chips on U.S. soil for the first time. One option would see SK Hynix lease part of Intel’s long-planned Ohio chipmaking facility; another would form a venture with Intel and major cloud firms keen to lock in memory supply. With 61% of the HBM market, SK Hynix is the leading supplier of high-bandwidth memory for AI accelerators — and relentless data-center investment has created an acute shortage.",
+              "Follow-up: the memory squeeze is spilling into consumer devices — Apple reportedly agreed to pay Samsung twice as much for iPhone 17 memory, and analyst Ming-Chi Kuo says Apple is trimming 2026 hardware shipment plans on DRAM shortages. A Hynix–Intel U.S. deal would onshore supply for hyperscalers and the Apple/Samsung ecosystem alike while giving Intel’s Ohio complex an anchor tenant."
+            ],
+            sources: [
+              { label: "Reuters", url: "https://www.reuters.com/world/asia-pacific/sk-hynix-talks-with-intel-about-deal-make-memory-chips-us-first-time-sources-say-2026-09-16/" },
+              { label: "MacRumors (via Reuters)", url: "https://www.macrumors.com/2026/09/16/apple-memory-supplier-explores-us-manufacturing/" }
+            ]
+          },
+          {
+            n: "05",
+            title: "China’s AI Chipmakers Raise Prices Up to 50% as HBM Shortage Bites",
+            body: [
+              "Huawei, Cambricon, MetaX, and Iluvatar CoreX sharply raised prices for current and next-generation AI processors as soaring high-bandwidth memory costs squeeze China’s bid to build domestic alternatives to Nvidia. Huawei lifted the indicated price of its Ascend 950DT accelerator card — its most advanced AI chip, due Q4 2026 — above 250,000 yuan (~$37,255), a 20–50% jump in two months; Cambricon repriced its next-gen 690 chip 20–30% higher.",
+              "Price hikes from the very vendors meant to undercut Nvidia illustrate how memory — not silicon — is now the binding constraint on AI hardware worldwide. The story repeated across three editions this week, each day adding another price increase, which tells you the squeeze is accelerating, not stabilizing."
+            ],
+            source: "Reuters",
+            url: "https://www.reuters.com/world/asia-pacific/chinas-ai-chipmakers-raise-prices-high-bandwidth-memory-shortage-bites-2026-09-10/"
+          },
+          {
+            n: "06",
+            title: "Qualcomm Strikes Up to $60B AI Chip Deal With Amazon",
+            body: [
+              "Amazon could buy up to $60B of Qualcomm’s AI data-center chips under a long-term partnership focused on inference hardware, with Qualcomm granting ~$4B in warrants vesting with purchases at $161.26/share. Amazon joins Microsoft and Meta as backers of Qualcomm’s data-center push, which targets $15B in revenue by 2029.",
+              "The deal mirrors Marvell’s recent custom-chip pact with Google and validates Qualcomm’s pivot beyond smartphones — and it cements inference, not training, as the chip industry’s center of gravity this year."
+            ],
+            source: "Reuters",
+            url: "https://www.reuters.com/technology/qualcomm-amazon-develop-custom-chips-ai-data-centers-2026-09-08/"
+          },
+          {
+            n: "07",
+            title: "Positron Quadruples to $5B After $875M Round for Next-Gen Inference Chip",
+            body: [
+              "The inference-focused startup raised $875M across a $375M Series C and up to $500M Series C-1, lifting its valuation from $1.06B in February to $5B. Backers include NEA, Atreides, Jim Clark, Qatar Investment Authority, and Cisco. Funds go to the final design stage of Asimov, due in H2 2027 — its Titan system will combine 4–8 Asimov chips to serve 16T-parameter models with 10M-token context in a single node.",
+              "It’s already deploying 50+ racks of its first-gen Atlas at Oracle Cloud. Alongside d-Matrix’s NVLink Fusion tie-up and Cornelis’s $205M round, this was inference-startup week — three companies all pitching hardware purpose-built for serving models, not training them."
+            ],
+            source: "Reuters",
+            url: "https://www.reuters.com/business/ai-chip-startup-positrons-valuation-skyrockets-latest-funding-round-2026-09-10/"
+          },
+          {
+            n: "08",
+            title: "Nvidia Moves Groq 3 LPX Into Full Production as Vera Rubin Inference Companion",
+            body: [
+              "Nvidia has put the Groq 3 LPX — the inference accelerator born from its $20B Groq technology license last year — into full production as a specialized decode companion to the Vera Rubin platform. It targets low-latency token generation for agentic workloads alongside Vera Rubin NVL72, with Artificial Analysis measuring 3,431 output tokens per second on Gemma 4 31B at 100K context — which Nvidia says delivers 4x faster responsiveness than the nearest alternative.",
+              "Nebius plans to be the first adopter through its production inference platform. The bet: agentic workloads live and die on decode latency, and a dedicated token-generation companion is worth a whole new silicon SKU."
+            ],
+            source: "Futurum Group",
+            url: "https://futurumgroup.com/insights/nvidia-groq-3-lpxs-promise-of-worlds-fastest-inference-enters-full-production/"
+          },
+          {
+            n: "09",
+            title: "MediaTek’s Dimensity 9600 Pro: The First 2nm Smartphone Chip",
+            body: [
+              "MediaTek unveiled the Dimensity 9600 Pro — its first mobile processor built on TSMC’s cutting-edge 2-nanometre process — targeting the premium handset market with on-device generative AI. Its dedicated neural processing unit delivers a 51% improvement over the previous generation in prefill, the step that processes your prompt before generation begins. MediaTek also launched the Dimensity 9600M on TSMC’s 3nm process for the broader flagship tier; first phones arrive soon.",
+              "The launch is a direct bid for share against Qualcomm in premium phones — where MediaTek now claims a larger market value than its U.S. rival — and it puts flagship on-device AI on the industry’s most advanced node."
+            ],
+            source: "Reuters",
+            url: "https://www.reuters.com/business/media-telecom/mediatek-launches-new-mobile-chip-using-tsmcs-most-advanced-technology-2026-09-15/"
+          },
+          {
+            n: "10",
+            title: "Optical Week: GlobalFoundries–Marvell Expand SiGe Deal, NewPhotonics Hits Volume",
+            body: [
+              "GlobalFoundries and Marvell expanded their multi-year agreement to increase silicon germanium (SiGe) semiconductor capacity at GF’s Burlington, Vermont facility — the link layer for high-speed optical connections in data centers. The added capacity will support Marvell’s advanced optical networking products, including pluggable transceivers, near-packaged optics, and co-packaged optics. GF shares rose nearly 6% on the news; Marvell was up 4.5%.",
+              "Meanwhile Tower Semiconductor and NewPhotonics began high-volume shipments of laser-integrated optical engine PICs — heterogeneously integrated lasers, SOAs, modulators, and photodetectors on a single chip — supporting 800G-to-1.6T transceiver modules with a roadmap to 6.4T. Silicon photonics is moving from lab slides to volume logistics, and the message is consistent: at rack-scale AI fabrics, optical I/O — not just the GPUs — determines cluster performance."
+            ],
+            sources: [
+              { label: "Reuters", url: "https://www.reuters.com/business/globalfoundries-marvell-expand-chip-capacity-deal-ai-data-center-connectivity-2026-09-17/" },
+              { label: "GlobeNewswire via TradingView", url: "https://in.tradingview.com/news/globenewswire:3b711086d094b:0-newphotonics-and-tower-semiconductor-begin-high-volume-shipments-of-laser-integrated-serviceable-optical-engine-pics-for-scale-out-and-scale-up-ai-interconnect/" }
+            ]
+          }
+        ]
+      },
       "2026-09-18": {
         date: "Friday, September 18, 2026",
         heroMasthead: "AI Hardware Daily",
@@ -1135,6 +1256,17 @@
       $('#heroSource').href = item.heroSource.url;
       $('#readingTime').textContent = `${Math.max(4, item.stories.length)} min read`;
       $('#artLabel').textContent = item.artLabel;
+      const issueArticle = $('#issue');
+      const hero = issueArticle.querySelector('.hero');
+      const stats = $('#stats');
+      const brief = issueArticle.querySelector('.brief');
+      if (item.reviewFirst) {
+        issueArticle.insertBefore(brief, hero);
+      } else {
+        issueArticle.insertBefore(hero, brief);
+        issueArticle.insertBefore(stats, brief);
+      }
+      $('#briefLabel').textContent = item.reviewFirst ? 'Week in review' : 'Why it matters';
       $('#takeaway').textContent = item.takeaway;
       $('#storiesTitle').textContent = item.storiesTitle || 'The signal board';
       $('#editionNote').textContent = `${item.stories.length} more developments worth your attention.`;
@@ -1143,11 +1275,15 @@
         <div class="stat"><strong>${escapeHTML(value)}</strong>${label ? `<span>${escapeHTML(label)}</span>` : ''}</div>`).join('');
       $('#storyList').innerHTML = item.stories.map(story => {
         const paragraphs = Array.isArray(story.body) ? story.body : [story.body];
+        const sources = story.sources || [{ label: story.source, url: story.url }];
+        const sourceLinks = sources.map((source, index) =>
+          `<a class="source-link" href="${escapeHTML(source.url)}" target="_blank" rel="noopener noreferrer">${item.sourcePrefix ? `${sources.length > 1 && index === 0 ? 'Sources' : index === 0 ? 'Source' : ''}${index === 0 ? ': ' : ''}${escapeHTML(source.label)}` : escapeHTML(source.label)}</a>`
+        ).join('');
         return `<article class="story">
           <span class="story-num">${escapeHTML(story.n)}</span>
           <h3>${escapeHTML(story.title)}</h3>
           ${paragraphs.map(paragraph => `<p>${escapeHTML(paragraph)}</p>`).join('')}
-          <a class="source-link" href="${escapeHTML(story.url)}" target="_blank" rel="noopener noreferrer">${item.sourcePrefix ? `Source: ${escapeHTML(story.source)}` : escapeHTML(story.source)}</a>
+          <div class="llm-story-meta">${sourceLinks}</div>
         </article>`;
       }).join('');
       document.querySelectorAll('.edition-btn').forEach(btn => {
@@ -1156,7 +1292,7 @@
       window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     }
 
-    let currentIssue = '2026-09-18';
+    let currentIssue = 'weekly-2026-09-18';
     let currentAiIssue = '2026-09-17';
     let currentSection = 'hardware';
 
@@ -1210,7 +1346,7 @@
       }
     }
 
-    renderIssue('2026-09-18');
+    renderIssue('weekly-2026-09-18');
   </script>
 </body>
 </html>
