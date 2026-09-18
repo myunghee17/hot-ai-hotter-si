@@ -649,7 +649,7 @@
     <div class="issue-bar" aria-label="Section and edition navigation">
       <div class="issue-meta">
         <span class="signal" id="signalName">Hot AI, Hotter Si?</span>
-        <span id="issueDate">Thursday, September 17, 2026</span>
+        <span id="issueDate">Friday, September 18, 2026</span>
         <span id="storyCount">6 stories</span>
       </div>
       <div class="section-switcher" role="group" aria-label="Choose a section">
@@ -662,7 +662,8 @@
         <div class="edition-group">
           <span class="edition-label">Daily</span>
           <div class="archive-controls" role="group" aria-label="Choose a daily edition">
-            <button class="edition-btn" type="button" data-issue="2026-09-17" aria-pressed="true">Sep 17</button>
+            <button class="edition-btn" type="button" data-issue="2026-09-18" aria-pressed="true">Sep 18</button>
+            <button class="edition-btn" type="button" data-issue="2026-09-17" aria-pressed="false">Sep 17</button>
             <button class="edition-btn" type="button" data-issue="2026-09-16" aria-pressed="false">Sep 16</button>
             <button class="edition-btn" type="button" data-issue="2026-09-15" aria-pressed="false">Sep 15</button>
           </div>
@@ -676,7 +677,8 @@
         <div class="edition-group">
           <span class="edition-label">Daily</span>
           <div class="archive-controls" role="group" aria-label="Choose an AI Trends edition">
-            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-09-17" aria-pressed="true">Sep 17</button>
+            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-09-18" aria-pressed="true">Sep 18</button>
+            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-09-17" aria-pressed="false">Sep 17</button>
             <button class="edition-btn ai-edition-btn" id="llmIssueBtn" type="button" data-ai-issue="2026-09-16" aria-pressed="false">Sep 16</button>
           </div>
         </div>
@@ -910,10 +912,85 @@
       </footer>
       <footer class="byline-footer">by Your Tech Sommelier</footer>
     </article>
+
   </main>
 
   <script>
     const issues = {
+      "2026-09-18": {
+        date: "Friday, September 18, 2026",
+        heroMasthead: "AI Hardware Daily",
+        heroCategory: "Cover Story",
+        heroTitle: "Crusoe Raises $3.9B at $30.9B Valuation to Build Out AI Factories",
+        heroDeck: "AI infrastructure provider Crusoe said Thursday it has raised $3.9 billion at a post-money valuation of $30.9 billion, as demand for compute capacity to power AI workloads continues to surge. The Series F round was co-led by Atreides Management, Mubadala Capital, and Valor Equity Partners, with significant backing from Founders Fund, Nvidia, and Qatar Investment Authority. Founded in 2018 as a cryptocurrency business, Crusoe later pivoted to AI infrastructure and has become one of the leading \"neoclouds\" providing specialized AI cloud and data center services.",
+        heroExtra: [
+          "Crusoe says it has more than $140 billion in total contracted value and over 6 gigawatts of contracted capacity, with 1 GW already operational — numbers that put it in the same weight class as CoreWeave in the race to sell gigawatt-scale compute. Proceeds will fund expansion of existing programs and the build-out of its own AI factories. The raise underscores a structural shift: specialized clouds backed by sovereign and private capital are now competing head-to-head with hyperscalers for the AI buildout, and investors are underwriting capacity years before it exists."
+        ],
+        heroSource: { label: "Reuters", url: "https://www.reuters.com/business/ai-infrastructure-provider-crusoe-valued-309-billion-latest-funding-round-2026-09-17/" },
+        sourcePrefix: true,
+        artLabel: "AI factories scale from megawatts to gigawatts",
+        statMode: "badges",
+        stats: [
+          ["$3.9B Series F", ""],
+          ["$30.9B post-money valuation", ""],
+          ["$140B+ contracted value", ""],
+          ["6 GW contracted, 1 GW live", ""]
+        ],
+        takeaway: "Thursday was a capital-formation day for AI hardware: Crusoe raised $3.9 billion at a $30.9 billion valuation while CoreWeave lined up another $3 billion-plus in debt and equity financing — the neocloud buildout is now measured in tens of billions per announcement. The engineering money is chasing the interconnect layer: GlobalFoundries and Marvell expanded SiGe capacity for AI optical networking, and NewPhotonics began high-volume shipments of laser-integrated photonic engines for 800G-to-1.6T links. And the memory choke point keeps reshaping strategy — SK Hynix is exploring U.S. manufacturing with Intel as DRAM shortages squeeze even Apple, while TSMC plans a 70% boost in advanced-node output through 2027 to feed AI demand it says is visible through 2030.",
+        storiesTitle: "The Rest of the Week in Hardware",
+        stories: [
+          {
+            n:"02",
+            title:"CoreWeave Lines Up $3B Convertible Debt Sale Plus $2.92B Stock Program",
+            body:[
+              "Nvidia-backed CoreWeave said Thursday it plans to raise $3 billion through a convertible debt offering — with initial buyers able to purchase up to $500 million more — and separately launched an at-the-market stock sale program for up to 35 million shares, potentially worth about $2.92 billion at Wednesday's closing price. The company will use part of the debt proceeds to offset dilution and the rest to fund operations. It also disclosed that Q3 short-term customer compute contracts are pricing at about $40 million per megawatt on an annualized basis, and contracted power grew to 4.2 gigawatts from 3.7 GW at the end of June.",
+              "Hours after Crusoe's mega-round, CoreWeave's financing blitz shows the neocloud capital arms race is accelerating — both companies are converting contracted gigawatts into market valuations measured in the tens of billions. That $40M/MW price tag is the clearest public datapoint yet for what short-term GPU capacity rents for in a supply-constrained market."
+            ],
+            source:"Reuters",
+            url:"https://www.reuters.com/legal/transactional/coreweave-launches-3-billion-convertible-debt-sale-2026-09-17/"
+          },
+          {
+            n:"03",
+            title:"GlobalFoundries and Marvell Expand SiGe Deal for AI Optical Connectivity",
+            body:[
+              "GlobalFoundries and Marvell Technology expanded their multi-year agreement to increase production capacity for silicon germanium (SiGe) semiconductors at GF's Burlington, Vermont facility. The SiGe technology enables faster, more energy-efficient devices for high-speed optical connections in data centers — exactly the link layer that exploding AI data volumes stress hardest. The added capacity will support Marvell's advanced optical networking products, including pluggable transceivers, near-packaged optics, and co-packaged optics. GlobalFoundries shares rose nearly 6% in premarket trading; Marvell was up 4.5%.",
+              "This is the interconnect bottleneck being fought with foundry capacity: as rack-scale systems push toward petabyte-per-second fabrics, optical I/O — not just the GPUs — determines cluster performance. Marvell locking in SiGe supply through Vermont is also a domestic-manufacturing hedge for the most supply-sensitive part of the AI network stack."
+            ],
+            source:"Reuters",
+            url:"https://www.reuters.com/business/globalfoundries-marvell-expand-chip-capacity-deal-ai-data-center-connectivity-2026-09-17/"
+          },
+          {
+            n:"04",
+            title:"SK Hynix Explores U.S. Memory Manufacturing With Intel",
+            body:[
+              "SK Hynix is in exploratory talks with Intel about manufacturing memory chips in the United States for the first time, Reuters reported. One option would see the South Korean chipmaker lease part of Intel's planned manufacturing complex in Ohio; another involves a joint venture with Intel and major cloud providers seeking to secure memory supply. No decisions have been made. The talks come as AI infrastructure spending diverts DRAM production toward HBM for AI processors — in February Apple reportedly agreed to pay Samsung twice as much for iPhone 17 memory, and analyst Ming-Chi Kuo says Apple is reducing 2026 hardware shipment plans because of DRAM shortages.",
+              "Memory has quietly become the AI buildout's binding constraint — and now it's spilling over into consumer devices. A Hynix-Intel U.S. deal would be a double play: onshoring supply for hyperscalers and the Apple/Samsung ecosystem alike, while giving Intel's Ohio complex an anchor tenant after years of fab-strategy uncertainty."
+            ],
+            source:"MacRumors (via Reuters)",
+            url:"https://www.macrumors.com/2026/09/16/apple-memory-supplier-explores-us-manufacturing/"
+          },
+          {
+            n:"05",
+            title:"NewPhotonics and Tower Semi Begin High-Volume Shipments of Laser-Integrated Optical Engines",
+            body:[
+              "Tower Semiconductor and NewPhotonics announced high-volume shipment of laser-integrated, serviceable optical engine PICs (photonic integrated circuits) for AI scale-out and scale-up interconnect. Built on Tower's PH18DA silicon photonics platform with heterogeneously integrated lasers, SOAs, modulators, and photodetectors on a single chip, the engines support OEM transceiver modules from 800G to 1.6T — spanning pluggable, linear-pluggable, and near-packaged optics sockets — with future volume manufacturing planned at 6.4T.",
+              "This is silicon photonics moving from lab slides to volume logistics: monolithic laser integration means fewer discrete components, better yield, and a credible path from today's 800G/1.6T pluggables to 6.4T near-packaged optics. Expect these engines inside the next wave of AI fabrics, where copper simply can't reach at rack-to-rack distances."
+            ],
+            source:"GlobeNewswire via TradingView",
+            url:"https://in.tradingview.com/news/globenewswire:3b711086d094b:0-newphotonics-and-tower-semiconductor-begin-high-volume-shipments-of-laser-integrated-serviceable-optical-engine-pics-for-scale-out-and-scale-up-ai-interconnect/"
+          },
+          {
+            n:"06",
+            title:"TSMC to Boost Advanced Chip Output ~70% Over 18 Months on AI Demand",
+            body:[
+              "TSMC has begun expanding 2nm and 3nm output as AI chip demand keeps orders secured through 2029–2030, according to Taiwanese media reports. Monthly 3nm wafer output is expected to rise from 120,000–130,000 at the end of last year to 180,000 by the end of 2026 and 210,000 by mid-2027; 2nm monthly output is set to reach 90,000 units by year-end and 110,000 by mid-2027. The ramp follows TSMC's mid-July capex increase to $60–64 billion annually, with 70–80% earmarked for advanced processes.",
+              "TSMC doesn't expand a mature node lightly — the 3nm buildout breaks its own convention of freezing capacity once a node reaches target, which tells you how far ahead hyperscaler orders now run. For Nvidia, AMD, and the custom-silicon crowd, this is the foundry officially underwriting the next two AI capex cycles."
+            ],
+            source:"Seoul Economic Daily",
+            url:"https://en.sedaily.com/international/2026/09/14/tsmc-to-boost-advanced-chip-output-70-percent-in-18-months"
+          }
+        ]
+      },
       "2026-09-17": {
         date: "Thursday, September 17, 2026",
         heroMasthead: "AI Hardware Daily",
@@ -1079,7 +1156,7 @@
       window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     }
 
-    let currentIssue = '2026-09-17';
+    let currentIssue = '2026-09-18';
     let currentAiIssue = '2026-09-17';
     let currentSection = 'hardware';
 
@@ -1116,23 +1193,24 @@
       keepBlogTitle();
       if (section === currentSection) return;
       currentSection = section;
+      const isHardware = section === 'hardware';
       const isLlm = section === 'llm';
       document.querySelectorAll('.section-btn').forEach(btn => {
         btn.setAttribute('aria-pressed', String(btn.dataset.section === section));
       });
-      $('#issue').hidden = isLlm;
-      $('#navHardware').hidden = isLlm;
+      $('#issue').hidden = !isHardware;
+      $('#aiTrendDaily').hidden = true;
+      $('#llmArticle').hidden = true;
+      $('#navHardware').hidden = !isHardware;
       $('#navLlm').hidden = !isLlm;
       if (isLlm) {
         renderAiIssue(currentAiIssue);
       } else {
-        $('#aiTrendDaily').hidden = true;
-        $('#llmArticle').hidden = true;
         renderIssue(currentIssue);
       }
     }
 
-    renderIssue('2026-09-17');
+    renderIssue('2026-09-18');
   </script>
 </body>
 </html>
