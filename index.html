@@ -702,7 +702,8 @@
         <div class="edition-group">
           <span class="edition-label">Daily</span>
           <div class="archive-controls" role="group" aria-label="Choose an AI Trends edition">
-            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-09-18" aria-pressed="true">Sep 18</button>
+            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-09-20" aria-pressed="true">Sep 20</button>
+            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-09-18" aria-pressed="false">Sep 18</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-09-17" aria-pressed="false">Sep 17</button>
             <button class="edition-btn ai-edition-btn" id="llmIssueBtn" type="button" data-ai-issue="2026-09-16" aria-pressed="false">Sep 16</button>
           </div>
@@ -749,6 +750,92 @@
         <p id="editionNote">Five more developments worth your attention.</p>
       </div>
       <section class="story-list" id="storyList" aria-label="Secondary stories"></section>
+      <footer class="byline-footer">by Your Tech Sommelier</footer>
+    </article>
+
+    <article id="aiTrendDailySep20" aria-live="polite" hidden>
+      <section class="hero" aria-labelledby="aiTrendSep20Title">
+        <div class="hero-copy">
+          <div>
+            <p class="eyebrow">AI Trends Daily · Cover Story</p>
+            <h1 id="aiTrendSep20Title">Anthropic Relaunches Claude Code Projects: One Manager, Many Agents, All in the Cloud</h1>
+            <p class="hero-deck">Anthropic relaunched Claude Code Projects on September 17 as a multi-agent orchestration layer: assign parallel tasks to different coding agents from one workspace while a central coordinator tracks progress and resolves conflicts. Each "thread" is its own Claude Code cloud session on its own branch and copy of the repo, sharing memory, goals, files, and artifacts — and threads can further fan out into subagents, loops, and workflows to collapse big jobs into parallel execution.</p>
+            <p class="hero-deck">This is the clearest signal yet that agentic coding is moving from a single assistant to a managed crew — parallelize like a team, merge like a pull request. It's in beta for select Pro and Max subscribers, with Team and Enterprise expansion planned; local-tool support is "coming very soon." The race is now about orchestration, not just model quality.</p>
+          </div>
+          <div class="hero-footer">
+            <a class="source-link" href="https://completeaitraining.com/news/anthropic-relaunches-claude-code-projects-to-manage/" target="_blank" rel="noopener noreferrer">Source: Complete AI Training</a>
+            <span class="reading">7 stories · Sunday, September 20, 2026</span>
+          </div>
+        </div>
+        <div class="hero-map" aria-label="Signals from the cover story">
+          <p class="map-label">AI Trends Daily</p>
+          <div class="layers">
+            <div class="layer"><b>Launched Sept 17</b><span>01</span></div>
+            <div class="layer"><b>Beta for Pro &amp; Max</b><span>02</span></div>
+            <div class="layer"><b>Shared memory + coordinator</b><span>03</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats badge-stats" aria-label="Cover story key figures">
+        <div class="stat"><strong>Launched Sept 17</strong></div>
+        <div class="stat"><strong>Beta for Pro &amp; Max</strong></div>
+        <div class="stat"><strong>Shared memory + coordinator</strong></div>
+      </section>
+
+      <section class="brief" aria-labelledby="aiTrendSep20BriefLabel">
+        <h2 class="section-label" id="aiTrendSep20BriefLabel">Why it matters</h2>
+        <p>The agentic era is shifting from demos to crews and unit economics. Anthropic is orchestrating coding agents in parallel teams, Arc is generating whole on-chain apps from prompts, and xAI just slashed coding-agent task costs 80% — while Chinese labs move pricing from tokens to tasks. The counter-signal: GPU clouds are getting pricier (Nebius's second hike), and local AI hit a new ceiling with a desktop that runs a 300B-parameter model fully offline.</p>
+      </section>
+
+      <div class="stories-head">
+        <h2>The AI Trends board</h2>
+        <p>Six more developments worth your attention.</p>
+      </div>
+      <section class="story-list" aria-label="AI Trends secondary stories">
+        <article class="story">
+          <span class="story-num">02</span>
+          <h3>Grok 4.5 Cuts Coding-Agent Task Cost 80%: $2.49 vs $11.80 — the Pricing War Goes Per-Task</h3>
+          <p>xAI's Grok 4.5 is priced at roughly $2/$6 per million input/output tokens, but the headline number is task-level: a completed coding-agent task inside Grok Build reportedly runs about $2.49 versus $11.80 for the same class of work on Claude Fable 5 — an 80% cut a CTO can put in a spreadsheet. Cached input tokens are discounted 85% to $0.30 per million, explicitly targeting repeat-context agentic workloads. The tradeoff is real: Grok 4.5 shows a higher hallucination rate than frontier rivals, a caveat that bites hardest in autonomous, low-oversight agent workflows. xAI is betting most production coding doesn't need the absolute quality ceiling — it needs the price floor.</p>
+          <a class="source-link" href="https://tech-insider.org/grok-4-5-launch-coding-ai-agents-openai-anthropic-2026/" target="_blank" rel="noopener noreferrer">Source: Tech Insider</a>
+        </article>
+        <article class="story">
+          <span class="story-num">03</span>
+          <h3>Arc Studio: Describe an App, Get On-Chain Code — Plus a Sub-Agent for Claude Code, Codex, and Cursor</h3>
+          <p>Arc launched Arc Studio on September 18, an AI development agent that turns natural-language requirements into full-stack on-chain applications — frontend, backend, and smart contracts — in minutes, with code review, testing, and export built in. It natively understands the Arc and Circle stacks (CCTP, Circle Contracts, Gateway, Wallets), integrates protocols like Aave, Morpho, and Uniswap, and is tested across nine chains including Ethereum, Arbitrum, Base, Avalanche, and Polygon. Notably, Arc Studio can slot into Claude Code, Codex, and Cursor as a sub-agent. The guardrails are explicit: AI-generated code still needs independent review, and the tool will not deploy, sign, fund, or submit mainnet transactions on a user's behalf.</p>
+          <a class="source-link" href="https://www.panews.io/articles/01a0b30c-0279-7619-b063-0a481f942c45" target="_blank" rel="noopener noreferrer">Source: PANews</a>
+        </article>
+        <article class="story">
+          <span class="story-num">04</span>
+          <h3>GMKtec EVO-X5 Pro: the First Desktop That Runs a 300B-Parameter LLM Fully Offline</h3>
+          <p>GMKtec unveiled the EVO-X5 Pro at IFA 2026 in Berlin on September 19, a desktop AI supercomputer powered by AMD's Ryzen AI Max+ PRO 495 that it calls the world's first desktop system able to run a 300-billion-parameter LLM entirely offline. It picked up two "Best of IFA 2026" honors (including PCWELT) and launches September 28. The milestone matters for local AI: enterprise-grade models with full data privacy at the desktop move serious inference off the cloud bill entirely — the extreme end of the "predictable workloads migrate to owned hardware" trend.</p>
+          <a class="source-link" href="https://www.thewesterntribune.com/news/story/612474/gmktec-unveils-evox5-pro-at-ifa-2026-with-amd-ryzenai-max-processors-introducing-the-worlds-first-desktop-ai-supercomputer-capable-of-running-a-300bparameter-llm-fully-offline.html" target="_blank" rel="noopener noreferrer">Source: The Western Tribune</a>
+        </article>
+        <article class="story">
+          <span class="story-num">05</span>
+          <h3>The Great Divergence: Nebius Hikes GPU Cloud Prices Again as China Shifts to Per-Task Pricing</h3>
+          <p>Nebius announced its second price increase for Nvidia GPU and compute instances on September 20, citing a "rapid surge" in AI training and inference demand — observers estimate another ~10–15% on A100/H100 and CPU-only nodes, pushing its pricing above many Western providers. The same week, a Bank of America report described China's LLM market moving from blanket token cuts to tiered, task-based pricing: "basic inference is increasingly commoditized, while frontier capabilities remain differentiated," with cost per completed task — not per token — as the key metric. Put together: raw compute keeps getting pricier while intelligence per dollar keeps falling, and the industry is inventing new units (tasks, not tokens) to measure it.</p>
+          <div class="llm-story-meta">
+            <a class="source-link" href="https://uxc.news/p/nebius-hikes-ai-cloud-prices-again-as-demand-for-computing-power-soars" target="_blank" rel="noopener noreferrer">Sources: UXC News</a>
+            <a class="source-link" href="https://letsdatascience.com/news/chinese-ai-providers-shift-toward-task-based-pricing-68ad46f3" target="_blank" rel="noopener noreferrer">Let's Data Science</a>
+          </div>
+        </article>
+        <article class="story">
+          <span class="story-num">06</span>
+          <h3>OpenAI Launches Astra for Law: GPT-6 Astra Plus a U.S. Case-Law Index, Built With Five Elite Firms</h3>
+          <p>OpenAI released a legal-industry version of GPT-6 Astra on September 17, pairing the model with an index of U.S. case law, statutes, and regulations plus specialized instructions for legal analysis and writing. Legal AI vendors Harvey and Legora can build on it, with integrations into Relativity, Clio, Intapp, and Thomson Reuters — and OpenAI says it developed the product with Sullivan &amp; Cromwell, Ropes &amp; Gray, Cooley, Latham &amp; Watkins, and Wachtell Lipton. Access starts with selected firms under confidentiality protections. This is the vertical playbook accelerating: Google expanded Gemini Enterprise for legal last month, Anthropic has been shipping lawyer tooling since January, and Thomson Reuters launched its own legal model last month — the legal market is now a multi-lab battleground.</p>
+          <a class="source-link" href="https://www.reuters.com/legal/litigation/openai-launches-legal-focused-ai-platform-escalating-race-law-firm-users-2026-09-17/" target="_blank" rel="noopener noreferrer">Source: Reuters</a>
+        </article>
+        <article class="story">
+          <span class="story-num">07</span>
+          <h3>Open-Weights Wave: DeepSeek V4.1-Flash Goes Lean, MiniCPM5-2B Tops Sub-4B Leaderboards</h3>
+          <p>DeepSeek's V4.1-Flash (September 10/15) is a 552-billion-parameter mixture-of-experts model with only 8–16B active parameters per token, a million-token context, training on 45 trillion multimodal tokens, and up to 4x memory cuts through architectural efficiency — released under an MIT license. China's ModelBest shipped MiniCPM5-2B on September 9, a fully open 2B-parameter model (weights, datasets, training recipes, RL infrastructure) that natively does tool calling, deep search, code generation, and multi-step reasoning — ranking No. 1 on Artificial Analysis's Intelligence Index among open models under 4B. The pattern holds: the open ecosystem's edge is intelligence density, not parameter count.</p>
+          <div class="llm-story-meta">
+            <a class="source-link" href="https://www.webpronews.com/open-models-surge-reshapes-ai-power-balance-as-new-releases-flood-the-field/" target="_blank" rel="noopener noreferrer">Sources: WebProNews</a>
+            <a class="source-link" href="https://tools.prnewswire.com:443/en-us/live/11032/release/20260909CN43491?filter=11032" target="_blank" rel="noopener noreferrer">PR Newswire</a>
+          </div>
+        </article>
+      </section>
       <footer class="byline-footer">by Your Tech Sommelier</footer>
     </article>
 
@@ -1403,7 +1490,7 @@
     }
 
     let currentIssue = 'weekly-2026-09-18';
-    let currentAiIssue = '2026-09-18';
+    let currentAiIssue = '2026-09-20';
     let currentSection = 'hardware';
 
     document.querySelectorAll('#navHardware .edition-btn').forEach(btn => {
@@ -1424,12 +1511,17 @@
 
     function renderAiIssue(key) {
       currentAiIssue = key;
+      const isSep20 = key === '2026-09-20';
       const isSep18 = key === '2026-09-18';
       const isSep17 = key === '2026-09-17';
+      $('#aiTrendDailySep20').hidden = !isSep20;
       $('#aiTrendDailySep18').hidden = !isSep18;
       $('#aiTrendDailySep17').hidden = !isSep17;
-      $('#llmArticle').hidden = isSep18 || isSep17;
-      if (isSep18) {
+      $('#llmArticle').hidden = isSep20 || isSep18 || isSep17;
+      if (isSep20) {
+        $('#issueDate').textContent = 'Sunday, September 20, 2026';
+        $('#storyCount').textContent = '7 stories';
+      } else if (isSep18) {
         $('#issueDate').textContent = 'Friday, September 18, 2026';
         $('#storyCount').textContent = '7 stories';
       } else if (isSep17) {
@@ -1455,6 +1547,7 @@
         btn.setAttribute('aria-pressed', String(btn.dataset.section === section));
       });
       $('#issue').hidden = !isHardware;
+      $('#aiTrendDailySep20').hidden = true;
       $('#aiTrendDailySep18').hidden = true;
       $('#aiTrendDailySep17').hidden = true;
       $('#llmArticle').hidden = true;
