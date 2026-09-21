@@ -687,6 +687,7 @@
         <div class="edition-group">
           <span class="edition-label">Daily</span>
           <div class="archive-controls" role="group" aria-label="Choose a daily edition">
+            <button class="edition-btn" type="button" data-issue="2026-09-21" aria-pressed="true">Sep 21</button>
             <button class="edition-btn" type="button" data-issue="2026-09-18" aria-pressed="false">Sep 18</button>
             <button class="edition-btn" type="button" data-issue="2026-09-17" aria-pressed="false">Sep 17</button>
             <button class="edition-btn" type="button" data-issue="2026-09-16" aria-pressed="false">Sep 16</button>
@@ -717,7 +718,59 @@
       <p>All information in this blog comes from publicly available sources and has not been independently verified. Please check the linked original sources before relying on it.</p>
     </aside>
 
-    <article id="issue" aria-live="polite">
+    <div id="hardwareDailySep21" aria-live="polite">
+      <section id="ai-hardware-daily-2026-09-21" style="font-family:'Helvetica Neue',Arial,Georgia,serif; background:#f8fafc; color:#334155; padding:40px 24px; border-radius:12px; max-width:900px; margin:0 auto;">
+  <header style="text-align:center; margin-bottom:36px;">
+    <p style="letter-spacing:4px; font-size:12px; color:#64748b; text-transform:uppercase; margin:0 0 10px;">AI Hardware &nbsp;·&nbsp; Daily Edition</p>
+    <h1 style="font-size:44px; color:#0f172a; margin:0 0 8px; line-height:1.15;">Silicon's Week of Reckoning</h1>
+    <p style="font-size:16px; color:#64748b; margin:0;">Monday, September 21, 2026 — the 24 hours in AI hardware</p>
+  </header>
+  <p style="background:#e2e8f0; border-left:4px solid #0f172a; padding:16px 20px; font-size:16px; line-height:1.6; color:#0f172a; border-radius:0 8px 8px 0; margin:0 0 36px;"><strong>Why it matters:</strong> Today's hardware story is about <strong>scale and sovereignty</strong>. Huawei is betting that thousands of chips per cluster can compensate for what export controls took away — while Washington moves to tighten those same controls further. Beneath the geopolitics, the plumbing of the AI buildout — 200G optical interconnects, SiGe amplifiers — is having its moment as the industry gathers at ECOC 2026.</p>
+  <article style="background:#ffffff; border-radius:12px; padding:40px 36px; margin-bottom:28px; box-shadow:0 4px 18px rgba(15,23,42,0.08);">
+    <p style="letter-spacing:3px; font-size:12px; color:#b45309; text-transform:uppercase; margin:0 0 12px;">✦ Cover Story</p>
+    <h2 style="font-size:34px; color:#0f172a; margin:0 0 16px; line-height:1.2;">Huawei Pulls Its AI Chips Back Home — and Unveils a 15,488-Card SuperPod</h2>
+    <p style="font-size:17px; line-height:1.75; color:#334155; margin:0 0 14px;">Huawei's rotating chairman Eric Xu has ruled out a global rollout of the company's next-generation Ascend AI accelerators: domestic Chinese demand exceeds SMIC manufacturing capacity, so the chips stay home. Speaking on the sidelines of Huawei Connect (per Reuters), Xu said Huawei will sell only "limited volumes to a few countries where demand is particularly strong." At the same conference, Huawei advanced its <strong>Ascend 960DT</strong> to a <strong>Q1 2027</strong> launch, packing up to <strong>288&nbsp;GB of HiZQ memory</strong> and roughly twice the performance and memory of the 950-series launched earlier this year — positioned as a homegrown answer to Nvidia's B300-class hardware in the region.</p>
+    <p style="font-size:17px; line-height:1.75; color:#334155; margin:0 0 20px;">Huawei's answer to lagging per-chip compute is scale: the <strong>Atlas 950 SuperPoD</strong> with <strong>8,192 Ascend cards</strong> and the <strong>Atlas 960 SuperPoD</strong> with up to <strong>15,488 cards</strong>, the latter projected at <strong>30 FP8 EFLOPS</strong> and <strong>120 FP4 EFLOPS</strong> (Tom's Hardware estimate — treat with caution). Near-package optics (NPO) let clusters grow past what copper interconnect can reach, and a Q4 2027 <strong>Atlas 960 SuperCluster</strong> is planned with more than a million NPUs at <strong>4 ZFLOPS</strong> FP4. The message: China can't out-fab the West yet, so it will out-scale it.</p>
+    <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:20px;"><span style="background:#0f172a; color:#fff; font-size:14px; font-weight:bold; padding:8px 16px; border-radius:999px;">15,488 cards / SuperPoD</span><span style="background:#1e3a8a; color:#fff; font-size:14px; font-weight:bold; padding:8px 16px; border-radius:999px;">120 FP4 EFLOPS</span><span style="background:#0c4a6e; color:#fff; font-size:14px; font-weight:bold; padding:8px 16px; border-radius:999px;">288 GB HiZQ memory</span><span style="background:#713f12; color:#fff; font-size:14px; font-weight:bold; padding:8px 16px; border-radius:999px;">Ascend 960DT → Q1 2027</span></div>
+    <p style="font-size:13px; color:#64748b; margin:0;">Sources: <a href="https://www.alextech.ai/en/news/huawei-scraps-global-ai-chip-rollout-as-chinese-demand-exceeds-supply/" style="color:#1e40af;">AlexTech</a> · <a href="https://cxotoday.com/hardware/huawei-set-to-launch-its-premium-chip-in-q1-of-2027/" style="color:#1e40af;">CXOToday</a> · <a href="https://techstartups.com/2026/09/21/top-tech-news-today-september-21-2026-amazon-amd-apple-google-microsoft-nvidia-softbank-more/" style="color:#1e40af;">Tech Startups</a></p>
+  </article>
+  <div style="display:grid; gap:20px; margin-bottom:28px;">
+    <article style="background:#ffffff; border-radius:10px; padding:28px; box-shadow:0 2px 10px rgba(15,23,42,0.06);">
+      <p style="font-size:13px; letter-spacing:2px; color:#64748b; margin:0 0 8px; font-weight:bold;">02 — OPTICAL INTERCONNECT</p>
+      <h3 style="font-size:24px; color:#0f172a; margin:0 0 10px; line-height:1.3;">Semtech Joins the XPO Charge for 200G/lane AI Optics</h3>
+      <p style="font-size:15px; line-height:1.7; color:#334155; margin:0 0 12px;">Semtech announced membership in the <strong>XPO MSA</strong> as a technology partner, bringing its <strong>200G/lane modulator driver and TIA ICs</strong> (quad/octal TIAs at 750mm to 375mm channel pitch, plus MZM drivers) to support volume deployment of the new 12.8T high-density optical transceiver form factor for AI infrastructure. The company is demonstrating the portfolio at <strong>ECOC 2026 in Málaga, Sept. 21–23</strong>. Cignal AI's Scott Wilkinson puts the context: datacom optics demand expands from <strong>$9B in 2024 to ~$37B in 2026</strong> as AI operators shift to 200G/lane electrical.</p>
+      <p style="font-size:13px; color:#64748b; margin:0;">Source: <a href="https://www.morningstar.com/news/business-wire/20260920495629/semtech-advances-next-gen-ai-optical-interconnects-for-xpo" style="color:#1e40af;">Morningstar / Business Wire</a></p>
+    </article>
+    <article style="background:#ffffff; border-radius:10px; padding:28px; box-shadow:0 2px 10px rgba(15,23,42,0.06);">
+      <p style="font-size:13px; letter-spacing:2px; color:#64748b; margin:0 0 8px; font-weight:bold;">03 — NETWORKING SILICON</p>
+      <h3 style="font-size:24px; color:#0f172a; margin:0 0 10px; line-height:1.3;">Marvell's Two-Track Optics Bet: 2nm Demos and a Vermont SiGe Deal</h3>
+      <p style="font-size:15px; line-height:1.7; color:#334155; margin:0 0 12px;">Marvell is showing <strong>2nm optical chips</strong> at ECOC 2026 in Málaga, days after expanding a <strong>multi-year silicon germanium capacity deal</strong> with GlobalFoundries' Burlington, Vermont plant (Sept. 17) to feed its amplifiers and drivers for data-center optical links — covering pluggable, near-packaged, and co-packaged optics whichever design wins. The unglamorous amp/driver business is on or ahead of pace toward a <strong>$1B annual run rate</strong>, and data-center revenue rose <strong>46%</strong> to a record <strong>$2.74B</strong> last quarter. Shares rose 2.4% in premarket trading Monday.</p>
+      <p style="font-size:13px; color:#64748b; margin:0;">Source: <a href="https://www.thestreet.com/technology/marvell-ai-networking-power-efficiency-shift" style="color:#1e40af;">TheStreet</a></p>
+    </article>
+    <article style="background:#ffffff; border-radius:10px; padding:28px; box-shadow:0 2px 10px rgba(15,23,42,0.06);">
+      <p style="font-size:13px; letter-spacing:2px; color:#64748b; margin:0 0 8px; font-weight:bold;">04 — POLICY</p>
+      <h3 style="font-size:24px; color:#0f172a; margin:0 0 10px; line-height:1.3;">Congress Pushes to Curb AI Chip Exports to China; Nvidia Lobbies Back</h3>
+      <p style="font-size:15px; line-height:1.7; color:#334155; margin:0 0 12px;">The Senate is poised to pass a <strong>National Defense Authorization Act</strong> provision that would require <strong>tracking of exported AI chips</strong> and allow Congress to block advanced AI chip exports to foreign adversaries, per Politico reporting. Nvidia CEO <strong>Jensen Huang</strong> has been personally lobbying lawmakers to strip back restrictions — arguing the threat is greater if China must develop its own chips — though Nvidia says less than <strong>1%</strong> of its data-center revenue came from high-end China sales last quarter. Senate Commerce Chairman Ted Cruz called the line-drawing "a complicated judgment call."</p>
+      <p style="font-size:13px; color:#64748b; margin:0;">Source: <a href="https://dailycaller.com/2026/09/21/congress-artificial-intelligence-chips-china" style="color:#1e40af;">Daily Caller</a></p>
+    </article>
+    <article style="background:#ffffff; border-radius:10px; padding:28px; box-shadow:0 2px 10px rgba(15,23,42,0.06);">
+      <p style="font-size:13px; letter-spacing:2px; color:#64748b; margin:0 0 8px; font-weight:bold;">05 — EDGE &amp; OPEN HARDWARE</p>
+      <h3 style="font-size:24px; color:#0f172a; margin:0 0 10px; line-height:1.3;">Xiaomi Open-Sources Four Experimental AI Hardware Projects</h3>
+      <p style="font-size:15px; line-height:1.7; color:#334155; margin:0 0 12px;">Xiaomi's AI Hardware Innovation Team released source code and technical specs for four experimental prototypes: <strong>DayoTag</strong> (AI memory accessory for logging and recall), <strong>PetAgent</strong> (behavioral-AI desktop companion), <strong>Xiao Wai</strong> (voice-driven desktop robot), and <strong>YareLampGo</strong> (robotic-arm desk lamp with precision motor control). The move invites the maker community to build localized AI systems that could eventually interface with Web3/DePIN infrastructure — a notable open-hardware play from a major handset OEM.</p>
+      <p style="font-size:13px; color:#64748b; margin:0;">Source: <a href="https://cryptofox.news/news/xiaomi-ai-team-open-sources-four-hardware-projects-to-boost-innovation" style="color:#1e40af;">CryptoFox News</a></p>
+    </article>
+    <article style="background:#ffffff; border-radius:10px; padding:28px; box-shadow:0 2px 10px rgba(15,23,42,0.06);">
+      <p style="font-size:13px; letter-spacing:2px; color:#64748b; margin:0 0 8px; font-weight:bold;">06 — POWER INFRASTRUCTURE</p>
+      <h3 style="font-size:24px; color:#0f172a; margin:0 0 10px; line-height:1.3;">Data Centers Projected to Use 4× More Electricity by 2035</h3>
+      <p style="font-size:15px; line-height:1.7; color:#334155; margin:0 0 12px;">The fastest-growing line item in the AI hardware stack isn't silicon at all — it's power. Data-center electricity demand is expected to <strong>quadruple by 2035</strong>, a trajectory that turns every efficiency gain at the chip, rack, and interconnect level into a cost and capacity story. With liquid-cooled optical modules and 200G/lane optics targeting watts-per-bit, power-per-compute is becoming the defining spec of the next buildout cycle.</p>
+      <p style="font-size:13px; color:#64748b; margin:0;">Source: <a href="https://techcrunch.com/category/artificial-intelligence/?guccounter=1" style="color:#1e40af;">TechCrunch</a></p>
+    </article>
+  </div>
+  <footer style="text-align:center; padding:24px 0 8px; border-top:1px solid #e2e8f0; margin-top:12px;"><p style="font-style:italic; color:#94a3b8; font-size:15px; margin:0;">by Your Tech Sommelier</p></footer>
+</section>
+    </div>
+
+    <article id="issue" aria-live="polite" hidden>
       <section class="hero" aria-labelledby="heroTitle">
         <div class="hero-copy">
           <div>
@@ -1541,6 +1594,8 @@
       const item = issues[key];
       if (!item) return;
       currentIssue = key;
+      $('#hardwareDailySep21').hidden = true;
+      $('#issue').hidden = false;
       keepBlogTitle();
       $('#issueDate').textContent = item.date;
       $('#storyCount').textContent = `${item.stories.length + 1} stories`;
@@ -1590,12 +1645,29 @@
       window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     }
 
-    let currentIssue = 'weekly-2026-09-18';
+    let currentIssue = '2026-09-21';
     let currentAiIssue = '2026-09-21';
     let currentSection = 'hardware';
 
+    function renderHardwareIssue(key) {
+      currentIssue = key;
+      if (key !== '2026-09-21') {
+        renderIssue(key);
+        return;
+      }
+      keepBlogTitle();
+      $('#issue').hidden = true;
+      $('#hardwareDailySep21').hidden = false;
+      $('#issueDate').textContent = 'Monday, September 21, 2026';
+      $('#storyCount').textContent = '6 stories';
+      document.querySelectorAll('#navHardware .edition-btn').forEach(btn => {
+        btn.setAttribute('aria-pressed', String(btn.dataset.issue === key));
+      });
+      window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    }
+
     document.querySelectorAll('#navHardware .edition-btn').forEach(btn => {
-      btn.addEventListener('click', () => renderIssue(btn.dataset.issue));
+      btn.addEventListener('click', () => renderHardwareIssue(btn.dataset.issue));
     });
 
     document.querySelectorAll('.ai-edition-btn').forEach(btn => {
@@ -1652,7 +1724,8 @@
       document.querySelectorAll('.section-btn').forEach(btn => {
         btn.setAttribute('aria-pressed', String(btn.dataset.section === section));
       });
-      $('#issue').hidden = !isHardware;
+      $('#issue').hidden = true;
+      $('#hardwareDailySep21').hidden = true;
       $('#aiTrendDailySep21').hidden = true;
       $('#aiTrendDailySep20').hidden = true;
       $('#aiTrendDailySep18').hidden = true;
@@ -1663,11 +1736,11 @@
       if (isLlm) {
         renderAiIssue(currentAiIssue);
       } else {
-        renderIssue(currentIssue);
+        renderHardwareIssue(currentIssue);
       }
     }
 
-    renderIssue('weekly-2026-09-18');
+    renderHardwareIssue('2026-09-21');
   </script>
 </body>
 </html>
