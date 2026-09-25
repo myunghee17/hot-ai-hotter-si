@@ -705,10 +705,14 @@
         </div>
       </nav>
       <nav class="archive-navigation" id="navLlm" aria-label="AI Trends edition navigation" hidden>
+        <div class="edition-group weekly-group" aria-label="Choose an AI Trends weekly summary">
+          <span class="edition-label">Weekly</span>
+          <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="weekly-2026-09-25" aria-pressed="true">Sep 25</button>
+        </div>
         <div class="edition-group">
           <span class="edition-label">Daily</span>
           <div class="archive-controls" role="group" aria-label="Choose an AI Trends edition">
-            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-09-25" aria-pressed="true">Sep 25</button>
+            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-09-25" aria-pressed="false">Sep 25</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-09-24" aria-pressed="false">Sep 24</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-09-23" aria-pressed="false">Sep 23</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-09-22" aria-pressed="false">Sep 22</button>
@@ -1179,6 +1183,115 @@
       </div>
       <section class="story-list" id="storyList" aria-label="Secondary stories"></section>
       <footer class="byline-footer">by Your Tech Sommelier</footer>
+    </article>
+
+    <article id="aiTrendWeeklySep25" aria-live="polite" hidden style="margin-top:22px;">
+      <div style="background-color:#f8fafc;padding:24px 12px;">
+        <table width="100%" cellpadding="0" cellspacing="0" style="max-width:640px;margin:0 auto;">
+          <tr><td>
+
+            <!-- Masthead -->
+            <div style="text-align:center;padding:8px 0 16px;">
+              <div style="font-size:12px;letter-spacing:3px;color:#64748b;text-transform:uppercase;font-weight:600;">AI Trends Weekly</div>
+              <div style="font-size:14px;color:#64748b;margin-top:4px;">Friday, September 25, 2026</div>
+            </div>
+
+            <!-- Why it matters -->
+            <div style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:8px;padding:16px 18px;margin-bottom:20px;">
+              <div style="font-size:12px;letter-spacing:2px;color:#4f46e5;font-weight:700;text-transform:uppercase;margin-bottom:8px;">Why it matters</div>
+              <p style="font-size:15px;line-height:1.6;color:#334155;margin:0;">This week frontier capability got dramatically cheaper, fast. OpenAI and Anthropic shipped major model releases within 90 minutes of each other on Tuesday, both cutting inference costs roughly 40–50% while improving quality — while Xiaomi shipped the best open-weights model ever under the permissive MIT license. But the bill for the buildout is showing: Oracle's Stargate financing traded below par and a neocloud hiked inference prices, because megawatts — not silicon — are now the scarce input. And agents went mainstream in both directions: Microsoft made Copilot an always-on coworker, Amazon put them in sellers' hands, and Claude autonomously discovered a novel enzyme system — even as Z.ai's coding assistant silently uploaded developers' repos, a reminder of how much trust agents already demand.</p>
+            </div>
+
+            <!-- HERO STORY -->
+            <div style="background:#ffffff;border-radius:12px;padding:28px 24px;margin-bottom:20px;box-shadow:0 1px 3px rgba(15,23,42,0.08);border-top:6px solid #4f46e5;">
+              <div style="font-size:12px;letter-spacing:2px;color:#4f46e5;font-weight:700;text-transform:uppercase;margin-bottom:10px;">Cover Story</div>
+              <h1 style="font-size:30px;line-height:1.25;color:#0f172a;margin:0 0 14px;font-weight:800;">The Frontier Price War: OpenAI and Anthropic Ship Within Hours, Slashing Costs up to 50%</h1>
+              <div style="margin:0 0 14px;">
+                <span style="display:inline-block;background:#eef2ff;color:#4338ca;font-weight:700;font-size:13px;padding:6px 12px;border-radius:20px;margin:0 6px 6px 0;">~50% cheaper GPT-6 tiers</span>
+                <span style="display:inline-block;background:#eef2ff;color:#4338ca;font-weight:700;font-size:13px;padding:6px 12px;border-radius:20px;margin:0 6px 6px 0;">40% cheaper Claude Opus 5.5</span>
+                <span style="display:inline-block;background:#eef2ff;color:#4338ca;font-weight:700;font-size:13px;padding:6px 12px;border-radius:20px;margin:0 6px 6px 0;">~90 min apart</span>
+              </div>
+              <p style="font-size:16px;line-height:1.65;color:#334155;margin:0 0 12px;">On Tuesday, the two leading frontier labs shipped on top of each other: OpenAI released GPT-6 Sol and GPT-6 Luna, and Anthropic launched Claude Opus 5.5, the flagship of the new Claude 5.5 family. Both are built to deliver near-flagship quality at sharply lower cost — GPT-6 Sol (coding, reasoning) and Luna (fast, cheap, high-volume tasks) cost roughly half their GPT-5.6 predecessors, with Sol reportedly making ~50% fewer factual mistakes on OpenAI's internal factuality eval. Claude Opus 5.5 matches higher-tier Claude Fable 5.1 on most professional workloads while cutting operating cost 40% versus Opus 5 — and posted Anthropic's highest score to date on its automated behavioral alignment audit, evaluated with Frontier Design and METR.</p>
+              <p style="font-size:16px;line-height:1.65;color:#334155;margin:0 0 12px;">The significance: cheaper no longer means worse. GPT-6 brings a 1.05M-token context window with up to 128K output tokens; Luna runs at $0.10/$0.50 per million input/output tokens and Sol at $2/$10, against Astra's $10/$50 — and the middle "Terra" tier is gone, leaving Luna (cheap), Sol (capable), Astra (frontier). Anthropic demoed a 680k-line code migration in under 24 hours and a 97.5% success rate on web-app load-time optimization. The duopoly is racing to make frontier reliability cheap enough for everyday high-volume agentic deployment — the new battleground is cost per solved task, not just capability.</p>
+              <div style="font-size:13px;color:#64748b;margin-top:14px;">Sources: <a href="https://chats-llm.com/en/blog/claude-opus-5-5-release" style="color:#4f46e5;text-decoration:none;">Chats-LLM (Claude Opus 5.5)</a> · <a href="https://www.metirai.com/blog/openai-gpt-6-sol-luna-release-benchmarks-pricing-2026" style="color:#4f46e5;text-decoration:none;">Metirai (GPT-6 Sol/Luna)</a></div>
+            </div>
+
+            <!-- Secondary stories -->
+            <div style="background:#ffffff;border-radius:12px;padding:24px;margin-bottom:20px;box-shadow:0 1px 3px rgba(15,23,42,0.08);">
+
+              <div style="padding:16px 0;border-bottom:1px solid #e2e8f0;">
+                <div style="font-size:13px;font-weight:800;color:#4f46e5;letter-spacing:1px;">02</div>
+                <h2 style="font-size:20px;color:#0f172a;margin:6px 0 8px;font-weight:700;">Microsoft Turns Copilot Into an Always-On Agentic Coworker</h2>
+                <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 8px;">Microsoft rolled out a major Copilot upgrade on Friday: "Code," a natural-language tool for building apps and dashboards powered by GitHub Copilot tech (early access end of September), plus "Autopilot" — a revamp of June's "Scout" agent — as an always-on digital coworker with its own identity in the company directory and user-controlled permissions. Word, Excel and PowerPoint are now embedded directly in Copilot for co-authoring, and new cost-management tooling gives employees visibility into their AI usage spend. The identity-and-permissions model for agents and the spend-transparency features attack the two biggest blockers for enterprise agent rollout — governance and runaway AI cost — as Microsoft races ChatGPT and Claude for enterprise adoption.</p>
+                <div style="font-size:12px;color:#64748b;">Source: <a href="https://www.reuters.com/technology/microsoft-revamps-copilot-with-code-generation-agentic-ai-tools-2026-09-25/" style="color:#4f46e5;text-decoration:none;">Reuters</a></div>
+              </div>
+
+              <div style="padding:16px 0;border-bottom:1px solid #e2e8f0;">
+                <div style="font-size:13px;font-weight:800;color:#4f46e5;letter-spacing:1px;">03</div>
+                <h2 style="font-size:20px;color:#0f172a;margin:6px 0 8px;font-weight:700;">Xiaomi's MiMo-V2.6-Pro Is the New #1 Open-Weights Model — Under the MIT License</h2>
+                <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 8px;">Xiaomi announced the MiMo-V2.6 series on Tuesday, led by MiMo-V2.6-Pro, released open-weights under the MIT license on Hugging Face. It scores 46 on Artificial Analysis's Intelligence Index v4.3.2 — the highest of any open-weights model, ahead of Z.ai's GLM-5.3 (45) and Kimi K3 (44), and equal to SpaceXAI's proprietary Grok 4.7. The 1.02T-parameter sparse MoE (42B active per token, 384 routed experts) has a 1M-token context and omnimodal input at roughly a tenth of the cost of closed frontier equivalents; Xiaomi live-streamed the production RL run and is open-sourcing the technical report, training environments and RL code. A phone maker now ships the world's best open-weights model under the most permissive license — dramatically lowering the price of frontier-adjacent open intelligence.</p>
+                <div style="font-size:12px;color:#64748b;">Source: <a href="https://www.unite.ai/xiaomis-new-flagship-model-leads-open-weight-rankings-with-a-score-of-46/" style="color:#4f46e5;text-decoration:none;">Unite.AI</a></div>
+              </div>
+
+              <div style="padding:16px 0;border-bottom:1px solid #e2e8f0;">
+                <div style="font-size:13px;font-weight:800;color:#4f46e5;letter-spacing:1px;">04</div>
+                <h2 style="font-size:20px;color:#0f172a;margin:6px 0 8px;font-weight:700;">Stargate Debt Stress: Oracle Invokes Force Majeure as $18B of Loans Trade Below Par</h2>
+                <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 8px;">Oracle issued a force majeure notice to developer Blue Owl Capital on Thursday over the 2.45 GW Project Jupiter data center campus in Doña Ana County, New Mexico — part of the $500B Stargate buildout — seeking protection against payments if power-activation or construction delays push the 2028 opening. It follows the FT's report that ~$18B of related loans are quoted at 89–91¢ on the dollar as banks fail to offload the debt; Oracle closed down 3.5% at $139.52 and its credit default swaps hit a record high, with S&P rating it BBB- — one notch above junk — while it guides up to $95B in FY2027 capex. This is the first major AI-infrastructure financing to trade below par, and the first time debt-market stress is showing up before equity: the gas pipeline feeding the site's Bloom fuel cells was twice denied permits, and an air-quality permit is still pending.</p>
+                <div style="font-size:12px;color:#64748b;">Sources: <a href="https://www.reuters.com/business/finance/oracles-18-billion-data-center-debt-under-pressure-ft-reports-2026-09-18/" style="color:#4f46e5;text-decoration:none;">Reuters</a> · <a href="https://aistockwire.com/blog/oracle-orcl-force-majeure-project-jupiter-blue-owl-september-2026" style="color:#4f46e5;text-decoration:none;">AIStockWire</a></div>
+              </div>
+
+              <div style="padding:16px 0;border-bottom:1px solid #e2e8f0;">
+                <div style="font-size:13px;font-weight:800;color:#4f46e5;letter-spacing:1px;">05</div>
+                <h2 style="font-size:20px;color:#0f172a;margin:6px 0 8px;font-weight:700;">Claude Agents Autonomously Discover a CRISPR-Like Enzyme System</h2>
+                <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 8px;">Anthropic announced that a fleet of Claude agents, tasked with mining a DNA database for interesting reverse-transcriptase proteins, surfaced ~200,000 candidate sequences — and one agent spotted a tandem repeat array next to a reverse-transcriptase gene in bacteria-infecting viruses ("I can see by eye a tandem repeat array… that's a CRISPR-like repeat array?!"). The discovery, dubbed ART (Array-Associated Reverse Transcriptases), came from roughly 950 parallel agents running 21 hours on ~210M tokens. New Scientist calls it genuinely worth studying but comparable to the 1987 CRISPR observation, not the 2012 Nobel breakthrough — a flagship example of agentic AI doing autonomous scientific discovery, the next competitive front for the labs.</p>
+                <div style="font-size:12px;color:#64748b;">Source: <a href="https://www.newscientist.com/article/2590769-has-anthropics-claude-really-made-a-discovery-comparable-to-crispr/" style="color:#4f46e5;text-decoration:none;">New Scientist</a></div>
+              </div>
+
+              <div style="padding:16px 0;border-bottom:1px solid #e2e8f0;">
+                <div style="font-size:13px;font-weight:800;color:#4f46e5;letter-spacing:1px;">06</div>
+                <h2 style="font-size:20px;color:#0f172a;margin:6px 0 8px;font-weight:700;">Nebius Hikes Token Factory Prices 18.3% — Megawatts, Not Silicon, Are the Bottleneck</h2>
+                <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 8px;">Neocloud provider Nebius is raising pay-as-you-go inference prices on its Token Factory platform effective October 1: H100 $4.05→$4.70, H200 $4.70→$5.60, B200 $7.40→$8.70 and B300 $8.10→$9.70 per hour — an average 18.3% hike, defying the compute-deflation narrative. The company disclosed $20–25M annual contract value per MW on landmark deals and a $40–50M/MW "price opportunity" on short-term capacity, with production inference workloads tripling in Q2. The clearest real-world evidence yet that the binding constraint in AI infrastructure is now power availability: tokens-per-dollar of hardware keep improving, but customers pay for scarce megawatts.</p>
+                <div style="font-size:12px;color:#64748b;">Source: <a href="https://respectinvestment.com/investor-strategy/nebius-raised-inference-prices-18-3-not-cut-them/" style="color:#4f46e5;text-decoration:none;">Respect Investment</a></div>
+              </div>
+
+              <div style="padding:16px 0;border-bottom:1px solid #e2e8f0;">
+                <div style="font-size:13px;font-weight:800;color:#4f46e5;letter-spacing:1px;">07</div>
+                <h2 style="font-size:20px;color:#0f172a;margin:6px 0 8px;font-weight:700;">Amazon Puts Always-On Agentic AI in the Hands of Marketplace Sellers</h2>
+                <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 8px;">Amazon launched "workflows," an agentic AI service that runs continuously for third-party sellers — alerting when ratings suddenly decline, monitoring pricing on specific products. The Seller Assistant platform stores each seller's profile for personalized pricing, promotion and inventory recommendations, plugging into tools sellers already use (Amazon Quick and Anthropic's Claude); the service is free and optional. Proof that agent commerce is moving from demos into production e-commerce — a mainstream deployment of autonomous agents to millions of sellers, with sellers controlling how much personal data they share.</p>
+                <div style="font-size:12px;color:#64748b;">Source: <a href="https://www.reuters.com/business/retail-consumer/amazon-rolls-out-new-agentic-ai-third-party-sellers-2026-09-23/" style="color:#4f46e5;text-decoration:none;">Reuters</a></div>
+              </div>
+
+              <div style="padding:16px 0;border-bottom:1px solid #e2e8f0;">
+                <div style="font-size:13px;font-weight:800;color:#4f46e5;letter-spacing:1px;">08</div>
+                <h2 style="font-size:20px;color:#0f172a;margin:6px 0 8px;font-weight:700;">ARC-AGI-2: GPT-6 Astra Hits 95%, Clearing the Grand-Prize Threshold</h2>
+                <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 8px;">The September update of the ARC-AGI-2 leaderboard shows GPT-6 Astra leading at 95% — above the 85% grand-prize threshold on the hardest public reasoning benchmark (average human: 66%) — followed by GPT-5.6 Sol at 92.5% and Claude Opus 5 at 90.4% across 23 evaluated models. The top three sit within ~5 points on a benchmark designed to resist saturation: the frontier race has compressed, while the mid-tier trails meaningfully. One caveat: four major labs (Anthropic, Google, OpenAI, xAI) now self-report their scores here — but crossing 85% on grid-transformation fluid-intelligence tasks is a milestone the original ARC never reached.</p>
+                <div style="font-size:12px;color:#64748b;">Source: <a href="https://benchlm.ai/benchmarks/arc-agi-2" style="color:#4f46e5;text-decoration:none;">BenchLM</a></div>
+              </div>
+
+              <div style="padding:16px 0;border-bottom:1px solid #e2e8f0;">
+                <div style="font-size:13px;font-weight:800;color:#4f46e5;letter-spacing:1px;">09</div>
+                <h2 style="font-size:20px;color:#0f172a;margin:6px 0 8px;font-weight:700;">Alibaba's Qwen Image 2.1: Best 7B Open-Weights Image Model — With a License Catch</h2>
+                <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 8px;">Alibaba's Qwen team released Qwen Image 2.1 on Sunday, unifying text-to-image generation and image editing in one 7B DiT model: native 2K output, up to 10 reference images per edit, native transparency/RGBA and local-region editing — edging Nano Banana 2.0 60.28 to 59.82 on Qwen's own benchmark, with day-zero support in ComfyUI, Diffusers, SGLang and vLLM-Omni. The real story is the license: the weights ship under a new Qwen Research License that bans commercial use without a deal with Alibaba — a break from Apache 2.0 on every prior Qwen-Image release — sparking heated community debate over what "open" now means in the Qwen ecosystem.</p>
+                <div style="font-size:12px;color:#64748b;">Source: <a href="https://www.intelligentliving.co/qwen-image-2-1-7b-open-weights-beat/" style="color:#4f46e5;text-decoration:none;">Intelligent Living</a></div>
+              </div>
+
+              <div style="padding:16px 0;">
+                <div style="font-size:13px;font-weight:800;color:#4f46e5;letter-spacing:1px;">10</div>
+                <h2 style="font-size:20px;color:#0f172a;margin:6px 0 8px;font-weight:700;">Z.ai Disables ZCode Features After It Silently Uploaded Developers' Repos</h2>
+                <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 8px;">Chinese developers found that ZCode's "Codebase Indexing" feature — enabled by default — uploaded entire local Git repositories to Alibaba Cloud without consent. Z.ai apologized, patched the vulnerability and disabled the features; the uploaded data was encrypted with a Z.ai-held backend key, so users couldn't verify deletion. The rare public disclosure by a Chinese lab follows China's updated AI safety framework last week — and comes just after Z.ai became the first Chinese lab to explicitly delay a model release (GLM-5.3, two weeks) for safety review. A spotlight on coding assistants' most sensitive failure mode: privileged data access paired with opaque defaults.</p>
+                <div style="font-size:12px;color:#64748b;">Source: <a href="https://www.reuters.com/legal/litigation/chinas-zai-disables-ai-coding-assistant-features-after-security-issue-2026-09-21/" style="color:#4f46e5;text-decoration:none;">Reuters</a></div>
+              </div>
+
+            </div>
+
+            <!-- Footer -->
+            <div style="text-align:center;padding:16px 0 8px;">
+              <div style="font-size:15px;color:#94a3b8;font-style:italic;">by Your Tech Sommelier</div>
+            </div>
+
+          </td></tr>
+        </table>
+      </div>
     </article>
 
     <article id="aiTrendDailySep25" aria-live="polite" hidden style="margin-top:22px;">
@@ -2342,7 +2455,7 @@
     }
 
     let currentIssue = '2026-09-25';
-    let currentAiIssue = '2026-09-25';
+    let currentAiIssue = 'weekly-2026-09-25';
     let currentSection = 'hardware';
 
     function renderHardwareIssue(key) {
@@ -2389,6 +2502,7 @@
 
     function renderAiIssue(key) {
       currentAiIssue = key;
+      const isWeeklySep25 = key === 'weekly-2026-09-25';
       const isSep25 = key === '2026-09-25';
       const isSep24 = key === '2026-09-24';
       const isSep23 = key === '2026-09-23';
@@ -2397,6 +2511,7 @@
       const isSep20 = key === '2026-09-20';
       const isSep18 = key === '2026-09-18';
       const isSep17 = key === '2026-09-17';
+      $('#aiTrendWeeklySep25').hidden = !isWeeklySep25;
       $('#aiTrendDailySep25').hidden = !isSep25;
       $('#aiTrendDailySep24').hidden = !isSep24;
       $('#aiTrendDailySep23').hidden = !isSep23;
@@ -2405,8 +2520,11 @@
       $('#aiTrendDailySep20').hidden = !isSep20;
       $('#aiTrendDailySep18').hidden = !isSep18;
       $('#aiTrendDailySep17').hidden = !isSep17;
-      $('#llmArticle').hidden = isSep25 || isSep24 || isSep23 || isSep22 || isSep21 || isSep20 || isSep18 || isSep17;
-      if (isSep25) {
+      $('#llmArticle').hidden = isWeeklySep25 || isSep25 || isSep24 || isSep23 || isSep22 || isSep21 || isSep20 || isSep18 || isSep17;
+      if (isWeeklySep25) {
+        $('#issueDate').textContent = 'Week of September 25, 2026';
+        $('#storyCount').textContent = '10 stories';
+      } else if (isSep25) {
         $('#issueDate').textContent = 'Friday, September 25, 2026';
         $('#storyCount').textContent = '7 stories';
       } else if (isSep24) {
@@ -2455,6 +2573,7 @@
       $('#hardwareDailySep23').hidden = true;
       $('#hardwareDailySep22').hidden = true;
       $('#hardwareDailySep21').hidden = true;
+      $('#aiTrendWeeklySep25').hidden = true;
       $('#aiTrendDailySep25').hidden = true;
       $('#aiTrendDailySep24').hidden = true;
       $('#aiTrendDailySep23').hidden = true;
