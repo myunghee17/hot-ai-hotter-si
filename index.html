@@ -675,7 +675,7 @@
     <div class="issue-bar" aria-label="Section and edition navigation">
       <div class="issue-meta">
         <span class="signal" id="signalName">AI Trends</span>
-        <span id="issueDate">Saturday, September 26, 2026</span>
+        <span id="issueDate">Sunday, September 27, 2026</span>
         <span id="storyCount">6 stories</span>
       </div>
       <div class="section-switcher" role="group" aria-label="Choose a section">
@@ -688,7 +688,8 @@
         <div class="edition-group">
           <span class="edition-label">Daily</span>
           <div class="archive-controls" role="group" aria-label="Choose a daily edition">
-            <button class="edition-btn" type="button" data-issue="2026-09-26" aria-pressed="true">Sep 26</button>
+            <button class="edition-btn" type="button" data-issue="2026-09-27" aria-pressed="true">Sep 27</button>
+            <button class="edition-btn" type="button" data-issue="2026-09-26" aria-pressed="false">Sep 26</button>
             <button class="edition-btn" type="button" data-issue="2026-09-25" aria-pressed="false">Sep 25</button>
             <button class="edition-btn" type="button" data-issue="2026-09-24" aria-pressed="false">Sep 24</button>
             <button class="edition-btn" type="button" data-issue="2026-09-23" aria-pressed="false">Sep 23</button>
@@ -713,7 +714,8 @@
         <div class="edition-group">
           <span class="edition-label">Daily</span>
           <div class="archive-controls" role="group" aria-label="Choose an AI Trends edition">
-            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-09-26" aria-pressed="true">Sep 26</button>
+            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-09-27" aria-pressed="true">Sep 27</button>
+            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-09-26" aria-pressed="false">Sep 26</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-09-25" aria-pressed="false">Sep 25</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-09-24" aria-pressed="false">Sep 24</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-09-23" aria-pressed="false">Sep 23</button>
@@ -733,7 +735,104 @@
       <p>All information in this blog comes from publicly available sources and has not been independently verified. Please check the linked original sources before relying on it.</p>
     </aside>
 
-    <div id="hardwareDailySep26" aria-live="polite">
+    <div id="hardwareDailySep27" aria-live="polite">
+<section id="ai-hardware-daily-2026-09-27" style="font-family:'Helvetica Neue',Arial,Georgia,serif; background:#f8fafc; color:#334155; padding:40px 24px; border-radius:12px; max-width:900px; margin:0 auto;">
+  <header style="text-align:center; margin-bottom:36px;">
+    <p style="letter-spacing:4px; font-size:12px; color:#64748b; text-transform:uppercase; margin:0 0 10px;">AI Hardware &nbsp;·&nbsp; Daily Edition</p>
+    <h1 style="font-size:44px; color:#0f172a; margin:0 0 8px; line-height:1.15;">The Bill Comes Due Around the GPU</h1>
+    <p style="font-size:16px; color:#64748b; margin:0;">Sunday, September 27, 2026 — the 24 hours in AI hardware</p>
+  </header>
+
+  <p style="background:#e2e8f0; border-left:4px solid #0f172a; padding:16px 20px; font-size:16px; line-height:1.6; color:#0f172a; border-radius:0 8px 8px 0; margin:0 0 36px;">
+    <strong>Why it matters:</strong> Sunday's news says the race is shifting from raw GPU throughput to the economics around it: Anthropic is buying CPU-based inference at cloud scale, Nscale is raising billions to finance the buildout, and the power industry is converging on 800-volt DC delivery. Silicon still advances — glass substrates are on the table — but cost, power, and financing are now the real speed limits on AI infrastructure.
+  </p>
+
+  <article style="background:#ffffff; border-radius:12px; padding:40px 36px; margin-bottom:28px; box-shadow:0 4px 18px rgba(15,23,42,0.08);">
+    <p style="letter-spacing:3px; font-size:12px; color:#b45309; text-transform:uppercase; margin:0 0 12px;">✦ Cover Story</p>
+    <h2 style="font-size:34px; color:#0f172a; margin:0 0 16px; line-height:1.2;">Akamai Lands $11.6 Billion Anthropic Deal — on CPUs, Not NVIDIA GPUs</h2>
+    <div style="margin:0 0 20px;">
+      <span style="display:inline-block; background:#0f172a; color:#ffffff; font-size:13px; font-weight:bold; padding:6px 14px; border-radius:999px; margin:0 8px 8px 0;">$11.6B · 7-year term</span>
+      <span style="display:inline-block; background:#e0f2fe; color:#0c4a6e; font-size:13px; font-weight:bold; padding:6px 14px; border-radius:999px; margin:0 8px 8px 0;">Expandable to ~$20B</span>
+      <span style="display:inline-block; background:#fef3c7; color:#92400e; font-size:13px; font-weight:bold; padding:6px 14px; border-radius:999px; margin:0 8px 8px 0;">Up to 5% equity warrant</span>
+    </div>
+    <p style="font-size:17px; line-height:1.75; color:#334155; margin:0 0 14px;">
+      <strong>Akamai</strong> and <strong>Anthropic</strong> announced late Thursday (September 25) an <strong>$11.6 billion, seven-year agreement</strong> for cloud computing infrastructure — with an option for an additional <strong>$9 billion</strong> that would push the total to roughly <strong>$20 billion</strong>. In a twist on the usual pattern, the deal grants Anthropic a warrant for up to <strong>5% of Akamai's stock</strong>, the first time Akamai has attached a warrant to a cloud contract, vesting only as Anthropic's payments cross set thresholds.
+    </p>
+    <p style="font-size:17px; line-height:1.75; color:#334155; margin:0 0 14px;">
+      The hardware headline: Akamai will deploy <strong>CPUs — not NVIDIA GPUs</strong> — for Anthropic. It is unclear whether those are AMD EPYC or Intel Xeon parts, but Raymond James analyst Frank Louthan's read is that CPUs are cheaper to acquire, cheaper to deploy, and more power-efficient, driving higher margins. Analysts expect the workload to be <strong>AI inference for business workloads</strong>, not Claude model training — another sign the industry's center of gravity keeps moving toward serving. Akamai is pre-buying components including memory (adding ~$1.7 billion to its 2026 capex) and has lined up <strong>Lenovo</strong> for hardware and <strong>Jabil</strong> for contract manufacturing. The company pegs the buildout cost at about <strong>$5.5 billion</strong>.
+    </p>
+    <p style="font-size:14px; line-height:1.6; color:#64748b; margin:0;">
+      Source: <a href="https://www.investors.com/news/technology/akamai-stock-akam-surges-anthropic-artificial-intelligence-computing/" style="color:#0f172a;">Investor's Business Daily</a> · Warrant details via <a href="https://pondero.ai/news/2026-09-27-akamai-anthropic-stock-warrant-cloud-deal/" style="color:#0f172a;">Pondero (Akamai press release &amp; SEC 8-K, Sept 25)</a>
+    </p>
+  </article>
+
+  <article style="background:#ffffff; border-radius:12px; padding:28px 32px; margin-bottom:20px; box-shadow:0 2px 10px rgba(15,23,42,0.06);">
+    <p style="letter-spacing:3px; font-size:11px; color:#94a3b8; text-transform:uppercase; margin:0 0 10px;">02 — Funding</p>
+    <h3 style="font-size:22px; color:#0f172a; margin:0 0 10px; line-height:1.3;">Nscale Raises $3.36 Billion in Pre-IPO Convertible Notes, With NVIDIA in the Cap Table</h3>
+    <p style="font-size:15px; line-height:1.7; color:#334155; margin:0 0 10px;">
+      The AI infrastructure company <strong>Nscale</strong> has raised <strong>$3.36 billion</strong> through pre-IPO convertible loan notes, led by <strong>Third Point</strong> with participation from <strong>NVIDIA, Apollo-managed funds, Citadel, Hudson Bay Capital, and the Abu Dhabi Investment Council</strong>. An initial <strong>$2.36 billion</strong> tranche lands at closing; a separate <strong>$1 billion NVIDIA commitment</strong> is expected to fund in mid-November 2026 — worth counting only when it arrives. The notes convert into equity at Nscale's planned IPO, and the capital funds its vertically integrated platform from power generation and liquid-cooled data centers to GPU clusters.
+    </p>
+    <p style="font-size:15px; line-height:1.7; color:#334155; margin:0 0 10px;">
+      The deal arrived just days after Nscale's New York IPO filing — and alongside a partnership with <strong>Figure</strong> to deploy up to <strong>100,000 NVIDIA Vera Rubin GPUs</strong> for humanoid robotics compute. Note the execution risk: Nscale has five active data centers with the rest of its portfolio still under development, so announced contracted values describe pipeline, not energized infrastructure.
+    </p>
+    <p style="font-size:13px; color:#64748b; margin:0;">Source: <a href="https://bitcoinversus.tech/2026/09/27/nscale-raises-3-36-billion-for-ai-infrastructure-push/" style="color:#0f172a;">BitcoinVersus.tech (Sept 27)</a></p>
+  </article>
+
+  <article style="background:#ffffff; border-radius:12px; padding:28px 32px; margin-bottom:20px; box-shadow:0 2px 10px rgba(15,23,42,0.06);">
+    <p style="letter-spacing:3px; font-size:11px; color:#94a3b8; text-transform:uppercase; margin:0 0 10px;">03 — Packaging · <em>Unconfirmed</em></p>
+    <h3 style="font-size:22px; color:#0f172a; margin:0 0 10px; line-height:1.3;">Nvidia Explores Glass Substrates With SCHMID — AMD and Intel Reportedly Circling Too</h3>
+    <p style="font-size:15px; line-height:1.7; color:#334155; margin:0 0 10px;">
+      According to reporting from <strong>Seeking Alpha on September 25</strong>, <strong>NVIDIA is working with German equipment maker SCHMID</strong> and other partners to evaluate <strong>glass substrates</strong> for AI chips — a route to packaging more high-bandwidth memory with processors and improving data-processing performance. The same report says <strong>AMD and Intel are also considering</strong> glass substrates for processors.
+    </p>
+    <p style="font-size:15px; line-height:1.7; color:#334155; margin:0 0 10px;">
+      Treat this as rumor until confirmed: the reports provide <strong>no timetable, production volume, chip program, or commercial terms</strong>, and none of the chipmakers has announced it. Still, the market noticed — SCHMID shares rose nearly <strong>20% in Friday trading</strong> on the coverage. SCHMID's QuantumLine and plasma equipment are positioned for high-yield glass-core substrate production, and the company has been telegraphing this pivot since its September 2025 equipment expansion.
+    </p>
+    <p style="font-size:13px; color:#64748b; margin:0;">Source: <a href="https://letsdatascience.com/news/nvidia-explores-glass-substrates-for-ai-chips-7618f183" style="color:#0f172a;">Let's Data Science / GuruFocus / Seeking Alpha (Sept 25)</a></p>
+  </article>
+
+  <article style="background:#ffffff; border-radius:12px; padding:28px 32px; margin-bottom:20px; box-shadow:0 2px 10px rgba(15,23,42,0.06);">
+    <p style="letter-spacing:3px; font-size:11px; color:#94a3b8; text-transform:uppercase; margin:0 0 10px;">04 — Power Infrastructure</p>
+    <h3 style="font-size:22px; color:#0f172a; margin:0 0 10px; line-height:1.3;">The 800-Volt Race: Huawei Unveils Grid-Interactive AIDC as Enphase Ships 800 VDC Power Modules</h3>
+    <p style="font-size:15px; line-height:1.7; color:#334155; margin:0 0 10px;">
+      <strong>Huawei Digital Power</strong> unveiled <strong>Grid-Interactive AIDC 1.0</strong> at HUAWEI CONNECT 2026 in Shanghai — an architecture that makes AI data centers active participants in the power system rather than rigid loads. The centerpiece is an <strong>800 VDC-ready power chain</strong>: the Hengshan DC UPS supports 270 V / 400 V / <strong>800 V DC</strong> on software-defined hardware, SmartLi 5.0 batteries are built to evolve toward 800 V HVDC, and the Taishan UPS hits <strong>1,280 kVA per cabinet at up to 98% dual-conversion efficiency</strong>. PowerPOD 5.0 cuts footprint 40% and lead time from seven days to three. Layered storage — grid-friendly UPS, intelligent lithium batteries, and the LUNA2000 grid-forming energy storage system — responds to AI workload swings from microseconds to hours.
+    </p>
+    <p style="font-size:15px; line-height:1.7; color:#334155; margin:0 0 10px;">
+      On the U.S. side, <strong>Enphase</strong> is building <strong>800 VDC AI power modules</strong> in Texas around a custom <strong>22 nm "Kestrel" control ASIC</strong> that coordinates switching, sensing, and protection across distributed modules, with fiber-optic control across the isolation boundary. The strategy mirrors Enphase's solar playbook: the modules share manufacturing commonality with its IQ Microinverters (89.4 million shipped) to ride high-volume production. Full-system demonstrations are slated for <strong>November 2026</strong>, with customer pilots in 2027. And Huawei is even proposing <strong>"tokens per watt"</strong> as an operating metric, tying energy directly to AI output.
+    </p>
+    <p style="font-size:13px; color:#64748b; margin:0;">Sources: <a href="https://bitcoinversus.tech/2026/09/27/huawei-grid-interactive-ai-data-centers-800-vdc/" style="color:#0f172a;">BitcoinVersus.tech — Huawei (Sept 27)</a> · <a href="https://bitcoinversus.tech/2026/09/27/enphase-800-vdc-ai-power-modules-texas/" style="color:#0f172a;">Enphase (Sept 27)</a></p>
+  </article>
+
+  <article style="background:#ffffff; border-radius:12px; padding:28px 32px; margin-bottom:20px; box-shadow:0 2px 10px rgba(15,23,42,0.06);">
+    <p style="letter-spacing:3px; font-size:11px; color:#94a3b8; text-transform:uppercase; margin:0 0 10px;">05 — Market</p>
+    <h3 style="font-size:22px; color:#0f172a; margin:0 0 10px; line-height:1.3;">Data-Center AI Chip Market Seen at $860 Billion by 2030</h3>
+    <p style="font-size:15px; line-height:1.7; color:#334155; margin:0 0 10px;">
+      South Korea's <strong>Export-Import Bank research institute</strong> projects the data-center AI semiconductor market will grow from <strong>$124 billion in 2024 to $860 billion by 2030</strong>, a <strong>38% compound annual growth rate</strong>, as AI infrastructure investment continues — covered by Aju Press today. The concentration is stark: <strong>NVIDIA held 78.2% in 2025</strong>, followed by Google (4.7%), AMD (4.1%), Intel (3.7%), and Huawei (2.6%).
+    </p>
+    <p style="font-size:15px; line-height:1.7; color:#334155; margin:0 0 10px;">
+      The report flags a structural shift: demand is moving from training toward <strong>inference</strong>, and power-hungry GPUs may yield share to <strong>NPUs</strong> optimized for low cost and low power — an opening Korean designers like <strong>FuriosaAI</strong> (mass-producing its second-generation RNGD chip) and <strong>Rebellions</strong> (REBEL 100 launching in H2) are chasing. Read the numbers as a state-bank outlook, not an industry consensus — but the inference-shift thesis now shows up in nearly every data point this week.
+    </p>
+    <p style="font-size:13px; color:#64748b; margin:0;">Source: <a href="https://www.ajupress.com/view/20260927093754537" style="color:#0f172a;">Aju Press (Sept 27)</a></p>
+  </article>
+
+  <article style="background:#ffffff; border-radius:12px; padding:28px 32px; margin-bottom:20px; box-shadow:0 2px 10px rgba(15,23,42,0.06);">
+    <p style="letter-spacing:3px; font-size:11px; color:#94a3b8; text-transform:uppercase; margin:0 0 10px;">06 — Startups</p>
+    <h3 style="font-size:22px; color:#0f172a; margin:0 0 10px; line-height:1.3;">DensityAI Nears $10 Billion Valuation With AWS Deal in Hand</h3>
+    <p style="font-size:15px; line-height:1.7; color:#334155; margin:0 0 10px;">
+      <strong>DensityAI</strong>, the AI chip venture founded in 2025 by former Tesla Dojo chief <strong>Ganesh Venkataramanan</strong> (who brought roughly 20 Dojo engineers with him), is closing a round that values it near <strong>$10 billion</strong> — led by <strong>Andreessen Horowitz</strong>, with hundreds of millions in fresh capital. The crown jewel isn't the money: it's a <strong>conditional procurement agreement with AWS</strong>, committing Amazon to buy DensityAI's custom chips <em>if</em> they hit predefined performance benchmarks.
+    </p>
+    <p style="font-size:15px; line-height:1.7; color:#334155; margin:0 0 10px;">
+      The pitch is a full-stack one — chips, hardware, and software for data centers, targeting automotive, robotics, and broader AI. It slots neatly into this week's pattern: cloud giants hedging NVIDIA dependence with alternative silicon, and investors paying startup premiums for picks and shovels. The "conditional" matters — the AWS deal is a benchmark contract, not a purchase order.
+    </p>
+    <p style="font-size:13px; color:#64748b; margin:0;">Source: <a href="https://www.tradingview.com/news/cryptobriefing:f0dbf098f094b:0-densityai-nears-10b-valuation-with-hundreds-of-millions-in-funding-and-aws-deal/" style="color:#0f172a;">TradingView / CryptoBriefing (Sept 25)</a></p>
+  </article>
+
+  <footer style="text-align:center; margin-top:36px; padding-top:24px; border-top:1px solid #e2e8f0;">
+    <p style="font-style:italic; color:#94a3b8; font-size:14px; margin:0;">by Your Tech Sommelier</p>
+  </footer>
+</section>
+    </div>
+
+    <div id="hardwareDailySep26" aria-live="polite" hidden>
 <section id="ai-hardware-daily-2026-09-26" style="font-family:'Helvetica Neue',Arial,Georgia,serif; background:#f8fafc; color:#334155; padding:40px 24px; border-radius:12px; max-width:900px; margin:0 auto;">
   <header style="text-align:center; margin-bottom:36px;">
     <p style="letter-spacing:4px; font-size:12px; color:#64748b; text-transform:uppercase; margin:0 0 10px;">AI Hardware &nbsp;·&nbsp; Daily Edition</p>
@@ -1275,6 +1374,107 @@
       </div>
       <section class="story-list" id="storyList" aria-label="Secondary stories"></section>
       <footer class="byline-footer">by Your Tech Sommelier</footer>
+    </article>
+
+    <article id="aiTrendDailySep27" aria-live="polite" hidden style="margin-top:22px;">
+      <div style="margin:0;padding:0;background-color:#f8fafc;font-family:Georgia,'Times New Roman',serif;">
+        <div style="max-width:720px;margin:0 auto;padding:32px 20px;background-color:#f8fafc;">
+
+          <!-- Masthead -->
+          <div style="text-align:center;padding-bottom:24px;border-bottom:3px solid #0f172a;margin-bottom:32px;">
+            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;letter-spacing:4px;text-transform:uppercase;color:#64748b;margin-bottom:8px;">AI Trends &middot; Daily Briefing</div>
+            <div style="font-size:15px;color:#475569;font-family:'Helvetica Neue',Arial,sans-serif;">Sunday, September 27, 2026</div>
+          </div>
+
+          <!-- Why it matters -->
+          <div style="background-color:#0f172a;color:#f1f5f9;border-radius:12px;padding:28px 32px;margin-bottom:36px;">
+            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#94a3b8;margin-bottom:10px;">Why it matters</div>
+            <p style="font-size:17px;line-height:1.65;margin:0;color:#e2e8f0;">
+              The AI industry's battleground has shifted from raw capability to economics: the frontier labs are slashing inference prices in an open race to the bottom while a record <strong style="color:#ffffff;">$769B</strong> flows into the infrastructure build-out. Meanwhile the hardest known benchmark just fell, and persistent agents are about to take center stage at DevDay.
+            </p>
+          </div>
+
+          <!-- HERO STORY -->
+          <div style="background-color:#ffffff;border-radius:12px;overflow:hidden;box-shadow:0 4px 24px rgba(15,23,42,0.08);margin-bottom:36px;">
+            <div style="background:linear-gradient(135deg,#1e3a8a 0%,#0f172a 100%);padding:36px 36px 30px;">
+              <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#93c5fd;margin-bottom:14px;">Cover Story</div>
+              <h1 style="font-size:38px;line-height:1.15;color:#ffffff;margin:0 0 14px;font-weight:700;">The Great Inference Price War</h1>
+              <p style="font-size:17px;line-height:1.6;color:#cbd5e1;margin:0;">OpenAI and Anthropic slashed model prices within hours of each other — and open-weights models are the fuse.</p>
+            </div>
+            <div style="padding:30px 36px 34px;">
+              <div style="margin-bottom:20px;">
+                <span style="display:inline-block;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:8px 16px;margin:0 8px 8px 0;font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;font-weight:700;color:#0f172a;">−50% &nbsp;GPT-6 Sol/Luna</span>
+                <span style="display:inline-block;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:8px 16px;margin:0 8px 8px 0;font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;font-weight:700;color:#0f172a;">−20 to −40% &nbsp;Opus 5.5</span>
+                <span style="display:inline-block;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:8px 16px;margin:0 8px 8px 0;font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;font-weight:700;color:#0f172a;">$0.10/1M &nbsp;Luna input</span>
+              </div>
+              <p style="font-size:16px;line-height:1.7;color:#334155;margin:0 0 14px;">On September 22, OpenAI launched <strong style="color:#0f172a;">GPT-6 Sol and GPT-6 Luna</strong> at half the price of the GPT-5.6 tier they replace — Sol at $2 input / $10 output per million tokens, Luna at a striking $0.10 / $0.50 — crediting prompt caching and inference efficiency gains as permanent cost reductions, not promotions. Hours later, Anthropic answered with <strong style="color:#0f172a;">Claude Opus 5.5</strong> at $4 / $20, 20% off list and roughly 40% cheaper in real workloads. The pressure is coming from below: open-weights models like Xiaomi's MiMo and Meta's Llama variants let enterprises self-host or route through partners at as little as $0.08 input per million tokens. The unit of competition is now the cost per token, not the benchmark crown.</p>
+              <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;color:#64748b;">Sources: <a href="https://www.webpronews.com/open-source-ai-models-force-price-war-as-enterprises-slash-inference-bills/" style="color:#1e40af;text-decoration:none;">WebProNews</a> &middot; <a href="https://bytevyte.com/openais-gpt-6-sol-and-luna-pricing-cut-rests-on-caching-not-subsidy/" style="color:#1e40af;text-decoration:none;">ByteVyte</a> &middot; <a href="https://valueaddvc.com/pulse/openai-anthropic-ai-price-war-2026" style="color:#1e40af;text-decoration:none;">Value Add Pulse</a></div>
+            </div>
+          </div>
+
+          <!-- 02 -->
+          <div style="background-color:#ffffff;border-radius:12px;padding:26px 30px;margin-bottom:20px;box-shadow:0 2px 12px rgba(15,23,42,0.05);border-left:5px solid #1e40af;">
+            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;color:#1e40af;margin-bottom:8px;">02 &middot; BENCHMARKS</div>
+            <h2 style="font-size:23px;color:#0f172a;margin:0 0 10px;">GPT-6 Astra breaks 80% on Humanity's Last Exam</h2>
+            <p style="font-size:15px;line-height:1.7;color:#334155;margin:0 0 12px;">GPT-6 Astra scored <strong style="color:#0f172a;">82.9% on HLE-Diamond</strong>, the first publicly reported score above 75% — let alone 80% — on the HLE series, which had been stuck in the mid-60s. Kalshi prediction markets instantly repriced the odds of any AI topping 75% by year-end from 14% to 87%. Released September 22, the result resets how fast the hardest known benchmark is being cleared.</p>
+            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;color:#64748b;">Source: <a href="https://www.octagonai.co/news/ai-benchmark-humanity-s-last-exam-market-odds/" style="color:#1e40af;text-decoration:none;">Octagon AI</a></div>
+          </div>
+
+          <!-- 03 -->
+          <div style="background-color:#ffffff;border-radius:12px;padding:26px 30px;margin-bottom:20px;box-shadow:0 2px 12px rgba(15,23,42,0.05);border-left:5px solid #1e40af;">
+            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;color:#1e40af;margin-bottom:8px;">03 &middot; INFRASTRUCTURE</div>
+            <h2 style="font-size:23px;color:#0f172a;margin:0 0 10px;">AI infra investment on pace for $769B in 2026</h2>
+            <p style="font-size:15px;line-height:1.7;color:#334155;margin:0 0 12px;">McKinsey's Technology Trends Outlook 2026 pegs AI infrastructure and model-architecture investment at <strong style="color:#0f172a;">~$769B for 2026</strong> — more than five times 2025's $145B — on $384B already invested in H1. Fresh capital waves: OpenAI reportedly raising at a $1.2T valuation, SoftBank floating an $11B bond to put another $10B into OpenAI, and Anthropic talking to Nvidia about up to $10B as part of a possible $100B IPO. All this while both labs' CEOs call for slower, safer capability rollouts.</p>
+            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;color:#64748b;">Source: <a href="https://www.thehindubusinessline.com/info-tech/ai-infrastructure-investment-seen-surging-to-769-billion-in-2026-amid-growing-safety-concerns/article71507773.ece/amp/" style="color:#1e40af;text-decoration:none;">The Hindu BusinessLine</a></div>
+          </div>
+
+          <!-- 04 -->
+          <div style="background-color:#ffffff;border-radius:12px;padding:26px 30px;margin-bottom:20px;box-shadow:0 2px 12px rgba(15,23,42,0.05);border-left:5px solid #1e40af;">
+            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;color:#1e40af;margin-bottom:8px;">04 &middot; OPEN WEIGHTS / ROBOTICS</div>
+            <h2 style="font-size:23px;color:#0f172a;margin:0 0 10px;">Black Forest Labs' FLUX 3 Action beats Nvidia at its own game</h2>
+            <p style="font-size:15px;line-height:1.7;color:#334155;margin:0 0 12px;">BFL released <strong style="color:#0f172a;">FLUX 3 Action</strong>, a 7B open-weights world action model for robot control, scoring <strong style="color:#0f172a;">42.92% on RoboLab-120</strong> — ahead of Nvidia's own 16B Cosmos 3 Nano at 36.8%, on Nvidia's own benchmark. It jointly predicts future video frames and action chunks, closes the speed gap with a smaller backbone plus distillation, and fits 24GB consumer GPUs via FP8. Caveat: independent hardware validation is still thin (one third-party Franka-arm test at 93.3%).</p>
+            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;color:#64748b;">Sources: <a href="https://www.marktechpost.com/2026/09/24/black-forest-labs-releases-flux-3-action-a-7b-open-weights-world-action-model-that-tops-robolab-120/" style="color:#1e40af;text-decoration:none;">MarkTechPost</a> &middot; <a href="https://aiweekly.co/alerts/black-forest-labs-open-weights-flux-3-action-a-7b-robotics-model" style="color:#1e40af;text-decoration:none;">AI Weekly</a></div>
+          </div>
+
+          <!-- 05 -->
+          <div style="background-color:#ffffff;border-radius:12px;padding:26px 30px;margin-bottom:20px;box-shadow:0 2px 12px rgba(15,23,42,0.05);border-left:5px solid #1e40af;">
+            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;color:#1e40af;margin-bottom:8px;">05 &middot; AGENTS</div>
+            <h2 style="font-size:23px;color:#0f172a;margin:0 0 10px;">DevDay countdown: a persistent agent "O" rumored</h2>
+            <p style="font-size:15px;line-height:1.7;color:#334155;margin:0 0 12px;">With OpenAI DevDay set for September 29 in San Francisco, a TestingCatalog-sourced leak says the keynote star will be a <strong style="color:#0f172a;">persistent AI agent codenamed "O"</strong> — apparently the consumer version of the enterprise "Aeon" agent infrastructure. References to "O" already appear in ChatGPT's source code, and an insider tweet hinted at "resetting usage limits for all paying users on Codex and ChatGPT Work." Rumor, but the persistent-agent direction matches where the whole industry is heading.</p>
+            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;color:#64748b;">Source: <a href="https://ai-engineering-trend.medium.com/exclusive-leak-openai-to-launch-persistent-ai-agent-codenamed-o-at-devday-310dad73bd54" style="color:#1e40af;text-decoration:none;">AI Engineering (Medium)</a></div>
+          </div>
+
+          <!-- 06 -->
+          <div style="background-color:#ffffff;border-radius:12px;padding:26px 30px;margin-bottom:20px;box-shadow:0 2px 12px rgba(15,23,42,0.05);border-left:5px solid #1e40af;">
+            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;color:#1e40af;margin-bottom:8px;">06 &middot; EVALS</div>
+            <h2 style="font-size:23px;color:#0f172a;margin:0 0 10px;">Artificial Analysis Index refresh: GPT-5.6 Sol leads at 58.9%</h2>
+            <p style="font-size:15px;line-height:1.7;color:#334155;margin:0 0 12px;">The September 2026 Artificial Analysis Intelligence Index leaderboard has <strong style="color:#0f172a;">GPT-5.6 Sol first at 58.9%</strong>, followed by Claude Opus 5.5 (57.6%) and GPT-5.6 Terra (55.0%) — 209 models evaluated, the top 10 inside a 9.3-point band. A useful market snapshot of the crowding at the frontier rather than a real ranking, since the scores come from provider self-reports.</p>
+            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;color:#64748b;">Source: <a href="https://benchlm.ai/benchmarks/artificialanalysis" style="color:#1e40af;text-decoration:none;">BenchLM</a></div>
+          </div>
+
+          <!-- 07 -->
+          <div style="background-color:#ffffff;border-radius:12px;padding:26px 30px;margin-bottom:20px;box-shadow:0 2px 12px rgba(15,23,42,0.05);border-left:5px solid #1e40af;">
+            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;color:#1e40af;margin-bottom:8px;">07 &middot; TOOLING</div>
+            <h2 style="font-size:23px;color:#0f172a;margin:0 0 10px;">Vercel Eve: agents as files, not prompts</h2>
+            <p style="font-size:15px;line-height:1.7;color:#334155;margin:0 0 12px;">Vercel launched <strong style="color:#0f172a;">Eve</strong>, a "filesystem-first" agent framework pitched as "Next.js for web apps, but for agents": an agent is a directory — instructions.md, typed tools, reusable skills, channels, schedules — with durable sessions by default. The signal is packaging: turning agent behavior into inspectable, versionable project structure so teams review and ship agents like application code. Apache-2.0 licensed.</p>
+            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;color:#64748b;">Source: <a href="https://github.com/agent-analytics/awesome-multi-agent-orchestrators/blob/HEAD/src/content/news/vercel-eve-filesystem-first-agent-framework.md" style="color:#1e40af;text-decoration:none;">Open Orchestrators (GitHub)</a></div>
+          </div>
+
+          <!-- 08 -->
+          <div style="background-color:#ffffff;border-radius:12px;padding:26px 30px;margin-bottom:36px;box-shadow:0 2px 12px rgba(15,23,42,0.05);border-left:5px solid #1e40af;">
+            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;color:#1e40af;margin-bottom:8px;">08 &middot; PRODUCT</div>
+            <h2 style="font-size:23px;color:#0f172a;margin:0 0 10px;">Tencent DataBuddy: the agent-native data workbench</h2>
+            <p style="font-size:15px;line-height:1.7;color:#334155;margin:0 0 12px;">Tencent Cloud launched <strong style="color:#0f172a;">DataBuddy</strong>, its third "Buddy" assistant product, embedding agents directly into the data platform: end-to-end self-healing pipelines from one natural-language request, warehouse-wide health checks, conversational analytics with automated root-cause, and model deployment cut from 30 days to 7. Tencent claims 95.9% analysis accuracy via its Unity Semantics layer (vs 83.5% for plain NL2SQL) and 5–10x efficiency gains across data teams. Live in China, Thailand, South Korea and Indonesia; rolling out to Europe and the Americas.</p>
+            <div style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;color:#64748b;">Source: <a href="https://www.prnewswire.com/news-releases/tencent-cloud-launches-tencent-cloud-databuddy-an-agent-native-data--ai-workbench-302885865.html" style="color:#1e40af;text-decoration:none;">PR Newswire</a></div>
+          </div>
+
+          <!-- Footer -->
+          <div style="text-align:center;padding-top:28px;border-top:1px solid #e2e8f0;">
+            <p style="font-style:italic;color:#94a3b8;font-size:15px;margin:0;">by Your Tech Sommelier</p>
+          </div>
+
+        </div>
+      </div>
     </article>
 
     <article id="aiTrendDailySep26" aria-live="polite" hidden style="margin-top:22px;">
@@ -2589,6 +2789,7 @@
       const item = issues[key];
       if (!item) return;
       currentIssue = key;
+      $('#hardwareDailySep27').hidden = true;
       $('#hardwareDailySep26').hidden = true;
       $('#hardwareDailySep25').hidden = true;
       $('#hardwareDailySep24').hidden = true;
@@ -2645,32 +2846,34 @@
       window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     }
 
-    let currentIssue = '2026-09-26';
-    let currentAiIssue = '2026-09-26';
+    let currentIssue = '2026-09-27';
+    let currentAiIssue = '2026-09-27';
     let currentSection = 'hardware';
 
     function renderHardwareIssue(key) {
       currentIssue = key;
+      const isSep27 = key === '2026-09-27';
       const isSep26 = key === '2026-09-26';
       const isSep25 = key === '2026-09-25';
       const isSep24 = key === '2026-09-24';
       const isSep23 = key === '2026-09-23';
       const isSep22 = key === '2026-09-22';
       const isSep21 = key === '2026-09-21';
-      if (!isSep26 && !isSep25 && !isSep24 && !isSep23 && !isSep22 && !isSep21) {
+      if (!isSep27 && !isSep26 && !isSep25 && !isSep24 && !isSep23 && !isSep22 && !isSep21) {
         renderIssue(key);
         return;
       }
       keepBlogTitle();
       $('#issue').hidden = true;
+      $('#hardwareDailySep27').hidden = !isSep27;
       $('#hardwareDailySep26').hidden = !isSep26;
       $('#hardwareDailySep25').hidden = !isSep25;
       $('#hardwareDailySep24').hidden = !isSep24;
       $('#hardwareDailySep23').hidden = !isSep23;
       $('#hardwareDailySep22').hidden = !isSep22;
       $('#hardwareDailySep21').hidden = !isSep21;
-      $('#issueDate').textContent = isSep26 ? 'Saturday, September 26, 2026' : isSep25 ? 'Friday, September 25, 2026' : isSep24 ? 'Thursday, September 24, 2026' : isSep23 ? 'Wednesday, September 23, 2026' : isSep22 ? 'Tuesday, September 22, 2026' : 'Monday, September 21, 2026';
-      $('#storyCount').textContent = isSep26 || isSep21 ? '6 stories' : '7 stories';
+      $('#issueDate').textContent = isSep27 ? 'Sunday, September 27, 2026' : isSep26 ? 'Saturday, September 26, 2026' : isSep25 ? 'Friday, September 25, 2026' : isSep24 ? 'Thursday, September 24, 2026' : isSep23 ? 'Wednesday, September 23, 2026' : isSep22 ? 'Tuesday, September 22, 2026' : 'Monday, September 21, 2026';
+      $('#storyCount').textContent = isSep27 || isSep26 || isSep21 ? '6 stories' : '7 stories';
       document.querySelectorAll('#navHardware .edition-btn').forEach(btn => {
         btn.setAttribute('aria-pressed', String(btn.dataset.issue === key));
       });
@@ -2696,6 +2899,7 @@
     function renderAiIssue(key) {
       currentAiIssue = key;
       const isWeeklySep25 = key === 'weekly-2026-09-25';
+      const isSep27 = key === '2026-09-27';
       const isSep26 = key === '2026-09-26';
       const isSep25 = key === '2026-09-25';
       const isSep24 = key === '2026-09-24';
@@ -2706,6 +2910,7 @@
       const isSep18 = key === '2026-09-18';
       const isSep17 = key === '2026-09-17';
       $('#aiTrendWeeklySep25').hidden = !isWeeklySep25;
+      $('#aiTrendDailySep27').hidden = !isSep27;
       $('#aiTrendDailySep26').hidden = !isSep26;
       $('#aiTrendDailySep25').hidden = !isSep25;
       $('#aiTrendDailySep24').hidden = !isSep24;
@@ -2715,10 +2920,13 @@
       $('#aiTrendDailySep20').hidden = !isSep20;
       $('#aiTrendDailySep18').hidden = !isSep18;
       $('#aiTrendDailySep17').hidden = !isSep17;
-      $('#llmArticle').hidden = isWeeklySep25 || isSep26 || isSep25 || isSep24 || isSep23 || isSep22 || isSep21 || isSep20 || isSep18 || isSep17;
+      $('#llmArticle').hidden = isWeeklySep25 || isSep27 || isSep26 || isSep25 || isSep24 || isSep23 || isSep22 || isSep21 || isSep20 || isSep18 || isSep17;
       if (isWeeklySep25) {
         $('#issueDate').textContent = 'Week of September 25, 2026';
         $('#storyCount').textContent = '10 stories';
+      } else if (isSep27) {
+        $('#issueDate').textContent = 'Sunday, September 27, 2026';
+        $('#storyCount').textContent = '8 stories';
       } else if (isSep26) {
         $('#issueDate').textContent = 'Saturday, September 26, 2026';
         $('#storyCount').textContent = '7 stories';
@@ -2766,6 +2974,7 @@
         btn.setAttribute('aria-pressed', String(btn.dataset.section === section));
       });
       $('#issue').hidden = true;
+      $('#hardwareDailySep27').hidden = true;
       $('#hardwareDailySep26').hidden = true;
       $('#hardwareDailySep25').hidden = true;
       $('#hardwareDailySep24').hidden = true;
@@ -2773,6 +2982,7 @@
       $('#hardwareDailySep22').hidden = true;
       $('#hardwareDailySep21').hidden = true;
       $('#aiTrendWeeklySep25').hidden = true;
+      $('#aiTrendDailySep27').hidden = true;
       $('#aiTrendDailySep26').hidden = true;
       $('#aiTrendDailySep25').hidden = true;
       $('#aiTrendDailySep24').hidden = true;
@@ -2792,7 +3002,7 @@
       }
     }
 
-    renderHardwareIssue('2026-09-26');
+    renderHardwareIssue('2026-09-27');
   </script>
 </body>
 </html>
