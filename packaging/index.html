@@ -1119,13 +1119,108 @@
   <section class="foundry-edition" id="foundry-panel" role="tabpanel" aria-labelledby="foundry-tab" hidden>
     <div class="foundry-inner">
       <div class="edition-switcher" aria-label="Foundry edition archive">
-        <button class="edition-choice" type="button" data-edition="foundry-2026-09-25" aria-pressed="true">Sep 25, 2026</button>
+        <button class="edition-choice" type="button" data-edition="foundry-2026-10-02" aria-pressed="true">Oct 2, 2026</button>
+        <button class="edition-choice" type="button" data-edition="foundry-2026-09-25" aria-pressed="false">Sep 25, 2026</button>
         <button class="edition-choice" type="button" data-edition="foundry-2026-09-18" aria-pressed="false">Sep 18, 2026</button>
         <button class="edition-choice" type="button" data-edition="foundry-2026-09-17" aria-pressed="false">Sep 17, 2026</button>
       </div>
     </div>
 
-    <div class="edition-panel" id="foundry-2026-09-25">
+    <div class="edition-panel" id="foundry-2026-10-02">
+<section style="background:#f6f2e7;font-family:Georgia,'Times New Roman',serif;padding:36px 18px;color:#171a1c;">
+  <div style="max-width:740px;margin:0 auto;">
+
+    <p style="margin:0 0 8px;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#8a7a55;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">October 2, 2026 &middot; Weekly Edition</p>
+    <h1 style="margin:0 0 10px;font-size:42px;line-height:1.05;color:#171a1c;font-weight:800;">Foundry Technology Trends</h1>
+    <p style="margin:0 0 24px;font-size:16px;color:#55534a;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-style:italic;">Process nodes, yields, lithography, and the angstrom-era tooling race.</p>
+
+    <div style="border-top:3px double #e44d1b;border-bottom:3px double #e44d1b;padding:16px 4px;margin-bottom:26px;">
+      <p style="margin:0 0 6px;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:#e44d1b;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">Why it matters</p>
+      <p style="margin:0;font-size:15.5px;line-height:1.65;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">This week the foundry story was about proof, not promises. Intel&rsquo;s 18A-P hit risk production exactly on schedule while an independent teardown verified RibbonFET and PowerVia working inside shipping Panther Lake silicon &mdash; and Intel&rsquo;s foundry chief is now talking down 14A expectations to &ldquo;within 5% of TSMC&rsquo;s A14&rdquo; rather than promising leadership. On the 2nm yield race, TSMC sits comfortably past 60% while Samsung is still climbing toward it, and the industry&rsquo;s attention is shifting to the next hard problems: verifying CFET and backside-power structures, and getting 2D channels out of the lab.</p>
+    </div>
+
+    <!-- HERO STORY -->
+    <article style="background:#fffdf7;border:1px solid #ddd3b8;border-top:5px solid #e44d1b;padding:0;margin-bottom:26px;box-shadow:0 3px 10px rgba(23,26,28,.08);">
+      <div style="padding:24px 26px 6px;">
+        <p style="margin:0 0 8px;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:#e44d1b;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">01 &middot; Cover Story</p>
+        <h2 style="margin:0 0 14px;font-size:30px;line-height:1.15;font-weight:800;color:#171a1c;">Intel 18A-P Enters Risk Production on Schedule &mdash; &ldquo;Power Boost&rdquo; Transistor Option Debuts</h2>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+          <span style="background:#171a1c;color:#f6f2e7;border-radius:3px;padding:5px 12px;font-size:12px;font-weight:700;">+9% perf at same power vs 18A</span>
+          <span style="background:#e44d1b;color:#ffffff;border-radius:3px;padding:5px 12px;font-size:12px;font-weight:700;">&minus;18% power at same perf</span>
+          <span style="background:#171a1c;color:#f6f2e7;border-radius:3px;padding:5px 12px;font-size:12px;font-weight:700;">Thermal resistance &minus;20&ndash;40%</span>
+          <span style="background:#e44d1b;color:#ffffff;border-radius:3px;padding:5px 12px;font-size:12px;font-weight:700;">Via resistance &minus;10&ndash;30%</span>
+        </div>
+      </div>
+      <div style="padding:0 26px 24px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+        <p style="margin:0 0 10px;font-size:15px;line-height:1.65;color:#3a3833;">Intel used the 2026 VLSI Symposium in Honolulu this week to confirm that its 18A-P process node has officially entered risk production, hitting the timeline it promised foundry customers and partners last year. For a node refresh rather than a full generational leap, the numbers are solid: 9% higher performance at the same power draw compared with standard 18A, or 18% lower power consumption at equivalent performance, with 20&ndash;40% better thermal resistance and 10&ndash;30% lower via resistance. Intel also disclosed Power Boost, a new dual-contact, low-resistance transistor option that increases drive current and gives designers more frequency headroom.</p>
+        <p style="margin:0 0 10px;font-size:15px;line-height:1.65;color:#3a3833;">Why it matters technically: risk production is the moment a node stops being R&amp;D and starts being a manufacturable product &mdash; and hitting the promised date on a foundry customer&rsquo;s calendar is the credibility currency Intel has lacked for a decade. 18A-P is slated to power 2027&rsquo;s Xeon &ldquo;Diamond Rapids,&rdquo; making it the first performance-tier node built on Intel&rsquo;s GAA + backside-power foundation rather than a mobile experiment.</p>
+        <p style="margin:0;font-size:14px;line-height:1.6;color:#3a3833;"><strong style="color:#171a1c;">Key numbers:</strong> 18A-P vs 18A: +9% perf at same power, or &minus;18% power at same perf; thermal resistance &minus;20&ndash;40%; via resistance &minus;10&ndash;30%. <a href="https://www.tweaktown.com/news/112245/intels-18a-p-process-node-is-now-in-risk-production-will-power-next-gen-xeon-diamond-rapids-processors/index.html" style="color:#e44d1b;font-weight:700;text-decoration:none;">Source: TweakTown &rarr;</a></p>
+      </div>
+    </article>
+
+    <!-- 02 -->
+    <article style="background:#fffdf7;border:1px solid #ddd3b8;padding:20px 24px;margin-bottom:14px;box-shadow:0 1px 4px rgba(23,26,28,.05);">
+      <p style="margin:0 0 6px;font-size:11px;letter-spacing:2.5px;color:#e44d1b;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">02</p>
+      <h3 style="margin:0 0 8px;font-size:20px;line-height:1.3;color:#171a1c;font-weight:700;">The Teardown Verdict: Panther Lake Proves RibbonFET + PowerVia Work in Real Silicon</h3>
+      <p style="margin:0 0 8px;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">SemiAnalysis&rsquo;s deep dive into Intel&rsquo;s Core Ultra 7 365 (via Notebookcheck) is the first independent look inside shipping 18A silicon: four stacked RibbonFET nanosheets per transistor with the gate fully surrounding each sheet, plus PowerVia moving much of the power network to the backside of the die &mdash; freeing frontside wiring for signals with shorter, wider power paths. The competitive verdict is sober: 18A logic density lands roughly on par with TSMC&rsquo;s N3E, still behind N3P and N2. But the engineering is real &mdash; gate-all-around and backside power now function at volume in a consumer chip, ending years of &ldquo;will it actually work?&rdquo; debate.</p>
+      <p style="margin:0;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;"><strong style="color:#171a1c;">Technology:</strong> RibbonFET replaces FinFET&rsquo;s vertical fins with four horizontal nanosheets per device; PowerVia decouples power and signal routing. Density parity with N3E confirms 18A as a genuinely competitive node, not a leadership one. <a href="https://www.notebookcheck.net/Panther-Lake-teardown-reveals-Intel-18A-in-detail-TSMC-still-leads-in-density.1410032.0.html" style="color:#e44d1b;font-weight:700;text-decoration:none;">Source: Notebookcheck &rarr;</a> &middot; <a href="https://fudzilla.com/chipzillas-18a-process-is-finally-competitive" style="color:#e44d1b;font-weight:700;text-decoration:none;">Fudzilla &rarr;</a></p>
+    </article>
+
+    <!-- 03 -->
+    <article style="background:#fffdf7;border:1px solid #ddd3b8;padding:20px 24px;margin-bottom:14px;box-shadow:0 1px 4px rgba(23,26,28,.05);">
+      <p style="margin:0 0 6px;font-size:11px;letter-spacing:2.5px;color:#e44d1b;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">03</p>
+      <h3 style="margin:0 0 8px;font-size:20px;line-height:1.3;color:#171a1c;font-weight:700;">Intel Plays It Conservative: 14A &ldquo;Within 5%&rdquo; of TSMC&rsquo;s A14, Says Foundry Tech Chief</h3>
+      <p style="margin:0 0 8px;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">Intel Foundry&rsquo;s chief technology and operations officer, Naga Chandrasekaran, told KeyBanc this week (reported by Tom&rsquo;s Hardware on September 25) that Intel expects 14A to land within 5% of TSMC&rsquo;s A14 on performance &mdash; a notably conservative claim for a company that has previously promised outright leadership, and a signal of the Tan era&rsquo;s &ldquo;under-promise and over-deliver&rdquo; posture. Technologically, 14A gets second-generation RibbonFET plus PowerDirect, an upgraded direct-contact backside power delivery; TSMC&rsquo;s first A14 version ships without backside power (its SPR-powered variant arrives the following year). Intel leads TSMC on backside-power adoption timing: PowerVia already ships on 18A and upgrades on 14A, while TSMC&rsquo;s Super Power Rail debuts on A16.</p>
+      <p style="margin:0;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;"><strong style="color:#171a1c;">Roadmap:</strong> 14A risk production H2 2027, volume production 2028 &mdash; Intel&rsquo;s first node built from inception for external foundry customers. Apple, NVIDIA, and six more giants are reportedly evaluating it. <a href="https://tech-insider.org/intel-14a-node-apple-nvidia-evaluation-2026/" style="color:#e44d1b;font-weight:700;text-decoration:none;">Source: Tech Insider &rarr;</a> &middot; <a href="https://finance.biggo.com/news/ef1d299b-6b37-4d83-a8ab-5b89b0fc2eec" style="color:#e44d1b;font-weight:700;text-decoration:none;">BigGo Finance &rarr;</a></p>
+    </article>
+
+    <!-- 04 -->
+    <article style="background:#fffdf7;border:1px solid #ddd3b8;padding:20px 24px;margin-bottom:14px;box-shadow:0 1px 4px rgba(23,26,28,.05);">
+      <p style="margin:0 0 6px;font-size:11px;letter-spacing:2.5px;color:#e44d1b;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">04</p>
+      <h3 style="margin:0 0 8px;font-size:20px;line-height:1.3;color:#171a1c;font-weight:700;">Samsung&rsquo;s 2nm Fightback: SF2 Yield Reportedly Approaching 60% as Exynos 2600 Ships</h3>
+      <p style="margin:0 0 8px;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">Chosun reporting (via SammyFans, September 28) says Samsung Foundry has lifted first-generation SF2 yields to around the 60% mark, up from the mid-50% range &mdash; the threshold where an advanced node becomes commercially credible for high-volume customer orders. SF2, Samsung&rsquo;s first-generation 2nm GAA process, is already shipping in the Exynos 2600 inside select Galaxy S26 models, and Samsung is reportedly working with prospective customers to validate heat generation and power consumption before expanding its 2nm business.</p>
+      <p style="margin:0;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;"><strong style="color:#171a1c;">Next up:</strong> second-generation SF2P is the node Samsung must win with &mdash; reported targets of up to +12% performance, &minus;25% power consumption, and &minus;8% area versus SF2. Yield gains alone don&rsquo;t change the competitive picture; converting them into sustained production quality and flagship orders does. <a href="https://www.sammyfans.com/2026/09/28/samsung-2nm-chip-process-making-some-serious-progress/" style="color:#e44d1b;font-weight:700;text-decoration:none;">Source: SammyFans &rarr;</a></p>
+    </article>
+
+    <!-- 05 -->
+    <article style="background:#fffdf7;border:1px solid #ddd3b8;padding:20px 24px;margin-bottom:14px;box-shadow:0 1px 4px rgba(23,26,28,.05);">
+      <p style="margin:0 0 6px;font-size:11px;letter-spacing:2.5px;color:#e44d1b;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">05</p>
+      <h3 style="margin:0 0 8px;font-size:20px;line-height:1.3;color:#171a1c;font-weight:700;">CFET and Backside Power Hit the Verification Wall</h3>
+      <p style="margin:0 0 8px;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">A new Siemens Calibre piece (September 30) maps the extraction challenges hiding behind the CFET and backside-power roadmaps. CFETs stack an entire NFET atop a PFET within a single cell footprint &mdash; unprecedented density, but two brutal integration paths: the monolithic approach demands high-aspect-ratio etching with near-impossible tolerances, while the sequential approach needs near-perfect vertical alignment between bonded layers plus strict thermal budgets. Miss the process window by a few nanometers and the device shorts or opens. Backside power networks add their own parasitic-extraction complexity on top.</p>
+      <p style="margin:0;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">The takeaway for the angstrom era: the EDA and verification flow &mdash; not just the transistor physics &mdash; is becoming a gating technology. Whoever can model, extract, and sign off these 3D structures first gets a real schedule advantage. <a href="https://blogs.sw.siemens.com/calibre/2026/09/30/solving-the-extraction-challenges-of-cfet-and-backside-power/" style="color:#e44d1b;font-weight:700;text-decoration:none;">Source: Siemens EDA &rarr;</a></p>
+    </article>
+
+    <!-- 06 -->
+    <article style="background:#fffdf7;border:1px solid #ddd3b8;padding:20px 24px;margin-bottom:14px;box-shadow:0 1px 4px rgba(23,26,28,.05);">
+      <p style="margin:0 0 6px;font-size:11px;letter-spacing:2.5px;color:#e44d1b;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">06</p>
+      <h3 style="margin:0 0 8px;font-size:20px;line-height:1.3;color:#171a1c;font-weight:700;">2D Channels Move Toward the Fab: Record PtSe2 Monolayer Growth, $15M Bet on 2D Tooling</h3>
+      <p style="margin:0 0 8px;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">A Korean research team reports the first uniform, large-area monolayer of platinum diselenide grown by metal-organic chemical vapor deposition &mdash; the workhorse technique of industrial chip fabrication &mdash; on a 1.5&times;1.5 cm substrate with a clear semiconducting bandgap of roughly 1.5 eV, already turned into an FET array that set new performance records for the material. Thickness control is the entire game with PtSe2: a stray bilayer island in an otherwise monolayer film creates a semi-metallic leak path that ruins a transistor&rsquo;s ability to switch off. Separately, 2D-semiconductor startup Nexstrom raised $15 million ($12M seed plus $3M non-dilutive) to build the wafer-scale 2D-material tooling that imec, ASML, and TSMC&rsquo;s June 2026 300mm integration work showed the industry will eventually need.</p>
+      <p style="margin:0;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">2D channels are the leading candidate for CFET-era nodes below A14 &mdash; atomically uniform thickness kills the surface-scattering collapse that silicon nanosheets hit under ~3 nm. The lab-to-fab path is now about manufacturing infrastructure, not just physics. <a href="https://scienmag.com/oxygen-trick-yields-first-uniform-semiconducting-monolayer-ptse2-films-for-transistors/" style="color:#e44d1b;font-weight:700;text-decoration:none;">Source: ScienMag &rarr;</a> &middot; <a href="https://www.patriciarenee.com/nexstrom-2d-semiconductors-chip-fabs/" style="color:#e44d1b;font-weight:700;text-decoration:none;">Source: Patricia Renee &rarr;</a></p>
+    </article>
+
+    <!-- 07 -->
+    <article style="background:#fffdf7;border:1px solid #ddd3b8;padding:20px 24px;margin-bottom:14px;box-shadow:0 1px 4px rgba(23,26,28,.05);">
+      <p style="margin:0 0 6px;font-size:11px;letter-spacing:2.5px;color:#e44d1b;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">07</p>
+      <h3 style="margin:0 0 8px;font-size:20px;line-height:1.3;color:#171a1c;font-weight:700;">The Ramp Watch: TSMC&rsquo;s N2P and A16 Both Due for Volume Production in 2H 2026</h3>
+      <p style="margin:0 0 8px;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">With Q4 underway, TSMC&rsquo;s own timeline says both N2P and the Super Power Rail A16 reach volume production in the second half of 2026. N2P layers further performance and power gains on top of N2; A16 is TSMC&rsquo;s first backside-power node &mdash; nanosheet transistors plus Super Power Rail delivering +8&ndash;10% speed at the same power, &minus;15&ndash;20% power at the same speed, and up to 1.10&times; density versus N2P, best suited to HPC products with dense power delivery networks. Supply-chain projections put combined N2-family capacity at 120,000&ndash;130,000 wafer starts per month by year-end.</p>
+      <p style="margin:0;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">This is the quarter where the angstrom era stops being a roadmap and starts being a product line &mdash; and where Intel&rsquo;s 18A-P and TSMC&rsquo;s A16 begin the first direct backside-power showdown. <a href="https://effectstory.com/en/articles/tsmc-n2-2nm-volume-production-timeline-n2p-a16" style="color:#e44d1b;font-weight:700;text-decoration:none;">Source: EffectStory &rarr;</a></p>
+    </article>
+
+    <!-- 08 -->
+    <article style="background:#fffdf7;border:1px solid #ddd3b8;padding:20px 24px;margin-bottom:24px;box-shadow:0 1px 4px rgba(23,26,28,.05);">
+      <p style="margin:0 0 6px;font-size:11px;letter-spacing:2.5px;color:#e44d1b;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">08</p>
+      <h3 style="margin:0 0 8px;font-size:20px;line-height:1.3;color:#171a1c;font-weight:700;">Intel&rsquo;s Ramp Claims, Annotated</h3>
+      <p style="margin:0 0 8px;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">A Q2-2026 earnings rundown this week put fresh numbers on the 18A ramp: output ran 25% above internal targets last quarter (+50% quarter-over-quarter), Panther Lake is in high-volume manufacturing on high-NA EUV equipment, and more than a million wafers have been processed on 18A-class technology across certification, R&amp;D, and production. The honest annotation: these are company statements with no independent yield verification, most foundry revenue is still Intel buying from itself ($5.48B in intersegment eliminations), and there is no high-volume external foundry customer yet.</p>
+      <p style="margin:0;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">The roadmap physics look credible; the foundry economics remain unproven. Watch whether 18A-P customer tape-outs convert into volume orders. <a href="https://ashtoninvests.substack.com/p/intc-deep-dive-what-a-635-billion" style="color:#e44d1b;font-weight:700;text-decoration:none;">Source: Ashton Invests &rarr;</a> &middot; <a href="https://www.tradingnews.com/news/intel-pulla-back-from-127-usd-as-ai-chip-trade-wobbles" style="color:#e44d1b;font-weight:700;text-decoration:none;">TradingNEWS &rarr;</a></p>
+    </article>
+
+    <p style="text-align:center;font-style:italic;color:#8a7a55;font-size:14px;margin:0 0 8px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">by Your Tech Sommelier</p>
+
+  </div>
+</section>
+    </div>
+
+    <div class="edition-panel" id="foundry-2026-09-25" hidden>
 <section style="background:#f6f2e7;font-family:Georgia,'Times New Roman',serif;padding:36px 18px;color:#171a1c;">
   <div style="max-width:740px;margin:0 auto;">
 
