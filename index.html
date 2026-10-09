@@ -703,6 +703,7 @@
       <nav class="archive-navigation" id="navLlm" aria-label="AI Trends edition navigation" hidden>
         <div class="edition-group weekly-group" aria-label="Choose an AI Trends weekly summary">
           <span class="edition-label">Weekly</span>
+          <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="weekly-2026-10-09" aria-pressed="false">Oct 9</button>
           <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="weekly-2026-10-02" aria-pressed="false">Oct 2</button>
           <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="weekly-2026-09-25" aria-pressed="false">Sep 25</button>
         </div>
@@ -727,17 +728,14 @@
     <div id="hardwareDailyOct09" aria-live="polite">
     <section style="background:#f8fafc;padding:40px 24px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
     <div style="max-width:760px;margin:0 auto;">
-    <!-- EDITION HEADER -->
     <div style="text-align:center;margin-bottom:28px;">
     <div style="display:inline-block;background:#0f172a;color:#ffffff;font-size:12px;letter-spacing:3px;font-weight:700;padding:6px 18px;border-radius:999px;">AI HARDWARE &bull; DAILY</div>
     <div style="font-size:13px;color:#64748b;margin-top:10px;letter-spacing:1px;">FRIDAY, OCTOBER 9, 2026</div>
     </div>
-    <!-- WHY IT MATTERS -->
     <div style="background:#ffffff;border:1px solid #e2e8f0;border-radius:14px;padding:24px 28px;margin-bottom:28px;border-left:5px solid #2563eb;">
     <div style="font-size:12px;letter-spacing:2px;font-weight:700;color:#2563eb;margin-bottom:8px;">WHY IT MATTERS</div>
     <p style="font-size:16px;color:#334155;line-height:1.65;margin:0;">The AI build-out is running into physical limits — power, memory, and supply — and everyone is racing to remove them. Washington marshaled <strong>$2.4B in corporate compute</strong> for science, QuantumScape attacked rack power density, and the HBM4 supply war intensified, while jittery markets reminded us the demand story has to pay for all of it.</p>
     </div>
-    <!-- HERO -->
     <article style="background:#ffffff;border:1px solid #e2e8f0;border-radius:18px;overflow:hidden;margin-bottom:28px;">
     <div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);padding:44px 36px;color:#ffffff;">
     <div style="font-size:12px;letter-spacing:3px;font-weight:700;color:#93c5fd;margin-bottom:14px;">COVER STORY</div>
@@ -754,7 +752,6 @@
     <p style="font-size:13px;margin:0;"><a href="https://explainx.ai/blog/genesis-mission-2-4-billion-industry-pledges-nvidia-amd-openai-anthropic-2026" style="color:#2563eb;font-weight:600;">Source: explainx.ai &rarr;</a></p>
     </div>
     </article>
-    <!-- SECONDARY STORIES -->
     <div style="font-size:13px;letter-spacing:3px;font-weight:700;color:#64748b;margin:0 0 16px 4px;">MORE FROM THE FAB &nbsp;&middot;&nbsp; OCTOBER 8</div>
     <article style="background:#ffffff;border:1px solid #e2e8f0;border-radius:14px;padding:24px 28px;margin-bottom:18px;">
     <div style="font-size:12px;letter-spacing:2px;font-weight:800;color:#2563eb;margin-bottom:6px;">02</div>
@@ -806,7 +803,6 @@
     <p style="font-size:15px;color:#334155;line-height:1.7;margin:0 0 12px 0;">Why it matters: the entire hardware build-out is levered to AI revenue growth — one soft number still moves the whole supply chain in an afternoon.</p>
     <p style="font-size:13px;margin:0;"><a href="https://www.morningstar.com/news/marketwatch/20261008469/micron-nvidia-and-ai-chip-stocks-fall-as-report-on-openais-revenue-causes-undue-concern" style="color:#2563eb;font-weight:600;">Source: Morningstar &rarr;</a></p>
     </article>
-    <!-- FOOTER -->
     <div style="text-align:center;margin-top:36px;padding-top:20px;border-top:1px solid #e2e8f0;">
     <p style="font-style:italic;color:#94a3b8;font-size:14px;margin:0;">by Your Tech Sommelier</p>
     </div>
@@ -1769,6 +1765,116 @@
 </div>
     </article>
 
+    <article id="aiTrendWeeklyOct09" aria-live="polite" hidden style="margin-top:22px;">
+      <div style="background-color:#f8fafc;padding:24px 12px;">
+        <table width="100%" cellpadding="0" cellspacing="0" style="max-width:640px;margin:0 auto;">
+          <tr><td>
+
+            <!-- Masthead -->
+            <div style="text-align:center;padding:8px 0 16px;">
+              <div style="font-size:12px;letter-spacing:3px;color:#64748b;text-transform:uppercase;font-weight:600;">AI Trends Weekly</div>
+              <div style="font-size:14px;color:#64748b;margin-top:4px;">Friday, October 9, 2026</div>
+            </div>
+
+            <!-- Why it matters -->
+            <div style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:8px;padding:16px 18px;margin-bottom:20px;">
+              <div style="font-size:12px;letter-spacing:2px;color:#4f46e5;font-weight:700;text-transform:uppercase;margin-bottom:8px;">Why it matters</div>
+              <p style="font-size:15px;line-height:1.6;color:#334155;margin:0;">Open weights had their biggest week in months: Mistral's 1-trillion-parameter Large 4 — trained in Europe on roughly 3,800 GPUs, a fraction of what Chinese rivals burned — and America's Reflection AI Beam both landed, each framed as the Western answer to DeepSeek-era open models. Meanwhile inference pricing split in two directions: Anthropic cut Haiku 5.5 pricing about 75% while OpenAI launched a 6x Ultrafast tier that turns latency into a luxury line item. And under the product news, the compute-financing machine kept humming: Lambda's $4B raise leans on a single $35B Anthropic contract — a reminder that neocloud balance sheets are concentrated bets on two or three labs.</p>
+            </div>
+
+            <!-- HERO STORY -->
+            <div style="background:#ffffff;border-radius:12px;padding:28px 24px;margin-bottom:20px;box-shadow:0 1px 3px rgba(15,23,42,0.08);border-top:6px solid #4f46e5;">
+              <div style="font-size:12px;letter-spacing:2px;color:#4f46e5;font-weight:700;text-transform:uppercase;margin-bottom:10px;">Cover Story</div>
+              <h1 style="font-size:30px;line-height:1.25;color:#0f172a;margin:0 0 14px;font-weight:800;">Mistral Drops "Le Chonk": Europe's 1-Trillion-Parameter Open-Weight Play</h1>
+              <div style="margin:0 0 14px;">
+                <span style="display:inline-block;background:#eef2ff;color:#4338ca;font-weight:700;font-size:13px;padding:6px 12px;border-radius:20px;margin:0 6px 6px 0;">1T params · 49B active</span>
+                <span style="display:inline-block;background:#eef2ff;color:#4338ca;font-weight:700;font-size:13px;padding:6px 12px;border-radius:20px;margin:0 6px 6px 0;">82% on CyberGym-E2E</span>
+                <span style="display:inline-block;background:#eef2ff;color:#4338ca;font-weight:700;font-size:13px;padding:6px 12px;border-radius:20px;margin:0 6px 6px 0;">Beats GPT-6 Astra on Dense 200</span>
+                <span style="display:inline-block;background:#eef2ff;color:#4338ca;font-weight:700;font-size:13px;padding:6px 12px;border-radius:20px;margin:0 6px 6px 0;">Weights: Oct 27</span>
+              </div>
+              <p style="font-size:15px;line-height:1.7;color:#334155;margin:0 0 12px;">Mistral AI launched Mistral Large 4 on October 6 — a 1-trillion-parameter multimodal Mixture-of-Experts model (49B active per token) trained from scratch in about two months on roughly 3,800 Nvidia Grace Blackwell GPUs inside its own European data centers. Per TechCrunch, that's two to three times fewer GPUs than Chinese competitors used — efficiency as sovereignty pitch. The benchmarks are strongest where Mistral is aiming: 42% on Dense 200 visual grounding (edging GPT-6 Astra's 41%), 82% on CyberGym-E2E cybersecurity (ahead of Chinese open weights), 61.7% on DeepSWE v1.1 agentic coding, and 67% on FinWorkBench matching DeepSeek-V4-Pro.</p>
+              <p style="font-size:15px;line-height:1.7;color:#334155;margin:0 0 12px;">The release terms are the story: open weights land October 27 under the Apache license, but until then Mistral is red-teaming the model with vetted cybersecurity teams, developers and government partners — including a reduced-moderation build for defensive testing. It's a direct answer to the split between locked-down US models (subject to export restrictions) and dominant Chinese open weights, and the bet is enterprise: cybersecurity, finance, manufacturing and chip design, the last one notable given backing from ASML and Samsung. A Plotly engineer reported a jump from 58% to 74% on his internal data-analytics benchmark at 10x lower cost than Mistral Medium 3.5. Artificial Analysis scores it 38 on the Intelligence Index — a leap from Large 3's 9, though still ~20 points behind Claude Opus 5.5.</p>
+              <div style="font-size:12px;color:#64748b;">Sources: <a href="https://www.webpronews.com/mistrals-le-chonk-europes-1-trillion-parameter-bet-to-own-ai-without-the-guardrails/" style="color:#4f46e5;text-decoration:none;">WebProNews</a> · <a href="https://betanews.com/article/mistral-large-4-preview-open-weights/" style="color:#4f46e5;text-decoration:none;">BetaNews</a> · <a href="https://medium.com/ai-briefing-room/ai-news-briefing-7-october-2026-aec21d478603" style="color:#4f46e5;text-decoration:none;">AI Briefing Room (Oct 7)</a></div>
+            </div>
+
+            <!-- Secondary stories -->
+            <div style="background:#ffffff;border-radius:12px;padding:24px 24px;margin-bottom:20px;box-shadow:0 1px 3px rgba(15,23,42,0.08);">
+
+              <div style="padding:16px 0;border-bottom:1px solid #e2e8f0;">
+                <div style="font-size:13px;font-weight:800;color:#4f46e5;letter-spacing:1px;">02</div>
+                <h2 style="font-size:20px;color:#0f172a;margin:6px 0 8px;font-weight:700;">Anthropic's Haiku 5.5: 75% Cheaper, 1M Context, and an IPO Countdown</h2>
+                <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 8px;">Anthropic launched Claude Haiku 5.5 on October 7 — the third Claude 5.5 model in a month, and the fastest in its lineup. Pricing is the headline: $0.10/$0.50 per million input/output tokens for prompts under 100K tokens, roughly 75% below Haiku 4.5 (up to 90% cheaper on the common short-prompt band), directly matching OpenAI's GPT-6 Luna. It adds an adjustable effort setting, a 1-million-token context window, and scores 72.4% on OSWorld 2.1 computer-use plus 39.2% on Terminal-Bench 4.0 — aimed squarely at high-frequency subagents and agent workflows. It's also the first Haiku with built-in safeguards for a narrow set of high-risk cybersecurity requests. Anthropic halved Sonnet 5.5 cache-read prices to $0.10/M and is issuing $100–$500/month in API credits to Max and Team subscribers. The timing reads as market-share spending: the price cut lands one week before Anthropic hosts IPO investors on October 14, even as SemiAnalysis estimates subscriptions bring ~10% of Anthropic's revenue while consuming over 40% of its inference compute.</p>
+                <div style="font-size:12px;color:#64748b;">Sources: <a href="https://www.reuters.com/business/anthropic-launches-third-claude-55-model-expanding-ai-lineup-before-planned-ipo-2026-10-07/" style="color:#4f46e5;text-decoration:none;">Reuters</a> · <a href="https://techstartups.com/2026/10/08/top-tech-news-today-october-8-2026-globalfoundries-google-manus-microsoft-nvidia-openai-tencent-more/" style="color:#4f46e5;text-decoration:none;">TechStartups</a> · <a href="https://www.linkedin.com/pulse/weekly-ai-blast-thursday-october-8-2026-john-kump-fixcc" style="color:#4f46e5;text-decoration:none;">Weekly AI Blast (Oct 8)</a></div>
+              </div>
+
+              <div style="padding:16px 0;border-bottom:1px solid #e2e8f0;">
+                <div style="font-size:13px;font-weight:800;color:#4f46e5;letter-spacing:1px;">03</div>
+                <h2 style="font-size:20px;color:#0f172a;margin:6px 0 8px;font-weight:700;">Reflection AI's Beam: 501B Open Weights, America's Efficiency Gambit Against China</h2>
+                <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 8px;">Nvidia-backed Reflection AI launched Beam on October 5 — a 501-billion-parameter Mixture-of-Experts open-weight model (23B active per token) that claims to match Z.ai's GLM-5.2 on advanced reasoning while using 3–4x less inference compute. Pretrained on 23.8 trillion tokens and fine-tuned with RL across 100M+ rollouts on 10,500 GB300 GPUs, it posts 80.9 on SWE-bench Verified, 80.1 on Terminal Bench v2.1, and beats Thinking Machines' Inkling 77.2 to 56.9 on SWE Bench Pro v2-Hard — though Moonshot's Kimi K3 still leads it on some coding metrics. Early access is through a waitlist; full weights land later this month under Apache 2.0 with technical report, model card and FP8/NVFP4 quantized versions. The framing is explicit: America's reply to DeepSeek and Qwen, competing on coding and agentic work at lower inference cost. Claims aren't independently verified yet — and Beijing is watching the same benchmarks.</p>
+                <div style="font-size:12px;color:#64748b;">Sources: <a href="https://completeaitraining.com/news/reflection-ai-debuts-beam-a-501b-open-weight-model-that/" style="color:#4f46e5;text-decoration:none;">Complete AI Training</a> · <a href="https://www.tradingkey.com/news/cryptocurrencies/262202637-cryptopolitan" style="color:#4f46e5;text-decoration:none;">TradingKey (Cryptopolitan)</a> · <a href="https://www.webpronews.com/reflection-ais-beam-model-takes-aim-at-chinese-open-weight-lead-with-efficiency-focus/" style="color:#4f46e5;text-decoration:none;">WebProNews</a></div>
+              </div>
+
+              <div style="padding:16px 0;border-bottom:1px solid #e2e8f0;">
+                <div style="font-size:13px;font-weight:800;color:#4f46e5;letter-spacing:1px;">04</div>
+                <h2 style="font-size:20px;color:#0f172a;margin:6px 0 8px;font-weight:700;">OpenAI Dumps 722 Math Manuscripts From a Model Nobody Can Use Yet</h2>
+                <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 8px;">On October 6, OpenAI published 722 mathematical manuscripts — grouped into 372 families — written by an internal model the public can't access yet, in a public GitHub repo (openai/math) with PDFs, source files, Lean proof artifacts and an Apache 2.0 license. The model tackled roughly 4,000 problems; each accepted result cost about three hours of ChatGPT Pro "thinking" compute, cheap compared with the millions spent on last month's Navier-Stokes run. OpenAI itself cautions some papers may contain errors, and only ten families include abridged summaries of the model's reasoning — readers see finished arguments, not the path. The scale is the point: this is the largest math release OpenAI has made, and it reads as a flex about internal reasoning capability as much as a research contribution. Mathematicians now get to grade an alien's homework at industrial scale.</p>
+                <div style="font-size:12px;color:#64748b;">Sources: <a href="https://www.aimiracle.ai/ai-news/open-ai-math/" style="color:#4f46e5;text-decoration:none;">AIMiracle</a> · <a href="https://ai0.news/posts/2026-10-07-daily-digest/" style="color:#4f46e5;text-decoration:none;">ai0.news (Oct 7 digest)</a></div>
+              </div>
+
+              <div style="padding:16px 0;border-bottom:1px solid #e2e8f0;">
+                <div style="font-size:13px;font-weight:800;color:#4f46e5;letter-spacing:1px;">05</div>
+                <h2 style="font-size:20px;color:#0f172a;margin:6px 0 8px;font-weight:700;">GPT-6 Goes Wide: Full Rollout, "Intelligent UI," and a 6x Ultrafast Tier</h2>
+                <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 8px;">OpenAI's "28 Days of Continuous Releases" hit Day 3 with the global rollout of the GPT-6 model series to all ChatGPT free and paid users: Plus and Team get GPT-6 Sol, while free and Go users see GPT-5.6 gradually replaced by GPT-6 Luna. The showpiece is Intelligent UI — the chatbox streaming interactive cards in real time (buttons, dynamic charts, bill splitters, budgeting tools) so AI generates the interface around the task instead of forcing users into fixed apps. GPT-6's Interleaved Thinking lifts first-token latency ~44%, and Codex + Work weekly active users passed 40M. On the pricing side, OpenAI completed its speed-tier playbook on October 8: GPT-6.1 Sol Ultrafast at $12/$60 per million input/output tokens — 6x standard rates — with up to 6x faster token generation in the API (8x in Codex). Latency is now officially a premium SKU: cheap bulk on one end, six-times speed for those who'll pay.</p>
+                <div style="font-size:12px;color:#64748b;">Sources: <a href="https://www.rebabel.net/en/openai-delivers-on-day-3-challenge-full-rollout-of-gpt-6-ai-daily-2026-10-09/" style="color:#4f46e5;text-decoration:none;">Rebabel (AI Daily, Oct 9)</a> · <a href="https://runtimewire.com/article/openai-gpt-6-1-sol-ultrafast-api-pricing" style="color:#4f46e5;text-decoration:none;">RuntimeWire</a> · <a href="https://techstartups.com/2026/10/08/top-tech-news-today-october-8-2026-globalfoundries-google-manus-microsoft-nvidia-openai-tencent-more/" style="color:#4f46e5;text-decoration:none;">TechStartups</a></div>
+              </div>
+
+              <div style="padding:16px 0;border-bottom:1px solid #e2e8f0;">
+                <div style="font-size:13px;font-weight:800;color:#4f46e5;letter-spacing:1px;">06</div>
+                <h2 style="font-size:20px;color:#0f172a;margin:6px 0 8px;font-weight:700;">Lambda's $4B Raise Rests on One Customer: A $35B Anthropic Contract</h2>
+                <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 8px;">Lambda is raising up to $4 billion at a $14.5B pre-money valuation — likely its last private round before a planned 2027 IPO — led by Coatue and Blackstone, per the WSJ on October 6. An investor letter shows the backlog ballooned from $15B in June to $50B in September; about $35B of that is one Anthropic commitment signed in late August — roughly 70% of the backlog from a single customer. Lambda also raised $1B in debt the week before, even as lenders grow pickier about data-center projects. With GPU capacity scarce, investors are still betting — but the bet is effectively on Anthropic's ability to keep paying, the same Anthropic now slashing prices and absorbing subscriber compute. Nscale filed for its IPO last month; Lambda would join CoreWeave and Nebius as the third Nvidia-backed neocloud testing public markets in 2027.</p>
+                <div style="font-size:12px;color:#64748b;">Sources: <a href="https://techcrunch.com/2026/10/06/ai-computing-startup-lambda-to-raise-4b-ahead-of-planned-ipo/" style="color:#4f46e5;text-decoration:none;">TechCrunch</a> · <a href="https://northlandnewsradio.com/2026/10/06/nvidia-backed-lambda-targets-4-billion-raise-ahead-of-planned-ipo-wsj-reports/" style="color:#4f46e5;text-decoration:none;">Reuters via Northland News</a></div>
+              </div>
+
+              <div style="padding:16px 0;border-bottom:1px solid #e2e8f0;">
+                <div style="font-size:13px;font-weight:800;color:#4f46e5;letter-spacing:1px;">07</div>
+                <h2 style="font-size:20px;color:#0f172a;margin:6px 0 8px;font-weight:700;">FLUX 3 Action: Open-Weights World Model Takes RoboLab's Top Spot</h2>
+                <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 8px;">Black Forest Labs released FLUX 3 Action, an open-weights 7B "world action model" that takes first place on the RoboLab benchmark — beating the previous best open model by 6.1 percentage points while using 56% fewer parameters and running up to 3.95x faster. It predicts video and actions jointly (32 actions ahead, more than twice the planning horizon of the strongest open VLA) and still runs faster per second of robot motion, recovering from its own mistakes. Built on the FLUX 3 image/video/audio pretraining stack, it's integrated natively into Hugging Face's LeRobot with fine-tuning recipes and edge deployment on NVIDIA Jetson — teams can fine-tune it on their own demonstrations for specific robots and tasks. FLUX 3 Image shipped the same week under a commercial weights license. The practical pitch: the speed-vs-capability tradeoff in robot control just compressed, and it's downloadable.</p>
+                <div style="font-size:12px;color:#64748b;">Sources: <a href="https://www.linkedin.com/company/bflai/" style="color:#4f46e5;text-decoration:none;">Black Forest Labs (LinkedIn)</a></div>
+              </div>
+
+              <div style="padding:16px 0;border-bottom:1px solid #e2e8f0;">
+                <div style="font-size:13px;font-weight:800;color:#4f46e5;letter-spacing:1px;">08</div>
+                <h2 style="font-size:20px;color:#0f172a;margin:6px 0 8px;font-weight:700;">The Inference Cost Floor Keeps Falling — and Now It's Auctioned Live</h2>
+                <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 8px;">Two moves show where inference economics are headed. DeepSeek cut cached-input pricing 57% on its V4.1-Flash, which needs just 890 bytes of cache per token — 437x less than DeepSeek-V1 — making million-token context genuinely cheap. Meanwhile Architect Financial Technologies launched Liquid Inference: a real-time auction that treats every LLM prompt as a tradeable event, routing each request to whichever provider offers the lowest qualifying price (swap a base URL, keep your code), built on its US Designated Contract Market acquisition and a planned GPU-compute futures market. One lab cuts the floor; another makes the floor a market. Together with Haiku 5.5's 75% cut, the week's theme is unmistakable: bulk inference is becoming a commodity, and the margins are migrating to speed and orchestration.</p>
+                <div style="font-size:12px;color:#64748b;">Sources: <a href="https://www.linkedin.com/company/deeplearningai?trk=similar-pages" style="color:#4f46e5;text-decoration:none;">DeepLearning.AI / The Batch</a> · <a href="https://aidailypost.com/news/architect-launches-real-time-ai-compute" style="color:#4f46e5;text-decoration:none;">AI Daily Post</a></div>
+              </div>
+
+              <div style="padding:16px 0;border-bottom:1px solid #e2e8f0;">
+                <div style="font-size:13px;font-weight:800;color:#4f46e5;letter-spacing:1px;">09</div>
+                <h2 style="font-size:20px;color:#0f172a;margin:6px 0 8px;font-weight:700;">Hack The Box Ships Enterprise Benchmarking for AI Security Agents</h2>
+                <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 8px;">Hack The Box launched AI Range Enterprise Edition on October 6 — a platform that lets enterprise security teams test and score their own deployed AI agents under realistic, controlled conditions. Launch roles: penetration tester and SOC analyst, with Agentic Worker Competence and Agentic Operator Competence scoring that rates both the agent's competence and the human operator's judgment in directing it. It follows the December 2025 AI Range release aimed at benchmarking agent safety and capability. The timing is deliberate: in a week when Mistral hands reduced-moderation models to vetted cyber teams and Anthropic's own red team showed open-weight GLM-5.3 building working exploits at near-frontier rates, enterprises need controlled proof — not vendor benchmark claims — that their agents can operate in security workflows. Independent enterprise pricing is via sales.</p>
+                <div style="font-size:12px;color:#64748b;">Source: <a href="https://tech-insider.org/hack-the-box-ai-range-enterprise-edition-2026/" style="color:#4f46e5;text-decoration:none;">Tech Insider</a></div>
+              </div>
+
+              <div style="padding:16px 0;">
+                <div style="font-size:13px;font-weight:800;color:#4f46e5;letter-spacing:1px;">10</div>
+                <h2 style="font-size:20px;color:#0f172a;margin:6px 0 8px;font-weight:700;">Liquid AI's Decision Models: Zero Output Tokens, Sub-10B Smarts</h2>
+                <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 8px;">Liquid AI open-weighted two "decision models" — d1-3B and the multimodal d1-omni-600M — that produce structured decisions (scores, choices, classifications) in a single forward pass with zero output tokens. d1-3B scores first among sub-10B models on Decision Index v0.2.1 and roughly matches the 12x larger Decider 35B-A3B. The thesis is contrarian to the 1T-parameter generative bets of the week: not every AI answer needs to be a sentence, and generative models waste latency and tokens on narrow tasks like triage, reranking and guardrails. With open checkpoints and edge-ready runtimes (Jetson measurements cited), it's aimed at the same high-volume deployment tier Anthropic is chasing with Haiku 5.5 — from the opposite direction: no tokens at all.</p>
+                <div style="font-size:12px;color:#64748b;">Source: <a href="https://aiweekly.co/alerts/liquid-ai-opens-d1-3b-and-d1-omni-600m-decision-models" style="color:#4f46e5;text-decoration:none;">AI Weekly</a></div>
+              </div>
+
+            </div>
+
+            <!-- Footer -->
+            <div style="text-align:center;padding:16px 0 8px;">
+              <div style="font-size:15px;color:#94a3b8;font-style:italic;">by Your Tech Sommelier</div>
+            </div>
+
+          </td></tr>
+        </table>
+      </div>
+    </article>
+
     <article id="aiTrendWeeklyOct02" aria-live="polite" hidden style="margin-top:22px;">
       <div style="background-color:#f8fafc;padding:24px 12px;">
         <table width="100%" cellpadding="0" cellspacing="0" style="max-width:640px;margin:0 auto;">
@@ -2232,6 +2338,7 @@
 
     function renderAiIssue(key) {
       currentAiIssue = key;
+      const isWeeklyOct09 = key === 'weekly-2026-10-09';
       const isWeeklyOct02 = key === 'weekly-2026-10-02';
       const isWeeklySep25 = key === 'weekly-2026-09-25';
       const isOct09 = key === '2026-10-09';
@@ -2239,6 +2346,7 @@
       const isOct07 = key === '2026-10-07';
       const isOct06 = key === '2026-10-06';
       const isOct05 = key === '2026-10-05';
+      $('#aiTrendWeeklyOct09').hidden = !isWeeklyOct09;
       $('#aiTrendWeeklyOct02').hidden = !isWeeklyOct02;
       $('#aiTrendWeeklySep25').hidden = !isWeeklySep25;
       $('#aiTrendDailyOct09').hidden = !isOct09;
@@ -2246,7 +2354,10 @@
       $('#aiTrendDailyOct07').hidden = !isOct07;
       $('#aiTrendDailyOct06').hidden = !isOct06;
       $('#aiTrendDailyOct05').hidden = !isOct05;
-      if (isWeeklyOct02) {
+      if (isWeeklyOct09) {
+        $('#issueDate').textContent = 'Week of October 9, 2026';
+        $('#storyCount').textContent = '10 stories';
+      } else if (isWeeklyOct02) {
         $('#issueDate').textContent = 'Week of October 2, 2026';
         $('#storyCount').textContent = '9 stories';
       } else if (isWeeklySep25) {
@@ -2289,6 +2400,7 @@
       $('#hardwareDailyOct07').hidden = true;
       $('#hardwareDailyOct06').hidden = true;
       $('#hardwareDailyOct05').hidden = true;
+      $('#aiTrendWeeklyOct09').hidden = true;
       $('#aiTrendWeeklyOct02').hidden = true;
       $('#aiTrendWeeklySep25').hidden = true;
       $('#aiTrendDailyOct09').hidden = true;
