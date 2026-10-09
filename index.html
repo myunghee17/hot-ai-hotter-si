@@ -788,16 +788,9 @@
     <p style="font-size:15px;color:#334155;line-height:1.7;margin:0 0 12px 0;">Why it matters: CXL memory pooling and 102.4T switching are the plumbing of the next rack scale — as context windows balloon, capacity tiering beyond local HBM becomes standard architecture.</p>
     <p style="font-size:13px;margin:0;"><a href="https://www.businesswire.com/news/home/20261008676830/en/Marvell-to-Showcase-Open-AI-Infrastructure-Solutions-at-OCP-Global-Summit-2026" style="color:#2563eb;font-weight:600;">Source: Business Wire &rarr;</a></p>
     </article>
-    <article style="background:#ffffff;border:1px solid #e2e8f0;border-radius:14px;padding:24px 28px;margin-bottom:18px;">
-    <div style="font-size:12px;letter-spacing:2px;font-weight:800;color:#2563eb;margin-bottom:6px;">07</div>
-    <h2 style="font-size:21px;color:#0f172a;margin:0 0 10px 0;font-weight:700;">NVIDIA Tipped to Tap Intel's Foveros Packaging for AI GPUs <span style="font-size:13px;font-weight:600;color:#b45309;background:#fef3c7;padding:2px 10px;border-radius:999px;vertical-align:middle;">RUMOR</span></h2>
-    <p style="font-size:15px;color:#334155;line-height:1.7;margin:0 0 12px 0;">Analyst Jeff Pu (GF Securities) claims NVIDIA may use Intel's <strong>Foveros 3D packaging</strong> for backend assembly of its AI products in H2 2028, following reports of Google adopting Intel's EMIB-T for next-gen TPUs. The idea: Intel handles packaging while TSMC keeps front-end wafer work — relieving TSMC's capacity-constrained CoWoS lines.</p>
-    <p style="font-size:15px;color:#334155;line-height:1.7;margin:0 0 12px 0;">Why it matters: advanced packaging is the real bottleneck — if even NVIDIA shops Intel for assembly, the foundry balance of power shifts. But this is single-analyst sourcing; treat as unconfirmed.</p>
-    <p style="font-size:13px;margin:0;"><a href="https://wccftech.com/intel-again-tipped-for-major-foundry-business-win-as-nvidia-might-use-foveros-chip-technology-in-h2-2028-says-analyst/" style="color:#2563eb;font-weight:600;">Source: Wccftech &rarr;</a></p>
-    </article>
     <div style="font-size:13px;letter-spacing:3px;font-weight:700;color:#64748b;margin:6px 0 16px 4px;">MARKET PULSE</div>
     <article style="background:#ffffff;border:1px solid #e2e8f0;border-radius:14px;padding:24px 28px;margin-bottom:18px;">
-    <div style="font-size:12px;letter-spacing:2px;font-weight:800;color:#2563eb;margin-bottom:6px;">08</div>
+    <div style="font-size:12px;letter-spacing:2px;font-weight:800;color:#2563eb;margin-bottom:6px;">07</div>
     <h2 style="font-size:21px;color:#0f172a;margin:0 0 10px 0;font-weight:700;">Chip Stocks Wobble on OpenAI Revenue Report</h2>
     <p style="font-size:15px;color:#334155;line-height:1.7;margin:0 0 12px 0;">AI hardware stocks fell Thursday after the FT reported OpenAI told investors its annualized revenue was near <strong>$50B</strong> — $20B short of its earlier $70B projection. AMD fell 3.9%, Nvidia 2.9%, Broadcom 4.3%, Micron and SanDisk ~5%, Intel 5.3%. Analysts called it a reporting-methodology artifact, not demand weakness.</p>
     <p style="font-size:15px;color:#334155;line-height:1.7;margin:0 0 12px 0;">Why it matters: the entire hardware build-out is levered to AI revenue growth — one soft number still moves the whole supply chain in an afternoon.</p>
@@ -2313,7 +2306,7 @@
       $('#hardwareDailyOct06').hidden = !isOct06;
       $('#hardwareDailyOct05').hidden = !isOct05;
       $('#issueDate').textContent = isOct09 ? 'Friday, October 9, 2026' : isOct08 ? 'Thursday, October 8, 2026' : isOct07 ? 'Wednesday, October 7, 2026' : isOct06 ? 'Tuesday, October 6, 2026' : 'Monday, October 5, 2026';
-      $('#storyCount').textContent = isOct09 ? '8 stories' : isOct08 ? '7 stories' : isOct07 ? '8 stories' : isOct06 ? '5 stories' : '6 stories';
+      $('#storyCount').textContent = isOct09 ? '7 stories' : isOct08 ? '7 stories' : isOct07 ? '8 stories' : isOct06 ? '5 stories' : '6 stories';
       document.querySelectorAll('#navHardware .edition-btn').forEach(btn => {
         btn.setAttribute('aria-pressed', String(btn.dataset.issue === key));
       });
