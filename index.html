@@ -1020,6 +1020,7 @@
       <nav class="archive-navigation" id="navLlm" aria-label="AI Trends edition navigation" hidden>
         <div class="edition-group weekly-group" aria-label="Choose an AI Trends weekly summary">
           <span class="edition-label">Weekly</span>
+          <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="weekly-2026-10-16" aria-pressed="false">Oct 16</button>
           <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="weekly-2026-10-09" aria-pressed="false">Oct 9</button>
           <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="weekly-2026-10-02" aria-pressed="false">Oct 2</button>
           <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="weekly-2026-09-25" aria-pressed="false">Sep 25</button>
@@ -2037,6 +2038,116 @@
       </div>
     </article>
 
+    <article id="aiTrendWeeklyOct16" data-edition-date="2026-10-16" aria-live="polite" hidden style="margin-top:22px;">
+      <div style="background-color:#f8fafc;padding:24px 12px;">
+        <table width="100%" cellpadding="0" cellspacing="0" style="max-width:640px;margin:0 auto;">
+          <tr><td>
+
+            <!-- Masthead -->
+            <div style="text-align:center;padding:8px 0 16px;">
+              <div style="font-size:12px;letter-spacing:3px;color:#64748b;text-transform:uppercase;font-weight:600;">AI Trends Weekly</div>
+              <div style="font-size:14px;color:#64748b;margin-top:4px;">Friday, October 16, 2026</div>
+            </div>
+
+            <!-- Why it matters -->
+            <div style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:8px;padding:16px 18px;margin-bottom:20px;">
+              <div style="font-size:12px;letter-spacing:2px;color:#4f46e5;font-weight:700;text-transform:uppercase;margin-bottom:8px;">Why it matters</div>
+              <p style="font-size:15px;line-height:1.6;color:#334155;margin:0;">Open weights had their biggest week of the year: Meta's 816-billion-parameter Muse Spark Open — claimed as the most capable US open-weight model yet — landed alongside Stepfun's Step 5 Preview, which shot to #2 on OpenRouter's usage chart within days of opening its weights, while Liquid AI pushed the local-first frontier with a 24B model doing 184 tokens/sec on an Apple chip. On the frontier side, Google's Gemini 4 Argon went wide with launch pricing that doubles November 30, DeepSeek halved two models' list prices mid-week, and OpenAI started charging $0 for output tokens on its new Decisions API. And in research, the math community is building verification infrastructure for AI-generated proofs even as a new benchmark shows open models trailing frontier systems by ten months on hard problems.</p>
+            </div>
+
+            <!-- HERO STORY -->
+            <div style="background:#ffffff;border-radius:12px;padding:28px 24px;margin-bottom:20px;box-shadow:0 1px 3px rgba(15,23,42,0.08);border-top:6px solid #4f46e5;">
+              <div style="font-size:12px;letter-spacing:2px;color:#4f46e5;font-weight:700;text-transform:uppercase;margin-bottom:10px;">Cover Story</div>
+              <h1 style="font-size:30px;line-height:1.25;color:#0f172a;margin:0 0 14px;font-weight:800;">Meta's Muse Spark Open: 816B Open Weights That Fit on Two Desks</h1>
+              <div style="margin:0 0 14px;">
+                <span style="display:inline-block;background:#eef2ff;color:#4338ca;font-weight:700;font-size:13px;padding:6px 12px;border-radius:20px;margin:0 6px 6px 0;">816B params · 42B active</span>
+                <span style="display:inline-block;background:#eef2ff;color:#4338ca;font-weight:700;font-size:13px;padding:6px 12px;border-radius:20px;margin:0 6px 6px 0;">1M-token context</span>
+                <span style="display:inline-block;background:#eef2ff;color:#4338ca;font-weight:700;font-size:13px;padding:6px 12px;border-radius:20px;margin:0 6px 6px 0;">Runs on 2× Mac Studio (M5 Ultra + MLX)</span>
+                <span style="display:inline-block;background:#eef2ff;color:#4338ca;font-weight:700;font-size:13px;padding:6px 12px;border-radius:20px;margin:0 6px 6px 0;">Kernel speedups up to 3.95×</span>
+              </div>
+              <p style="font-size:15px;line-height:1.7;color:#334155;margin:0 0 12px;">Meta released Muse Spark Open on October 15 — an open-weight model for coding, reasoning and autonomous tasks that the company calls the most capable US-developed open-weight model to date (Meta's claim). It's a sparse Mixture-of-Experts design: 816 billion total parameters with 42 billion active per token, a one-million-token context window, and native multimodality. The weights are downloadable now via Hugging Face, Amazon SageMaker AI, Google Cloud Model Garden and Microsoft Foundry Models, with hosted inference through Baseten, Fireworks AI, Groq, Modal, Nebius, OpenRouter and Together AI.</p>
+              <p style="font-size:15px;line-height:1.7;color:#334155;margin:0 0 12px;">The headline demo is local: the model runs on two Apple Mac Studio systems with M5 Ultra chips through Apple's MLX framework, each contributing up to 512 GB of unified memory at 1.2 TB/s of bandwidth — enough to hold the full model without the cloud. Meta showed it off through its Muse Code agent fixing bugs, adding features and completing a build for the open-source Ice Cubes Mastodon app, and driving DaVinci Resolve to scan footage and cut vertical clips. Inference is supported on vLLM, SGLang, TensorRT-LLM, Apple MLX and llama.cpp, and Meta reported kernel-level speed improvements of 1.03–3.95× on NVIDIA and AMD GPUs, plus 3% end-to-end on AMD MI350 hardware.</p>
+              <div style="font-size:12px;color:#64748b;">Source: <a href="https://deccanfounders.com/2026/16/news/meta-muse-spark-open-816b-parameters-desktop-ai/" style="color:#4f46e5;text-decoration:none;">Deccan Founders</a></div>
+            </div>
+
+            <!-- Secondary stories -->
+            <div style="background:#ffffff;border-radius:12px;padding:24px 24px;margin-bottom:20px;box-shadow:0 1px 3px rgba(15,23,42,0.08);">
+
+              <div style="padding:16px 0;border-bottom:1px solid #e2e8f0;">
+                <div style="font-size:13px;font-weight:800;color:#4f46e5;letter-spacing:1px;">02</div>
+                <h2 style="font-size:20px;color:#0f172a;margin:6px 0 8px;font-weight:700;">Google's Gemini 4 Argon Goes Wide — Intro Pricing Doubles After Nov 30</h2>
+                <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 8px;">Google opened Gemini 4 Argon to developers, enterprises and subscribers on October 13: API access via AI Studio and the Gemini platform, plus the Gemini app, Antigravity coding tool and AI Mode in Search. Pitched as a frontier model for "deep work" — software development, financial analysis, legal work, scientific research and cybersecurity — it's the first of the Gemini 4 family and arrives after a rough stretch that included the shelved Gemini 3.5 Pro and a DeepMind leadership shakeup. Launch pricing is $2/$10 per million input/output tokens with 95% off context caching — but it doubles after November 30, a deadline that forces early adoption decisions. Google followed the new defenders-first playbook: Argon went to its Fairwind cybersecurity partners and the US government on September 30, with the public build hardened against prompt injection, since the model's vulnerability-finding ability could be turned to attacks.</p>
+                <div style="font-size:12px;color:#64748b;">Sources: <a href="https://www.cryptopolitan.com/google-gemini-4-argon-openai-anthropic-price/" style="color:#4f46e5;text-decoration:none;">Cryptopolitan</a> · <a href="https://techstartups.com/2026/10/14/top-tech-news-today-october-14-2026-apple-asml-google-openai-microsoft-nvidia-more/" style="color:#4f46e5;text-decoration:none;">TechStartups</a> · <a href="https://en.sedaily.com/technology/2026/10/16/ai-that-finds-software-flaws-goes-to-defenders-first" style="color:#4f46e5;text-decoration:none;">Seoul Economic Daily</a></div>
+              </div>
+
+              <div style="padding:16px 0;border-bottom:1px solid #e2e8f0;">
+                <div style="font-size:13px;font-weight:800;color:#4f46e5;letter-spacing:1px;">03</div>
+                <h2 style="font-size:20px;color:#0f172a;margin:6px 0 8px;font-weight:700;">Stepfun Open-Sources Step 5 Preview: 600B MoE at 1/8 the Cost of Opus 5</h2>
+                <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 8px;">On October 15, Chinese lab Stepfun open-sourced Step 5 Preview — a 600B-parameter sparse MoE (27B active per token) with a 1M-token context and native text+vision, released in both BF16 and FP8 precision on Hugging Face and ModelScope with a technical blog post. The model had already climbed to #2 on OpenRouter's weekly token-usage chart before the weights opened, with roughly 18.8 trillion tokens consumed in seven days — real developer adoption, not just benchmark scores. On Artificial Analysis's Intelligence Index it scored 44, placing it among the top three open-source models globally, while the average per-task cost is reportedly one-eighth of Claude Opus 5 ($0.71 vs $5.86). The message of the week: open-weight competition is a two-front war, with Chinese labs and Meta releasing within 48 hours of each other.</p>
+                <div style="font-size:12px;color:#64748b;">Source: <a href="https://finance.biggo.com/news/bea3cab9-0865-4b4f-9486-dc83af4691cf" style="color:#4f46e5;text-decoration:none;">BigGo Finance</a></div>
+              </div>
+
+              <div style="padding:16px 0;border-bottom:1px solid #e2e8f0;">
+                <div style="font-size:13px;font-weight:800;color:#4f46e5;letter-spacing:1px;">04</div>
+                <h2 style="font-size:20px;color:#0f172a;margin:6px 0 8px;font-weight:700;">DeepSeek Halves Prices Mid-Week — Again</h2>
+                <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 8px;">ModelPriceWatch's tracker caught a clean 50% cut across the board between October 5 and 10: deepseek-v4-1-flash went from $0.30/$1.20 to $0.15/$0.60 per million input/output tokens, and deepseek-v4-pro from $1.32/$3.96 to $0.66/$1.98. Not a rounding artifact — both models dropped by exactly half on both input and output, mid-week, without announcement. DeepSeek has form here: aggressive pricing as a market-share play, and at $0.15 input, flash is now genuinely cheap for high-volume work like summarization, classification and first-pass drafts. In the other direction, OpenAI's gpt-rosalind-research moved from free research preview to a priced endpoint ($5 input, $0.50 cached, $25 output) on October 5 — price changes without model releases are becoming routine.</p>
+                <div style="font-size:12px;color:#64748b;">Sources: <a href="https://dev.to/adrasmussen/deepseek-cuts-prices-in-half-mid-week-this-week-in-llm-pricing-okd" style="color:#4f46e5;text-decoration:none;">DEV (ModelPriceWatch)</a> · <a href="https://local-ai-zone.github.io/blog/October_2026_AI_Model_Updates.html" style="color:#4f46e5;text-decoration:none;">Local AI Zone</a></div>
+              </div>
+
+              <div style="padding:16px 0;border-bottom:1px solid #e2e8f0;">
+                <div style="font-size:13px;font-weight:800;color:#4f46e5;letter-spacing:1px;">05</div>
+                <h2 style="font-size:20px;color:#0f172a;margin:6px 0 8px;font-weight:700;">OpenAI's Decisions API: Typed Answers, Zero Output Tokens</h2>
+                <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 8px;">OpenAI's Decisions API entered public beta on October 6 — and it charges $0 for output tokens because it doesn't generate text. POST /v1/decisions takes a question and returns one of three typed shapes: a predicate (a 0-to-1 probability a condition is true), a choice (one option from a fixed list, with confidence), or a score against ordered severity levels. It runs on gpt-6-luna, accepts text or images (inline base64 data URLs only, up to 128 per request), and arrives as a machine-usable answer with no prose to parse into actions. The thesis behind it: much of enterprise AI work is a decision about a record — route this ticket, flag this clause, score this claim — and generative models waste tokens and latency turning those into paragraphs. It's OpenAI's entry into the decision-model wave alongside Cloudflare's Clef and Amazon's Strands Decider 2B.</p>
+                <div style="font-size:12px;color:#64748b;">Source: <a href="https://dev.to/paullovelace/openais-decisions-api-stop-paying-for-words-you-dont-read-2njm" style="color:#4f46e5;text-decoration:none;">DEV</a></div>
+              </div>
+
+              <div style="padding:16px 0;border-bottom:1px solid #e2e8f0;">
+                <div style="font-size:13px;font-weight:800;color:#4f46e5;letter-spacing:1px;">06</div>
+                <h2 style="font-size:20px;color:#0f172a;margin:6px 0 8px;font-weight:700;">Liquid AI's LFM2.5-24B-A2B: 184 Tokens/Sec on an Apple M5 Max</h2>
+                <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 8px;">Liquid AI released LFM2.5-24B-A2B on October 13 — an open-weight MoE with 24B total parameters but only 2B active per token, which the company reports runs at 184 tokens per second locally on an Apple M5 Max. The real story is the market it sits in: a year ago, arguing about which 24B model to self-host wasn't a conversation; today it sits in the same news cycle as Meta's 816B release and draws more practical interest from working developers. The positioning is agentic tool-calling over raw coding depth — Qwen3.6-35B-A3B reportedly remains the stronger pick for pure software-engineering automation — a genuinely new kind of recommendation that picks the right model for the job rather than an overall best.</p>
+                <div style="font-size:12px;color:#64748b;">Source: <a href="https://tech-insider.org/liquid-ai-lfm2-5-24b-a2b-launch-2026/" style="color:#4f46e5;text-decoration:none;">Tech Insider</a></div>
+              </div>
+
+              <div style="padding:16px 0;border-bottom:1px solid #e2e8f0;">
+                <div style="font-size:13px;font-weight:800;color:#4f46e5;letter-spacing:1px;">07</div>
+                <h2 style="font-size:20px;color:#0f172a;margin:6px 0 8px;font-weight:700;">Builder.io's Agent-Native: Open-Source TypeScript Framework for Agentic Apps</h2>
+                <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 8px;">Builder.io launched Agent-Native in beta on October 14 — a free, open-source TypeScript framework for building agentic apps, where the agent and the UI share actions, data and application state. The premise: chat interfaces make it hard to inspect results, refine work and collaborate, and an empty prompt box leaves people guessing what an agent can do. In an agentic app, anything a person can do in the app the agent can do too — delegate in natural language, see results directly in the interface, take control whenever needed — without being tied to a single model or proprietary platform. It's the tooling story of the week: the agent race is moving from better models to better surfaces for working with them.</p>
+                <div style="font-size:12px;color:#64748b;">Source: <a href="https://www.abnewswire.com/pressreleases/builderio-launches-agentnative-an-opensource-typescript-framework-for-building-agentic-apps_841627.html" style="color:#4f46e5;text-decoration:none;">ABNewswire</a></div>
+              </div>
+
+              <div style="padding:16px 0;border-bottom:1px solid #e2e8f0;">
+                <div style="font-size:13px;font-weight:800;color:#4f46e5;letter-spacing:1px;">08</div>
+                <h2 style="font-size:20px;color:#0f172a;margin:6px 0 8px;font-weight:700;">Anthropic Q3: $16.8B Revenue, First Adjusted Profit, IPO Next</h2>
+                <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 8px;">Anthropic disclosed third-quarter 2026 revenue of $16.8 billion on October 14 — up about 45% from $11.6 billion in Q2, roughly 3.6× the $4.7 billion in Q1, and more than 3.6× its full-year 2025 revenue of ~$4.6 billion. Quarterly revenue has tripled in six months, and the company says it achieved profitability on an adjusted basis for the first time. The investor presentation in San Francisco is the opening move of its IPO sprint. Alphabet and Amazon remain major shareholders and core compute partners — the unusual capital structure of the AI era, where the customers, funders and infrastructure are the same three companies.</p>
+                <div style="font-size:12px;color:#64748b;">Source: <a href="https://finance.biggo.com/news/2de0a428-038b-49b5-86a2-d57ee68bcd50" style="color:#4f46e5;text-decoration:none;">BigGo Finance</a></div>
+              </div>
+
+              <div style="padding:16px 0;border-bottom:1px solid #e2e8f0;">
+                <div style="font-size:13px;font-weight:800;color:#4f46e5;letter-spacing:1px;">09</div>
+                <h2 style="font-size:20px;color:#0f172a;margin:6px 0 8px;font-weight:700;">Simons Foundation Commits $15M to Verify AI-Generated Math</h2>
+                <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 8px;">On October 15, the Simons Foundation — together with Anthropic and OpenAI — announced a $15 million commitment to help mathematics absorb the wave of AI-produced results: an open call for proposals, workshops and conferences, plus model access and substantial compute from the labs. OpenAI contributed $5 million; Anthropic made similar resource commitments. The context: on October 6, OpenAI dropped 722 manuscripts in 372 families from an internal model that had tackled ~4,000 problems at about three hours of ChatGPT Pro compute per accepted result — but only 162 carried full Lean formalizations, some papers already needed corrections, and three were withdrawn. The field is now building the absorption infrastructure for machine-generated theorems at industrial scale.</p>
+                <div style="font-size:12px;color:#64748b;">Source: <a href="https://www.webpronews.com/simons-foundation-commits-15-million-as-ai-floods-mathematics-with-unverified-proofs/" style="color:#4f46e5;text-decoration:none;">WebProNews</a></div>
+              </div>
+
+              <div style="padding:16px 0;">
+                <div style="font-size:13px;font-weight:800;color:#4f46e5;letter-spacing:1px;">10</div>
+                <h2 style="font-size:20px;color:#0f172a;margin:6px 0 8px;font-weight:700;">First Proof Benchmark: Open Weights Ten Months Behind Frontier on Hard Math</h2>
+                <p style="font-size:14px;line-height:1.6;color:#334155;margin:0 0 8px;">The First Proof benchmark's third results batch, released October 14, quantifies the frontier/open split: frontier systems can now solve roughly 90% of unpublished, expert-graded research mathematics problems, while the best publicly available open-weight model failed to solve a single one. The effective capability gap is about ten months — substantially wider than the four-month lag Epoch AI measured across general benchmarks in May. For mathematicians who use open-weight models specifically to keep unpublished theorems off commercial servers — a concern sharpened since September, when two researchers disputed whether their work ended up in training data — it's a direct tradeoff: the capable tools and the private tools are, for now, mutually exclusive.</p>
+                <div style="font-size:12px;color:#64748b;">Source: <a href="https://www.techtimes.com/articles/329114/20261016/first-proof-math-benchmark-open-weight-ai-ten-months-behind-frontier-tools.htm" style="color:#4f46e5;text-decoration:none;">Tech Times</a></div>
+              </div>
+
+            </div>
+
+            <!-- Footer -->
+            <div style="text-align:center;padding:16px 0 8px;">
+              <div style="font-size:15px;color:#94a3b8;font-style:italic;">by Your Tech Sommelier</div>
+            </div>
+
+          </td></tr>
+        </table>
+      </div>
+    </article>
+
     <article id="aiTrendWeeklyOct09" data-edition-date="2026-10-09" aria-live="polite" hidden style="margin-top:22px;">
       <div style="background-color:#f8fafc;padding:24px 12px;">
         <table width="100%" cellpadding="0" cellspacing="0" style="max-width:640px;margin:0 auto;">
@@ -2611,6 +2722,7 @@
 
     function renderAiIssue(key) {
       currentAiIssue = key;
+      const isWeeklyOct16 = key === 'weekly-2026-10-16';
       const isWeeklyOct09 = key === 'weekly-2026-10-09';
       const isWeeklyOct02 = key === 'weekly-2026-10-02';
       const isWeeklySep25 = key === 'weekly-2026-09-25';
@@ -2620,6 +2732,7 @@
       const isOct13 = key === '2026-10-13';
       const isOct12 = key === '2026-10-12';
       const isOct11 = key === '2026-10-11';
+      $('#aiTrendWeeklyOct16').hidden = !isWeeklyOct16;
       $('#aiTrendWeeklyOct09').hidden = !isWeeklyOct09;
       $('#aiTrendWeeklyOct02').hidden = !isWeeklyOct02;
       $('#aiTrendWeeklySep25').hidden = !isWeeklySep25;
@@ -2629,7 +2742,10 @@
       $('#aiTrendDailyOct13').hidden = !isOct13;
       $('#aiTrendDailyOct12').hidden = !isOct12;
       $('#aiTrendDailyOct11').hidden = !isOct11;
-      if (isWeeklyOct09) {
+      if (isWeeklyOct16) {
+        $('#issueDate').textContent = 'Week of October 16, 2026';
+        $('#storyCount').textContent = '10 stories';
+      } else if (isWeeklyOct09) {
         $('#issueDate').textContent = 'Week of October 9, 2026';
         $('#storyCount').textContent = '10 stories';
       } else if (isWeeklyOct02) {
@@ -2678,6 +2794,7 @@
       $('#hardwareDailyOct14').hidden = true;
       $('#hardwareDailyOct13').hidden = true;
       $('#hardwareDailyOct12').hidden = true;
+      $('#aiTrendWeeklyOct16').hidden = true;
       $('#aiTrendWeeklyOct09').hidden = true;
       $('#aiTrendWeeklyOct02').hidden = true;
       $('#aiTrendWeeklySep25').hidden = true;
