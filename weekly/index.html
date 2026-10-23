@@ -115,7 +115,7 @@
     <header class="issue-bar">
       <div>
         <div class="issue-label">Weekly in Si</div>
-        <p class="issue-date">Week of October 16</p>
+        <p class="issue-date">Week of October 23</p>
       </div>
       <div class="issue-meta"><strong>What's up in the tech world!</strong>Four beats across the AI stack — from systems and silicon to packaging and process technology.</div>
     </header>
@@ -135,6 +135,109 @@
     <section id="edition" aria-live="polite"></section>
 
 <template id="tpl-hardware">
+<div style="max-width:680px;margin:0 auto;padding:24px 16px 48px 16px;background-color:#f8fafc;">
+
+<!-- Edition header -->
+<div style="text-align:center;margin-bottom:28px;">
+  <div style="font-size:11px;letter-spacing:3px;color:#64748b;text-transform:uppercase;margin-bottom:8px;">AI Hardware &bull; Daily</div>
+  <div style="font-size:15px;color:#475569;">Friday, October 23, 2026</div>
+</div>
+
+<!-- Why it matters -->
+<div style="background:#ffffff;border-radius:14px;padding:22px 24px;margin-bottom:28px;box-shadow:0 2px 10px rgba(15,23,42,0.06);border-left:4px solid #0ea5e9;">
+  <div style="font-size:11px;letter-spacing:2px;color:#0ea5e9;font-weight:700;text-transform:uppercase;margin-bottom:10px;">Why it matters</div>
+  <div style="font-size:15px;line-height:1.65;color:#334155;">The AI build-out hit the physical wall. Lam Research warned that supply-chain constraints &mdash; not demand &mdash; will cap chip-equipment revenue into 2027, vaporizing roughly $200B in chip stocks in a single session. The same week, China&rsquo;s top domestic AI chipmaker Cambricon missed targets by half on HBM starvation, while sovereign builders from Astana to Bizerte race to lock in their own compute.</div>
+</div>
+
+<!-- Cover story -->
+<div style="background:#ffffff;border-radius:16px;overflow:hidden;margin-bottom:28px;box-shadow:0 4px 18px rgba(15,23,42,0.08);">
+  <div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 55%,#0c4a6e 100%);padding:30px 28px;">
+    <div style="font-size:11px;letter-spacing:3px;color:#7dd3fc;font-weight:700;text-transform:uppercase;margin-bottom:14px;">&#128293; Cover story</div>
+    <h1 style="font-size:30px;line-height:1.25;color:#ffffff;margin:0 0 18px 0;font-weight:800;">Lam Warns of Supply Constraints Into 2027; Chip Stocks Lose ~$200B in a Day</h1>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:4px;">
+      <span style="background:rgba(125,211,252,0.15);border:1px solid rgba(125,211,252,0.4);color:#bae6fd;font-size:13px;font-weight:700;padding:8px 14px;border-radius:999px;">$8.22B record FQ1 revenue (+54% YoY)</span>
+      <span style="background:rgba(125,211,252,0.15);border:1px solid rgba(125,211,252,0.4);color:#bae6fd;font-size:13px;font-weight:700;padding:8px 14px;border-radius:999px;">&sim;$300&ndash;400M revenue constrained</span>
+      <span style="background:rgba(125,211,252,0.15);border:1px solid rgba(125,211,252,0.4);color:#bae6fd;font-size:13px;font-weight:700;padding:8px 14px;border-radius:999px;">SOX -6.72%, worst session since summer</span>
+    </div>
+  </div>
+  <div style="padding:24px 28px 28px 28px;">
+    <div style="font-size:12px;color:#94a3b8;margin-bottom:12px;">Reported Oct 22 &ndash;23, earnings call Oct 21 &bull; <a href="https://www.techtimes.com/articles/329406/20261023/chip-stocks-lose-200-billion-equipment-makers-warning-counters-nvidias-ai-optimism.htm" style="color:#0ea5e9;text-decoration:none;">TechTimes</a> &bull; <a href="https://stocktwits.com/news-articles/markets/equity/soxx-soxl-smh-plunge-as-chip-stocks-sell-off-amid-supply-chain-concerns/cZxUCbMRBDF?shem=dsdf,sharefoc,agadiscoversdl,,sh/x/discover/m1/4" style="color:#0ea5e9;text-decoration:none;">Stocktwits</a></div>
+    <p style="font-size:14px;line-height:1.7;color:#334155;margin:0 0 12px 0;">Record demand, shrinking supply. <strong style="color:#0f172a;">Lam Research posted a record fiscal Q1 &mdash; $8.22B revenue, up 54% year over year</strong> and ahead of consensus &mdash; then told investors on the Oct 21 earnings call that its December-quarter outlook &ldquo;would have been a bit higher if not for some near-term supply chain constraints,&rdquo; with visibility problems extending into 2027. Analysts estimate <strong style="color:#0f172a;">$300&ndash;400M of quarterly revenue is being constrained</strong>, with delayed shipments pushed into March.</p>
+    <p style="font-size:14px;line-height:1.7;color:#334155;margin:0 0 12px 0;">Markets read it as the whole industry&rsquo;s problem. <strong style="color:#0f172a;">Lam fell 11.76%</strong>, and the damage radiated: AMD -8.10%, Arm -7.28%, ASML -6.93%, Intel and Marvell each down more than 8%, Applied Materials -8.2%, KLA down at least 10%, even NVIDIA -4.40% on the day its CEO called neocloud demand &ldquo;off the charts.&rdquo; The Philadelphia Semiconductor Index closed at 10,731.98 &mdash; <strong style="color:#0f172a;">down 6.72%, its worst single session since the summer</strong> and lowest close since July 29. A day earlier, $1.41B had flowed into the SOXX semiconductor ETF; it fell 6.79%.</p>
+    <div style="background:#f1f5f9;border-radius:10px;padding:16px 18px;margin-top:18px;">
+      <div style="font-size:11px;letter-spacing:2px;color:#64748b;font-weight:700;text-transform:uppercase;margin-bottom:8px;">Why it matters</div>
+      <div style="font-size:14px;line-height:1.65;color:#334155;">The bull case was demand; the bottleneck is now parts. Every AI factory plan &mdash; from Lam&rsquo;s $8.6B guidance to hyperscaler gigawatts &mdash; sits downstream of constraints that no amount of capex can clear quickly.</div>
+    </div>
+  </div>
+</div>
+
+<!-- Secondary story cards -->
+
+<!-- 02 -->
+<div style="background:#ffffff;border-radius:14px;padding:22px 24px;margin-bottom:16px;box-shadow:0 2px 10px rgba(15,23,42,0.06);">
+  <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:8px;">
+    <span style="font-size:26px;font-weight:800;color:#e2e8f0;">02</span>
+    <h2 style="font-size:18px;color:#0f172a;margin:0;font-weight:700;line-height:1.35;">Cambricon Q3: Revenue +105% to $529M, but Misses Targets by Half on HBM Starvation</h2>
+  </div>
+  <div style="font-size:12px;color:#94a3b8;margin-bottom:12px;">Reported Oct 23, Q3 results officially released Oct 23 &bull; <a href="https://emergent.sh/news/cambricon-q3-2026-earnings-miss-signals" style="color:#0ea5e9;text-decoration:none;">Emergent</a></div>
+  <p style="font-size:14px;line-height:1.7;color:#334155;margin:0 0 12px 0;">China&rsquo;s leading domestic AI chipmaker reported Q3 revenue of <strong style="color:#0f172a;">3.53B yuan ($529M), up 105% year over year</strong> &mdash; but well short of analyst expectations of 6.26B yuan, a miss of about 44%. Net income rose 148% to 1.4B yuan. The shortfall signals <strong style="color:#0f172a;">manufacturing constraints and critical HBM shortages</strong> tied to US export restrictions. Cambricon&rsquo;s chips power Chinese AI labs including DeepSeek and Moonshot, making it the company most directly tasked with filling the void left by restricted NVIDIA chips.</p>
+  <div style="margin-top:12px;font-size:14px;color:#334155;"><strong style="color:#0f172a;">Why it matters:</strong> China&rsquo;s AI self-sufficiency story is throttled at the same chokepoint as everyone else &mdash; memory. Demand is not the constraint; wafers and HBM are.</div>
+</div>
+
+<!-- 03 -->
+<div style="background:#ffffff;border-radius:14px;padding:22px 24px;margin-bottom:16px;box-shadow:0 2px 10px rgba(15,23,42,0.06);">
+  <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:8px;">
+    <span style="font-size:26px;font-weight:800;color:#e2e8f0;">03</span>
+    <h2 style="font-size:18px;color:#0f172a;margin:0;font-weight:700;line-height:1.35;">Kazakhtelecom Deploys 400 H200 + 480 B300, Plans 1,000+ Vera Rubin GPUs</h2>
+  </div>
+  <div style="font-size:12px;color:#94a3b8;margin-bottom:12px;">Reported Oct 23 &bull; <a href="https://digestai.news/story/kazakhtelecom-plans-to-add-more-than-1-000-gpus-to-data-center-valley" style="color:#0ea5e9;text-decoration:none;">Digest AI</a></div>
+  <p style="font-size:14px;line-height:1.7;color:#334155;margin:0 0 12px 0;">NVIDIA said Kazakhstan&rsquo;s largest telecom has installed <strong style="color:#0f172a;">400 H200 and 480 B300 GPUs</strong> across Astana and Almaty, and plans to add <strong style="color:#0f172a;">1,000+ more GPUs in the Data Center Valley</strong> plus <strong style="color:#0f172a;">1,000+ Vera Rubin GPUs in Ekibastuz</strong> next year. Alongside: inDrive and Pony.ai will test seventh-generation robotaxis in Astana on NVIDIA Hyperion and Halos platforms, with DRIVE AGX Thor chips delivering up to <strong style="color:#0f172a;">4,000 FP4 TFLOPS</strong> of combined performance. Context: the Kazakh government signed $10B in AI and digital-infrastructure agreements in June 2026 targeting a 100,000-GPU cluster and $3B in annual export revenue, launching in 2027.</p>
+  <div style="margin-top:12px;font-size:14px;color:#334155;"><strong style="color:#0f172a;">Why it matters:</strong> Central Asia is building a sovereign GPU corridor &mdash; telecom-led, export-oriented, and skipping straight to Vera Rubin for the next tranche.</div>
+</div>
+
+<!-- 04 -->
+<div style="background:#ffffff;border-radius:14px;padding:22px 24px;margin-bottom:16px;box-shadow:0 2px 10px rgba(15,23,42,0.06);">
+  <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:8px;">
+    <span style="font-size:26px;font-weight:800;color:#e2e8f0;">04</span>
+    <h2 style="font-size:18px;color:#0f172a;margin:0;font-weight:700;line-height:1.35;">North Africa&rsquo;s First AI Factory: SoleCrypt Plans 40MW Campus in Tunisia</h2>
+  </div>
+  <div style="font-size:12px;color:#94a3b8;margin-bottom:12px;">Announced Oct 23 at GTC Europe, Berlin &bull; <a href="https://bizdevelopmentnews.com/business/sterling-and-wilson-data-center-partners-with-solecrypt-for-north-africas-first-ai-factory-in-tunisia" style="color:#0ea5e9;text-decoration:none;">Biz Development News</a></div>
+  <p style="font-size:14px;line-height:1.7;color:#334155;margin:0 0 12px 0;">The <strong style="color:#0f172a;">SoleCrypt AI Campus in Bizerte, Tunisia</strong> &mdash; billed as North Africa&rsquo;s first purpose-built AI factory &mdash; is planned for <strong style="color:#0f172a;">40MW</strong> of total capacity, with Phase 1 a <strong style="color:#0f172a;">7MW deployment on NVIDIA HGX Rubin NVL8</strong>, expected operational in early 2028. Indian EPC major Sterling and Wilson Data Center joined the delivery consortium. The campus targets sovereign compute for businesses, startups, and research organisations across North Africa and the wider MENA region.</p>
+  <div style="margin-top:12px;font-size:14px;color:#334155;"><strong style="color:#0f172a;">Why it matters:</strong> Sovereign AI factories are spreading to every region with power and fiber &mdash; and they&rsquo;re standardizing on the newest NVIDIA platform as the default currency.</div>
+</div>
+
+<!-- 05 -->
+<div style="background:#ffffff;border-radius:14px;padding:22px 24px;margin-bottom:16px;box-shadow:0 2px 10px rgba(15,23,42,0.06);">
+  <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:8px;">
+    <span style="font-size:26px;font-weight:800;color:#e2e8f0;">05</span>
+    <h2 style="font-size:18px;color:#0f172a;margin:0;font-weight:700;line-height:1.35;">Vast Data + Hyperfusion Push Modular, Sovereign Inference</h2>
+  </div>
+  <div style="font-size:12px;color:#94a3b8;margin-bottom:12px;">Announced Oct 23 &bull; <a href="https://www.storagenewsletter.com/2026/10/23/nvidia-gtc-berlin-2026-vast-data-and-hyperfusion-accelerate-ai-infrastructure-deployment-from-years-to-weeks/" style="color:#0ea5e9;text-decoration:none;">StorageNewsletter</a></div>
+  <p style="font-size:14px;line-height:1.7;color:#334155;margin:0 0 12px 0;">Vast Data and Hyperfusion announced plans to integrate the <strong style="color:#0f172a;">Vast AI operating system into Hyperfusion&rsquo;s Sentinel modular infrastructure</strong> as its preferred data platform. Sentinel packages a complete AI data center &mdash; <strong style="color:#0f172a;">96 GPUs in a 45-foot ISO container</strong> &mdash; with the HyperPod variant scaling the modular approach to multi-megawatt deployments. The pitch: sovereign, confidential inference online in weeks instead of years.</p>
+  <div style="margin-top:12px;font-size:14px;color:#334155;"><strong style="color:#0f172a;">Why it matters:</strong> The prefab-AI-factory race (NVIDIA DSX POD, Dell, HPE&hellip;) is pulling the data-platform layer in too &mdash; compute arrives in a box, and storage plus orchestration ship with it.</div>
+</div>
+
+<!-- 06 -->
+<div style="background:#ffffff;border-radius:14px;padding:22px 24px;margin-bottom:16px;box-shadow:0 2px 10px rgba(15,23,42,0.06);">
+  <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:8px;">
+    <span style="font-size:26px;font-weight:800;color:#e2e8f0;">06</span>
+    <h2 style="font-size:18px;color:#0f172a;margin:0;font-weight:700;line-height:1.35;">Research Watch: Brain-Inspired &ldquo;Post-CMOS&rdquo; Chips for Lower-Power AI</h2>
+  </div>
+  <div style="font-size:12px;color:#94a3b8;margin-bottom:12px;">Reported Oct 23 &bull; <a href="https://www.alextech.ai/en/news/brain-inspired-chips-could-cut-ai-data-center-power-use/" style="color:#0ea5e9;text-decoration:none;">alextech.ai</a></div>
+  <p style="font-size:14px;line-height:1.7;color:#334155;margin:0 0 12px 0;">A scientific review from the University of Ottawa, Columbia, and Hanyang University (published in <em>Advanced Functional Materials</em>) surveys <strong style="color:#0f172a;">post-CMOS neurons &mdash; neuromorphic devices built from emerging materials beyond silicon</strong> &mdash; that physically reproduce how neurons sum incoming signals, co-locating memory and compute instead of shuttling data back and forth. The authors argue the approach could sharply cut energy versus conventional processors, for data centers and low-power wearables alike.</p>
+  <p style="font-size:13px;line-height:1.65;color:#64748b;margin:0;"><em>This is a research review, not a product: lab-to-fab scaling and compatibility with existing semiconductor processes remain open problems.</em></p>
+  <div style="margin-top:12px;font-size:14px;color:#334155;"><strong style="color:#0f172a;">Why it matters:</strong> The same physics the energy-efficient-computing thesis bets on &mdash; material innovation toward lower-power compute &mdash; is quietly moving from lab reviews toward industrial attention.</div>
+</div>
+
+<!-- Exclusions note -->
+<div style="font-size:12px;color:#94a3b8;line-height:1.6;margin:4px 2px 0 2px;">Left out: no rumor-flagged stories today &mdash; every item above rests on company releases, earnings calls, or signed announcements. Older than the 36-hour window: the TSMC 3&ndash;6% wafer-price-hike news (foundry beat), and yesterday&rsquo;s Vera-rack, KYEC, Samsung-substrate, DGX Spark, and Dell AI Factory stories (all covered in the Oct 22 edition).</div>
+
+<!-- Footer -->
+<div style="text-align:center;margin-top:32px;padding-top:20px;border-top:1px solid #e2e8f0;">
+  <div style="font-style:italic;color:#94a3b8;font-size:14px;">by Your Tech Sommelier</div>
+</div>
+
+</div>
 <section style="background:#f8fafc;padding:40px 24px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
 <div style="max-width:760px;margin:0 auto;">
 <!-- EDITION HEADER -->
@@ -210,6 +313,105 @@
 </section>
 </template>
 <template id="tpl-trends">
+<div style="max-width:680px;margin:0 auto;padding:24px 16px;">
+
+<!-- MASTHEAD -->
+<div style="text-align:center;padding:28px 12px 20px;border-bottom:3px solid #0f172a;margin-bottom:20px;">
+<div style="font-size:13px;letter-spacing:4px;color:#64748b;text-transform:uppercase;margin-bottom:8px;">Weekly Briefing</div>
+<div style="font-size:44px;font-weight:800;color:#0f172a;line-height:1.05;margin:0;">AI TRENDS</div>
+<div style="font-size:15px;color:#64748b;margin-top:8px;">Week of October 23, 2026 &middot; 7 stories</div>
+</div>
+
+<!-- WHY IT MATTERS -->
+<div style="background:#ffffff;border-left:5px solid #0ea5e9;border-radius:10px;padding:18px 20px;margin-bottom:24px;box-shadow:0 1px 3px rgba(15,23,42,.08);">
+<div style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#0ea5e9;font-weight:700;margin-bottom:8px;">Why it matters</div>
+<p style="font-size:15px;line-height:1.65;color:#334155;margin:0;">This week, capital and openness collided at full force. DeepSeek raised roughly <strong>$15 billion</strong> &mdash; reportedly led by CATL and Tencent &mdash; just two days after the US ordered federal agencies to strip its software, while Reflection and NVIDIA pushed open models into the enterprise with Apache-2.0 weights and real customers. Meanwhile the economics of inference became the main battleground: diffusion-based Mercury 3 claims 4&ndash;8&times; faster generation, MiniMax cut agentic task costs 70%, and DeepSeek published its own GPU-hour ledger. The frontier race is shifting from raw capability to who can run agents cheapest, safest, and closest to the data.</p>
+</div>
+
+<!-- HERO STORY -->
+<div style="background:#ffffff;border-radius:14px;overflow:hidden;margin-bottom:24px;box-shadow:0 2px 8px rgba(15,23,42,.10);">
+<div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 60%,#0e7490 100%);padding:34px 28px;">
+<div style="display:inline-block;background:#fbbf24;color:#0f172a;font-size:11px;font-weight:800;letter-spacing:2px;padding:5px 12px;border-radius:20px;margin-bottom:16px;">COVER STORY</div>
+<h1 style="font-size:32px;line-height:1.18;color:#ffffff;font-weight:800;margin:0 0 12px;">DeepSeek bankrolls the AI arms race: ~$15B raise, two days after the US lockout</h1>
+<p style="font-size:14px;color:#cbd5e1;margin:0;">October 22, 2026</p>
+</div>
+<div style="padding:24px 28px;">
+<div style="margin-bottom:18px;">
+<span style="display:inline-block;background:#fef3c7;color:#92400e;font-size:13px;font-weight:700;padding:6px 12px;border-radius:8px;margin:0 8px 8px 0;">~$15B raised</span>
+<span style="display:inline-block;background:#fef3c7;color:#92400e;font-size:13px;font-weight:700;padding:6px 12px;border-radius:8px;margin:0 8px 8px 0;">&asymp;100B yuan</span>
+<span style="display:inline-block;background:#fee2e2;color:#991b1b;font-size:13px;font-weight:700;padding:6px 12px;border-radius:8px;margin:0 8px 8px 0;">2 days after US federal removal order</span>
+<span style="display:inline-block;background:#e0f2fe;color:#0c4a6e;font-size:13px;font-weight:700;padding:6px 12px;border-radius:8px;margin:0 8px 8px 0;">Backers: CATL &amp; Tencent (reported)</span>
+</div>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0 0 12px;">Just two days after the US ordered federal civilian agencies to remove DeepSeek&rsquo;s AI technology from their systems over security concerns, the Hangzhou lab raised about <strong>$15 billion (&asymp;100B yuan)</strong> &mdash; one of the largest private financings in Chinese history &mdash; with battery maker CATL and Tencent among the largest backers, per Bloomberg. The lab reportedly raised its own target at least twice during negotiations, from 50B to 80B to ~100B yuan.</p>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0 0 12px;">The money fuels AI infrastructure and open-model expansion at home and abroad, and follows a June round of more than $7B at a $50B valuation; a potential Chinese IPO is reportedly targeted as early as next year. It&rsquo;s the latest proof that capital is pouring into AI labs on both sides of the Pacific &mdash; restrictions included.</p>
+<p style="font-size:12px;color:#94a3b8;margin:16px 0 0;">Reported by Bloomberg via <a href="https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/" style="color:#0ea5e9;text-decoration:none;">TechCrunch</a> and <a href="https://www.theinformation.com/briefings/deepseek-raises-nearly-16-billion-second-funding-round" style="color:#0ea5e9;text-decoration:none;">The Information</a>; the company has not publicly confirmed terms. &middot; <a href="https://www.panews.io/articles/01a16175-e969-7527-b8c9-536aaf42f61c" style="color:#0ea5e9;text-decoration:none;">PANews</a></p>
+</div>
+</div>
+
+<!-- SECONDARY STORIES -->
+<div style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#64748b;font-weight:700;margin:8px 4px 14px;">This week's stories</div>
+
+<!-- 02 -->
+<div style="background:#ffffff;border-radius:12px;padding:20px 22px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,.08);">
+<div style="font-size:30px;font-weight:800;color:#0ea5e9;line-height:1;margin-bottom:8px;">02</div>
+<h2 style="font-size:20px;color:#0f172a;font-weight:700;margin:0 0 10px;line-height:1.35;">Claude proves code won&rsquo;t crash &mdash; 180 million lines of machine-checked proof</h2>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">Anthropic and Theorem had Claude convert Google&rsquo;s OSS-Fuzz fuzz tests into formal specifications and prove, at RISC-V assembly level, that <strong>239 entry points across 123 open-source libraries</strong> cannot crash on any input under 64 MB. Claude wrote roughly a billion lines of Rocq; ~180M passed the proof checker &mdash; the first large-scale AI application of formal verification to production software, per Anthropic.</p>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">Along the way it found hundreds of bugs, including a logic flaw undetected for over a decade and a rediscovery of CVE-2026-56132 in libexpat. The fine print: claims are Anthropic&rsquo;s own, proofs cover single-threaded RISC-V programs (most run on x86/Arm), and expert notes warn of a &ldquo;complexity wall&rdquo; on bigger programs.</p>
+<p style="font-size:12px;color:#94a3b8;margin:0;">Sources: <a href="https://www.unite.ai/anthropic-says-claude-proved-security-properties-across-123-libraries/" style="color:#0ea5e9;text-decoration:none;">Unite.AI</a> &middot; <a href="https://madrobot.blog/2026/10/22/anthropic-claude-formal-verification-proofs-oss-fuzz-theorem-rocq/" style="color:#0ea5e9;text-decoration:none;">MadRobot</a></p>
+</div>
+
+<!-- 03 -->
+<div style="background:#ffffff;border-radius:12px;padding:20px 22px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,.08);">
+<div style="font-size:30px;font-weight:800;color:#0ea5e9;line-height:1;margin-bottom:8px;">03</div>
+<h2 style="font-size:20px;color:#0f172a;font-weight:700;margin:0 0 10px;line-height:1.35;">Reflection&rsquo;s Beam goes fully open: Apache 2.0 weights, 501B params, 40+ partners</h2>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">Reflection released Beam&rsquo;s weights under <strong>Apache 2.0</strong> &mdash; a 501B-parameter sparse MoE with only 23B active per token and a 1M-token context &mdash; plus the tokenizer, reference implementation, and Mirror CLI, the coding tool it trained Beam with. The company calls it &ldquo;an open operating system for agents,&rdquo; launching with 40+ partners including AWS, Google Cloud, Azure, NVIDIA, Ollama, and LM Studio.</p>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">First independent tests land: Artificial Analysis gives Beam <strong>30 on its Intelligence Index</strong>, the second-smartest US open model after Meta&rsquo;s Muse Spark Open (39). Baseten listed day-0 serverless pricing at $1.30 in / $0.13 out per million tokens.</p>
+<p style="font-size:12px;color:#94a3b8;margin:0;">Sources: <a href="https://www.unite.ai/reflection-releases-beams-open-weights-under-apache-2-0-license/" style="color:#0ea5e9;text-decoration:none;">Unite.AI</a> &middot; <a href="https://www.techcityauthority.com/2026/10/reflection-beam-open-weights-benchmarks.html" style="color:#0ea5e9;text-decoration:none;">TechCityAuthority</a></p>
+</div>
+
+<!-- 04 -->
+<div style="background:#ffffff;border-radius:12px;padding:20px 22px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,.08);">
+<div style="font-size:30px;font-weight:800;color:#0ea5e9;line-height:1;margin-bottom:8px;">04</div>
+<h2 style="font-size:20px;color:#0f172a;font-weight:700;margin:0 0 10px;line-height:1.35;">DeepSeek open-sources DeepInfer &mdash; and publishes its GPU-hour ledger</h2>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">DeepSeek put its production inference framework on GitHub under Apache 2.0: <strong>DeepInfer</strong> serves DeepSeek-V4.1-Flash at <strong>155 trillion tokens per day</strong>, with first-class support for NVIDIA GPUs <em>and</em> Huawei Ascend, plus optimized operators (FlashMLA, DeepGEMM, DeepEP) and speculative decoding. The kicker: DeepSeek disclosed it earns <strong>$38 per GPU-hour</strong> at &ldquo;valley pricing&rdquo; &mdash; the first time a model company has published the operating ledger of its inference side.</p>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">The catch: the open version is offline inference only, not the complete online serving stack &mdash; and no independent benchmarks against vLLM or SGLang yet. Still, for anyone serving open weights at scale, a free framework battle-tested on 155T tokens/day is hard to ignore.</p>
+<p style="font-size:12px;color:#94a3b8;margin:0;">Sources: <a href="https://sflood.com/en/daily/ai-2026-10-21" style="color:#0ea5e9;text-decoration:none;">Stillflood</a> &middot; <a href="https://imasters.com/news/deepseek-open-sources-deepinfer-the-framework-it-uses-to-cut-ai-inference-costs" style="color:#0ea5e9;text-decoration:none;">iMasters</a></p>
+</div>
+
+<!-- 05 -->
+<div style="background:#ffffff;border-radius:12px;padding:20px 22px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,.08);">
+<div style="font-size:30px;font-weight:800;color:#0ea5e9;line-height:1;margin-bottom:8px;">05</div>
+<h2 style="font-size:20px;color:#0f172a;font-weight:700;margin:0 0 10px;line-height:1.35;">NVIDIA and Reflection make open models enterprise-ready</h2>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">Chinese labs led the open-weight race most of the year; this week the US answered. NVIDIA and Reflection shipped open models companies can run on their own servers: <strong>Ramp and EY are already tuning NVIDIA&rsquo;s Nemotron models for financial documents</strong>, and Reflection launched with more than 40 enterprise partners including AWS and Microsoft.</p>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">The signal is distribution, not benchmarks: open weights are now packaged for compliance-heavy regulated industries where self-hosting is the requirement. NVIDIA also spent the week cementing agent infrastructure &mdash; the OpenShell reference architecture (governance on BlueField-4 DPUs, partners including Anthropic and OpenAI) and the Minerva data-center observability platform, both unveiled at GTC Berlin.</p>
+<p style="font-size:12px;color:#94a3b8;margin:0;">Source: <a href="https://www.pymnts.com/news/artificial-intelligence/2026/nvidia-and-reflection-make-open-models-enterprise-ready/" style="color:#0ea5e9;text-decoration:none;">PYMNTS</a></p>
+</div>
+
+<!-- 06 -->
+<div style="background:#ffffff;border-radius:12px;padding:20px 22px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,.08);">
+<div style="font-size:30px;font-weight:800;color:#0ea5e9;line-height:1;margin-bottom:8px;">06</div>
+<h2 style="font-size:20px;color:#0f172a;font-weight:700;margin:0 0 10px;line-height:1.35;">Inception&rsquo;s Mercury 3: a diffusion LLM at 1,068 tokens per second</h2>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">Inception released <strong>Mercury 3</strong>, a diffusion-based LLM it says runs at <strong>1,068 tokens/second on NVIDIA GPUs &mdash; 4 to 8 times faster</strong> than comparable speed-optimized models &mdash; with a 1M-token context window (up from 260K for Mercury 2.5). List pricing is $0.20/$0.70 per million input/output tokens, with 50% off during launch and 100M free tokens, via Inception&rsquo;s OpenAI-compatible API, OpenRouter, Baseten, and Vercel.</p>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">All speed and quality comparisons are Inception&rsquo;s own &mdash; one early review says it trails Claude Haiku 5.5 on coding &mdash; but if diffusion decoding holds up on quality, the throughput-per-dollar math changes the speed tier entirely.</p>
+<p style="font-size:12px;color:#94a3b8;margin:0;">Source: <a href="https://www.youtube.com/watch?v=qUbyIQh7Qcc" style="color:#0ea5e9;text-decoration:none;">Daily_Daily</a></p>
+</div>
+
+<!-- 07 -->
+<div style="background:#ffffff;border-radius:12px;padding:20px 22px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,.08);">
+<div style="font-size:30px;font-weight:800;color:#0ea5e9;line-height:1;margin-bottom:8px;">07</div>
+<h2 style="font-size:20px;color:#0f172a;font-weight:700;margin:0 0 10px;line-height:1.35;">MiniMax M3.1 Flash: 70% cheaper agentic tasks, weights due October 23</h2>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">MiniMax launched <strong>M3.1 Flash</strong> at <strong>$0.15/$0.60 per million tokens with $0.015 cached input</strong>, claiming a 70% lower agentic-task cost than its predecessor, median output speed above 170 tokens/sec, and a 1M-token context with no long-context surcharge. Company-reported scores: 73.7% on DeepSWE v1.1, 61.7 on OSWorld V2. Weights are slated for public release October 23.</p>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">Read the fine print: the 70% figure leans heavily on that microscopic cached-input price &mdash; output tokens cost 40&times; more, so chatty agents will see far less of the discount. DeepSeek answered the same day with its own price cuts on V4.1 Flash: the price war is officially on.</p>
+<p style="font-size:12px;color:#94a3b8;margin:0;">Sources: <a href="https://llmgateway.io/timeline" style="color:#0ea5e9;text-decoration:none;">LLM Gateway</a> &middot; <a href="https://i10x.ai/news/minimax-m3-1-flash-ai-price-war-autonomous-agents" style="color:#0ea5e9;text-decoration:none;">i10x</a></p>
+</div>
+
+
+<!-- FOOTER -->
+<div style="text-align:center;padding:20px 12px 8px;border-top:2px solid #e2e8f0;">
+<p style="font-size:14px;font-style:italic;color:#94a3b8;margin:0;">by Your Tech Sommelier</p>
+</div>
+
+</div>
 <div style="background-color:#f8fafc;padding:24px 12px;">
 <table width="100%" cellpadding="0" cellspacing="0" style="max-width:640px;margin:0 auto;">
 <tr><td>
@@ -298,6 +500,104 @@
 </div>
 </template>
 <template id="tpl-packaging">
+<div style="background-color:#f8fafc;padding:24px 12px;">
+<table width="100%" cellpadding="0" cellspacing="0" style="max-width:640px;margin:0 auto;">
+<tr><td>
+
+  <!-- Masthead -->
+  <div style="text-align:center;padding:8px 0 16px;">
+    <div style="font-size:12px;letter-spacing:3px;color:#64748b;text-transform:uppercase;font-weight:600;">Beyond Scaling</div>
+    <div style="font-size:14px;color:#64748b;margin-top:4px;">Friday, October 23, 2026</div>
+  </div>
+
+  <!-- Why it matters -->
+  <div style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:8px;padding:16px 18px;margin-bottom:20px;">
+    <div style="font-size:12px;letter-spacing:2px;color:#4f46e5;font-weight:700;text-transform:uppercase;margin-bottom:8px;">Why it matters</div>
+    <p style="font-size:15px;line-height:1.6;color:#334155;margin:0;">This was the week the AI supply chain stopped being polite about the packaging constraint. NVIDIA committed $1.3 billion to quadruple Amkor's Korean advanced-packaging capacity, pledged to multiply its substrate supply 2.5x with six partners, and saw Jensen Huang declare "demand is extraordinary, capacity is the constraint" — all within 72 hours. Meanwhile the numbers caught up with the narrative: advanced packaging crosses 50% of the OSAT market in 2026 even as Sinolink flags a 10–20% capacity shortfall, and SemiEngineering documented foundries formally offloading 2.5D, panel packaging and eventually hybrid bonding to OSATs. The bottleneck has a price tag now, and everyone is paying it.</p>
+  </div>
+
+  <!-- HERO STORY -->
+  <div style="background:#ffffff;border-radius:12px;padding:28px 24px;margin-bottom:20px;box-shadow:0 1px 3px rgba(15,23,42,0.08);border-top:6px solid #4f46e5;">
+    <div style="font-size:12px;letter-spacing:2px;color:#4f46e5;font-weight:700;text-transform:uppercase;margin-bottom:10px;">Cover Story</div>
+    <h1 style="font-size:30px;line-height:1.25;color:#0f172a;margin:0 0 14px;font-weight:800;">NVIDIA and Amkor Seal $1.3B Korea Packaging Expansion; Korean Interposer Capacity to Jump 300%+</h1>
+    <div style="margin:0 0 14px;">
+      <span style="display:inline-block;background:#eef2ff;color:#4338ca;font-weight:700;font-size:13px;padding:6px 12px;border-radius:20px;margin:0 6px 6px 0;">$1.3B advance-payment deal (Oct 21)</span>
+      <span style="display:inline-block;background:#eef2ff;color:#4338ca;font-weight:700;font-size:13px;padding:6px 12px;border-radius:20px;margin:0 6px 6px 0;">Interposer wafer capacity +300% by end-2028</span>
+      <span style="display:inline-block;background:#eef2ff;color:#4338ca;font-weight:700;font-size:13px;padding:6px 12px;border-radius:20px;margin:0 6px 6px 0;">Combined NVIDIA–Amkor commitments: $3B claimed</span>
+    </div>
+    <p style="font-size:16px;line-height:1.65;color:#334155;margin:0 0 12px;">Amkor announced on October 21 a $1.3 billion agreement with NVIDIA to expand advanced packaging capacity in South Korea, using an advance-payment structure so NVIDIA secures supplier capacity ahead of demand. The deal targets interposer wafers — the silicon that connects compute dies to HBM — with Korean interposer-wafer capacity to rise more than 300% by the end of 2028. Amkor puts its multi-year NVIDIA commitments across Korea and Arizona at $3 billion in total, following the $1.5 billion Arizona agreement signed in July (the two announced amounts sum to $2.8 billion; the company has not explained the difference). Amkor shares rose 4.8% on the news to $43.72.</p>
+    <p style="font-size:16px;line-height:1.65;color:#334155;margin:0 0 12px;">Why it matters: this is NVIDIA building its second advanced-packaging hub after Taiwan — and the money arrived the same week Amkor broke ground (Oct 19) on a Gwangju expansion it tripled to roughly KRW 3 trillion for 2026–2031, with four new AI/HPC packaging buildings. Korea is the only region outside Taiwan holding all four links — HBM, interposer packaging, substrates, and bonding/test equipment — and a Korean plant builds in about 12 months versus 30 in the US. NVIDIA is now also targeting 2.5x substrate capacity over three years with suppliers across Japan, Korea and Taiwan, and expects test capacity to double from 2026 to 2027. Packaging has officially become a booked, prepaid commodity.</p>
+    <div style="font-size:12px;color:#64748b;">Source: <a href="https://www.tokenpost.com/news/investing/37099" style="color:#4f46e5;text-decoration:none;">TokenPost</a> (Oct 21) · <a href="https://www.tokenpost.com/news/technology/37013" style="color:#4f46e5;text-decoration:none;">TokenPost</a> (Oct 21) · <a href="https://trendintech.com/amkor-gwangju-3-billion-ai-chip-packaging-2026/" style="color:#4f46e5;text-decoration:none;">TrendInTech</a> (Oct 22) · <a href="https://medium.com/@gobull.ai/beyond-taiwan-nvidia-builds-its-second-packaging-hub-in-korea-6-advanced-packaging-stocks-59f505a9a904" style="color:#4f46e5;text-decoration:none;">Medium (supply-chain analysis)</a> (Oct 22)</div>
+  </div>
+
+  <!-- Secondary stories -->
+  <div style="font-size:12px;letter-spacing:2px;color:#64748b;font-weight:700;text-transform:uppercase;margin:6px 0 12px;text-align:center;">— The Rest of the Week in Packaging —</div>
+
+  <div style="margin-bottom:16px;">
+    <!-- 02 -->
+    <div style="background:#ffffff;border-radius:10px;padding:20px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,0.08);">
+      <div style="font-size:24px;font-weight:800;color:#e0e7ff;letter-spacing:1px;margin-bottom:4px;">02</div>
+      <h2 style="font-size:20px;line-height:1.35;color:#0f172a;margin:0 0 10px;font-weight:700;">Advanced Packaging Crosses 50% of the OSAT Market in 2026 — and Still Falls 10–20% Short</h2>
+      <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">Industry data released October 19 shows advanced packaging will account for more than 50% of the overall OSAT market in 2026 — the symbolic moment the back end stopped being the back end. Yet Sinolink Securities expects capacity to fall 10% to 20% short this year even as TSMC pushes CoWoS capacity toward 120,000–140,000 wafers per month by end-2026. Demand from AI accelerators is growing faster than the world's fastest expansion.</p>
+      <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">The structural gap is a tailwind for equipment: ASMPT's thermo-compression bonders are already in volume production for HBM and chiplet-based chips, with follow-on orders from AI-compute customers disclosed, and Sinolink sees the shortfall persisting into next year, pulling through upstream equipment and materials orders.</p>
+      <div style="font-size:12px;color:#64748b;">Source: <a href="https://www.newtimespace.com/en/tech/1454180.html" style="color:#4f46e5;text-decoration:none;">NewTimeSpace</a> (Oct 20) · <a href="https://www.vlsi.kr/en/daily-silicon-2026-10-21-en/" style="color:#4f46e5;text-decoration:none;">VLSI.kr (Sinolink via Daily Silicon)</a> (Oct 21)</div>
+    </div>
+
+    <!-- 03 -->
+    <div style="background:#ffffff;border-radius:10px;padding:20px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,0.08);">
+      <div style="font-size:24px;font-weight:800;color:#e0e7ff;letter-spacing:1px;margin-bottom:4px;">03</div>
+      <h2 style="font-size:20px;line-height:1.35;color:#0f172a;margin:0 0 10px;font-weight:700;">NVIDIA Commits to 2.5x Substrate Capacity Over Three Years; SEMCO Joins as Partner</h2>
+      <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">At GTC Berlin on October 21, NVIDIA announced capacity expansions with six supply-chain partners and a plan to increase package-substrate capacity 2.5x over three years. Samsung Electro-Mechanics joins NVIDIA's substrate supply chain with immediate capacity from existing Korean operations plus new Sejong and Busan factories; NVIDIA is expected to account for a "significant portion" of SEMCO's annual substrate capacity by 2028. Jensen Huang's summary: "Demand is extraordinary. Capacity is the constraint."</p>
+      <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">The substrate gap may be the tightest link of all: industry estimates cited in reporting put the ABF shortfall at ~10% in 2H26, ~21% in 2027 and over 40% by 2028, with substrate-area demand growing ~39% CAGR through 2028 while packages balloon — IBIDEN's roadmap goes from 90×90 mm in 2026 to 110×110 mm in 2028. Ajinomoto, supplying roughly 95% of ABF film, reportedly raised prices ~30% in Q3. Figures are industry estimates, not vendor confirmations.</p>
+      <div style="font-size:12px;color:#64748b;">Source: <a href="https://medium.com/@gobull.ai/beyond-taiwan-nvidia-builds-its-second-packaging-hub-in-korea-6-advanced-packaging-stocks-59f505a9a904" style="color:#4f46e5;text-decoration:none;">Medium (supply-chain analysis, Oct 22)</a> — substrate estimates cited to TrendForce / Tom's Hardware reporting</div>
+    </div>
+
+    <!-- 04 -->
+    <div style="background:#ffffff;border-radius:10px;padding:20px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,0.08);">
+      <div style="font-size:24px;font-weight:800;color:#e0e7ff;letter-spacing:1px;margin-bottom:4px;">04</div>
+      <h2 style="font-size:20px;line-height:1.35;color:#0f172a;margin:0 0 10px;font-weight:700;">SK hynix Opens iHBM Supplier Talks: Integrated Cooling Targets 30%+ Thermal Resistance Cut</h2>
+      <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">ETNews reported October 21 that SK hynix has contacted materials, parts and equipment suppliers about applying its integrated-cooling iHBM design and preparing for possible mass production, with discussions focused on adapting the design to manufacturing processes. iHBM, unveiled in May 2026, embeds Integrated Cooling Elements in the HBM base die's physical-connection region to create an additional heat path — SK hynix claims a thermal-resistance reduction of more than 30%.</p>
+      <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">The reported approach uses advanced MR-MUF and wafer-level packaging within the existing HBM supply-chain framework, with HBM5 targeted for a 2029 horizon and CoWoS validation underway at TSMC. Heat is now a first-class packaging spec: cooling is moving into the memory stack itself, not just the heatsink above it.</p>
+      <div style="font-size:12px;color:#64748b;">Source: <a href="https://www.neoteo.com/en/sk-hynix-reportedly-discusses-ihbm-plans-with-suppliers" style="color:#4f46e5;text-decoration:none;">NeoTeo (via ETNews)</a> (Oct 21)</div>
+    </div>
+
+    <!-- 05 -->
+    <div style="background:#ffffff;border-radius:10px;padding:20px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,0.08);">
+      <div style="font-size:24px;font-weight:800;color:#e0e7ff;letter-spacing:1px;margin-bottom:4px;">05</div>
+      <h2 style="font-size:20px;line-height:1.35;color:#0f172a;margin:0 0 10px;font-weight:700;">Foundries and OSATs Are Formally Swapping Jobs: 2.5D, Panel Packaging, Hybrid Bonding Move to OSATs</h2>
+      <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">A SemiEngineering deep dive this week documents the industry's quiet re-division of labor: as foundries ration scarce capacity toward leading-edge silicon, three assembly processes are shifting to OSATs — 2.5D packaging in the CoWoS mold, panel packaging, and eventually hybrid bonding. "With further volume restrictions, both legacy-node and leading-edge products are shifting toward OSAT packaging," said Thomas Uhrmann, VP of sales at EV Group.</p>
+      <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">The tell is the demand profile: Amkor's Gerard John says customers are asking for electrical-die-to-photonics-die wafer attach — co-packaged optics work OSATs can now do, with active fiber alignment and test. The foundry sells transistors; the OSAT sells the system-in-package. That line is the industry's new business model.</p>
+      <div style="font-size:12px;color:#64748b;">Source: <a href="https://semiengineering.com/foundries-and-osats-increasingly-overlap/" style="color:#4f46e5;text-decoration:none;">SemiEngineering</a> (Oct 22)</div>
+    </div>
+
+    <!-- 06 -->
+    <div style="background:#ffffff;border-radius:10px;padding:20px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,0.08);">
+      <div style="font-size:24px;font-weight:800;color:#e0e7ff;letter-spacing:1px;margin-bottom:4px;">06</div>
+      <h2 style="font-size:20px;line-height:1.35;color:#0f172a;margin:0 0 10px;font-weight:700;">Hanmi Semiconductor Pushes Beyond HBM Tools Into CoWoS and Hybrid Bonding Equipment</h2>
+      <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">Hanmi Semiconductor is diversifying beyond its HBM thermal-compression bonder franchise into broader advanced packaging — targeting CoWoS-class demand with flip-chip bonders and hybrid bonding technologies, per Digitimes reporting. R&D is focused on throughput and placement accuracy for finer pitch, plus integration of silicon photonics for in-package data transfer.</p>
+      <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">The strategic bet: longstanding relationships with SK hynix and Samsung Foundry give Hanmi a feedback loop the lithography giants lack, and with ASE and Amkor expanding capacity across Taiwan, Arizona and Korea, every new line needs TC bonders. The HBM equipment champion is now chasing the heterogeneous-integration buildout itself.</p>
+      <div style="font-size:12px;color:#64748b;">Source: <a href="https://koreaplus-lifes.com/hanmi-semiconductor-hbm-packaging-ai-3/" style="color:#4f46e5;text-decoration:none;">KoreaPlus (via Digitimes)</a> (Oct 22)</div>
+    </div>
+
+    <!-- 07 -->
+    <div style="background:#ffffff;border-radius:10px;padding:20px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,0.08);">
+      <div style="font-size:24px;font-weight:800;color:#e0e7ff;letter-spacing:1px;margin-bottom:4px;">07</div>
+      <h2 style="font-size:20px;line-height:1.35;color:#0f172a;margin:0 0 10px;font-weight:700;">Tata Electronics and Enomoto Sign MoU to Localize Lead Frames for Assam OSAT</h2>
+      <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">Tata Electronics and Japan's Enomoto signed an MoU to support packaging operations at Tata's Jagiroad, Assam facility and explore local lead-frame manufacturing. Enomoto brings precision-manufacturing expertise and technical collaboration; the companies will assess technology transfer and engineering cooperation. Localizing lead frames expands India's domestic supply base for the OSAT plant, where pilot production is already underway ahead of a likely formal inauguration in December or January.</p>
+      <p style="font-size:14px;line-height:1.65;color:#334155;margin:0 0 10px;">This is the ecosystem playbook in miniature: the ₹27,120 crore, up-to-48-million-chips-a-day plant is big news, but a competitive OSAT needs the supplier layer too. Enomoto follows the September Tata–Besi MoU on advanced packaging equipment — India is stacking materials, equipment and local process know-how in parallel with the fab build.</p>
+      <div style="font-size:12px;color:#64748b;">Source: <a href="https://www.eetindia.co.in/tata-electronics-enomoto-explore-lead-frame-manufacturing-in-india/" style="color:#4f46e5;text-decoration:none;">EE Times India</a> (Oct 20) · <a href="https://www.nationpress.com/business/indias-12-semiconductor-projects-indian-rupee164-lakh-crore-bet" style="color:#4f46e5;text-decoration:none;">NationPress</a> (Oct 19)</div>
+    </div>
+
+    </div>
+
+    <!-- Footer -->
+  <div style="text-align:center;padding:24px 0 8px;">
+    <div style="font-size:14px;font-style:italic;color:#94a3b8;">by Your Tech Sommelier</div>
+  </div>
+
+</td></tr>
+</table>
+</div>
 <div style="background-color:#f8fafc;padding:24px 12px;">
 <table width="100%" cellpadding="0" cellspacing="0" style="max-width:640px;margin:0 auto;">
 <tr><td>
@@ -398,6 +698,89 @@
 </div>
 </template>
 <template id="tpl-foundry">
+<section style="background:#f6f2e7;font-family:Georgia,'Times New Roman',serif;padding:36px 18px;color:#171a1c;">
+  <div style="max-width:740px;margin:0 auto;">
+
+    <p style="margin:0 0 8px;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#8a7a55;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">October 23, 2026 &middot; Weekly Edition</p>
+    <h1 style="margin:0 0 10px;font-size:42px;line-height:1.05;color:#171a1c;font-weight:800;">Foundry Technology Trends</h1>
+    <p style="margin:0 0 24px;font-size:16px;color:#55534a;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-style:italic;">Process nodes, yields, lithography, and the angstrom-era tooling race.</p>
+
+    <div style="border-top:3px double #e44d1b;border-bottom:3px double #e44d1b;padding:16px 4px;margin-bottom:26px;">
+      <p style="margin:0 0 6px;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:#e44d1b;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">Why it matters</p>
+      <p style="margin:0;font-size:15.5px;line-height:1.65;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">This was the week Intel's leadership put its process physics on the record: CTO Pushkar Ranade explained why the same $400M High-NA tool is a bargain for Intel and a bust for TSMC &mdash; backside power loosens the frontside pitch so single-exposure printing pays off, while tighter pitches still demand double-patterning that High-NA can't erase. Meanwhile 18A execution is landing &mdash; output ~25% above target, Panther Lake chip costs halved &mdash; even as the 14A customer window opens with PDK 0.9 this month. Samsung's 2nm keeps climbing toward credibility, and all four foundries now have working CFET silicon at VLSI 2026, putting the post-GAA transistor on a real research cadence.</p>
+    </div>
+
+    <!-- HERO STORY -->
+    <article style="background:#fffdf7;border:1px solid #ddd3b8;border-top:5px solid #e44d1b;padding:0;margin-bottom:26px;box-shadow:0 3px 10px rgba(23,26,28,.08);">
+      <div style="padding:24px 26px 6px;">
+        <p style="margin:0 0 8px;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:#e44d1b;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">01 &middot; Cover Story</p>
+        <h2 style="margin:0 0 14px;font-size:30px;line-height:1.15;font-weight:800;color:#171a1c;">Intel&rsquo;s CTO Draws the Physics Line: 2&times;, Not 10&times; &mdash; and Why High-NA Pays Off Only With Backside Power</h2>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+          <span style="background:#171a1c;color:#f6f2e7;border-radius:3px;padding:5px 12px;font-size:12px;font-weight:700;">2&times;, not 10&times;: advanced wafer ceiling</span>
+          <span style="background:#e44d1b;color:#ffffff;border-radius:3px;padding:5px 12px;font-size:12px;font-weight:700;">GAA: &ldquo;the ultimate transistor&rdquo;</span>
+          <span style="background:#171a1c;color:#f6f2e7;border-radius:3px;padding:5px 12px;font-size:12px;font-weight:700;">~$400M per High-NA tool</span>
+          <span style="background:#e44d1b;color:#ffffff;border-radius:3px;padding:5px 12px;font-size:12px;font-weight:700;">14A PDK 0.9: October 2026</span>
+        </div>
+      </div>
+      <div style="padding:0 26px 24px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+        <p style="margin:0 0 10px;font-size:15px;line-height:1.65;color:#3a3833;">In a wide-ranging interview with the Dwarkesh Podcast published October 23, Intel CTO Pushkar Ranade set the most candid public boundary yet on the industry's scaling fantasy: even with sufficient funding, global advanced wafer output can at most roughly double &mdash; not 10&times; &mdash; because any single bottleneck in the chain (lithography tools, critical components, materials, inspection equipment, fab construction) caps the whole system. On transistor architecture, he called gate-all-around &ldquo;really the ultimate transistor,&rdquo; describing the path to it as &ldquo;somewhat inevitable.&rdquo;</p>
+        <p style="margin:0 0 10px;font-size:15px;line-height:1.65;color:#3a3833;">The sharpest technical claim was the economics of High-NA EUV. The tools print features ~1.7&times; smaller in a single pass but cost roughly twice a standard EUV machine, near $400 million, so the bet only pays off if it eliminates enough multi-patterning passes. Ranade&rsquo;s argument: Intel&rsquo;s backside power delivery moves thick power wires to the back of the wafer, freeing frontside space so signal lines need not be packed as tightly &mdash; and that looser pitch is what lets Intel print directly with High-NA. TSMC, without backside power, must run tighter pitches that require double-patterning EUV anyway, which High-NA does not help with. &ldquo;For them, it&rsquo;s not very helpful. For us, it is very helpful.&rdquo; On 14A, High-NA remains an option in the process design kit, decided customer by customer. Ranade also revealed a foundry-culture shift: 18A was built without a formal PDK, drawing customer feedback on maturity; 14A is designed from the start for external customers, with graded PDK maturity levels (0.5, 0.9, 1.0) &mdash; the interface external designers actually build against.</p>
+        <p style="margin:0;font-size:14px;line-height:1.6;color:#3a3833;"><strong style="color:#171a1c;">Why it matters:</strong> this is the clearest public articulation of why the High-NA fork is architectural, not a judgment call &mdash; backside power and lithography economics are coupled decisions, which is why the Intel-now / Samsung-2028 / TSMC-2030 staging exists at all. The 2&times; output ceiling reframes the entire AI-buildout math: demand can outrun supply for years no matter how much capital is thrown at it. <a href="https://finance.biggo.com/news/db135a193cccf7a0" style="color:#e44d1b;font-weight:700;text-decoration:none;">Source: BigGo Finance &rarr;</a> &middot; <a href="https://biztoc.com/x/9258565a45304767" style="color:#e44d1b;font-weight:700;text-decoration:none;">Biztoc / Techmeme &rarr;</a></p>
+      </div>
+    </article>
+
+    <!-- 02 -->
+    <article style="background:#fffdf7;border:1px solid #ddd3b8;padding:20px 24px;margin-bottom:14px;box-shadow:0 1px 4px rgba(23,26,28,.05);">
+      <p style="margin:0 0 6px;font-size:11px;letter-spacing:2.5px;color:#e44d1b;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">02</p>
+      <h3 style="margin:0 0 8px;font-size:20px;line-height:1.3;color:#171a1c;font-weight:700;">18A Is Landing: Output ~25% Over Target, Panther Lake Costs Halved, Fab 62 Tooling Done</h3>
+      <p style="margin:0 0 8px;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">Intel&rsquo;s 18A execution metrics are turning the corner: 18A output recently ran about 25% over its target, and the cost of the main Panther Lake chip is down roughly 50% &mdash; the kind of yield-and-learning curve that decides whether a leading node survives its ramp. The company has also finished construction and tool installation for Fab 62, its sixth high-volume Arizona fab, with tool move-in underway. Meanwhile, opportunities for EMIB-T advanced packaging are growing as its backlog rises. Intel showcased Panther Lake (Core Ultra Series 3) built on 18A this week, with the 18A products being Intel&rsquo;s first high-volume chips combining RibbonFET gate-all-around transistors with PowerVia backside power.</p>
+      <p style="margin:0;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;"><strong style="color:#171a1c;">Why it matters:</strong> node transitions are judged on yield learning, not announcements &mdash; output beating plan plus a halved chip cost is the evidence the 18A ramp is past the defect-learning danger zone. Fab 62 tooling means Arizona now hosts the full 18A production pipeline, and the rising EMIB-T backlog is early proof that foundry customers may first bite on Intel&rsquo;s packaging, not its transistors. <a href="https://www.tipranks.com/news/intel-stock-nasdaqintc-slides-after-revealing-manufacturing-efforts" style="color:#e44d1b;font-weight:700;text-decoration:none;">Source: TipRanks &rarr;</a> &middot; <a href="https://www.datacenterdynamics.com/en/news/asml-posts-q2-net-sales-of-93bn-reveals-intel-panther-lake-chip-deal/" style="color:#e44d1b;font-weight:700;text-decoration:none;">Data Center Dynamics &rarr;</a></p>
+    </article>
+
+    <!-- 03 -->
+    <article style="background:#fffdf7;border:1px solid #ddd3b8;padding:20px 24px;margin-bottom:14px;box-shadow:0 1px 4px rgba(23,26,28,.05);">
+      <p style="margin:0 0 6px;font-size:11px;letter-spacing:2.5px;color:#e44d1b;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">03</p>
+      <h3 style="margin:0 0 8px;font-size:20px;line-height:1.3;color:#171a1c;font-weight:700;">The 14A Customer Window Opens: PDK 0.9 Ships This Month, Risk Production 2H 2027</h3>
+      <p style="margin:0 0 8px;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">Intel&rsquo;s 14A &mdash; its 1.4nm-class successor to 18A built on RibbonFET 2, PowerDirect backside power, optional High-NA EUV, and Turbo Cells &mdash; hits its defining foundry milestone this month: version 0.9 of the process design kit goes to external customers, the maturity level at which a designer can commit an actual product rather than just evaluate feasibility. PDK 0.5 shipped to lead partners in spring 2026. Tool move-in has begun at Fab 62 as the future 14A site. CEO Lip-Bu Tan has told investors Intel will not fund 14A high-volume manufacturing without securing a significant external customer; risk production for internal products is targeted for the second half of 2027, with volume in 2028. Intel&rsquo;s stated targets are 15&ndash;20% performance at iso-power (or 25&ndash;35% lower power) and up to 30% density versus 18A. Reported evaluators span Apple, Nvidia, AMD, Google, Amazon, Qualcomm, Microsoft, and Tesla&rsquo;s Terafab, though none has publicly committed to volume; Intel itself is marketing 18A aggressively to Korean chip startups with adoption incentives.</p>
+      <p style="margin:0;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;"><strong style="color:#171a1c;">Why it matters:</strong> PDK 0.9 is the real commercialization gate &mdash; it converts 14A from a roadmap into something a fabless company can tape out. The next few months decide whether any external anchor customer commits, and with them whether the US gets a second leading-edge foundry beyond TSMC&rsquo;s Arizona build-out. Treat the performance figures as Intel&rsquo;s stated targets and the customer list as reported evaluations, not commitments. <a href="https://www.techtimes.com/articles/329353/20261022/intel-begins-tool-move-fab-62-14a-customer-window-tax-credit-deadline-converge.htm" style="color:#e44d1b;font-weight:700;text-decoration:none;">Source: Tech Times &rarr;</a> &middot; <a href="https://tech-insider.org/intel-14a-node-apple-nvidia-evaluation-2026/" style="color:#e44d1b;font-weight:700;text-decoration:none;">Tech Insider &rarr;</a> &middot; <a href="https://www.itbear.com/finance/intel-intensifies-marketing-push-for-18a-process-technology-in-south-korea/" style="color:#e44d1b;font-weight:700;text-decoration:none;">ITBear &rarr;</a></p>
+    </article>
+
+    <!-- 04 -->
+    <article style="background:#fffdf7;border:1px solid #ddd3b8;padding:20px 24px;margin-bottom:14px;box-shadow:0 1px 4px rgba(23,26,28,.05);">
+      <p style="margin:0 0 6px;font-size:11px;letter-spacing:2.5px;color:#e44d1b;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">04</p>
+      <h3 style="margin:0 0 8px;font-size:20px;line-height:1.3;color:#171a1c;font-weight:700;">CFET Moves From Concept to Silicon: All Four Foundries Now Have Working Devices</h3>
+      <p style="margin:0 0 8px;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">The complementary FET &mdash; stacking n- and p-type transistors on top of each other to build the same logic in roughly half the footprint &mdash; is no longer a paper architecture: Intel, TSMC, Samsung, and IBM Research have all put working silicon behind the concept, as traced in a Semiconductor Digest conference report published October 22. At the 2026 VLSI Symposium, Intel showed monolithic CFET inverters with PowerVia backside power at a 45nm gate pitch, extending its earlier 60nm stacked-CMOS demonstration; Samsung reported three nanosheet channels per device at a 42nm gate pitch. Three of the four use monolithic integration, while IBM&rsquo;s Nanostack roadmap (trial PDK targeted Q1 2027) takes a sequential approach &mdash; bonding separately built tiers to sidestep thermal-budget limits. The hard problems remain contacting the buried bottom transistor and etch selectivity between stacked channels; published estimates put CFET in production logic in the early 2030s.</p>
+      <p style="margin:0;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;"><strong style="color:#171a1c;">Why it matters:</strong> back-to-back working-circuit demonstrations at VLSI mean CFET has crossed from device physics into process-integration research &mdash; exactly the cadence gate-all-around ran through before it became 2nm. The monolithic-vs-sequential split is the architecture bet that will decide which foundries can actually manufacture it. <a href="https://www.semiconductor-digest.com/stacking-up-inside-the-industrys-race-to-build-cfet-transistors/" style="color:#e44d1b;font-weight:700;text-decoration:none;">Source: Semiconductor Digest &rarr;</a></p>
+    </article>
+
+    <!-- 05 -->
+    <article style="background:#fffdf7;border:1px solid #ddd3b8;padding:20px 24px;margin-bottom:14px;box-shadow:0 1px 4px rgba(23,26,28,.05);">
+      <p style="margin:0 0 6px;font-size:11px;letter-spacing:2.5px;color:#e44d1b;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">05</p>
+      <h3 style="margin:0 0 8px;font-size:20px;line-height:1.3;color:#171a1c;font-weight:700;">Samsung&rsquo;s 2nm Credibility Build: Modem Moves to 2nm, Yield Nears 60%, Qualcomm Reportedly Circling</h3>
+      <p style="margin:0 0 8px;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">Samsung Foundry is stacking evidence that its 2nm is maturing past the yield crisis years: the M2800 mobile modem is moving from 4nm to the 2nm process after the M2700 cleared MX division validation, enabled by reorganizing 4nm capacity toward HBM base dies and freeing leading-edge resources. The first-gen SF2 process yield is reportedly approaching 60% (Chosun), up from the mid-50s, while the second-gen SF2P is stated to deliver 12% more performance, 25% lower power, and 8% smaller area than SF2. Semi Doped reports Qualcomm is now evaluating Samsung&rsquo;s 2nm process for future Snapdragon chips &mdash; potentially a dual-foundry strategy that would cut TSMC dependence &mdash; though Digitimes cautions Samsung has yet to finalize contracts with major tech companies for 2nm while its 4nm lines run near full utilization.</p>
+      <p style="margin:0;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;"><strong style="color:#171a1c;">Why it matters:</strong> modem-on-2nm is internal risk-sharing done right &mdash; Samsung burns in its own node on a real high-volume part before asking external customers to trust it. The 60% yield mark is the level where flagship economics start working; the Qualcomm evaluation is unconfirmed, so watch for a signed commitment as the real signal. <a href="https://daily.semidoped.com/p/daily-update-october-21st-2026" style="color:#e44d1b;font-weight:700;text-decoration:none;">Source: Semi Doped &rarr;</a> &middot; <a href="https://wccftech.com/samsung-hbm-base-die-2nm-5g-modem-qualcomm-tsmc-alternative/" style="color:#e44d1b;font-weight:700;text-decoration:none;">Wccftech &rarr;</a> &middot; <a href="https://www.digitimes.com/news/a20261021PD222/samsung-2nm-4nm-capacity-production.html" style="color:#e44d1b;font-weight:700;text-decoration:none;">Digitimes &rarr;</a></p>
+    </article>
+
+    <!-- 06 -->
+    <article style="background:#fffdf7;border:1px solid #ddd3b8;padding:20px 24px;margin-bottom:14px;box-shadow:0 1px 4px rgba(23,26,28,.05);">
+      <p style="margin:0 0 6px;font-size:11px;letter-spacing:2.5px;color:#e44d1b;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">06</p>
+      <h3 style="margin:0 0 8px;font-size:20px;line-height:1.3;color:#171a1c;font-weight:700;">Samsung Extends 8nm for Cars and Edge AI: 8LPU+ Skips EUV Entirely</h3>
+      <p style="margin:0 0 8px;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">Samsung Foundry launched 8LPU+, a second-generation extension of its 8nm process aimed at automotive, robotics, and edge AI chips &mdash; running entirely on existing deep-ultraviolet lines, sparing customers the cost of EUV lithography (Automotive World, October 21). Samsung&rsquo;s stated figures claim 12% more performance, 15% lower power consumption, and 8% smaller logic area than the previous generation; the node already has an automotive record, with Nvidia&rsquo;s Drive Orin built on it. The pitch is aimed at carmakers consolidating vehicle electronics into centralized architectures &mdash; work that needs more compute but not 2nm-class density.</p>
+      <p style="margin:0;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;"><strong style="color:#171a1c;">Why it matters:</strong> while the leading edge fights over angstroms, the money in automotive foundry is in cost and reliability &mdash; a DUV-only 8nm refresh is Samsung&rsquo;s answer to the reality that centralized-vehicle architectures need volume silicon, not flagship transistors. Watch it as a pricing anchor: every DUV-extension win is volume TSMC&rsquo;s leading edge doesn&rsquo;t get. Figures are Samsung&rsquo;s claims, not independently verified. <a href="https://pivotnews.ai/five/samsung-extends-8nm-line-with-8lpu-for-automotive-and" style="color:#e44d1b;font-weight:700;text-decoration:none;">Source: Pivot News / Automotive World &rarr;</a></p>
+    </article>
+
+    <!-- 07 -->
+    <article style="background:#fffdf7;border:1px solid #ddd3b8;padding:20px 24px;margin-bottom:14px;box-shadow:0 1px 4px rgba(23,26,28,.05);">
+      <p style="margin:0 0 6px;font-size:11px;letter-spacing:2.5px;color:#e44d1b;font-weight:700;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">07</p>
+      <h3 style="margin:0 0 8px;font-size:20px;line-height:1.3;color:#171a1c;font-weight:700;">Japan&rsquo;s 2nm Gets a Customer Story: LSTC-Led Consortium Targets Medical-AI Inference Silicon</h3>
+      <p style="margin:0 0 8px;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">On October 20, LSTC, Hokkaido University, Fujifilm, GE HealthCare Japan, and imec announced they were selected for a NEDO commissioned R&D program to develop a real-time medical image-processing system built on inference-specialized 2nm-generation semiconductors &mdash; targeting fast CT reconstruction, ultrasound fused with CT/MRI, and image recognition during surgery, at more than 5&times; the speed and 10&times;+ the energy efficiency of conventional GPUs. Fujifilm develops the imaging AI, Hokkaido University handles AI design and evaluation, and LSTC &mdash; whose members include Rapidus &mdash; designs the semiconductors, with Rapidus seen as the leading candidate to manufacture them; demonstration trials are planned at Hokkaido University Hospital.</p>
+      <p style="margin:0;font-size:14.5px;line-height:1.6;color:#3a3833;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;"><strong style="color:#171a1c;">Why it matters:</strong> Rapidus&rsquo;s hardest problem isn&rsquo;t building a 2nm fab &mdash; it&rsquo;s who fills it. A named, funded, medically anchored 2nm chip with a real hospital validation loop is the first concrete demand story the venture has had beyond partnership slides, and a template for how Japan turns its $15B state bet into silicon with a buyer. <a href="https://letsdatascience.com/news/japan-consortium-wins-nedo-funding-for-2nm-medical-imaging-a-8e75247a" style="color:#e44d1b;font-weight:700;text-decoration:none;">Source: LetsDataScience &rarr;</a> &middot; <a href="https://tai-semicon.medium.com/lstc-bets-on-2nm-chips-for-medical-ai-targeting-5x-speed-and-10x-efficiency-oct-21-2026-cc131386c5e4" style="color:#e44d1b;font-weight:700;text-decoration:none;">Tai-Semicon &rarr;</a></p>
+    </article>
+
+    <p style="text-align:center;font-style:italic;color:#8a7a55;font-size:14px;margin:0 0 8px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">by Your Tech Sommelier</p>
+
+  </div>
+</section>
 <section style="background:#f6f2e7;font-family:Georgia,'Times New Roman',serif;padding:36px 18px;color:#171a1c;">
   <div style="max-width:740px;margin:0 auto;">
 
