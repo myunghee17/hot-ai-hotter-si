@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="light dark" />
   <link rel="icon" href="data:," />
-  <title>AI Hardware Daily — October 24, 2026</title>
+  <title>AI Hardware Daily — October 25, 2026</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650;8..60,750&display=swap');
 
@@ -932,6 +932,12 @@
     }
 
 
+    /* October 25 AI Hardware daily edition (inline-styled; responsive overrides) */
+    @media (max-width: 640px) {
+      #hardwareDailyOct25 h1 { font-size: 28px !important; }
+      #hardwareDailyOct25 h2 { font-size: 21px !important; }
+    }
+
     /* October 24 AI Hardware daily edition (inline-styled; responsive overrides) */
     @media (max-width: 640px) {
       #hardwareDailyOct24 h1 { font-size: 28px !important; }
@@ -948,7 +954,7 @@
     <div class="issue-bar" aria-label="Section and edition navigation">
       <div class="issue-meta">
         <span class="signal" id="signalName">AI Trends</span>
-        <span id="issueDate">Saturday, October 24, 2026</span>
+        <span id="issueDate">Sunday, October 25, 2026</span>
         <span id="storyCount">7 stories</span>
       </div>
       <div class="section-switcher" role="group" aria-label="Choose a section">
@@ -961,12 +967,12 @@
         <div class="edition-group">
           <span class="edition-label">Daily</span>
           <div class="archive-controls" role="group" aria-label="Choose a daily edition">
-            <button class="edition-btn" type="button" data-issue="2026-10-24" aria-pressed="true">Oct 24</button>
+            <button class="edition-btn" type="button" data-issue="2026-10-25" aria-pressed="true">Oct 25</button>
+            <button class="edition-btn" type="button" data-issue="2026-10-24" aria-pressed="false">Oct 24</button>
             <button class="edition-btn" type="button" data-issue="2026-10-23" aria-pressed="false">Oct 23</button>
             <button class="edition-btn" type="button" data-issue="2026-10-22" aria-pressed="false">Oct 22</button>
             <button class="edition-btn" type="button" data-issue="2026-10-21" aria-pressed="false">Oct 21</button>
             <button class="edition-btn" type="button" data-issue="2026-10-20" aria-pressed="false">Oct 20</button>
-            <button class="edition-btn" type="button" data-issue="2026-10-19" aria-pressed="false">Oct 19</button>
           </div>
         </div>
         <div class="edition-group weekly-group" aria-label="Choose a weekly summary">
@@ -1002,7 +1008,78 @@
       <p>All information in this blog comes from publicly available sources and has not been independently verified. Please check the linked original sources before relying on it.</p>
     </aside>
 
-    <div id="hardwareDailyOct24" aria-live="polite" style="background:#f8fafc;font-family:Georgia,'Times New Roman',serif;color:#334155;">
+    <div id="hardwareDailyOct25" aria-live="polite" style="background:#f8fafc;font-family:Georgia,'Times New Roman',serif;color:#334155;">
+<div style="max-width:760px;margin:0 auto;padding:32px 20px 48px;">
+<div style="text-align:center;margin-bottom:8px;">
+<span style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#64748b;">AI Hardware Daily &nbsp;·&nbsp; Sunday, October 25, 2026</span>
+</div>
+<div style="background:#ffffff;border-radius:16px;padding:28px 28px 24px;margin:20px 0;box-shadow:0 1px 3px rgba(15,23,42,.08);">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:#dc2626;margin:0 0 10px;">Why it matters</p>
+<p style="font-size:19px;line-height:1.5;color:#0f172a;margin:0;">The bottleneck has moved off the chip. Intel says execution and yields now matter more than a few percent of performance, a 23,040-GPU site was lost to grid delays, and NVIDIA is selling factory-built AI pods to cut deployment from months to days. This weekend's story is power, scale and memory distance — not a new GPU.</p>
+</div>
+<div style="background:#0f172a;border-radius:16px;padding:32px 28px;margin:20px 0;box-shadow:0 4px 16px rgba(15,23,42,.25);">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#fbbf24;margin:0 0 12px;">Cover Story</p>
+<h1 style="font-size:38px;line-height:1.15;color:#ffffff;margin:0 0 14px;">Intel: a few percent behind TSMC doesn't matter — execution does</h1>
+<p style="font-size:17px;line-height:1.6;color:#e2e8f0;margin:0 0 18px;">Intel's CTO Pushkar Ranade, speaking on the Dwarkesh podcast after a two-day fab tour reported October 24, said Intel is "already there" on technology versus TSMC and "might maybe a few percent off on performance or power or area density" — but that catching up in scale "will be a slow process. And a gradual process."</p>
+<div style="margin:0 0 18px;">
+<span style="display:inline-block;background:#fbbf24;color:#0f172a;font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:13px;padding:6px 12px;border-radius:999px;margin:0 6px 6px 0;">"A few percent" off TSMC</span>
+<span style="display:inline-block;background:#fbbf24;color:#0f172a;font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:13px;padding:6px 12px;border-radius:999px;margin:0 6px 6px 0;">Scale catch-up = slow</span>
+<span style="display:inline-block;background:#fbbf24;color:#0f172a;font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:13px;padding:6px 12px;border-radius:999px;margin:0 6px 6px 0;">High-NA EUV via backside power</span>
+<span style="display:inline-block;background:#fbbf24;color:#0f172a;font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:13px;padding:6px 12px;border-radius:999px;margin:0 6px 6px 0;">14A in PDK today</span>
+</div>
+<p style="font-size:15px;line-height:1.6;color:#cbd5e1;margin:0 0 14px;">Ranade's key line: "You can be off by a few percent but you need to be on time. Your execution needs to be such that your yields are very high to support very large and very rapid ramps." Manufacturing chief Chris Auth added that backside power delivery relaxes front-side pitch requirements, letting Intel print directly with High-NA EUV where TSMC — without backside power, in Auth's telling — must use double-patterning EUV. Auth also said 14A is "an option in the PDK today" and is being handled customer by customer.</p>
+<p style="font-size:14px;line-height:1.6;color:#94a3b8;margin:0;">Why it matters: this reframes the foundry race from a spec sheet to a factory floor — on-time delivery and high yields for rapid ramps, the exact test Intel faces ahead of its October 29 earnings. <a href="https://wccftech.com/intel-tech-chief-says-it-is-only-a-few-percent-behind-tsmc-on-performance-but-catching-up-in-scale-will-be-slow-vp-asserts-high-na-euv-is-the-right-choice/" style="color:#fbbf24;">Source: Wccftech (Oct 24)</a></p>
+</div>
+<div style="background:#ffffff;border-radius:16px;padding:24px 28px;margin:16px 0;box-shadow:0 1px 3px rgba(15,23,42,.08);">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:2px;color:#64748b;margin:0 0 6px;">02 &nbsp;·&nbsp; MARKETS</p>
+<h2 style="font-size:24px;line-height:1.3;color:#0f172a;margin:0 0 10px;">NVIDIA at its cheapest multiple in 7 years — and the market still isn't buying the story</h2>
+<p style="font-size:16px;line-height:1.6;margin:0 0 10px;">NVIDIA's trailing price-to-earnings ratio fell to about 26.8, its lowest since 2019, per an October 24 analysis — down roughly 42% from its 12-month average of 38.56. The compression came from earnings growing faster than the price, not from a collapse: on the quarter reported August 26, revenue hit $96.2 billion, up 106% year over year, with data-center revenue of $89 billion, up 117%, and guidance of about $108 billion for the current quarter.</p>
+<p style="font-size:16px;line-height:1.6;margin:0 0 10px;">The same analysis notes the contradiction: NVIDIA still holds more than 80% of the AI GPU market at roughly 74% gross margins, yet trades cheaper than AMD (about 73.5x forward earnings), Intel (about 137x) and Marvell (about 58x) on that measure — while its market value fell more than 12% in nine trading days from a peak near $5.76 trillion on October 6. <span style="color:#64748b;">(Analyst commentary, not a company result; the 2019 parallel is a single observation, not a pattern.)</span></p>
+<p style="font-size:14px;margin:0;"><a href="https://www.ainvest.com/news/nvidia-hit-cheapest-multiple-7-years-time-biggest-boom-2610/" style="color:#2563eb;">Source: AInvest (Oct 24)</a></p>
+</div>
+<div style="background:#ffffff;border-radius:16px;padding:24px 28px;margin:16px 0;box-shadow:0 1px 3px rgba(15,23,42,.08);">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:2px;color:#64748b;margin:0 0 6px;">03 &nbsp;·&nbsp; DATA-CENTER AUTOMATION</p>
+<h2 style="font-size:24px;line-height:1.3;color:#0f172a;margin:0 0 10px;">15 Bitcoin miners back Tether's AI automation toolkit for data centers</h2>
+<p style="font-size:16px;line-height:1.6;margin:0 0 10px;">Tether's open automation framework MDK gained backing from 15 Bitcoin mining companies, coverage reported October 24–25. MDK is designed to let AI agents take on operational roles inside mining data centers — monitoring hardware, managing energy use and adjusting operations — with Tether aiming for a stable 1.0 release before December.</p>
+<p style="font-size:16px;line-height:1.6;margin:0 0 10px;">No report specifies exact technical capabilities or independent results on power, output or maintenance costs, so treat the efficiency case as unproven. The signal is the direction: AI agents are moving from the workload to the building that runs it — the same power-and-operations problem now gating AI data centers everywhere.</p>
+<p style="font-size:14px;margin:0;"><a href="https://www.kucoin.com/news/flash/15-bitcoin-mining-firms-back-tether-s-new-ai-automation-toolkit" style="color:#2563eb;">Source: KuCoin News (Oct 24–25)</a></p>
+</div>
+<div style="background:#ffffff;border-radius:16px;padding:24px 28px;margin:16px 0;box-shadow:0 1px 3px rgba(15,23,42,.08);">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:2px;color:#64748b;margin:0 0 6px;">04 &nbsp;·&nbsp; DATA CENTERS — CONTEXT, ANNOUNCED OCT 21</p>
+<h2 style="font-size:24px;line-height:1.3;color:#0f172a;margin:0 0 10px;">NVIDIA's DSX POD: a Vera Rubin AI factory in a container, deployed in 14 days</h2>
+<p style="font-size:16px;line-height:1.6;margin:0 0 10px;">Introduced at GTC Berlin on October 21, DSX POD is a reference design for complete Vera Rubin AI factories built by partners inside modular containers, integrated and validated before delivery. NVIDIA says deployment at a prepared site falls from six months to as little as 14 days, with partner-built units shipping worldwide from early 2027.</p>
+<p style="font-size:16px;line-height:1.6;margin:0 0 10px;">Each pod packs seven Vera Rubin NVL72 racks — 504 GPUs — weighs about 28 metric tons, and arrives ready to connect to a site's power, cooling and networking. Partners include Dell, HPE, Lenovo, Foxconn, GIGABYTE, Quanta, Schneider Electric and Vertiv. <span style="color:#64748b;">The 14-day figure is NVIDIA's claim for a prepared site; site power and grid hookups remain the real limit, as story 05 shows.</span></p>
+<p style="font-size:14px;margin:0;"><a href="https://www.morningstar.com/news/globe-newswire/9850300/nvidia-introduces-dsx-pod-ai-factories-to-accelerate-europes-infrastructure-deployment" style="color:#2563eb;">Source: NVIDIA via GlobeNewswire (Oct 21)</a></p>
+</div>
+<div style="background:#ffffff;border-radius:16px;padding:24px 28px;margin:16px 0;box-shadow:0 1px 3px rgba(15,23,42,.08);">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:2px;color:#64748b;margin:0 0 6px;">05 &nbsp;·&nbsp; POWER — CONTEXT, FIRST REPORTED OCT 19</p>
+<h2 style="font-size:24px;line-height:1.3;color:#0f172a;margin:0 0 10px;">Microsoft walked away from a 23,040-GPU UK site — because the grid couldn't power it</h2>
+<p style="font-size:16px;line-height:1.6;margin:0 0 10px;">Microsoft terminated its agreement to anchor Nscale's planned data center in Loughton, Essex, after UK Power Networks indicated adequate grid power would not arrive until the early to mid-2030s. The site was pitched as the UK's largest sovereign AI data center: 50 MW expanding to 90 MW, with 23,040 NVIDIA GB300 GPUs for Microsoft Azure, due to open in early 2027.</p>
+<p style="font-size:16px;line-height:1.6;margin:0 0 10px;">Both companies stress this is a single-site decision — Microsoft says its wider Nscale partnership stands, and Nscale says it is exploring on-site generation, including fuel cells, and other UK sites. The lesson travels: announced GPU counts are not energized capacity, and grid queues measured in years are now a first-order hardware constraint.</p>
+<p style="font-size:14px;margin:0;"><a href="https://www.theregister.com/on-prem/2026/10/19/microsoft-abandons-uk-ai-supercomputer-as-grid-struggles-to-keep-up/5303824" style="color:#2563eb;">Source: The Register (Oct 19)</a> · <a href="https://www.lapost.com/content/microsoft-pulls-out-of-uk-data-center-deal-with-nscale-telegraph-reports" style="color:#2563eb;">Reuters</a></p>
+</div>
+<div style="background:#ffffff;border-radius:16px;padding:24px 28px;margin:16px 0;box-shadow:0 1px 3px rgba(15,23,42,.08);">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:2px;color:#64748b;margin:0 0 6px;">06 &nbsp;·&nbsp; ACCELERATORS — CONTEXT, TECHNICAL POST OCT 22</p>
+<h2 style="font-size:24px;line-height:1.3;color:#0f172a;margin:0 0 10px;">Cerebras' math: 59 wafers to hold a 3-trillion-parameter model</h2>
+<p style="font-size:16px;line-height:1.6;margin:0 0 10px;">In a technical post dated October 22, Cerebras showed how a roughly 3-trillion-parameter model (Kimi K3) could be split across 59 of its WSE-3T wafers — 44 GB of on-chip memory each — using pipeline parallelism, 4-bit weights and an 8-bit KV cache, advertising 1,000–2,000+ tokens per second for multi-trillion-parameter models.</p>
+<p style="font-size:16px;line-height:1.6;margin:0 0 10px;">The worked example is a deployment recipe, not a verified benchmark: Cerebras has not established whether the Kimi layout was actually run, nor published full benchmark conditions, power draw or concurrent-request counts. <span style="color:#64748b;">Treat the speed claim as a vendor advertisement until measured results appear.</span> The useful point stands — at trillion-parameter scale, the hardware question is how much fast memory you can put next to the compute.</p>
+<p style="font-size:14px;margin:0;"><a href="https://dailyinference.news/articles/2026-10-25-59-wafers-to-hold-one-trillion-parameter-model-cerebrass-math-says/" style="color:#2563eb;">Source: Daily Inference (Oct 25, on Cerebras' Oct 22 post)</a></p>
+</div>
+<div style="background:#ffffff;border-radius:16px;padding:24px 28px;margin:16px 0;box-shadow:0 1px 3px rgba(15,23,42,.08);">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:2px;color:#64748b;margin:0 0 6px;">07 &nbsp;·&nbsp; MEMORY &amp; INTERCONNECT — CONTEXT, ANNOUNCED OCT 20</p>
+<h2 style="font-size:24px;line-height:1.3;color:#0f172a;margin:0 0 10px;">Marvell's photonic memory: 32TB shared across 16 GPUs, up to 50 meters away</h2>
+<p style="font-size:16px;line-height:1.6;margin:0 0 10px;">Marvell's Photonic Fabric Memory Module, announced October 20, uses optical links instead of copper to let pooled memory sit up to 50 meters from a GPU or XPU — versus a roughly 1.5 mm electrical limit. A 16-module appliance shares up to 32TB of DDR5 plus about 1.1TB of HBM3e across 16 hosts, aimed at large KV caches for long-context inference, with Marvell claiming up to 2–3x higher token throughput in existing footprints and power envelopes.</p>
+<p style="font-size:16px;line-height:1.6;margin:0 0 10px;">The module remains pre-silicon, with customer sampling targeted for 2027, and latency and throughput figures are vendor estimates awaiting validation in real systems. Still, it is the clearest hardware expression of this week's theme: memory must scale independently of compute, or accelerators will starve.</p>
+<p style="font-size:14px;margin:0;"><a href="https://www.tokenpost.com/news/technology/35628" style="color:#2563eb;">Source: TokenPost (Oct 20)</a> · <a href="https://cn.marvell.com/company/newsroom/marvell-ai-memory-infrastructure-agentic-ai-inference.html" style="color:#2563eb;">Marvell</a></p>
+</div>
+<div style="background:#ffffff;border-radius:12px;padding:18px 24px;margin:16px 0;">
+<p style="font-size:13px;line-height:1.6;color:#64748b;margin:0;"><strong>Editor's note:</strong> Weekend news flow was thin, so this edition leads with the genuinely fresh Oct 24 items (Intel, NVIDIA's multiple, Tether MDK) and labels four context items with their real announcement dates (Oct 19–22). Excluded today: a rumor-only DeepSeek IPO / 160,000-Huawei-chip report, and conflicting NVIDIA/Broadcom earnings figures from low-credibility aggregators that contradicted each other. Nothing in this edition rests on rumor-only reporting.</p>
+</div>
+<p style="text-align:center;font-style:italic;color:#94a3b8;font-size:15px;margin:32px 0 0;">by Your Tech Sommelier</p>
+</div>
+    </div>
+
+    <div id="hardwareDailyOct24" aria-live="polite" hidden style="background:#f8fafc;font-family:Georgia,'Times New Roman',serif;color:#334155;">
 <div style="max-width:760px;margin:0 auto;padding:32px 20px 48px;">
 
 <div style="text-align:center;margin-bottom:8px;">
@@ -1502,117 +1579,6 @@
 </div>
     </div>
 
-    <div id="hardwareDailyOct19" aria-live="polite" hidden>
-<div style="max-width:680px;margin:0 auto;padding:24px 16px 48px 16px;background-color:#f8fafc;font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;color:#334155;">
-
-<!-- Edition header -->
-<div style="text-align:center;margin-bottom:28px;">
-  <div style="font-size:11px;letter-spacing:3px;color:#64748b;text-transform:uppercase;margin-bottom:8px;">AI Hardware &bull; Daily</div>
-  <div style="font-size:15px;color:#475569;">Monday, October 19, 2026</div>
-</div>
-
-<!-- Why it matters -->
-<div style="background:#ffffff;border-radius:14px;padding:22px 24px;margin-bottom:28px;box-shadow:0 2px 10px rgba(15,23,42,0.06);border-left:4px solid #0ea5e9;">
-  <div style="font-size:11px;letter-spacing:2px;color:#0ea5e9;font-weight:700;text-transform:uppercase;margin-bottom:10px;">Why it matters</div>
-  <div style="font-size:15px;line-height:1.65;color:#334155;">Capital is chasing the physical layer again. Jim Keller&rsquo;s Tenstorrent just closed a <strong style="color:#0f172a;">$1.5B raise</strong> to scale its RISC-V AI servers, a solid-state transformer platform debuted for NVIDIA MGX power, and Korea Economic Daily put a price on the memory squeeze: <strong style="color:#0f172a;">HBM4 up 121% in 2027</strong>. The market, meanwhile, paused its debt-fear sell-off to wait on Lam Research and TI earnings Wednesday &mdash; the next real read on AI demand.</div>
-</div>
-
-<!-- Cover story -->
-<div style="background:#ffffff;border-radius:16px;overflow:hidden;margin-bottom:28px;box-shadow:0 4px 18px rgba(15,23,42,0.08);">
-  <div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 55%,#0c4a6e 100%);padding:30px 28px;">
-    <div style="font-size:11px;letter-spacing:3px;color:#7dd3fc;font-weight:700;text-transform:uppercase;margin-bottom:14px;">&#128293; Cover story</div>
-    <h1 style="font-size:30px;line-height:1.25;color:#ffffff;margin:0 0 18px 0;font-weight:800;">Tenstorrent Raises $1.5B at $6.2B, More Than Doubling Its Valuation</h1>
-    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:4px;">
-      <span style="background:rgba(125,211,252,0.15);border:1px solid rgba(125,211,252,0.4);color:#bae6fd;font-size:13px;font-weight:700;padding:8px 14px;border-radius:999px;">$1.5B Series E</span>
-      <span style="background:rgba(125,211,252,0.15);border:1px solid rgba(125,211,252,0.4);color:#bae6fd;font-size:13px;font-weight:700;padding:8px 14px;border-radius:999px;">$6.2B post-money</span>
-      <span style="background:rgba(125,211,252,0.15);border:1px solid rgba(125,211,252,0.4);color:#bae6fd;font-size:13px;font-weight:700;padding:8px 14px;border-radius:999px;">2&times; Dec 2024 valuation</span>
-    </div>
-  </div>
-  <div style="padding:26px 28px;">
-    <div style="font-size:12px;color:#94a3b8;margin-bottom:12px;">Announced Oct 19, 2026 &bull; Funding &bull; <a href="https://kelofm.com/2026/10/19/ai-chip-startup-tenstorrent-more-than-doubles-its-valuation-to-6-2-billion-in-funding-round/" style="color:#0ea5e9;text-decoration:none;">Reuters</a></div>
-    <p style="font-size:15px;line-height:1.7;color:#334155;margin:0 0 14px 0;">Tenstorrent said Monday it raised <strong style="color:#0f172a;">$1.5 billion</strong> in a late-stage round that values the AI chip startup at <strong style="color:#0f172a;">$6.2 billion post-money</strong> &mdash; more than double its valuation from December 2024. The Santa Clara company will use the money to scale production of its Galaxy servers, which combine dozens of its RISC-V AI chips for chatbots, coding assistants, and video generators.</p>
-    <p style="font-size:15px;line-height:1.7;color:#334155;margin:0 0 14px 0;">The Series E was led by Trace Capital and Innovation X, with Cathie Wood&rsquo;s ARK Invest, Sandisk, Morgan Stanley, T.&nbsp;Rowe Price, and Tether Investments also backing it. CEO Jim Keller &mdash; the architect behind Tesla&rsquo;s self-driving chip and key designs at Apple and AMD &mdash; is betting open-source RISC-V can break dependence on proprietary chip ecosystems like Arm&rsquo;s.</p>
-    <div style="background:#f1f5f9;border-radius:10px;padding:16px 18px;margin-top:18px;">
-      <div style="font-size:11px;letter-spacing:2px;color:#64748b;font-weight:700;text-transform:uppercase;margin-bottom:8px;">Why it matters</div>
-      <div style="font-size:14px;line-height:1.65;color:#334155;">A $1.5B late-stage round for an alternative-architecture AI chipmaker is the market voting that the NVIDIA-only era has room to crack &mdash; and RISC-V keeps showing up as the weapon of choice.</div>
-    </div>
-  </div>
-</div>
-
-<!-- Secondary story cards -->
-<div style="font-size:11px;letter-spacing:3px;color:#64748b;font-weight:700;text-transform:uppercase;margin:0 0 16px 4px;">More stories</div>
-
-<!-- 02 -->
-<div style="background:#ffffff;border-radius:14px;padding:22px 24px;margin-bottom:16px;box-shadow:0 2px 10px rgba(15,23,42,0.06);">
-  <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:8px;">
-    <span style="font-size:26px;font-weight:800;color:#e2e8f0;">02</span>
-    <h2 style="font-size:18px;color:#0f172a;margin:0;font-weight:700;line-height:1.35;">HBM4 Prices Projected to Surge 121% in 2027</h2>
-  </div>
-  <div style="font-size:12px;color:#94a3b8;margin-bottom:12px;">Reported Oct 18&ndash;19 &bull; Korea Economic Daily report, via autonainews &bull; <a href="https://autonainews.com/hbm4-prices-to-surge-121-straining-ai-accelerator-roadmaps/" style="color:#0ea5e9;text-decoration:none;">Source</a></div>
-  <p style="font-size:14px;line-height:1.7;color:#334155;margin:0 0 12px 0;">A Korea Economic Daily report published this week projects HBM4 contract pricing will surge <strong style="color:#0f172a;">121% year-over-year in 2027</strong>, with a single 36GB stack potentially rising from $600 to $1,300. NVIDIA&rsquo;s Rubin, AMD&rsquo;s Instinct MI455X, and a growing roster of custom ASICs all depend on HBM4, and the three suppliers capable of making it &mdash; SK Hynix, Samsung, and Micron &mdash; are effectively fully booked; Micron&rsquo;s entire 2026 HBM allocation is already sold out, per the report.</p>
-  <p style="font-size:13px;line-height:1.65;color:#64748b;margin:0;"><em>Vendor/media projection, not confirmed contract pricing.</em></p>
-  <div style="margin-top:12px;font-size:14px;color:#334155;"><strong style="color:#0f172a;">Why it matters:</strong> Every serious AI accelerator on the roadmap is memory-bound now &mdash; and the price signal says the memory makers, not the GPU makers, set the industry&rsquo;s margin frontier for the next two years.</div>
-</div>
-
-<!-- 03 -->
-<div style="background:#ffffff;border-radius:14px;padding:22px 24px;margin-bottom:16px;box-shadow:0 2px 10px rgba(15,23,42,0.06);">
-  <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:8px;">
-    <span style="font-size:26px;font-weight:800;color:#e2e8f0;">03</span>
-    <h2 style="font-size:18px;color:#0f172a;margin:0;font-weight:700;line-height:1.35;">Bank of America Names Nvidia, Broadcom, AMD, Credo Top AI Compute Picks</h2>
-  </div>
-  <div style="font-size:12px;color:#94a3b8;margin-bottom:12px;">Note released Oct 19 &bull; Analyst forecast &bull; <a href="https://www.tipranks.com/news/why-are-ai-chip-stocks-nvidia-broadcom-amd-and-intel-rising-in-premarket-today-october-19" style="color:#0ea5e9;text-decoration:none;">TipRanks</a></div>
-  <p style="font-size:14px;line-height:1.7;color:#334155;margin:0 0 12px 0;">Bank of America analyst Vivek Arya flagged <strong style="color:#0f172a;">Nvidia, Broadcom, AMD, and Credo Technology</strong> as compelling compute investments, calling the four undervalued. The group is forecast to grow sales 42% and earnings 49% between 2025 and 2027 while trading at 24x 2027 earnings &mdash; a 0.5x PEG ratio. Arya projects cloud infrastructure spending up 38% in 2026, possibly 50% by year-end.</p>
-  <p style="font-size:13px;line-height:1.65;color:#64748b;margin:0;"><em>Analyst forecast, not company guidance.</em></p>
-  <div style="margin-top:12px;font-size:14px;color:#334155;"><strong style="color:#0f172a;">Why it matters:</strong> After a week that erased $1T+ of semiconductor market value on debt fears, the bullish read is that compute demand &mdash; not capex anxiety &mdash; is the sector&rsquo;s actual driver.</div>
-</div>
-
-<!-- 04 -->
-<div style="background:#ffffff;border-radius:14px;padding:22px 24px;margin-bottom:16px;box-shadow:0 2px 10px rgba(15,23,42,0.06);">
-  <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:8px;">
-    <span style="font-size:26px;font-weight:800;color:#e2e8f0;">04</span>
-    <h2 style="font-size:18px;color:#0f172a;margin:0;font-weight:700;line-height:1.35;">Chip Stocks Rebound in Premarket Ahead of Wednesday&rsquo;s AI Demand Test</h2>
-  </div>
-  <div style="font-size:12px;color:#94a3b8;margin-bottom:12px;">Market action, Oct 19 &bull; <a href="https://www.tipranks.com/news/why-are-ai-chip-stocks-nvidia-broadcom-amd-and-intel-rising-in-premarket-today-october-19" style="color:#0ea5e9;text-decoration:none;">TipRanks</a></div>
-  <p style="font-size:14px;line-height:1.7;color:#334155;margin:0 0 12px 0;">NVIDIA, Intel, Broadcom, and AMD are all rising in premarket trading Monday after a brutal sell-off &mdash; INTC and AMD fell ~10% over the past five sessions, Nvidia 5%, Broadcom 7%, with the SOXX down more than 7%. The rebound comes ahead of <strong style="color:#0f172a;">Lam Research and Texas Instruments earnings on Wednesday, October 21</strong>, whose results will show whether AI chip demand is strong enough to ease market fears. Last week&rsquo;s slide was driven by credit stress at CoreWeave, whose 2031 bond yields climbed to nearly 16%.</p>
-  <div style="margin-top:12px;font-size:14px;color:#334155;"><strong style="color:#0f172a;">Why it matters:</strong> The week&rsquo;s debate shifts from balance sheets to order books &mdash; chip-equipment results are the cleanest read on whether the AI build-out is still being funded.</div>
-</div>
-
-<!-- 05 -->
-<div style="background:#ffffff;border-radius:14px;padding:22px 24px;margin-bottom:16px;box-shadow:0 2px 10px rgba(15,23,42,0.06);">
-  <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:8px;">
-    <span style="font-size:26px;font-weight:800;color:#e2e8f0;">05</span>
-    <h2 style="font-size:18px;color:#0f172a;margin:0;font-weight:700;line-height:1.35;">Intel CEO: &ldquo;80% Done&rdquo; With Restructuring; Advanced Packaging for AI a Growth Bet</h2>
-  </div>
-  <div style="font-size:12px;color:#94a3b8;margin-bottom:12px;">Nikkei interview published Oct 17 &bull; <a href="https://www.tipranks.com/news/why-are-ai-chip-stocks-nvidia-broadcom-amd-and-intel-rising-in-premarket-today-october-19" style="color:#0ea5e9;text-decoration:none;">TipRanks (via Nikkei)</a></div>
-  <p style="font-size:14px;line-height:1.7;color:#334155;margin:0 0 12px 0;">Intel CEO Lip-Bu Tan told Nikkei in an interview published Saturday that Intel is <strong style="color:#0f172a;">&ldquo;80% done&rdquo;</strong> with its restructuring, and pointed to advanced chip packaging for AI and application-specific integrated circuits (ASICs) as potential growth areas. Tan praised U.S. government support for domestic chip manufacturing and said Intel&rsquo;s foundry business has to &ldquo;look at the longer-term horizon.&rdquo;</p>
-  <div style="margin-top:12px;font-size:14px;color:#334155;"><strong style="color:#0f172a;">Why it matters:</strong> From the top, Intel is positioning packaging &mdash; not process nodes alone &mdash; as its AI-era growth engine, aligning with where the industry&rsquo;s real bottlenecks now sit.</div>
-</div>
-
-<!-- 06 -->
-<div style="background:#ffffff;border-radius:14px;padding:22px 24px;margin-bottom:16px;box-shadow:0 2px 10px rgba(15,23,42,0.06);">
-  <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:8px;">
-    <span style="font-size:26px;font-weight:800;color:#e2e8f0;">06</span>
-    <h2 style="font-size:18px;color:#0f172a;margin:0;font-weight:700;line-height:1.35;">DG Matrix Unveils Solid-State Transformer Power Fabric for NVIDIA MGX AI Factories</h2>
-  </div>
-  <div style="font-size:12px;color:#94a3b8;margin-bottom:12px;">Announced Oct 19 &bull; Vendor announcement &bull; <a href="https://www.storagenewsletter.com/2026/10/19/ocp-global-summit-2026-dg-matrix-unveils-interport-360-sst-and-interport-os-for-ai-factories-based-on-nvidia-mgx/" style="color:#0ea5e9;text-decoration:none;">StorageNewsletter</a></div>
-  <p style="font-size:14px;line-height:1.7;color:#334155;margin:0 0 12px 0;">At OCP, DG Matrix unveiled the Interport 360 SST and Interport OS &mdash; a <strong style="color:#0f172a;">solid-state transformer-based power fabric</strong> for AI factories built on NVIDIA&rsquo;s MGX architecture and 800 VDC power delivery. The Interport SST cell scales into a full rack-to-facility power system aimed at smoothing the violent load swings AI workloads impose, and is featured on NVIDIA&rsquo;s MGX Ecosystem wall at the summit.</p>
-  <p style="font-size:13px;line-height:1.65;color:#64748b;margin:0;"><em>Vendor claims.</em></p>
-  <div style="margin-top:12px;font-size:14px;color:#334155;"><strong style="color:#0f172a;">Why it matters:</strong> Power delivery is becoming the AI factory&rsquo;s gating factor &mdash; the sell-side of the build-out is now as strategic as the GPUs themselves.</div>
-</div>
-
-<!-- Worth watching -->
-<div style="background:#ffffff;border-radius:14px;padding:20px 24px;margin-bottom:16px;box-shadow:0 2px 10px rgba(15,23,42,0.06);border-left:4px solid #a78bfa;">
-  <div style="font-size:11px;letter-spacing:2px;color:#8b5cf6;font-weight:700;text-transform:uppercase;margin-bottom:10px;">Worth watching</div>
-  <div style="font-size:14px;line-height:1.65;color:#334155;">Google and Synaptics formally launch their Coral M2 edge AI microcontroller <strong style="color:#0f172a;">tomorrow (Oct 20)</strong> &mdash; teased Oct 14, it pairs Google&rsquo;s Coral NPU with Synaptics&rsquo; Torq NPU and Arm CPUs, with Google claiming 40% lower energy and sub-6mW inference draw, and will land in Google devices. <a href="https://www.rdworldonline.com/google-teases-synaptics-edge-ai-chip-ahead-of-oct-20-launch/" style="color:#0ea5e9;text-decoration:none;">R&amp;D World</a></div>
-</div>
-
-<!-- Footer -->
-<div style="text-align:center;margin-top:32px;padding-top:20px;border-top:1px solid #e2e8f0;">
-  <div style="font-style:italic;color:#94a3b8;font-size:14px;">by Your Tech Sommelier</div>
-</div>
-
-</div>
-    </div>
 
     <article id="issue" aria-live="polite" hidden>
       <section class="hero" aria-labelledby="heroTitle">
@@ -2916,11 +2882,11 @@
       if (!item) return;
       currentIssue = key;
       $('#hardwareDailyOct20').hidden = true;
-      $('#hardwareDailyOct19').hidden = true;
       $('#hardwareDailyOct22').hidden = true;
       $('#hardwareDailyOct21').hidden = true;
       $('#hardwareDailyOct23').hidden = true;
       $('#hardwareDailyOct24').hidden = true;
+      $('#hardwareDailyOct25').hidden = true;
       $('#issue').hidden = false;
       keepBlogTitle();
       $('#issueDate').textContent = item.date;
@@ -2971,19 +2937,19 @@
       window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     }
 
-    let currentIssue = '2026-10-24';
+    let currentIssue = '2026-10-25';
     let currentAiIssue = '2026-10-24';
     let currentSection = 'hardware';
 
     function renderHardwareIssue(key) {
       currentIssue = key;
       const hardwareIssues = {
+        '2026-10-25': { panel: '#hardwareDailyOct25', date: 'Sunday, October 25, 2026', stories: '7 stories', title: 'AI Hardware Daily — October 25, 2026' },
         '2026-10-24': { panel: '#hardwareDailyOct24', date: 'Saturday, October 24, 2026', stories: '7 stories', title: 'AI Hardware Daily — October 24, 2026' },
         '2026-10-23': { panel: '#hardwareDailyOct23', date: 'Friday, October 23, 2026', stories: '6 stories', title: 'AI Hardware Daily — October 23, 2026' },
         '2026-10-22': { panel: '#hardwareDailyOct22', date: 'Thursday, October 22, 2026', stories: '5 stories', title: 'AI Hardware Daily — October 22, 2026' },
         '2026-10-21': { panel: '#hardwareDailyOct21', date: 'Wednesday, October 21, 2026', stories: '6 stories', title: 'AI Hardware Daily — October 21, 2026' },
         '2026-10-20': { panel: '#hardwareDailyOct20', date: 'Tuesday, October 20, 2026', stories: '7 stories', title: 'AI Hardware Daily — October 20, 2026' },
-        '2026-10-19': { panel: '#hardwareDailyOct19', date: 'Monday, October 19, 2026', stories: '6 stories', title: 'AI Hardware Daily — October 19, 2026' },
       };
       const selected = hardwareIssues[key];
       if (!selected) {
@@ -3096,11 +3062,11 @@
       });
       $('#issue').hidden = true;
       $('#hardwareDailyOct20').hidden = true;
-      $('#hardwareDailyOct19').hidden = true;
       $('#hardwareDailyOct22').hidden = true;
       $('#hardwareDailyOct21').hidden = true;
       $('#hardwareDailyOct23').hidden = true;
       $('#hardwareDailyOct24').hidden = true;
+      $('#hardwareDailyOct25').hidden = true;
       $('#aiTrendWeeklyOct23').hidden = true;
       $('#aiTrendWeeklyOct16').hidden = true;
       $('#aiTrendWeeklyOct09').hidden = true;
@@ -3121,7 +3087,7 @@
       }
     }
 
-    renderHardwareIssue('2026-10-24');
+    renderHardwareIssue('2026-10-25');
   </script>
 </body>
 </html>
