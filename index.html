@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="light dark" />
   <link rel="icon" href="data:," />
-  <title>AI Hardware Daily — October 27, 2026</title>
+  <title>AI Hardware Daily — October 28, 2026</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650;8..60,750&display=swap');
 
@@ -978,6 +978,12 @@
       #aiTrendDailyOct22 .ai22-badges { padding-left: 22px; padding-right: 22px; }
     }
 
+    /* October 28 AI Hardware daily edition (inline-styled; responsive overrides) */
+    @media (max-width: 640px) {
+      #hardwareDailyOct28 h1 { font-size: 28px !important; }
+      #hardwareDailyOct28 h2 { font-size: 21px !important; }
+    }
+
     /* October 27 AI Hardware daily edition (inline-styled; responsive overrides) */
     @media (max-width: 640px) {
       #hardwareDailyOct27 h1 { font-size: 28px !important; }
@@ -1012,7 +1018,7 @@
     <div class="issue-bar" aria-label="Section and edition navigation">
       <div class="issue-meta">
         <span class="signal" id="signalName">AI Trends</span>
-        <span id="issueDate">Tuesday, October 27, 2026</span>
+        <span id="issueDate">Wednesday, October 28, 2026</span>
         <span id="storyCount">6 stories</span>
       </div>
       <div class="section-switcher" role="group" aria-label="Choose a section">
@@ -1025,12 +1031,12 @@
         <div class="edition-group">
           <span class="edition-label">Daily</span>
           <div class="archive-controls" role="group" aria-label="Choose a daily edition">
-            <button class="edition-btn" type="button" data-issue="2026-10-27" aria-pressed="true">Oct 27</button>
+            <button class="edition-btn" type="button" data-issue="2026-10-28" aria-pressed="true">Oct 28</button>
+            <button class="edition-btn" type="button" data-issue="2026-10-27" aria-pressed="false">Oct 27</button>
             <button class="edition-btn" type="button" data-issue="2026-10-26" aria-pressed="false">Oct 26</button>
             <button class="edition-btn" type="button" data-issue="2026-10-25" aria-pressed="false">Oct 25</button>
             <button class="edition-btn" type="button" data-issue="2026-10-24" aria-pressed="false">Oct 24</button>
             <button class="edition-btn" type="button" data-issue="2026-10-23" aria-pressed="false">Oct 23</button>
-            <button class="edition-btn" type="button" data-issue="2026-10-22" aria-pressed="false">Oct 22</button>
           </div>
         </div>
         <div class="edition-group weekly-group" aria-label="Choose a weekly summary">
@@ -1066,7 +1072,66 @@
       <p>All information in this blog comes from publicly available sources and has not been independently verified. Please check the linked original sources before relying on it.</p>
     </aside>
 
-    <div id="hardwareDailyOct27" aria-live="polite">
+    <div id="hardwareDailyOct28" aria-live="polite">
+<section style="background:#f8fafc;padding:28px 18px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
+<div style="max-width:760px;margin:0 auto;">
+<p style="letter-spacing:2px;text-transform:uppercase;font-size:12px;color:#64748b;margin:0 0 6px;">AI Hardware Daily &middot; October 28, 2026</p>
+<h1 style="font-size:38px;line-height:1.05;color:#0f172a;margin:0 0 14px;">Memory is the choke point — and everyone is paying up for it</h1>
+<p style="font-size:17px;line-height:1.55;margin:0 0 20px;"><strong style="color:#0f172a;">Why it matters:</strong> SK Hynix just posted an 80% operating margin on the back of AI memory, and says shortages run through 2030. That scarcity is reshaping everything else: Oracle is hedging across four chip vendors at once, and investors just handed $1.6B to alternative-silicon startups and clouds in a single day.</p>
+<article style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,.08);margin:0 0 20px;">
+<p style="letter-spacing:2px;text-transform:uppercase;font-size:11px;color:#dc2626;margin:0 0 8px;">Cover story</p>
+<h2 style="font-size:30px;line-height:1.15;color:#0f172a;margin:0 0 12px;">SK Hynix posts a record quarter as HBM4 takes over</h2>
+<div style="margin:0 0 14px;">
+<span style="display:inline-block;background:#0f172a;color:#fff;border-radius:999px;padding:6px 12px;font-size:13px;font-weight:700;margin:0 6px 6px 0;">79.7% operating margin</span>
+<span style="display:inline-block;background:#e2e8f0;color:#0f172a;border-radius:999px;padding:6px 12px;font-size:13px;font-weight:700;margin:0 6px 6px 0;">₩83.3T operating profit</span>
+<span style="display:inline-block;background:#e2e8f0;color:#0f172a;border-radius:999px;padding:6px 12px;font-size:13px;font-weight:700;margin:0 6px 6px 0;">HBM4 &gt; HBM3E in Q4</span>
+<span style="display:inline-block;background:#e2e8f0;color:#0f172a;border-radius:999px;padding:6px 12px;font-size:13px;font-weight:700;margin:0 6px 6px 0;">Shortages through 2030</span>
+</div>
+<p style="font-size:16px;line-height:1.6;margin:0 0 10px;">SK Hynix reported record third-quarter results on October 28 (Seoul time): revenue of ₩104.62 trillion, up 328% year over year, and operating profit of ₩83.33 trillion (about $62.9 billion), up 632% — beating consensus and delivering a staggering 79.7% operating margin. It is the company's sixth consecutive record quarter, driven by high-bandwidth memory for Nvidia accelerators plus surging DRAM prices.</p>
+<p style="font-size:16px;line-height:1.6;margin:0 0 10px;">The forward signals matter more than the quarter: HBM4 shipments are ramping and are expected to overtake HBM3E in both volume and revenue in the fourth quarter, the company has locked long-term supply deals with 14 major customers covering more than half of planned 2027–2028 capacity, and it forecasts memory shortages lasting through 2030.</p>
+<p style="font-size:14px;line-height:1.6;margin:0;">Why it matters: every accelerator roadmap now runs through HBM supply, and the vendor with over half the market just told buyers the shortage is a five-year condition, not a blip. <a href="https://www.ajupress.com/view/20261028000619602" style="color:#2563eb;">Source: Aju Press</a></p>
+</article>
+<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 2px 8px rgba(15,23,42,.06);margin:0 0 14px;">
+<p style="font-size:28px;color:#cbd5e1;font-weight:800;margin:0;">02</p>
+<h3 style="font-size:21px;line-height:1.25;color:#0f172a;margin:4px 0 8px;">Oracle goes multi-vendor: Vera Rubin at multi-gigawatt scale, plus Google TPUs, Cerebras and SambaNova</h3>
+<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">Announced October 27, Oracle will expand to multi-gigawatt scale with Nvidia's Vera Rubin servers while offering Google TPUs for the first time and adding Cerebras wafer-scale and SambaNova systems, with the non-Nvidia options positioned for inference and expected in 2027. Even on Nvidia systems, Oracle will use some of its own in-house Acceleron networking chips instead of certain Nvidia networking components.</p>
+<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">Why it matters: the second-largest AI cloud posture is now explicitly "whatever hardware runs the workload best." For chip challengers, an Oracle slot is distribution; for Nvidia, it's a reminder that even its biggest customers are diversifying the stack around its GPUs.</p>
+<p style="font-size:14px;margin:0;"><a href="https://bitcoinversus.tech/2026/10/27/cerebras-oracle-wafer-scale-ai-inference-2027/" style="color:#2563eb;">Source: Cerebras/Oracle announcement coverage</a></p>
+</article>
+<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 2px 8px rgba(15,23,42,.06);margin:0 0 14px;">
+<p style="font-size:28px;color:#cbd5e1;font-weight:800;margin:0;">03</p>
+<h3 style="font-size:21px;line-height:1.25;color:#0f172a;margin:4px 0 8px;">Tenstorrent raises $1.5B at a $6.2B valuation to scale its Nvidia alternative</h3>
+<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">AI chip startup Tenstorrent said October 27 it closed a $1.5 billion Series E valuing the company at $6.2 billion, co-led by Innovation X, to ramp foundry orders, expand compiler and runtime teams, and field reference systems. Its architecture mixes scalar and matrix engines with a compiler that maps AI graphs to chiplets, aimed at both training and inference.</p>
+<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">Why it matters: this is the largest alternative-silicon war chest of the year, and it lands as clouds actively seek a second source beyond Nvidia. The test now shifts from fundraising to shipping at scale.</p>
+<p style="font-size:14px;margin:0;"><a href="https://dev.to/fathomnews/ai-chip-startup-tenstorrent-bags-15b-hits-62b-value-2e4f" style="color:#2563eb;">Source: DEV / Fathom News</a></p>
+</article>
+<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 2px 8px rgba(15,23,42,.06);margin:0 0 14px;">
+<p style="font-size:28px;color:#cbd5e1;font-weight:800;margin:0;">04</p>
+<h3 style="font-size:21px;line-height:1.25;color:#0f172a;margin:4px 0 8px;">General Compute raises $100M to run an inference cloud on Cerebras, SambaNova and Positron chips</h3>
+<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">General Compute announced October 27 a $100 million Series A, co-led by Blackbird and Abstract and reported at an $800 million valuation, to build an inference cloud around specialized chips from Cerebras, SambaNova and Positron AI. The company finances, deploys and operates the hardware and sells guaranteed tokens-per-second, with first major deployments planned for Q1 2027 and over 50 MW of capacity in the pipeline (company projections, not operating capacity).</p>
+<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">Why it matters: the inference-cloud layer is becoming the on-ramp for non-Nvidia silicon — buyers get the accelerator without procuring or operating exotic hardware themselves. If it works, challenger chips reach customers through clouds long before they win a hyperscaler directly.</p>
+<p style="font-size:14px;margin:0;"><a href="https://letsdatascience.com/news/general-compute-raises-100m-series-a-for-specialized-inferen-e1287cb5" style="color:#2563eb;">Source: Let's Data Science (company announcement / TechCrunch)</a></p>
+</article>
+<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 2px 8px rgba(15,23,42,.06);margin:0 0 14px;">
+<p style="font-size:28px;color:#cbd5e1;font-weight:800;margin:0;">05</p>
+<h3 style="font-size:21px;line-height:1.25;color:#0f172a;margin:4px 0 8px;">Apple's M6 lands in the iMac and a 14-inch MacBook Pro, pitching on-device AI</h3>
+<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">Apple unveiled October 27 a new 24-inch iMac and 14-inch MacBook Pro powered by its M6 chip, with pre-orders from October 28 and availability November 6. The M6 brings the first dual Neural Engine — two 16-core engines — plus Neural Accelerators in each GPU core and up to 170 GB/s memory bandwidth; Apple claims up to 5&times; faster on-device AI than the previous M4 iMac and up to 25% faster AI than the M5 MacBook Pro (vendor claims).</p>
+<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">Why it matters: the edge-AI race is now about neural silicon in every mainstream machine, not just flagships — and Apple's per-core neural accelerators show where consumer silicon is heading.</p>
+<p style="font-size:14px;margin:0;"><a href="https://www.reuters.com/business/retail-consumer/apple-launches-m6-macbook-pro-imac-pitches-faster-on-device-ai-2026-10-27/" style="color:#2563eb;">Source: Reuters</a> &middot; <a href="https://www.macrumors.com/2026/10/27/apple-announces-new-imac-with-m6-chip-and-more/" style="color:#2563eb;">Source: MacRumors</a></p>
+</article>
+<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 2px 8px rgba(15,23,42,.06);margin:0 0 14px;">
+<p style="font-size:28px;color:#cbd5e1;font-weight:800;margin:0;">06</p>
+<h3 style="font-size:21px;line-height:1.25;color:#0f172a;margin:4px 0 8px;">TetraMem tapes out a 12nm analog in-memory AI chip targeting 50–80 TOPS/W</h3>
+<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">TetraMem announced October 27 the tapeout of the MLX300, a 12nm SoC built on its RRAM-based analog in-memory computing architecture. The single-chip accelerator targets audio, vision and small language models, holding up to 64 million INT4 parameters on-chip without external DRAM for weights, with a target energy efficiency of more than 50–80 TOPS/W (vendor target, not measured silicon).</p>
+<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">Why it matters: if analog in-memory computing delivers anywhere near its efficiency claims, always-on edge inference gets radically cheaper in power — the exact bottleneck for on-device AI. Tapeout is a step, not proof; watch for measured results.</p>
+<p style="font-size:14px;margin:0;"><a href="https://www.businesswire.com/news/home/20261027687318/en/TetraMem-Advances-Analog-In-Memory-Computing-with-Tapeout-of-New-12nm-AI-SoC" style="color:#2563eb;">Source: Business Wire</a></p>
+</article>
+<p style="text-align:center;font-style:italic;color:#64748b;font-size:14px;margin:24px 0 0;">by Your Tech Sommelier</p>
+</div>
+</section>
+    </div>
+
+    <div id="hardwareDailyOct27" aria-live="polite" hidden>
 <section style="background:#f8fafc;padding:28px 18px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
 <div style="max-width:760px;margin:0 auto;">
 <p style="letter-spacing:2px;text-transform:uppercase;font-size:12px;color:#64748b;margin:0 0 6px;">AI Hardware Daily &middot; October 27, 2026</p>
@@ -1464,103 +1529,6 @@
 
 <!-- Exclusions note -->
 <div style="font-size:12px;color:#94a3b8;line-height:1.6;margin:4px 2px 0 2px;">Left out: no rumor-flagged stories today &mdash; every item above rests on company releases, earnings calls, or signed announcements. Older than the 36-hour window: the TSMC 3&ndash;6% wafer-price-hike news (foundry beat), and yesterday&rsquo;s Vera-rack, KYEC, Samsung-substrate, DGX Spark, and Dell AI Factory stories (all covered in the Oct 22 edition).</div>
-
-<!-- Footer -->
-<div style="text-align:center;margin-top:32px;padding-top:20px;border-top:1px solid #e2e8f0;">
-  <div style="font-style:italic;color:#94a3b8;font-size:14px;">by Your Tech Sommelier</div>
-</div>
-
-</div>
-    </div>
-
-    <div id="hardwareDailyOct22" aria-live="polite" hidden>
-<div style="max-width:680px;margin:0 auto;padding:24px 16px 48px 16px;background-color:#f8fafc;">
-
-<!-- Edition header -->
-<div style="text-align:center;margin-bottom:28px;">
-  <div style="font-size:11px;letter-spacing:3px;color:#64748b;text-transform:uppercase;margin-bottom:8px;">AI Hardware &bull; Daily</div>
-  <div style="font-size:15px;color:#475569;">Thursday, October 22, 2026</div>
-</div>
-
-<!-- Why it matters -->
-<div style="background:#ffffff;border-radius:14px;padding:22px 24px;margin-bottom:28px;box-shadow:0 2px 10px rgba(15,23,42,0.06);border-left:4px solid #0ea5e9;">
-  <div style="font-size:11px;letter-spacing:2px;color:#0ea5e9;font-weight:700;text-transform:uppercase;margin-bottom:10px;">Why it matters</div>
-  <div style="font-size:15px;line-height:1.65;color:#334155;">The CPU is having its AI moment: NVIDIA&rsquo;s standalone Vera CPU is moving from keynote slide to shipping racks &mdash; Supermicro and Dell are both fielding 256-CPU designs that claim up to 1.8x gains over x86 on agentic workloads. And NVIDIA is spending to secure the Vera Rubin ramp itself: $1.1B on chip testing, 15x co-packaged-optics capacity, and multibillion-dollar substrate deals in Korea. Even the desk gets a slice, with a cheaper 64GB DGX Spark arriving tomorrow.</div>
-</div>
-
-<!-- Cover story -->
-<div style="background:#ffffff;border-radius:16px;overflow:hidden;margin-bottom:28px;box-shadow:0 4px 18px rgba(15,23,42,0.08);">
-  <div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 55%,#0c4a6e 100%);padding:30px 28px;">
-    <div style="font-size:11px;letter-spacing:3px;color:#7dd3fc;font-weight:700;text-transform:uppercase;margin-bottom:14px;">&#128293; Cover story</div>
-    <h1 style="font-size:30px;line-height:1.25;color:#ffffff;margin:0 0 18px 0;font-weight:800;">Vera Goes Standalone: Supermicro and Dell Ship 256-CPU Racks as NVIDIA Storms x86 Territory</h1>
-    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:4px;">
-      <span style="background:rgba(125,211,252,0.15);border:1px solid rgba(125,211,252,0.4);color:#bae6fd;font-size:13px;font-weight:700;padding:8px 14px;border-radius:999px;">256 Vera CPUs per rack</span>
-      <span style="background:rgba(125,211,252,0.15);border:1px solid rgba(125,211,252,0.4);color:#bae6fd;font-size:13px;font-weight:700;padding:8px 14px;border-radius:999px;">1.8x vs leading x86 on agentic AI</span>
-      <span style="background:rgba(125,211,252,0.15);border:1px solid rgba(125,211,252,0.4);color:#bae6fd;font-size:13px;font-weight:700;padding:8px 14px;border-radius:999px;">&sim;$20B CPU revenue visibility</span>
-    </div>
-  </div>
-  <div style="padding:24px 28px 28px 28px;">
-    <div style="font-size:12px;color:#94a3b8;margin-bottom:12px;">Reported Oct 22 &bull; <a href="https://stocktwits.com/news-articles/markets/equity/nvidia-is-moving-deeper-into-intel-amd-territory-supermicro-rolls-out-256-cpu-vera-rack/cZxwdp9RBwm" style="color:#0ea5e9;text-decoration:none;">Stocktwits</a> &bull; <a href="https://www.tokenpost.com/news/technology/37108" style="color:#0ea5e9;text-decoration:none;">TokenPost</a></div>
-    <p style="font-size:14px;line-height:1.7;color:#334155;margin:0 0 12px 0;">NVIDIA&rsquo;s push into Intel and AMD&rsquo;s heartland is turning into shipping hardware. <strong style="color:#0f172a;">Supermicro rolled out a 256-CPU Vera rack</strong>, and Dell&rsquo;s <strong style="color:#0f172a;">PowerEdge M9882</strong> packs 256 NVIDIA Vera CPUs into a 48U rack, scheduled for Q1 2027. NVIDIA cites visibility into <strong style="color:#0f172a;">about $20 billion</strong> in CPU revenue for the current fiscal year and claims Vera can run selected agentic AI workloads up to <strong style="color:#0f172a;">1.8x faster</strong> than leading x86 CPUs from Intel and AMD.</p>
-    <p style="font-size:14px;line-height:1.7;color:#334155;margin:0 0 12px 0;">Vera was introduced as a standalone CPU product in March, with CoreWeave, Oracle, and ByteDance named as early customers, and Dell, HPE, and Lenovo also offering Vera systems. The momentum note: AI cloud startup Modal said Monday (reported Oct 19) that early tests doubled the work its agents could get done on Vera, prompting it to adopt the chip alongside its Intel and AMD fleet. Separately, Supermicro pre-announced a blowout fiscal Q1 on Oct 20 &mdash; <strong style="color:#0f172a;">$18.5&ndash;19.5B</strong> revenue vs. $14.5&ndash;15.5B guidance &mdash; with earnings due Nov 3.</p>
-    <p style="font-size:13px;line-height:1.65;color:#64748b;margin:0;"><em>The 1.8x figure and $20B revenue visibility are NVIDIA&rsquo;s claims; Supermicro&rsquo;s pre-announcement is its own.</em></p>
-    <div style="background:#f1f5f9;border-radius:10px;padding:16px 18px;margin-top:18px;">
-      <div style="font-size:11px;letter-spacing:2px;color:#64748b;font-weight:700;text-transform:uppercase;margin-bottom:8px;">Why it matters</div>
-      <div style="font-size:14px;line-height:1.65;color:#334155;">Agentic AI is a CPU-bound workload, and NVIDIA is now selling the CPU for it. If Vera takes share in agent hosting, the GPU maker&rsquo;s x86-era rivals lose a last stronghold &mdash; and every Vera rack still pairs with NVIDIA networking and software.</div>
-    </div>
-  </div>
-</div>
-
-<!-- Secondary story cards -->
-
-<!-- 02 -->
-<div style="background:#ffffff;border-radius:14px;padding:22px 24px;margin-bottom:16px;box-shadow:0 2px 10px rgba(15,23,42,0.06);">
-  <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:8px;">
-    <span style="font-size:26px;font-weight:800;color:#e2e8f0;">02</span>
-    <h2 style="font-size:18px;color:#0f172a;margin:0;font-weight:700;line-height:1.35;">NVIDIA Commits $1.1B to Chip Testing, Targets 15x Optics Capacity for Vera Rubin</h2>
-  </div>
-  <div style="font-size:12px;color:#94a3b8;margin-bottom:12px;">Reported Oct 22, agreements announced at GTC Berlin &bull; <a href="https://www.techtimes.com/articles/329359/20261022/nvidia-commits-11-billion-chip-testing-targets-15x-optics-capacity-vera-rubin.htm" style="color:#0ea5e9;text-decoration:none;">TechTimes</a></div>
-  <p style="font-size:14px;line-height:1.7;color:#334155;margin:0 0 12px 0;">Six supply-chain agreements underpin the Vera Rubin ramp: <strong style="color:#0f172a;">co-packaged optics capacity expanding 15x</strong>, chip-testing throughput doubling via a <strong style="color:#0f172a;">$1.1B agreement with KYEC</strong> (signed Oct 13, targeting April 2027 volume), and <strong style="color:#0f172a;">substrate supply growing 2.5x by 2028</strong> across three ABF substrate partner deals with capacity coming online in Q2 2027, Q1 2028, and immediately.</p>
-  <p style="font-size:13px;line-height:1.65;color:#64748b;margin:0;"><em>Capacity figures are per the reported agreements; the April 2027 KYEC target is described as a target, not a contractual guarantee.</em></p>
-  <div style="margin-top:12px;font-size:14px;color:#334155;"><strong style="color:#0f172a;">Why it matters:</strong> With DSX POD compressing deployment to 14 days, the bottleneck moves upstream to manufacturing throughput &mdash; these are generational capacity commitments, not single-cycle reservations.</div>
-</div>
-
-<!-- 03 -->
-<div style="background:#ffffff;border-radius:14px;padding:22px 24px;margin-bottom:16px;box-shadow:0 2px 10px rgba(15,23,42,0.06);">
-  <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:8px;">
-    <span style="font-size:26px;font-weight:800;color:#e2e8f0;">03</span>
-    <h2 style="font-size:18px;color:#0f172a;margin:0;font-weight:700;line-height:1.35;">Samsung Electro-Mechanics Wins NVIDIA FC-BGA Substrate Deal</h2>
-  </div>
-  <div style="font-size:12px;color:#94a3b8;margin-bottom:12px;">Reported Oct 22 &bull; <a href="https://www.kedglobal.com/electronics/newsView/ked202610220002" style="color:#0ea5e9;text-decoration:none;">KED Global</a></div>
-  <p style="font-size:14px;line-height:1.7;color:#334155;margin:0 0 12px 0;">Samsung Electro-Mechanics secured a <strong style="color:#0f172a;">multibillion-dollar</strong> contract to supply flip-chip ball grid array (FC-BGA) substrates to NVIDIA &mdash; its largest-ever deal for the advanced packaging components, <strong style="color:#0f172a;">according to industry sources</strong>. NVIDIA confirmed the collaboration also supports facility upgrades and new factories in <strong style="color:#0f172a;">Sejong, South Korea</strong>, feeding next-generation AI processors and high-speed networking systems.</p>
-  <div style="margin-top:12px;font-size:14px;color:#334155;"><strong style="color:#0f172a;">Why it matters:</strong> FC-BGA substrates are one of the quiet chokepoints in AI accelerator supply &mdash; NVIDIA locking in Korea&rsquo;s leading supplier at multibillion-dollar scale is the Rubin ramp in physical form.</div>
-</div>
-
-<!-- 04 -->
-<div style="background:#ffffff;border-radius:14px;padding:22px 24px;margin-bottom:16px;box-shadow:0 2px 10px rgba(15,23,42,0.06);">
-  <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:8px;">
-    <span style="font-size:26px;font-weight:800;color:#e2e8f0;">04</span>
-    <h2 style="font-size:18px;color:#0f172a;margin:0;font-weight:700;line-height:1.35;">64GB DGX Spark Lands Oct 23 From $4,999 as Clusters Scale to Eight Units</h2>
-  </div>
-  <div style="font-size:12px;color:#94a3b8;margin-bottom:12px;">Reported Oct 22 &bull; <a href="https://sffgeek.com/2026/10/22/dgx-spark-64gb-price-clusters/" style="color:#0ea5e9;text-decoration:none;">SFF Geek</a></div>
-  <p style="font-size:14px;line-height:1.7;color:#334155;margin:0 0 12px 0;">The cheaper DGX Spark arrives tomorrow at partner retailers, keeping the same core hardware as the 128GB version with half the memory: <strong style="color:#0f172a;">GB10 Grace Blackwell Superchip</strong>, a <strong style="color:#0f172a;">20-core Arm CPU co-designed with MediaTek</strong>, <strong style="color:#0f172a;">64GB unified memory at 273GB/s</strong>, and built-in ConnectX-7 networking. Clusters now scale to <strong style="color:#0f172a;">eight units</strong> &mdash; 1TB of unified memory with 128GB systems, 512GB with the new 64GB ones &mdash; with NVIDIA Sync support and a new Model Launcher coming later this month.</p>
-  <p style="font-size:13px;line-height:1.65;color:#64748b;margin:0;"><em>Memory prices have pushed the 128GB model to a reported $6,950 (per The Register), above its $3,999 launch price; AMD-based rivals like the Lenovo ThinkCentre X Ultra start at $3,699 but lack CUDA and ConnectX-7 clustering. NVIDIA claims agentic tasks on Qwen3.8 27B now run up to 1.3x faster.</em></p>
-  <div style="margin-top:12px;font-size:14px;color:#334155;"><strong style="color:#0f172a;">Why it matters:</strong> The deskside AI workstation market is bifurcating on price while NVIDIA pushes the story upward into mini-clusters &mdash; a thousand-dollar gateway drug to the DGX ecosystem.</div>
-</div>
-
-<!-- 05 -->
-<div style="background:#ffffff;border-radius:14px;padding:22px 24px;margin-bottom:16px;box-shadow:0 2px 10px rgba(15,23,42,0.06);">
-  <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:8px;">
-    <span style="font-size:26px;font-weight:800;color:#e2e8f0;">05</span>
-    <h2 style="font-size:18px;color:#0f172a;margin:0;font-weight:700;line-height:1.35;">Dell Expands AI Factory to 6,500 Customers, Preps a Groq-LPU Server</h2>
-  </div>
-  <div style="font-size:12px;color:#94a3b8;margin-bottom:12px;">Announced Oct 21 &bull; <a href="https://www.tokenpost.com/news/technology/37108" style="color:#0ea5e9;text-decoration:none;">TokenPost</a></div>
-  <p style="font-size:14px;line-height:1.7;color:#334155;margin:0 0 12px 0;">Dell says its AI Factory with NVIDIA now counts <strong style="color:#0f172a;">6,500 customers</strong>, up from 5,000 last quarter, and added deskside templates for agentic coding and NemoClaw agent workflows plus a containerized design based on NVIDIA&rsquo;s DSX POD for early 2027. The standout: the <strong style="color:#0f172a;">PowerEdge XE9810</strong> &mdash; 16 direct-liquid-cooled compute trays powered by <strong style="color:#0f172a;">Groq 3 LPUs</strong>, scheduled for Q1 2027 &mdash; Dell&rsquo;s first rack-scale bet on LPU inference. Also due: a 64GB Pro Precision with GB10 on Oct 23 and an air-cooled two-socket R8822 this month.</p>
-  <div style="margin-top:12px;font-size:14px;color:#334155;"><strong style="color:#0f172a;">Why it matters:</strong> Dell is the clearest read on enterprise AI demand outside the hyperscalers &mdash; and it&rsquo;s now hedging inference bets across Vera CPUs, LPUs, and deskside GB10, not GPUs alone.</div>
-</div>
-
-<!-- Exclusions note -->
-<div style="font-size:12px;color:#94a3b8;line-height:1.6;margin:4px 2px 0 2px;">Left out: an unconfirmed report of a $2.8B NVIDIA&ndash;Tesla financing package for Samsung&rsquo;s substrate expansion &mdash; the outlet itself notes the financing &ldquo;has not been independently confirmed.&rdquo; Older than the 36-hour window: Anthropic&rsquo;s IPO-prospectus compute figures, the AMD/Intel UXL oneDNN announcement, and Tenstorrent&rsquo;s $1.5B Series E (all covered in yesterday&rsquo;s edition).</div>
 
 <!-- Footer -->
 <div style="text-align:center;margin-top:32px;padding-top:20px;border-top:1px solid #e2e8f0;">
@@ -2835,9 +2803,9 @@
       const item = issues[key];
       if (!item) return;
       currentIssue = key;
+      $('#hardwareDailyOct28').hidden = true;
       $('#hardwareDailyOct27').hidden = true;
       $('#hardwareDailyOct26').hidden = true;
-      $('#hardwareDailyOct22').hidden = true;
       $('#hardwareDailyOct23').hidden = true;
       $('#hardwareDailyOct24').hidden = true;
       $('#hardwareDailyOct25').hidden = true;
@@ -2891,19 +2859,19 @@
       window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     }
 
-    let currentIssue = '2026-10-27';
+    let currentIssue = '2026-10-28';
     let currentAiIssue = '2026-10-27';
     let currentSection = 'hardware';
 
     function renderHardwareIssue(key) {
       currentIssue = key;
       const hardwareIssues = {
+        '2026-10-28': { panel: '#hardwareDailyOct28', date: 'Wednesday, October 28, 2026', stories: '6 stories', title: 'AI Hardware Daily — October 28, 2026' },
         '2026-10-27': { panel: '#hardwareDailyOct27', date: 'Tuesday, October 27, 2026', stories: '6 stories', title: 'AI Hardware Daily — October 27, 2026' },
         '2026-10-26': { panel: '#hardwareDailyOct26', date: 'Monday, October 26, 2026', stories: '6 stories', title: 'AI Hardware Daily — October 26, 2026' },
         '2026-10-25': { panel: '#hardwareDailyOct25', date: 'Sunday, October 25, 2026', stories: '7 stories', title: 'AI Hardware Daily — October 25, 2026' },
         '2026-10-24': { panel: '#hardwareDailyOct24', date: 'Saturday, October 24, 2026', stories: '7 stories', title: 'AI Hardware Daily — October 24, 2026' },
         '2026-10-23': { panel: '#hardwareDailyOct23', date: 'Friday, October 23, 2026', stories: '6 stories', title: 'AI Hardware Daily — October 23, 2026' },
-        '2026-10-22': { panel: '#hardwareDailyOct22', date: 'Thursday, October 22, 2026', stories: '5 stories', title: 'AI Hardware Daily — October 22, 2026' },
       };
       const selected = hardwareIssues[key];
       if (!selected) {
@@ -3015,9 +2983,9 @@
         btn.setAttribute('aria-pressed', String(btn.dataset.section === section));
       });
       $('#issue').hidden = true;
+      $('#hardwareDailyOct28').hidden = true;
       $('#hardwareDailyOct27').hidden = true;
       $('#hardwareDailyOct26').hidden = true;
-      $('#hardwareDailyOct22').hidden = true;
       $('#hardwareDailyOct23').hidden = true;
       $('#hardwareDailyOct24').hidden = true;
       $('#hardwareDailyOct25').hidden = true;
@@ -3041,7 +3009,7 @@
       }
     }
 
-    renderHardwareIssue('2026-10-27');
+    renderHardwareIssue('2026-10-28');
   </script>
 </body>
 </html>
