@@ -668,6 +668,12 @@
 
 
 
+    /* October 30 AI Trends weekly edition (inline-styled; responsive overrides) */
+    @media (max-width: 640px) {
+      #aiTrendWeeklyOct30 h1 { font-size: 28px !important; }
+      #aiTrendWeeklyOct30 h2 { font-size: 21px !important; }
+    }
+
     /* October 30 AI Trends daily edition */
     #aiTrendDailyOct30 {
       color: #334155;
@@ -1035,6 +1041,7 @@
       <nav class="archive-navigation" id="navLlm" aria-label="AI Trends edition navigation" hidden>
         <div class="edition-group weekly-group" aria-label="Choose an AI Trends weekly summary">
           <span class="edition-label">Weekly</span>
+          <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="weekly-2026-10-30" aria-pressed="false">Oct 30</button>
           <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="weekly-2026-10-23" aria-pressed="false">Oct 23</button>
           <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="weekly-2026-10-16" aria-pressed="false">Oct 16</button>
           <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="weekly-2026-10-09" aria-pressed="false">Oct 9</button>
@@ -1942,6 +1949,115 @@
       </div>
     </article>
 
+    <article id="aiTrendWeeklyOct30" data-edition-date="2026-10-30" aria-live="polite" hidden style="margin-top:22px;">
+      <div style="background-color:#f8fafc;">
+<div style="max-width:680px;margin:0 auto;padding:24px 16px;">
+<div style="text-align:center;padding:28px 12px 20px;border-bottom:3px solid #0f172a;margin-bottom:20px;">
+<div style="font-size:13px;letter-spacing:4px;color:#64748b;text-transform:uppercase;margin-bottom:8px;">Weekly Briefing</div>
+<div style="font-size:44px;font-weight:800;color:#0f172a;line-height:1.05;margin:0;">AI TRENDS</div>
+<div style="font-size:15px;color:#64748b;margin-top:8px;">Week of October 30, 2026 &middot; 10 stories</div>
+</div>
+<div style="background:#ffffff;border-left:5px solid #0ea5e9;border-radius:10px;padding:18px 20px;margin-bottom:24px;box-shadow:0 1px 3px rgba(15,23,42,.08);">
+<div style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#0ea5e9;font-weight:700;margin-bottom:8px;">Why it matters</div>
+<p style="font-size:15px;line-height:1.65;color:#334155;margin:0;">This was the week the AI business grew up in public: Anthropic filed for what could be the largest IPO ever, with $16.3 billion in first-half revenue and hundreds of billions in compute commitments. At the same time, the frontier itself kept moving — Google's Gemini 4 Carbon took the top benchmark spot while staying gated to cyber defenders, Mistral shipped a trillion-parameter open model, and Moonshot's Kimi K3.1 Pro closed on the closed frontier. The through-line is access and price: the best models are getting cheaper to run, harder to download without permission, and increasingly judged by how well they do real work, not just answer questions.</p>
+</div>
+<div style="background:#ffffff;border-radius:14px;overflow:hidden;margin-bottom:24px;box-shadow:0 2px 8px rgba(15,23,42,.10);">
+<div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 60%,#0e7490 100%);padding:34px 28px;">
+<div style="display:inline-block;background:#fbbf24;color:#0f172a;font-size:11px;font-weight:800;letter-spacing:2px;padding:5px 12px;border-radius:20px;margin-bottom:16px;">COVER STORY</div>
+<h1 style="font-size:32px;line-height:1.18;color:#ffffff;font-weight:800;margin:0 0 12px;">Anthropic files for IPO: $16.3B in half-year revenue, ticker ANT</h1>
+<p style="font-size:14px;color:#cbd5e1;margin:0;">October 26, 2026</p>
+</div>
+<div style="padding:24px 28px;">
+<div style="margin-bottom:18px;">
+<span style="display:inline-block;background:#fef3c7;color:#92400e;font-size:13px;font-weight:700;padding:6px 12px;border-radius:8px;margin:0 8px 8px 0;">$16.3B revenue, H1 2026</span>
+<span style="display:inline-block;background:#fef3c7;color:#92400e;font-size:13px;font-weight:700;padding:6px 12px;border-radius:8px;margin:0 8px 8px 0;">Up to $2T valuation reported</span>
+<span style="display:inline-block;background:#fee2e2;color:#991b1b;font-size:13px;font-weight:700;padding:6px 12px;border-radius:8px;margin:0 8px 8px 0;">$80.7B net loss, mostly non-cash</span>
+<span style="display:inline-block;background:#e0f2fe;color:#0c4a6e;font-size:13px;font-weight:700;padding:6px 12px;border-radius:8px;margin:0 8px 8px 0;">Nasdaq: ANT</span>
+</div>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0 0 12px;">Anthropic filed a public Form S-1 on October 26, seeking to list Class A shares on the Nasdaq Global Select Market under the ticker <strong>ANT</strong>. The filing reports <strong>$16.286 billion in revenue for the six months to June 30, 2026</strong>, up from about $1.2 billion a year earlier, and more than 11,900 enterprise customers paying over $100,000 a year, up from about 950 a year earlier.</p>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0 0 12px;">The headline loss needs context: the <strong>$80.7 billion net loss</strong> includes roughly $72.4 billion in non-cash charges from revaluing convertible notes as Anthropic's valuation soared, while the operating loss was $693 million and operating cash flow was positive. Press reports put the possible valuation at $1.5–2 trillion and the raise above $100 billion — neither is in the filing, which leaves share count and price range blank. The filing also discloses enormous compute obligations, including about $265.6 billion in fixed or minimum commitments and $321.4 billion in estimated lease obligations not yet commenced. This is no longer a startup story; it is a capital-intensity story.</p>
+<p style="font-size:12px;color:#94a3b8;margin:16px 0 0;">Sources: <a href="https://dealroom.co/news/167596-anthropic-files-for-ipo-that-could-value-it-at-2t-raise-over-100b/" style="color:#0ea5e9;text-decoration:none;">Dealroom</a> &middot; <a href="https://leverageshares.com/us/anthropic-ipo-tracker/" style="color:#0ea5e9;text-decoration:none;">Leverage Shares IPO tracker</a></p>
+</div>
+</div>
+<div style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#64748b;font-weight:700;margin:8px 4px 14px;">This week's stories</div>
+<div style="background:#ffffff;border-radius:12px;padding:20px 22px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,.08);">
+<div style="font-size:30px;font-weight:800;color:#0ea5e9;line-height:1;margin-bottom:8px;">02</div>
+<h2 style="font-size:20px;color:#0f172a;font-weight:700;margin:0 0 10px;line-height:1.35;">Gemini 4 Carbon tops the index — but almost nobody can use it yet</h2>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">Google announced <strong>Gemini 4 Carbon</strong> on October 28, just two weeks after Gemini 4 Argon, calling it its strongest model yet. It ranks first on Artificial Analysis Intelligence Index v5 at <strong>59</strong>, and Google reports <strong>88.2% on SEC-bench Pro</strong> for finding vulnerabilities, <strong>54.8% on ExploitGym</strong> for validating exploits, and <strong>71.0% on CWE-bench</strong> for writing patches — all described as state-of-the-art, though the security scores are Google's own and were evaluated without guardrails.</p>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">The catch is access: Carbon goes first to a subset of cyber defenders through Google's Fairwind Program, with wider developer, business and consumer access promised but undated, while guardrails are refined and US government pre-release testing continues. Introductory pricing matches Argon at $2/$10 per million input/output tokens.</p>
+<p style="font-size:12px;color:#94a3b8;margin:0;">Sources: <a href="https://interestingengineering.com/ai-robotics/google-gemini-4-carbon-ai-cybersecurity-vulnerability-detection" style="color:#0ea5e9;text-decoration:none;">Interesting Engineering</a> &middot; <a href="https://aiinsiders.net/article/googles-gemini-4-carbon-tops-an-ai-ranking-but-goes-to" style="color:#0ea5e9;text-decoration:none;">AI Insiders</a></p>
+</div>
+<div style="background:#ffffff;border-radius:12px;padding:20px 22px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,.08);">
+<div style="font-size:30px;font-weight:800;color:#0ea5e9;line-height:1;margin-bottom:8px;">03</div>
+<h2 style="font-size:20px;color:#0f172a;font-weight:700;margin:0 0 10px;line-height:1.35;">Mistral ships Large 4 weights: a trillion parameters, built for cyber defense</h2>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">Mistral released the full open weights of <strong>Mistral Large 4</strong>, nicknamed “Le Chonk,” on October 29 — three weeks after its October 6 preview. The natively multimodal mixture-of-experts model totals about <strong>1 trillion parameters with roughly 49–52 billion active</strong> and a 1-million-token context, and Mistral pitches it as its most capable openly available model for cybersecurity, competing in a field dominated by Chinese open models.</p>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">Three more weeks of reinforcement learning lifted its Terminal-Bench 4.0 score from 28.3% at preview to <strong>41%</strong> while output tokens fell 30%, and it leads open models on Cognition's private FrontierCode 2.0 at 19.7%. It also scored 51% on the Artificial Analysis Cyber Index, with Mistral saying its guardrails refuse an average of 96.6% of malicious cyber requests. Because anyone can download and run it, Mistral's own framing is blunt: once the model is out, “it's impossible to contain access.”</p>
+<p style="font-size:12px;color:#94a3b8;margin:0;">Sources: <a href="https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/" style="color:#0ea5e9;text-decoration:none;">TechCrunch</a> &middot; <a href="https://www.reuters.com/legal/litigation/mistral-ai-publicly-releases-large-4-targets-cybersecurity-users-2026-10-29/" style="color:#0ea5e9;text-decoration:none;">Reuters</a></p>
+</div>
+<div style="background:#ffffff;border-radius:12px;padding:20px 22px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,.08);">
+<div style="font-size:30px;font-weight:800;color:#0ea5e9;line-height:1;margin-bottom:8px;">04</div>
+<h2 style="font-size:20px;color:#0f172a;font-weight:700;margin:0 0 10px;line-height:1.35;">Kimi K3.1 Pro: the open-weight challenger that nearly catches the frontier</h2>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">Moonshot AI released <strong>Kimi K3.1 Pro</strong> on October 23, a heavily post-trained version of Kimi K3 with the same 2.8-trillion-parameter mixture-of-experts base, 104 billion active parameters and 1-million-token context. Artificial Analysis scored it <strong>55 on its Intelligence Index</strong>, fourth overall behind Claude Opus 5.5 (58), Sonnet 5.5 (56) and Muse Wonder Full (56) — an 11-point jump over K3 — and <strong>67% on Terminal-Bench 4.0</strong>, the highest score the firm has tested.</p>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">Pricing fell a third to <strong>$2/$10 per million input/output tokens</strong>, and Moonshot promises the full open weights by <strong>November 4</strong> — until then it is API-only, and its ~1.6 TB weight footprint means it is a server model, not a desktop one. Note the methodology caveat in story 06: under the newer Index v5, K3.1 Pro scores 46, a reminder that the gap depends heavily on how you test.</p>
+<p style="font-size:12px;color:#94a3b8;margin:0;">Sources: <a href="https://explainx.ai/blog/kimi-k3-1-pro-open-weights-benchmarks-price-terminal-bench-nov-4-2026" style="color:#0ea5e9;text-decoration:none;">ExplainX</a> &middot; <a href="https://stackfutures.com/blog/kimi-k3-1-pro-terminal-bench-record-67pct-intelligence-index-4th-oct-2026/" style="color:#0ea5e9;text-decoration:none;">StackFutures</a></p>
+</div>
+<div style="background:#ffffff;border-radius:12px;padding:20px 22px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,.08);">
+<div style="font-size:30px;font-weight:800;color:#0ea5e9;line-height:1;margin-bottom:8px;">05</div>
+<h2 style="font-size:20px;color:#0f172a;font-weight:700;margin:0 0 10px;line-height:1.35;">GPT-6.1 Terra halves its price — OpenAI's fourth straight price cut</h2>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">OpenAI released <strong>GPT-6.1 Terra</strong> on October 26 at <strong>$1/$5 per million input/output tokens</strong> — half the price of both GPT-5.6 Terra and GPT-6.1 Sol — with $0.05 cached input, a 1.05-million-token context and a June 1, 2026 knowledge cutoff. It is aimed squarely at everyday computer work: visual reasoning, drafting, filling out forms and editing, in ChatGPT Work, Codex and the API, and on AWS Bedrock the same day.</p>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">OpenAI's own numbers show its factual error rate at low reasoning effort falling from 53.6% to 16.7%, and Artificial Analysis puts Terra at 48 on its index at about $0.40 per task versus $1.40 for its predecessor. The price war is now the product strategy: mid-tier models are competing on cost per completed task, not just capability.</p>
+<p style="font-size:12px;color:#94a3b8;margin:0;">Sources: <a href="https://www.techtarget.com/news/openai-slashes-price-for-model-again/872942/" style="color:#0ea5e9;text-decoration:none;">TechTarget</a> &middot; <a href="https://www.skimwire.com/openai-gpt-6-1-terra-computer-use-model/" style="color:#0ea5e9;text-decoration:none;">Skimwire</a></p>
+</div>
+<div style="background:#ffffff;border-radius:12px;padding:20px 22px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,.08);">
+<div style="font-size:30px;font-weight:800;color:#0ea5e9;line-height:1;margin-bottom:8px;">06</div>
+<h2 style="font-size:20px;color:#0f172a;font-weight:700;margin:0 0 10px;line-height:1.35;">The benchmark reset: Index v5 widens the open–closed gap to 26 points</h2>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">Artificial Analysis released <strong>Intelligence Index v5</strong> on October 27, its biggest overhaul since January. For the first time, <strong>60% of the index draws on private test sets or held-out answers</strong>, to stop models training on public test questions, with four equally weighted categories — knowledge work, coding, science and general knowledge — plus new private benchmarks including FrontierCode 2.0 and Terminal-Bench-Science.</p>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">The result rewrites the open-weight story: Kimi K3.1 Pro, whose weights are not yet released, falls from 55 to <strong>46</strong>, while the best models with released weights, DeepSeek V4.1 Flash and GLM-5.3, sit at just <strong>32 — 26 points behind</strong> leader Claude Opus 5.5 at 58, and below even small Claude Haiku 5.5 at 36. The lesson is not that open models got worse overnight; it is that contamination-resistant testing is a harsher, and probably fairer, judge.</p>
+<p style="font-size:12px;color:#94a3b8;margin:0;">Source: <a href="https://dealroom.co/news/167512-chinas-open-ai-models-fall-26-points-behind-as-new-index-hides-the-answe/" style="color:#0ea5e9;text-decoration:none;">Dealroom</a></p>
+</div>
+<div style="background:#ffffff;border-radius:12px;padding:20px 22px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,.08);">
+<div style="font-size:30px;font-weight:800;color:#0ea5e9;line-height:1;margin-bottom:8px;">07</div>
+<h2 style="font-size:20px;color:#0f172a;font-weight:700;margin:0 0 10px;line-height:1.35;">Google's Genie 4 builds playable worlds — with sound and dialogue</h2>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">Google DeepMind unveiled <strong>Genie 4</strong> on October 27, a world model that generates interactive, photorealistic environments you can navigate and modify in real time with natural-language instructions — now with sound and dialogue, not just visuals. It is the clearest sign yet that “world models” are moving from research demos toward the building blocks of games, simulation and robotics training.</p>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">For now it is a research preview for a limited group of testers, with wider availability expected through Google services later. Watch this space rather than planning a product on it: the capability is striking, the access is narrow, and the safety and controllability questions for generative worlds are still open.</p>
+<p style="font-size:12px;color:#94a3b8;margin:0;">Sources: <a href="https://aiweekly.co/editors-blog/in-the-wild-2026-10-29" style="color:#0ea5e9;text-decoration:none;">AI Weekly</a> &middot; <a href="https://aidapted.ro/en/articles/ai-news-october-29-2026/" style="color:#0ea5e9;text-decoration:none;">AIdapted</a></p>
+</div>
+<div style="background:#ffffff;border-radius:12px;padding:20px 22px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,.08);">
+<div style="font-size:30px;font-weight:800;color:#0ea5e9;line-height:1;margin-bottom:8px;">08</div>
+<h2 style="font-size:20px;color:#0f172a;font-weight:700;margin:0 0 10px;line-height:1.35;">GitHub Copilot Fusion goes GA: stop picking the model, pick the effort</h2>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">GitHub made <strong>Copilot Fusion</strong> generally available on October 28 at Universe 2026. Instead of choosing a model per task, developers pick <strong>Fusion in the model picker and an effort level — Standard, High or Max</strong> — and Copilot routes and orchestrates which models to use, merging Project HydraFusion's orchestration with Copilot's auto model selection.</p>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">GitHub cites <strong>Fusion Max at 60 on the Artificial Analysis Coding Agent Index</strong>, within two points of Claude Code with Opus 5.5 Max, at about half the average API cost per task, half the tokens and 40% less time — GitHub's citation, not an independent verification. Billing is per model at standard rates, with a limited-time 30% discount on model costs for paid plans through November 30. It is available on all Copilot plans in VS Code, the Copilot app, Copilot CLI and JetBrains IDEs.</p>
+<p style="font-size:12px;color:#94a3b8;margin:0;">Source: <a href="https://www.unite.ai/github-makes-copilot-fusion-generally-available-at-universe-2026/" style="color:#0ea5e9;text-decoration:none;">Unite.AI</a></p>
+</div>
+<div style="background:#ffffff;border-radius:12px;padding:20px 22px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,.08);">
+<div style="font-size:30px;font-weight:800;color:#0ea5e9;line-height:1;margin-bottom:8px;">09</div>
+<h2 style="font-size:20px;color:#0f172a;font-weight:700;margin:0 0 10px;line-height:1.35;">Small models, big week: LFM3's six 2B models and NVIDIA's 4GB Bolt</h2>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">Liquid AI launched <strong>LFM3</strong> on October 27: six open-weight models around 2 billion parameters — text, vision, audio, omni and two decision models — all branching from one shared LFM3-1.7B backbone. The text model carries a 256K-token context and fits in about 1 GB at 4-bit precision, and Liquid says the family runs on phones, laptops and a Raspberry Pi, fine-tunable on a single GPU, with Mercedes-Benz and Shopify as pre-release testing partners.</p>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">NVIDIA answered the same on-device push with <strong>Nemotron 3.5 Bolt E4B 4GB</strong>, released October 23, a free model small enough to run on a PC offline for voice assistants and simple multistep tasks, plus Nemotron 3.5 Transcribe for speech. The honest caveat, from Liquid's own model card: the 1.7B text model is not recommended for agentic coding or complex multi-step reasoning. Small models are for specialists, not frontier replacements — and that is exactly their value.</p>
+<p style="font-size:12px;color:#94a3b8;margin:0;">Sources: <a href="https://www.unite.ai/liquid-ai-launches-lfm3-family-of-six-open-weight-2b-class-models/" style="color:#0ea5e9;text-decoration:none;">Unite.AI</a> &middot; <a href="https://www.pymnts.com/news/artificial-intelligence/2026/google-tops-ai-smarts-ranking-as-openai-slashes-prices/" style="color:#0ea5e9;text-decoration:none;">PYMNTS</a></p>
+</div>
+<div style="background:#ffffff;border-radius:12px;padding:20px 22px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,.08);">
+<div style="font-size:30px;font-weight:800;color:#0ea5e9;line-height:1;margin-bottom:8px;">10</div>
+<h2 style="font-size:20px;color:#0f172a;font-weight:700;margin:0 0 10px;line-height:1.35;">NVIDIA and Meta deepen the Muse alliance — open models, shared infrastructure</h2>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">On October 27, NVIDIA and Meta announced an expanded collaboration around the <strong>Muse family of models</strong> and the infrastructure needed to train and run them, alongside the week's local-AI launches. The pairing matters because it links one of the largest open-weight model families to the dominant AI hardware and inference stack — the same combination that is making open models viable inside enterprises that will not send data to a closed API.</p>
+<p style="font-size:14.5px;line-height:1.65;color:#334155;margin:0 0 10px;">Read it with the week's other hardware news: NVIDIA's RTX Spark laptops started at $2,599 on October 28 with day-one support for LFM3 and Nemotron models. The frontier and the edge are being sold as one system now.</p>
+<p style="font-size:12px;color:#94a3b8;margin:0;">Source: <a href="https://aidapted.ro/en/articles/ai-news-october-29-2026/" style="color:#0ea5e9;text-decoration:none;">AIdapted</a></p>
+</div>
+<div style="background:#ffffff;border-radius:12px;padding:20px 22px;margin-bottom:24px;box-shadow:0 1px 3px rgba(15,23,42,.08);">
+<div style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#64748b;font-weight:700;margin-bottom:10px;">Also shipped</div>
+<ul style="font-size:14px;line-height:1.8;color:#334155;margin:0;padding-left:18px;">
+<li><strong>Rime Prism</strong> — voice model built for enterprise call centers, checking what an agent will say before it speaks (Oct 28). <a href="https://www.pymnts.com/news/artificial-intelligence/2026/google-tops-ai-smarts-ranking-as-openai-slashes-prices/" style="color:#0ea5e9;text-decoration:none;">PYMNTS</a></li>
+<li><strong>NVIDIA Nemotron 3.5 Transcribe</strong> — open-weight speech model for turning recorded conversations into usable information (Oct 28).</li>
+<li><strong>Kimi K3.1 Pro Highspeed</strong> — faster variant of Moonshot's flagship, live alongside K3.1 Pro (Oct 23). <a href="https://explainx.ai/blog/kimi-k3-1-pro-open-weights-benchmarks-price-terminal-bench-nov-4-2026" style="color:#0ea5e9;text-decoration:none;">ExplainX</a></li>
+</ul>
+</div>
+<div style="text-align:center;padding:20px 12px 8px;border-top:2px solid #e2e8f0;">
+<p style="font-size:14px;font-style:italic;color:#94a3b8;margin:0;">by Your Tech Sommelier</p>
+</div>
+</div>
+      </div>
+    </article>
+
     <article id="aiTrendWeeklyOct23" data-edition-date="2026-10-23" aria-live="polite" hidden style="margin-top:22px;">
       <div style="background-color:#f8fafc;">
 <div style="max-width:680px;margin:0 auto;padding:24px 16px;">
@@ -2738,6 +2854,7 @@
 
     function renderAiIssue(key) {
       currentAiIssue = key;
+      const isWeeklyOct30 = key === 'weekly-2026-10-30';
       const isWeeklyOct23 = key === 'weekly-2026-10-23';
       const isWeeklyOct16 = key === 'weekly-2026-10-16';
       const isWeeklyOct09 = key === 'weekly-2026-10-09';
@@ -2749,6 +2866,7 @@
       const isOct27 = key === '2026-10-27';
       const isOct26 = key === '2026-10-26';
       const isOct25 = key === '2026-10-25';
+      $('#aiTrendWeeklyOct30').hidden = !isWeeklyOct30;
       $('#aiTrendWeeklyOct23').hidden = !isWeeklyOct23;
       $('#aiTrendWeeklyOct16').hidden = !isWeeklyOct16;
       $('#aiTrendWeeklyOct09').hidden = !isWeeklyOct09;
@@ -2778,7 +2896,10 @@
       } else if (isOct25) {
         $('#issueDate').textContent = 'Sunday, October 25, 2026';
         $('#storyCount').textContent = '7 stories';
-                  } else if (isWeeklyOct23) {
+                  } else if (isWeeklyOct30) {
+        $('#issueDate').textContent = 'Week of October 30, 2026';
+        $('#storyCount').textContent = '10 stories';
+      } else if (isWeeklyOct23) {
         $('#issueDate').textContent = 'Week of October 23, 2026';
         $('#storyCount').textContent = '10 stories';
       } else if (isWeeklyOct16) {
@@ -2816,6 +2937,7 @@
       $('#hardwareDailyOct27').hidden = true;
       $('#hardwareDailyOct26').hidden = true;
       $('#hardwareDailyOct25').hidden = true;
+      $('#aiTrendWeeklyOct30').hidden = true;
       $('#aiTrendWeeklyOct23').hidden = true;
       $('#aiTrendWeeklyOct16').hidden = true;
       $('#aiTrendWeeklyOct09').hidden = true;
