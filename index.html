@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="light dark" />
   <link rel="icon" href="data:," />
-  <title>AI Hardware Daily — November 1, 2026</title>
+  <title>AI Hardware Daily — November 2, 2026</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650;8..60,750&display=swap');
 
@@ -926,6 +926,12 @@
       #aiTrendDailyOct27 .ai27-badges { padding-left: 22px; padding-right: 22px; }
     }
 
+    /* November 2 AI Hardware daily edition (inline-styled; responsive overrides) */
+    @media (max-width: 640px) {
+      #hardwareDailyNov02 h1 { font-size: 28px !important; }
+      #hardwareDailyNov02 h2 { font-size: 21px !important; }
+    }
+
     /* October 31 AI Hardware daily edition (inline-styled; responsive overrides) */
     @media (max-width: 640px) {
       #hardwareDailyOct31 h1 { font-size: 28px !important; }
@@ -950,12 +956,6 @@
       #hardwareDailyOct28 h2 { font-size: 21px !important; }
     }
 
-    /* October 27 AI Hardware daily edition (inline-styled; responsive overrides) */
-    @media (max-width: 640px) {
-      #hardwareDailyOct27 h1 { font-size: 28px !important; }
-      #hardwareDailyOct27 h2 { font-size: 21px !important; }
-    }
-
 
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
@@ -967,8 +967,8 @@
     <div class="issue-bar" aria-label="Section and edition navigation">
       <div class="issue-meta">
         <span class="signal" id="signalName">AI Trends</span>
-        <span id="issueDate">Sunday, November 1, 2026</span>
-        <span id="storyCount">7 stories</span>
+        <span id="issueDate">Monday, November 2, 2026</span>
+        <span id="storyCount">8 stories</span>
       </div>
       <div class="section-switcher" role="group" aria-label="Choose a section">
         <button class="section-btn" type="button" data-section="hardware" aria-pressed="true">AI Hardware</button>
@@ -980,12 +980,12 @@
         <div class="edition-group">
           <span class="edition-label">Daily</span>
           <div class="archive-controls" role="group" aria-label="Choose a daily edition">
-            <button class="edition-btn" type="button" data-issue="2026-11-01" aria-pressed="true">Nov 1</button>
+            <button class="edition-btn" type="button" data-issue="2026-11-02" aria-pressed="true">Nov 2</button>
+            <button class="edition-btn" type="button" data-issue="2026-11-01" aria-pressed="false">Nov 1</button>
             <button class="edition-btn" type="button" data-issue="2026-10-31" aria-pressed="false">Oct 31</button>
             <button class="edition-btn" type="button" data-issue="2026-10-30" aria-pressed="false">Oct 30</button>
             <button class="edition-btn" type="button" data-issue="2026-10-29" aria-pressed="false">Oct 29</button>
             <button class="edition-btn" type="button" data-issue="2026-10-28" aria-pressed="false">Oct 28</button>
-            <button class="edition-btn" type="button" data-issue="2026-10-27" aria-pressed="false">Oct 27</button>
           </div>
         </div>
         <div class="edition-group weekly-group" aria-label="Choose a weekly summary">
@@ -1022,7 +1022,73 @@
       <p>All information in this blog comes from publicly available sources and has not been independently verified. Please check the linked original sources before relying on it.</p>
     </aside>
 
-    <div id="hardwareDailyNov01" aria-live="polite" style="background:#f8fafc;font-family:Georgia,'Times New Roman',serif;color:#334155;">
+    <div id="hardwareDailyNov02" aria-live="polite">
+<section style="background:#f8fafc;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
+<div style="max-width:760px;margin:0 auto;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;margin:0 0 8px;">AI Hardware Daily &middot; November 2, 2026</p>
+<h1 style="font-size:34px;line-height:1.15;color:#0f172a;margin:0 0 12px;">Money is flowing to challengers &mdash; while memory runs out</h1>
+<p style="font-size:17px;line-height:1.6;margin:0 0 20px;"><strong>Why it matters:</strong> The day&rsquo;s theme is a supply squeeze, not a demand slump. Inference challengers raised hundreds of millions to scale production, yet HBM for 2027 is already spoken for, Korea&rsquo;s chip exports surged on AI hardware demand, and the largest U.S. AI sites keep getting bigger &mdash; so the binding constraint is memory, packaging and power, not appetite for compute.</p>
+<article style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,.08);margin:0 0 24px;">
+<p style="letter-spacing:.16em;text-transform:uppercase;font-size:12px;color:#b45309;margin:0 0 10px;">Cover story</p>
+<h2 style="font-size:28px;line-height:1.2;color:#0f172a;margin:0 0 12px;">FuriosaAI raises $620M to more than double inference-chip output</h2>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;">
+<span style="background:#fef3c7;color:#92400e;padding:6px 10px;border-radius:999px;font-size:13px;font-weight:700;">$620M Series D</span>
+<span style="background:#e0f2fe;color:#075985;padding:6px 10px;border-radius:999px;font-size:13px;font-weight:700;">~$2.9B valuation</span>
+<span style="background:#dcfce7;color:#166534;padding:6px 10px;border-radius:999px;font-size:13px;font-weight:700;">20,000 &rarr; 40,000+ units</span>
+</div>
+<p style="line-height:1.65;margin:0 0 10px;">South Korea&rsquo;s FuriosaAI has closed a $620 million (KRW 820 billion) Series D at a post-money valuation of about $2.9 billion, led by a $280 million investment from South Korea&rsquo;s National Growth Fund, with $110 million from international investors including Infinitum, Cisco Investments and QUDA Capital Partners.</p>
+<p style="line-height:1.65;margin:0 0 10px;">The money will expand production of its RNGD inference accelerator, which entered mass production in January 2026, strengthen its software ecosystem, and accelerate a third-generation chip being developed with Broadcom. FuriosaAI plans to more than double output from 20,000 RNGD units in 2026 to over 40,000 in 2027, with deployments already at LG Group, Upstage and Samsung SDS. Its 180-watt, air-cooled RNGD card is pitched, by the company, as delivering throughput comparable to a GPU drawing twice as much power or more.</p>
+<p style="line-height:1.65;margin:0;">Why it matters: this is a scale-up round, not a science project &mdash; a non-NVIDIA inference supplier moving from proven silicon to volume, backed by state and strategic capital.</p>
+<p style="margin:14px 0 0;"><a href="https://theaiinsider.tech/2026/11/02/furiosaai-secures-620m-series-d-to-meet-surging-enterprise-ai-inference-demand-and-accelerate-next-gen-silicon/" style="color:#0369a1;">Source: The AI Insider / FuriosaAI announcement, Nov. 2, 2026 &rarr;</a></p>
+</article>
+<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 1px 6px rgba(15,23,42,.06);margin:0 0 16px;">
+<h3 style="color:#0f172a;font-size:20px;margin:0 0 8px;"><span style="color:#94a3b8;">02 &nbsp;</span>South Korea&rsquo;s chip exports hit $56.4B in October, up 259%</h3>
+<p style="line-height:1.65;margin:0 0 8px;">South Korea exported $115.28 billion of goods in October, up 93.7% year on year, with semiconductors accounting for $56.44 billion &mdash; about 49% of the total and more than three and a half times a year earlier. Computer exports also jumped 496.6% to $5.85 billion on server demand.</p>
+<p style="line-height:1.65;margin:0;">Why it matters: trade data, not just vendor guidance, now shows AI infrastructure as the driver of a national export boom &mdash; and memory prices are rising with it.</p>
+<p style="margin:12px 0 0;"><a href="https://tower-post.com/2026/11/01/south-korea-october-exports-2026-ai-chip-boom/" style="color:#0369a1;">Source: Tower Post / South Korea trade ministry data, Nov. 1, 2026 &rarr;</a></p>
+</article>
+<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 1px 6px rgba(15,23,42,.06);margin:0 0 16px;">
+<h3 style="color:#0f172a;font-size:20px;margin:0 0 8px;"><span style="color:#94a3b8;">03 &nbsp;</span>Altman&rsquo;s Seoul trip puts the HBM crunch front and centre</h3>
+<p style="line-height:1.65;margin:0 0 8px;">OpenAI CEO Sam Altman met Samsung executives in Yongin on Saturday and SK Group and SK hynix leaders over the weekend, as reported Nov. 2 by The Korea Herald. The report cites TrendForce forecasting HBM&rsquo;s blended average selling price rising 121% in 2027 from 2026, Samsung saying its HBM supply for 2027 is sold out, and SK hynix saying production through 2029 is effectively accounted for by firm contracts and volumes under negotiation.</p>
+<p style="line-height:1.65;margin:0;">Why it matters: no new supply agreements were announced &mdash; the visit underlines that securing memory, not just GPUs, is now a CEO-level negotiation. Note: the report&rsquo;s OpenAI fundraising figures ($11B secured against a $30B target) are explicitly not independently confirmed.</p>
+<p style="margin:12px 0 0;"><a href="https://www.indianeconomicobserver.com/news/altman-turns-to-samsung-sk-as-ai-expansion-faces-chip-supply-challenges20261102125244//" style="color:#0369a1;">Source: Indian Economic Observer / Korea Herald report, Nov. 2, 2026 &rarr;</a></p>
+</article>
+<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 1px 6px rgba(15,23,42,.06);margin:0 0 16px;">
+<h3 style="color:#0f172a;font-size:20px;margin:0 0 8px;"><span style="color:#94a3b8;">04 &nbsp;</span>Salience Labs raises $125M for optical switching between GPUs</h3>
+<p style="line-height:1.65;margin:0 0 8px;">UK startup Salience Labs closed an oversubscribed $125 million Series B, led by Bullhound Capital with AMD Ventures, Intel Capital, SBI Group and others participating. Its all-optical, fully integrated switch architecture is designed to connect thousands of GPUs across racks for scale-up networking in AI data centres.</p>
+<p style="line-height:1.65;margin:0;">Why it matters: as racks, not single chips, become the unit of compute, the interconnect between GPUs is becoming a first-order performance and cost lever &mdash; and both AMD and Intel are backing this photonics bet.</p>
+<p style="margin:12px 0 0;"><a href="https://evertiq.com/news/2026-11-02-salience-labs-raises-125m-to-scale-performance-in-ai-data-centers" style="color:#0369a1;">Source: Evertiq, Nov. 2, 2026 &rarr;</a></p>
+</article>
+<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 1px 6px rgba(15,23,42,.06);margin:0 0 16px;">
+<h3 style="color:#0f172a;font-size:20px;margin:0 0 8px;"><span style="color:#94a3b8;">05 &nbsp;</span>Abilene Stargate passes 1M H100-equivalents &mdash; on estimates</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Epoch AI&rsquo;s Frontier Data Centers data, pulled Nov. 1, puts OpenAI&rsquo;s Abilene, Texas site at 1,018,696 H100-equivalents, up from 764,022, with IT power rising from 618 MW to 824 MW &mdash; moving it to second among tracked sites, behind only xAI&rsquo;s Colossus 2 at 1,111,673.</p>
+<p style="line-height:1.65;margin:0;">Why it matters: the scale of a single site is now measured in millions of H100-equivalents, but treat the new figure carefully &mdash; Epoch labels buildings 7 and 8 as estimated from satellite imagery, and Oracle has not confirmed them operational.</p>
+<p style="margin:12px 0 0;"><a href="https://helpfulinfoforyou.com/2026/11/abilene-stargate-hits-1m-h100-equivalents/" style="color:#0369a1;">Source: Epoch AI data via FourWeekMBA / Helpful Info For You, Nov. 2, 2026 &rarr;</a></p>
+</article>
+<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 1px 6px rgba(15,23,42,.06);margin:0 0 16px;">
+<h3 style="color:#0f172a;font-size:20px;margin:0 0 8px;"><span style="color:#94a3b8;">06 &nbsp;</span>NVIDIA&rsquo;s China AI-chip share falls to 34%; Huawei reaches 28%</h3>
+<p style="line-height:1.65;margin:0 0 8px;">IDC figures reported Nov. 2 put NVIDIA at 34% of China&rsquo;s data-centre AI-chip market in the first half of 2026, shipping 678,000 accelerators, down 44% year on year. Huawei shipped 572,000 units for 28%, with Alibaba&rsquo;s T-Head at 7%, Cambricon at 5% and Baidu&rsquo;s Kunlunxin at 4%.</p>
+<p style="line-height:1.65;margin:0;">Why it matters: export controls plus domestic substitution are reshaping China&rsquo;s accelerator market toward non-GPU designs &mdash; total shipments reached 2.008 million in H1, with non-GPU accelerators up nearly 80% while GPU shipments fell 26%. IDC expects total Chinese AI-accelerator shipments to grow 19% in 2026.</p>
+<p style="margin:12px 0 0;"><a href="https://www.ad-hoc-news.de/boerse/news/corporate-news/nvidia-stock-faces-china-setback-as-huawei-reaches-28-prozent-share/70445097" style="color:#0369a1;">Source: IDC via Reuters / The Edge Malaysia, reported Nov. 2, 2026 (H1 2026 data) &rarr;</a></p>
+</article>
+<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 1px 6px rgba(15,23,42,.06);margin:0 0 16px;">
+<h3 style="color:#0f172a;font-size:20px;margin:0 0 8px;"><span style="color:#94a3b8;">07 &nbsp;</span>Google runs a TPU in orbit &mdash; a first step, not a data centre in space</h3>
+<p style="line-height:1.65;margin:0 0 8px;"><em>Announced Oct. 30, 2026; reported Nov. 1&ndash;2.</em> Under Project Suncatcher, Google powered up a data-centre-class TPU aboard a prototype satellite, ran its Gemma 4 model to write a haiku about space, and transmitted the text back to Earth &mdash; described as the first AI response in orbit from such a TPU.</p>
+<p style="line-height:1.65;margin:0;">Why it matters: it proves terrestrial AI silicon can run in orbit, but radiation hardening, fault isolation and heat rejection in vacuum remain unsolved at scale &mdash; a two-satellite demonstration is planned for 2027.</p>
+<p style="margin:12px 0 0;"><a href="https://tai-semicon.medium.com/google-runs-ai-on-a-tpu-in-orbit-an-important-step-but-only-a-first-step-nov-2-2026-cd0ae91ed083" style="color:#0369a1;">Source: Tai Semiconductor News / Japanese media reports, Nov. 2, 2026 &rarr;</a></p>
+</article>
+<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 1px 6px rgba(15,23,42,.06);margin:0 0 16px;">
+<h3 style="color:#0f172a;font-size:20px;margin:0 0 8px;"><span style="color:#94a3b8;">08 &nbsp;</span>Samsung&rsquo;s chairman tours its Yokohama advanced-packaging lab</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Samsung Electronics Chairman Lee Jae-yong visited the Advanced Package Lab in Yokohama on Nov. 1, his first inspection since it officially opened Sept. 8. Samsung has committed 40 billion yen (about $260 million) over five years from 2024 to the lab, whose scope is expanding to wafer bonding, glass substrates and new packaging architectures.</p>
+<p style="line-height:1.65;margin:0;">Why it matters: with HBM and accelerators integrated into single packages, interconnect density, power delivery and heat are now as decisive as transistor scaling &mdash; and Samsung is leaning on Japan&rsquo;s materials and equipment ecosystem to close that gap.</p>
+<p style="margin:12px 0 0;"><a href="https://www.ajupress.com//view/20261101163759920" style="color:#0369a1;">Source: Aju Press, Nov. 1, 2026 &rarr;</a></p>
+</article>
+<p style="text-align:center;font-style:italic;color:#64748b;margin:28px 0 0;">by Your Tech Sommelier</p>
+</div>
+</section>
+    </div>
+
+    <div id="hardwareDailyNov01" aria-live="polite" hidden style="background:#f8fafc;font-family:Georgia,'Times New Roman',serif;color:#334155;">
 <div style="max-width:860px;margin:0 auto;padding:32px 20px 48px;">
 <p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#64748b;margin:0 0 8px;">AI Hardware Daily &nbsp;·&nbsp; November 1, 2026</p>
 <h1 style="font-family:Arial,Helvetica,sans-serif;font-size:44px;line-height:1.05;color:#0f172a;margin:0 0 16px;">The spec sheet meets reality — and memory is the prize</h1>
@@ -1281,67 +1347,6 @@
 </div>
 </section>
     </div>
-
-    <div id="hardwareDailyOct27" aria-live="polite" hidden>
-<section style="background:#f8fafc;padding:28px 18px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
-<div style="max-width:760px;margin:0 auto;">
-<p style="letter-spacing:2px;text-transform:uppercase;font-size:12px;color:#64748b;margin:0 0 6px;">AI Hardware Daily &middot; October 27, 2026</p>
-<h1 style="font-size:38px;line-height:1.05;color:#0f172a;margin:0 0 14px;">The money behind the machines takes center stage</h1>
-<p style="font-size:17px;line-height:1.55;margin:0 0 20px;"><strong style="color:#0f172a;">Why it matters:</strong> Today's biggest AI hardware news isn't a single chip spec — it's the financing being invented to pay for the chips. A $63B lease vehicle for Broadcom accelerators, a $97.5B Meta raise backed by Nvidia, and a $9B Naver infrastructure deal show the buildout is now as much a capital-engineering story as a silicon one — while Qualcomm's inference push gives buyers a new, power-first alternative.</p>
-<article style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,.08);margin:0 0 20px;">
-<p style="letter-spacing:2px;text-transform:uppercase;font-size:11px;color:#dc2626;margin:0 0 8px;">Cover story</p>
-<h2 style="font-size:30px;line-height:1.15;color:#0f172a;margin:0 0 12px;">Qualcomm storms the data center as its AI200 line heads for shipment</h2>
-<div style="margin:0 0 14px;">
-<span style="display:inline-block;background:#0f172a;color:#fff;border-radius:999px;padding:6px 12px;font-size:13px;font-weight:700;margin:0 6px 6px 0;">+22% intraday share jump</span>
-<span style="display:inline-block;background:#e2e8f0;color:#0f172a;border-radius:999px;padding:6px 12px;font-size:13px;font-weight:700;margin:0 6px 6px 0;">200 MW Humain deployment</span>
-<span style="display:inline-block;background:#e2e8f0;color:#0f172a;border-radius:999px;padding:6px 12px;font-size:13px;font-weight:700;margin:0 6px 6px 0;">768 GB LPDDR per AI200 card</span>
-<span style="display:inline-block;background:#e2e8f0;color:#0f172a;border-radius:999px;padding:6px 12px;font-size:13px;font-weight:700;margin:0 6px 6px 0;">AI250 due 2027</span>
-</div>
-<p style="font-size:16px;line-height:1.6;margin:0 0 10px;">Qualcomm shares jumped as much as 22% on Monday — its biggest rally since 2019 — as its data-center inference line moved toward commercial shipment, with the AI200 shipping next year and the AI250 following in 2027. Saudi AI venture Humain is the first named customer, planning 200 MW of Qualcomm-based systems starting in 2026.</p>
-<p style="font-size:16px;line-height:1.6;margin:0 0 10px;">The pitch is inference economics, not raw training muscle: Hexagon-NPU-based accelerators sold as cards or full liquid-cooled racks (160 kW per rack), with the AI200 carrying 768 GB of LPDDR per card and the AI250 using a near-memory computing design Qualcomm claims delivers over 10x the effective memory bandwidth. Note the timeline: the AI200 was first announced in October 2025 — Monday's news is the commercial push and the Humain deployment, not a first unveiling.</p>
-<p style="font-size:14px;line-height:1.6;margin:0;">Why it matters: inference is where power bills live, and a mobile-efficiency pedigree aimed squarely at cost per token is the most credible challenger yet to GPU-centric inference. <a href="https://klse.i3investor.com/web/blog/detail/ceomorningbrief/2025-10-28-story-h500470115-Qualcomm_Debuts_Chip_to_Rival_Nvidia_in_AI_Accelerator_Market" style="color:#2563eb;">Source: Bloomberg via i3investor</a> &middot; <a href="https://www.datacenterdynamics.com/en/news/qualcomm-launches-ai200-and-ai250-chip-offering-targeting-inferencing-workloads-at-rack-scale/" style="color:#2563eb;">Specs: Data Center Dynamics</a></p>
-</article>
-<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 2px 8px rgba(15,23,42,.06);margin:0 0 14px;">
-<p style="font-size:28px;color:#cbd5e1;font-weight:800;margin:0;">02</p>
-<h3 style="font-size:21px;line-height:1.25;color:#0f172a;margin:4px 0 8px;">Broadcom and Wall Street build a $63B machine to lease AI chips to Anthropic</h3>
-<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">Bank of America, Blackstone, Citi and Morgan Stanley arranged a record $63 billion lien-backed financing: a special-purpose vehicle buys Broadcom XPU accelerators and networking gear and leases them to Anthropic, with deliveries starting in 2027. Broadcom provides residual-value support equal to the first-lien debt — growth for Broadcom, but with real balance-sheet exposure.</p>
-<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">Why it matters: this is custom silicon financed like infrastructure. If the model works, frontier labs can scale compute without funding every accelerator upfront — and custom-chip vendors gain a new route to market that bypasses the traditional server OEM sale.</p>
-<p style="font-size:14px;margin:0;"><a href="https://stocktwits.com/news-articles/markets/equity/broadcom-partners-with-wall-street-bigwigs-to-forge-63-b-deal-to-power-anthropic-s-ai-hardware/cZU3ie1RBzJ" style="color:#2563eb;">Source: Stocktwits</a> &middot; <a href="https://www.telecompaper.com/news/anthropic-agrees-usd-63-billion-lien-financing-to-lease-broadcom-ai-chips--1586947" style="color:#2563eb;">Source: Telecompaper</a></p>
-</article>
-<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 2px 8px rgba(15,23,42,.06);margin:0 0 14px;">
-<p style="font-size:28px;color:#cbd5e1;font-weight:800;margin:0;">03</p>
-<h3 style="font-size:21px;line-height:1.25;color:#0f172a;margin:4px 0 8px;">Nvidia puts $3B into Meta's raise as the two deepen their Muse and Vera Rubin pact</h3>
-<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">Nvidia said Tuesday it will invest $3 billion in Meta's equity offering, subject to closing conditions, alongside an expanded partnership around Meta's Muse AI models and agents. Meta priced $25 billion of Class A stock at $625 a share plus $12.5 billion of mandatory convertible preferred shares, upsizing a raise that totals up to $97.5 billion including a planned $60 billion at-the-market program; offerings are expected to close October 29.</p>
-<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">Meta plans broader deployment of Nvidia's Vera Rubin platform, Vera CPUs, Spectrum-X Ethernet and BlueField-4, and the pair will explore OpenShell agent-safety work. The chipmaker trio of Nvidia, AMD and Broadcom had earlier indicated non-binding interest in up to $5 billion of the common stock combined — individual allocations beyond Nvidia's $3 billion are not disclosed.</p>
-<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">Why it matters: the chip supplier is now also a shareholder in its customer's AI buildout, tightening a loop where model optimization, hardware deployment and financing all run through the same two companies.</p>
-<p style="font-size:14px;margin:0;"><a href="https://www.tradingview.com/news/DJN_DN20261027000752:0-nvidia-to-invest-3-billion-in-meta-s-equity-offering-as-they-expand-ai-partnership/" style="color:#2563eb;">Source: Dow Jones via TradingView</a> &middot; <a href="https://wixx.com/2026/10/27/nvidia-meta-partner-on-muse-agent-as-nvidia-invests-3-billion/" style="color:#2563eb;">Source: Reuters via WIXX</a></p>
-</article>
-<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 2px 8px rgba(15,23,42,.06);margin:0 0 14px;">
-<p style="font-size:28px;color:#cbd5e1;font-weight:800;margin:0;">04</p>
-<h3 style="font-size:21px;line-height:1.25;color:#0f172a;margin:4px 0 8px;">Naver closes a $9B Brookfield deal, clearing the way for Nvidia's ~$1B investment</h3>
-<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">Naver signed a computing-infrastructure contract with Brookfield on October 27: a Brookfield-funded special-purpose vehicle will build up to $9 billion of GPU and data-center infrastructure by 2028 for Naver Cloud's AI factory project, with Naver Cloud paying usage fees linked to revenue. The deal fulfills a prerequisite for Nvidia's expected ~$1 billion third-party-allocation investment in Naver.</p>
-<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">Why it matters: it's the sovereign-AI-factory template in miniature — outside capital funds the iron, the local cloud operates it, and Nvidia supplies GPUs plus its next-generation DSX infrastructure platform. Expect more countries to copy the structure.</p>
-<p style="font-size:14px;margin:0;"><a href="https://www.ajupress.com/view/20261027172470065" style="color:#2563eb;">Source: Aju Press</a></p>
-</article>
-<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 2px 8px rgba(15,23,42,.06);margin:0 0 14px;">
-<p style="font-size:28px;color:#cbd5e1;font-weight:800;margin:0;">05</p>
-<h3 style="font-size:21px;line-height:1.25;color:#0f172a;margin:4px 0 8px;">Compal and ARC Cloud sign on for up to 100 MW of AI infrastructure</h3>
-<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">Signed at the 2026 OCP Global Summit, the Compal–ARC Cloud memorandum covers advanced AI computing systems, high-performance GPU clusters and data-center infrastructure, with a development roadmap of up to 100 MW across California, Nevada, Texas and Georgia. The pair aim to move beyond server supply into joint system engineering, validation and deployment for the NeoCloud market.</p>
-<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">Why it matters: OCP week is turning into deal week for the tier of builders below the hyperscalers — manufacturing plus capital, packaged as a single offer to AI labs that need capacity fast.</p>
-<p style="font-size:14px;margin:0;"><a href="https://www.tradingview.com/news/prnewswire:dfa714046936f:0-compal-and-arc-cloud-forge-strategic-partnership-to-accelerate-large-scale-ai-infrastructure/" style="color:#2563eb;">Source: PR Newswire via TradingView</a></p>
-</article>
-<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 2px 8px rgba(15,23,42,.06);margin:0 0 14px;">
-<p style="font-size:28px;color:#cbd5e1;font-weight:800;margin:0;">06</p>
-<h3 style="font-size:21px;line-height:1.25;color:#0f172a;margin:4px 0 8px;">Anthropic files for an IPO — and chip stocks ride the spending signal</h3>
-<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">Anthropic filed a registration statement for a proposed IPO, planning to list Class A shares on Nasdaq under the ticker ANT, with Goldman Sachs and Morgan Stanley leading the offering. Alongside Meta's raise, the filing helped lift AI chip stocks on Monday — Nvidia, AMD and Broadcom all rose — as investors read both deals as confirmation that AI infrastructure spending keeps accelerating into Big Tech earnings.</p>
-<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">Why it matters: a public Anthropic means public scrutiny of exactly how much compute money the frontier labs burn — and, by extension, how durable the accelerator order books are. The Broadcom lease deal in story 02 is the other side of the same coin.</p>
-<p style="font-size:14px;margin:0;"><a href="https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-october-27-2026/" style="color:#2563eb;">Source: HeyGoTrade (citing TipRanks / IBTimes)</a> &middot; <a href="https://www.tipranks.com/news/why-broadcom-amd-and-nvidia-stocks-are-rising-in-premarket-today-october-27" style="color:#2563eb;">Source: TipRanks</a></p>
-</article>
-<p style="text-align:center;font-style:italic;color:#64748b;font-size:14px;margin:24px 0 0;">by Your Tech Sommelier</p>
-</div>
-</section>
-    </div>
-
 
     <article id="issue" aria-live="polite" hidden>
       <section class="hero" aria-labelledby="heroTitle">
@@ -2639,12 +2644,12 @@
       const item = issues[key];
       if (!item) return;
       currentIssue = key;
+      $('#hardwareDailyNov02').hidden = true;
       $('#hardwareDailyNov01').hidden = true;
       $('#hardwareDailyOct31').hidden = true;
       $('#hardwareDailyOct30').hidden = true;
       $('#hardwareDailyOct29').hidden = true;
       $('#hardwareDailyOct28').hidden = true;
-      $('#hardwareDailyOct27').hidden = true;
       $('#issue').hidden = false;
       keepBlogTitle();
       $('#issueDate').textContent = item.date;
@@ -2695,19 +2700,19 @@
       window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     }
 
-    let currentIssue = '2026-11-01';
+    let currentIssue = '2026-11-02';
     let currentAiIssue = '2026-11-01';
     let currentSection = 'hardware';
 
     function renderHardwareIssue(key) {
       currentIssue = key;
       const hardwareIssues = {
+        '2026-11-02': { panel: '#hardwareDailyNov02', date: 'Monday, November 2, 2026', stories: '8 stories', title: 'AI Hardware Daily — November 2, 2026' },
         '2026-11-01': { panel: '#hardwareDailyNov01', date: 'Sunday, November 1, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 1, 2026' },
         '2026-10-31': { panel: '#hardwareDailyOct31', date: 'Saturday, October 31, 2026', stories: '8 stories', title: 'AI Hardware Daily — October 31, 2026' },
         '2026-10-30': { panel: '#hardwareDailyOct30', date: 'Friday, October 30, 2026', stories: '8 stories', title: 'AI Hardware Daily — October 30, 2026' },
         '2026-10-29': { panel: '#hardwareDailyOct29', date: 'Thursday, October 29, 2026', stories: '8 stories', title: 'AI Hardware Daily — October 29, 2026' },
         '2026-10-28': { panel: '#hardwareDailyOct28', date: 'Wednesday, October 28, 2026', stories: '6 stories', title: 'AI Hardware Daily — October 28, 2026' },
-        '2026-10-27': { panel: '#hardwareDailyOct27', date: 'Tuesday, October 27, 2026', stories: '6 stories', title: 'AI Hardware Daily — October 27, 2026' },
       };
       const selected = hardwareIssues[key];
       if (!selected) {
@@ -2824,12 +2829,12 @@
         btn.setAttribute('aria-pressed', String(btn.dataset.section === section));
       });
       $('#issue').hidden = true;
+      $('#hardwareDailyNov02').hidden = true;
       $('#hardwareDailyNov01').hidden = true;
       $('#hardwareDailyOct31').hidden = true;
       $('#hardwareDailyOct30').hidden = true;
       $('#hardwareDailyOct29').hidden = true;
       $('#hardwareDailyOct28').hidden = true;
-      $('#hardwareDailyOct27').hidden = true;
       $('#aiTrendWeeklyOct30').hidden = true;
       $('#aiTrendWeeklyOct23').hidden = true;
       $('#aiTrendWeeklyOct16').hidden = true;
@@ -2851,7 +2856,7 @@
       }
     }
 
-    renderHardwareIssue('2026-11-01');
+    renderHardwareIssue('2026-11-02');
   </script>
 </body>
 </html>
