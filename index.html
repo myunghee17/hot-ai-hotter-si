@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="light dark" />
   <link rel="icon" href="data:," />
-  <title>AI Hardware Daily — November 2, 2026</title>
+  <title>AI Hardware Daily — November 3, 2026</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650;8..60,750&display=swap');
 
@@ -905,6 +905,12 @@
       #aiTrendDailyOct28 .ai28-badges { padding-left: 22px; padding-right: 22px; }
     }
 
+    /* November 3 AI Hardware daily edition (inline-styled; responsive overrides) */
+    @media (max-width: 640px) {
+      #hardwareDailyNov03 h1 { font-size: 28px !important; }
+      #hardwareDailyNov03 h2 { font-size: 21px !important; }
+    }
+
     /* November 2 AI Hardware daily edition (inline-styled; responsive overrides) */
     @media (max-width: 640px) {
       #hardwareDailyNov02 h1 { font-size: 28px !important; }
@@ -929,12 +935,6 @@
       #hardwareDailyOct29 h2 { font-size: 21px !important; }
     }
 
-    /* October 28 AI Hardware daily edition (inline-styled; responsive overrides) */
-    @media (max-width: 640px) {
-      #hardwareDailyOct28 h1 { font-size: 28px !important; }
-      #hardwareDailyOct28 h2 { font-size: 21px !important; }
-    }
-
 
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
@@ -946,7 +946,7 @@
     <div class="issue-bar" aria-label="Section and edition navigation">
       <div class="issue-meta">
         <span class="signal" id="signalName">AI Trends</span>
-        <span id="issueDate">Monday, November 2, 2026</span>
+        <span id="issueDate">Tuesday, November 3, 2026</span>
         <span id="storyCount">8 stories</span>
       </div>
       <div class="section-switcher" role="group" aria-label="Choose a section">
@@ -959,12 +959,12 @@
         <div class="edition-group">
           <span class="edition-label">Daily</span>
           <div class="archive-controls" role="group" aria-label="Choose a daily edition">
-            <button class="edition-btn" type="button" data-issue="2026-11-02" aria-pressed="true">Nov 2</button>
+            <button class="edition-btn" type="button" data-issue="2026-11-03" aria-pressed="true">Nov 3</button>
+            <button class="edition-btn" type="button" data-issue="2026-11-02" aria-pressed="false">Nov 2</button>
             <button class="edition-btn" type="button" data-issue="2026-11-01" aria-pressed="false">Nov 1</button>
             <button class="edition-btn" type="button" data-issue="2026-10-31" aria-pressed="false">Oct 31</button>
             <button class="edition-btn" type="button" data-issue="2026-10-30" aria-pressed="false">Oct 30</button>
             <button class="edition-btn" type="button" data-issue="2026-10-29" aria-pressed="false">Oct 29</button>
-            <button class="edition-btn" type="button" data-issue="2026-10-28" aria-pressed="false">Oct 28</button>
           </div>
         </div>
         <div class="edition-group weekly-group" aria-label="Choose a weekly summary">
@@ -1001,7 +1001,74 @@
       <p>All information in this blog comes from publicly available sources and has not been independently verified. Please check the linked original sources before relying on it.</p>
     </aside>
 
-    <div id="hardwareDailyNov02" aria-live="polite">
+    <div id="hardwareDailyNov03" aria-live="polite">
+<section style="background:#f8fafc;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
+<div style="max-width:760px;margin:0 auto;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;margin:0 0 8px;">AI Hardware Daily &middot; November 3, 2026</p>
+<h1 style="font-size:34px;line-height:1.15;color:#0f172a;margin:0 0 12px;">The plumbing is the product</h1>
+<p style="font-size:17px;line-height:1.6;margin:0 0 20px;"><strong>Why it matters:</strong> The day's biggest moves are all about what sits between and around the accelerator: a $115B bet that optics will decide AI data-centre scale, a new optical form factor from NVIDIA and Cisco, compute moving underneath memory, and power and memory upgrades for the racks themselves. The accelerator race is increasingly won in the interconnect, the memory wall and the power delivery.</p>
+<article style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,.08);margin:0 0 24px;">
+<p style="letter-spacing:.16em;text-transform:uppercase;font-size:12px;color:#b45309;margin:0 0 10px;">Cover story</p>
+<h2 style="font-size:28px;line-height:1.2;color:#0f172a;margin:0 0 12px;">Marvell buys Lumentum for $115B in one of tech's biggest deals ever</h2>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;">
+<span style="background:#fef3c7;color:#92400e;padding:6px 10px;border-radius:999px;font-size:13px;font-weight:700;">$115B enterprise value</span>
+<span style="background:#e0f2fe;color:#075985;padding:6px 10px;border-radius:999px;font-size:13px;font-weight:700;">4.5 MRVL shares per LITE share</span>
+<span style="background:#dcfce7;color:#166534;padding:6px 10px;border-radius:999px;font-size:13px;font-weight:700;">Close targeted H1 2028</span>
+</div>
+<p style="line-height:1.65;margin:0 0 10px;">Marvell Technology announced November 2 a definitive agreement to acquire optical-components maker Lumentum in an all-stock transaction with an implied enterprise value of $115 billion &mdash; about $1,132 per Lumentum share, a 23.9% premium to its unaffected October 28 close. Lumentum shareholders will receive 4.500 Marvell shares per share; after closing, current Marvell holders will own about 67% of the combined company and Lumentum holders about 33%.</p>
+<p style="line-height:1.65;margin:0 0 10px;">The combination unites Marvell's switching, custom silicon, SerDes and optical DSP technology with Lumentum's lasers, optical modules, optical circuit switching and compound-semiconductor manufacturing. The companies put the combined addressable market at $550 billion, project more than $1 billion in annual run-rate cost synergies, and expect the deal to add to Marvell's non-GAAP earnings per share in the first year after closing &mdash; all company projections, not results. Lumentum also reported fiscal Q1 revenue of $1.26 billion alongside the announcement.</p>
+<p style="line-height:1.65;margin:0;">Why it matters: this is a bet that AI scale-up is now an optics problem &mdash; moving data between accelerators with light, not copper, at rack and data-centre scale. The market's first reaction was sceptical: Marvell shares fell about 13% on November 2 and Lumentum about 19%, and the deal still needs both shareholder votes and regulatory approvals.</p>
+<p style="margin:14px 0 0;"><a href="https://investor.marvell.com/news-events/press-releases/detail/1040/marvell-and-lumentum-to-combine-creating-a-category-leader-in-ai-connectivity" style="color:#0369a1;">Source: Marvell / Lumentum joint announcement, Nov. 2, 2026 &rarr;</a></p>
+</article>
+<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 1px 6px rgba(15,23,42,.06);margin:0 0 16px;">
+<h3 style="color:#0f172a;font-size:20px;margin:0 0 8px;"><span style="color:#94a3b8;">02 &nbsp;</span>NVIDIA and Cisco unveil USFP, a 400Gb/s-per-lane optical form factor</h3>
+<p style="line-height:1.65;margin:0 0 8px;">NVIDIA and Cisco announced November 3 the Ultra-Dense Small Form Factor Pluggable (USFP), a high-density optical module designed to carry AI fabrics from 200Gb/s per lane to 400Gb/s per lane. Comparable in size to an OSFP module, USFP is designed to deliver four times the bandwidth and front-panel bandwidth density, with about 1.3 times the power efficiency of 200Gb/s-per-lane pluggable modules. The two companies are working with TE Connectivity and Amphenol on cages, connectors and modules, and plan an open industry specification through a community-led multi-source project.</p>
+<p style="line-height:1.65;margin:0;">Why it matters: as inference clusters grow, the bottleneck is moving data between racks without expanding the switch footprint or the power budget &mdash; and the two biggest AI networking names are now standardising the next lane speed together.</p>
+<p style="margin:12px 0 0;"><a href="https://pressreleasenetwork.com/site/2026/11/03/nvidia-and-cisco-introduce-new-pluggable-optics-form-factor-to-scale-ai-factories/" style="color:#0369a1;">Source: NVIDIA / Cisco announcement, Nov. 3, 2026 &rarr;</a></p>
+</article>
+<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 1px 6px rgba(15,23,42,.06);margin:0 0 16px;">
+<h3 style="color:#0f172a;font-size:20px;margin:0 0 8px;"><span style="color:#94a3b8;">03 &nbsp;</span>Qualcomm's near-memory AI silicon passes lab validation; Dragonfly AI250 samples in early 2027</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Qualcomm announced November 2 that its first-generation High Bandwidth Compute (HBC) silicon has been validated in its San Diego lab, exercising the full memory read-write path and near-memory calculations at production-representative conditions using industry-standard automated test equipment. HBC stacks LPDDR dies on an active AI accelerator base die using wafer-to-wafer bonding, shrinking the distance data travels from millimetres to micrometres. Qualcomm claims up to 18 times LPDDR's memory bandwidth and more than five times HBM4's energy efficiency, measured in terabits per second per watt &mdash; company figures, based on measured silicon normalised to target conditions, not independent benchmarks.</p>
+<p style="line-height:1.65;margin:0;">Why it matters: this is a development milestone, not a product launch, but it gives Qualcomm working silicon behind its attack on the inference memory wall &mdash; its Dragonfly AI250 inference platform, a fully liquid-cooled rack with 38.6 TB of memory and a claimed 7.4 petabytes per second of effective bandwidth, is targeted to begin sampling in the first half of 2027.</p>
+<p style="margin:12px 0 0;"><a href="https://wccftech.com/qualcomm-hbc-silicon-ai-inference-memory-bottleneck-data-center-product-taped-out/" style="color:#0369a1;">Source: Wccftech / Qualcomm announcement, Nov. 2, 2026 &rarr;</a></p>
+</article>
+<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 1px 6px rgba(15,23,42,.06);margin:0 0 16px;">
+<h3 style="color:#0f172a;font-size:20px;margin:0 0 8px;"><span style="color:#94a3b8;">04 &nbsp;</span>Onsemi buys Ferric for $600M and lifts its AI data-centre target above $3B</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Onsemi agreed November 2 to acquire Ferric for $600 million in cash, plus up to $175 million in revenue-based milestone payments through 2029, with a fourth-quarter 2026 close expected. Ferric makes integrated voltage regulators that move power conversion closer to AI processors, combining controller, transistors, inductors and capacitors in one package &mdash; which Onsemi says can use 50% to 70% less board area than conventional discrete regulators. Onsemi raised its 2030 AI data-centre revenue target to more than $3 billion, $500 million above its previous goal, after quarterly AI data-centre revenue rose 39% sequentially and 175% year on year.</p>
+<p style="line-height:1.65;margin:0;">Why it matters: power delivery is becoming a first-class AI hardware market &mdash; as accelerators draw more current, the regulator sitting millimetres from the chip decides how much board, cooling and headroom a rack needs.</p>
+<p style="margin:12px 0 0;"><a href="https://www.tokenpost.com/news/business/47112" style="color:#0369a1;">Source: TokenPost / Onsemi announcement, Nov. 2, 2026 &rarr;</a></p>
+</article>
+<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 1px 6px rgba(15,23,42,.06);margin:0 0 16px;">
+<h3 style="color:#0f172a;font-size:20px;margin:0 0 8px;"><span style="color:#94a3b8;">05 &nbsp;</span>Penguin Solutions launches DDR5-12800 MRDIMMs for AI inference memory</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Penguin Solutions introduced November 2 its SMART Modular DDR5 Multi-Ranked DIMMs (MRDIMMs) running at DDR5-12800 speeds, aimed at the memory-bandwidth bottlenecks that slow AI data centres. Each module multiplexes two physical ranks into a single logical rank to widen the path between server memory and processors, targeting generative-AI and large-language-model inference. AI-related revenue now makes up 78% of Penguin's sales, and the company posted record Q4 FY2026 revenue of $567 million, up 68% year on year.</p>
+<p style="line-height:1.65;margin:0;">Why it matters: inference is memory-bound &mdash; every generated token has to stream model weights through memory &mdash; so faster server memory is a direct lever on tokens per second, and a former memory-module vendor is now an AI-infrastructure pure play in all but name.</p>
+<p style="margin:12px 0 0;"><a href="https://cryptobriefing.com/penguin-solutions-ai-memory-bottlenecks/" style="color:#0369a1;">Source: Crypto Briefing / Penguin Solutions announcement, Nov. 2, 2026 &rarr;</a></p>
+</article>
+<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 1px 6px rgba(15,23,42,.06);margin:0 0 16px;">
+<h3 style="color:#0f172a;font-size:20px;margin:0 0 8px;"><span style="color:#94a3b8;">06 &nbsp;</span>Meta and Panmnesia propose running a whole data centre like a single chip</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Meta and fabless semiconductor company Panmnesia jointly proposed November 2 a next-generation AI data-centre architecture, published as a review in Nature Reviews Electrical Engineering, in which an entire data centre operates in a single CXL-based coherence domain. Three hardware elements &mdash; a high-fan-out non-blocking switch, a link acceleration unit and a fabric controller &mdash; bound latency variability, and CXL-over-optics extends the fabric beyond the rack. Against a reference of one CPU coordinating two accelerators, the proposal raises that to sixteen accelerators per CPU and a coherence domain of up to 960 accelerators, with round-trip latency falling from microseconds to several hundred nanoseconds.</p>
+<p style="line-height:1.65;margin:0;">Why it matters: it is an architecture proposal, not shipping hardware, but it shows where hyperscaler thinking is headed &mdash; the unit of execution is moving from the chip to the rack to the whole building, and the interconnect standard that wins that domain will shape the next decade of system design.</p>
+<p style="margin:12px 0 0;"><a href="https://www.storagenewsletter.com/2026/11/02/one-chip-one-datacenter-meta-and-panmnesia-extend-tight-coupling-beyond-the-rack-with-cxl/" style="color:#0369a1;">Source: StorageNewsletter / Meta&ndash;Panmnesia review, Nov. 2, 2026 &rarr;</a></p>
+</article>
+<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 1px 6px rgba(15,23,42,.06);margin:0 0 16px;">
+<h3 style="color:#0f172a;font-size:20px;margin:0 0 8px;"><span style="color:#94a3b8;">07 &nbsp;</span>Nordic launches nRF71 chips putting Wi-Fi and edge AI on one battery-friendly SoC</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Nordic Semiconductor announced November 3 the nRF71 series of ultra-low-power SoCs combining Wi-Fi, Bluetooth Low Energy, Thread and edge AI on a single chip. The company claims up to 20 times lower standby power than its current nRF70 series Wi-Fi products. The first chips are the nRF7120 (dual-band Wi-Fi 6) and the nRF7120E, which adds tri-band Wi-Fi 6E and an Axon neural processing unit that Nordic says runs machine-learning models 10 to 17 times faster than the 256 MHz Arm Cortex-M33 alone, enabling keyword recognition, anomaly detection and image classification on battery-powered devices. The series is sampling with selected customers, not yet generally available.</p>
+<p style="line-height:1.65;margin:0;">Why it matters: edge AI only works if it fits the power budget &mdash; putting the radio, the application processor and the NPU on one chip removes the external AI processor that battery devices could not afford.</p>
+<p style="margin:12px 0 0;"><a href="https://www.unite.ai/nordic-semiconductor-combines-wi-fi-and-edge-ai-in-nrf71-chips/" style="color:#0369a1;">Source: Unite.AI / Nordic Semiconductor announcement, Nov. 3, 2026 &rarr;</a></p>
+</article>
+<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 1px 6px rgba(15,23,42,.06);margin:0 0 16px;">
+<h3 style="color:#0f172a;font-size:20px;margin:0 0 8px;"><span style="color:#94a3b8;">08 &nbsp;</span>Ceva's NeuPro NPU reaches production in Mobilint's 10-TOPS REGULUS chip</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Ceva and South Korea's Mobilint announced November 2 that the REGULUS edge-AI SoC is the first production deployment of Ceva's NeuPro NPU family, pairing the NeuPro-Nano NPN32 neural processor with Ceva's SensPro AI DSP inside Mobilint's architecture. The chip delivers 10 dense INT8 TOPS at under 3 watts, supports up to 8 GB of memory, and targets robotics, drones, machine vision and smart cameras. It already powers Mobilint's MLD-R1 USB accelerator, previewed at COMPUTEX 2026 and now shipping.</p>
+<p style="line-height:1.65;margin:0;">Why it matters: licensed AI IP only counts when it ships &mdash; this is the first commercial silicon carrying Ceva's NeuPro family, and a plug-and-play USB accelerator is the fastest route for industrial customers to add on-device inference without redesigning their hardware.</p>
+<p style="margin:12px 0 0;"><a href="https://www.morningstar.com/news/pr-newswire/20261102sf85901/ceva-and-mobilint-advance-physical-ai-with-regulus-edge-ai-soc" style="color:#0369a1;">Source: PR Newswire / Ceva&ndash;Mobilint announcement, Nov. 2, 2026 &rarr;</a></p>
+</article>
+<p style="font-size:13px;color:#64748b;margin:20px 0 0;">Left out today: reported chipmaker backing for AI-assistant startup Hark, which rests on unconfirmed reporting rather than a company announcement, and therefore stays out under the no-rumors rule.</p>
+<p style="text-align:center;font-style:italic;color:#64748b;margin:28px 0 0;">by Your Tech Sommelier</p>
+</div>
+</section>
+    </div>
+
+    <div id="hardwareDailyNov02" aria-live="polite" hidden>
 <section style="background:#f8fafc;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
 <div style="max-width:760px;margin:0 auto;">
 <p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;margin:0 0 8px;">AI Hardware Daily &middot; November 2, 2026</p>
@@ -1263,65 +1330,6 @@
 <p style="font-size:14px;margin:0;"><a href="https://dealroom.co/news/167601-micronano-core-raises-300m-as-ai-chip-startup-sells-services-before-sili/" style="color:#2563eb;">Source: Dealroom</a></p>
 </article>
 <p style="font-size:13px;line-height:1.6;color:#64748b;margin:20px 0 0;">Left out today under the no-rumors rule: unconfirmed reports of an OpenAI plan to buy Google chips and of Marvell takeover talks for Lumentum — neither confirmed by the companies — were excluded rather than labeled.</p>
-<p style="text-align:center;font-style:italic;color:#64748b;font-size:14px;margin:24px 0 0;">by Your Tech Sommelier</p>
-</div>
-</section>
-    </div>
-
-    <div id="hardwareDailyOct28" aria-live="polite" hidden>
-<section style="background:#f8fafc;padding:28px 18px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
-<div style="max-width:760px;margin:0 auto;">
-<p style="letter-spacing:2px;text-transform:uppercase;font-size:12px;color:#64748b;margin:0 0 6px;">AI Hardware Daily &middot; October 28, 2026</p>
-<h1 style="font-size:38px;line-height:1.05;color:#0f172a;margin:0 0 14px;">Memory is the choke point — and everyone is paying up for it</h1>
-<p style="font-size:17px;line-height:1.55;margin:0 0 20px;"><strong style="color:#0f172a;">Why it matters:</strong> SK Hynix just posted an 80% operating margin on the back of AI memory, and says shortages run through 2030. That scarcity is reshaping everything else: Oracle is hedging across four chip vendors at once, and investors just handed $1.6B to alternative-silicon startups and clouds in a single day.</p>
-<article style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,.08);margin:0 0 20px;">
-<p style="letter-spacing:2px;text-transform:uppercase;font-size:11px;color:#dc2626;margin:0 0 8px;">Cover story</p>
-<h2 style="font-size:30px;line-height:1.15;color:#0f172a;margin:0 0 12px;">SK Hynix posts a record quarter as HBM4 takes over</h2>
-<div style="margin:0 0 14px;">
-<span style="display:inline-block;background:#0f172a;color:#fff;border-radius:999px;padding:6px 12px;font-size:13px;font-weight:700;margin:0 6px 6px 0;">79.7% operating margin</span>
-<span style="display:inline-block;background:#e2e8f0;color:#0f172a;border-radius:999px;padding:6px 12px;font-size:13px;font-weight:700;margin:0 6px 6px 0;">₩83.3T operating profit</span>
-<span style="display:inline-block;background:#e2e8f0;color:#0f172a;border-radius:999px;padding:6px 12px;font-size:13px;font-weight:700;margin:0 6px 6px 0;">HBM4 &gt; HBM3E in Q4</span>
-<span style="display:inline-block;background:#e2e8f0;color:#0f172a;border-radius:999px;padding:6px 12px;font-size:13px;font-weight:700;margin:0 6px 6px 0;">Shortages through 2030</span>
-</div>
-<p style="font-size:16px;line-height:1.6;margin:0 0 10px;">SK Hynix reported record third-quarter results on October 28 (Seoul time): revenue of ₩104.62 trillion, up 328% year over year, and operating profit of ₩83.33 trillion (about $62.9 billion), up 632% — beating consensus and delivering a staggering 79.7% operating margin. It is the company's sixth consecutive record quarter, driven by high-bandwidth memory for Nvidia accelerators plus surging DRAM prices.</p>
-<p style="font-size:16px;line-height:1.6;margin:0 0 10px;">The forward signals matter more than the quarter: HBM4 shipments are ramping and are expected to overtake HBM3E in both volume and revenue in the fourth quarter, the company has locked long-term supply deals with 14 major customers covering more than half of planned 2027–2028 capacity, and it forecasts memory shortages lasting through 2030.</p>
-<p style="font-size:14px;line-height:1.6;margin:0;">Why it matters: every accelerator roadmap now runs through HBM supply, and the vendor with over half the market just told buyers the shortage is a five-year condition, not a blip. <a href="https://www.ajupress.com/view/20261028000619602" style="color:#2563eb;">Source: Aju Press</a></p>
-</article>
-<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 2px 8px rgba(15,23,42,.06);margin:0 0 14px;">
-<p style="font-size:28px;color:#cbd5e1;font-weight:800;margin:0;">02</p>
-<h3 style="font-size:21px;line-height:1.25;color:#0f172a;margin:4px 0 8px;">Oracle goes multi-vendor: Vera Rubin at multi-gigawatt scale, plus Google TPUs, Cerebras and SambaNova</h3>
-<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">Announced October 27, Oracle will expand to multi-gigawatt scale with Nvidia's Vera Rubin servers while offering Google TPUs for the first time and adding Cerebras wafer-scale and SambaNova systems, with the non-Nvidia options positioned for inference and expected in 2027. Even on Nvidia systems, Oracle will use some of its own in-house Acceleron networking chips instead of certain Nvidia networking components.</p>
-<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">Why it matters: the second-largest AI cloud posture is now explicitly "whatever hardware runs the workload best." For chip challengers, an Oracle slot is distribution; for Nvidia, it's a reminder that even its biggest customers are diversifying the stack around its GPUs.</p>
-<p style="font-size:14px;margin:0;"><a href="https://bitcoinversus.tech/2026/10/27/cerebras-oracle-wafer-scale-ai-inference-2027/" style="color:#2563eb;">Source: Cerebras/Oracle announcement coverage</a></p>
-</article>
-<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 2px 8px rgba(15,23,42,.06);margin:0 0 14px;">
-<p style="font-size:28px;color:#cbd5e1;font-weight:800;margin:0;">03</p>
-<h3 style="font-size:21px;line-height:1.25;color:#0f172a;margin:4px 0 8px;">Tenstorrent raises $1.5B at a $6.2B valuation to scale its Nvidia alternative</h3>
-<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">AI chip startup Tenstorrent said October 27 it closed a $1.5 billion Series E valuing the company at $6.2 billion, co-led by Innovation X, to ramp foundry orders, expand compiler and runtime teams, and field reference systems. Its architecture mixes scalar and matrix engines with a compiler that maps AI graphs to chiplets, aimed at both training and inference.</p>
-<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">Why it matters: this is the largest alternative-silicon war chest of the year, and it lands as clouds actively seek a second source beyond Nvidia. The test now shifts from fundraising to shipping at scale.</p>
-<p style="font-size:14px;margin:0;"><a href="https://dev.to/fathomnews/ai-chip-startup-tenstorrent-bags-15b-hits-62b-value-2e4f" style="color:#2563eb;">Source: DEV / Fathom News</a></p>
-</article>
-<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 2px 8px rgba(15,23,42,.06);margin:0 0 14px;">
-<p style="font-size:28px;color:#cbd5e1;font-weight:800;margin:0;">04</p>
-<h3 style="font-size:21px;line-height:1.25;color:#0f172a;margin:4px 0 8px;">General Compute raises $100M to run an inference cloud on Cerebras, SambaNova and Positron chips</h3>
-<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">General Compute announced October 27 a $100 million Series A, co-led by Blackbird and Abstract and reported at an $800 million valuation, to build an inference cloud around specialized chips from Cerebras, SambaNova and Positron AI. The company finances, deploys and operates the hardware and sells guaranteed tokens-per-second, with first major deployments planned for Q1 2027 and over 50 MW of capacity in the pipeline (company projections, not operating capacity).</p>
-<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">Why it matters: the inference-cloud layer is becoming the on-ramp for non-Nvidia silicon — buyers get the accelerator without procuring or operating exotic hardware themselves. If it works, challenger chips reach customers through clouds long before they win a hyperscaler directly.</p>
-<p style="font-size:14px;margin:0;"><a href="https://letsdatascience.com/news/general-compute-raises-100m-series-a-for-specialized-inferen-e1287cb5" style="color:#2563eb;">Source: Let's Data Science (company announcement / TechCrunch)</a></p>
-</article>
-<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 2px 8px rgba(15,23,42,.06);margin:0 0 14px;">
-<p style="font-size:28px;color:#cbd5e1;font-weight:800;margin:0;">05</p>
-<h3 style="font-size:21px;line-height:1.25;color:#0f172a;margin:4px 0 8px;">Apple's M6 lands in the iMac and a 14-inch MacBook Pro, pitching on-device AI</h3>
-<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">Apple unveiled October 27 a new 24-inch iMac and 14-inch MacBook Pro powered by its M6 chip, with pre-orders from October 28 and availability November 6. The M6 brings the first dual Neural Engine — two 16-core engines — plus Neural Accelerators in each GPU core and up to 170 GB/s memory bandwidth; Apple claims up to 5&times; faster on-device AI than the previous M4 iMac and up to 25% faster AI than the M5 MacBook Pro (vendor claims).</p>
-<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">Why it matters: the edge-AI race is now about neural silicon in every mainstream machine, not just flagships — and Apple's per-core neural accelerators show where consumer silicon is heading.</p>
-<p style="font-size:14px;margin:0;"><a href="https://www.reuters.com/business/retail-consumer/apple-launches-m6-macbook-pro-imac-pitches-faster-on-device-ai-2026-10-27/" style="color:#2563eb;">Source: Reuters</a> &middot; <a href="https://www.macrumors.com/2026/10/27/apple-announces-new-imac-with-m6-chip-and-more/" style="color:#2563eb;">Source: MacRumors</a></p>
-</article>
-<article style="background:#ffffff;border-radius:12px;padding:22px;box-shadow:0 2px 8px rgba(15,23,42,.06);margin:0 0 14px;">
-<p style="font-size:28px;color:#cbd5e1;font-weight:800;margin:0;">06</p>
-<h3 style="font-size:21px;line-height:1.25;color:#0f172a;margin:4px 0 8px;">TetraMem tapes out a 12nm analog in-memory AI chip targeting 50–80 TOPS/W</h3>
-<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">TetraMem announced October 27 the tapeout of the MLX300, a 12nm SoC built on its RRAM-based analog in-memory computing architecture. The single-chip accelerator targets audio, vision and small language models, holding up to 64 million INT4 parameters on-chip without external DRAM for weights, with a target energy efficiency of more than 50–80 TOPS/W (vendor target, not measured silicon).</p>
-<p style="font-size:15px;line-height:1.6;margin:0 0 8px;">Why it matters: if analog in-memory computing delivers anywhere near its efficiency claims, always-on edge inference gets radically cheaper in power — the exact bottleneck for on-device AI. Tapeout is a step, not proof; watch for measured results.</p>
-<p style="font-size:14px;margin:0;"><a href="https://www.businesswire.com/news/home/20261027687318/en/TetraMem-Advances-Analog-In-Memory-Computing-with-Tapeout-of-New-12nm-AI-SoC" style="color:#2563eb;">Source: Business Wire</a></p>
-</article>
 <p style="text-align:center;font-style:italic;color:#64748b;font-size:14px;margin:24px 0 0;">by Your Tech Sommelier</p>
 </div>
 </section>
@@ -2602,12 +2610,12 @@
       const item = issues[key];
       if (!item) return;
       currentIssue = key;
+      $('#hardwareDailyNov03').hidden = true;
       $('#hardwareDailyNov02').hidden = true;
       $('#hardwareDailyNov01').hidden = true;
       $('#hardwareDailyOct31').hidden = true;
       $('#hardwareDailyOct30').hidden = true;
       $('#hardwareDailyOct29').hidden = true;
-      $('#hardwareDailyOct28').hidden = true;
       $('#issue').hidden = false;
       keepBlogTitle();
       $('#issueDate').textContent = item.date;
@@ -2658,19 +2666,19 @@
       window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     }
 
-    let currentIssue = '2026-11-02';
+    let currentIssue = '2026-11-03';
     let currentAiIssue = '2026-11-02';
     let currentSection = 'hardware';
 
     function renderHardwareIssue(key) {
       currentIssue = key;
       const hardwareIssues = {
+        '2026-11-03': { panel: '#hardwareDailyNov03', date: 'Tuesday, November 3, 2026', stories: '8 stories', title: 'AI Hardware Daily — November 3, 2026' },
         '2026-11-02': { panel: '#hardwareDailyNov02', date: 'Monday, November 2, 2026', stories: '8 stories', title: 'AI Hardware Daily — November 2, 2026' },
         '2026-11-01': { panel: '#hardwareDailyNov01', date: 'Sunday, November 1, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 1, 2026' },
         '2026-10-31': { panel: '#hardwareDailyOct31', date: 'Saturday, October 31, 2026', stories: '8 stories', title: 'AI Hardware Daily — October 31, 2026' },
         '2026-10-30': { panel: '#hardwareDailyOct30', date: 'Friday, October 30, 2026', stories: '8 stories', title: 'AI Hardware Daily — October 30, 2026' },
         '2026-10-29': { panel: '#hardwareDailyOct29', date: 'Thursday, October 29, 2026', stories: '8 stories', title: 'AI Hardware Daily — October 29, 2026' },
-        '2026-10-28': { panel: '#hardwareDailyOct28', date: 'Wednesday, October 28, 2026', stories: '6 stories', title: 'AI Hardware Daily — October 28, 2026' },
       };
       const selected = hardwareIssues[key];
       if (!selected) {
@@ -2787,12 +2795,12 @@
         btn.setAttribute('aria-pressed', String(btn.dataset.section === section));
       });
       $('#issue').hidden = true;
+      $('#hardwareDailyNov03').hidden = true;
       $('#hardwareDailyNov02').hidden = true;
       $('#hardwareDailyNov01').hidden = true;
       $('#hardwareDailyOct31').hidden = true;
       $('#hardwareDailyOct30').hidden = true;
       $('#hardwareDailyOct29').hidden = true;
-      $('#hardwareDailyOct28').hidden = true;
       $('#aiTrendWeeklyOct30').hidden = true;
       $('#aiTrendWeeklyOct23').hidden = true;
       $('#aiTrendWeeklyOct16').hidden = true;
@@ -2814,7 +2822,7 @@
       }
     }
 
-    renderHardwareIssue('2026-11-02');
+    renderHardwareIssue('2026-11-03');
   </script>
 </body>
 </html>
