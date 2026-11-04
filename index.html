@@ -674,6 +674,12 @@
       #aiTrendWeeklyOct30 h2 { font-size: 21px !important; }
     }
 
+    /* November 4 AI Trends daily edition (inline-styled; responsive overrides) */
+    @media (max-width: 640px) {
+      #aiTrendDailyNov04 h1 { font-size: 28px !important; }
+      #aiTrendDailyNov04 h2 { font-size: 21px !important; }
+    }
+
     /* November 3 AI Trends daily edition (inline-styled; responsive overrides) */
     @media (max-width: 640px) {
       #aiTrendDailyNov03 h1 { font-size: 28px !important; }
@@ -807,58 +813,6 @@
       #aiTrendDailyOct30 .ai30-card { padding: 22px; }
     }
 
-    /* October 29 AI Trends daily edition */
-    #aiTrendDailyOct29 {
-      --ai29-ink: #0f172a;
-      --ai29-body: #334155;
-      --ai29-muted: #64748b;
-      --ai29-card: #ffffff;
-      --ai29-bg: #f8fafc;
-      --ai29-accent: #7c3aed;
-      --ai29-accent2: #0ea5e9;
-      color: var(--ai29-body);
-      line-height: 1.6;
-      font-family: "Segoe UI", system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    }
-    #aiTrendDailyOct29 .ai29-wrap { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; background: var(--ai29-bg); }
-    #aiTrendDailyOct29 .ai29-masthead { text-align: center; margin-bottom: 8px; }
-    #aiTrendDailyOct29 .ai29-kicker { letter-spacing: 4px; font-size: 12px; color: var(--ai29-accent); font-weight: 700; text-transform: uppercase; }
-    #aiTrendDailyOct29 .ai29-masthead h1 { font-size: 46px; color: var(--ai29-ink); margin: 8px 0 4px; letter-spacing: -1px; }
-    #aiTrendDailyOct29 .ai29-date { color: var(--ai29-muted); font-size: 15px; }
-    #aiTrendDailyOct29 .ai29-why { background: linear-gradient(135deg, #7c3aed, #0ea5e9); color: #fff; border-radius: 14px; padding: 22px 26px; margin: 26px 0 30px; }
-    #aiTrendDailyOct29 .ai29-why h3 { margin: 0 0 8px; font-size: 13px; letter-spacing: 3px; text-transform: uppercase; opacity: .9; }
-    #aiTrendDailyOct29 .ai29-why p { margin: 0; font-size: 16px; line-height: 1.55; }
-    #aiTrendDailyOct29 .ai29-hero { background: var(--ai29-card); border-radius: 16px; overflow: hidden; box-shadow: 0 8px 30px rgba(15, 23, 42, .08); margin-bottom: 28px; }
-    #aiTrendDailyOct29 .ai29-band { background: linear-gradient(120deg, #0f172a, #1e293b); color: #fff; padding: 30px 32px; }
-    #aiTrendDailyOct29 .ai29-tag { display: inline-block; background: var(--ai29-accent); font-size: 11px; letter-spacing: 2px; font-weight: 700; padding: 5px 12px; border-radius: 999px; text-transform: uppercase; margin-bottom: 14px; }
-    #aiTrendDailyOct29 .ai29-band h2 { margin: 0 0 12px; font-size: 34px; line-height: 1.15; letter-spacing: -.5px; color: #fff; }
-    #aiTrendDailyOct29 .ai29-band p { margin: 0 0 8px; color: #cbd5e1; font-size: 16px; }
-    #aiTrendDailyOct29 .ai29-badges { display: flex; flex-wrap: wrap; gap: 10px; padding: 20px 32px; background: var(--ai29-card); border-bottom: 1px solid #e2e8f0; }
-    #aiTrendDailyOct29 .ai29-badge { background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 10px; padding: 8px 14px; font-size: 13px; color: var(--ai29-ink); }
-    #aiTrendDailyOct29 .ai29-badge b { color: var(--ai29-accent); font-size: 16px; display: block; }
-    #aiTrendDailyOct29 .ai29-body { padding: 22px 32px 26px; }
-    #aiTrendDailyOct29 .ai29-body p { margin: 0 0 12px; }
-    #aiTrendDailyOct29 .ai29-src { font-size: 13px; color: var(--ai29-muted); }
-    #aiTrendDailyOct29 .ai29-src a { color: var(--ai29-accent2); text-decoration: none; font-weight: 600; }
-    #aiTrendDailyOct29 .ai29-src a:hover { text-decoration: underline; }
-    #aiTrendDailyOct29 .ai29-stories { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-    #aiTrendDailyOct29 .ai29-story { background: var(--ai29-card); border-radius: 14px; padding: 24px; box-shadow: 0 4px 18px rgba(15, 23, 42, .06); border-top: 4px solid var(--ai29-accent); }
-    #aiTrendDailyOct29 .ai29-num { font-size: 12px; letter-spacing: 3px; color: var(--ai29-accent); font-weight: 700; }
-    #aiTrendDailyOct29 .ai29-story h3 { color: var(--ai29-ink); margin: 8px 0 10px; font-size: 20px; line-height: 1.25; }
-    #aiTrendDailyOct29 .ai29-story p { margin: 0 0 10px; font-size: 15px; }
-    #aiTrendDailyOct29 .ai29-spec { background: #f1f5f9; border-radius: 8px; padding: 10px 14px; font-size: 13px; color: var(--ai29-ink); margin: 0 0 10px; }
-    #aiTrendDailyOct29 .ai29-note { text-align: center; font-size: 13px; color: var(--ai29-muted); margin-top: 28px; }
-    #aiTrendDailyOct29 .ai29-footer { text-align: center; font-style: italic; color: var(--ai29-muted); margin-top: 24px; font-size: 15px; }
-    @media (max-width: 640px) {
-      #aiTrendDailyOct29 .ai29-stories { grid-template-columns: 1fr; }
-      #aiTrendDailyOct29 .ai29-masthead h1 { font-size: 34px; }
-      #aiTrendDailyOct29 .ai29-band h2 { font-size: 26px; }
-      #aiTrendDailyOct29 .ai29-wrap { padding: 32px 14px 48px; }
-      #aiTrendDailyOct29 .ai29-band,
-      #aiTrendDailyOct29 .ai29-body,
-      #aiTrendDailyOct29 .ai29-badges { padding-left: 22px; padding-right: 22px; }
-    }
-
     /* November 4 AI Hardware daily edition (inline-styled; responsive overrides) */
     @media (max-width: 640px) {
       #hardwareDailyNov04 h1 { font-size: 28px !important; }
@@ -939,12 +893,12 @@
         <div class="edition-group">
           <span class="edition-label">Daily</span>
           <div class="archive-controls" role="group" aria-label="Choose an AI Trends edition">
-            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-03" aria-pressed="true">Nov 3</button>
+            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-04" aria-pressed="true">Nov 4</button>
+            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-03" aria-pressed="false">Nov 3</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-02" aria-pressed="false">Nov 2</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-01" aria-pressed="false">Nov 1</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-10-31" aria-pressed="false">Oct 31</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-10-30" aria-pressed="false">Oct 30</button>
-            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-10-29" aria-pressed="false">Oct 29</button>
           </div>
         </div>
       </nav>
@@ -1318,6 +1272,75 @@
 
 
 
+    <div id="aiTrendDailyNov04" class="edition ai-trends-daily" data-date="2026-11-04" aria-live="polite" hidden style="margin-top:22px;">
+<article style="background:#f8fafc;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
+<div style="max-width:860px;margin:0 auto;">
+<p style="text-align:center;letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:#64748b;margin:0 0 8px;">AI Trends Daily &middot; November 4, 2026</p>
+<h1 style="text-align:center;color:#0f172a;font-size:42px;line-height:1.05;margin:0 0 12px;">Agents are now the customers — and the models are learning to use the computer</h1>
+<p style="text-align:center;font-size:17px;line-height:1.6;max-width:680px;margin:0 auto 20px;">Why it matters: The day's theme is the shift from chat to work. Enterprise spending is exploding because agents, not people, now burn most of the tokens, while the newest models — Tencent's Hy4, India's EKA-1, and an open computer-use suite — are built to operate software directly, and the infrastructure to serve them is starting to optimise itself.</p>
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#dc2626;font-weight:700;margin:0 0 10px;">Cover Story &middot; Model Release</p>
+<h2 style="color:#0f172a;font-size:30px;line-height:1.15;margin:0 0 12px;">Tencent's Hy4 can finally see and click — but its weights aren't out yet</h2>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;">
+<span style="background:#0f172a;color:#fff;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">770B parameters</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">49B active</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">1M-token context</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">78.9 on OSWorld 2.1 (vendor run)</span>
+</div>
+<p style="line-height:1.65;margin:0 0 10px;">Tencent released the full version of Hy4 on November 4, adding vision and computer use to the text-only preview from August 28. It can now interpret charts and documents, reason across images, and combine command-line tools with graphical interfaces — trained, Tencent says, on professional software such as Blender and CAD tools and on long tasks across several apps. It is live in Yuanbao, WorkBuddy, CodeBuddy, ima and WeCom's Dayuan assistant, and via Tencent Cloud TokenHub and OpenRouter.</p>
+<p style="line-height:1.65;margin:0 0 10px;">The caveat matters as much as the capability: Tencent says it "plans to" release the weights and a system card in the coming days, but as of November 4 only the August preview weights were downloadable — so for now Hy4 is API-only, not something teams can run locally. Tencent itself acknowledges a "large gap" to the top closed models, and its own benchmark table puts Hy4 at 78.9 on OSWorld 2.1, behind Claude Opus 5.5 at 81.8 in that vendor run. Reuters also reports Tencent positioned the rollout amid rising AI-driven cyberattacks, saying it filtered exploit development, reverse engineering and penetration-testing content from training to limit offensive use.</p>
+<p style="line-height:1.65;margin:0;">Pricing is unchanged from the preview at about $0.90 per million input tokens and $2.70 per million output tokens, with a 50% TokenHub discount through December 31 and free WorkBuddy/CodeBuddy usage from November 4–15. A cheaper Hy4 Flash is promised soon.</p>
+<p style="margin:14px 0 0;"><a href="https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/" style="color:#2563eb;">Source: Tencent &rarr;</a> &middot; <a href="https://www.reuters.com/legal/litigation/tencent-rolls-out-ai-model-trained-with-limited-cybersecurity-data-amid-hacking-2026-11-04/" style="color:#2563eb;">Reuters &rarr;</a> &middot; <a href="https://madrobot.blog/2026/11/04/tencent-hy4-release-computer-use-open-weight/" style="color:#2563eb;">MadRobot analysis &rarr;</a></p>
+</section>
+<section style="display:grid;gap:16px;">
+<div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);">
+<p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">02 &middot; AI SYSTEMS / ENTERPRISE</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Menlo: enterprise AI spending hit $177B — and agents now burn 80% of the tokens</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Menlo Ventures' fourth annual State of Enterprise AI report, released November 3, puts enterprise deployment spending at $176.8 billion by September 2026, up 5.4× from $33 billion a year earlier — while the share of companies paying for AI rose only from 55% to 65%. Growth came from existing adopters spending far more, not from a wave of new buyers.</p>
+<p style="line-height:1.65;margin:0;">The mechanism is agents: on OpenRouter, agents now generate 80% of all tokens — about 130.9 trillion per week, roughly 7× human-driven usage — up 37× since agent traffic overtook human traffic in February. Anthropic, OpenAI and Google together take 69% of deployment dollars. Note the limits: Menlo's dollar totals are modelled estimates, and Menlo discloses it invests in Anthropic and OpenRouter.</p>
+<p style="margin:12px 0 0;"><a href="https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/" style="color:#2563eb;">Source: Menlo Ventures &rarr;</a> &middot; <a href="https://www.globenewswire.com/news-release/2026/11/03/3394279/0/en/menlo-ventures-2026-state-of-enterprise-ai-report-enterprise-ai-spending-hits-177b-up-5-4x-in-one-year-as-agents-take-over.html" style="color:#2563eb;">GlobeNewswire summary &rarr;</a></p>
+</div>
+<div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);">
+<p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">03 &middot; INFERENCE &amp; INFRASTRUCTURE</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Together AI's Compiler uses agents to retune inference overnight — vendor-claimed 1.3–3× throughput</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Together AI announced Together Compiler on November 4, the first step of its "Polymorphic Inference" initiative. Instead of hand-tuning one kernel per model, agent teams continuously generate, measure and verify candidate GPU-code optimisations for the model, traffic shape and hardware actually in production — with checks for KV-cache contamination and output quality before a candidate serves.</p>
+<p style="line-height:1.65;margin:0;">Vendor-reported results claim 1.3× to 3× the tokens per second of highly optimised open-source baselines in under 24 hours across Kimi K3, GLM 5.3, MiniMax M3.1-Flash and DeepSeek v4.1-Flash, and a setup time of 9.0 seconds versus 467 seconds for its status-quo sequence. It already runs across many of Together's top production workloads, with dedicated-endpoint access in limited beta.</p>
+<p style="margin:12px 0 0;"><a href="https://www.businesswire.com/news/home/20261104879153/en/Together-AI-Launches-Together-Compiler-for-Continual-Optimization-of-Open-Source-AI-Models" style="color:#2563eb;">Source: Together AI via Business Wire &rarr;</a> &middot; <a href="https://www.unite.ai/together-ai-brings-continuous-compilation-to-production-inference/" style="color:#2563eb;">Unite.AI &rarr;</a></p>
+</div>
+<div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);">
+<p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">04 &middot; MODEL RELEASE / OPEN WEIGHTS</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">India launches three homegrown foundation models: EKA-1, Dhīr 2B and Dhīr 5B</h3>
+<p style="line-height:1.65;margin:0 0 8px;">India's IndiaAI Mission released three indigenous foundation models in New Delhi on November 3. Soket Labs' EKA-1 is a 26.3-billion-parameter open, sparse hybrid model trained on about 7.5 trillion tokens, covering all 22 scheduled Indian languages plus English, aimed at maths, code, reasoning and agentic use in banking, financial services and cybersecurity — and deployable on private servers and in air-gapped environments.</p>
+<p style="line-height:1.65;margin:0;">ZenteiQ's Dhīr 2B and Dhīr 5B are the lightweight counterpart: small, open-source models for edge, on-premise and offline use, supporting English and 10 Indian languages. No confirmed public benchmark data for these models was reported yet, so their real-world standing is still untested.</p>
+<p style="margin:12px 0 0;"><a href="https://www.thehindubusinessline.com/info-tech/indiaai-mission-releases-indigenous-foundation-models-eka-1-dhir-2b-and-dhir-5b/article71663692.ece" style="color:#2563eb;">Source: The Hindu BusinessLine &rarr;</a> &middot; <a href="https://www.technologyforyou.org/indiaai-mission-released-indigenous-foundation-models-eka-1-by-soket-and-dhir-2b-dhir-5b-by-zenteiq-under-the-indiaai-innovation-centre-pillar/" style="color:#2563eb;">PIB digest &rarr;</a></p>
+</div>
+<div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);">
+<p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">05 &middot; AGENT FRAMEWORK / OPEN WEIGHTS</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">NorthCUA: an open computer-use agent suite from 9B to 397B</h3>
+<p style="line-height:1.65;margin:0 0 8px;">NorthCUA, released November 3, is an open-weights agent suite built on the Qwen3.5 architecture for automating tasks across desktop applications and web interfaces, in four sizes: Nano (9B), Mini (35B), Pro (397B) and Ultrafast. The ladder matters — it lets teams trade capability against the cost and latency of running a computer-use agent locally or on their own servers.</p>
+<p style="line-height:1.65;margin:0;">Tracker-reported results say NorthCUA-Pro outperformed Qwen3.8-Max and Kimi-K3 on OSWorld-Verified and WebArena-Verified; treat that as a tracker-reported claim until an independent run or primary release note confirms it.</p>
+<p style="margin:12px 0 0;"><a href="https://af.net/realtime/ai-model-releases-november-2026/" style="color:#2563eb;">Source: AIFOD November model tracker &rarr;</a></p>
+</div>
+<div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);">
+<p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">06 &middot; AGENT FRAMEWORK / ENTERPRISE</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Oumi launches an agent that builds, trains and improves other agents</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Oumi announced on November 4 an end-to-end, AI-automated agent development platform powered by FAiE, its "Frontier AI Engineer." The pitch is a closed loop in one place: build, evaluate, train, deploy, monitor and continuously improve an agent, with Bring Your Own Harness support and advanced post-training via DPO and GRPO.</p>
+<p style="line-height:1.65;margin:0;">If it works as described, it collapses the usual hand-off between agent builders and model trainers — the agent that ships the work also does the engineering to make the next version better. It is a vendor launch, so the loop's gains are unproven outside Oumi's own framing.</p>
+<p style="margin:12px 0 0;"><a href="https://www.businesswire.com/news/home/20261104154139/en/Oumi-Launches-the-Agent-That-Builds-Trains-and-Continuously-Improves-AI-Agents" style="color:#2563eb;">Source: Oumi via Business Wire &rarr;</a></p>
+</div>
+<div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);">
+<p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">07 &middot; PRODUCT / POLICY</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Google will switch AI off by default for K-12 students next year — with no AI-free Search option</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Google announced November 3 that Gemini, Gemini Notebook, Gemini in Classroom and Google Search will be off by default for K-12 student accounts starting next year, with school administrators able to enable services separately.</p>
+<p style="line-height:1.65;margin:0;">The catch, flagged in coverage of the announcement: schools that switch Search back on still get AI Overviews and AI Mode inside it, with step-by-step Guided Learning for schoolwork instead of direct answers — and no option for a traditional AI-free Search. For districts, the choice is now AI Search or no Search, not a clean opt-out.</p>
+<p style="margin:12px 0 0;"><a href="https://chrisabraham.net/2026/11/ai-roundup-the-customers-are-machines-now.html" style="color:#2563eb;">Source: Wednesday AI Roundup &rarr;</a> &middot; <a href="https://medium.com/ai-briefing-room/ai-news-briefing-4-november-2026-b66f705d0c72" style="color:#2563eb;">AI Briefing Room, Nov 4 &rarr;</a></p>
+</div>
+</section>
+<p style="text-align:center;font-style:italic;color:#64748b;margin:28px 0 0;">by Your Tech Sommelier</p>
+</div>
+</article>
+    </div>
+
     <div id="aiTrendDailyNov03" class="edition ai-trends-daily" data-date="2026-11-03" aria-live="polite" hidden style="margin-top:22px;">
 <article style="background:#f8fafc;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;"><div style="max-width:860px;margin:0 auto;"><p style="text-align:center;letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:#64748b;margin:0 0 8px;">AI Trends Daily &middot; November 3, 2026</p><h1 style="text-align:center;color:#0f172a;font-size:42px;line-height:1.05;margin:0 0 12px;">The best AI agent in the world just scored 12%</h1><p style="text-align:center;font-size:17px;line-height:1.6;max-width:680px;margin:0 auto 20px;">Why it matters: The day's theme is honest measurement. A new benchmark that grades agents on real professional work — not quiz answers — puts even the top frontier model far from finished jobs, while new models, open agents, and a $115B optics deal show the race shifting from demos to deployment, cost, and infrastructure.</p><section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;"><p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#dc2626;font-weight:700;margin:0 0 10px;">Cover Story &middot; Evals &amp; Benchmarks</p><h2 style="color:#0f172a;font-size:30px;line-height:1.15;margin:0 0 12px;">SemiAnalysis launches GDPx — and nobody clears 12% on real expert work</h2><div style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;"><span style="background:#0f172a;color:#fff;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">12.0% top score</span><span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">206 tasks</span><span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">11 domains</span><span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">Up to 8 hrs / task</span></div><p style="line-height:1.65;margin:0 0 10px;">SemiAnalysis released GDPx on November 2, a benchmark that drops agents into simulated workplaces — chip design, cybersecurity, biology, finance, legal, quant trading, hardware design, materials science, alignment, software engineering, and recursive self-improvement — for up to eight hours per task. Anthropic's Claude Opus 5.5 leads at 12.0%, followed by Google's Gemini 4 Carbon at 10.9% and OpenAI's GPT-6 Astra at 9.6%.</p><p style="line-height:1.65;margin:0 0 10px;">The low ceiling is the point: every model scored zero on finance and legal under pass-or-fail grading, and the best open-weight model, Z.ai's GLM 5.3, scored 2.7%. Cost also splits the leaders — Gemini 4 Carbon averaged $16.29 per task versus $51.41 for Opus 5.5 — a reminder that agentic capability now has a price tag per job, not just a score.</p><p style="line-height:1.65;margin:0;">These are SemiAnalysis's own, not yet independently reproduced, results — treat the ranking as one respected lab's measurement, not a settled verdict. SemiAnalysis also notes safety classifiers pulled down scores in cyber, biology, and alignment.</p><p style="margin:14px 0 0;"><a href="https://www.unite.ai/semianalysis-launches-gdpx-benchmark-spanning-11-agentic-domains/" style="color:#2563eb;">Source: Unite.AI on SemiAnalysis GDPx &rarr;</a> &middot; <a href="https://aiagentupdate.com/post/semianalysis-gdpx-benchmark-2026-11-02" style="color:#2563eb;">AI Agent Update &rarr;</a></p></section><section style="display:grid;gap:16px;"><div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);"><p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">02 &middot; MODEL RELEASE</p><h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Meituan releases LongCat-2.5: 1.6T parameters, 1M-token context</h3><p style="line-height:1.65;margin:0 0 8px;">Meituan released LongCat-2.5 on November 2, a natively multimodal mixture-of-experts model with 1.6 trillion total parameters and about 48 billion active per token, aimed at agent execution and extended programming workflows. It offers a 1-million-token context window and up to 128,000 tokens of output.</p><p style="line-height:1.65;margin:0;">Vendor-listed pricing on Meituan's platform is $0.30 per million uncached input tokens and $1.20 per million output tokens (a limited-time discounted rate). Weights are not open yet; Meituan says GitHub and Hugging Face releases are planned to follow.</p><p style="margin:12px 0 0;"><a href="https://aitoolsrecap.com/Blog/ai-news-november-03-2026" style="color:#2563eb;">Source: AIToolsRecap &rarr;</a></p></div><div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);"><p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">03 &middot; AGENT FRAMEWORK / OPEN WEIGHTS</p><h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">DeepSeek open-sources an autonomous coding "Super-Agent" that doesn't wait to be asked</h3><p style="line-height:1.65;margin:0 0 8px;">DeepSeek's Harness team open-sourced dsh-superagent v0.1.0 under the MIT license. Its router-worker architecture splits work: a Router keeps broader context and handles communication, while Worker sessions execute coding tasks in parallel across group chats, GitHub, and other developer tools.</p><p style="line-height:1.65;margin:0;">The pitch is proactivity — if a bug is reported in a group chat, the agent can identify it, try to reproduce it, and submit a pull request without being tagged. For builders, this is a public, studyable version of the router-plus-workers shape increasingly used for long tasks.</p><p style="margin:12px 0 0;"><a href="https://stocktwits.com/news-articles/markets/equity/deepseek-autonomous-coding-agent-anthropic-ipo-claude-code/cNGekVdR9cy" style="color:#2563eb;">Source: Stocktwits &rarr;</a> &middot; <a href="https://www.communeify.com/en/blog/ai-daily-2026-11-02/" style="color:#2563eb;">Communeify AI Daily, Nov 2 &rarr;</a></p></div><div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);"><p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">04 &middot; INFERENCE &amp; PRICING / PRODUCT</p><h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">OpenAI merges ChatGPT and Codex into one usage budget from December</h3><p style="line-height:1.65;margin:0 0 8px;">From December, ChatGPT Plus, Pro, and Business plans will share a single token allowance across ChatGPT and Codex, OpenAI said in an updated Help Center article and a November 2 subscriber email. Work capabilities are also folding into regular Chat, starting with a small test group, while Codex remains a separate view in the desktop app.</p><p style="line-height:1.65;margin:0;">Instant chat stays outside the allowance, but advanced chats, Codex tasks, and agent work in ChatGPT will all draw from the same pool — so a heavy coding afternoon now directly competes with chat. OpenAI has not published per-plan token figures, so teams should watch the combined Settings &rarr; Usage balance once it goes live.</p><p style="margin:12px 0 0;"><a href="https://www.techrepublic.com/article/news-chatgpt-codex-shared-usage-limits/" style="color:#2563eb;">Source: TechRepublic &rarr;</a> &middot; <a href="https://datanorth.ai/news/chatgpt-and-codex-will-share-one-usage-limit-in-december" style="color:#2563eb;">DataNorth &rarr;</a></p></div><div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);"><p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">05 &middot; AI INFRASTRUCTURE</p><h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Marvell signs a definitive $115B all-stock deal for Lumentum</h3><p style="line-height:1.65;margin:0 0 8px;">Marvell and Lumentum announced a definitive agreement on November 2: Lumentum shareholders receive a fixed 4.500 Marvell shares per share, implying about $1,132 per share and a $115 billion enterprise value — a 23.9% premium to Lumentum's unaffected October 28 close. Existing Marvell holders would own about 67% of the combined company, Lumentum holders about 33%.</p><p style="line-height:1.65;margin:0;">The combination pairs Marvell's electrical and optical interconnect, switching, and custom silicon with Lumentum's lasers, transceivers, and optical circuit switching — a bet that AI scale-out is increasingly an optics problem. Closing is expected in the first half of calendar 2028, subject to shareholder and regulatory approvals; Marvell shares fell about 13% on the announcement as investors weighed dilution and integration risk.</p><p style="margin:12px 0 0;"><a href="https://investor.marvell.com/news-events/press-releases/detail/1040/marvell-and-lumentum-to-combine-creating-a-category-leader-in-ai-connectivity" style="color:#2563eb;">Source: Marvell press release &rarr;</a></p></div><div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);"><p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">06 &middot; PRODUCT LAUNCH</p><h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Apple Intelligence finally reaches China in December — powered by Alibaba's Qwen</h3><p style="line-height:1.65;margin:0 0 8px;">Apple confirmed on October 31 that Apple Intelligence will come to iPhones in China with iOS 27.3 in December, with testing from November 4 in the latest iOS developer beta. Alibaba's Qwen models will power Siri, Writing Tools, and Visual Intelligence in China, covering text and image understanding and content generation.</p><p style="line-height:1.65;margin:0;">It is a partial launch: the December update does not include Siri AI or other next-generation features announced at WWDC 2026, and it is iPhone-only at first (iPhone 15 Pro/Pro Max, iPhone 16 and later, iPhone Air, and iPhone Duo). Use is opt-in, with permission asked before a question, document, or image is sent to Qwen, and Alibaba says requests and responses will not be used for training.</p><p style="margin:12px 0 0;"><a href="https://www.chinadailyasia.com/hk/article/642068" style="color:#2563eb;">Source: China Daily Asia &rarr;</a></p></div><div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);"><p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">07 &middot; EMBODIED AI / RESEARCH</p><h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">AGIBOT unveils GO-3 Preview, tops three embodied benchmarks, promises full open source by year-end</h3><p style="line-height:1.65;margin:0 0 8px;">AGIBOT unveiled GO-3 Preview on November 3, an embodied foundation model spanning pre-training, post-training, and post-deployment learning. Built on its WRAM (World Reasoning Action Model) architecture, it unifies task understanding, future-state prediction, and action generation for general-purpose robots.</p><p style="line-height:1.65;margin:0;">Vendor-reported results put GO-3 Preview first on RoboDojo, RoboTwin, and RoboColiseum. AGIBOT says it will be fully open-sourced by the end of 2026 — if that holds, it becomes one of the most directly testable embodied models of the year.</p><p style="margin:12px 0 0;"><a href="https://aapnews.aap.com.au/aapreleases/cision20261102AE87486" style="color:#2563eb;">Source: AGIBOT via AAP/PRNewswire &rarr;</a></p></div><div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);"><p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">08 &middot; AI SYSTEMS / GOVERNMENT</p><h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Abu Dhabi signs four OpenAI deals — energy, government, and investment, all on in-country inference</h3><p style="line-height:1.65;margin:0 0 8px;">On November 2, Abu Dhabi entities signed four agreements with OpenAI, witnessed by Crown Prince Sheikh Khaled bin Mohamed bin Zayed after meeting CEO Sam Altman. ADNOC, with G42's Inception42, becomes what the parties describe as the first energy-sector company to deploy OpenAI's Frontier agent platform; the Abu Dhabi Government launched a "Machine-Readable Government" pilot (food-import permits first); Mubadala with Inception42 will apply AI to investment analysis and risk; and Inception42 signed a separate five-year frontier-AI adoption deal.</p><p style="line-height:1.65;margin:0;">No financial terms were disclosed. The common thread matters more than any single deal: ADNOC and government workloads are to run on in-country inference infrastructure in the UAE — sovereignty and residency are now part of the enterprise AI sale, not an afterthought.</p><p style="margin:12px 0 0;"><a href="https://www.intelligentcio.com/me/2026/11/02/abu-dhabi-and-openai-sign-four-agreements-to-accelerate-ai-adoption/" style="color:#2563eb;">Source: Intelligent CIO &rarr;</a> &middot; <a href="https://tsnmedia.org/openai-abu-dhabi-agreements/" style="color:#2563eb;">TSN summary &rarr;</a></p></div></section><p style="text-align:center;font-style:italic;color:#64748b;margin:28px 0 0;">by Your Tech Sommelier</p></div></article>
     </div>
@@ -1587,89 +1610,6 @@
         </div>
         <p class="ai30-note"><strong>Left out, under the no-rumors rule:</strong> a report that DeepSeek and Moonshot used OpenAI outputs to develop newer models — the companies' exact methods have not been independently established, so the story was cut rather than labeled.</p>
         <p class="ai30-footer">by Your Tech Sommelier</p>
-      </div>
-    </article>
-
-    <article id="aiTrendDailyOct29" class="edition ai-trends-daily" data-date="2026-10-29" aria-live="polite" hidden style="margin-top:22px;" aria-labelledby="ai29-title">
-      <div class="ai29-wrap">
-        <div class="ai29-masthead">
-          <div class="ai29-kicker">AI Trends · Daily Briefing</div>
-          <h1 id="ai29-title">The Cyber Frontier, Gated</h1>
-          <div class="ai29-date">Thursday, October 29, 2026</div>
-        </div>
-        <div class="ai29-why">
-          <h3>Why it matters</h3>
-          <p>Google's second frontier model in two weeks turns cybersecurity into the new benchmark battleground — but the most capable cyber models are being handed out only to vetted defenders. Meanwhile agents are going mainstream in Asia, getting sandboxed in the cloud, and getting governed in the enterprise: capability is no longer the scarce thing, controlled deployment is.</p>
-        </div>
-        <div class="ai29-hero">
-          <div class="ai29-band">
-            <span class="ai29-tag">Cover Story · Model Release</span>
-            <h2>Google's Gemini 4 Carbon: a frontier model built for cyber — and kept behind a gate</h2>
-            <p>Google unveiled Gemini 4 Carbon on October 28, just two weeks after Gemini 4 Argon, calling it its strongest model for cybersecurity and long-horizon work. It ranks #1 on Artificial Analysis's Intelligence Index v5.0 at 59 — but you almost certainly can't use it yet.</p>
-          </div>
-          <div class="ai29-badges">
-            <div class="ai29-badge"><b>#1 · 59</b> on Artificial Analysis Intelligence Index v5.0</div>
-            <div class="ai29-badge"><b>88.2%</b> on SEC-bench Pro (vulnerability discovery)</div>
-            <div class="ai29-badge"><b>54.8%</b> on ExploitGym · <b>71.0%</b> on CWE-bench patching</div>
-            <div class="ai29-badge"><b>$2 / $10</b> per million input / output tokens (vendor pricing)</div>
-          </div>
-          <div class="ai29-body">
-            <p>Carbon's pitch spans the whole defensive workflow: finding software weaknesses, testing whether they can be exploited, and writing patches. Google says it produces secure code at more than twice the success rate of Argon on internal benchmarks, and that the Chrome team found it more than 10× better than another lab's frontier model at generating high-quality patches — both vendor claims, not yet independently reproduced.</p>
-            <p>The rollout is the story as much as the scores. Access starts this week with a subset of trusted cyber defenders, expanding through Google's Fairwind Program for vetted defenders — national cyber authorities, critical-infrastructure operators and core platforms — ahead of wider developer, business and consumer availability, with no firm general-availability date. The dual-use logic is explicit: the same skills that find and fix flaws can support offensive work, so staged access and frontier safeguards are part of the release, not an afterthought.</p>
-            <p class="ai29-src">Source: <a href="https://www.digit.in/news/general/google-unveils-gemini-4-carbon-ai-model-says-it-delivers-major-leap-in-cybersecurity.html/amp/">Digit — Google unveils Gemini 4 Carbon</a> · <a href="https://news-ai.co/google-gemini-4-carbon-announcement-limited-access/">AI News — Gemini 4 Carbon announced with limited access</a> · <a href="https://medium.com/ai-briefing-room/ai-news-briefing-29-october-2026-8e288c9ea3e0">AI Briefing Room — October 29 briefing</a></p>
-          </div>
-        </div>
-        <div class="ai29-stories">
-          <div class="ai29-story">
-            <div class="ai29-num">02 · SECURITY MODELS</div>
-            <h3>ESET's NeoCortex: a security model designed never to go rogue</h3>
-            <p>ESET introduced NeoCortex on October 28, a specialized foundational cybersecurity model powering ESET LiveCortex inside the ESET PROTECT Platform. It correlates billions of daily telemetry events into actionable incidents — only about 0.00111%, roughly 1 in 90,000 events, reaches customers as incidents.</p>
-            <p>The "never-go-rogue" design is the differentiator: restricted sandboxes, read-only tools, continuous monitoring, a kill switch, and human expert oversight of critical decisions, all self-hosted so security data stays under ESET's control. Built for structured, time-dependent, adversarial data, it estimates an attacker's likely next step from patterns in real incidents.</p>
-            <div class="ai29-spec">Vendor claim: 200× lower training costs (per announcement headline) · Available within ESET PROTECT Platform</div>
-            <p class="ai29-src">Source: <a href="https://www.globenewswire.com/news-release/2026/10/28/3390580/0/en/eset-introduces-eset-neocortex-cybersecurity-ai-model-with-200-times-lower-training-costs-and-a-never-go-rogue-design.html">GlobeNewswire — ESET introduces ESET NeoCortex</a></p>
-          </div>
-          <div class="ai29-story">
-            <div class="ai29-num">03 · AGENTS</div>
-            <h3>Meta's Muse lands in Singapore, its fourth market in 50 days</h3>
-            <p>Meta made its personal AI agent Muse available in Singapore on October 28, on iOS, Android and muse.ai — following the US and Canada (September 8) and Japan (October 23). Unlike a chatbot, Muse is built to do work: research products, compare prices, manage schedules and arrange travel.</p>
-            <p>The local hook is commerce and travel: Shopee, Grab, Singapore Airlines, Agoda, ShopBack, Klook, Trip.com and Lazada are named partners, with Agoda the first travel platform regionally to connect its AI travel assistant to Muse. Meta says partner features roll out progressively, so not everything works on day one — and users must approve sensitive actions like sending email or making purchases.</p>
-            <div class="ai29-spec">Partners: Shopee · Grab · Singapore Airlines · Agoda · ShopBack · Klook · Trip.com · Lazada</div>
-            <p class="ai29-src">Source: <a href="https://yuphora.com/news/meta-muse-ai-agent-singapore-launch">Yuphora — Meta Muse AI agent launches in Singapore</a> · <a href="https://iabseaindia.com/blog/meta-launches-personal-ai-agent-muse-in-singapore-with-local-commerce-and-travel-integrations/">IAB SEA+India</a></p>
-          </div>
-          <div class="ai29-story">
-            <div class="ai29-num">04 · INFERENCE &amp; AGENT INFRASTRUCTURE</div>
-            <h3>Akamai pairs open-weight inference with a WebAssembly agent sandbox</h3>
-            <p>Akamai launched Akamai Inference and Akamai Agent Sandbox on October 27 (covered October 28), bringing managed model serving and isolated agent execution to Akamai Cloud. Inference serves open-weight and custom models through OpenAI-compatible APIs, with serverless and dedicated options; the sandbox runs agent-generated JavaScript or Python inside an additional restricted runtime built around WebAssembly isolation, with outbound network access blocked by default.</p>
-            <p>The launch catalog spans 12 open-weight models from 8 billion to 2.8 trillion parameters, plus embedding models, and inference is free during the beta. The sandbox preview supports intermittent steps of roughly a minute — continuously running, stateful agents are still to come. Akamai says its cloud has already secured multiyear contracts collectively worth more than $14 billion.</p>
-            <div class="ai29-spec">12 open-weight models · 8B–2.8T parameters · 4,350+ edge locations · No charge during inference beta</div>
-            <p class="ai29-src">Source: <a href="https://www.globenewswire.com/news-release/2026/10/27/3388793/0/en/akamai-launches-ai-inference-service-and-agent-execution-environment.html">GlobeNewswire — Akamai launches AI inference service and agent execution</a> · <a href="https://aicybr.com/blog/akamai-inference-agent-sandbox-beta-webassembly-pricing-2026">AiCybr — Akamai Inference and Agent Sandbox</a></p>
-          </div>
-          <div class="ai29-story">
-            <div class="ai29-num">05 · BENCHMARKS</div>
-            <h3>Voice models, ranked by call length: GPT-5.6 Sol wins short, GLM-5.3 wins long</h3>
-            <p>AssemblyAI updated its Voice Standard Bench on October 28, benchmarking models on correcting speech-to-text transcripts — not raw transcription accuracy — across simulated errors in calls of different lengths. The leader changes with call length, which is the point: there is no single best voice-cleanup model.</p>
-            <p>GPT-5.6 Sol scored 98 on 30-second tests at $0.19 per hour, while GLM-5.3 led the 60-minute category at 88 for $0.031 per hour. At the other end, the cheapest hour-long option, Nemotron Nano 9B v2 at $0.0019 per hour, scored just 6 — a reminder that the cheapest transcript cleanup can be nearly useless.</p>
-            <div class="ai29-spec">30s leader: GPT-5.6 Sol, 98 · 60-min leader: GLM-5.3, 88 · 50+ models compared since the bench launched Oct 13</div>
-            <p class="ai29-src">Source: <a href="https://wisevoter.com/world/us/2026/10/28/assemblyai-updates-voice-standard-benchmark-results">Wisevoter — AssemblyAI updates Voice Standard Benchmark results</a> · <a href="https://www.tokenpost.com/news/technology/43024">TokenPost — AssemblyAI benchmark shows transcript leaders shift with call length</a></p>
-          </div>
-          <div class="ai29-story">
-            <div class="ai29-num">06 · AGENT TOOLING</div>
-            <h3>Hermit: train the adapter, freeze the agent and the harness</h3>
-            <p>Infini-AI-Lab released Hermit v0.1.0 on October 25, announced publicly October 27–29: an open-source, Apache-2.0 Python framework (pip install hermit-harness) that trains an external "harness adapter" while leaving both the agent's model and its harness untouched — and it carries no parameters of its own.</p>
-            <p>The pitch is aimed at teams pointing Codex or Claude Code at new tasks without fine-tuning the model or forking harness code each time: the adapter is the one thing that changes, so it can be versioned and audited without re-certifying the whole stack. It runs offline with no GPU, model account or dataset for the quick start, and hooks into any API backend or a local vLLM, SGLang or Ollama server. Gains reported on OfficeQA, CL-Bench and ServeLearnBench are self-reported single runs, not repeated trials.</p>
-            <div class="ai29-spec">v0.1.0 · Apache-2.0 · Works with Codex / Claude Code · Backends: API, vLLM, SGLang, Ollama</div>
-            <p class="ai29-src">Source: <a href="https://aidailypost.com/news/infini-ai-lab-releases-hermit-open">AI Daily Post — Hermit: new open-source agent framework released</a></p>
-          </div>
-          <div class="ai29-story">
-            <div class="ai29-num">07 · ENTERPRISE AGENTS</div>
-            <h3>Coforge's Autonomous Software Factory: agents as a governed production line</h3>
-            <p>Coforge launched its Autonomous Software Factory on October 29, an operating model for managing AI agents across the software development lifecycle — coding, testing, validation and QA executed in parallel inside secure environments — rather than just generating code.</p>
-            <p>The framing matches the week's governance theme: as enterprises move from developer copilots to broader agent use, Coforge argues the bottleneck is orchestrating and governing agents at scale, not model capability. Humans shift to architecture and governance while agents run the operational work — a claim to watch against named customer deployments, none of which were cited in the launch coverage.</p>
-            <p class="ai29-src">Source: <a href="https://scanx.trade/stock-market-news/technology/coforge-launches-autonomous-software-factory-agentic-development/54794875">ScanX — Coforge launches Autonomous Software Factory</a></p>
-          </div>
-        </div>
-        <div class="ai29-note">Editor's note: no rumor-only stories made today's cut. Vendor claims and analyst forecasts above are plainly labeled as such. Yesterday's Genie 4, Artificial Analysis Index v5.0 and Oracle stories were not repeated here.</div>
-        <div class="ai29-footer">by Your Tech Sommelier</div>
       </div>
     </article>
 
@@ -2527,7 +2467,7 @@
     }
 
     let currentIssue = '2026-11-04';
-    let currentAiIssue = '2026-11-03';
+    let currentAiIssue = '2026-11-04';
     let currentSection = 'hardware';
 
     function renderHardwareIssue(key) {
@@ -2584,25 +2524,28 @@
       const isWeeklyOct09 = key === 'weekly-2026-10-09';
       const isWeeklyOct02 = key === 'weekly-2026-10-02';
       const isWeeklySep25 = key === 'weekly-2026-09-25';
+      const isNov04 = key === '2026-11-04';
       const isNov03 = key === '2026-11-03';
       const isNov02 = key === '2026-11-02';
       const isNov01 = key === '2026-11-01';
       const isOct31 = key === '2026-10-31';
       const isOct30 = key === '2026-10-30';
-      const isOct29 = key === '2026-10-29';
       $('#aiTrendWeeklyOct30').hidden = !isWeeklyOct30;
       $('#aiTrendWeeklyOct23').hidden = !isWeeklyOct23;
       $('#aiTrendWeeklyOct16').hidden = !isWeeklyOct16;
       $('#aiTrendWeeklyOct09').hidden = !isWeeklyOct09;
       $('#aiTrendWeeklyOct02').hidden = !isWeeklyOct02;
       $('#aiTrendWeeklySep25').hidden = !isWeeklySep25;
+      $('#aiTrendDailyNov04').hidden = !isNov04;
       $('#aiTrendDailyNov03').hidden = !isNov03;
       $('#aiTrendDailyNov02').hidden = !isNov02;
       $('#aiTrendDailyNov01').hidden = !isNov01;
       $('#aiTrendDailyOct31').hidden = !isOct31;
       $('#aiTrendDailyOct30').hidden = !isOct30;
-      $('#aiTrendDailyOct29').hidden = !isOct29;
-      if (isNov03) {
+      if (isNov04) {
+        $('#issueDate').textContent = 'Wednesday, November 4, 2026';
+        $('#storyCount').textContent = '7 stories';
+      } else if (isNov03) {
         $('#issueDate').textContent = 'Tuesday, November 3, 2026';
         $('#storyCount').textContent = '8 stories';
       } else if (isNov02) {
@@ -2616,9 +2559,6 @@
         $('#storyCount').textContent = '8 stories';
       } else if (isOct30) {
         $('#issueDate').textContent = 'Friday, October 30, 2026';
-        $('#storyCount').textContent = '7 stories';
-      } else if (isOct29) {
-        $('#issueDate').textContent = 'Thursday, October 29, 2026';
         $('#storyCount').textContent = '7 stories';
       } else if (isWeeklyOct30) {
         $('#issueDate').textContent = 'Week of October 30, 2026';
@@ -2667,12 +2607,12 @@
       $('#aiTrendWeeklyOct09').hidden = true;
       $('#aiTrendWeeklyOct02').hidden = true;
       $('#aiTrendWeeklySep25').hidden = true;
+      $('#aiTrendDailyNov04').hidden = true;
       $('#aiTrendDailyNov03').hidden = true;
       $('#aiTrendDailyNov02').hidden = true;
       $('#aiTrendDailyNov01').hidden = true;
       $('#aiTrendDailyOct31').hidden = true;
       $('#aiTrendDailyOct30').hidden = true;
-      $('#aiTrendDailyOct29').hidden = true;
       $('#navHardware').hidden = !isHardware;
       $('#navLlm').hidden = !isLlm;
       if (isLlm) {
