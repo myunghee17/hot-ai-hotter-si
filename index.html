@@ -680,6 +680,12 @@
       #aiTrendWeeklyOct30 h2 { font-size: 21px !important; }
     }
 
+    /* November 9 AI Trends daily edition (inline-styled; responsive overrides) */
+    @media (max-width: 640px) {
+      #aiTrendDailyNov09 h1 { font-size: 28px !important; }
+      #aiTrendDailyNov09 h2 { font-size: 21px !important; }
+    }
+
     /* November 8 AI Trends daily edition (inline-styled; responsive overrides) */
     @media (max-width: 640px) {
       #aiTrendDailyNov08 h1 { font-size: 28px !important; }
@@ -708,12 +714,6 @@
     @media (max-width: 640px) {
       #aiTrendDailyNov04 h1 { font-size: 28px !important; }
       #aiTrendDailyNov04 h2 { font-size: 21px !important; }
-    }
-
-    /* November 3 AI Trends daily edition (inline-styled; responsive overrides) */
-    @media (max-width: 640px) {
-      #aiTrendDailyNov03 h1 { font-size: 28px !important; }
-      #aiTrendDailyNov03 h2 { font-size: 21px !important; }
     }
 
     /* November 9 AI Hardware daily edition (inline-styled; responsive overrides) */
@@ -802,12 +802,12 @@
         <div class="edition-group">
           <span class="edition-label">Daily</span>
           <div class="archive-controls" role="group" aria-label="Choose an AI Trends edition">
-            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-08" aria-pressed="true">Nov 8</button>
+            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-09" aria-pressed="true">Nov 9</button>
+            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-08" aria-pressed="false">Nov 8</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-07" aria-pressed="false">Nov 7</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-06" aria-pressed="false">Nov 6</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-05" aria-pressed="false">Nov 5</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-04" aria-pressed="false">Nov 4</button>
-            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-03" aria-pressed="false">Nov 3</button>
           </div>
         </div>
       </nav>
@@ -1277,6 +1277,85 @@
 
 
 
+    <div id="aiTrendDailyNov09" class="edition ai-trends-daily" data-date="2026-11-09" aria-live="polite" hidden style="margin-top:22px;">
+<article style="background:#f8fafc;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
+<div style="max-width:860px;margin:0 auto;">
+<p style="text-align:center;letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:#64748b;margin:0 0 8px;">AI Trends Daily &middot; November 9, 2026</p>
+<h1 style="text-align:center;color:#0f172a;font-size:42px;line-height:1.05;margin:0 0 12px;">A voice model that talks back in real time — open source, on one GPU</h1>
+<p style="text-align:center;font-size:17px;line-height:1.6;max-width:680px;margin:0 auto 20px;">Why it matters: the day's news was about AI getting cheaper to run and harder to grade — an open-source voice model went full-duplex on a single GPU, one transformer learned to simulate six kinds of physics, and the cheapest flash models fell to two cents per million tokens, while a real-world coding test showed the top model completing only a quarter of tasks perfectly. The economics conversation is shifting with it: Gartner now says to benchmark cost per successful task, not per token.</p>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#dc2626;font-weight:700;margin:0 0 10px;">Cover Story &middot; Open Weights / Voice</p>
+<h2 style="color:#0f172a;font-size:30px;line-height:1.15;margin:0 0 12px;">Sophon-Realtime v1: an open full-duplex voice model that runs on one 80 GB GPU</h2>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;">
+<span style="background:#0f172a;color:#fff;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">VoiceBench 82.8</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">First audio in 0.31 s</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">Apache 2.0 code &amp; weights</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">40 concurrent users per GPU</span>
+</div>
+<p style="line-height:1.65;margin:0 0 10px;">Adventists AI released the Sophon-Realtime v1 family on November 8 on GitHub, Hugging Face, ModelScope, and PyPI, with Apache 2.0 code and weights that allow commercial use. All three builds share one 32-billion-parameter brain, adapted from Qwen3-VL-32B-Instruct, that listens continuously, decides when to take a turn, and writes the reply; they differ only in how the reply becomes sound. The recommended Tag build is the most expressive, Flash reaches first audio in 0.31 seconds with up to 40 concurrent users per GPU, and the E2E build is a research preview that needs two 80 GB GPUs.</p>
+<p style="line-height:1.65;margin:0 0 10px;">The headline scores are vendor-reported and self-run — VoiceBench 82.8 and Big Bench Audio 81.8%, first among open full-duplex models and level with GPT-4o-mini-Audio on VoiceBench — so treat them as a claim to be independently reproduced, not a settled ranking. What is not a claim is the direction of travel: voice agents are moving from half-duplex turn-taking to full duplex, where the model can be interrupted and back-channel like a phone call, and the serving bar is now a single GPU with a <code>pip install</code> and an OpenAI Realtime-style WebSocket.</p>
+<p style="line-height:1.65;margin:0;">The same day, a smaller full-duplex audio synthesis model for AI characters, Shizuku-Duplex, launched on X and drew nearly 400,000 views — a sign the appetite for real-time voice is broad, even if that particular launch is thin on technical detail.</p>
+<p style="margin:12px 0 0;"><a href="https://aicoder.com/news/news-20261108-adventists-ai-sophon-realtime-v1-open-full-duplex-voice-32b-apache-2-voicebench-82-8" style="color:#2563eb;">Source: AICoder &rarr;</a> &middot; <a href="https://doomers.ai/launches/shizuku-ai" style="color:#2563eb;">Doomers AI on Shizuku-Duplex &rarr;</a></p>
+</section>
+
+<section style="display:grid;gap:16px;">
+
+<div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);">
+<p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">02 &middot; Research</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">WorldParticle: one transformer simulates sand, cloth, fluids — and folding proteins</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Researchers at MIT, the University of British Columbia, and partner institutions built WorldParticle, a single transformer-based system that simulates six kinds of physical behaviour where each used to need its own dedicated solver. The work, announced by MIT News on November 9, will be presented at SIGGRAPH Asia and is published as a peer-reviewed paper in <em>ACM Transactions on Graphics</em>.</p>
+<p style="line-height:1.65;margin:0;">The honest limit is in the paper itself: the model trades some per-phenomenon accuracy against specialist solvers, and one parameter set is trained per category — a single shared model is still future work. Even so, a unified physics simulator is the kind of foundation that world models for robots and games are built on.</p>
+<p style="margin:12px 0 0;"><a href="https://njldesignlab.com/progress-brief-2026-11-09/" style="color:#2563eb;">Source: Daily Positive Signals, Nov 9 &rarr;</a></p>
+</div>
+
+<div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);">
+<p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">03 &middot; Research / Robotics</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">MIT and NYU's FLEX teaches robots to hear what a correction really means</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Also announced by MIT News on November 9, FLEX is a system that lets a robot infer the intent behind a spoken correction instead of taking it literally — the difference between a robot that stops when you say &ldquo;no, the other one&rdquo; and one that understands which one you meant. The paper is on arXiv, ahead of the Conference on Robot Learning.</p>
+<p style="line-height:1.65;margin:0;">Paired with WorldParticle, the theme is clear: the physical-AI stack is getting its own general-purpose building blocks, one for simulating the world and one for understanding the humans in it.</p>
+<p style="margin:12px 0 0;"><a href="https://njldesignlab.com/progress-brief-2026-11-09/" style="color:#2563eb;">Source: Daily Positive Signals, Nov 9 &rarr;</a></p>
+</div>
+
+<div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);">
+<p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">04 &middot; Inference &amp; Pricing</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">The flash-model price floor falls again: DeepSeek V4.1 Flash at $0.02 per million tokens</h3>
+<p style="line-height:1.65;margin:0 0 8px;">TopxAI's catalogue update on November 8 added two new routes: deepseek-flash-fast — DeepSeek V4.1 Flash 1017 on its standard weights — at $0.02 per million input tokens and $0.16 per million output tokens, the cheapest text-generating model in its catalogue, and a GLM-5.3-Flash variant with refusal alignment removed at $0.24 input and $1.00 output. Both run on private deployments with a 1,048,576-token context, and the DeepSeek route keeps the base model's refusal behaviour.</p>
+<p style="line-height:1.65;margin:0;">These are one provider's prices, not the market — but the direction is the story: the gap between frontier and flash pricing keeps widening, and the models agents actually burn tokens on are racing toward zero.</p>
+<p style="margin:12px 0 0;"><a href="https://www.topxea.com/blog/topxai-new-models-november-2026" style="color:#2563eb;">Source: TopxAI &rarr;</a></p>
+</div>
+
+<div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);">
+<p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">05 &middot; Open Weights</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">AMD's fully open Instella-3B-Instruct turns up on Huawei's Ascend hub</h3>
+<p style="line-height:1.65;margin:0 0 8px;">AMD's Instella-3B-Instruct, a fully open, instruction-tuned 3-billion-parameter chat model, appeared on November 8 on Modelers.cn, Huawei's Ascend-focused AI hub. AMD published the weights and the training recipe, and the model was trained from scratch on AMD Instinct MI250X GPUs rather than Nvidia hardware — a rare bit of transparency for a vendor-built model, and a deliberately non-Nvidia backstory.</p>
+<p style="line-height:1.65;margin:0;">Two caveats travel with it: the listing is bare-bones, with no benchmarks, usage code, chat template, or hardware requirements, and it is unclear whether the Ascend listing is an official port or a community upload, with no documented Ascend-specific adaptation. Treat it as an interesting open release to watch, not a verified deployment option.</p>
+<p style="margin:12px 0 0;"><a href="https://aichina.news/blog/amds-instella-3b-instruct-arrives-on-modelers-cn-a-tiny-fully-open-06e2xe/" style="color:#2563eb;">Source: AIChina News &rarr;</a></p>
+</div>
+
+<div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);">
+<p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">06 &middot; Evals &amp; Benchmarks</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">The scoreboards are flat — and a real-world coding test says they flatter the models</h3>
+<p style="line-height:1.65;margin:0 0 8px;">The November 9 Inference Report finds both major leaderboards essentially unchanged: SWE-rebench is identical from positions one through seventeen, with AnthropicFable 5 holding the top spot at 64.5%, and the only movement on Artificial Analysis is a single new entrant, Agnes 2.5 Pro Theta, at position 35 with a score of 24.0. The report's own read is that the stability says more about evaluation opacity than about capability — the Artificial Analysis scores carry no reported confidence intervals at all.</p>
+<p style="line-height:1.65;margin:0;">The sharper signal comes from Alibaba's real-world coding-agent test, which found the top model completed only 26.4% of selected tasks perfectly, even though comparable models score above 99% on some older benchmarks. The gap between leaderboard numbers and deployed performance is becoming the eval story of the year.</p>
+<p style="margin:12px 0 0;"><a href="https://www.ottomaite.com/inference-report/benchmarks/" style="color:#2563eb;">Source: The Inference Report &rarr;</a> &middot; <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-november-9-2026/" style="color:#2563eb;">The Neuron, Nov 9 &rarr;</a></p>
+</div>
+
+<div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);">
+<p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">07 &middot; Inference Economics</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Gartner: stop pricing AI by the token — the resolved task is the new unit</h3>
+<p style="line-height:1.65;margin:0 0 8px;">A coding or research agent burns roughly 1,000 times the tokens of a chat reply, and the same task can swing 30-fold in token use between runs — so falling unit prices met rising volume, and volume won. Gartner's November 1 note draws the operational conclusion: comparing models on per-token cost &ldquo;ignores the key cost drivers of token consumption and success rates,&rdquo; and teams should benchmark cost per successful task instead. A controlled orchestration swap across 22 tasks and six models cut blended cost per task 41%, from $0.21 to $0.12, while wall-clock time fell 44% — with task quality held at parity.</p>
+<p style="line-height:1.65;margin:0;">Token costs are only 20–25% of variable run cost in banking service agents, with human oversight at 70–75%, per McKinsey figures cited in the analysis — so the cheapest model per token is rarely the cheapest way to finish a job. The metric shift will land in procurement language first, because software engineering leaders already control the model-and-harness budget.</p>
+<p style="margin:12px 0 0;"><a href="https://nexi.fund/agentic-ai-cost-per-task/" style="color:#2563eb;">Source: Nexi Fund &rarr;</a></p>
+</div>
+
+</section>
+
+<p style="text-align:center;font-style:italic;color:#64748b;margin:28px 0 0;">by Your Tech Sommelier</p>
+</div>
+</article>
+    </div>
+
     <div id="aiTrendDailyNov08" class="edition ai-trends-daily" data-date="2026-11-08" aria-live="polite" hidden style="margin-top:22px;">
 <article style="background:#f8fafc;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
 <div style="max-width:860px;margin:0 auto;">
@@ -1659,10 +1738,6 @@
 <p style="text-align:center;font-style:italic;color:#64748b;margin:28px 0 0;">by Your Tech Sommelier</p>
 </div>
 </article>
-    </div>
-
-    <div id="aiTrendDailyNov03" class="edition ai-trends-daily" data-date="2026-11-03" aria-live="polite" hidden style="margin-top:22px;">
-<article style="background:#f8fafc;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;"><div style="max-width:860px;margin:0 auto;"><p style="text-align:center;letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:#64748b;margin:0 0 8px;">AI Trends Daily &middot; November 3, 2026</p><h1 style="text-align:center;color:#0f172a;font-size:42px;line-height:1.05;margin:0 0 12px;">The best AI agent in the world just scored 12%</h1><p style="text-align:center;font-size:17px;line-height:1.6;max-width:680px;margin:0 auto 20px;">Why it matters: The day's theme is honest measurement. A new benchmark that grades agents on real professional work — not quiz answers — puts even the top frontier model far from finished jobs, while new models, open agents, and a $115B optics deal show the race shifting from demos to deployment, cost, and infrastructure.</p><section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;"><p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#dc2626;font-weight:700;margin:0 0 10px;">Cover Story &middot; Evals &amp; Benchmarks</p><h2 style="color:#0f172a;font-size:30px;line-height:1.15;margin:0 0 12px;">SemiAnalysis launches GDPx — and nobody clears 12% on real expert work</h2><div style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;"><span style="background:#0f172a;color:#fff;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">12.0% top score</span><span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">206 tasks</span><span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">11 domains</span><span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">Up to 8 hrs / task</span></div><p style="line-height:1.65;margin:0 0 10px;">SemiAnalysis released GDPx on November 2, a benchmark that drops agents into simulated workplaces — chip design, cybersecurity, biology, finance, legal, quant trading, hardware design, materials science, alignment, software engineering, and recursive self-improvement — for up to eight hours per task. Anthropic's Claude Opus 5.5 leads at 12.0%, followed by Google's Gemini 4 Carbon at 10.9% and OpenAI's GPT-6 Astra at 9.6%.</p><p style="line-height:1.65;margin:0 0 10px;">The low ceiling is the point: every model scored zero on finance and legal under pass-or-fail grading, and the best open-weight model, Z.ai's GLM 5.3, scored 2.7%. Cost also splits the leaders — Gemini 4 Carbon averaged $16.29 per task versus $51.41 for Opus 5.5 — a reminder that agentic capability now has a price tag per job, not just a score.</p><p style="line-height:1.65;margin:0;">These are SemiAnalysis's own, not yet independently reproduced, results — treat the ranking as one respected lab's measurement, not a settled verdict. SemiAnalysis also notes safety classifiers pulled down scores in cyber, biology, and alignment.</p><p style="margin:14px 0 0;"><a href="https://www.unite.ai/semianalysis-launches-gdpx-benchmark-spanning-11-agentic-domains/" style="color:#2563eb;">Source: Unite.AI on SemiAnalysis GDPx &rarr;</a> &middot; <a href="https://aiagentupdate.com/post/semianalysis-gdpx-benchmark-2026-11-02" style="color:#2563eb;">AI Agent Update &rarr;</a></p></section><section style="display:grid;gap:16px;"><div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);"><p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">02 &middot; MODEL RELEASE</p><h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Meituan releases LongCat-2.5: 1.6T parameters, 1M-token context</h3><p style="line-height:1.65;margin:0 0 8px;">Meituan released LongCat-2.5 on November 2, a natively multimodal mixture-of-experts model with 1.6 trillion total parameters and about 48 billion active per token, aimed at agent execution and extended programming workflows. It offers a 1-million-token context window and up to 128,000 tokens of output.</p><p style="line-height:1.65;margin:0;">Vendor-listed pricing on Meituan's platform is $0.30 per million uncached input tokens and $1.20 per million output tokens (a limited-time discounted rate). Weights are not open yet; Meituan says GitHub and Hugging Face releases are planned to follow.</p><p style="margin:12px 0 0;"><a href="https://aitoolsrecap.com/Blog/ai-news-november-03-2026" style="color:#2563eb;">Source: AIToolsRecap &rarr;</a></p></div><div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);"><p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">03 &middot; AGENT FRAMEWORK / OPEN WEIGHTS</p><h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">DeepSeek open-sources an autonomous coding "Super-Agent" that doesn't wait to be asked</h3><p style="line-height:1.65;margin:0 0 8px;">DeepSeek's Harness team open-sourced dsh-superagent v0.1.0 under the MIT license. Its router-worker architecture splits work: a Router keeps broader context and handles communication, while Worker sessions execute coding tasks in parallel across group chats, GitHub, and other developer tools.</p><p style="line-height:1.65;margin:0;">The pitch is proactivity — if a bug is reported in a group chat, the agent can identify it, try to reproduce it, and submit a pull request without being tagged. For builders, this is a public, studyable version of the router-plus-workers shape increasingly used for long tasks.</p><p style="margin:12px 0 0;"><a href="https://stocktwits.com/news-articles/markets/equity/deepseek-autonomous-coding-agent-anthropic-ipo-claude-code/cNGekVdR9cy" style="color:#2563eb;">Source: Stocktwits &rarr;</a> &middot; <a href="https://www.communeify.com/en/blog/ai-daily-2026-11-02/" style="color:#2563eb;">Communeify AI Daily, Nov 2 &rarr;</a></p></div><div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);"><p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">04 &middot; INFERENCE &amp; PRICING / PRODUCT</p><h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">OpenAI merges ChatGPT and Codex into one usage budget from December</h3><p style="line-height:1.65;margin:0 0 8px;">From December, ChatGPT Plus, Pro, and Business plans will share a single token allowance across ChatGPT and Codex, OpenAI said in an updated Help Center article and a November 2 subscriber email. Work capabilities are also folding into regular Chat, starting with a small test group, while Codex remains a separate view in the desktop app.</p><p style="line-height:1.65;margin:0;">Instant chat stays outside the allowance, but advanced chats, Codex tasks, and agent work in ChatGPT will all draw from the same pool — so a heavy coding afternoon now directly competes with chat. OpenAI has not published per-plan token figures, so teams should watch the combined Settings &rarr; Usage balance once it goes live.</p><p style="margin:12px 0 0;"><a href="https://www.techrepublic.com/article/news-chatgpt-codex-shared-usage-limits/" style="color:#2563eb;">Source: TechRepublic &rarr;</a> &middot; <a href="https://datanorth.ai/news/chatgpt-and-codex-will-share-one-usage-limit-in-december" style="color:#2563eb;">DataNorth &rarr;</a></p></div><div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);"><p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">05 &middot; AI INFRASTRUCTURE</p><h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Marvell signs a definitive $115B all-stock deal for Lumentum</h3><p style="line-height:1.65;margin:0 0 8px;">Marvell and Lumentum announced a definitive agreement on November 2: Lumentum shareholders receive a fixed 4.500 Marvell shares per share, implying about $1,132 per share and a $115 billion enterprise value — a 23.9% premium to Lumentum's unaffected October 28 close. Existing Marvell holders would own about 67% of the combined company, Lumentum holders about 33%.</p><p style="line-height:1.65;margin:0;">The combination pairs Marvell's electrical and optical interconnect, switching, and custom silicon with Lumentum's lasers, transceivers, and optical circuit switching — a bet that AI scale-out is increasingly an optics problem. Closing is expected in the first half of calendar 2028, subject to shareholder and regulatory approvals; Marvell shares fell about 13% on the announcement as investors weighed dilution and integration risk.</p><p style="margin:12px 0 0;"><a href="https://investor.marvell.com/news-events/press-releases/detail/1040/marvell-and-lumentum-to-combine-creating-a-category-leader-in-ai-connectivity" style="color:#2563eb;">Source: Marvell press release &rarr;</a></p></div><div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);"><p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">06 &middot; PRODUCT LAUNCH</p><h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Apple Intelligence finally reaches China in December — powered by Alibaba's Qwen</h3><p style="line-height:1.65;margin:0 0 8px;">Apple confirmed on October 31 that Apple Intelligence will come to iPhones in China with iOS 27.3 in December, with testing from November 4 in the latest iOS developer beta. Alibaba's Qwen models will power Siri, Writing Tools, and Visual Intelligence in China, covering text and image understanding and content generation.</p><p style="line-height:1.65;margin:0;">It is a partial launch: the December update does not include Siri AI or other next-generation features announced at WWDC 2026, and it is iPhone-only at first (iPhone 15 Pro/Pro Max, iPhone 16 and later, iPhone Air, and iPhone Duo). Use is opt-in, with permission asked before a question, document, or image is sent to Qwen, and Alibaba says requests and responses will not be used for training.</p><p style="margin:12px 0 0;"><a href="https://www.chinadailyasia.com/hk/article/642068" style="color:#2563eb;">Source: China Daily Asia &rarr;</a></p></div><div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);"><p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">07 &middot; EMBODIED AI / RESEARCH</p><h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">AGIBOT unveils GO-3 Preview, tops three embodied benchmarks, promises full open source by year-end</h3><p style="line-height:1.65;margin:0 0 8px;">AGIBOT unveiled GO-3 Preview on November 3, an embodied foundation model spanning pre-training, post-training, and post-deployment learning. Built on its WRAM (World Reasoning Action Model) architecture, it unifies task understanding, future-state prediction, and action generation for general-purpose robots.</p><p style="line-height:1.65;margin:0;">Vendor-reported results put GO-3 Preview first on RoboDojo, RoboTwin, and RoboColiseum. AGIBOT says it will be fully open-sourced by the end of 2026 — if that holds, it becomes one of the most directly testable embodied models of the year.</p><p style="margin:12px 0 0;"><a href="https://aapnews.aap.com.au/aapreleases/cision20261102AE87486" style="color:#2563eb;">Source: AGIBOT via AAP/PRNewswire &rarr;</a></p></div><div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);"><p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">08 &middot; AI SYSTEMS / GOVERNMENT</p><h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Abu Dhabi signs four OpenAI deals — energy, government, and investment, all on in-country inference</h3><p style="line-height:1.65;margin:0 0 8px;">On November 2, Abu Dhabi entities signed four agreements with OpenAI, witnessed by Crown Prince Sheikh Khaled bin Mohamed bin Zayed after meeting CEO Sam Altman. ADNOC, with G42's Inception42, becomes what the parties describe as the first energy-sector company to deploy OpenAI's Frontier agent platform; the Abu Dhabi Government launched a "Machine-Readable Government" pilot (food-import permits first); Mubadala with Inception42 will apply AI to investment analysis and risk; and Inception42 signed a separate five-year frontier-AI adoption deal.</p><p style="line-height:1.65;margin:0;">No financial terms were disclosed. The common thread matters more than any single deal: ADNOC and government workloads are to run on in-country inference infrastructure in the UAE — sovereignty and residency are now part of the enterprise AI sale, not an afterthought.</p><p style="margin:12px 0 0;"><a href="https://www.intelligentcio.com/me/2026/11/02/abu-dhabi-and-openai-sign-four-agreements-to-accelerate-ai-adoption/" style="color:#2563eb;">Source: Intelligent CIO &rarr;</a> &middot; <a href="https://tsnmedia.org/openai-abu-dhabi-agreements/" style="color:#2563eb;">TSN summary &rarr;</a></p></div></section><p style="text-align:center;font-style:italic;color:#64748b;margin:28px 0 0;">by Your Tech Sommelier</p></div></article>
     </div>
 
     <article id="aiTrendWeeklyNov06" data-edition-date="2026-11-06" aria-live="polite" hidden style="margin-top:22px;">
@@ -2645,7 +2720,7 @@
     }
 
     let currentIssue = '2026-11-09';
-    let currentAiIssue = '2026-11-08';
+    let currentAiIssue = '2026-11-09';
     let currentSection = 'hardware';
 
     function renderHardwareIssue(key) {
@@ -2703,12 +2778,12 @@
       const isWeeklyOct09 = key === 'weekly-2026-10-09';
       const isWeeklyOct02 = key === 'weekly-2026-10-02';
       const isWeeklySep25 = key === 'weekly-2026-09-25';
+      const isNov09 = key === '2026-11-09';
       const isNov08 = key === '2026-11-08';
       const isNov07 = key === '2026-11-07';
       const isNov06 = key === '2026-11-06';
       const isNov05 = key === '2026-11-05';
       const isNov04 = key === '2026-11-04';
-      const isNov03 = key === '2026-11-03';
       $('#aiTrendWeeklyNov06').hidden = !isWeeklyNov06;
       $('#aiTrendWeeklyOct30').hidden = !isWeeklyOct30;
       $('#aiTrendWeeklyOct23').hidden = !isWeeklyOct23;
@@ -2716,13 +2791,16 @@
       $('#aiTrendWeeklyOct09').hidden = !isWeeklyOct09;
       $('#aiTrendWeeklyOct02').hidden = !isWeeklyOct02;
       $('#aiTrendWeeklySep25').hidden = !isWeeklySep25;
+      $('#aiTrendDailyNov09').hidden = !isNov09;
       $('#aiTrendDailyNov08').hidden = !isNov08;
       $('#aiTrendDailyNov07').hidden = !isNov07;
       $('#aiTrendDailyNov06').hidden = !isNov06;
       $('#aiTrendDailyNov05').hidden = !isNov05;
       $('#aiTrendDailyNov04').hidden = !isNov04;
-      $('#aiTrendDailyNov03').hidden = !isNov03;
-      if (isNov08) {
+      if (isNov09) {
+        $('#issueDate').textContent = 'Monday, November 9, 2026';
+        $('#storyCount').textContent = '7 stories';
+      } else if (isNov08) {
         $('#issueDate').textContent = 'Sunday, November 8, 2026';
         $('#storyCount').textContent = '7 stories';
       } else if (isNov07) {
@@ -2737,9 +2815,6 @@
       } else if (isNov04) {
         $('#issueDate').textContent = 'Wednesday, November 4, 2026';
         $('#storyCount').textContent = '7 stories';
-      } else if (isNov03) {
-        $('#issueDate').textContent = 'Tuesday, November 3, 2026';
-        $('#storyCount').textContent = '8 stories';
       } else if (isWeeklyNov06) {
         $('#issueDate').textContent = 'Week of November 6, 2026';
         $('#storyCount').textContent = '10 stories';
@@ -2791,12 +2866,12 @@
       $('#aiTrendWeeklyOct09').hidden = true;
       $('#aiTrendWeeklyOct02').hidden = true;
       $('#aiTrendWeeklySep25').hidden = true;
+      $('#aiTrendDailyNov09').hidden = true;
       $('#aiTrendDailyNov08').hidden = true;
       $('#aiTrendDailyNov07').hidden = true;
       $('#aiTrendDailyNov06').hidden = true;
       $('#aiTrendDailyNov05').hidden = true;
       $('#aiTrendDailyNov04').hidden = true;
-      $('#aiTrendDailyNov03').hidden = true;
       $('#navHardware').hidden = !isHardware;
       $('#navLlm').hidden = !isLlm;
       if (isLlm) {
