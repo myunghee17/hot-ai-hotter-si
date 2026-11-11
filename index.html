@@ -668,6 +668,12 @@
 
 
 
+    /* November 11 AI Trends weekly edition (inline-styled; responsive overrides) */
+    @media (max-width: 640px) {
+      #aiTrendWeeklyNov11 h1 { font-size: 28px !important; }
+      #aiTrendWeeklyNov11 h2 { font-size: 21px !important; }
+    }
+
     /* November 6 AI Trends weekly edition (inline-styled; responsive overrides) */
     @media (max-width: 640px) {
       #aiTrendWeeklyNov06 h1 { font-size: 28px !important; }
@@ -791,6 +797,7 @@
       <nav class="archive-navigation" id="navLlm" aria-label="AI Trends edition navigation" hidden>
         <div class="edition-group weekly-group" aria-label="Choose an AI Trends weekly summary">
           <span class="edition-label">Weekly</span>
+          <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="weekly-2026-11-11" aria-pressed="false">Nov 11</button>
           <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="weekly-2026-11-06" aria-pressed="false">Nov 6</button>
           <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="weekly-2026-10-30" aria-pressed="false">Oct 30</button>
           <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="weekly-2026-10-23" aria-pressed="false">Oct 23</button>
@@ -1740,6 +1747,107 @@
 </div>
 
 </section>
+
+<p style="text-align:center;font-style:italic;color:#64748b;margin:28px 0 0;">by Your Tech Sommelier</p>
+</div>
+</article>
+    </div>
+
+
+    <div id="aiTrendWeeklyNov11" data-edition-date="2026-11-11" aria-live="polite" hidden style="margin-top:22px;">
+<article style="background:#f8fafc;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
+<div style="max-width:860px;margin:0 auto;">
+<p style="text-align:center;letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:#64748b;margin:0 0 8px;">AI Trends Weekly &middot; November 11, 2026</p>
+<h1 style="text-align:center;color:#0f172a;font-size:42px;line-height:1.05;margin:0 0 12px;">The week open weights went trillion-scale</h1>
+<p style="text-align:center;font-size:17px;line-height:1.6;max-width:680px;margin:0 auto 20px;">Why it matters: The open frontier went big this week — Mistral put a trillion-parameter model in developers&rsquo; hands under a near-MIT license — while Anthropic&rsquo;s IPO repriced to roughly $1.4T fully diluted and Google&rsquo;s robots started working Mercedes-Benz production lines. Agents kept spreading into new surfaces: text messages, team workspaces, Disney&rsquo;s studios. And the price curve kept splitting: heavy reasoning gets dearer per task even as transcription, image generation, and small agent models get radically cheaper.</p>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#dc2626;font-weight:700;margin:0 0 10px;">Cover Story &middot; Open Weights</p>
+<h2 style="color:#0f172a;font-size:30px;line-height:1.15;margin:0 0 12px;">Mistral Large 4 &ldquo;Le Chonk&rdquo;: the first trillion-parameter model you can actually download</h2>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;">
+<span style="background:#0f172a;color:#fff;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">~1T total / ~50B active &middot; 1M-token context</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">41% on Terminal-Bench 4.0</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">Modified-MIT open-weight license</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">$0.70 / $2.10 per M tokens</span>
+</div>
+<p style="line-height:1.65;margin:0 0 10px;">Mistral released the full weights of Mistral Large 4 on November 9, three weeks after its public preview — a natively multimodal mixture-of-experts with roughly 1 trillion total parameters, about 50 billion active per token, and a 1-million-token context, trained from scratch on European infrastructure. The release matters less for the parameter count than for the license: the Mistral Ecosystem Open-Weight license is a modified MIT that allows free use, modification, fine-tuning, and commercialization, with the single condition that Model-as-a-Service offerings need a separate commercial agreement.</p>
+<p style="line-height:1.65;margin:0 0 10px;">Three weeks of extra reinforcement learning moved the numbers: 41% on Terminal-Bench 4.0 (up 13 points, emitting 30% fewer tokens), 48% on the Artificial Analysis Coding Agent Index — effectively tied with GLM-5.3 while using 47% fewer tokens per task — and a lead on Cognition&rsquo;s FrontierCode 2.0 at 19.7%. In Surge&rsquo;s blind human preference tests for coding it beat GLM-5.3, Kimi K3, and DeepSeek V4.1 Flash, finishing behind only Claude Opus 5.5. On security it posts 51% on the Artificial Analysis Cyber Index, 96.6% refusal on malicious request suites — the highest among open-weight models — and 97.1% attack resistance on the B3 agent security benchmark. The ecosystem showed up on day one: native support in transformers, vLLM, and llama.cpp with GGUF quants, plus OpenRouter, Microsoft Foundry, and NVIDIA NIM containers. Hosted API pricing is $0.70 per million input tokens and $2.10 output, with cached input at $0.07.</p>
+<p style="line-height:1.65;margin:0;">One honest caveat from Mistral itself: monitoring live traffic, it saw &ldquo;potential for uplift to conduct real attacks&rdquo; and is modifying guardrails accordingly — and a specialized pentesting variant is available only to vetted enterprise partners. All benchmark figures are Mistral-reported.</p>
+<p style="margin:12px 0 0;"><a href="https://mistral.ai/news/mistral-large-4-oss" style="color:#2563eb;">Source: Mistral &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">02 &middot; IPO</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Anthropic&rsquo;s IPO: the $1.02T was only the outstanding shares — fully diluted it&rsquo;s ~$1.4T</h3>
+<p style="line-height:1.65;margin:0 0 8px;">The ~$1.02T figure in this week&rsquo;s daily was the outstanding-share valuation from S-1 Amendment No. 2 (825m Class A shares at $70&ndash;$78, a $57.75&ndash;$64.35bn raise). On a fully diluted basis the same filing implies up to ~$1.404T at $78 (TechCrunch) / $1.405T (CNBC via Decrypt); Axios put the high end at ~$1.37T. The extra ~$380bn counts 1.77bn options (average exercise $2.91), ~1.07bn unvested RSUs, 1.92bn shares reserved for a new 2026 equity plan, and 128m for an employee stock purchase plan. The same filing also disclosed a concurrent $26bn private placement of non-voting Class N stock at the IPO price to AMD, Broadcom, Google, Micron, Microsoft, Nvidia, and TSMC. Context: up from the $965bn May private valuation, below the ~$2T discussed in September, with an $81bn annualized revenue run-rate at end-October. Timing per CNBC sources only, not Anthropic-confirmed: pricing November 18, first trade November 19 on Nasdaq as ANT.</p>
+<p style="margin:12px 0 0;"><a href="https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/" style="color:#2563eb;">Source: TechCrunch &rarr;</a> &middot; <a href="https://decrypt.co/382939/anthropic-sets-ipo-price-range-at-70-to-78-valuing-company-at-up-to-1-4-trillion" style="color:#2563eb;">Decrypt &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">03 &middot; Enterprise AI</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Disney and Adobe sign a multi-year AI alliance: custom Firefly models trained on Disney&rsquo;s own worlds</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Adobe and Disney announced a multi-year strategic alliance at Adobe MAX on November 9, making Adobe Disney&rsquo;s Official AI Innovation Partner. The center is Adobe Firefly Foundry: Disney will work directly with Adobe on generative AI models tailored to its properties — trained on character attributes, environments, and visual styles — described as human-centered and artist-led, and kept private and proprietary to Disney. Disney also gets early access to Firefly, Premiere, and Photoshop, plus dedicated Adobe engineering resources. Walt Disney Imagineering R&amp;D already uses Firefly Foundry in its parks pipeline, including a sketch-to-image model that turns hand-drawn concepts into rendered concept art; the alliance extends to StudioLAB and ESPN Edge. No financial terms were disclosed.</p>
+<p style="line-height:1.65;margin:0;">The context sharpens it: Disney sued Midjourney in June 2025 and, with Universal and Warner Bros. Discovery, sued MiniMax in September over its Hailuo video generator — now it is building its own models on its own IP instead.</p>
+<p style="margin:12px 0 0;"><a href="https://news.adobe.com/news/2026/11/adobe-and-the-walt-disney-company-alliance" style="color:#2563eb;">Source: Adobe Newsroom &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">04 &middot; Robotics</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Gemini Robotics 2.5: Google&rsquo;s robots tie ribbons, run tongs, and kit Mercedes-Benz parts at 96%</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Google DeepMind unveiled Gemini Robotics 2.5 on November 10, its most capable vision-language-action model, rolling out to trusted testers and robotics partners. Evaluated across more than 200 tasks on Apptronik&rsquo;s Apollo 2 humanoid (five-finger, 22-degree-of-freedom SharpaWave hands) and Franka Duo arms, it handles fine manipulation — tying gift-box ribbons, operating kitchen tongs, pipetting liquids — with 30&ndash;100% higher success rates than previous baselines and 20&ndash;30% faster task completion. In live pilots at Mercedes-Benz plants in Kecskem&eacute;t, Hungary, and Sindelfingen, Germany, Apollo 2 autonomously kitted automotive parts at a 96% success rate, with Gemini Robotics-ER handling high-level planning.</p>
+<p style="line-height:1.65;margin:0;">Safety got its own upgrade: real-time inference-time guidance steers arms clear of obstacles (+33% safe completion) and nearby workers (+43%), and DeepMind open-sourced ASIMOV-Jailbreak, a physical-safety benchmark; Gemini 4 Argon scores 99.5% jailbreak resistance, up from 82% on the prior baseline. DeepMind credits Gemini 4 Argon — acting as a simulation engine building digital twins — with accelerating the model&rsquo;s development. All figures are DeepMind-reported.</p>
+<p style="margin:12px 0 0;"><a href="https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/" style="color:#2563eb;">Source: Google DeepMind &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">05 &middot; Model Release</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Qwen4-Max opens early preview — Alibaba&rsquo;s next flagship arrives with no benchmarks attached</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Alibaba&rsquo;s Qwen team opened early preview access to Qwen4-Max on November 11, the first flagship of its Qwen4 series, positioned for multi-file software engineering, front-end builds, knowledge synthesis, and long-running agentic workflows. It is available initially through Alibaba&rsquo;s Token Plan subscription alongside QwenWork, Qoder, the Qwen app, and QwenStudio, with drop-in support for Qwen Code, Claude Code, Cursor, Cline, Codex, OpenCode, Kilo CLI, and OpenClaw via OpenAI- and Anthropic-compatible protocols.</p>
+<p style="line-height:1.65;margin:0;">The preview lands with no parameter counts, no context lengths, no benchmark scores, and no standalone pay-as-you-go token pricing — subscription only, from $6 a month (Lite, $3 promotional first month) to Pro for 6&ndash;8 concurrent agents. The Qwen4 rumor from last week is now partly confirmed; GPT-6.2 and Grok 4.8 reports remain unconfirmed.</p>
+<p style="margin:12px 0 0;"><a href="https://ashutoshai.com/ai-compass/2026/11/10/" style="color:#2563eb;">Source: AI Compass, reporting Alibaba&rsquo;s announcement &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">06 &middot; Research</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">DeepMind&rsquo;s AI agents found two cracks in retired RSA-1024 encryption — and the numbers are theoretical</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Google DeepMind said on November 6 that human-guided AI agents, working with academic cryptographers including Nadia Heninger (UC San Diego) and Emmanuel Thom&eacute; (Inria), found two previously unknown weaknesses in legacy 1024-bit RSA. The first concerns padding: once an attacker controls about half the signed block, padding buys almost nothing, and where the attacker controls only a short fingerprint the agents produced an algorithm DeepMind estimates is around 1,600 times faster than the best published method. The second is batch factoring: one expensive precomputation spread across many same-length keys cuts the average cost per additional key by roughly 30 times.</p>
+<p style="line-height:1.65;margin:0;">The asterisks matter: both multipliers are theoretical rather than measured end to end. The part that ran was a sandboxed reproduction against a 1024-bit key an academic team had already broken, where DeepMind reports its agents used 3.5 times less CPU time than factoring the key outright. No production system still relying on 1024-bit RSA has been named, and DeepMind says modern 2048-bit and larger keys are unaffected. The takeaway is an inventory job, not a panic — and a sign that the slow, intuition-heavy part of cryptanalysis is now something a machine can take a real run at.</p>
+<p style="margin:12px 0 0;"><a href="https://byobot.ai/ai-news/ai-daily-newsstand-november-8-2026" style="color:#2563eb;">Source: BYOBot, reporting DeepMind&rsquo;s announcement &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">07 &middot; Agentic Commerce</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Amazon turns text messages into a shopping channel: text Alexa, it buys the dog food</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Amazon began rolling out texting with Alexa for Shopping on November 6: a subset of US customers can now text the agent — the contact appears as &ldquo;Alexa Shopping&rdquo; — and it searches products, compares options, adds items to the cart, and completes purchases, with delivery updates in the same thread. It remembers stated preferences (vegan-only, marathon training) and handles recipe photos, price-drop alerts, and reorders. More than 400 million customers have used Alexa for Shopping in the past 12 months, and agentic feature usage has grown more than eightfold since the start of 2026.</p>
+<p style="line-height:1.65;margin:0;">The pattern is the week&rsquo;s other story: Amazon blocked Meta&rsquo;s Muse shopping agent from crawling its listings in September, and DoorDash reported third-party agents had placed only a few hundred orders on its platform — retailers are keeping the agent, the data, and the checkout inside their own walls.</p>
+<p style="margin:12px 0 0;"><a href="https://www.aboutamazon.com/news/retail/alexa-for-shopping-text-to-shop" style="color:#2563eb;">Source: About Amazon &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">08 &middot; Open-Weights Models</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">MiniMax-H3-Image: open-weight 4K image generation in under 10 seconds</h3>
+<p style="line-height:1.65;margin:0 0 8px;">MiniMax released MiniMax-H3-Image on November 10 under the MiniMax H3 Image Community Licence on Hugging Face, alongside hosted endpoints. Built on the MiniMax H3 architecture, the 33.1B-parameter model renders native 16-megapixel images (up to 4096&times;4096) in under 10 seconds — up to 5&times; the speed of mainstream alternatives, per MiniMax — with up to 16 reference images for character consistency and bilingual typography, and local inference via SGLang, vLLM-Omni, Diffusers, and ComfyUI. API pricing runs 50&ndash;70% of comparable mainstream offerings, with a 50% launch-week discount on 4K-and-above tasks through November 17.</p>
+<p style="line-height:1.65;margin:0;">A 27B prompt-expander sibling, H3-Image-PE, quietly appeared the same day with no launch post at all. All speed and price claims are MiniMax-reported.</p>
+<p style="margin:12px 0 0;"><a href="https://www.minimax.io/blog/minimax-h3-image" style="color:#2563eb;">Source: MiniMax &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">09 &middot; Speech AI</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Microsoft&rsquo;s MAI Transcribe 2: 60 languages, 5.2% word error rate, 10 seconds per hour of audio</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Microsoft AI introduced MAI Transcribe 2 and MAI Transcribe 2 Streaming on November 10, a single model for multilingual transcription with built-in diarisation, word-level timestamps, code-switching, and domain keyword biasing. Across all 60 FLEURS languages it records a 5.2% average word error rate in both forced and automatic language-detection modes — ahead of Gemini 3.1 Pro (5.3% / 5.8%), Gemini 3.5 Transcribe (5.9% / 8.6%), ElevenLabs Scribe v2 (6.2% / 6.5%), GPT-Transcribe (10.4% / 10.6%), and Whisper v3-large (22.8% / 23.5%), per Microsoft&rsquo;s own benchmark charts. It transcribes an hour of audio in 10 seconds (a 403.6&times; speed factor); streaming latency averages 128 ms.</p>
+<p style="line-height:1.65;margin:0;">Batch pricing is $0.10 per audio hour on promotion through the end of 2026; streaming is $0.54 per audio hour. A browser playground takes MP3/WAV uploads up to 25 MB and 60 minutes. All accuracy and speed figures are Microsoft-reported.</p>
+<p style="margin:12px 0 0;"><a href="https://microsoft.ai/models/mai-transcribe-2/" style="color:#2563eb;">Source: Microsoft AI &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">10 &middot; Agent Tooling</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Cursor&rsquo;s Projects go multiplayer: whole teams and their agent fleets in one workspace</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Cursor rolled out multiplayer Projects in beta to all users on November 10, turning September&rsquo;s single-user Projects into a shared team workspace. Engineers, designers, and product managers each direct a coordinator and worker agents, with shared specs, architecture diagrams, persistent team memory, on-call handoffs, and merge-conflict prevention — and the coordinators talk to each other, so agents plan around and unblock each other in real time.</p>
+<p style="line-height:1.65;margin:0;">The on-call example is the telling one: when an engineer takes over a rotation, their coordinator picks up where the last one stood — in-flight work, unattended issues, incidents, Linear boards — and in-progress work can be handed directly to the new person&rsquo;s agent. Multi-agent systems have so far served one person; this is the first workspace built for a whole team and its agents.</p>
+<p style="margin:12px 0 0;"><a href="https://cursor.com/blog/projects-multiplayer" style="color:#2563eb;">Source: Cursor &rarr;</a></p>
+</section>
+
+<p style="font-size:13px;color:#64748b;line-height:1.6;margin:4px 0 0;">Left out this week: unconfirmed reports of imminent GPT-6.2 and Grok 4.8 releases, and a reported Meta Muse shopping-agent launch in the UK (Meta declined to comment) — rumor-only items are removed, not labeled. DeepMind&rsquo;s WeatherNext cyclone paper circulated again this week but dates to August 6, 2026, so it falls outside this week&rsquo;s window. Agility Robotics&rsquo; Nasdaq debut (AGLT) began trading November 5, also before this week&rsquo;s window.</p>
 
 <p style="text-align:center;font-style:italic;color:#64748b;margin:28px 0 0;">by Your Tech Sommelier</p>
 </div>
@@ -2778,6 +2886,7 @@
 
     function renderAiIssue(key) {
       currentAiIssue = key;
+      const isWeeklyNov11 = key === 'weekly-2026-11-11';
       const isWeeklyNov06 = key === 'weekly-2026-11-06';
       const isWeeklyOct30 = key === 'weekly-2026-10-30';
       const isWeeklyOct23 = key === 'weekly-2026-10-23';
@@ -2791,6 +2900,7 @@
       const isNov08 = key === '2026-11-08';
       const isNov07 = key === '2026-11-07';
       const isNov06 = key === '2026-11-06';
+      $('#aiTrendWeeklyNov11').hidden = !isWeeklyNov11;
       $('#aiTrendWeeklyNov06').hidden = !isWeeklyNov06;
       $('#aiTrendWeeklyOct30').hidden = !isWeeklyOct30;
       $('#aiTrendWeeklyOct23').hidden = !isWeeklyOct23;
@@ -2822,6 +2932,9 @@
       } else if (isNov06) {
         $('#issueDate').textContent = 'Friday, November 6, 2026';
         $('#storyCount').textContent = '7 stories';
+      } else if (isWeeklyNov11) {
+        $('#issueDate').textContent = 'Week of November 11, 2026';
+        $('#storyCount').textContent = '10 stories';
       } else if (isWeeklyNov06) {
         $('#issueDate').textContent = 'Week of November 6, 2026';
         $('#storyCount').textContent = '10 stories';
@@ -2866,6 +2979,7 @@
       $('#hardwareDailyNov08').hidden = true;
       $('#hardwareDailyNov07').hidden = true;
       $('#hardwareDailyNov06').hidden = true;
+      $('#aiTrendWeeklyNov11').hidden = true;
       $('#aiTrendWeeklyNov06').hidden = true;
       $('#aiTrendWeeklyOct30').hidden = true;
       $('#aiTrendWeeklyOct23').hidden = true;
