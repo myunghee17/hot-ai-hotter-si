@@ -686,6 +686,12 @@
       #aiTrendWeeklyOct30 h2 { font-size: 21px !important; }
     }
 
+    /* November 12 AI Trends daily edition (inline-styled; responsive overrides) */
+    @media (max-width: 640px) {
+      #aiTrendDailyNov12 h1 { font-size: 28px !important; }
+      #aiTrendDailyNov12 h2 { font-size: 21px !important; }
+    }
+
     /* November 11 AI Trends daily edition (inline-styled; responsive overrides) */
     @media (max-width: 640px) {
       #aiTrendDailyNov11 h1 { font-size: 28px !important; }
@@ -714,12 +720,6 @@
     @media (max-width: 640px) {
       #aiTrendDailyNov07 h1 { font-size: 28px !important; }
       #aiTrendDailyNov07 h2 { font-size: 21px !important; }
-    }
-
-    /* November 6 AI Trends daily edition (inline-styled; responsive overrides) */
-    @media (max-width: 640px) {
-      #aiTrendDailyNov06 h1 { font-size: 28px !important; }
-      #aiTrendDailyNov06 h2 { font-size: 21px !important; }
     }
 
     /* November 12 AI Hardware daily edition (inline-styled; responsive overrides) */
@@ -809,12 +809,12 @@
         <div class="edition-group">
           <span class="edition-label">Daily</span>
           <div class="archive-controls" role="group" aria-label="Choose an AI Trends edition">
-            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-11" aria-pressed="true">Nov 11</button>
+            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-12" aria-pressed="true">Nov 12</button>
+            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-11" aria-pressed="false">Nov 11</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-10" aria-pressed="false">Nov 10</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-09" aria-pressed="false">Nov 9</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-08" aria-pressed="false">Nov 8</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-07" aria-pressed="false">Nov 7</button>
-            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-06" aria-pressed="false">Nov 6</button>
           </div>
         </div>
       </nav>
@@ -1285,6 +1285,91 @@
 
 
 
+<div id="aiTrendDailyNov12" class="edition ai-trends-daily" data-date="2026-11-12" aria-live="polite" hidden style="margin-top:22px;">
+<article style="background:#f8fafc;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
+<div style="max-width:860px;margin:0 auto;">
+<p style="text-align:center;letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:#64748b;margin:0 0 8px;">AI Trends Daily &middot; November 12, 2026</p>
+<h1 style="text-align:center;color:#0f172a;font-size:42px;line-height:1.05;margin:0 0 12px;">Alibaba's next flagship comes with an expiry date — and the trust question moves into the checkpoint</h1>
+<p style="text-align:center;font-size:17px;line-height:1.6;max-width:680px;margin:0 auto 20px;">Why it matters: the November 11–12 news wasn't about a bigger model — it was about the terms around the models. Alibaba launched its next flagship as a two-week preview that vanishes on November 25, DeepMind's AlphaGenome 2 is research-only by design, and Microsoft showed that fewer than ten dormant neurons can hide a backdoor no standard evaluation would catch. Capability is still advancing, but the day's real story is access, governance, and whether a checkpoint itself can be trusted.</p>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#dc2626;font-weight:700;margin:0 0 10px;">Cover Story &middot; Model Release</p>
+<h2 style="color:#0f172a;font-size:30px;line-height:1.15;margin:0 0 12px;">Qwen4-Max-Preview: Alibaba's next flagship arrives for two weeks only, then retires</h2>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;">
+<span style="background:#0f172a;color:#fff;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">1M-token context window</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">393K max output tokens</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">Token Plan only — no pay-as-you-go</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">Retires November 25, 2026</span>
+</div>
+<p style="line-height:1.65;margin:0 0 10px;">Alibaba Cloud opened Qwen4-Max-Preview on November 11, the first public model of the Qwen4 generation: a multimodal flagship for reasoning, coding, and agentic tool-using workflows, with text, image, and video understanding, structured outputs, and compatibility with OpenAI- and Anthropic-style APIs. The preview runs from 10:00 on November 11 to midnight on November 25 (UTC+8), and Alibaba says the model will not change during the window and will be retired when it closes.</p>
+<p style="line-height:1.65;margin:0 0 10px;">The catch is how narrow the access is. Qwen4-Max-Preview is available only through Alibaba's Token Plan, a monthly subscription for coding and agent tools — there is no pay-as-you-go API, no published per-token price, no benchmark table, no model card, no parameter count, and no weights. Every quality claim about the model is, for now, Alibaba's own word.</p>
+<p style="line-height:1.65;margin:0;">A launch with a printed expiry date is a new kind of release discipline: teams can evaluate the model for two weeks, but should not build a long-lived production dependency on it. The rest of the Qwen4 family — Qwen4-Plus, Qwen4-Flash, and a 27B model meant for local deployment — has no release date yet.</p>
+<p style="margin:12px 0 0;"><a href="https://aifrontierpost.com/articles/qwen4-max-preview-alibaba-flagship/" style="color:#2563eb;">Source: AI Frontier Post, reporting Alibaba Cloud's documentation &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">02 &middot; Research</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">AlphaGenome 2: DeepMind reads DNA variant effects cell by cell</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Google DeepMind launched AlphaGenome 2 on November 11, shifting DNA-sequence prediction from broad tissue averages to the behavior of specific cell types and states — a variant that matters in an immune cell may do little in neighboring tissue. Training combined human and mouse molecular data with more than 107 million individual cell profiles across 68 tissues. On the TenK10K immune-cell dataset, DeepMind reports identifying 30% of causal expression variants versus 16% for the original system, and 43% versus 23% for directional gene effects.</p>
+<p style="line-height:1.65;margin:0;">The model is available through the AlphaGenome API for non-commercial research, with commercial research restricted to private preview, and DeepMind explicitly says it is not approved for clinical or diagnostic use. Genome-wide association studies find stretches of DNA linked to disease but not the cell where a variant acts — cell-conditioned prediction bridges association to mechanism, which is what immunology and drug-target work actually need.</p>
+<p style="margin:12px 0 0;"><a href="https://sxf.si/brief/" style="color:#2563eb;">Source: SXF Brief, reporting Google DeepMind &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">03 &middot; Open-Weights Models</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Runway opens Praxis-1: a 27B-parameter robot action model, free to adapt</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Runway made Praxis-1 generally downloadable on November 11, releasing the weights and fine-tuning code for its video-trained world-action robot model under Apache 2.0. The roughly 27-billion-parameter mixture-of-experts diffusion transformer predicts both an upcoming video segment and the actions a robot should take, with about 2.8 billion active parameters per token in the video backbone. Runway reports a 46.2% success rate over 1,200 simulated episodes on NVIDIA RoboLab-120, against 42.9% for the cited FLUX 3 Action baseline.</p>
+<p style="line-height:1.65;margin:0;">The weights (about 54.4 GB in bf16) ship with inference code and full or LoRA fine-tuning code via Hugging Face and GitHub, with LeRobot support and vLLM-Omni integration. Open robot policies turn a black-box demo into editable infrastructure — one policy adapted across arms and warehouses — though Runway itself flags look-alike targets, vague instructions, and long multi-step tasks as weak spots, and simulator success is no substitute for staged real-robot validation.</p>
+<p style="margin:12px 0 0;"><a href="https://sxf.si/brief/" style="color:#2563eb;">Source: SXF Brief, reporting Runway &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">04 &middot; Model Release</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Gemini Decision 1: Google's decision-only model answers 1,000 questions at once</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Google DeepMind released Gemini Decision 1 via a new Decisions API — a specialized decision-only model that processes up to 1,000 closed-ended queries simultaneously and returns probability scores in 150–250ms, priced at $0.10 per million input tokens. Google claims roughly 5x lower cost than Gemini 3.5 Flash-Lite for the same routing work.</p>
+<p style="line-height:1.65;margin:0;">This is a routing primitive, not another chatbot: agentic systems constantly branch on yes/no judgments, and a cheap, fast, probability-scored decider is infrastructure for the agent stack. The cost and latency figures are Google's own claims.</p>
+<p style="margin:12px 0 0;"><a href="https://horizon.alchemylab.sh/briefing" style="color:#2563eb;">Source: Today's AI Briefing, reporting Google DeepMind &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">05 &middot; Product Launch</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">ElevenLabs builds the interaction layer: three voice models, an orchestration engine, and an AI teammate</h3>
+<p style="line-height:1.65;margin:0 0 8px;">ElevenLabs announced a full interaction-layer push on November 12: Scribe v3 for speech-to-text transcription, Eleven v4 for expressive text-to-speech, and Eleven Realtime, a new class of speech-to-speech models for voice agents — three models the company says lead independent benchmarks. It also unveiled Interaction Engine, a system to orchestrate voice models and LLMs across a conversation, upgrades to its ElevenAgents platform, ElevenAI, a new app that acts as an AI teammate for enterprise teams, and a Partner Program with more than 550 partners in 44 countries.</p>
+<p style="line-height:1.65;margin:0;">The company also launched Scribe v3 Medical, a healthcare-optimized transcription model, with more domain-optimized models planned for industries such as financial services. Voice is becoming the default interface for agents, and ElevenLabs is betting the winner owns the whole layer — models, orchestration, and the agent platform — not just one voice model. Benchmark-leadership claims are the company's own.</p>
+<p style="margin:12px 0 0;"><a href="https://the9thestate.com/business/elevenlabs-builds-out-the-interaction-layer-for-ai-with-major-new-model-and-agent-upgrades" style="color:#2563eb;">Source: The 9th Estate, reporting ElevenLabs &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">06 &middot; Open-Weights Models</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">SpeakLeash ships Bielik 11B v3.1: 56 languages, plus a family of tiny decision models</h3>
+<p style="line-height:1.65;margin:0 0 8px;">SpeakLeash and ACK Cyfronet AGH staged the release of Bielik 11B v3.1, Bielik 11B v3.1 DFlash, and the Bielik-One family between November 10 and 12, with weights on Hugging Face under open-science terms. Version 3.1 was trained on another 500 billion tokens and supports 56 languages, up from 32 in version 3.0. DFlash uses speculative decoding to propose response segments for verification by the main model, cutting generation time without changing response quality.</p>
+<p style="line-height:1.65;margin:0;">Bielik-One is four small models for classification and assessment — routing requests, moderating content, screening documents, and evaluating responses from other AI systems. Small, open, multilingual models plus dedicated decision models are the unglamorous plumbing of real agent deployments: routing and judging at near-zero cost.</p>
+<p style="margin:12px 0 0;"><a href="https://dailyaibrief.com/news/speakleash-releases-bielik-11b-v3-1-decision-models-nETfpOyj" style="color:#2563eb;">Source: AI Brief, reporting SpeakLeash / ACK Cyfronet AGH &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">07 &middot; Research</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Microsoft's Lazarus: seven reprogrammed neurons can hide a backdoor no eval would catch</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Microsoft Research disclosed Lazarus on November 10, a research attack showing how malicious changes to fewer than ten dormant model neurons can plant a concealed trigger in an AI agent — no conventional retraining required. In the reported Nemotron-Terminal-8B experiment, altering seven neurons reached at least 98.8% trigger-trajectory effectiveness on a held-out evaluation, while the model behaved normally on standard evaluations and only changed behavior when the trigger appeared during a tool-using task.</p>
+<p style="line-height:1.65;margin:0;">Microsoft also reports an AI-based checkpoint auditing method that flagged 91.4% of edited checkpoints with a 9.7% false-positive rate, and says it has not observed threat actors using this specific technique. Teams now download third-party weights and hand agents terminals and repositories — Lazarus makes the checkpoint itself a supply-chain risk, and standard evals can't clear it. Provenance, checkpoint signing, and diff review become mandatory, not nice-to-have.</p>
+<p style="margin:12px 0 0;"><a href="https://sxf.si/brief/" style="color:#2563eb;">Source: SXF Brief, reporting Microsoft Research &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">08 &middot; Agent Infrastructure</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">NVIDIA gives OpenShell to the CNCF: an open security runtime for autonomous agents</h3>
+<p style="line-height:1.65;margin:0 0 8px;">NVIDIA announced at KubeCon on November 10 that it is contributing OpenShell, an open-source runtime for securing and governing autonomous agents, to the Cloud Native Computing Foundation's Sandbox ecosystem.</p>
+<p style="line-height:1.65;margin:0;">As agents become services that execute tools and touch infrastructure, the question shifts from how the model reasons to what it is allowed to do in production. An open, inspectable governance layer beats a bespoke policy per agent framework — though a CNCF donation is not the same as ecosystem adoption or hardened production maturity.</p>
+<p style="margin:12px 0 0;"><a href="https://sxf.si/brief/" style="color:#2563eb;">Source: SXF Brief, reporting NVIDIA &rarr;</a></p>
+</section>
+
+<p style="font-size:13px;color:#64748b;line-height:1.6;margin:4px 0 0;">Left out today: no fresh rumor-only model launches surfaced in today's window. Anthropic's IPO roadshow continues — pricing reported for November 18 and first trade November 19, per CNBC sources, not Anthropic-confirmed. Yesterday's edition excluded unconfirmed reports of imminent GPT-6.2 and Grok 4.8 releases; Qwen4, rumor-only yesterday, is now a confirmed preview and leads today's edition.</p>
+
+<p style="text-align:center;font-style:italic;color:#64748b;margin:28px 0 0;">by Your Tech Sommelier</p>
+</div>
+</article>
+</div>
+
 <div id="aiTrendDailyNov11" class="edition ai-trends-daily" data-date="2026-11-11" aria-live="polite" hidden style="margin-top:22px;">
 <article style="background:#f8fafc;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
 <div style="max-width:860px;margin:0 auto;">
@@ -1648,86 +1733,6 @@
 <p style="line-height:1.65;margin:0 0 8px;">Kakao unveiled Kanana-2-v-decide on November 6, a multimodal decision model built for Korea-facing AI search, and made it available to download from Hugging Face under a license permitting commercial use.</p>
 <p style="line-height:1.65;margin:0;">Published benchmark detail is thin so far — the announcement is the news. It is another sign that the model race is fragmenting by task and language: Korea's big platform players are now shipping decision-oriented models for their own search surfaces, not just general chat models.</p>
 <p style="margin:12px 0 0;"><a href="https://superpowerdaily.com/signals/model-launches" style="color:#2563eb;">Source: Superpower Daily launch tracker &rarr;</a></p>
-</div>
-
-</section>
-
-<p style="text-align:center;font-style:italic;color:#64748b;margin:28px 0 0;">by Your Tech Sommelier</p>
-</div>
-</article>
-    </div>
-
-
-    <div id="aiTrendDailyNov06" class="edition ai-trends-daily" data-date="2026-11-06" aria-live="polite" hidden style="margin-top:22px;">
-<article style="background:#f8fafc;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
-<div style="max-width:860px;margin:0 auto;">
-<p style="text-align:center;letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:#64748b;margin:0 0 8px;">AI Trends Daily &middot; November 6, 2026</p>
-<h1 style="text-align:center;color:#0f172a;font-size:42px;line-height:1.05;margin:0 0 12px;">AI turns its tools on itself — hunting bugs, speeding its own research, and tuning its own inference</h1>
-<p style="text-align:center;font-size:17px;line-height:1.6;max-width:680px;margin:0 auto 20px;">Why it matters: The day's releases are all about AI optimizing AI's own pipeline. OpenAI shipped a cyber model that finds real flaws for about $1,300 an exploit, METR measured Anthropic improving its models roughly twice as fast with AI doing much of the work, and Together AI put agents in charge of tuning inference — while new models from Thinking Machines, Google and Ant Group keep getting cheaper, faster and more agentic.</p>
-
-<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#dc2626;font-weight:700;margin:0 0 10px;">Cover Story &middot; AI Security</p>
-<h2 style="color:#0f172a;font-size:30px;line-height:1.15;margin:0 0 12px;">GPT-6 Cyber ships to vetted security teams — 81 new Firefox flaws, a &ldquo;Critical&rdquo; rating, and $1,279 per root exploit</h2>
-<div style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;">
-<span style="background:#0f172a;color:#fff;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">48.5% on ExploitGym</span>
-<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">81 new Firefox flaws</span>
-<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">948 Linux exploits</span>
-<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">$20 / $100 per M tokens</span>
-</div>
-<p style="line-height:1.65;margin:0 0 10px;">OpenAI released GPT-6 Cyber on November 5, its new cybersecurity model, initially available through the API and Codex only to customers approved for its Daybreak Red programme for authorised security work. It is the model behind the Linux kernel research announced the day before: in a roughly 30-hour run it reproduced 1,724 vulnerabilities and produced working exploits for 948 of them, and it found 81 previously unknown high-severity flaws in Firefox that Mozilla has started fixing. The whole kernel run cost about $1.21 million in API credits — roughly $1,279 per exploit.</p>
-<p style="line-height:1.65;margin:0 0 10px;">The numbers mark a step change over the previous cyber model: 48.5% on ExploitGym versus 32.1% for GPT-5.6 Cyber, and 95% on RemoteExploitBench. OpenAI classifies GPT-6 Cyber as &ldquo;Critical&rdquo; for cybersecurity under its Preparedness Framework — its highest cyber tier, up from &ldquo;High&rdquo; — and access requires identity verification, single sign-on, multi-factor authentication, managed devices, hardware security keys and IP allowlisting. Staying inside authorised scope was a central design goal: in OpenAI's honeypot test it touched off-limits services in 0.07% of runs, versus 5.51% for the previous model.</p>
-<p style="line-height:1.65;margin:0;">The same capability is the reason other labs are withholding weights this week: a model this good at finding flaws is dual-use by definition, so OpenAI is gating it behind vetting rather than shipping it openly. All figures are vendor-reported and have not been independently reproduced.</p>
-<p style="margin:14px 0 0;"><a href="https://www.thehindubusinessline.com/info-tech/openais-gpt-6-cyber-finds-81-critical-firefox-flaws-develops-948-linux-exploits/article71672723.ece" style="color:#2563eb;">Source: The Hindu BusinessLine &rarr;</a> &middot; <a href="https://news-insight-ai.web.app/en/news/20261106_ai-news-daily" style="color:#2563eb;">AI News Briefing, Nov 6 &rarr;</a></p>
-</section>
-
-<section style="display:grid;gap:16px;">
-
-<div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);">
-<p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">02 &middot; AI R&amp;D</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">METR: Anthropic is improving its models about 1.9&times; faster — and AI is doing most of the accelerating</h3>
-<p style="line-height:1.65;margin:0 0 8px;">METR, the independent AI-evaluation nonprofit, published an assessment on November 5 after spending 11 weeks inside Anthropic (August 12 to October 29), with access to internal benchmark scores, training data and staff interviews. Its headline estimate: Anthropic is now improving its models' capabilities on well-specified tasks at about 1.9 times the rate it managed between March 2024 and October 2025 — roughly two years of historical progress in one year — with a 95% confidence interval of 1.5&times; to 2.8&times;, and it would not be surprised by a true value anywhere from 1.3&times; to 3&times;. METR attributes roughly 80% of the acceleration to AI itself, and says it is confident the jump was not caused by faster growth in training compute.</p>
-<p style="line-height:1.65;margin:0;">Read the caveats with the headline. Anthropic redacted a majority of the evidence METR found most informative, METR had no sample access to non-public models, and the report is explicit that AI is not yet making fully autonomous contributions to the most important parts of model training — researchers described only &ldquo;signs of life&rdquo;. It is a measured, heavily caveated 2&times;, not a claim that AI is now building itself.</p>
-<p style="margin:12px 0 0;"><a href="https://lesscarbs.net/news/metr-anthropic-ai-rd-acceleration-1-9x/" style="color:#2563eb;">Source: LessCarbs on the METR report &rarr;</a> &middot; <a href="https://cellcog.ai/blog/metr-anthropic-ai-rd-acceleration/" style="color:#2563eb;">CellCog &rarr;</a></p>
-</div>
-
-<div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);">
-<p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">03 &middot; MODEL RELEASES</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Thinking Machines' Inkling 2 Small: a 594B MoE trained in 68 hours, with Apache 2.0 weights promised next week</h3>
-<p style="line-height:1.65;margin:0 0 8px;">Thinking Machines Lab, founded by former OpenAI CTO Mira Murati, released Inkling 2 Small on November 5 — a multimodal mixture-of-experts model with 594 billion total parameters and 17 billion active per token, a 292-million-parameter vision encoder and up to a 1-million-token context, built for long-horizon autonomous work, coding and vision. It scores 31 on the Artificial Analysis Intelligence Index v5, up 18 points from the first-generation Inkling Small, and 86.3% on SWE-Bench Pro Hard (vendor-reported). Pricing on Tinker is $0.30 per million input tokens and $1.00 per million output tokens.</p>
-<p style="line-height:1.65;margin:0;">The weights are not out yet, and that is the story: at launch the model is closed, available only through Tinker for inference and fine-tuning. Full weights under Apache 2.0 are promised for next week, conditional on completed external safety testing and red-teaming — a deliberate staged-release gate the lab set out in July, since publishing weights is irreversible. One striking training detail: the run took 68 hours on GB300 GPUs over 12 trillion tokens.</p>
-<p style="margin:12px 0 0;"><a href="https://www.unite.ai/thinking-machines-lab-launches-inkling-2-small-with-open-weights-pending/" style="color:#2563eb;">Source: Unite.AI &rarr;</a> &middot; <a href="https://latent.space/p/ainews-inkling-2-small-17a-594b-trained-in-68-hours-on-12t-tokens-beating-muse-spark/" style="color:#2563eb;">Latent Space &rarr;</a></p>
-</div>
-
-<div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);">
-<p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">04 &middot; MULTIMODAL / VIDEO</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Gemini Omni 1.2 Flash: 15-second video clips, 30% cheaper</h3>
-<p style="line-height:1.65;margin:0 0 8px;">Google rolled out Gemini Omni 1.2 Flash on November 5, generally available in the Gemini API, Gemini for business, the Gemini app and AI Studio. The new video model generates native 15-second clips instead of the previous 10, follows reference images better, and supports multi-turn conversational editing — you can keep refining a clip across steps in the same conversation. It is also available on OpenRouter and Runway.</p>
-<p style="line-height:1.65;margin:0;">The price move matters as much as the length: 30% lower than Omni 1.1, at $0.07 per second for 720p video. Short-form video generation is becoming a commodity input, and Google is pricing it that way.</p>
-<p style="margin:12px 0 0;"><a href="https://www.eyssen.ai/blog/latest-ai-news-35/latest-ai-news-november-5-2026-484" style="color:#2563eb;">Source: eYssen AI, Nov 5 &rarr;</a> &middot; <a href="https://springtools.dev/ai-news/" style="color:#2563eb;">SpringTools lab announcements &rarr;</a></p>
-</div>
-
-<div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);">
-<p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">05 &middot; MODEL RELEASES</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Ant Group's Ling-3.2-flash: a 560B agent model that reads documents, images and 3D</h3>
-<p style="line-height:1.65;margin:0 0 8px;">Ant Group unveiled Ling-3.2-flash on November 5, an agent model with 560 billion total parameters and 25 billion active that understands images, documents and 3D — and, in demos, coordinates multiple agents to produce analysis, a presentation and a video, and drives Blender. The company says it beats Claude Opus 5 on several document- and image-understanding tests by its own measures.</p>
-<p style="line-height:1.65;margin:0;">That last claim is vendor-reported and not independently verified, so treat the ranking as Ant's own scoreboard. The more concrete signal is the product direction: another Chinese lab shipping a large agent-first model built to orchestrate tools and other agents, not just answer prompts.</p>
-<p style="margin:12px 0 0;"><a href="https://www.eyssen.ai/blog/latest-ai-news-35/latest-ai-news-november-5-2026-484" style="color:#2563eb;">Source: eYssen AI, Nov 5 &rarr;</a></p>
-</div>
-
-<div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);">
-<p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">06 &middot; PRODUCT</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Claude gets read-only access to your bank account — US beta, no moving money</h3>
-<p style="line-height:1.65;margin:0 0 8px;">Anthropic started rolling out Personal Finance in Claude on November 5, a beta feature that lets US users on Pro, Max and Ultra plans link bank and card accounts so Claude can answer questions about their money. The link is read-only: Claude can see balances and transactions, but cannot move funds.</p>
-<p style="line-height:1.65;margin:0;">It is a small feature with a large trust implication — the frontier labs are now asking for the keys to the most sensitive data people hold, starting with the safest possible permission. Watch whether read-only becomes the wedge for agentic payments next.</p>
-<p style="margin:12px 0 0;"><a href="https://news-insight-ai.web.app/en/news/20261106_ai-news-daily" style="color:#2563eb;">Source: AI News Briefing, Nov 6 &rarr;</a> &middot; <a href="https://www.eyssen.ai/blog/latest-ai-news-35/latest-ai-news-november-5-2026-484" style="color:#2563eb;">eYssen AI, Nov 5 &rarr;</a></p>
-</div>
-
-<div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);">
-<p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">07 &middot; INFERENCE INFRASTRUCTURE</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Together Compiler: agents that rewrite GPU code overnight, up to 2.6&times; faster inference</h3>
-<p style="line-height:1.65;margin:0 0 8px;">Together AI announced Together Compiler on November 4, the first piece of its &ldquo;Polymorphic Inference&rdquo; initiative: an agent-driven loop that continually re-optimises inference for changing models, traffic and hardware, instead of freezing a hand-tuned setup at launch. The company reports up to 2.6&times; higher tokens per second than the best open-source engine configurations on SemiAnalysis's InferenceX benchmark across Kimi K3, GLM 5.3, MiniMax M3.1 Flash and DeepSeek v4.1 Flash — and 1,111 tokens per second on MiniMax M3.1 Flash and 1,205 on DeepSeek v4.1 Flash at batch size 1. It says the system already serves trillions of tokens a day across its production fleet.</p>
-<p style="line-height:1.65;margin:0;">All throughput figures are Together's own and not independently validated, and the compiler itself is in limited beta for dedicated deployments. Still, the direction is the week's theme in infrastructure form: the tuning loop is becoming agentic, and the company says one customer cut median time-to-first-speech by nearly 50% overnight.</p>
-<p style="margin:12px 0 0;"><a href="https://www.businesswire.com/news/home/20261104879153/en/Together-AI-Launches-Together-Compiler-for-Continual-Optimization-of-Open-Source-AI-Models" style="color:#2563eb;">Source: Business Wire &rarr;</a> &middot; <a href="https://www.unite.ai/together-ai-brings-continuous-compilation-to-production-inference/" style="color:#2563eb;">Unite.AI &rarr;</a></p>
 </div>
 
 </section>
@@ -2819,7 +2824,7 @@
     }
 
     let currentIssue = '2026-11-12';
-    let currentAiIssue = '2026-11-11';
+    let currentAiIssue = '2026-11-12';
     let currentSection = 'hardware';
 
     function renderHardwareIssue(key) {
@@ -2878,12 +2883,12 @@
       const isWeeklyOct09 = key === 'weekly-2026-10-09';
       const isWeeklyOct02 = key === 'weekly-2026-10-02';
       const isWeeklySep25 = key === 'weekly-2026-09-25';
+      const isNov12 = key === '2026-11-12';
       const isNov11 = key === '2026-11-11';
       const isNov10 = key === '2026-11-10';
       const isNov09 = key === '2026-11-09';
       const isNov08 = key === '2026-11-08';
       const isNov07 = key === '2026-11-07';
-      const isNov06 = key === '2026-11-06';
       $('#aiTrendWeeklyNov11').hidden = !isWeeklyNov11;
       $('#aiTrendWeeklyNov06').hidden = !isWeeklyNov06;
       $('#aiTrendWeeklyOct30').hidden = !isWeeklyOct30;
@@ -2892,13 +2897,16 @@
       $('#aiTrendWeeklyOct09').hidden = !isWeeklyOct09;
       $('#aiTrendWeeklyOct02').hidden = !isWeeklyOct02;
       $('#aiTrendWeeklySep25').hidden = !isWeeklySep25;
+      $('#aiTrendDailyNov12').hidden = !isNov12;
       $('#aiTrendDailyNov11').hidden = !isNov11;
       $('#aiTrendDailyNov10').hidden = !isNov10;
       $('#aiTrendDailyNov09').hidden = !isNov09;
       $('#aiTrendDailyNov08').hidden = !isNov08;
       $('#aiTrendDailyNov07').hidden = !isNov07;
-      $('#aiTrendDailyNov06').hidden = !isNov06;
-      if (isNov11) {
+      if (isNov12) {
+        $('#issueDate').textContent = 'Thursday, November 12, 2026';
+        $('#storyCount').textContent = '8 stories';
+      } else if (isNov11) {
         $('#issueDate').textContent = 'Wednesday, November 11, 2026';
         $('#storyCount').textContent = '7 stories';
       } else if (isNov10) {
@@ -2912,9 +2920,6 @@
         $('#storyCount').textContent = '7 stories';
       } else if (isNov07) {
         $('#issueDate').textContent = 'Saturday, November 7, 2026';
-        $('#storyCount').textContent = '7 stories';
-      } else if (isNov06) {
-        $('#issueDate').textContent = 'Friday, November 6, 2026';
         $('#storyCount').textContent = '7 stories';
       } else if (isWeeklyNov11) {
         $('#issueDate').textContent = 'Week of November 11, 2026';
@@ -2971,12 +2976,12 @@
       $('#aiTrendWeeklyOct09').hidden = true;
       $('#aiTrendWeeklyOct02').hidden = true;
       $('#aiTrendWeeklySep25').hidden = true;
+      $('#aiTrendDailyNov12').hidden = true;
       $('#aiTrendDailyNov11').hidden = true;
       $('#aiTrendDailyNov10').hidden = true;
       $('#aiTrendDailyNov09').hidden = true;
       $('#aiTrendDailyNov08').hidden = true;
       $('#aiTrendDailyNov07').hidden = true;
-      $('#aiTrendDailyNov06').hidden = true;
       $('#navHardware').hidden = !isHardware;
       $('#navLlm').hidden = !isLlm;
       if (isLlm) {
