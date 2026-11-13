@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="light dark" />
   <link rel="icon" href="data:," />
-  <title>AI Hardware Daily — November 12, 2026</title>
+  <title>AI Hardware Daily — November 13, 2026</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650;8..60,750&display=swap');
 
@@ -668,6 +668,12 @@
 
 
 
+    /* November 13 AI Trends weekly edition (inline-styled; responsive overrides) */
+    @media (max-width: 640px) {
+      #aiTrendWeeklyNov13 h1 { font-size: 28px !important; }
+      #aiTrendWeeklyNov13 h2 { font-size: 21px !important; }
+    }
+
     /* November 11 AI Trends weekly edition (inline-styled; responsive overrides) */
     @media (max-width: 640px) {
       #aiTrendWeeklyNov11 h1 { font-size: 28px !important; }
@@ -684,6 +690,12 @@
     @media (max-width: 640px) {
       #aiTrendWeeklyOct30 h1 { font-size: 28px !important; }
       #aiTrendWeeklyOct30 h2 { font-size: 21px !important; }
+    }
+
+    /* November 13 AI Trends daily edition (inline-styled; responsive overrides) */
+    @media (max-width: 640px) {
+      #aiTrendDailyNov13 h1 { font-size: 28px !important; }
+      #aiTrendDailyNov13 h2 { font-size: 21px !important; }
     }
 
     /* November 12 AI Trends daily edition (inline-styled; responsive overrides) */
@@ -716,10 +728,10 @@
       #aiTrendDailyNov08 h2 { font-size: 21px !important; }
     }
 
-    /* November 7 AI Trends daily edition (inline-styled; responsive overrides) */
+    /* November 13 AI Hardware daily edition (inline-styled; responsive overrides) */
     @media (max-width: 640px) {
-      #aiTrendDailyNov07 h1 { font-size: 28px !important; }
-      #aiTrendDailyNov07 h2 { font-size: 21px !important; }
+      #hardwareDailyNov13 h1 { font-size: 28px !important; }
+      #hardwareDailyNov13 h2 { font-size: 21px !important; }
     }
 
     /* November 12 AI Hardware daily edition (inline-styled; responsive overrides) */
@@ -752,12 +764,6 @@
       #hardwareDailyNov08 h2 { font-size: 21px !important; }
     }
 
-    /* November 7 AI Hardware daily edition (inline-styled; responsive overrides) */
-    @media (max-width: 640px) {
-      #hardwareDailyNov07 h1 { font-size: 28px !important; }
-      #hardwareDailyNov07 h2 { font-size: 21px !important; }
-    }
-
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
     }
@@ -768,7 +774,7 @@
     <div class="issue-bar" aria-label="Section and edition navigation">
       <div class="issue-meta">
         <span class="signal" id="signalName">AI Trends</span>
-        <span id="issueDate">Thursday, November 12, 2026</span>
+        <span id="issueDate">Friday, November 13, 2026</span>
         <span id="storyCount">7 stories</span>
       </div>
       <div class="section-switcher" role="group" aria-label="Choose a section">
@@ -781,12 +787,12 @@
         <div class="edition-group">
           <span class="edition-label">Daily</span>
           <div class="archive-controls" role="group" aria-label="Choose a daily edition">
-            <button class="edition-btn" type="button" data-issue="2026-11-12" aria-pressed="true">Nov 12</button>
+            <button class="edition-btn" type="button" data-issue="2026-11-13" aria-pressed="true">Nov 13</button>
+            <button class="edition-btn" type="button" data-issue="2026-11-12" aria-pressed="false">Nov 12</button>
             <button class="edition-btn" type="button" data-issue="2026-11-11" aria-pressed="false">Nov 11</button>
             <button class="edition-btn" type="button" data-issue="2026-11-10" aria-pressed="false">Nov 10</button>
             <button class="edition-btn" type="button" data-issue="2026-11-09" aria-pressed="false">Nov 9</button>
             <button class="edition-btn" type="button" data-issue="2026-11-08" aria-pressed="false">Nov 8</button>
-            <button class="edition-btn" type="button" data-issue="2026-11-07" aria-pressed="false">Nov 7</button>
           </div>
         </div>
         <div class="edition-group weekly-group" aria-label="Choose a weekly summary">
@@ -797,6 +803,7 @@
       <nav class="archive-navigation" id="navLlm" aria-label="AI Trends edition navigation" hidden>
         <div class="edition-group weekly-group" aria-label="Choose an AI Trends weekly summary">
           <span class="edition-label">Weekly</span>
+          <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="weekly-2026-11-13" aria-pressed="false">Nov 13</button>
           <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="weekly-2026-11-11" aria-pressed="false">Nov 11</button>
           <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="weekly-2026-11-06" aria-pressed="false">Nov 6</button>
           <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="weekly-2026-10-30" aria-pressed="false">Oct 30</button>
@@ -809,12 +816,12 @@
         <div class="edition-group">
           <span class="edition-label">Daily</span>
           <div class="archive-controls" role="group" aria-label="Choose an AI Trends edition">
-            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-12" aria-pressed="true">Nov 12</button>
+            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-13" aria-pressed="true">Nov 13</button>
+            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-12" aria-pressed="false">Nov 12</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-11" aria-pressed="false">Nov 11</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-10" aria-pressed="false">Nov 10</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-09" aria-pressed="false">Nov 9</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-08" aria-pressed="false">Nov 8</button>
-            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-07" aria-pressed="false">Nov 7</button>
           </div>
         </div>
       </nav>
@@ -825,7 +832,85 @@
       <p>All information in this blog comes from publicly available sources and has not been independently verified. Please check the linked original sources before relying on it.</p>
     </aside>
 
-<div id="hardwareDailyNov12" aria-live="polite" style="background:#f8fafc;font-family:Georgia,'Times New Roman',serif;color:#334155;">
+<div id="hardwareDailyNov13" aria-live="polite" style="background:#f8fafc;font-family:Georgia,'Times New Roman',serif;color:#334155;">
+<div style="max-width:760px;margin:0 auto;padding:32px 20px 48px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#64748b;margin:0 0 8px;">AI Hardware Daily &nbsp;·&nbsp; Friday, November 13, 2026</p>
+<h1 style="font-size:40px;line-height:1.1;color:#0f172a;margin:0 0 16px;">NVIDIA's 33-year era ends in a day — and the buildout races on without pausing</h1>
+<p style="font-size:17px;line-height:1.6;margin:0 0 28px;"><strong style="color:#0f172a;">Why it matters:</strong> The day NVIDIA lost its founder, the market's verdict was swift: shares fell 4.3% while AMD and Broadcom rallied. But the rest of the day's news shows the buildout doesn't wait for any one company — AMD widened its accelerator line and claimed an inference edge over Vera Rubin, Intel opened its inference GPU to board partners, SpaceX proposed $74 billion of new AI campuses, and Cisco raised its AI infrastructure outlook. The AI hardware story is now a succession story and a demand story at once.</p>
+
+<!-- HERO -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#b45309;margin:0 0 10px;">Cover story</p>
+<h2 style="font-size:28px;line-height:1.2;color:#0f172a;margin:0 0 12px;">Jensen Huang resigns as NVIDIA CEO; CFO Colette Kress named interim chief</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">NVIDIA announced on November 12 that co-founder Jensen Huang has resigned as president, CEO and director, effective November 11, ending his 33-year run at the company he co-founded in 1993. The board appointed longtime CFO Colette Kress as interim CEO — she keeps the CFO role — and named Harvey C. Jones, a director since 1993, as the company's first board chair. The resignation caps a week that began with Huang acknowledging an extramarital affair and the board opening an independent investigation on November 8 into whether he was the target of a foreign intelligence operation; the company's release and Form 8-K gave no reason for the resignation and carried no statement from Huang.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The market reaction was brutal, then partial: shares opened about 13% lower, touched $148.80, and recovered to close at $166.19, down 4.34% on the day — while AMD gained 5.86% and Broadcom 5.54%. NVIDIA is down roughly 25% from its October peak, and the next test comes fast: quarterly results land Tuesday, November 17, now Kress's first earnings call. The political scrutiny is not over either — House Foreign Affairs Chair Brian Mast said Huang agreed to testify in a closed-door session before Thanksgiving, and Senate Banking Chair Tim Scott requested on November 12 that Huang and Commerce Secretary Howard Lutnick testify on December 3. No finding of wrongdoing has been announced, and the board says it has no reason to believe company secrets were compromised.</p>
+<div style="margin:4px 0 16px;">
+<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">−4.34% &nbsp;·&nbsp; Nov 12 close, $166.19</span>
+<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">33 years &nbsp;·&nbsp; Huang's tenure ends</span>
+<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">Nov 17 &nbsp;·&nbsp; Q3 earnings, Kress's first call</span>
+</div>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.usatoday.com/story/tech/2026/11/12/jensen-huang-nvidia-ceo-resigns-affair-investigation/92734431007/" style="color:#2563eb;">USA Today, November 12, 2026</a> · <a href="https://www.usatoday.com/story/news/politics/2026/11/12/trump-huang-congress-investigation-spy/92750160007/" style="color:#2563eb;">USA Today on Congress, November 12, 2026</a> · <a href="https://www.trendyvest.com/news/the-closing-edge-november-12-2026-nvidia-falls-as-chip-rivals-climb" style="color:#2563eb;">The Closing Edge, November 12, 2026</a></p>
+</div>
+
+<!-- 02 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">02</p>
+<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">AMD adds 288 GB MI450X and claims MI455X beats Vera Rubin on DeepSeek-R1 inference</h3>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">AMD announced on November 12 that it is expanding the Instinct MI400 Series with the new MI450X GPU, which offers 288 GB of HBM4 memory per GPU while keeping the same core compute, memory bandwidth and connectivity as the MI455X — giving Helios rack-scale customers a lower-memory option for workloads that don't need the MI455X's larger capacity. Alongside the launch, AMD published its own measured inference results for the MI455X on Helios: 21,333 tokens per second per GPU on DeepSeek-R1 in an MLPerf Inference Offline configuration, which AMD says is up to 30% higher throughput than NVIDIA's published Vera Rubin NVL72 result.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The 30% figure needs its label kept on: the test was run by AMD Performance Labs in October 2026, not by an independent body, and it is not an MLPerf-certified AMD submission or a finding that AMD's chips are faster on all workloads. Still, the timing was no accident — AMD announced on the same day NVIDIA's founder resigned, and its shares rose about 6%. AMD did not disclose pricing or a ship date for the MI450X. The practical story is the memory choice: Helios now offers two capacity tiers on the same rack architecture, and AMD is now openly benchmarking itself against Vera Rubin rather than waiting for the next MLPerf round.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://newsroom.amd.com/news/amd-advances-instinct-mi400-series-ai-scientific-computing/" style="color:#2563eb;">AMD Newsroom, November 12, 2026</a> · <a href="https://jbiznews.com/amd-introduces-new-ai-data-center-gpu-shares-rise-about-6/" style="color:#2563eb;">JBizNews, November 12, 2026</a></p>
+</div>
+
+<!-- 03 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">03</p>
+<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">SpaceX proposes more than $74 billion in AI supercomputing campuses in Texas and Arizona</h3>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">SpaceX outlined plans on November 12 for more than $74 billion of investment in two U.S. AI supercomputing campuses: over $24 billion in Texas and about $50 billion in Cochise County, Arizona. The campuses would join the largest wave of AI infrastructure proposals in American history, with the company positioning itself as a builder of compute capacity, not just a buyer of it.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The key word is "proposed": the figures are planned investment, not money spent or facilities built, and the projects will still need power, permits and customers before they become real capacity. Even so, the scale matters — a single private company proposing $74 billion of AI campuses on the same day NVIDIA's leadership changed hands underlines how the demand side of the AI buildout is now driven by more than the chipmakers themselves.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://teccurrent.com/articles/daily-brief-2026-11-13/" style="color:#2563eb;">Tech Current Daily Brief, November 13, 2026</a></p>
+</div>
+
+<!-- 04 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">04</p>
+<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">Reuters finds $3.2 billion of Chinese AI projects built around restricted NVIDIA chips</h3>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">A Reuters review published November 13 identified more than $3 billion — over 23 billion yuan — in Chinese computing projects built around NVIDIA's restricted processors, even as NVIDIA has said U.S. export controls effectively shut it out of China's AI data-center market. The review examined more than 150 procurement notices, investment plans, construction contracts and corporate disclosures, finding projects from coastal tech hubs to remote western provinces designed around H100, H200 and H800 processors. The figure covers planned investments and signed contracts as well as completed installations, including buildings and power systems — not spending on NVIDIA chips alone — and the documents do not establish whether the processors have been delivered.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The findings land the day after Huang's resignation, and Reuters notes the projects identified have not been linked to Megaspeed or the allegations involving Huang. But they sharpen the export-control question at the center of the probe: an IDC report cited by Reuters estimated NVIDIA still accounted for 34% of Chinese AI-accelerator shipments in the first half of 2026. The gap between the official market-exit narrative and the procurement record is now documented in dollars — and it is a question Kress will inherit as interim CEO.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://dukecountry.fm/2026/11/13/exclusive-huang-exit-and-us-scrutiny-imperil-3-billion-in-chinese-ai-projects-reliant-on-nvidia/" style="color:#2563eb;">Reuters via Duke Country, November 13, 2026</a> · <a href="https://935thelloyd.com/2026/11/13/chinas-3-billion-plus-pipeline-of-nvidia-powered-ai-data-centres/" style="color:#2563eb;">Reuters via 935 The Lloyd, November 13, 2026</a></p>
+</div>
+
+<!-- 05 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">05</p>
+<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">Intel will sell its Crescent Island inference GPU as a standalone chip — with up to 480 GB of memory</h3>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">At the Intel AI Summit Seoul 2026 on November 12, Intel said it will sell Crescent Island, its next-generation GPU for AI inference, as a standalone chip so server makers can build their own graphics cards with DRAM capacity tailored to specific workloads. Intel's own card design carries 160 GB of DRAM, but customers designing their own boards can raise that threefold, to as much as 480 GB, using LPDDR5X low-power memory. Intel said it has shipped evaluation samples to customers and has already run inference workloads on physical samples in its own labs within weeks of receiving them.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Intel also used the summit to outline an inference stack with SK Hynix — CPUs coordinating tasks, GPUs running models, shared memory easing the bottleneck — and launched the K-AI Full-Stack Alliance with 23 South Korean companies and institutions. And Intel forecast that global data-center CPU demand will grow fivefold over the next few years, surpassing a $200 billion market, as agentic AI spreads. The strategy is a bet that inference's bottleneck is memory capacity, not raw compute — and that an open, customizable GPU is how Intel gets back into the conversation.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://en.sedaily.com/business/2026/11/13/intel-to-sell-ai-inference-gpu-as-standalone-chip-tripling" style="color:#2563eb;">Seoul Economic Daily, November 13, 2026</a> · <a href="https://www.weex.com/news/detail/intel-and-sk-hynix-launch-solution-to-break-ai-inference-bottleneck-k1bnuo7ws7zr307p1u" style="color:#2563eb;">WEEX, November 12, 2026</a> · <a href="https://www.mt.co.kr/en/tech/2026/11/12/2026111215130967808" style="color:#2563eb;">MoneyToday, November 12, 2026</a></p>
+</div>
+
+<!-- 06 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">06</p>
+<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">SGLang Consortium unites NVIDIA, AMD, Intel, Google and Meta around open inference</h3>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">LMSYS Org launched the SGLang Consortium on November 12, with founding members NVIDIA, AMD, Intel, Google, Meta, Cloudflare, Modal and RadixArk, announced in the opening keynote of the inaugural SGLang Summit in San Francisco. The eight companies will work with SGLang's maintainers to shape the open-source inference engine's roadmap — covering frontier-model support, reasoning and multimodal workloads, distributed inference and hardware optimization — with each member designating a technical representative and meeting twice a year. SGLang already runs on hundreds of thousands of GPUs in production deployments at companies including Meta, Microsoft, Google and Amazon.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Intel moved the same day, announcing a collaboration with RadixArk to optimize SGLang for Intel CPUs, GPUs and accelerators, with Day-0 readiness for new models. The consortium is the clearest sign yet that inference software is becoming neutral ground: rivals that compete fiercely on silicon are agreeing to share the serving layer, because the inference market — Deloitte projects it will be roughly two-thirds of all AI compute by the end of 2026 — is now too big for any one vendor's stack to own.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.businesswire.com/news/home/20261112052367/en/LMSYS-Org-Launches-SGLang-Consortium-with-NVIDIA-AMD-Intel-Google-Meta-Cloudflare-Modal-and-RadixArk-to-Advance-Open-Source-AI-Inference" style="color:#2563eb;">Business Wire / LMSYS Org, November 12, 2026</a> · <a href="https://www.intc.com/news-events/press-releases/detail/1787/intel-radixark-collaborate-to-advance-open-ai-inference-on" style="color:#2563eb;">Intel, November 12, 2026</a></p>
+</div>
+
+<!-- 07 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">07</p>
+<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">Cisco and Applied Materials earnings: the AI infrastructure spend is still accelerating</h3>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Cisco reported first-quarter fiscal 2027 revenue of $18.52 billion on November 12, up 24% from a year earlier, and raised its forecast for hyperscaler AI infrastructure revenue to $9 billion for fiscal 2027, up from the $7.5 billion it forecast in August. Applied Materials reported fourth-quarter fiscal 2026 revenue of $10.41 billion, up 53%, as chipmakers keep buying the equipment needed to expand AI capacity. Together, the two reports — a networking supplier and a fab-equipment supplier — bracket the buildout from both ends.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The numbers matter because they are orders and revenue, not announcements: Cisco's raised AI forecast is a demand signal from the hyperscalers themselves, and Applied Materials' 53% jump is the equipment side of the same surge. On a day the market rotated hard away from NVIDIA and toward AMD, Intel and Broadcom, these results are a reminder that the rotation is about who supplies the buildout — not whether the buildout continues.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.trendyvest.com/news/the-closing-edge-november-12-2026-nvidia-falls-as-chip-rivals-climb" style="color:#2563eb;">The Closing Edge, November 12, 2026</a></p>
+</div>
+
+<p style="font-family:Georgia,'Times New Roman',serif;font-style:italic;text-align:center;color:#64748b;font-size:15px;margin:28px 0 0;">by Your Tech Sommelier</p>
+</div>
+</div>
+
+<div id="hardwareDailyNov12" aria-live="polite" hidden style="background:#f8fafc;font-family:Georgia,'Times New Roman',serif;color:#334155;">
 <div style="max-width:760px;margin:0 auto;padding:32px 20px 48px;">
 <p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#64748b;margin:0 0 8px;">AI Hardware Daily &nbsp;·&nbsp; Thursday, November 12, 2026</p>
 <h1 style="font-size:40px;line-height:1.1;color:#0f172a;margin:0 0 16px;">NVIDIA's board weighs ousting Huang — while the demand data says the AI buildout isn't slowing</h1>
@@ -1166,86 +1251,6 @@
         </div>
 
 
-        <div id="hardwareDailyNov07" aria-live="polite" hidden style="background:#f8fafc;font-family:Georgia,'Times New Roman',serif;color:#334155;">
-<div style="max-width:760px;margin:0 auto;padding:32px 20px 48px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#64748b;margin:0 0 8px;">AI Hardware Daily &nbsp;·&nbsp; November 7, 2026</p>
-<h1 style="font-size:40px;line-height:1.1;color:#0f172a;margin:0 0 16px;">Politics just repriced the AI buildout</h1>
-<p style="font-size:17px;line-height:1.6;margin:0 0 28px;"><strong style="color:#0f172a;">Why it matters:</strong> Thursday's rout was not about demand — it was about policy risk to data-center construction after the midterms, and Friday's bounce showed buyers still believe in the buildout. Underneath the whiplash, the week's plumbing kept advancing: TSMC is weighing a move into memory, Microsoft is consolidating its AI cloud on its own iron, and inference — at the edge and even at sea — is where the new money is going. (<a href="https://neuralwired.com/2026/11/07/ai-chip-stocks-plunge-midterms-nvidia/" style="color:#2563eb;">NeuralWired</a>)</p>
-
-<!-- HERO -->
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#b45309;margin:0 0 10px;">Cover story</p>
-<h2 style="font-size:28px;line-height:1.2;color:#0f172a;margin:0 0 12px;">The AI trade's worst day since 2020 — then a Friday fightback</h2>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Two days after the midterms, AI hardware stocks suffered their worst session since March 2020. On Thursday, November 5, the Philadelphia Semiconductor Index fell 12.3% in a single day. NVIDIA dropped 9.3% to $181.60, erasing $447.5 billion of market value; AMD fell 17.3%, Micron 17.5%, and SanDisk 22.3%. The Nasdaq slid 5.5% into correction territory and the S&amp;P 500 fell 4.4%, its worst day since April 2025, wiping roughly $2.5 trillion from US markets. Chip stocks alone lost about $1.45 trillion in one session.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The trigger was political, not fundamental: Democrats swept the midterms, and many winners pledged to slow AI data-center construction, while Texas governor-elect Gina Hinojosa plans tighter data-center rules in the state. The rout went global overnight — Korea's KOSPI was halted on Friday after an 8.6% plunge, with Samsung down 10% and SK hynix down 11.7% at the halt, a combined $166 billion of value gone. Then Wall Street bought the dip: on Friday, AMD jumped 11.0%, Intel gained 7.7%, Micron added 5.1%, and the Nasdaq rose 1.1%, recovering roughly a third of Thursday's losses. Analysts warn the relief may be temporary, with October CPI due Tuesday, November 10, and NVIDIA's earnings on November 18 as the next tests of whether AI demand is intact.</p>
-<div style="margin:4px 0 16px;">
-<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">−12.3% &nbsp;·&nbsp; SOX, Nov 5</span>
-<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">−$447.5B &nbsp;·&nbsp; NVIDIA in one day</span>
-<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">+11.0% &nbsp;·&nbsp; AMD's Friday rebound</span>
-<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">$1.45T &nbsp;·&nbsp; chip value lost Nov 5</span>
-</div>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://neuralwired.com/2026/11/07/ai-chip-stocks-plunge-midterms-nvidia/" style="color:#2563eb;">NeuralWired, November 7, 2026</a> · <a href="https://thejoai.com/ai-news/nvidia-loses-4475b-as-chip-stocks-plunge-after-us-elections/" style="color:#2563eb;">THEJO AI, November 7, 2026</a> · <a href="https://fourweekmba.com/ai-kospi-halted-after-8-6-plunge-samsung-sk-hynix-lose-166b/" style="color:#2563eb;">FourWeekMBA, November 6, 2026</a></p>
-</div>
-
-<!-- 02 -->
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">02</p>
-<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">TSMC weighs making 3D DRAM at NVIDIA's request</h3>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">TSMC is considering producing 3D DRAM — memory chips that stack storage cells vertically — at the request of NVIDIA, The Information reported on November 6. The move would put the world's largest contract chipmaker into direct competition with Samsung, SK hynix and Micron for the first time. TSMC vice president Hsu Kuo-chin, who oversees advanced packaging, is reportedly leading the assessment, weighing two routes: building a new fab or acquiring and converting an existing plant.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Nothing is committed — no location, budget, wafer target, product or production date — and TSMC declined to comment on market rumors. But the logic is the memory shortage: Micron expects tight supply to last until 2028, and prices have roughly doubled. It extends a pattern from October, when NVIDIA asked the memory trio to build the base dies of its next-generation custom HBM on TSMC's 3nm process. The foundry is steadily becoming a memory player — a redrawing of the shortage map, if it happens.</p>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://aiagentupdate.com/post/tsmc-3d-dram-nvidia-2026-11-07" style="color:#2563eb;">The Information, via AI Agent Update, November 6–7, 2026</a></p>
-</div>
-
-<!-- 03 -->
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">03</p>
-<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">Microsoft cuts its Oracle AI cloud lease — the old GPUs no longer fit</h3>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Microsoft has begun phasing out its AI cloud agreement with Oracle, Bloomberg reported on November 6, because the rented hardware relies on older-generation NVIDIA GPUs that no longer meet its specifications. The lease powered Microsoft's AI-enhanced Bing services since 2023; as its models grew more sophisticated, the performance gap with its own proprietary GPU clusters became untenable, according to a source cited by Bloomberg.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The decision marks a deliberate pivot toward Microsoft's own vertically integrated data-center infrastructure — a sign that hyperscalers now treat GPU generations as a strategic asset, not a commodity to rent. Oracle's shares fell more than 4% to a two-year low of $112.51 on the news, though Oracle maintains demand for its AI infrastructure remains robust elsewhere.</p>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://wsnext.com/311ae00-Cloud-computing-Artificial-intelligence/" style="color:#2563eb;">Bloomberg, via WSNext, November 6, 2026</a></p>
-</div>
-
-<!-- 04 -->
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">04</p>
-<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">Moffett AI raises ~$137.5M to scale sparse inference chips</h3>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Chinese sparse-computing chip developer Moffett AI has raised nearly $137.5 million in a Series C extension announced in November 2026, its second raise of similar size in five months — a two-round total near $275 million. Investors include Renai Capital and Haitang Fund. The company builds inference chips through a combined algorithm–software–hardware design aimed at mixture-of-experts workloads, where computation is increasingly conditional and sparse.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The funds will upgrade its chip stack, fund next-generation research, and build a sparse-computing industry–academia alliance. In a test with Peking University's Shanghai research institute, Moffett's sparse technology lifted inference throughput by up to 2.88× and compressed models by up to 7.64× with little accuracy loss. A new board, the SP200, is due before year-end. It is one of several large rounds flowing into Chinese inference-chip startups as investors bet on domestic alternatives to foreign silicon.</p>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://dealroom.co/news/170064-moffett-ai-raises-150m-series-c-extension-for-sparse-ai-chips/" style="color:#2563eb;">Dealroom, November 5, 2026</a></p>
-</div>
-
-<!-- 05 -->
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">05</p>
-<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">Panthalassa opens a $140M factory to build wave-powered AI nodes</h3>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Panthalassa, the Portland startup that wants to park AI computers on the open ocean, cut the ribbon on a factory in Vancouver, Washington, on November 6, Oregon Public Broadcasting reported. The plant will build the company's nodes — self-driving buoys designed to turn wave motion into electricity for floating AI computation hubs — moving from one-off builds to assembly-line manufacturing in a former Kaiser Shipyard warehouse.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The company has raised more than $300 million in 2026, and the factory is expected to employ about 50 people when fully staffed. What remains unproven is the core proposition: Panthalassa has not published power output per node, production capacity, or a deployment schedule — so this is a manufacturing bet on ocean compute before the economics are public. Still, it is the most literal answer yet to the data-center power crunch: generate the electricity where the compute floats.</p>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://tech-insider.org/panthalassa-vancouver-wave-powered-ai-node-factory-300m-50-jobs-2026/" style="color:#2563eb;">Oregon Public Broadcasting, via Tech Insider, November 6–7, 2026</a></p>
-</div>
-
-<!-- 06 -->
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">06</p>
-<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">Intel China: AI compute's center of gravity is shifting to inference and the edge</h3>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Intel China chairman Wang Zhicong said at the China International Import Expo on November 5 that the center of gravity for AI computing is shifting from training to inference, with a larger share of compute deployed on the inference and edge sides over the next five years — driven by enterprises' and individuals' need to keep private data local, pushing hybrid deployment. Intel exhibited 18A-process products, the Xeon 6+ data-center processor, and AI Agent PCs at the show.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Wang also disclosed that Intel's "Green Computing Pod" concept — a standardized containerized data-center design with an 8–12 week customization cycle that can be running within a week of arriving on site — has completed its technical architecture, with a deployable plan expected in the first half of 2027. It is Intel's pitch for the inference era: smaller, faster-to-deploy compute, closer to where the data lives.</p>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://finance.biggo.com/news/925db8ed-e89b-46cb-81d9-407ae3d17df4" style="color:#2563eb;">BigGo Finance, November 6, 2026</a></p>
-</div>
-
-<!-- 07 -->
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">07</p>
-<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">A 180-TOPS Panther Lake board the size of a credit card stack</h3>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">AAEON has launched the PICO-PTH4, which it calls the world's first 2.5-inch Pico-ITX board powered by an Intel Panther Lake processor — up to the Core Ultra X7 358H, delivering up to 180 TOPS of combined CPU+GPU+NPU AI performance (with a 50-TOPS Intel AI Boost NPU) in a 100×72mm form factor. The board is now in mass production, with samples from $3,065 for the top configuration.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">It is a small but telling data point for the edge-AI story Intel is pushing: serious on-device inference performance is now available in a board smaller than a smartphone, aimed at industrial and embedded deployments where the cloud is not an option. Panther Lake is Intel's 18A client silicon, so the board is also an early showcase for the process node Intel needs to prove.</p>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.cnx-software.com/2026/11/06/aaeon-pico-pth4-pico-itx-board-is-powered-by-an-intel-panther-lake-soc-up-to-the-core-ultra-x7-358h/" style="color:#2563eb;">CNX Software, November 6, 2026</a></p>
-</div>
-
-<p style="font-family:Georgia,'Times New Roman',serif;font-style:italic;text-align:center;color:#64748b;font-size:15px;margin:28px 0 0;">by Your Tech Sommelier</p>
-</div>
-        </div>
-
-
     <article id="issue" aria-live="polite" hidden>
       <section class="hero" aria-labelledby="heroTitle">
         <div class="hero-copy">
@@ -1284,6 +1289,81 @@
     </article>
 
 
+
+<div id="aiTrendDailyNov13" class="edition ai-trends-daily" data-date="2026-11-13" aria-live="polite" hidden style="margin-top:22px;">
+<article style="background:#f8fafc;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
+<div style="max-width:860px;margin:0 auto;">
+<p style="text-align:center;letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:#64748b;margin:0 0 8px;">AI Trends Daily &middot; November 13, 2026</p>
+<h1 style="text-align:center;color:#0f172a;font-size:42px;line-height:1.05;margin:0 0 12px;">The efficiency era meets the accountability era</h1>
+<p style="text-align:center;font-size:17px;line-height:1.6;max-width:680px;margin:0 auto 20px;">Why it matters: November 12 was a study in contrasts. Google shipped Gemini 4 Hydrogen, a faster workhorse priced to be the default, while a 145-billion-parameter model landed on a single laptop GPU and a 45-language model squeezed into 600 million active parameters per token. The same day, four nonprofits asked a California court to freeze frontier AI development entirely, and Anthropic's IPO book filled up so fast that grey-market trading is pricing it a third above its range. The models keep getting smaller and cheaper — and the argument over who gets to build them keeps getting bigger.</p>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#dc2626;font-weight:700;margin:0 0 10px;">Cover Story &middot; Model Release</p>
+<h2 style="color:#0f172a;font-size:30px;line-height:1.15;margin:0 0 12px;">Gemini 4 Hydrogen: Google's new default workhorse is faster, cheaper per token — and it picks its own siblings</h2>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;">
+<span style="background:#0f172a;color:#fff;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">$1.50 / $7.50 per 1M tokens</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">1M-token context, flat pricing</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">51 on the Artificial Analysis Index</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">Replaces Gemini 3.8 Flash as default</span>
+</div>
+<p style="line-height:1.65;margin:0 0 10px;">Google DeepMind launched Gemini 4 Hydrogen on November 12, the fast, execution-oriented member of the Gemini 4 family, rolling out globally across Google AI Studio, the Gemini API, Gemini for business, the Gemini app, Google Search, and Antigravity for paid subscribers. It officially replaces Gemini 3.8 Flash as the default general-purpose model, priced flat at $1.50 per million input tokens and $7.50 per million output tokens across the full 1-million-token context window, with four thinking levels — low, medium, high, and a new xhigh. Google says it scores 51 on the Artificial Analysis Intelligence Index at its default high setting, against 50 for the deeper-reasoning Argon, and 54 at xhigh.</p>
+<p style="line-height:1.65;margin:0 0 10px;">The more consequential launch may be Orchestrator, a new capability in Google Antigravity that dynamically switches between Gemini models mid-task, handing heavy reasoning to Carbon or Argon and routine execution back to Hydrogen. Google also claims tasks finish 2.5 times faster than on 3.8 Flash and Terminal-Bench 4.1 scores up to 57%, versus 18.2% for 3.8 Flash — its own figures, not independently reproduced, and one independent check found the 2.5x speed claim does not hold up outside Google's harness, though it confirmed the index score.</p>
+<p style="line-height:1.65;margin:0;">Hydrogen is the economics story of the Gemini 4 family: the flagship gets the headlines, but the workhorse decides what most developers actually pay. Flat pricing across a million-token window, no long-context surcharge, and automatic model-switching push the agent stack toward routing by cost as much as by capability.</p>
+<p style="margin:12px 0 0;"><a href="https://aiagentupdate.com/post/gemini-4-hydrogen-2026-11-13" style="color:#2563eb;">Source: AI Agent Update, reporting Google DeepMind &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">02 &middot; Open-Weights Models</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Edge0-145B: a 145-billion-parameter open model that runs on one consumer GPU</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Edge0 open-sourced Edge0-145B and Edge0-120B on November 12, calling the 145B model the first open 145-billion-parameter system aimed at personal-computer agents rather than datacenter serving. The latent sparse mixture-of-experts design activates about 10.12 billion parameters per token — 10 routed experts plus one shared expert across 48 layers — and Edge0 reports a 29 GB peak memory footprint and 80+ tokens per second on a single consumer NVIDIA GPU, with checkpoints in Q3_K and NVFP4 on Hugging Face.</p>
+<p style="line-height:1.65;margin:0;">The release ships as a stack, not just weights: edge0-infer v0.2.0 with serve, chat, and an OpenAI-compatible local server, plus the edge0-strata engine, requiring CUDA 13 and 16 GB+ VRAM. The benchmark tables are Edge0's own internal evals, and the weights carry the Edge0 Community Model License 1.0 on top of the Qwen license, since the model is built on Qwen3.8-Flash-Next — read both before commercial use. The bet is that predictive expert loading, not full-weight residency, is what finally brings frontier-scale agents onto a laptop.</p>
+<p style="margin:12px 0 0;"><a href="https://explainx.ai/blog/edge0-145b-open-on-device-laptop-agent-model-november-2026" style="color:#2563eb;">Source: ExplainX, reporting Edge0 &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">03 &middot; Model Release</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Translated's Lara Mini: 45 languages, 600 million active parameters</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Translated announced Lara Mini on November 12, a research model trained from scratch on 6 trillion tokens spanning English and 44 other languages, including all 24 official EU languages. The 7.2-billion-parameter mixture-of-experts system activates only 600 million parameters per token — four of 128 routed experts plus one shared expert — and Translated evaluated it against 56 other open base models on 26 English, multilingual, math, and code benchmarks, ranking first in its class on multilingual understanding (56.7) and math (59.9), second on English (66.4), and fifth on code (45.1).</p>
+<p style="line-height:1.65;margin:0;">The artifact is a text-continuation base model, not an instruction-tuned chat system, with no safety tuning; weights access is gated and reviewed per request, licensed CC BY-NC-SA 4.0 for non-commercial research, with code and tokenizer under Apache 2.0. Lara Mini is the base for the next Lara Translate app, where offline on-phone translation is the intended use. A small, sparse, genuinely multilingual base model is exactly the kind of checkpoint the on-device translation wave has been waiting for.</p>
+<p style="margin:12px 0 0;"><a href="https://www.unite.ai/translated-releases-lara-mini-a-45-language-research-model/" style="color:#2563eb;">Source: Unite.AI, reporting Translated &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">04 &middot; Policy &amp; Law</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Four nonprofits sue five AI labs, asking a court to freeze frontier AI development</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Four nonprofit groups — the Irreplaceable Education Fund, Public Citizen, the Heat Initiative, and the Alliance for Secure AI — sued Anthropic, Google, Meta, OpenAI, and SpaceX's AI division on November 12 in the Superior Court of California for San Francisco County, asking a judge to bar the labs from developing or deploying any system more capable than their most capable systems as of November 12, 2026. The single claim rests on California's Unfair Competition Law, and the plaintiffs seek an emergency injunction freezing training and deployment until the companies can prove the technology is under human control.</p>
+<p style="line-height:1.65;margin:0;">The complaint leans heavily on the labs' own incident reports and leaders' warnings — including Dario Amodei's 2025 estimate of a 25% chance AI development leads to disastrous outcomes, a July 21 OpenAI incident report, and a METR/Redwood investigation finding roughly 1,200 agents exchanging 70,000+ messages on an unsanctioned board. No court has ever ordered an AI developer to stop building models, standing is an early hurdle, and no hearing date has been set; none of the five companies responded to requests for comment. The case arrives as Anthropic prepares its Nasdaq listing — and as a Florida suit against OpenAI on related grounds is still pending.</p>
+<p style="margin:12px 0 0;"><a href="https://mlq.ai/news/nonprofits-sue-openai-google-anthropic-meta-and-spacexs-ai-unit-to-freeze-frontier-ai-development/" style="color:#2563eb;">Source: MLQ.ai, reporting the San Francisco filing &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">05 &middot; Open Data</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Tether's Genesis III: an open synthetic STEM dataset to train science-specialist models</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Tether introduced Genesis III, an open synthetic STEM dataset designed to train specialized AI models focused on science, technology, engineering, and mathematics, building on QVAC Genesis I and II, released in October and December 2025. The accompanying paper was accepted and presented at the 2026 Conference on Language Modelling (COLM).</p>
+<p style="line-height:1.65;margin:0;">Synthetic data is quietly becoming the moat for specialist models: where general web text is exhausted or legally fraught, curated synthetic STEM corpora let smaller teams train domain experts without frontier-scale data pipelines. Genesis III extends Tether's QVAC line from general capability toward science-first training data — a bet that the next specialist breakthroughs come from better data, not bigger models.</p>
+<p style="margin:12px 0 0;"><a href="https://www.artiverse.ca/three-ai-releases-push-smaller-models-toward-bigger-possibilities/" style="color:#2563eb;">Source: Artiverse, reporting Tether QVAC &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">06 &middot; Markets</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Anthropic's IPO book is already oversubscribed — and the grey market is pricing it a third above the range</h3>
+<p style="line-height:1.65;margin:0 0 8px;">A day into the roadshow, Bloomberg reports Anthropic's IPO is oversubscribed multiple times, and a pre-IPO perpetual contract was marked near $105 — about 35% above the $78 top of the filed $70–$78 range for 825 million Class A shares. The filing implies up to about $1.02 trillion on shares outstanding, or up to about $1.4 trillion fully diluted, with a concurrent $26 billion private placement from Google, Nvidia, AMD, Broadcom, Micron, Microsoft, and TSMC. Pricing is expected November 18 and first trading November 19 as ANT, per CNBC sources — Anthropic itself has not confirmed a date.</p>
+<p style="line-height:1.65;margin:0;">A live-streamed roadshow event with CEO Dario Amodei and JPMorgan's Jamie Dimon could come as early as today, November 13, per Bloomberg. Demand this hot, this early, sets up the classic tension: price inside the range and leave money on the table, or raise the range and invite the scrutiny that comes with a $1.4 trillion debut valuation.</p>
+<p style="margin:12px 0 0;"><a href="https://metamask.com/en-GB/news/anthropic-ipo-price-range-roadshow-pre-ipo-perp-2026" style="color:#2563eb;">Source: MetaMask Alpha, reporting Bloomberg and the S-1/A filing &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">07 &middot; Research</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">MIT FutureTech's roadmap: how organizations should actually mitigate AI risk</h3>
+<p style="line-height:1.65;margin:0 0 8px;">MIT FutureTech, working with the University of Queensland and more than 40 collaborators including IBM Research and Stanford University, released a roadmap for organizations seeking to mitigate AI risks; the MIT press release is dated November 12, 2026.</p>
+<p style="line-height:1.65;margin:0;">It lands the same day a lawsuit asks a court to freeze frontier development — the two responses to the same anxiety, one legal and one operational. A collaboratively built risk-mitigation playbook from MIT, IBM Research, and Stanford is the kind of document compliance teams will actually cite when the board asks what "responsible AI" means in practice.</p>
+<p style="margin:12px 0 0;"><a href="https://www.artiverse.ca/three-ai-releases-push-smaller-models-toward-bigger-possibilities/" style="color:#2563eb;">Source: Artiverse, reporting MIT FutureTech &rarr;</a></p>
+</section>
+
+<p style="text-align:center;font-style:italic;color:#64748b;margin:28px 0 0;">by Your Tech Sommelier</p>
+</div>
+</article>
+</div>
 
 <div id="aiTrendDailyNov12" class="edition ai-trends-daily" data-date="2026-11-12" aria-live="polite" hidden style="margin-top:22px;">
 <article style="background:#f8fafc;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
@@ -1663,79 +1743,101 @@
 </article>
     </div>
 
-    <div id="aiTrendDailyNov07" class="edition ai-trends-daily" data-date="2026-11-07" aria-live="polite" hidden style="margin-top:22px;">
+    <div id="aiTrendWeeklyNov13" data-edition-date="2026-11-13" aria-live="polite" hidden style="margin-top:22px;">
 <article style="background:#f8fafc;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
 <div style="max-width:860px;margin:0 auto;">
-<p style="text-align:center;letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:#64748b;margin:0 0 8px;">AI Trends Daily &middot; November 7, 2026</p>
-<h1 style="text-align:center;color:#0f172a;font-size:42px;line-height:1.05;margin:0 0 12px;">Values, scoreboards, and agents that never clock out</h1>
-<p style="text-align:center;font-size:17px;line-height:1.6;max-width:680px;margin:0 auto 20px;">Why it matters: Friday's news was alignment in both senses of the word — what models believe, and how they measure up. Nous retuned a Chinese open model toward Western values and published the receipts; the two big coding scoreboards refreshed with Claude on top and open weights closing in; and the agent race moved from answering prompts to owning ongoing work, with Perplexity's always-on Teammates, Meta's talking Muse avatar, and Airbnb's 2027 travel agent.</p>
+<p style="text-align:center;letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:#64748b;margin:0 0 8px;">AI Trends Weekly &middot; November 13, 2026</p>
+<h1 style="text-align:center;color:#0f172a;font-size:42px;line-height:1.05;margin:0 0 12px;">The frontier got cheaper, faster — and lost its most famous CEO</h1>
+<p style="text-align:center;font-size:17px;line-height:1.6;max-width:680px;margin:0 auto 20px;">Why it matters: The frontier labs cut prices while setting records this week — Anthropic&rsquo;s Claude Fable 5.2 is 20% cheaper and 30% faster than its predecessor, and Google split Gemini 4 into a heavyweight (Carbon) and a workhorse (Hydrogen) at Flash-level pricing. Alibaba&rsquo;s Qwen4 arrived as a 14-day preview with no benchmarks, no price, and a retirement date. And the week ended with the biggest leadership shock in AI history: Jensen Huang resigned from NVIDIA. Meanwhile the benchmarks themselves came under scrutiny, as ARC-AGI-3 harness gaps of 16&ndash;34 points showed headline scores now depend as much on test setup as on the model.</p>
 
 <section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#dc2626;font-weight:700;margin:0 0 10px;">Cover Story &middot; Open Weights / Alignment</p>
-<h2 style="color:#0f172a;font-size:30px;line-height:1.15;margin:0 0 12px;">Nous retunes Alibaba's Qwen to Western values — state-line answers fall from 22% to 0.9%</h2>
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#dc2626;font-weight:700;margin:0 0 10px;">Cover Story &middot; Model Release</p>
+<h2 style="color:#0f172a;font-size:30px;line-height:1.15;margin:0 0 12px;">Claude Fable 5.2 takes the crown — 20% cheaper, 30% faster, and a new record on ARC-AGI-3</h2>
 <div style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;">
-<span style="background:#0f172a;color:#fff;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">22% &rarr; 0.9% flagged answers</span>
-<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">803-prompt eval</span>
-<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">53M tokens of fine-tuning</span>
-<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">Apache 2.0, weights + data + eval open</span>
+<span style="background:#0f172a;color:#fff;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">$8 / $40 per M tokens</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">97.7% on ARC-AGI-3</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">New Epoch Capabilities Index record</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">1M-token context</span>
 </div>
-<p style="line-height:1.65;margin:0 0 10px;">Nous Research released Arete-27B on November 6, a post-trained version of Alibaba's open-weights Qwen3.8-27B, trained, in Nous's own words, &ldquo;to reinforce Western values on a Chinese-trained model.&rdquo; Before training, the base model adopted the Chinese state's account as its own in 22% of answers on Nous's 803-prompt test of politically sensitive questions; after about 53 million tokens of supervised fine-tuning, the same model did so in 0.9%. Its fact score rose from 2.32 to 2.98 out of 5, and answers scoring zero on facts fell from 359 to 216 of 803.</p>
-<p style="line-height:1.65;margin:0 0 10px;">The method is deliberately plain: supervised fine-tuning only, over two epochs, with Thinking Machines' Inkling as teacher — &ldquo;no RL, no preference optimisation, and no architectural modification,&rdquo; per the model card. Everything is published: the weights on Hugging Face under Apache 2.0, the training data with teacher and base-model answers side by side, and the full eval with its judge prompt and grading scripts, so anyone can rerun the measurement on any model.</p>
-<p style="line-height:1.65;margin:0 0 10px;">Read the numbers with their caveats. The results are self-reported, graded by an LLM judge (Grok 4.7), and the decoding settings differed across models — Arete and the base Qwen ran at temperature 0, comparison models at 0.6 — and no outside group has reproduced them yet. But the direction of travel is the story: open weights now carry a measurable, retunable political stance, and Nous has made the retuning itself open and auditable. In its comparison table, the three Chinese-developed models scored 15–22% on the flagged measure while every other model sat under 1% — a gap this release exists to close.</p>
-<p style="margin:12px 0 0;"><a href="https://news.sulat.com/2026/11/07/nous-research-arete-27b-qwen-values-fine-tune/" style="color:#2563eb;">Source: Sulat News &rarr;</a> &middot; <a href="https://fourweekmba.com/ai-nous-retunes-alibabas-qwen-cuts-state-line-answers-to-0-9/" style="color:#2563eb;">FourWeekMBA &rarr;</a></p>
+<p style="line-height:1.65;margin:0 0 10px;">Anthropic released Claude Fable 5.2 and its safeguarded twin Claude Mythos 5.2 on November 9 — one underlying model, two products. Fable 5.2 is the public version at $8 per million input tokens and $40 output, 20% below Fable 5.1, with outputs about 30% faster and a 1-million-token context. Anthropic reports 93.0% on SWE-bench Pro and 41.3% on the Remote Labor Index, more than double Opus 5.5&rsquo;s 21.3%. Mythos 5.2 is the same model with looser cyber and bio safeguards, available only to verified organizations.</p>
+<p style="line-height:1.65;margin:0 0 10px;">The independent checks landed fast: Epoch AI reported Fable 5.2 set a new record on its Capabilities Index in pre-launch testing, and ARC Prize verified 97.7% on ARC-AGI-3 with the provider adapter harness — and 81.2% with the standard harness, itself a new high. The honest footnote: Anthropic still recommends Opus 5.5 as the daily driver for most work, and Opus 5.5 still wins some benchmarks. All benchmark figures are vendor- or lab-reported unless noted.</p>
+<p style="line-height:1.65;margin:0;">Fable 5.2 arrived the same week Anthropic&rsquo;s IPO roadshow opened (see story 09) — a flagship price cut and a record-setting model, launched days before the largest AI debut in history.</p>
+<p style="margin:12px 0 0;"><a href="https://www.laurenceo.com/intelligence/topics/frontier-ai-models" style="color:#2563eb;">Source: Laurenceo Intelligence &rarr;</a> &middot; <a href="https://llm-stats.com/ai-news" style="color:#2563eb;">LLM Stats &rarr;</a></p>
 </section>
 
-<section style="display:grid;gap:16px;">
-
-<div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);">
-<p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">02 &middot; Benchmarks</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">The scoreboards refresh: Claude tops Terminal-Bench 4.0 and SWE-bench Verified, open weights close in</h3>
-<p style="line-height:1.65;margin:0 0 8px;">Terminal-Bench 4.0's public board, updated November 6, is led by Claude Opus 5.5 at 64.8% &plusmn;3.1 across 66 professional terminal tasks, with Claude Sonnet 5.5 second at 61.8% — the first time Claude models hold the top two public-board spots. Kimi K3.1 Pro scored 65.7% in provider-reported runs, and GLM-5.3 is the top open-weight model at 41.8%, with the cheapest board run at $0.1k. On the SWE-bench Verified leaderboard (Vals AI, read November 6), Claude Opus 5 leads at 97.0%, ahead of DeepSeek V4 Pro at 96.4% — which cost just $0.10 per test — and GPT-5.6 Sol at 96.2%.</p>
-<p style="line-height:1.65;margin:0;">The two boards are not one ranking: public-board rows, provider reports, and independent re-runs use different harnesses, and the Terminal-Bench page warns against merging them. The pattern across both is the same, though — frontier models are converging near the top of coding benchmarks while open-weight models win on cost per test.</p>
-<p style="margin:12px 0 0;"><a href="https://codingfleet.com/blog/terminal-bench-4-leaderboard-2026/" style="color:#2563eb;">Source: CodingFleet / Terminal-Bench 4.0 &rarr;</a> &middot; <a href="https://llmbenchmark.ai/benchmarks/vals-swe-bench" style="color:#2563eb;">Vals AI SWE-bench Verified &rarr;</a></p>
-</div>
-
-<div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);">
-<p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">03 &middot; Model Distribution</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Kimi K3.1 Pro Highspeed lands on Amazon Bedrock</h3>
-<p style="line-height:1.65;margin:0 0 8px;">AWS announced on November 6 that Moonshot AI's Kimi K3.1 Pro (Highspeed) is available on Amazon Bedrock, via cross-Region inference everywhere Bedrock operates. The model is an open-weight, natively multimodal agentic model with a 1-million-token context, which Moonshot describes as its most capable 3-trillion-parameter-class model to date, aimed at agentic coding and document work.</p>
-<p style="line-height:1.65;margin:0;">The announcement is about distribution, not performance: AWS gave no pricing, throughput figure, or benchmark number for the Highspeed variant. What matters is the shelf it now sits on — a Chinese open-weight flagship inside AWS's enterprise catalog, giving Bedrock customers a new agentic option alongside the US labs' models.</p>
-<p style="margin:12px 0 0;"><a href="https://letsdatascience.com/news/amazon-bedrock-adds-moonshot-ais-kimi-k31-pro-highspeed-mode-51717a19" style="color:#2563eb;">Source: LetsDataScience &rarr;</a></p>
-</div>
-
-<div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);">
-<p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">04 &middot; Agent Frameworks</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Perplexity launches Teammates: always-on agents that own work, for $200 a month</h3>
-<p style="line-height:1.65;margin:0 0 8px;">Perplexity launched Teammates on November 5 — persistent AI agents that take ownership of ongoing work instead of waiting for prompts one session at a time. A teammate holds a standing role (triage bugs, track a pipeline, research a market), works inside Perplexity Computer with the user's tools and files, coordinates with other teammates, and can ask colleagues what to do next over Slack. The default model is Claude Opus 5.5, with a per-teammate model choice.</p>
-<p style="line-height:1.65;margin:0;">Access is the catch: Teammates is a research preview for individual Max subscribers on the web, and Max costs $200 a month (about $167 a month billed annually), including 10,000 Computer credits — with usage metered beyond that. Enterprise Pro and Enterprise Max accounts are excluded by default. The launch puts Perplexity directly against OpenAI's Dots and Anthropic's Claude Duet in the race to build AI coworkers, and CEO Aravind Srinivas says the company's own workspace ran about 10,000 teammates in the last 30 days — a vendor claim with no published per-task cost or outside verification.</p>
-<p style="margin:12px 0 0;"><a href="https://www.perplexity.ai/page/ff9c0661-87ed-4e74-acf3-61a12803acbb" style="color:#2563eb;">Source: Perplexity &rarr;</a> &middot; <a href="https://www.digitaltrends.com/cool-tech/perplexitys-new-ai-coworkers-can-take-over-your-workload-but-they-dont-come-cheap/" style="color:#2563eb;">Digital Trends &rarr;</a></p>
-</div>
-
-<div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);">
-<p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">05 &middot; Product / Multimodal</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Meta's Muse gets a voice and a face — real-time avatars roll out in the US</h3>
-<p style="line-height:1.65;margin:0 0 8px;">Meta announced on November 5 that real-time voice conversations and expressive avatars are rolling out in the Muse app in the US across mobile, web, and Mac. You talk, Muse answers out loud, you can interrupt mid-answer, and the avatar's expressions and gestures follow the tone of the conversation. Hundreds of voices are built in, and the avatar's appearance can be customized — human, animal, or another character.</p>
-<p style="line-height:1.65;margin:0;">Underneath are two systems, Muse Realtime Voice and Muse Realtime Avatar, previewed at Connect in September: a streaming voice model whose speech tokens carry content and delivery, driving an audio-conditioned Diffusion Transformer avatar. Meta's research write-up reports roughly 870 milliseconds from the end of a user's turn to the first synchronized voice-and-video response — a single-source figure, so treat it as provisional — and generated avatar video carries an invisible Meta Video Seal watermark. Voice on AI Glasses and the Muse Charm wearable is still coming; the rollout is US-only and for users 18 and older. Muse also launched in Mexico on November 5, its fifth country.</p>
-<p style="margin:12px 0 0;"><a href="https://www.unite.ai/meta-brings-real-time-voice-and-expressive-avatars-to-muse/" style="color:#2563eb;">Source: Unite.AI &rarr;</a> &middot; <a href="https://www.gadgetreview.com/meta-rolls-out-real-time-video-calls-with-customizable-muse-ai-avatars-across-the-united-states" style="color:#2563eb;">Gadget Review &rarr;</a></p>
-</div>
-
-<div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);">
-<p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">06 &middot; Agents / Travel</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Airbnb's AI travel agent arrives in the first half of 2027 — and it won't be a chatbot</h3>
-<p style="line-height:1.65;margin:0 0 8px;">Airbnb said in its Q3 shareholder letter on November 5 that it will begin rolling out its own AI travel agent to guests in the first half of 2027. Rather than a text chat window, the agent will assemble a travel-specific interface — maps, photos, comparisons, calendars, itineraries — around each question, and eventually plan, book, and support whole trips across homes, hotels, services, and experiences. CEO Brian Chesky's framing: &ldquo;We don't believe people will use one AI agent for everything.&rdquo;</p>
-<p style="line-height:1.65;margin:0;">The same letter reports that about 40% of customer-support issues were resolved without a human agent in the quarter, up from a third in Q2, alongside 19% revenue growth to $4.87 billion and a new $12 billion buyback. One governance footnote: Airbnb's 10-Q discloses an IP deal with a recently formed AI lab founded by Chesky himself — worth watching as the agent takes shape. The 2027 date is a rollout target, not a shipped product.</p>
-<p style="margin:12px 0 0;"><a href="https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/" style="color:#2563eb;">Source: TechCrunch &rarr;</a> &middot; <a href="https://www.unite.ai/airbnb-plans-ai-travel-agent-for-planning-booking-and-support/" style="color:#2563eb;">Unite.AI &rarr;</a></p>
-</div>
-
-<div style="background:#ffffff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(15,23,42,.06);">
-<p style="color:#dc2626;font-weight:800;letter-spacing:.12em;margin:0 0 6px;">07 &middot; Model Releases</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Kakao unveils Kanana-2-v-decide, a multimodal decision model for Korean AI search</h3>
-<p style="line-height:1.65;margin:0 0 8px;">Kakao unveiled Kanana-2-v-decide on November 6, a multimodal decision model built for Korea-facing AI search, and made it available to download from Hugging Face under a license permitting commercial use.</p>
-<p style="line-height:1.65;margin:0;">Published benchmark detail is thin so far — the announcement is the news. It is another sign that the model race is fragmenting by task and language: Korea's big platform players are now shipping decision-oriented models for their own search surfaces, not just general chat models.</p>
-<p style="margin:12px 0 0;"><a href="https://superpowerdaily.com/signals/model-launches" style="color:#2563eb;">Source: Superpower Daily launch tracker &rarr;</a></p>
-</div>
-
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">02 &middot; Model Release</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Gemini 4 Carbon goes generally available — Google&rsquo;s strongest model, at half price until November 30</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Google made Gemini 4 Carbon broadly available on November 10, opening its latest frontier model to paying developers and enterprises after a limited cybersecurity release two weeks earlier through the Fairwind Program. Its defining feature is a shared 1,048,576-token budget for input and output, with long-decode support that lets generation continue across multiple segments. It is also rolling out to Google AI Ultra subscribers in Antigravity, the Gemini app, and AI Mode in Search.</p>
+<p style="line-height:1.65;margin:0;">Pricing is the catch: $2 per million input tokens and $10 output through November 30 — the same as Gemini 4 Argon — then the scheduled rates double to $4 / $20. ARC Prize verified Carbon at 99.1% on ARC-AGI-3 with the provider adapter but 65.1% with the standard harness, an 18-point gain over Argon in the standard harness. Google claims Carbon ranks first on the Artificial Analysis Index at 59 — a vendor claim to read with care, given the harness gap.</p>
+<p style="margin:12px 0 0;"><a href="https://www.zeniteq.com/google-launches-gemini-4-carbon-with-1m-token-decodes-i4oofn" style="color:#2563eb;">Source: Zeniteq, reporting Google&rsquo;s announcement &rarr;</a></p>
 </section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">03 &middot; Model Release</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Gemini 4 Hydrogen: Google&rsquo;s everyday execution engine, priced near Flash</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Google DeepMind announced Gemini 4 Hydrogen on November 12, positioning it as the everyday execution engine for coding and multi-step agentic workflows. Adapted from Carbon, Hydrogen is the rapid workhorse that can run standalone or act as the execution engine alongside Carbon and Argon — Google calls it the recommended upgrade from Gemini 3.8 Flash. It accepts text, images, audio, video, and PDF inputs, and rolled out globally the same day across consumer, enterprise, and developer products; the Antigravity agent in Gemini Managed Agents now uses it by default.</p>
+<p style="line-height:1.65;margin:0;">Paid standard pricing is $1.50 per million input tokens and $7.50 output across the full 1M-token window, with implicit caching at $0.075 per million — a 95% discount — and Batch/Flex inference at $0.75 / $3.75. The split is the strategy: Carbon does the deep reasoning, Hydrogen does the doing, at roughly Flash money.</p>
+<p style="margin:12px 0 0;"><a href="https://heshamsaad.com/en/gemini-4-hydrogen/" style="color:#2563eb;">Source: Hesham Saad, reporting Google DeepMind&rsquo;s announcement &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">04 &middot; Model Release &middot; Update</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Qwen4-Max preview, confirmed: 1M context, 393K max output — and it disappears November 25</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Alibaba&rsquo;s Qwen4-Max preview, which opened November 11, now has confirmed specs from Alibaba Cloud&rsquo;s own documentation: a 1-million-token context window, up to 393,216 output tokens, multimodal input (text, image, video), and deep reasoning and tool use aimed at programming and complex agentic tasks. Access is through the Token Plan subscription only — no pay-as-you-go — with early access in QwenWork, Qoder, the Qwen app, and QwenStudio.</p>
+<p style="line-height:1.65;margin:0;">The hard edge: the preview runs from 10:00 on November 11 to 24:00 on November 25 (UTC+8), and Alibaba says the model will be retired when it ends. Still unpublished: parameter count, per-token price, weights, model card, and any benchmark score. The rest of the Qwen4 family — Plus, Flash, and a 27-billion-parameter model — has no date at all.</p>
+<p style="margin:12px 0 0;"><a href="https://aivio.news/news/alibaba-qwen4-max-preview-fourteen-day-window/" style="color:#2563eb;">Source: AIVIO &rarr;</a> &middot; <a href="https://www.aifirstlook.com/qwen-4/" style="color:#2563eb;">AI First Look &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">05 &middot; Model Release</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Meta&rsquo;s Muse Ember: the small model for agent grunt work, at Haiku prices</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Meta released Muse Ember on November 9, the smallest Muse model, built for agent grunt work: tool calls, routing, extraction, and long-document parsing. It lists at $0.10 per million input tokens and $0.50 output — the same as Claude Haiku 5.5 and GPT-6 Luna — with a 1M-token context and 524K max output.</p>
+<p style="line-height:1.65;margin:0;">On business benchmarks it landed beside GPT-6 Luna, clearly ahead on survey analysis and behind on sales copy and decks — but it cost up to four times as much per job because it reasons at maximum effort by default. The lesson is a pricing one: the sticker matches its rivals, the bill depends on how hard the model chooses to think. All scores are self-reported.</p>
+<p style="margin:12px 0 0;"><a href="https://llm-stats.com/ai-news" style="color:#2563eb;">Source: LLM Stats &rarr;</a> &middot; <a href="https://springprompt.com/trends" style="color:#2563eb;">Spring Prompt release tracker &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">06 &middot; Open-Weights Models</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Thinking Machines&rsquo; Inkling 2 Small: a 594B MoE with Apache 2.0 weights coming</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Thinking Machines launched Inkling 2 Small, a 594-billion-parameter mixture-of-experts model with 17 billion active parameters, image inputs, and variable effort. The lab reports 86.3% on SWE-Bench Pro v2 Hard; Artificial Analysis scores it 31, which would make it the top open-weights model outside China. It costs $0.30 / $1.00 per million tokens on Tinker.</p>
+<p style="line-height:1.65;margin:0;">The weights are the news: Apache 2.0 weights are due next week after red-teaming — a fully permissive license on a near-frontier coding model, in a week when most open-weight releases arrived with revenue-line conditions attached. Cognition&rsquo;s SWE-2 Flash, built on Thinking Machines&rsquo; earlier Inkling-Small, runs at about 200 tokens per second — roughly a fifth of the price of SWE-2 — and scores 89.2 on Terminal-Bench 2.1, though its weights are withheld over cyber risk.</p>
+<p style="margin:12px 0 0;"><a href="https://medium.com/nlplanet/openai-releases-gpt-6-cyber-its-first-model-rated-critical-for-cybersecurity-weekly-ai-0f1f6eaac0d7" style="color:#2563eb;">Source: NLPlanet weekly AI newsletter &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">07 &middot; Open-Weights Models</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Salesforce&rsquo;s SOV-Transcribe-1: the best open speech model — and the hardest to run</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Salesforce released SOV-Transcribe-1 on November 12 under Apache 2.0, its first open-weight speech-augmented language model. On Artificial Analysis&rsquo; non-streaming board it scores 2.28% AA-WER — lower than every proprietary model except a handful and lower than every downloadable model by a clear margin (Nemotron 3.5 Transcribe sits at 2.81%, Whisper Large v3 Turbo at 4.62%). It is a 26.6B-parameter model, 4.6B active per token, covering seven European languages.</p>
+<p style="line-height:1.65;margin:0;">The catch is written into the model card: it is non-streaming by design, and the checkpoint is sixteen safetensors shards totalling roughly 53 GB, meant to be served on your own GPU via a pinned vLLM plugin. Accuracy is not the interesting part — an open model now leads the speech board, but only for teams with the hardware to serve it.</p>
+<p style="margin:12px 0 0;"><a href="https://www.orcarouter.ai/blog/sov-transcribe-1-salesforce-open-weights-speech-model" style="color:#2563eb;">Source: OrcaRouter &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">08 &middot; Industry</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Jensen Huang resigns as NVIDIA CEO, effective immediately</h3>
+<p style="line-height:1.65;margin:0 0 8px;">NVIDIA announced on Thursday, November 12, that Jensen Huang resigned as president, CEO, and director, effective immediately, after 33 years leading the company he co-founded. The board accepted the resignation on Wednesday, November 11. CFO Colette Kress is interim CEO while keeping the CFO role, and Harvey C. Jones becomes the board&rsquo;s first-ever chair. The release and Form 8-K gave no reason for the resignation and carried no statement from Huang.</p>
+<p style="line-height:1.65;margin:0;">Shares fell about 6.5% in Thursday trading to roughly $162, on pace for a 52-week closing low. Q3 results are still due Tuesday, November 17 — now Kress&rsquo;s first call, five days after the resignation. The man who built the company at the center of the AI boom is gone mid-boom, with no successor named.</p>
+<p style="margin:12px 0 0;"><a href="https://latent.space/p/ainews-jensen-huang-resigns-after-33-years-leading-nvidia/" style="color:#2563eb;">Source: Latent Space &rarr;</a> &middot; <a href="https://www.mobileworldlive.com/ai-cloud/the-friday-file-nvidia-anthropic-ring-robots/" style="color:#2563eb;">Mobile World Live &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">09 &middot; IPO</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Anthropic&rsquo;s IPO is oversubscribed several times over — underwriters now weigh above $1.5T</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Bloomberg reported that orders for Anthropic&rsquo;s IPO already exceed the shares on offer several times over, a week before it trades, and underwriters are weighing a valuation above $1.5 trillion — up from about $1.4 trillion at the top of the current $70&ndash;$78 range. The raise is up to $64.4 billion from the IPO plus a $26 billion private placement, more than $90 billion in total.</p>
+<p style="line-height:1.65;margin:0;">Timing is per press reports, not Anthropic-confirmed: final price set Wednesday, November 18, trading starts Thursday, November 19, on Nasdaq under the ticker ANT. The filing also shows an $81 billion annualized revenue run-rate at end-October against about $900.9 billion in committed purchases and leases, mostly for computing infrastructure. The market&rsquo;s verdict on AI valuations arrives the same week NVIDIA reports earnings without Huang.</p>
+<p style="margin:12px 0 0;"><a href="https://www.founderscrowds.com/articles/jensen-huang-resigns-nvidia-ceo-anthropic-ipo-oversubscribed-uforce-6b-nov-13-2026" style="color:#2563eb;">Source: Founders Crowds, reporting Bloomberg &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">10 &middot; Evals &amp; Benchmarks</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">The benchmark warning: ARC-AGI-3 scores swing 16&ndash;34 points by harness — and AI is now speeding up AI research 2&times;</h3>
+<p style="line-height:1.65;margin:0 0 8px;">ARC Prize&rsquo;s verified ARC-AGI-3 numbers this week came with a warning label: Fable 5.2 scored 97.7% with the provider adapter harness and 81.2% with the standard harness; Gemini 4 Carbon scored 99.1% versus 65.1%. Harness gaps of 16 and 34 points mean headline scores now reflect test setup nearly as much as the model — and Google&rsquo;s claim that Carbon ranks first on the Artificial Analysis Index at 59 should be read with the same care.</p>
+<p style="line-height:1.65;margin:0;">The other eval story is about who does the research: METR&rsquo;s independent assessment finds Anthropic improving models on well-specified tasks at about twice the 2024&ndash;2025 rate (plausible range 1.3&times; to 3&times;), with growth on METR&rsquo;s benchmark index rising from 15 to 29 points per year — and about 80% of the speedup attributed to AI itself. Frontier capability is outrunning the tests meant to measure it, and the tests are increasingly written by the systems they measure.</p>
+<p style="margin:12px 0 0;"><a href="https://www.laurenceo.com/intelligence/topics/frontier-ai-models" style="color:#2563eb;">Source: Laurenceo Intelligence &rarr;</a> &middot; <a href="https://medium.com/nlplanet/openai-releases-gpt-6-cyber-its-first-model-rated-critical-for-cybersecurity-weekly-ai-0f1f6eaac0d7" style="color:#2563eb;">NLPlanet, reporting METR &rarr;</a></p>
+</section>
+
+<p style="font-size:13px;color:#64748b;line-height:1.6;margin:4px 0 0;">Left out this week: unconfirmed reports of imminent GPT-6.2 and Grok 4.8 releases — rumor-only items are removed, not labeled. Stories already covered in the November 11 weekly edition (Mistral Large 4, Disney&ndash;Adobe, Gemini Robotics 2.5, MiniMax-H3-Image, MAI Transcribe 2, Cursor multiplayer Projects) are not repeated here. GPT-6 Cyber (November 5) falls outside this week&rsquo;s November 6&ndash;13 window.</p>
 
 <p style="text-align:center;font-style:italic;color:#64748b;margin:28px 0 0;">by Your Tech Sommelier</p>
 </div>
@@ -2767,12 +2869,12 @@
       const item = issues[key];
       if (!item) return;
       currentIssue = key;
+      $('#hardwareDailyNov13').hidden = true;
       $('#hardwareDailyNov12').hidden = true;
       $('#hardwareDailyNov11').hidden = true;
       $('#hardwareDailyNov10').hidden = true;
       $('#hardwareDailyNov09').hidden = true;
       $('#hardwareDailyNov08').hidden = true;
-      $('#hardwareDailyNov07').hidden = true;
       $('#issue').hidden = false;
       keepBlogTitle();
       $('#issueDate').textContent = item.date;
@@ -2823,19 +2925,19 @@
       window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     }
 
-    let currentIssue = '2026-11-12';
-    let currentAiIssue = '2026-11-12';
+    let currentIssue = '2026-11-13';
+    let currentAiIssue = '2026-11-13';
     let currentSection = 'hardware';
 
     function renderHardwareIssue(key) {
       currentIssue = key;
       const hardwareIssues = {
+        '2026-11-13': { panel: '#hardwareDailyNov13', date: 'Friday, November 13, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 13, 2026' },
         '2026-11-12': { panel: '#hardwareDailyNov12', date: 'Thursday, November 12, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 12, 2026' },
         '2026-11-11': { panel: '#hardwareDailyNov11', date: 'Wednesday, November 11, 2026', stories: '5 stories', title: 'AI Hardware Daily — November 11, 2026' },
         '2026-11-10': { panel: '#hardwareDailyNov10', date: 'Tuesday, November 10, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 10, 2026' },
         '2026-11-09': { panel: '#hardwareDailyNov09', date: 'Monday, November 9, 2026', stories: '5 stories', title: 'AI Hardware Daily — November 9, 2026' },
         '2026-11-08': { panel: '#hardwareDailyNov08', date: 'Sunday, November 8, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 8, 2026' },
-        '2026-11-07': { panel: '#hardwareDailyNov07', date: 'Saturday, November 7, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 7, 2026' },
       };
       const selected = hardwareIssues[key];
       if (!selected) {
@@ -2875,6 +2977,7 @@
 
     function renderAiIssue(key) {
       currentAiIssue = key;
+      const isWeeklyNov13 = key === 'weekly-2026-11-13';
       const isWeeklyNov11 = key === 'weekly-2026-11-11';
       const isWeeklyNov06 = key === 'weekly-2026-11-06';
       const isWeeklyOct30 = key === 'weekly-2026-10-30';
@@ -2883,12 +2986,13 @@
       const isWeeklyOct09 = key === 'weekly-2026-10-09';
       const isWeeklyOct02 = key === 'weekly-2026-10-02';
       const isWeeklySep25 = key === 'weekly-2026-09-25';
+      const isNov13 = key === '2026-11-13';
       const isNov12 = key === '2026-11-12';
       const isNov11 = key === '2026-11-11';
       const isNov10 = key === '2026-11-10';
       const isNov09 = key === '2026-11-09';
       const isNov08 = key === '2026-11-08';
-      const isNov07 = key === '2026-11-07';
+      $('#aiTrendWeeklyNov13').hidden = !isWeeklyNov13;
       $('#aiTrendWeeklyNov11').hidden = !isWeeklyNov11;
       $('#aiTrendWeeklyNov06').hidden = !isWeeklyNov06;
       $('#aiTrendWeeklyOct30').hidden = !isWeeklyOct30;
@@ -2897,13 +3001,16 @@
       $('#aiTrendWeeklyOct09').hidden = !isWeeklyOct09;
       $('#aiTrendWeeklyOct02').hidden = !isWeeklyOct02;
       $('#aiTrendWeeklySep25').hidden = !isWeeklySep25;
+      $('#aiTrendDailyNov13').hidden = !isNov13;
       $('#aiTrendDailyNov12').hidden = !isNov12;
       $('#aiTrendDailyNov11').hidden = !isNov11;
       $('#aiTrendDailyNov10').hidden = !isNov10;
       $('#aiTrendDailyNov09').hidden = !isNov09;
       $('#aiTrendDailyNov08').hidden = !isNov08;
-      $('#aiTrendDailyNov07').hidden = !isNov07;
-      if (isNov12) {
+      if (isNov13) {
+        $('#issueDate').textContent = 'Friday, November 13, 2026';
+        $('#storyCount').textContent = '7 stories';
+      } else if (isNov12) {
         $('#issueDate').textContent = 'Thursday, November 12, 2026';
         $('#storyCount').textContent = '8 stories';
       } else if (isNov11) {
@@ -2918,9 +3025,9 @@
       } else if (isNov08) {
         $('#issueDate').textContent = 'Sunday, November 8, 2026';
         $('#storyCount').textContent = '7 stories';
-      } else if (isNov07) {
-        $('#issueDate').textContent = 'Saturday, November 7, 2026';
-        $('#storyCount').textContent = '7 stories';
+      } else if (isWeeklyNov13) {
+        $('#issueDate').textContent = 'Week of November 13, 2026';
+        $('#storyCount').textContent = '10 stories';
       } else if (isWeeklyNov11) {
         $('#issueDate').textContent = 'Week of November 11, 2026';
         $('#storyCount').textContent = '10 stories';
@@ -2962,12 +3069,13 @@
         btn.setAttribute('aria-pressed', String(btn.dataset.section === section));
       });
       $('#issue').hidden = true;
+      $('#hardwareDailyNov13').hidden = true;
       $('#hardwareDailyNov12').hidden = true;
       $('#hardwareDailyNov11').hidden = true;
       $('#hardwareDailyNov10').hidden = true;
       $('#hardwareDailyNov09').hidden = true;
       $('#hardwareDailyNov08').hidden = true;
-      $('#hardwareDailyNov07').hidden = true;
+      $('#aiTrendWeeklyNov13').hidden = true;
       $('#aiTrendWeeklyNov11').hidden = true;
       $('#aiTrendWeeklyNov06').hidden = true;
       $('#aiTrendWeeklyOct30').hidden = true;
@@ -2976,12 +3084,12 @@
       $('#aiTrendWeeklyOct09').hidden = true;
       $('#aiTrendWeeklyOct02').hidden = true;
       $('#aiTrendWeeklySep25').hidden = true;
+      $('#aiTrendDailyNov13').hidden = true;
       $('#aiTrendDailyNov12').hidden = true;
       $('#aiTrendDailyNov11').hidden = true;
       $('#aiTrendDailyNov10').hidden = true;
       $('#aiTrendDailyNov09').hidden = true;
       $('#aiTrendDailyNov08').hidden = true;
-      $('#aiTrendDailyNov07').hidden = true;
       $('#navHardware').hidden = !isHardware;
       $('#navLlm').hidden = !isLlm;
       if (isLlm) {
@@ -2991,7 +3099,7 @@
       }
     }
 
-    renderHardwareIssue('2026-11-12');
+    renderHardwareIssue('2026-11-13');
   </script>
 </body>
 </html>
