@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="light dark" />
   <link rel="icon" href="data:," />
   <title>Beyond Scaling</title>
-  <!-- Latest packaging edition: November 11, 2026 -->
+  <!-- Latest packaging edition: November 13, 2026 -->
   <!-- Latest foundry edition: November 11, 2026 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -161,6 +161,7 @@
     .edition-choice:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
     .edition-panel { margin-top: 18px; }
     .email-edition { overflow: hidden; }
+    #packaging-2026-11-13 { background: #f8fafc; padding: 0; }
     #packaging-2026-11-11 { background: #f8fafc; padding: 0; }
     #packaging-2026-11-06 { background: #f8fafc; padding: 0; }
     #packaging-2026-10-30 { background: #f8fafc; padding: 0; }
@@ -170,6 +171,7 @@
     #edition-2026-10-16 { max-width: 640px; margin: 0 auto; }
     .email-edition a:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
     @media (prefers-color-scheme: dark) {
+      #packaging-2026-11-13,
       #packaging-2026-11-11,
       #packaging-2026-11-06,
       #packaging-2026-10-30,
@@ -665,7 +667,8 @@
 
   <main class="page" id="packaging-panel" role="tabpanel" aria-labelledby="packaging-tab">
     <div class="edition-switcher" aria-label="Packaging edition archive">
-      <button class="edition-choice" type="button" data-edition="packaging-2026-11-11" aria-pressed="true">Nov 11, 2026</button>
+      <button class="edition-choice" type="button" data-edition="packaging-2026-11-13" aria-pressed="true">Nov 13, 2026</button>
+      <button class="edition-choice" type="button" data-edition="packaging-2026-11-11" aria-pressed="false">Nov 11, 2026</button>
       <button class="edition-choice" type="button" data-edition="packaging-2026-11-06" aria-pressed="false">Nov 6, 2026</button>
       <button class="edition-choice" type="button" data-edition="packaging-2026-10-30" aria-pressed="false">Oct 30, 2026</button>
       <button class="edition-choice" type="button" data-edition="packaging-2026-10-23" aria-pressed="false">Oct 23, 2026</button>
@@ -677,7 +680,88 @@
       <button class="edition-choice" type="button" data-edition="packaging-2026-09-17" aria-pressed="false">Sep 17, 2026</button>
     </div>
 
-    <section class="edition-panel email-edition" id="packaging-2026-11-11">
+    <section class="edition-panel email-edition" id="packaging-2026-11-13">
+      <!-- EDITION: Beyond Scaling — November 13, 2026 -->
+<section style="background:#f8fafc;padding:32px 16px;font-family:Georgia,serif;color:#334155">
+<div style="max-width:760px;margin:0 auto">
+<p style="text-align:center;letter-spacing:2px;text-transform:uppercase;color:#64748b;font-size:12px">Beyond Scaling &nbsp;·&nbsp; Weekly Advanced Packaging &amp; 3DIC &nbsp;·&nbsp; November 13, 2026</p>
+<h1 style="color:#0f172a;font-size:42px;line-height:1.05;text-align:center;margin:12px 0">The chiplet standard just grew up — UCIe 4.0 puts memory inside the package</h1>
+<p style="font-size:18px;line-height:1.6;text-align:center">Why it matters: This week the package became the system. UCIe 4.0 standardized the memory link between chiplets, turning the interconnect standard into a system-level spec. TSMC locked in another seven years of CoWoS capacity through Xintec, Samsung broke ground on an HBM packaging plant a full year early, and glass substrates moved from pilot talk to paid samples and equipment orders. The bottleneck is no longer the transistor — it is the interconnect, the interposer, and the substrate, and this week's money followed all three.</p>
+<div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:20px 0">
+<span style="background:#0f172a;color:#fff;padding:8px 14px;border-radius:999px;font-weight:bold">93.75% — UCIe.mem data efficiency</span>
+<span style="background:#fff;border:2px solid #0f172a;color:#0f172a;padding:8px 14px;border-radius:999px;font-weight:bold">2029 — Xintec CoWoS line ramps</span>
+<span style="background:#fff;border:2px solid #0f172a;color:#0f172a;padding:8px 14px;border-radius:999px;font-weight:bold">₩6T — Samsung HBM plant build</span>
+</div>
+
+<article style="background:#ffffff;padding:28px;border-radius:16px;margin:28px 0;box-shadow:0 2px 12px rgba(15,23,42,.06)">
+<p style="color:#b45309;font-weight:bold;letter-spacing:1px">COVER STORY</p>
+<h2 style="color:#0f172a;font-size:30px;line-height:1.2">UCIe 4.0 turns the chiplet standard from wiring into a system</h2>
+<p>The UCIe Consortium released the UCIe 4.0 specification on November 12, moving the chiplet interconnect standard from die-to-die connectivity toward full system-level integration. The headline addition is UCIe.mem, the first standardized on-package memory link between compute dies and memory logic dies, working with existing memory technologies such as HBM and LPDDR — it lets memory control be separated from the compute die. The spec claims up to 93.75% data efficiency and roughly 2.5 TB/s of bandwidth density per millimeter of die edge, with co-optimized link profiles cutting link power by 30% to 80% under specified conditions (consortium figures, for the die-to-die link — not system-wide power). It also adds TRoCs (Trusted Reporting of Chiplet State) for integrity-protected reporting of die health, fault notification even when the normal communication path is down, and automotive reliability features. The specification is fully backward compatible with all earlier UCIe versions, and ships with a white paper from consortium chairman Debendra Das Sharma of Intel. No product timing was given — the numbers are consortium targets until the first commercial implementations arrive — but the direction is clear: the memory wall is now being attacked inside the package, not just at the board.</p>
+<p><a href="https://www.hpcwire.com/2026/11/12/ucie-consortium-tackles-the-memory-wall-with-new-4-0-chiplet-spec/">Source: HPCwire, Nov. 12</a> · <a href="https://xenospectrum.com/en/ucie-4-memory-chiplet-management/">Source: XenoSpectrum, Nov. 13</a></p>
+</article>
+
+<article style="background:#ffffff;padding:28px;border-radius:16px;margin:28px 0;box-shadow:0 2px 12px rgba(15,23,42,.06)">
+<h3 style="color:#0f172a">02 — TSMC signs a seven-year Xintec deal to expand CoWoS capacity</h3>
+<p>TSMC signed a seven-year agreement with Xintec Inc. to build and operate a production line for the on-substrate portion of its CoWoS advanced packaging technology, Xintec's board approving the deal on November 13. The agreement runs through December 31, 2033; the line will sit inside TSMC's facility in the Central Taiwan Science Park, with initial mass production targeted for 2029. To fund the build-out, Xintec plans to raise NT$15 billion through convertible bonds. It is the latest in a string of capacity-outsourcing moves as CoWoS stays fully booked — TSMC also has a $2 billion deal with GlobalFoundries to produce silicon interposers in the US, with volume ramping at Malta in the first half of 2028.</p>
+<p><a href="https://cryptobriefing.com/tsmc-xintec-seven-year-cowos-deal/">Source: Crypto Briefing, Nov. 13</a> · <a href="https://gf.com/news-and-events/news/globalfoundries-reaches-agreement-to-establish-us-based-supply-of-silicon-interposers-for-advanced-ai-packaging/">Source: GlobalFoundries, Oct. 8</a></p>
+</article>
+
+<article style="background:#ffffff;padding:28px;border-radius:16px;margin:28px 0;box-shadow:0 2px 12px rgba(15,23,42,.06)">
+<h3 style="color:#0f172a">03 — Samsung breaks ground on an HBM packaging plant, a year ahead of schedule</h3>
+<p>Samsung Electronics broke ground on November 12 on a high-bandwidth memory packaging plant at its Onyang campus in Asan — Onyang Line 5, a three-storey plant of about 31,000 square metres set to produce seventh-generation HBM4E chips — with operations scheduled for June 2028, a year earlier than initially planned. The plant is the first of five HBM lines in a wider programme, with ₩6 trillion ($4.48 billion) earmarked for construction, and President Lee Jae Myung said about ₩40 trillion ($30 billion) of additional equipment investment would follow. Packaging — stacking and sealing memory chips into the finished component — is the bottleneck of HBM production, and pulling the plant forward a year is Samsung's clearest statement yet that it does not intend to stay second to SK hynix in HBM.</p>
+<p><a href="https://aiagentupdate.com/post/samsung-hbm-packaging-plant-2026-11-12">Source: AI Agent Update, Nov. 12 (via Reuters)</a></p>
+</article>
+
+<article style="background:#ffffff;padding:28px;border-radius:16px;margin:28px 0;box-shadow:0 2px 12px rgba(15,23,42,.06)">
+<h3 style="color:#0f172a">04 — Samsung targets early 2027 for its first 3D Cube-H design kit</h3>
+<p>Samsung Electronics aims to complete development of its next-generation 3D Cube-H advanced packaging technology by early 2027, with a first design kit followed by evaluations with potential customers, ZDNet Korea reported November 10–11, citing industry sources (reported, not company-confirmed). 3D Cube-H uses hybrid bonding to stack logic chips vertically, with an interconnect pitch of approximately 6 micrometers — far finer than the roughly 25μm minimum for existing thermocompression bonding. Samsung already has 3D Cube-T using thermocompression; the hybrid-bonded version is the step that makes dense logic-on-logic stacking practical. The technical hurdles are familiar ones: a Samsung packaging executive said at ISMP 2026 that controlling particle contamination and preventing void formation remain the major challenges. Chairman Jay Y. Lee visited Samsung's Advanced Package Lab in Yokohama on November 1 to review packaging materials and process progress.</p>
+<p><a href="https://www.trendforce.com/news/2026/11/11/news-samsung-reportedly-eyes-early-2027-for-3d-cube-h-advanced-packaging-development-featuring-hybrid-bonding/">Source: TrendForce, Nov. 11</a> · <a href="https://www.digitimes.com/news/a20261111VL210/samsung-3d-design-2027-technology.html?chid=10">Source: DigiTimes, Nov. 11</a></p>
+</article>
+
+<article style="background:#ffffff;padding:28px;border-radius:16px;margin:28px 0;box-shadow:0 2px 12px rgba(15,23,42,.06)">
+<h3 style="color:#0f172a">05 — The HBM4 scoreboard: SK hynix sold out through 2029, Samsung through 2027</h3>
+<p>SK hynix told investors on October 28 that its DRAM and HBM output is effectively sold out through 2029, with customer demand more than double its supply capacity; Samsung said on October 29 that its 2027 HBM supply is sold out, with price talks concluded at target levels. The generational race is splitting: Samsung's HBM4 sales more than tripled quarter over quarter in Q3 and reached about 60% of its HBM sales, while SK hynix expects HBM4 to pass HBM3E in revenue and shipments in Q4. Counterpoint Research forecasts HBM4 share three months after launch at SK hynix 54–55%, Samsung 28–29% and Micron 17–18% (analyst forecast, labeled), with SK hynix near 70% of Nvidia allocation alone (UBS estimate, labeled). The sold-out board means packaging capacity — not memory silicon — decides who ships what, and when.</p>
+<p><a href="https://www.vlsi.kr/en/daily-silicon-2026-11-01-en/">Source: VLSI.kr, Nov. 1</a> · <a href="https://www.vlsi.kr/en/daily-silicon-2026-11-09-en/">Source: VLSI.kr, Nov. 9</a></p>
+</article>
+
+<article style="background:#ffffff;padding:28px;border-radius:16px;margin:28px 0;box-shadow:0 2px 12px rgba(15,23,42,.06)">
+<h3 style="color:#0f172a">06 — JNTC starts paid glass-substrate samples for Nvidia</h3>
+<p>Korean firm JNTC has begun supplying paid through-glass-via (TGV) substrate samples to Nvidia, joining Nvidia's procurement supplier list after first contact in September 2026, TokenPost reported November 8 (single-sourced, labeled as reported). A 2 mm-thick TGV sample showed peel strength of about 0.8 kgf/mm — twice the stated industry requirement of 0.4 kgf/mm — with no microcracks after copper removal. About 30 companies are under nondisclosure agreements, with about 10 evaluating paid samples, but whether Nvidia moves to volume orders is undisclosed. JNTC also works with Toppan on TGV substrates for Broadcom, and plans to start building a production line in Gimcheon in the second half of 2027, targeting initial production supply in mid-2028. Glass is being considered as packaging material because AI chips keep growing larger and more complex — and the first paid samples are the moment a material stops being a slide and starts being a supplier.</p>
+<p><a href="https://wisevoter.com/world/2026/11/08/jntc-paid-glass-substrate-samples-nvidia">Source: Wisevoter, Nov. 8 (via TokenPost)</a></p>
+</article>
+
+<article style="background:#ffffff;padding:28px;border-radius:16px;margin:28px 0;box-shadow:0 2px 12px rgba(15,23,42,.06)">
+<h3 style="color:#0f172a">07 — SCHMID wins the wet-process order for South Asia's first glass-core substrate fab</h3>
+<p>SCHMID Group announced on November 9 that it has received an order for key wet-process equipment from a US-based pioneer in glass-based advanced packaging for a new glass core substrate manufacturing facility in South Asia — the region's first advanced packaging site built around glass substrates and 3D heterogeneous integration. Once fully ramped, the facility is designed to produce around 70,000 glass panels per year, together with glass interposers and advanced 3D heterogeneous integration modules for AI, data center, 5G and aerospace and defense applications. The customer has spent close to two decades developing proprietary photo-definable glass-ceramic and TGV technology. The order will be recorded in SCHMID's order intake for the fourth quarter of 2026. Glass-core substrates offer superior flatness and dimensional stability, lower warpage in large package formats, finer line/space structures and better signal integrity than organic cores — and this order is one of the first large-scale steps toward volume manufacturing of the technology.</p>
+<p><a href="https://www.morningstar.com/news/globe-newswire/1001302611/schmid-group-secures-key-wet-process-equipment-order-for-south-asias-first-glass-core-substrate-manufacturing-facility">Source: Morningstar / GlobeNewswire, Nov. 9</a></p>
+</article>
+
+<article style="background:#ffffff;padding:28px;border-radius:16px;margin:28px 0;box-shadow:0 2px 12px rgba(15,23,42,.06)">
+<h3 style="color:#0f172a">08 — Amkor breaks ground in Gwangju as its computing business surges</h3>
+<p>Amkor broke ground on a new building at its Gwangju campus in South Korea on October 29, expanding a site that already holds about 152,000 square metres of manufacturing space with wafer bumping, FCBGA, system-in-package and wafer-level packaging capabilities. The expansion is part of a $1.3 billion agreement with Nvidia, taking Amkor's multi-year agreements with Nvidia in Arizona and South Korea to $3 billion in total. The build-out matches the demand signal from Amkor's Q3 earnings call: computing revenue rose 25% sequentially, another hyperscaler high-density fan-out CPU program began ramping in Q3, two new networking and data-center 2.5D programs are expected to enter production in Q4, and management expects computing revenue to grow approximately 30% or more in 2027 (management guidance, labeled). Amkor has not disclosed the new building's size, investment or completion date.</p>
+<p><a href="https://evertiq.com/design/2026-11-11-amkor-breaks-ground-on-new-building-in-south-korea">Source: Evertiq, Nov. 11</a></p>
+</article>
+
+<article style="background:#ffffff;padding:28px;border-radius:16px;margin:28px 0;box-shadow:0 2px 12px rgba(15,23,42,.06)">
+<h3 style="color:#0f172a">09 — Intel's EMIB-T takes aim at TSMC's CoWoS-L</h3>
+<p>Intel is pitching its bridge-based packaging as a higher-yield, lower-cost alternative while TSMC's CoWoS capacity stays fully booked, its Foundry Packaging Director Kyu-oh Lee making the case at the ISMP 2026 event in Busan on November 4. EMIB embeds small, localized silicon bridges inside an organic substrate — silicon only where chips need to talk — achieving wafer utilization above 90%, compared with roughly 60% for conventional interposer designs. For the 2026–2027 window Intel is aiming at packages larger than 120 × 180 mm carrying 16 or more HBM stacks and at least 38 EMIB bridges; after that, it projects AI packages reaching 240 × 240 mm with more than 32 HBM stacks and over 70 EMIB bridges. EMIB-T is slated to enter production in 2026 and support packages beyond 8–9x reticle size, with yields reportedly approaching 90% against CoWoS yields reportedly near 98% (reported figures, labeled). TSMC is hardly standing still — it plans to keep CoWoS-L as its mainstream solution through 2028 — but the bridge-vs-interposer contest is now the packaging industry's central architectural argument.</p>
+<p><a href="https://cryptobriefing.com/intel-emib-t-vs-tsmc-cowos-l/">Source: Crypto Briefing, Nov. 5</a></p>
+</article>
+
+<article style="background:#ffffff;padding:28px;border-radius:16px;margin:28px 0;box-shadow:0 2px 12px rgba(15,23,42,.06)">
+<h3 style="color:#0f172a">10 — IBM's hybrid bonding research shrinks the chiplet joint to about a micron</h3>
+<p>IBM published new research into hybrid bonding, a technique that could reduce the size needed to connect multiple chiplets, SDxCentral reported this week. Instead of solder-based interconnections, hybrid bonding fuses copper and inorganic dielectrics in layers, producing a bond between chiplets only around 1 micron thick, compared with tens of microns for solder-based connections — enabling greater density and computing power in 3D chip stacks. IBM's work is still in research and development, not production, and the company is involved in both leading chiplet interconnect initiatives, UCIe and BoW (Bunch of Wires), as well as signal-mapping strategies for future chiplet packaging. The research matters because the week's other stories — Samsung's 3D Cube-H, UCIe 4.0's system-level turn — all assume bonds keep getting finer; IBM is working on the physics that makes that assumption true.</p>
+<p><a href="https://www.sdxcentral.com/analysis/ibm-advances-chiplets-with-hybrid-bonding-for-thinner-smaller-connections/">Source: SDxCentral, Nov. 2026</a></p>
+</article>
+
+<p style="font-size:13px;color:#64748b;border-top:1px solid #e2e8f0;padding-top:12px">Editor's note — excluded this week: the unconfirmed report of a TSMC CoWoS price increase of up to 20% (reported October 27, never confirmed by TSMC) and an unverified report of 52-week advanced-packaging lead times — rumor-only items are removed, not labeled, under the standing "remove the rumors" rule. The Samsung 3D Cube-H item in story 04 rests on ZDNet Korea reporting citing industry sources, and the JNTC–Nvidia item in story 06 is single-sourced via TokenPost; both are labeled as reported.</p>
+<p style="text-align:center;font-style:italic;color:#64748b;margin-top:28px">by Your Tech Sommelier</p>
+</div>
+</section>
+      <!-- END EDITION: November 13, 2026 -->
+    </section>
+
+    <section class="edition-panel email-edition" id="packaging-2026-11-11" hidden>
       <!-- EDITION: Beyond Scaling — November 11, 2026 -->
 <section style="background:#f8fafc;padding:32px 16px;font-family:Georgia,serif;color:#334155">
 <div style="max-width:760px;margin:0 auto">
