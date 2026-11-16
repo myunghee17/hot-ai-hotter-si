@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="light dark" />
   <link rel="icon" href="data:," />
-  <title>AI Hardware Daily — November 15, 2026</title>
+  <title>AI Hardware Daily — November 16, 2026</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650;8..60,750&display=swap');
 
@@ -692,6 +692,12 @@
       #aiTrendWeeklyOct30 h2 { font-size: 21px !important; }
     }
 
+    /* November 16 AI Trends daily edition (inline-styled; responsive overrides) */
+    @media (max-width: 640px) {
+      #aiTrendDailyNov16 h1 { font-size: 28px !important; }
+      #aiTrendDailyNov16 h2 { font-size: 21px !important; }
+    }
+
     /* November 15 AI Trends daily edition (inline-styled; responsive overrides) */
     @media (max-width: 640px) {
       #aiTrendDailyNov15 h1 { font-size: 28px !important; }
@@ -722,10 +728,10 @@
       #aiTrendDailyNov11 h2 { font-size: 21px !important; }
     }
 
-    /* November 10 AI Trends daily edition (inline-styled; responsive overrides) */
+    /* November 16 AI Hardware daily edition (inline-styled; responsive overrides) */
     @media (max-width: 640px) {
-      #aiTrendDailyNov10 h1 { font-size: 28px !important; }
-      #aiTrendDailyNov10 h2 { font-size: 21px !important; }
+      #hardwareDailyNov16 h1 { font-size: 28px !important; }
+      #hardwareDailyNov16 h2 { font-size: 21px !important; }
     }
 
     /* November 15 AI Hardware daily edition (inline-styled; responsive overrides) */
@@ -758,12 +764,6 @@
       #hardwareDailyNov11 h2 { font-size: 21px !important; }
     }
 
-    /* November 10 AI Hardware daily edition (inline-styled; responsive overrides) */
-    @media (max-width: 640px) {
-      #hardwareDailyNov10 h1 { font-size: 28px !important; }
-      #hardwareDailyNov10 h2 { font-size: 21px !important; }
-    }
-
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
     }
@@ -774,8 +774,8 @@
     <div class="issue-bar" aria-label="Section and edition navigation">
       <div class="issue-meta">
         <span class="signal" id="signalName">AI Trends</span>
-        <span id="issueDate">Sunday, November 15, 2026</span>
-        <span id="storyCount">7 stories</span>
+        <span id="issueDate">Monday, November 16, 2026</span>
+        <span id="storyCount">6 stories</span>
       </div>
       <div class="section-switcher" role="group" aria-label="Choose a section">
         <button class="section-btn" type="button" data-section="hardware" aria-pressed="true">AI Hardware</button>
@@ -787,12 +787,12 @@
         <div class="edition-group">
           <span class="edition-label">Daily</span>
           <div class="archive-controls" role="group" aria-label="Choose a daily edition">
-            <button class="edition-btn" type="button" data-issue="2026-11-15" aria-pressed="true">Nov 15</button>
+            <button class="edition-btn" type="button" data-issue="2026-11-16" aria-pressed="true">Nov 16</button>
+            <button class="edition-btn" type="button" data-issue="2026-11-15" aria-pressed="false">Nov 15</button>
             <button class="edition-btn" type="button" data-issue="2026-11-14" aria-pressed="false">Nov 14</button>
             <button class="edition-btn" type="button" data-issue="2026-11-13" aria-pressed="false">Nov 13</button>
             <button class="edition-btn" type="button" data-issue="2026-11-12" aria-pressed="false">Nov 12</button>
             <button class="edition-btn" type="button" data-issue="2026-11-11" aria-pressed="false">Nov 11</button>
-            <button class="edition-btn" type="button" data-issue="2026-11-10" aria-pressed="false">Nov 10</button>
           </div>
         </div>
         <div class="edition-group weekly-group" aria-label="Choose a weekly summary">
@@ -816,12 +816,12 @@
         <div class="edition-group">
           <span class="edition-label">Daily</span>
           <div class="archive-controls" role="group" aria-label="Choose an AI Trends edition">
-            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-15" aria-pressed="true">Nov 15</button>
+            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-16" aria-pressed="true">Nov 16</button>
+            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-15" aria-pressed="false">Nov 15</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-14" aria-pressed="false">Nov 14</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-13" aria-pressed="false">Nov 13</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-12" aria-pressed="false">Nov 12</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-11" aria-pressed="false">Nov 11</button>
-            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-10" aria-pressed="false">Nov 10</button>
           </div>
         </div>
       </nav>
@@ -832,7 +832,79 @@
       <p>All information in this blog comes from publicly available sources and has not been independently verified. Please check the linked original sources before relying on it.</p>
     </aside>
 
-<div id="hardwareDailyNov15" aria-live="polite" style="background:#f8fafc;font-family:Georgia,'Times New Roman',serif;color:#334155;">
+<div id="hardwareDailyNov16" aria-live="polite" style="background:#f8fafc;font-family:Georgia,'Times New Roman',serif;color:#334155;">
+<div style="max-width:760px;margin:0 auto;padding:32px 20px 48px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#64748b;margin:0 0 8px;">AI Hardware Daily &nbsp;·&nbsp; Monday, November 16, 2026</p>
+<h1 style="font-size:40px;line-height:1.1;color:#0f172a;margin:0 0 16px;">Nvidia's grip on future AI compute slips to 39% — while the CPU fights back</h1>
+<p style="font-size:17px;line-height:1.6;margin:0 0 28px;"><strong style="color:#0f172a;">Why it matters:</strong> The one-vendor GPU era is giving way to a mixed fleet. JPMorgan's 39% figure for Nvidia's share of future frontier-lab compute, Intel's claim that AI now buys nearly as many CPUs as GPUs, Fujitsu's sovereign 2nm CPU, and a split prefill/decode demo from SambaNova and Intel all point the same way: customers are diversifying the hardware stack. Today's 1 PM PT MLPerf Endpoints v1.0 results and tomorrow's NVIDIA earnings — interim CEO Colette Kress's first call — are the next verdicts.</p>
+
+<!-- HERO -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#b45309;margin:0 0 10px;">Cover story</p>
+<h2 style="font-size:28px;line-height:1.2;color:#0f172a;margin:0 0 12px;">Nvidia's share of future frontier AI compute falls to 39%, JPMorgan estimates</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Nvidia holds just 39% of the future computing infrastructure that frontier AI labs have contracted to secure, according to a JPMorgan Asset Management report cited by Seoul Economic Daily on Monday — down from the 83% share of total AI chip revenue Nvidia held from 2023 to 2025. The rest of the forward book is split among Broadcom custom chips at 24%, Google TPUs at 16%, AMD GPUs at 15% and Amazon Trainium at 6%. The two numbers measure different things — forward contracted compute versus historical revenue — but the direction is the point: the labs that once bought almost exclusively from Nvidia are now spreading orders across custom silicon and rival accelerators.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The supporting data cuts the same way. In a modeling-based per-chip inference index released by Epoch AI on November 9, AMD's MI455X ranked highest. And in a SemiAnalysis comparison on the open-weight Qwen 3.5 397B model, Google's TPU processed more tokens than Nvidia's GB300 at the same cost. OpenAI's October 2025 Broadcom partnership for 10 gigawatts of custom accelerators and its agreement to take 6 gigawatts of AMD GPUs are the contracts behind the shift. Nvidia still leads on margins and cash generation, and the 39% is an estimate of contracted future deals, not installed base — but the era of one supplier for frontier compute is over.</p>
+<div style="margin:4px 0 16px;">
+<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">39% &nbsp;·&nbsp; of future frontier compute deals</span>
+<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">vs 83% &nbsp;·&nbsp; of AI chip revenue, 2023–25</span>
+<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">Broadcom 24%</span>
+<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">Google TPU 16%</span>
+<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">AMD 15%</span>
+<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">Amazon Trainium 6%</span>
+</div>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://en.sedaily.com/world/2026/11/16/nvidias-share-of-ai-compute-falls-to-39-percent-from-80" style="color:#2563eb;">Seoul Economic Daily, November 16, 2026</a></p>
+</div>
+
+<!-- 02 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">02</p>
+<h2 style="font-size:24px;line-height:1.25;color:#0f172a;margin:0 0 12px;">Intel's CEO says AI now buys "almost as many CPUs as GPUs"</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Intel CEO Lip-Bu Tan told Yahoo Finance at its Invest conference that AI systems used to run on about eight GPUs for every CPU but are now at "kind of parity" — and "in some cases actually more CPU than GPU." The driver is agentic AI: agents lean on general-purpose processors for orchestration, tool use and data movement, and one chart cited on the MTS podcast splits a dollar of agent work roughly 90% to CPUs and 10% to model inference. Intel CFO Dave Zinsner said on the third-quarter call that the company expects industry server CPU units to grow more than 30% in both 2026 and 2027.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The shift lifts Intel's rivals as much as Intel. Intel's data-center and AI group brought in $7.3 billion in the third quarter, up 78% year over year, but JPMorgan estimates its share of server x86 CPU revenue has fallen from 77% to 53% since November 2022, and Intel says it cannot make enough server chips to meet demand, with shortages expected through 2027 and into 2028. AMD is already cashing in: its data-center revenue rose 97% in the third quarter to a record $8.5 billion, and its server sales more than doubled. The CPU, written off as a bystander in the GPU boom, is back at the center of the AI rack.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.tikr.com/blog/intels-ceo-says-ai-is-buying-almost-as-many-cpus-as-gpus-amd-and-arm-gain-too" style="color:#2563eb;">TIKR, November 16, 2026 (reporting the Yahoo Finance interview)</a></p>
+</div>
+
+<!-- 03 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">03</p>
+<h2 style="font-size:24px;line-height:1.25;color:#0f172a;margin:0 0 12px;">Fujitsu shows a 2nm Arm CPU for sovereign AI at SC26</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Fujitsu showcased its next-generation 2-nanometer Arm processor, FUJITSU-MONAKA, at the SC26 supercomputing conference in Chicago, alongside a commercial MONAKA server lineup aimed at academic and institutional research facilities building sovereign AI infrastructure. The chip packs 144 Armv9.3-A cores built on TSMC's 2-nanometer N2P process, with dual 256-bit SVE2 pipelines per core and native support for INT8 matrix and FP8 operations — compute features aimed squarely at LLM inference and agentic AI on a general-purpose CPU.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The packaging is the story as much as the cores. MONAKA is a 3D disaggregated system-in-package: the 2nm compute dies are bonded face-to-face onto 5nm SRAM and I/O dies using hybrid copper bonding and TSMC's SoIC technology, so the expensive 2nm silicon is under 30% of total die area. It runs on standard 12-channel DDR5 with MR-DIMMs up to 8,800 MT/s — a deliberate break from the A64FX's fixed 32GB of on-package HBM2 — with 96 lanes of PCIe 6.0 and CXL 3.0 for memory pooling. The air-cooled SKU runs at 350W and the liquid-cooled version at 500W. Sample silicon is already in testing with national labs and supercomputing consortia, with deployments ramping late this year and broader deliveries in 2027.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://casrai.org/news/fujitsu-monaka-2nm-cpu-server-sc26-2026" style="color:#2563eb;">CASRAI, November 15, 2026</a></p>
+</div>
+
+<!-- 04 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">04</p>
+<h2 style="font-size:24px;line-height:1.25;color:#0f172a;margin:0 0 12px;">SambaNova pairs Intel GPUs with its SN50 for air-cooled AI inference</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">SambaNova Systems and Intel demonstrated an air-cooled AI inference system at SC26, running GLM-5.3 across four Intel GPU D-Series accelerators for prompt processing and a SambaRack SN50 for token generation. The design splits inference in two: Intel's hardware handles compute-heavy prefill, while SambaNova's fifth-generation Reconfigurable Dataflow Units handle memory-bound decode — and the whole system is meant to deploy in existing brownfield data centers without liquid cooling or proprietary networking.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The reference configuration is much bigger than the demo: an 80-GPU D-Series rack delivering 208 petaflops of peak FP4 compute, with 12TB to 38TB of memory depending on configuration. Intel's D270 is a 350W air-cooled GPU with 32 Xe3P cores, 256 XMX matrix engines and up to 480GB of LPDDR5X per card; each SN50 rack holds 16 RDUs and typically draws 20 kW. NVIDIA Dynamo routes requests between the two pools, vLLM serves both paths, and NIXL moves KV-cache data over standard RoCEv2 Ethernet. One caveat: SambaNova reported no measured latency or throughput for the combined demonstration, so the split-prefill/decode pitch is still a design claim, not a benchmark.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.unite.ai/sambanova-pairs-intel-gpus-with-sn50-for-air-cooled-ai-inference/" style="color:#2563eb;">Unite.AI, November 15, 2026</a></p>
+</div>
+
+<!-- 05 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">05</p>
+<h2 style="font-size:24px;line-height:1.25;color:#0f172a;margin:0 0 12px;">Congress pushes tighter AI chip export curbs after the Nvidia scandal</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Momentum is building in Washington to tighten controls on advanced AI chips reaching China, with lawmakers from both parties backing measures to expand oversight of overseas sales and attach them to the National Defense Authorization Act before the newly elected Congress takes its seats in January. The push follows Jensen Huang's resignation and the investigation into whether Singapore-based Nvidia customer Megaspeed diverted chips to China. One proposal, the Remote Access Security Act, would bar Chinese companies from remotely accessing advanced chips in overseas cloud data centers even when they are barred from buying the hardware directly.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The measures would give Congress greater authority to review — and potentially block — exports already approved by the administration, and pressure is mounting on the Commerce Department and Nvidia leadership to explain how U.S. chips reached blacklisted entities. Separately, the congressional testimony track moved over the weekend: House China committee chair John Moolenaar said Sunday that Huang has agreed to testify, with dates still being discussed, and no subpoena has been publicly reported — the House has asked Huang for a closed-door transcribed interview on December 1 and Nvidia general counsel Tim Teter on December 2, while Senate Banking has asked Huang for December 3 and Commerce Secretary Howard Lutnick for December 10, Lutnick having agreed to appear voluntarily.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://tradersunion.com/news/regulators/show/4255376-us-congress-ai-chip-export-china/" style="color:#2563eb;">Traders Union, November 15, 2026 (reporting the Financial Times)</a></p>
+</div>
+
+<!-- 06 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">06 · Preview</p>
+<h2 style="font-size:24px;line-height:1.25;color:#0f172a;margin:0 0 12px;">Earnings eve: Nvidia reports tomorrow, with Rubin and margins in focus</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Nvidia reports fiscal third-quarter 2027 results tomorrow, Tuesday, November 17, after the market close, with the call at 2 PM PT — interim CEO Colette Kress's first earnings call since taking over from Jensen Huang. The company guided revenue to about $108 billion, plus or minus 2%, and analysts expect roughly $109 billion, up about 91% year over year, with data-center revenue the dominant driver after a record $89 billion in the prior quarter. Management has said Vera Rubin should contribute roughly 20% of data-center revenue in the quarter, with demand still running well ahead of supply.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The numbers to watch are Rubin and margins. Gross margin is guided to about 74%, down from 75% last quarter, and management has warned it could fall toward 71–72% in the fourth quarter as memory prices climb — the first real margin pressure of the AI boom. The quarter's outlook assumes no data-center compute revenue from China at all, so any update on H200 sales is upside. This is a preview, not results; the verdict lands tomorrow afternoon.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.forex.com/en-us/news-and-analysis/weekly-equities-outlook-nvidia-anthropic-walmart/" style="color:#2563eb;">Forex.com, November 14, 2026</a> &nbsp;·&nbsp; <a href="https://www.ig.com/uk/news-and-trade-ideas/_nvidia-q3-earnings-preview--can-ai-growth-outweigh-the-jensen-h-261110" style="color:#2563eb;">IG, November 10, 2026</a></p>
+</div>
+
+<p style="font-family:Georgia,'Times New Roman',serif;font-style:italic;text-align:center;color:#64748b;font-size:15px;margin:28px 0 0;">by Your Tech Sommelier</p>
+</div>
+</div>
+
+<div id="hardwareDailyNov15" aria-live="polite" hidden style="background:#f8fafc;font-family:Georgia,'Times New Roman',serif;color:#334155;">
 <div style="max-width:760px;margin:0 auto;padding:32px 20px 48px;">
 <p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#64748b;margin:0 0 8px;">AI Hardware Daily &nbsp;·&nbsp; Sunday, November 15, 2026</p>
 <h1 style="font-size:40px;line-height:1.1;color:#0f172a;margin:0 0 16px;">The AI buildout's $4.2 trillion repricing — while hardware imports run at a $1 trillion pace</h1>
@@ -1161,88 +1233,6 @@
 </div>
 </div>
 
-<div id="hardwareDailyNov10" aria-live="polite" hidden style="background:#f8fafc;font-family:Georgia,'Times New Roman',serif;color:#334155;">
-<div style="max-width:760px;margin:0 auto;padding:32px 20px 48px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#64748b;margin:0 0 8px;">AI Hardware Daily &nbsp;·&nbsp; Tuesday, November 10, 2026</p>
-<h1 style="font-size:40px;line-height:1.1;color:#0f172a;margin:0 0 16px;">Robots learn by watching — and the wires inside chips turn to light</h1>
-<p style="font-size:17px;line-height:1.6;margin:0 0 28px;"><strong style="color:#0f172a;">Why it matters:</strong> Robots are learning by watching humans — NVIDIA's GR00T 2 trains on more than 400,000 hours of first-person video — while the plumbing underneath AI gets a rethink: light replacing copper inside chips, sparse-compute startups winning defense money, and AMD riding Google's TPU deal to its best day in six months. At the same time, the fight over who gets NVIDIA's best silicon flared again, with Bloomberg reporting B300 servers rented into China. The compute is getting easier to teach; moving the data — and policing where the chips go — is getting harder.</p>
-
-<!-- HERO -->
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#b45309;margin:0 0 10px;">Cover story</p>
-<h2 style="font-size:28px;line-height:1.2;color:#0f172a;margin:0 0 12px;">NVIDIA's GR00T 2 teaches robots by watching humans — and it is going open</h2>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">NVIDIA unveiled GR00T 2, its next-generation robot foundation model, on November 9 at the Conference on Robot Learning (CoRL) in Austin. It is what NVIDIA calls an open "world action model": a 2-billion-parameter transformer built on Cosmos that predicts the next few frames of video together with the robot's next actions, then executes them. The training mix is the story — 402,730 hours of first-person human video, 10,184 hours of handheld-gripper demonstrations across 2,897 tasks, and 23,500 hours of robot teleoperation — with a cross-embodiment technique, X-Adapt, that lets a skill demonstrated by a human transfer directly to robots of different shapes.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">In NVIDIA's own tests, GR00T 2 completed 40 of 50 evaluated tasks at least once with no task-specific demonstrations, averaged 71% success with one demonstration per task, and reached 95% with five — figures NVIDIA itself reported, with the 50 tasks unnamed and rollout counts undisclosed, so treat them as a vendor claim rather than an independent benchmark. The openness is real but phased: the model weights, including a lighter GR00T 2 Turbo, are due in December with the training recipe, while 100,000 hours of the human video is available now as the Human-1M-100K dataset under a CC BY 4.0 licence. Around it sits a full toolchain — Isaac Lab 3.0, generally available since October 20, the SimFoundry real-to-sim pipeline, and two new open benchmarks, DexBench and VABAR — with Nexuni testing it on laundry handling, Foxconn on server-manufacturing automation and Siemens on industrial use cases.</p>
-<div style="margin:4px 0 16px;">
-<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">402,730 hrs &nbsp;·&nbsp; human video in training</span>
-<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">95% &nbsp;·&nbsp; success with 5 demos (NVIDIA's own tests)</span>
-<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">December &nbsp;·&nbsp; weights open-sourced</span>
-</div>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.unite.ai/nvidia-introduces-gr00t-2-for-robots-learning-from-human-video/" style="color:#2563eb;">Unite.AI, November 10, 2026</a> · <a href="https://www.techtimes.com/articles/330365/20261110/nvidia-gr00t-2-robot-model-reports-95-success-while-leaving-50-test-tasks-unnamed.htm" style="color:#2563eb;">Tech Times, November 10, 2026</a></p>
-</div>
-
-<!-- 02 -->
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">02</p>
-<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">NVIDIA's Korea bet widens: direct stakes in four AI startups</h3>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">NVIDIA used AI Day Seoul on November 9 to disclose plans to invest directly in four South Korean AI startups: Point2 Technology, which builds radio-frequency interconnects that move data between AI chips and racks; Upstage and Motif Technologies, which build large language models; and RealWorld, which builds robot foundation models for humanoids and industrial robots. Point2 had already received funding from NVentures, NVIDIA's venture arm, in the first half of 2026; the other three are new planned investments. The procedures have not yet completed and no amounts were disclosed — these are announced plans, not closed deals.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The robotics angle arrived the same day: RealWorld unveiled DexBench, a 15-task benchmark for robot-hand dexterity across retail, logistics, assembly and hotel food-and-beverage settings, built on NVIDIA's Isaac Lab-Arena and the Newton physics engine. The investments cap an AI Day Seoul that also produced the Rebellions R200 NVLink Fusion pact — NVIDIA is buying into the Korean stack at every layer, from interconnects and models to robot hands, while the returns are still unproven.</p>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://aiagentupdate.com/post/nvidia-korea-startups-2026-11-10" style="color:#2563eb;">AI Agent Update, November 10, 2026</a></p>
-</div>
-
-<!-- 03 -->
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">03</p>
-<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">Moonshot AI rented B300 servers in China, Bloomberg reports — and the company disputes it</h3>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Beijing-based Moonshot AI accessed NVIDIA's most powerful AI accelerators, B300 GPUs, by renting servers, according to regulatory documents seen by Bloomberg and reported on November 10. The filings disclosed financing contracts by server owner Lingmeixin (Beijing) Technology Co. and financier Beijing Zhongguancun Bank Co., with the servers valued at around $65 million and located in China. The US requires an explicit licence to sell advanced chips to China, and Moonshot has been accused by the US of training frontier models with restricted NVIDIA Blackwell chips.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Both sides push back: Moonshot disputed the accuracy of the documents, and references to the company were no longer present in them after Bloomberg made contact — "We currently have no business relationship with Lingmeixin," a Moonshot spokesperson said. An NVIDIA spokesperson said the parties involved "are not Nvidia customers" and that the company does not provide them replacement products, service or support. The report lands as the board probe into CEO Jensen Huang continues and a week before NVIDIA's November 17 earnings — the question of how advanced chips reach China is now a live thread in both stories.</p>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.tradingview.com/news/seekingalpha:b28633549094b:0-china-s-moonshot-ai-rents-advanced-nvidia-chips-bloomberg/" style="color:#2563eb;">Bloomberg via TradingView, November 10, 2026</a></p>
-</div>
-
-<!-- 04 -->
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">04</p>
-<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">Sparxity's sparse AI chips hit $90M in total funding as Lockheed Martin joins the Series A</h3>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Dresden-based Sparxity, formerly SpiNNcloud, has closed a Series A that brings its total funding to $90 million, Dealroom reported on November 10, with Lockheed Martin Ventures among the backers. The company did not disclose how much new capital the round raised, so $90 million is a cumulative milestone rather than a measure of fresh money. Sparxity builds chips for "sparse" computing — skipping calculations that do not matter for a given input to cut energy use — and pitches its SpiNNaker2 chip as a complement to NVIDIA's hardware rather than a rival.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The company says it has completed three chip designs, produced more than 70,000 chips and signed over 30 customers across the US and Europe, with revenue growing fourfold from 2024 to 2025. It recently installed a multi-million-dollar system at Germany's Jülich Supercomputing Centre and signed a letter of intent with Deutsche Telekom's T-Systems targeting a first data-centre deployment in 2028. It is one of the largest Series A rounds for a German AI startup in four years — and a bet that energy-efficient, non-GPU compute has a defence and data-centre market of its own.</p>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://dealroom.co/news/171227-dresden-s-sparxity-hits-90m-total-funding-as-lockheed-martin-backs-its-s/" style="color:#2563eb;">Dealroom, November 10, 2026</a></p>
-</div>
-
-<!-- 05 -->
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">05</p>
-<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">Staera emerges from stealth to put light inside the chip</h3>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Staera Semiconductor, formerly New Silicon Corporation, emerged from stealth on November 10 with $4.6 million in pre-seed funding led by Openspace Capital, with SGInnovate, Black Kite Capital, 28 Holdings, In Group and Decimus Technologies participating. Its first product, Lightwire, builds LED optical links directly inside silicon chips — light generated on the same wafer as the chip's circuits — to replace the copper links that now limit how fast and how far AI systems can move data. The company says it has built gallium-nitride LEDs into silicon chips in commercial foundries since 2016, at 98–99% yield.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The pitch is energy: Staera claims Lightwire moves data using less than a tenth of the energy of today's best optical links — 24 terabytes a second for under 50 watts, against nearly a kilowatt for co-packaged optics — and it is designed to sit inside the bridge or interposer chip that already connects processors and memory, so it works with existing packaging. Those are vendor claims, and commercial release is targeted for 2030. But the problem it attacks is real: the International Energy Agency expects data-centre electricity use to more than double, from about 415 terawatt-hours in 2024 to around 945 by 2030, and copper cannot carry more data further without burning more of that power.</p>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.morningstar.com/news/pr-newswire/20261110ne93789/staera-semiconductor-emerges-from-stealth-with-us46-million-to-build-light-into-the-chip-and-break-ais-data-bottleneck" style="color:#2563eb;">PR Newswire via Morningstar, November 10, 2026</a></p>
-</div>
-
-<!-- 06 -->
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">06</p>
-<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">AMD's best day in six months: +13% as the TPU deal and NVIDIA's troubles converge</h3>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">AMD shares jumped 13.26% to $508.58 on Monday, November 9 — the stock's best session in six months — as investors piled into the AI chipmaker on two fronts at once. The first is Google: AMD's fifth-generation EPYC processors power the host servers for Google Cloud's TPU 8tx, the confidential-computing system Google unveiled on Monday, putting AMD silicon at the heart of a rival's flagship accelerator. The second is NVIDIA: with the board probe into Jensen Huang hanging over the market leader, Oppenheimer upgraded AMD to Buy with a $600 price target, and Bank of America said AMD, Broadcom and Marvell could benefit from distractions at NVIDIA — calling the probe "a new overhang, not yet an earnings event."</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The fundamentals behind the move are AMD's own: the company expects revenue growth above 80% in 2027, with server revenue doubling and data-centre AI growing faster still, and says its Instinct MI455X accelerators are shipping in volume, with early Helios customers including Anthropic, Meta, Microsoft, OpenAI and Oracle. It is a market reaction, not a product launch — but it is the clearest signal yet that the AI hardware trade is spreading beyond a single name.</p>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://stocktwits.com/news-articles/markets/equity/amd-stock-michael-burry-wont-touch-nvidia-headline-trade/cNGu40nR97l" style="color:#2563eb;">Stocktwits, November 10, 2026</a></p>
-</div>
-
-<!-- 07 -->
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">07</p>
-<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">Intel pushes AI into factories and the enterprise, on CPUs</h3>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Intel expanded its AI footprint on November 9 with new industrial and enterprise collaborations that run on its CPUs rather than GPUs. With ZKH it launched LingLong Insight 1.0, an industrial edge AI system for verification and monitoring in factory settings, and with Symbolic Mind it is offering turnkey, CPU-based enterprise AI solutions. The deals push practical AI workloads onto Intel's existing platforms — factory floors and corporate IT — rather than waiting on its next accelerator generation.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The test is whether the deployments show up in the numbers: watch for concrete disclosures around edge deployment counts for LingLong Insight or Xeon AI volumes in Intel's fourth-quarter results and 2027 outlook. Intel's data-centre business is already moving — DCAI revenue rose 78% year over year in the third quarter to $7.3 billion — and the company expects demand for its data-centre CPUs to outstrip supply in 2027 and 2028.</p>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://simplywall.st/stocks/us/semiconductors/nasdaq-intc/intel/news/intel-intc-pushes-deeper-into-ai-with-new-industrial-and-ent" style="color:#2563eb;">Simply Wall St, November 10, 2026</a></p>
-</div>
-
-<p style="font-family:Georgia,'Times New Roman',serif;font-style:italic;text-align:center;color:#64748b;font-size:15px;margin:28px 0 0;">by Your Tech Sommelier</p>
-</div>
-</div>
-
-
-
-
-
     <article id="issue" aria-live="polite" hidden>
       <section class="hero" aria-labelledby="heroTitle">
         <div class="hero-copy">
@@ -1281,6 +1271,75 @@
     </article>
 
 
+
+<div id="aiTrendDailyNov16" class="edition ai-trends-daily" data-date="2026-11-16" aria-live="polite" hidden style="margin-top:22px;">
+<article style="background:#f8fafc;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
+<div style="max-width:860px;margin:0 auto;">
+<p style="text-align:center;letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:#64748b;margin:0 0 8px;">AI Trends Daily &middot; November 16, 2026</p>
+<h1 style="text-align:center;color:#0f172a;font-size:42px;line-height:1.05;margin:0 0 12px;">China ships the flagship, Washington anoints the champions</h1>
+<p style="text-align:center;font-size:17px;line-height:1.6;max-width:680px;margin:0 auto 20px;">Why it matters: Sunday was the day the AI stack re-sorted itself in public. Alibaba unveiled a safety-first flagship while Meituan open-sourced a trillion-parameter agent model trained with no NVIDIA GPUs at all; Washington moved to brand two dozen American AI firms "national champions" for the export fight; and TSMC answered by buying into the labs themselves. Underneath it all, the agent economy got its commerce rails — and the chip orders behind it now stretch to 2029.</p>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#dc2626;font-weight:700;margin:0 0 10px;">Cover Story &middot; Model Release &middot; Safety</p>
+<h2 style="color:#0f172a;font-size:30px;line-height:1.15;margin:0 0 12px;">Alibaba unveils Qwen4-Max, its new flagship — with safety checks built into training</h2>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;">
+<span style="background:#0f172a;color:#fff;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">Reuters &middot; Nov 15</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">Outperforms Qwen3.8-Max with fewer tokens</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">$1.50 / $4.50 per 1M tokens (Singapore)</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">First model of the Qwen4 family</span>
+</div>
+<p style="line-height:1.65;margin:0 0 10px;">Alibaba unveiled Qwen4-Max on Sunday, November 15, its new flagship model and the first of the Qwen4 family, pitched at complex professional and scientific work — 3D modeling, game development, precision manufacturing, finance, law, healthcare, and frontier scientific discovery. Alibaba says it outperforms Qwen3.8-Max, unveiled in August, while using fewer tokens and at lower cost. A time-limited preview had been running since November 11 through Alibaba's Token Plan; Sunday's launch makes the flagship broadly available.</p>
+<p style="line-height:1.65;margin:0 0 10px;">The framing is the story as much as the model: Alibaba led with safety, saying training included security checks alongside coding tests to reduce vulnerabilities such as code injection, memory-safety flaws, and broken access controls, and that safeguards against misuse in cybercrime and hazardous materials were strengthened. Internal testing found no evidence of significant high-risk capabilities, the company said. Chinese labs have in recent months been publishing more safety disclosure with each release, amid growing global concern over rogue-AI and loss-of-control risks — and with a lawsuit in San Francisco last week asking a court to freeze frontier development, safety cases are now part of the launch itself, not an appendix to it.</p>
+<p style="line-height:1.65;margin:0;">Qwen4-Max lands two days after Qwen4's confirmed preview ended the rumor-only phase — the model that was excluded from this briefing as a leak on November 11 is now a shipping flagship. The open question is the benchmark sheet: Alibaba has not yet published independent eval numbers, so the "fewer tokens, better results" claim is the vendor's own until third parties run it.</p>
+<p style="margin:12px 0 0;"><a href="https://kwsn.com/2026/11/15/alibaba-unveils-new-flagship-ai-model-with-safety-upgrades/" style="color:#2563eb;">Source: Reuters, via KWSN (Nov 15) &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">02 &middot; Agents &middot; Commerce</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Sierra's Poppy v1.0 goes production-ready — and Shopify and Meta's Muse are already on it</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Sierra released version 1.0 of the Personal Agent Protocol (Poppy) on Monday, November 16, a production-ready open standard that lets personal AI agents transact with businesses through a trust-first architecture built on MCP, OpenAPI, and OAuth. The distribution is what makes it land: Shopify has enabled Poppy across merchants in more than 175 countries, and Meta's Muse agent now automatically looks for Poppy first on every site it visits. The protocol went from initial announcement on October 6 to a published draft on October 9 to v1.0 in roughly five weeks, after real-world testing with design partners.</p>
+<p style="line-height:1.65;margin:0;">This is infrastructure, not a product launch — the bet is that agent-to-business commerce needs a shared handshake before it needs another checkout button. With the two biggest distribution points already wired in, Poppy's first test is whether rival agent builders adopt a standard they didn't write.</p>
+<p style="margin:12px 0 0;"><a href="https://futurumgroup.com/insights/poppy-v10-the-protocol-that-could-define-agent-to-business-commerce/" style="color:#2563eb;">Source: Futurum, reporting Sierra (Nov 16) &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">03 &middot; Infrastructure &middot; Chips</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Analyst estimate: OpenAI and Anthropic will take ~26 million Google TPUs in 2028&ndash;29</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Supply-chain analyst Ming-Chi Kuo posted on Sunday that strong new orders from OpenAI and Anthropic have extended Google's TPU shipment visibility to 2029, ahead of NVIDIA GPUs and other AI accelerators, which he puts mostly at late 2027 to mid-2028. His estimate: OpenAI will seek about 12 million TPUs across 2028 and 2029, buying the chips outright, and Anthropic about 14 million, combining leasing with direct purchases. He also noted that NVIDIA's CEO-succession uncertainty is helping Google discuss "post-2028 long-term plans" with customers.</p>
+<p style="line-height:1.65;margin:0;">These are analyst estimates from Kuo's latest industry survey, not company disclosures — none of Google, OpenAI, or Anthropic has confirmed the counts, the split, or the payment mix, and no delivery schedule, price, or contract term has been published. Read as direction rather than fact, it is still the clearest signal yet that the two biggest frontier labs are diversifying their compute away from NVIDIA at multi-year scale — and that Google's custom silicon is becoming a second pole of the AI hardware trade.</p>
+<p style="margin:12px 0 0;"><a href="https://stocktwits.com/news-articles/markets/equity/more-pain-for-nvda-top-supply-chain-analyst-says-new-open-ai-anthropic-chip-orders-boost-google-s-tpu-outlook/cNb7fwwR9X7" style="color:#2563eb;">Source: Stocktwits, reporting Ming-Chi Kuo (Nov 16) &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">04 &middot; Policy &middot; Export</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Trump administration to name 24+ US AI firms "national champions" — no cash, just the export push</h3>
+<p style="line-height:1.65;margin:0 0 8px;">The Wall Street Journal reported on Sunday, November 15 that the Trump administration is set to designate more than two dozen American AI companies as "national champions," with NVIDIA, OpenAI, Amazon, and Anthropic on the list. The label carries no domestic cash injection or subsidy: Washington wants it to work overseas, helping the companies land foreign contracts and nudging other governments toward American chips and cloud services before Chinese-based ones. It follows the July 2025 executive order directing Commerce to promote exports of the full American "AI stack," and the Export-Import Bank's ExportAI program, launched in May, which unlocked billions for overseas buyers of US AI technology.</p>
+<p style="line-height:1.65;margin:0;">Anthropic's spot is awkward: in February the Pentagon labeled the company a supply-chain risk after it refused to drop limits on autonomous weapons and mass surveillance, a move a federal judge ruled unlawful in August — while the D.C. Circuit upheld a parallel designation under a different statute. The White House now wants to promote Anthropic's models to foreign governments while the Pentagon still bars its own contractors from using them. The designation is a branding play, not a procurement one — its test is whether foreign buyers care.</p>
+<p style="margin:12px 0 0;"><a href="https://longbridge.com/en/news/305625662" style="color:#2563eb;">Source: Longbridge, reporting The Wall Street Journal (Nov 15) &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">05 &middot; Open-Weights &middot; Agents</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Meituan open-sources LongCat-2.5, a 1.6T-parameter agent model trained on zero NVIDIA GPUs</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Meituan's LongCat team has open-sourced the weights of LongCat-2.5 under the permissive MIT license, The Decoder reported on November 15. The model is a 1.6-trillion-parameter mixture-of-experts agent model with about 48 billion parameters active per token — and it was trained entirely on Chinese accelerators: Meituan's self-hosting guide documents a 194-chip Huawei Ascend Atlas A2 cluster, with no NVIDIA GPU guidance at all. The model was unveiled on November 2 and the open-sourcing announced on November 10.</p>
+<p style="line-height:1.65;margin:0;">On performance, Meituan reports 88.4 on Terminal Bench v2.1, a test of agents handling real computer tasks, just behind Claude Opus 5's 89.1 — but those are vendor-reported scores with no independent reproduction yet, so read them as Meituan's claim rather than a verified result. The training hardware is the verified news: a trillion-parameter agent model built end-to-end on Huawei silicon is the strongest evidence yet that China's open-weights ecosystem can now route around the export controls entirely.</p>
+<p style="margin:12px 0 0;"><a href="https://aiagentupdate.com/post/meituan-longcat-2-5-2026-11-16" style="color:#2563eb;">Source: AI Agent Update, reporting The Decoder (Nov 15) &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">06 &middot; Capital &middot; The Stack</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">TSMC steps in as AI's other central bank: a $500M startup fund, plus up to $500M each in Anthropic and OpenAI</h3>
+<p style="line-height:1.65;margin:0 0 8px;">TSMC's board approved resolutions on November 10, filed in a Form 6-K, setting up a new investment arm of up to $500 million to back chip startups — and, for the first time, its own suppliers — alongside up to $500 million in Anthropic common shares at its IPO price and up to $500 million in OpenAI preferred stock, Nikkei Asia reported. That puts TSMC alongside the rest of the AI chip stack buying into Anthropic's mega-IPO, which prices Wednesday, November 18. The same board meeting approved about $40.9 billion in new capital appropriations for advanced capacity, packaging, fabs, and 2027 R&amp;D.</p>
+<p style="line-height:1.65;margin:0;">The foundry that makes the chips is now investing in the labs that buy them: with NVIDIA's demand-side "central bank" role paused after Jensen Huang's exit, TSMC is stepping into the vacuum from the supply side. Watch whether other suppliers follow before Anthropic prices on Wednesday — and whether the startup fund's first bets land on packaging and interconnect, where TSMC's roadmap needs the most help.</p>
+<p style="margin:12px 0 0;"><a href="https://michaelparekh.substack.com/p/ai-tsmc-the-other-central-bank-steps" style="color:#2563eb;">Source: AI-RTZ, reporting Nikkei Asia and TSMC Form 6-K (Nov 16) &rarr;</a></p>
+</section>
+
+<p style="text-align:center;font-size:14px;line-height:1.6;color:#64748b;margin:24px 0 0;">Watch today: MLPerf Endpoints v1.0 results land at 1 PM PT — Endpoints-only; Training v6.1 has no confirmed date. NVIDIA reports Q3 earnings tomorrow, Tuesday, November 17, after the close.</p>
+
+<p style="text-align:center;font-style:italic;color:#64748b;margin:28px 0 0;">by Your Tech Sommelier</p>
+</div>
+</article>
+</div>
 
 <div id="aiTrendDailyNov15" class="edition ai-trends-daily" data-date="2026-11-15" aria-live="polite" hidden style="margin-top:22px;">
 <article style="background:#f8fafc;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
@@ -1660,74 +1719,7 @@
 </article>
 </div>
 
-<div id="aiTrendDailyNov10" class="edition ai-trends-daily" data-date="2026-11-10" aria-live="polite" hidden style="margin-top:22px;">
-<article style="background:#f8fafc;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
-<div style="max-width:860px;margin:0 auto;">
-<p style="text-align:center;letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:#64748b;margin:0 0 8px;">AI Trends Daily &middot; November 10, 2026</p>
-<h1 style="text-align:center;color:#0f172a;font-size:42px;line-height:1.05;margin:0 0 12px;">The new No. 1 model arrives on IPO roadshow day</h1>
-<p style="text-align:center;font-size:17px;line-height:1.6;max-width:680px;margin:0 auto 20px;">Why it matters: Anthropic launched its strongest model yet on the same day its IPO roadshow began — a $64.4 billion offering targeting a roughly $1 trillion valuation — while Meta answered with its cheapest Muse ever and a small agentic model quietly went live at a higher price with no benchmarks at all. The frontier is now being priced in public markets even as the cost floor keeps falling, and the Fireworks breach widening into datasets and model weights is a reminder that the infrastructure underneath it all is still a target.</p>
-<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#dc2626;font-weight:700;margin:0 0 10px;">Cover Story &middot; Model Release / Benchmarks</p>
-<h2 style="color:#0f172a;font-size:30px;line-height:1.15;margin:0 0 12px;">Claude Fable 5.2 and Mythos 5.2: Anthropic retakes the top of the leaderboard — cheaper and faster</h2>
-<div style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;">
-<span style="background:#0f172a;color:#fff;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">AA Intelligence Index 65 &mdash; #1</span>
-<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">$8 / $40 per M tokens &mdash; 20% cheaper</span>
-<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">Up to 30% faster</span>
-<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">1,000 agents, one OS, 8 days</span>
-</div>
-<p style="line-height:1.65;margin:0 0 10px;">Anthropic released Claude Fable 5.2 and Claude Mythos 5.2 on November 9, its newest models for difficult technical work, and Fable 5.2 immediately took first place on Artificial Analysis&rsquo;s Intelligence Index v5 at 65, ahead of Gemini 4 Carbon at 60 and Opus 5.5 at 59. It costs $8 per million input tokens and $40 per million output &mdash; 20% less than Fable 5.1 &mdash; and generates responses up to 30% faster. Mythos 5.2, the same model with cybersecurity and biology capabilities retained, is available only to organizations accepted into Anthropic&rsquo;s verification programs.</p>
-<p style="line-height:1.65;margin:0 0 10px;">The showpiece experiment: an engineer asked Fable 5.2 to build an operating system from scratch, and the model coordinated more than 1,000 AI agents over eight days to produce a working system that boots on a laptop, with windows, file storage, and a login screen. Anthropic also reports the models helped solve two previously open problems in black hole physics, designed three working electronic devices, and formalized the existing proof of Fermat&rsquo;s Last Theorem in 30 hours with 1,000 agents &mdash; where Opus 5.5 completed 26% in 18 hours on the same setup. On the benchmarks, Fable 5.2 scored 80% on HLE-Diamond (previous best 69%), 60% on CursorBench at max effort, and 97.7% on ARC-AGI-3 with a custom harness.</p>
-<p style="line-height:1.65;margin:0;">The price cut comes with a caveat worth watching: on SemiAnalysis&rsquo;s GDPx benchmark of professional tasks, Fable 5.2 took first place at 16.4%, but the cost per task rose to $88.15 from $67.16 for Fable 5.1 &mdash; because the model writes hundreds or thousands of test cases and spins up subagents to check its own work. Cheaper per token, dearer per finished job: the unit economics of reasoning models keep moving in both directions at once.</p>
-<p style="margin:12px 0 0;"><a href="https://latent.space/p/ainews-fable-5-2-retakes-world-1-llm-spot-as-ant-ipo-roadshow-begins/" style="color:#2563eb;">Source: Latent Space &rarr;</a> &nbsp;&middot;&nbsp; <a href="https://www.reuters.com/technology/anthropic-unveils-new-fable-mythos-models-competition-heats-up-ahead-ipo-2026-11-09/" style="color:#2563eb;">Reuters &rarr;</a></p>
-</section>
-<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">02 &middot; Markets</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Anthropic&rsquo;s IPO: up to $64.4B raise at a roughly $1T valuation</h3>
-<p style="line-height:1.65;margin:0 0 8px;">Anthropic&rsquo;s IPO is set to raise as much as $64.4 billion, according to the latest draft prospectus seen by Reuters on Tuesday, with shares in an indicative band of $70 to $78 and a valuation target of up to about $1.02 trillion. The company launched its roadshow the same day Fable 5.2 shipped &mdash; the largest test yet of Wall Street&rsquo;s faith in the AI boom. An earlier figure of $69.3 billion circulated Monday morning and was corrected in the updated prospectus.</p>
-<p style="line-height:1.65;margin:0;">If it lands near the top of the range, it would be one of the largest tech listings ever and the first time a frontier AI lab&rsquo;s economics get priced by public markets rather than venture rounds. Separately, a US magistrate judge ruled Anthropic must face claims that its Claude Max subscription marketing overstated the usage multiplier on its $100- and $200-a-month plans.</p>
-<p style="margin:12px 0 0;"><a href="https://www.reuters.com/business/anthropic-ipo-raise-much-644-billion-latest-draft-prospectus-shows-2026-11-10/" style="color:#2563eb;">Source: Reuters &rarr;</a></p>
-</section>
-<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">03 &middot; Model Release</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Meta&rsquo;s tiny Muse Ember matches Haiku-class quality at a fraction of the cost</h3>
-<p style="line-height:1.65;margin:0 0 8px;">Meta released Muse Ember on November 9, its smallest and most efficient Muse model, built for the repetitive work agents do all day: tool calls, coding subtasks, routing, extraction, and long-document parsing. It scores 36 on the Artificial Analysis Intelligence Index &mdash; close to Muse Spark 1.3 at 36.6 &mdash; at about 6% of the cost per task, priced at $0.10 per million input tokens and $0.50 per million output (rising to $0.30 / $1.50 above 200K tokens).</p>
-<p style="line-height:1.65;margin:0;">Ember is the other end of the same trend as Fable 5.2: the frontier gets stronger while the workhorse tier gets dramatically cheaper. For agent fleets that make thousands of small calls a day, a near-Haiku model at ten cents per million input tokens changes what &ldquo;always-on&rdquo; agent infrastructure can afford to do.</p>
-<p style="margin:12px 0 0;"><a href="https://www.swarchitect.net/en/ai-launches-2026-11/" style="color:#2563eb;">Source: SW Architect &rarr;</a> &nbsp;&middot;&nbsp; <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-10-2026/" style="color:#2563eb;">The Neuron &rarr;</a></p>
-</section>
-<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">04 &middot; Infrastructure / Security</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Fireworks AI breach widens: billing data, datasets, and partial model weights exposed</h3>
-<p style="line-height:1.65;margin:0 0 8px;">Fireworks AI disclosed on November 9 that its October security incident reached far more than first reported: attackers got to account and billing information, and for a limited set of accounts, to stored secrets, training datasets, and a subset of incomplete model weights. The first bulletin on October 9 had said no customer models or datasets were touched. A second intrusion path ran through a third-party cloud provider hosting Fireworks R&amp;D machines, breached October 23 and used the next day to reach development systems.</p>
-<p style="line-height:1.65;margin:0;">Fireworks, which counts more than 10,000 customers including Notion and Cursor, says it has seen no further successful access since October 25, found no impact on Inference, Training SDK, or Nexus (zero data retention by default), and has disabled self-serve dataset uploads and downloads while Palo Alto Networks Unit 42 investigates. The company links the attack to a financially motivated LLMjacking group that resells stolen model access. Payment card numbers are not stored and were not affected.</p>
-<p style="margin:12px 0 0;"><a href="https://cybersecuritynews.com/fireworks-ai-data-breach/" style="color:#2563eb;">Source: Cyber Security News &rarr;</a> &nbsp;&middot;&nbsp; <a href="https://www.siliconreport.com/fireworks-expands-breach-disclosure-to-datasets-and-model-weights" style="color:#2563eb;">Silicon Report &rarr;</a></p>
-</section>
-<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">05 &middot; Safety / Systems</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">OpenAI builds a big red button: Control Room</h3>
-<p style="line-height:1.65;margin:0 0 8px;">OpenAI described Control Room, a central system that tracks model workloads across its research infrastructure and stops them quickly when safety or security concerns arise. It is the operational answer to a question the Fable 5.2 OS experiment makes newly concrete: when a model can coordinate a thousand agents for eight days, someone needs a single place to see what is running and halt it.</p>
-<p style="line-height:1.65;margin:0;">The move fits a broader pattern of labs formalizing internal governance as models take on longer, more autonomous work &mdash; the same week Anthropic shipped a model that can run thousand-agent projects and Meta shipped one designed to be called thousands of times a day.</p>
-<p style="margin:12px 0 0;"><a href="https://thedailyfledgling.click/" style="color:#2563eb;">Source: The Daily Fledgling &rarr;</a></p>
-</section>
-<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">06 &middot; Model Release</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Nex-N2.6 goes live: a new agentic model, a higher price, and no benchmarks</h3>
-<p style="line-height:1.65;margin:0 0 8px;">Nex AGI&rsquo;s Nex-N2.6 appeared on OpenRouter and its own API on November 10 with no launch post, no readable model card, and no benchmark table. It is post-trained on Z.ai&rsquo;s GLM-5.3-Flash &mdash; a switch from the Qwen3.5 base behind Nex-N2.5 Pro &mdash; at roughly 321 billion parameters with a 262,144-token context, priced at $0.12 per million input tokens and $0.40 per million output, a 60% increase over its predecessor.</p>
-<p style="line-height:1.65;margin:0;">The vendor&rsquo;s only performance claim is a one-liner: N2.6 reduces repetitive reasoning and follows available tools more closely than N2.5 Pro. The linked Hugging Face repository returns an authentication prompt rather than a public card, so there is currently no independent score anywhere &mdash; a reminder that not every launch in the model-count race comes with evidence attached.</p>
-<p style="margin:12px 0 0;"><a href="https://www.orcarouter.ai/blog/nex-n2-6-release" style="color:#2563eb;">Source: OrcaRouter &rarr;</a> &nbsp;&middot;&nbsp; <a href="https://openrouter.ai/nex-agi" style="color:#2563eb;">OpenRouter &rarr;</a></p>
-</section>
-<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">07 &middot; Evals / Research</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Two new benchmarks test whether models can catch errors &mdash; including their own</h3>
-<p style="line-height:1.65;margin:0 0 8px;">Researchers released the AI Peer Review Benchmark on November 10, planting 100 deliberate methodological errors into real open-access psychology papers and running frontier models plus review tools against them; the full dataset, taxonomy, and harness are public on GitHub for reproducible science-QA evals. The same day brought FinDendro, a benchmark of 2,226 dated US macro, stock, and Fed facts from 1999 through 2026, which finds frontier models often answer correctly while insisting they are guessing &mdash; and that historical-date instructions change their claims more than their accuracy.</p>
-<p style="line-height:1.65;margin:0;">Both point at the same gap: models are increasingly used as reviewers and analysts of record, but their ability to spot planted errors and to calibrate confidence about what they know is still being measured from scratch.</p>
-<p style="margin:12px 0 0;"><a href="https://www.explainx.ai/blog/topics/benchmarks" style="color:#2563eb;">Source: ExplainX &rarr;</a></p>
-</section>
-<p style="text-align:center;font-style:italic;color:#64748b;margin:28px 0 0;">by Your Tech Sommelier</p>
-</div>
-</article>
-</div>
-
-    <div id="aiTrendWeeklyNov13" data-edition-date="2026-11-13" aria-live="polite" hidden style="margin-top:22px;">
+<div id="aiTrendWeeklyNov13" data-edition-date="2026-11-13" aria-live="polite" hidden style="margin-top:22px;">
 <article style="background:#f8fafc;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
 <div style="max-width:860px;margin:0 auto;">
 <p style="text-align:center;letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:#64748b;margin:0 0 8px;">AI Trends Weekly &middot; November 13, 2026</p>
@@ -2853,12 +2845,12 @@
       const item = issues[key];
       if (!item) return;
       currentIssue = key;
+      $('#hardwareDailyNov16').hidden = true;
       $('#hardwareDailyNov15').hidden = true;
       $('#hardwareDailyNov14').hidden = true;
       $('#hardwareDailyNov13').hidden = true;
       $('#hardwareDailyNov12').hidden = true;
       $('#hardwareDailyNov11').hidden = true;
-      $('#hardwareDailyNov10').hidden = true;
       $('#issue').hidden = false;
       keepBlogTitle();
       $('#issueDate').textContent = item.date;
@@ -2909,19 +2901,19 @@
       window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     }
 
-    let currentIssue = '2026-11-15';
-    let currentAiIssue = '2026-11-15';
+    let currentIssue = '2026-11-16';
+    let currentAiIssue = '2026-11-16';
     let currentSection = 'hardware';
 
     function renderHardwareIssue(key) {
       currentIssue = key;
       const hardwareIssues = {
+        '2026-11-16': { panel: '#hardwareDailyNov16', date: 'Monday, November 16, 2026', stories: '6 stories', title: 'AI Hardware Daily — November 16, 2026' },
         '2026-11-15': { panel: '#hardwareDailyNov15', date: 'Sunday, November 15, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 15, 2026' },
         '2026-11-14': { panel: '#hardwareDailyNov14', date: 'Saturday, November 14, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 14, 2026' },
         '2026-11-13': { panel: '#hardwareDailyNov13', date: 'Friday, November 13, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 13, 2026' },
         '2026-11-12': { panel: '#hardwareDailyNov12', date: 'Thursday, November 12, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 12, 2026' },
         '2026-11-11': { panel: '#hardwareDailyNov11', date: 'Wednesday, November 11, 2026', stories: '5 stories', title: 'AI Hardware Daily — November 11, 2026' },
-        '2026-11-10': { panel: '#hardwareDailyNov10', date: 'Tuesday, November 10, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 10, 2026' },
       };
       const selected = hardwareIssues[key];
       if (!selected) {
@@ -2970,12 +2962,12 @@
       const isWeeklyOct09 = key === 'weekly-2026-10-09';
       const isWeeklyOct02 = key === 'weekly-2026-10-02';
       const isWeeklySep25 = key === 'weekly-2026-09-25';
+      const isNov16 = key === '2026-11-16';
       const isNov15 = key === '2026-11-15';
       const isNov14 = key === '2026-11-14';
       const isNov13 = key === '2026-11-13';
       const isNov12 = key === '2026-11-12';
       const isNov11 = key === '2026-11-11';
-      const isNov10 = key === '2026-11-10';
       $('#aiTrendWeeklyNov13').hidden = !isWeeklyNov13;
       $('#aiTrendWeeklyNov11').hidden = !isWeeklyNov11;
       $('#aiTrendWeeklyNov06').hidden = !isWeeklyNov06;
@@ -2985,13 +2977,16 @@
       $('#aiTrendWeeklyOct09').hidden = !isWeeklyOct09;
       $('#aiTrendWeeklyOct02').hidden = !isWeeklyOct02;
       $('#aiTrendWeeklySep25').hidden = !isWeeklySep25;
+      $('#aiTrendDailyNov16').hidden = !isNov16;
       $('#aiTrendDailyNov15').hidden = !isNov15;
       $('#aiTrendDailyNov14').hidden = !isNov14;
       $('#aiTrendDailyNov13').hidden = !isNov13;
       $('#aiTrendDailyNov12').hidden = !isNov12;
       $('#aiTrendDailyNov11').hidden = !isNov11;
-      $('#aiTrendDailyNov10').hidden = !isNov10;
-      if (isNov15) {
+      if (isNov16) {
+        $('#issueDate').textContent = 'Monday, November 16, 2026';
+        $('#storyCount').textContent = '6 stories';
+      } else if (isNov15) {
         $('#issueDate').textContent = 'Sunday, November 15, 2026';
         $('#storyCount').textContent = '7 stories';
       } else if (isNov14) {
@@ -3005,9 +3000,6 @@
         $('#storyCount').textContent = '8 stories';
       } else if (isNov11) {
         $('#issueDate').textContent = 'Wednesday, November 11, 2026';
-        $('#storyCount').textContent = '7 stories';
-      } else if (isNov10) {
-        $('#issueDate').textContent = 'Tuesday, November 10, 2026';
         $('#storyCount').textContent = '7 stories';
       } else if (isWeeklyNov13) {
         $('#issueDate').textContent = 'Week of November 13, 2026';
@@ -3053,12 +3045,12 @@
         btn.setAttribute('aria-pressed', String(btn.dataset.section === section));
       });
       $('#issue').hidden = true;
+      $('#hardwareDailyNov16').hidden = true;
       $('#hardwareDailyNov15').hidden = true;
       $('#hardwareDailyNov14').hidden = true;
       $('#hardwareDailyNov13').hidden = true;
       $('#hardwareDailyNov12').hidden = true;
       $('#hardwareDailyNov11').hidden = true;
-      $('#hardwareDailyNov10').hidden = true;
       $('#aiTrendWeeklyNov13').hidden = true;
       $('#aiTrendWeeklyNov11').hidden = true;
       $('#aiTrendWeeklyNov06').hidden = true;
@@ -3068,12 +3060,12 @@
       $('#aiTrendWeeklyOct09').hidden = true;
       $('#aiTrendWeeklyOct02').hidden = true;
       $('#aiTrendWeeklySep25').hidden = true;
+      $('#aiTrendDailyNov16').hidden = true;
       $('#aiTrendDailyNov15').hidden = true;
       $('#aiTrendDailyNov14').hidden = true;
       $('#aiTrendDailyNov13').hidden = true;
       $('#aiTrendDailyNov12').hidden = true;
       $('#aiTrendDailyNov11').hidden = true;
-      $('#aiTrendDailyNov10').hidden = true;
       $('#navHardware').hidden = !isHardware;
       $('#navLlm').hidden = !isLlm;
       if (isLlm) {
@@ -3083,7 +3075,7 @@
       }
     }
 
-    renderHardwareIssue('2026-11-15');
+    renderHardwareIssue('2026-11-16');
   </script>
 </body>
 </html>
