@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="light dark" />
   <link rel="icon" href="data:," />
-  <title>AI Hardware Daily — November 16, 2026</title>
+  <title>AI Hardware Daily — November 17, 2026</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650;8..60,750&display=swap');
 
@@ -728,6 +728,12 @@
       #aiTrendDailyNov11 h2 { font-size: 21px !important; }
     }
 
+    /* November 17 AI Hardware daily edition (inline-styled; responsive overrides) */
+    @media (max-width: 640px) {
+      #hardwareDailyNov17 h1 { font-size: 28px !important; }
+      #hardwareDailyNov17 h2 { font-size: 21px !important; }
+    }
+
     /* November 16 AI Hardware daily edition (inline-styled; responsive overrides) */
     @media (max-width: 640px) {
       #hardwareDailyNov16 h1 { font-size: 28px !important; }
@@ -758,12 +764,6 @@
       #hardwareDailyNov12 h2 { font-size: 21px !important; }
     }
 
-    /* November 11 AI Hardware daily edition (inline-styled; responsive overrides) */
-    @media (max-width: 640px) {
-      #hardwareDailyNov11 h1 { font-size: 28px !important; }
-      #hardwareDailyNov11 h2 { font-size: 21px !important; }
-    }
-
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
     }
@@ -774,8 +774,8 @@
     <div class="issue-bar" aria-label="Section and edition navigation">
       <div class="issue-meta">
         <span class="signal" id="signalName">AI Trends</span>
-        <span id="issueDate">Monday, November 16, 2026</span>
-        <span id="storyCount">6 stories</span>
+        <span id="issueDate">Tuesday, November 17, 2026</span>
+        <span id="storyCount">7 stories</span>
       </div>
       <div class="section-switcher" role="group" aria-label="Choose a section">
         <button class="section-btn" type="button" data-section="hardware" aria-pressed="true">AI Hardware</button>
@@ -787,12 +787,13 @@
         <div class="edition-group">
           <span class="edition-label">Daily</span>
           <div class="archive-controls" role="group" aria-label="Choose a daily edition">
-            <button class="edition-btn" type="button" data-issue="2026-11-16" aria-pressed="true">Nov 16</button>
+            <button class="edition-btn" type="button" data-issue="2026-11-17" aria-pressed="true">Nov 17</button>
+            <button class="edition-btn" type="button" data-issue="2026-11-16" aria-pressed="false">Nov 16</button>
             <button class="edition-btn" type="button" data-issue="2026-11-15" aria-pressed="false">Nov 15</button>
             <button class="edition-btn" type="button" data-issue="2026-11-14" aria-pressed="false">Nov 14</button>
             <button class="edition-btn" type="button" data-issue="2026-11-13" aria-pressed="false">Nov 13</button>
             <button class="edition-btn" type="button" data-issue="2026-11-12" aria-pressed="false">Nov 12</button>
-            <button class="edition-btn" type="button" data-issue="2026-11-11" aria-pressed="false">Nov 11</button>
+            
           </div>
         </div>
         <div class="edition-group weekly-group" aria-label="Choose a weekly summary">
@@ -832,7 +833,87 @@
       <p>All information in this blog comes from publicly available sources and has not been independently verified. Please check the linked original sources before relying on it.</p>
     </aside>
 
-<div id="hardwareDailyNov16" aria-live="polite" style="background:#f8fafc;font-family:Georgia,'Times New Roman',serif;color:#334155;">
+<div id="hardwareDailyNov17" aria-live="polite" style="background:#f8fafc;font-family:Georgia,'Times New Roman',serif;color:#334155;">
+<div style="max-width:760px;margin:0 auto;padding:32px 20px 48px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#64748b;margin:0 0 8px;">AI Hardware Daily &nbsp;·&nbsp; Tuesday, November 17, 2026</p>
+<h1 style="font-size:40px;line-height:1.1;color:#0f172a;margin:0 0 16px;">Vera Rubin sweeps MLPerf on debut — and Nvidia builds a 50,000-core GPU for science</h1>
+<p style="font-size:17px;line-height:1.6;margin:0 0 28px;"><strong style="color:#0f172a;">Why it matters:</strong> SC26 week is turning into a Rubin showcase: Nvidia's next platform is up to twice as fast per GPU as Blackwell Ultra in its first MLPerf round, and the company is already stretching the same architecture toward scientific simulation. Around it, the rest of the industry is building for agentic AI — an AMD-powered AI cluster at Oak Ridge, a photonic memory appliance, and racks that split inference in two. Nvidia reports earnings after the close today, interim CEO Colette Kress's first call, and that is the verdict that matters most.</p>
+
+<!-- HERO -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#b45309;margin:0 0 10px;">Cover story</p>
+<h2 style="font-size:28px;line-height:1.2;color:#0f172a;margin:0 0 12px;">Vera Rubin NVL72 sweeps MLPerf Training v6.1 with up to 2x Blackwell Ultra performance</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">In its MLPerf debut, Nvidia's Vera Rubin NVL72 platform posted the fastest time to train on six of the seven MLPerf Training v6.1 benchmarks, delivering up to twice the performance per GPU of a highly optimized GB300 NVL72 baseline — and it was the only platform with results across the entire suite, spanning large language models, image generation, recommender systems and reinforcement-learning post-training. On the 671-billion-parameter DeepSeek-V3 benchmark, Rubin finished in 4.14 minutes on 1,024 GPUs against 8.03 minutes for GB300 at the same scale, scaling at about 97% efficiency as the GPU count quadrupled from 256. The largest run of the round was a 10,240-GPU GB300 cluster that took the absolute fastest DeepSeek-V3 time. Google's TPUv7, also called Ironwood, made its first MLPerf appearance in the same round.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The agentic-inference number is the one to read carefully. In its first MLPerf Endpoints submission, Rubin delivered 41,414 tokens per second on the open Kimi K3 agent model with 32 accelerators at 100.89 kW — more than 10x the throughput per watt of GB300 on the same model — but Nvidia's own footnote flags that result as provisional, pending MLCommons verification, and subject to change on peer review. The verified Training results are the solid story: a new architecture arriving with a mature software stack on day one, a day before earnings. Twenty partners, including CoreWeave, Microsoft Azure, Oracle, Dell, HPE, Google Cloud, Lambda, Nebius, Crusoe and Supermicro, submitted results on Nvidia platforms this round.</p>
+<div style="margin:4px 0 16px;">
+<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">2x &nbsp;·&nbsp; per-GPU training vs GB300 NVL72</span>
+<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">4.14 min &nbsp;·&nbsp; DeepSeek-V3 on 1,024 GPUs</span>
+<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">97% &nbsp;·&nbsp; scaling efficiency, 256 → 1,024 GPUs</span>
+<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">10x &nbsp;·&nbsp; throughput per watt on Kimi K3 — provisional</span>
+<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">6 of 7 &nbsp;·&nbsp; fastest training times</span>
+</div>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/" style="color:#2563eb;">NVIDIA Blog, November 16, 2026</a></p>
+</div>
+
+<!-- 02 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">02</p>
+<h2 style="font-size:24px;line-height:1.25;color:#0f172a;margin:0 0 12px;">Nvidia unveils Rubin HPC, a 50,000-core GPU for science — due in 2028</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Announced at SC26 in Chicago, Rubin HPC is a new GPU in the Vera Rubin platform built for simulation and data processing in science, engineering and analytics rather than AI training. It packs more than 50,000 CUDA cores on a single GPU — a record for Nvidia, against 28,672 on the standard Rubin GPU — plus a sparse data acceleration capability meant to keep those cores fed on scattered-memory workloads like sparse matrices, stencils, sorting and reductions, and seventh-generation NVLink for GPU-to-GPU connectivity. Nvidia says it triples simulation and analytics performance, though it did not name the baseline for that figure.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">What Nvidia did not publish is as telling as what it did: no memory capacity or type, no memory bandwidth, no FP64 throughput, no power draw, no price and no launch partners — and on memory-bound sparse codes, bandwidth is the number that decides speed. Availability is expected in 2028, a year or more after the parts that will define the 2027 exascale procurement round, so for now Rubin HPC is a planning input, not a product. Shipping sooner from the same SC26 slate: a 192-CPU Vera rack for simulation work due in early 2027, and the Nemotron for Science open model package for local research runs.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://blogs.nvidia.com/blog/rubin-hpc/" style="color:#2563eb;">NVIDIA Blog, November 16, 2026</a></p>
+</div>
+
+<!-- 03 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">03</p>
+<h2 style="font-size:24px;line-height:1.25;color:#0f172a;margin:0 0 12px;">HPE's Lux cluster debuts at No. 14 on the TOP500 for the DOE's Genesis Mission</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">At SC26, HPE announced that Lux, a new AI cluster built for Oak Ridge National Laboratory, has debuted on the TOP500 as the world's 14th fastest system — surpassing machines designed for traditional supercomputing workloads. Co-designed by HPE and AMD, Lux is purpose-built for AI, delivering 220.79 petaflops on the direct liquid-cooled HPE ProLiant Compute XD685 platform with AMD Instinct MI355X GPUs, AMD EPYC CPUs and AMD Pensando DPUs, plus HPE Juniper Networking — the first DOE national laboratory deployment of HPE networking, bringing open Ethernet to AI-driven science.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Lux is the first dedicated AI system to come online for the U.S. Department of Energy's Genesis Mission, which aims to transform American science through AI, and half of its 3.5 million annual node-hours are dedicated to the mission, with the rest available for proprietary use. The system was announced only about a year ago, a fast turnaround for a national-lab machine. The same HPE–ORNL–AMD partnership is also building Discovery, the successor to the Frontier supercomputer that first broke the exascale barrier.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.hpcwire.com/off-the-wire/hpe-built-lux-ai-cluster-debuts-at-no-14-on-the-top500/" style="color:#2563eb;">HPCwire, November 17, 2026</a></p>
+</div>
+
+<!-- 04 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">04</p>
+<h2 style="font-size:24px;line-height:1.25;color:#0f172a;margin:0 0 12px;">Nvidia's DGX Spark HPC kit puts a four-node supercomputer on a desk</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Nvidia unveiled the DGX Spark HPC Developer Kit at SC26: four DGX Spark systems linked in a ConnectX-7 ring, with 512GB of unified memory and 20TB of NVMe storage, aimed at researchers who today burn fixed allocations on shared national supercomputers just to debug code. Each node runs the GB10 Grace Blackwell Superchip — a Blackwell GPU with a 20-core Arm CPU, 6,144 CUDA cores and up to 1 PFLOP of FP4 AI performance — and Nvidia says the four-node cluster can run models up to 700 billion parameters using NVFP4 precision.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The kit has already been demonstrated running LAMMPS with Kokkos for materials simulation and NAMD for molecular dynamics, and an HPC SDK playbook matching data-center supercomputer toolchains is promised soon. It is on sale now through Acer, ASUS, Dell, GIGABYTE, H3C, HP, Lenovo, MSI and xFusion, plus the NVIDIA Marketplace — though Nvidia has not disclosed a price for the four-node bundle. The pitch is a desk that behaves like a multi-node GPU lab: debug locally, then scale the same code to the cluster.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.notebookcheck.net/A-supercomputing-lab-on-any-desk-Nvidia-unveils-DGX-Spark-HPC-Dev-Kit-with-512-GB-of-memory.1452326.0.html" style="color:#2563eb;">Notebookcheck, November 17, 2026</a></p>
+</div>
+
+<!-- 05 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">05</p>
+<h2 style="font-size:24px;line-height:1.25;color:#0f172a;margin:0 0 12px;">Penguin and Marvell unveil a photonic memory appliance to break the GPU memory wall</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Penguin Solutions unveiled the MemoryAI Photonic Appliance at SC26, billed as the industry's first photonics-based HBM-class memory appliance, built on Marvell's Photonic Fabric technology. The idea is to let CPUs and GPUs transparently share disaggregated memory at HBM-class data rates across a multi-rack fabric, using silicon photonics instead of copper to extend memory beyond a single server — a direct attack on the memory-capacity wall that limits agentic AI workloads and their giant KV caches.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The appliance targets 57.6 terabits per second of total bandwidth and is designed to support up to 16TB of DDR5 RDIMM memory and 576GB of HBM3E per appliance, with memory shareable across up to 16 systems. The underlying memory module comes from Celestial AI, whose photonic fabric technology Marvell acquired for $3.5 billion in February. Sampling to select customers is planned for the second half of 2027, so this is a roadmap product, not a shipping one — but it is the clearest sign yet that photonics is moving from interconnect demos into the memory hierarchy itself.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.businesswire.com/news/home/20261116403810/en/Penguin-Solutions-Unveils-Industrys-First-Photonics-Based-HBM-Class-Memory-Appliance-to-Break-the-GPU-Memory-Wall-for-Agentic-AI" style="color:#2563eb;">Business Wire, November 16, 2026</a></p>
+</div>
+
+<!-- 06 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">06</p>
+<h2 style="font-size:24px;line-height:1.25;color:#0f172a;margin:0 0 12px;">MiTAC splits AI inference in two — GPUs for prefill, 2TB of decode memory for the rest</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">MiTAC Computing unveiled a disaggregated inference architecture at SC26 that assigns the two halves of LLM inference to different machines. The prefill server, an 8U G8825Z5 with AMD EPYC 9575F or 9755 processors and AMD Instinct MI350X GPUs, handles compute-heavy prompt processing and hands the resulting KV cache over high-speed networking to a decode server — a 4U air-cooled G4520G6 with Intel Xeon 6 processors and eight Skymizer HTX301-4S accelerator cards carrying 256GB each, for 2TB of aggregate decode memory, designed to run massive models such as the 2.8-trillion-parameter Kimi K3 on premises.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The wider SC26 portfolio leans the same way: a 52U liquid-cooled rack packing 12 servers and 96 AMD Instinct MI355X GPUs for what MiTAC claims is 50% higher GPU density than conventional deployments, a DDN Infinia storage rack to feed inference without I/O bottlenecks, and the upcoming Helion Agentic AI Rack developed with AMD — an ORv3 44OU design scaling to 32,768 AMD Zen 6 CPU cores. Some systems are demonstrated live at SC26 while others remain proposed or in development, so the announcement is a mix of shipping hardware and future designs.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.tradingview.com/news/prnewswire:c87c6084be259:0-mitac-computing-scales-agentic-ai-with-full-stack-infrastructure-at-sc26/" style="color:#2563eb;">PR Newswire, November 16, 2026</a></p>
+</div>
+
+<!-- 07 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">07</p>
+<h2 style="font-size:24px;line-height:1.25;color:#0f172a;margin:0 0 12px;">PEGATRON bets on CPU-heavy racks: a 256-CPU Vera rack and a liquid-cooled Rubin NVL72</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">PEGATRON's SC26 showcase is a physical statement of the CPU's return to the AI rack. The centerpiece is a Vera CPU Rack built on Nvidia's MGX modular reference architecture, integrating up to 256 Nvidia Vera CPUs in a liquid-cooled cabinet for agent orchestration and simulation work. Alongside it, the RA4803-72N3 is a fully liquid-cooled Vera Rubin NVL72 rack pairing 72 Rubin GPUs with 36 Vera CPUs, and the company also showed AMD systems powered by the newly launched EPYC 9006 "Venice" processors.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The racks adopt 48VDC busbar power delivery aligned with Open Compute Project standards including DC-MHS and DC-SCM 2.1 — the plumbing that hyperscalers are converging on for high-density AI deployments. It is the same bet every ODM at SC26 is making: the scarce resource in agentic AI is no longer just accelerator FLOPS, but the CPUs, memory and power delivery that keep agents running.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://briefglance.com/articles/the-agentic-ai-hardware-pivot-cpus-reclaim-the-data-center" style="color:#2563eb;">Brief Glance, November 17, 2026</a></p>
+</div>
+
+<p style="font-family:Georgia,'Times New Roman',serif;font-style:italic;text-align:center;color:#64748b;font-size:15px;margin:28px 0 0;">by Your Tech Sommelier</p>
+</div>
+</div>
+
+<div id="hardwareDailyNov16" aria-live="polite" hidden style="background:#f8fafc;font-family:Georgia,'Times New Roman',serif;color:#334155;">
 <div style="max-width:760px;margin:0 auto;padding:32px 20px 48px;">
 <p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#64748b;margin:0 0 8px;">AI Hardware Daily &nbsp;·&nbsp; Monday, November 16, 2026</p>
 <h1 style="font-size:40px;line-height:1.1;color:#0f172a;margin:0 0 16px;">Nvidia's grip on future AI compute slips to 39% — while the CPU fights back</h1>
@@ -1169,66 +1250,6 @@
 <p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Rackspace also entered a $66 million private placement with an investor group led by Voss Capital. The deals are small next to the hyperscalers' buildouts, but they show the neocloud layer still expanding — dedicated GB300 capacity, sold years ahead, to AI labs that cannot wait for hyperscaler queues.</p>
 <p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://dailyaibrief.com/news/rackspace-capacity-deals-together-ai-blacksmith-VvksYymc" style="color:#2563eb;">AI Brief, November 12, 2026</a></p>
 </div>
-<p style="font-family:Georgia,'Times New Roman',serif;font-style:italic;text-align:center;color:#64748b;font-size:15px;margin:28px 0 0;">by Your Tech Sommelier</p>
-</div>
-</div>
-
-<div id="hardwareDailyNov11" aria-live="polite" hidden style="background:#f8fafc;font-family:Georgia,'Times New Roman',serif;color:#334155;">
-<div style="max-width:760px;margin:0 auto;padding:32px 20px 48px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#64748b;margin:0 0 8px;">AI Hardware Daily &nbsp;·&nbsp; Wednesday, November 11, 2026</p>
-<h1 style="font-size:40px;line-height:1.1;color:#0f172a;margin:0 0 16px;">AMD's 256-core Venice puts the CPU back at the center of AI — while NVIDIA's week gets worse</h1>
-<p style="font-size:17px;line-height:1.6;margin:0 0 28px;"><strong style="color:#0f172a;">Why it matters:</strong> The data-center CPU is suddenly the agentic-AI story: AMD's new EPYC line, built on TSMC's 2nm process, is pitched squarely at the agent workloads that used to be a GPU-only conversation — and it arrives on the same day CoreWeave's $132.5 billion backlog says demand for AI infrastructure is not slowing. At the other end of the market, NVIDIA fell another 5.5% as the federal probe around its CEO widened, and Intel and NVIDIA both pushed new edge and AI-factory tooling. The hardware race is spreading out: CPUs, custom memory and open infrastructure are all gaining ground on the GPU's monopoly.</p>
-
-<!-- HERO -->
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#b45309;margin:0 0 10px;">Cover story</p>
-<h2 style="font-size:28px;line-height:1.2;color:#0f172a;margin:0 0 12px;">AMD ships 6th Gen EPYC "Venice": 256 cores on TSMC 2nm, built for the agent era</h2>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">AMD announced general availability of its 6th Gen EPYC server processors on November 10, built on the new Zen 6 architecture and TSMC's 2-nanometer process. The flagship EPYC 9996 packs 256 cores and 512 threads per socket with 1,024 MB of L3 cache and a 600W TDP, while the frequency-tuned EPYC 9686F boosts to 5.3 GHz; the line moves to a new SP7 socket with 16 memory channels, DDR5-8000 or MRDIMM-12800 memory and PCIe 6.0. Systems are already shipping from major server vendors, with Microsoft Azure and Oracle Cloud Infrastructure instances to follow — and server makers have committed more than 240 platforms to the new line, 20% more than for the previous generation. AMD disclosed the Zen 6 architecture in full alongside the launch, including a roadmap that adds Venice-X with 3D V-Cache and a LPDDR5X "Verano" variant in 2027.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The pitch is aimed directly at AI agents: AMD says Zen 6 delivers about 27% more instructions per clock than Zen 5 on average — around 31% on AI workloads, per AMD — and claims the top chip runs up to 3.7 times the performance of NVIDIA's Vera CPU and up to 2.2 times Intel's Xeon 6980P, with up to 3.3 times the agents per watt of Vera. Those are AMD's own figures, not independent tests, and the flagship EPYC 9996 lists at $14,904. But the strategic signal is hard to miss: CEO Lisa Su told analysts last week that agents are "quickly becoming the next killer app for CPUs in the cloud," and AMD says early demand for Venice is the strongest it has seen for any EPYC generation. The CPU is no longer just the GPU's host — it is a battleground of its own.</p>
-<div style="margin:4px 0 16px;">
-<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">256 cores &nbsp;·&nbsp; flagship EPYC 9996</span>
-<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">~27% &nbsp;·&nbsp; IPC uplift over Zen 5 (AMD claim)</span>
-<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">240+ &nbsp;·&nbsp; server platforms committed</span>
-</div>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://newsroom.amd.com/news/6th-gen-epyc-lead-ai-enterprise-computing" style="color:#2563eb;">AMD Newsroom, November 10, 2026</a> · <a href="https://www.neowin.net/news/amd-launches-6th-gen-epyc-server-cpus-for-ai-and-enterprise-workloads/" style="color:#2563eb;">Neowin, November 10, 2026</a></p>
-</div>
-
-<!-- 02 -->
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">02</p>
-<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 12px;">CoreWeave's $132.5B backlog lifts chip stocks: demand is not the problem</h3>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">CoreWeave reported third-quarter revenue of $3.66 billion on November 10, up 168% from $1.36 billion a year earlier, and raised its 2026 revenue forecast to $13 billion–$13.3 billion, up from $12 billion–$13 billion. The number that moved the market was the backlog: $132.5 billion in future orders, more than double the $55.6 billion reported a year earlier. NVIDIA, Micron and SK hynix all surged in premarket trading on November 11, with AMD, Intel and Broadcom rising too, as the results eased fears about AI infrastructure demand — good news for HBM, DRAM and enterprise storage suppliers alike.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">CoreWeave CEO Michael Intrator also reaffirmed the company's ties with NVIDIA, saying there is "no reason" to expect changes despite the controversy around its CEO — NVIDIA is a key supplier and, since January, a $2 billion investor in CoreWeave. South Korean exports added to the tailwind: $33.5 billion in the first ten days of November, up 111.9% year over year, according to the Korea Customs Service. The message from the week's demand data is consistent: whatever is happening to individual stocks, customers are still signing multi-billion-dollar orders for AI capacity.</p>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.tipranks.com/news/why-are-ai-chip-stocks-nvidia-micron-and-sk-hynix-surging-in-premarket-today-november-11" style="color:#2563eb;">TipRanks, November 11, 2026</a></p>
-</div>
-
-<!-- 03 -->
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">03</p>
-<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 12px;">NVIDIA falls 5.5% as the probe widens: FBI now investigating, Trump says</h3>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">NVIDIA shares fell 5.5% to $168.89 on Tuesday, November 10, hovering near their 52-week low, as the federal scrutiny around CEO Jensen Huang escalated. President Trump said the FBI is investigating Huang's relationship with Alice Huang — no relation — a former executive at Singapore-based data-center company Megaspeed who US officials believe was recruited by Beijing; the spy link remains an allegation, and China's Foreign Ministry has called the narrative unsubstantiated. The Information reported on November 10 that the relationship may have helped move at least $7.5 billion worth of chips to Chinese firms over several years, including some banned for sale in China — a report Reuters said it could not independently verify. NVIDIA's board has opened an independent investigation, and Huang has apologized to employees; the board says it has no reason to believe company secrets were compromised.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The stock is now down about 10.7% since its November 4 close of $200.13, and roughly 27% below its October peak of $243.37 — even as the broader market bounced. The rotation continued for a second session: AMD rose 1.30% to $515.21 after touching an intraday high of $539.25, and Broadcom gained 3.91%, while a hotter-than-expected October CPI reading pushed December Fed hike odds toward near-certain. Huang's reply to three House committees' request for a closed-door briefing is due today, Wednesday, November 11, with the briefing itself set for November 18 and earnings on November 17 — the next real test of whether this is a governance story or an earnings story.</p>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.fool.com/investing/2026/11/10/why-nvidia-stock-fell-again-on-tuesday/" style="color:#2563eb;">Motley Fool, November 10, 2026</a> · <a href="https://aiagentupdate.com/post/cpi-splits-chip-complex-2026-11-11" style="color:#2563eb;">AI Agent Update, November 11, 2026</a></p>
-</div>
-
-<!-- 04 -->
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">04</p>
-<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 12px;">Intel and Altera build sensor bridges for physical AI</h3>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Intel and Altera announced on November 10 that they will jointly develop modular, real-time sensor-bridge reference designs for edge and physical AI systems, targeting advanced healthcare equipment, aerospace and defense mission systems, and robotics. The designs pair Intel's compute, connectivity and software with Altera's field-programmable gate arrays — chips that can be reprogrammed after manufacture to support many sensor types without changing hardware — to solve the sensor-to-compute handoff problem: fusing data from many sensors under strict timing, power and cost constraints. The reference solutions are expected to be made available through Intel's Open Edge Platform SDK and an Altera SDK.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">This is an announcement of work under development, not a finished product: the companies disclosed no throughput, latency or power specifications and gave no date for the reference designs or SDKs. Still, it is Intel's clearest physical-AI hardware play yet — and, as analysts note, only AMD has comparable in-house FPGA capability. The collaboration lands alongside Intel's Web Summit demonstrations of edge and physical AI this week, and extends a strategy already visible in its factory-floor AI deals: win the sensing and inference layers that sit outside the data center.</p>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.unite.ai/intel-and-altera-develop-modular-sensor-bridges-for-physical-ai/" style="color:#2563eb;">Unite.AI, November 10, 2026</a> · <a href="https://www.fierce-network.com/cloud/one-chip-many-sensors-intel-and-alteras-play-physical-ai" style="color:#2563eb;">Fierce Network, November 10, 2026</a></p>
-</div>
-
-<!-- 05 -->
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">05</p>
-<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 12px;">NVIDIA open-sources more of the AI factory: OpenShell to the CNCF, new DSX tools at KubeCon</h3>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">At KubeCon + CloudNativeCon on November 10, NVIDIA said it is contributing OpenShell — its open-source runtime for securing and governing autonomous AI agents — to the Cloud Native Computing Foundation's Sandbox, and releasing three open-source components for its DSX AI Factory Platform. OpenShell applies deterministic controls as agents use tools, access inference services and execute workloads; it is licensed under Apache 2.0, and NVIDIA says hundreds of organizations have used it, with tens of thousands of contributions in under a year. NVIDIA is also contributing to Agent Substrate, a Google-led CNCF Sandbox project for managing long-running agent workloads on Kubernetes, and is developing interoperability with its Dynamo inference software and the KAI Scheduler for shared cluster resources.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The DSX additions — NVIDIA Kubernetes Engine and NVIDIA Kubernetes Recipes, in public preview under Apache 2.0 — cover session execution, cluster management and faster inference recovery, though NVIDIA says their APIs may change and does not yet recommend them for production. The move puts more of the AI-factory control plane into open repositories, at different maturity levels: OpenShell's governance transition is still underway, Agent Substrate is evolving, and the DSX tools remain previews. It is infrastructure, not silicon — but it is the layer that decides how efficiently the silicon gets used.</p>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.unite.ai/nvidia-donates-openshell-to-cncf-and-adds-open-source-ai-factory-tools/" style="color:#2563eb;">Unite.AI, November 10, 2026</a></p>
-</div>
-
 <p style="font-family:Georgia,'Times New Roman',serif;font-style:italic;text-align:center;color:#64748b;font-size:15px;margin:28px 0 0;">by Your Tech Sommelier</p>
 </div>
 </div>
@@ -2850,7 +2871,7 @@
       $('#hardwareDailyNov14').hidden = true;
       $('#hardwareDailyNov13').hidden = true;
       $('#hardwareDailyNov12').hidden = true;
-      $('#hardwareDailyNov11').hidden = true;
+      $('#hardwareDailyNov17').hidden = true;
       $('#issue').hidden = false;
       keepBlogTitle();
       $('#issueDate').textContent = item.date;
@@ -2901,19 +2922,19 @@
       window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     }
 
-    let currentIssue = '2026-11-16';
+    let currentIssue = '2026-11-17';
     let currentAiIssue = '2026-11-16';
     let currentSection = 'hardware';
 
     function renderHardwareIssue(key) {
       currentIssue = key;
       const hardwareIssues = {
+        '2026-11-17': { panel: '#hardwareDailyNov17', date: 'Tuesday, November 17, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 17, 2026' },
         '2026-11-16': { panel: '#hardwareDailyNov16', date: 'Monday, November 16, 2026', stories: '6 stories', title: 'AI Hardware Daily — November 16, 2026' },
         '2026-11-15': { panel: '#hardwareDailyNov15', date: 'Sunday, November 15, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 15, 2026' },
         '2026-11-14': { panel: '#hardwareDailyNov14', date: 'Saturday, November 14, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 14, 2026' },
         '2026-11-13': { panel: '#hardwareDailyNov13', date: 'Friday, November 13, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 13, 2026' },
         '2026-11-12': { panel: '#hardwareDailyNov12', date: 'Thursday, November 12, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 12, 2026' },
-        '2026-11-11': { panel: '#hardwareDailyNov11', date: 'Wednesday, November 11, 2026', stories: '5 stories', title: 'AI Hardware Daily — November 11, 2026' },
       };
       const selected = hardwareIssues[key];
       if (!selected) {
@@ -3050,7 +3071,7 @@
       $('#hardwareDailyNov14').hidden = true;
       $('#hardwareDailyNov13').hidden = true;
       $('#hardwareDailyNov12').hidden = true;
-      $('#hardwareDailyNov11').hidden = true;
+      $('#hardwareDailyNov17').hidden = true;
       $('#aiTrendWeeklyNov13').hidden = true;
       $('#aiTrendWeeklyNov11').hidden = true;
       $('#aiTrendWeeklyNov06').hidden = true;
@@ -3075,7 +3096,7 @@
       }
     }
 
-    renderHardwareIssue('2026-11-16');
+    renderHardwareIssue('2026-11-17');
   </script>
 </body>
 </html>
