@@ -692,6 +692,12 @@
       #aiTrendWeeklyOct30 h2 { font-size: 21px !important; }
     }
 
+    /* November 18 AI Trends daily edition (inline-styled; responsive overrides) */
+    @media (max-width: 640px) {
+      #aiTrendDailyNov18 h1 { font-size: 28px !important; }
+      #aiTrendDailyNov18 h2 { font-size: 21px !important; }
+    }
+
     /* November 17 AI Trends daily edition (inline-styled; responsive overrides) */
     @media (max-width: 640px) {
       #aiTrendDailyNov17 h1 { font-size: 28px !important; }
@@ -720,12 +726,6 @@
     @media (max-width: 640px) {
       #aiTrendDailyNov13 h1 { font-size: 28px !important; }
       #aiTrendDailyNov13 h2 { font-size: 21px !important; }
-    }
-
-    /* November 12 AI Trends daily edition (inline-styled; responsive overrides) */
-    @media (max-width: 640px) {
-      #aiTrendDailyNov12 h1 { font-size: 28px !important; }
-      #aiTrendDailyNov12 h2 { font-size: 21px !important; }
     }
 
     /* November 17 AI Hardware daily edition (inline-styled; responsive overrides) */
@@ -817,12 +817,12 @@
         <div class="edition-group">
           <span class="edition-label">Daily</span>
           <div class="archive-controls" role="group" aria-label="Choose an AI Trends edition">
-            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-17" aria-pressed="true">Nov 17</button>
+            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-18" aria-pressed="true">Nov 18</button>
+            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-17" aria-pressed="false">Nov 17</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-16" aria-pressed="false">Nov 16</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-15" aria-pressed="false">Nov 15</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-14" aria-pressed="false">Nov 14</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-13" aria-pressed="false">Nov 13</button>
-            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-12" aria-pressed="false">Nov 12</button>
           </div>
         </div>
       </nav>
@@ -1293,6 +1293,83 @@
 
 
 
+<div id="aiTrendDailyNov18" class="edition ai-trends-daily" data-date="2026-11-18" aria-live="polite" hidden style="margin-top:22px;">
+<article style="background:#f8fafc;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
+<div style="max-width:860px;margin:0 auto;">
+<p style="text-align:center;letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:#64748b;margin:0 0 8px;">AI Trends Daily &middot; November 18, 2026</p>
+<h1 style="text-align:center;color:#0f172a;font-size:42px;line-height:1.05;margin:0 0 12px;">The price war is the product</h1>
+<p style="text-align:center;font-size:17px;line-height:1.6;max-width:680px;margin:0 auto 20px;">Why it matters: Tuesday was the day the frontier labs competed on price, not just capability. OpenAI cut its flagship API price 20% with GPT-6.2, Microsoft launched a seven-model family priced to undercut its rivals in GitHub Copilot, and Anthropic heads into tonight's IPO pricing with a book reportedly seven times oversubscribed. Underneath it all, NVIDIA's $115.8 billion quarter showed the compute bill behind the race keeps growing — and the customers paying it are now bargaining harder.</p>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#dc2626;font-weight:700;margin:0 0 10px;">Cover Story &middot; Model Release &middot; Pricing</p>
+<h2 style="color:#0f172a;font-size:30px;line-height:1.15;margin:0 0 12px;">OpenAI ships GPT-6.2 Astra and Sol — flagship price cut 20%, and a first-ever &ldquo;High&rdquo; self-improvement rating</h2>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;">
+<span style="background:#0f172a;color:#fff;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">Nov 17 &middot; ChatGPT Work, Codex, API</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">Astra $8 / $40 per M tokens</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">Sol $2 / $10, unchanged</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">1.05M-token context</span>
+</div>
+<p style="line-height:1.65;margin:0 0 10px;">OpenAI released GPT-6.2 Astra and GPT-6.2 Sol on Tuesday, November 17 — Astra for the hardest professional and scientific work, Sol as the cheaper everyday model — available in ChatGPT Work and Codex for Plus, Pro, Enterprise, and Edu users, and through the API as <code>gpt-6.2-astra</code> and <code>gpt-6.2-sol</code>. The headline for buyers is price: Astra costs $8 per million input tokens and $40 per million output tokens, 20% below GPT-6 Astra, with cached input 60% cheaper at $0.40; Sol holds GPT-6.1 Sol&rsquo;s $2 and $10. Both share a 1,050,000-token context window.</p>
+<p style="line-height:1.65;margin:0 0 10px;">OpenAI&rsquo;s own numbers say Astra beats GPT-6 Astra by 5.2 points on Agents&rsquo; Last Exam at under a third of the cost per task, and leads Claude Fable 5.2 by 5.5 points at 5% of the cost — while Sol comes within half a point of Astra on Cognition&rsquo;s FrontierCode 2.0 at about a fifth of the cost. The independent Artificial Analysis index tells a cooler story: Astra scores 62, behind Claude Fable 5.2 at 65. The safety card is the sharper news: Astra is the first externally released OpenAI model rated High for AI self-improvement under the company&rsquo;s Preparedness Framework, and both models are rated Critical for cybersecurity. OpenAI also shipped an updated Astra for Law configuration and a ChatGPT for Sales plugin with 30+ integrations the same day.</p>
+<p style="line-height:1.65;margin:0;">The pricing move lands the same week Microsoft&rsquo;s coding models and Anthropic&rsquo;s IPO put every frontier price under a microscope — and note the coincidence OpenAI did not: Astra&rsquo;s new $8/$40 matches Claude Fable 5.2&rsquo;s price exactly.</p>
+<p style="margin:12px 0 0;"><a href="https://theparameter.ai/a/gpt-6-2-astra-sol/" style="color:#2563eb;">Source: The Parameter, on OpenAI&rsquo;s announcement and system card (Nov 17) &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">02 &middot; Earnings &middot; Infrastructure</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">NVIDIA blows out Q3 in its first earnings without Huang: $115.8B revenue, up 103%</h3>
+<p style="line-height:1.65;margin:0 0 8px;">NVIDIA reported fiscal Q3 revenue of $115.8 billion on Tuesday, November 17 — up 103% year over year and 20% sequentially, beating the roughly $109.1 billion consensus. Adjusted earnings were $2.68 a share against about $2.47 expected; Data Center revenue hit $107.6 billion, up 110%. The company guided Q4 revenue to $130 billion, plus or minus 3%, in a 14-week quarter that assumes no data-center compute revenue from China, and raised its fiscal 2028 growth outlook to roughly 75% from about 70%. Vera Rubin NVL72 generated nearly $20 billion in its first quarter of shipments — the fastest product ramp in company history, by NVIDIA&rsquo;s account. Shares rose in after-hours trading after closing at $155.46.</p>
+<p style="line-height:1.65;margin:0;">The catch sits in the margin line: adjusted gross margin of 74.9% in Q3 is guided down to 71–72% in Q4. And the governance story moved the same day — the board formed a National Security and Export Control Oversight Committee. It was the first earnings report since the company&rsquo;s 1993 founding without Jensen Huang, who resigned November 12; interim CEO and CFO Colette Kress told investors &ldquo;the momentum is real.&rdquo;</p>
+<p style="margin:12px 0 0;"><a href="https://www.reuters.com/commentary/breakingviews/nvidia-leaves-ai-trade-hanging-purgatory-2026-11-18/" style="color:#2563eb;">Source: Reuters Breakingviews, on NVIDIA&rsquo;s Q3 results (Nov 18) &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">03 &middot; Model Release &middot; Pricing</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Microsoft launches seven MAI models at Ignite — Code 2 claims 98% of GPT-6.1 Sol at 40% of the price</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Microsoft AI used its Ignite conference on Tuesday, November 17, to release a family of seven first-party models: MAI Code 2 and Code 2 Flash for coding, MAI Cyber 2 Flash for security, MAI Image 2.7 for image work, MAI Realtime 1 for live speech-to-speech, Dragon Copilot Transcribe, and Decision 1.1 for model routing. Microsoft says Code 2 delivers 98% of GPT-6.1 Sol&rsquo;s coding performance at about 40% of the price, and 96% of Claude Opus 5.5&rsquo;s at about 5% — averaged over four coding benchmarks (DeepSWE 1.1, Terminal Bench 2.1, SWE-Atlas, FrontierCode v1.1) at maximum reasoning effort. Code 2 and Code 2 Flash are live in GitHub Copilot now. Realtime 1, Microsoft&rsquo;s first speech-to-speech model, starts at $0.01 per audio minute, with reasoning billed separately at $1 and $5 per million input and output tokens.</p>
+<p style="line-height:1.65;margin:0;">Read the fine print before quoting the price war: the Code 2 comparisons are Microsoft&rsquo;s own, run at a 50% promotional price — at full price the arithmetic works out to roughly 80% of GPT-6.1 Sol&rsquo;s cost and about 10% of Claude Opus 5.5&rsquo;s — and Microsoft has published no per-token list price or promo end date. The company also introduced MAI Licensed Weights, letting selected enterprises tune an MAI model on their own data and run it inside their own Azure environment, and said its Maia 200 chip is now in production.</p>
+<p style="margin:12px 0 0;"><a href="https://thelatentdaily.com/news/microsoft-mai-models-ignite-2026-licensed-weights/" style="color:#2563eb;">Source: The Latent Daily, on Microsoft AI&rsquo;s Ignite posts (Nov 17) &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">04 &middot; Markets &middot; IPO</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Anthropic prices its IPO tonight — book reportedly ~7x oversubscribed, and it may price above the range</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Anthropic is expected to set its final IPO price this evening, Wednesday, November 18, New York time, with trading to begin Thursday, November 19, on Nasdaq under the ticker ANT. The filed range is $70 to $78 a share for 825 million shares — up to about $64.4 billion at the top, valuing the company at roughly $1 trillion, or up to about $1.4 trillion fully diluted. Bloomberg reported the book oversubscribed several times over; orders are now reported at nearly seven times the shares available, and the Wall Street Journal reports Anthropic could price above $80. Up to 20% of the offering is allocated to retail investors.</p>
+<p style="line-height:1.65;margin:0;">Alongside the public offering, seven strategic investors — AMD, Broadcom, Google, Micron, Microsoft, NVIDIA, and TSMC — have committed $26 billion in a private placement at the IPO price, for non-voting shares, bringing the combined raise to up to about $90.4 billion. None of this is final until the price is set tonight, and the dates themselves come from CNBC sources rather than Anthropic — but the shape is set: the first frontier AI lab to go public, with its own suppliers as its biggest backers. Anthropic&rsquo;s founders retain 50.1% voting control after the offering.</p>
+<p style="margin:12px 0 0;"><a href="https://techxplore.com/news/2026-11-anthropic-price-ipo-key-ai.html" style="color:#2563eb;">Source: Tech Xplore (AFP), on Anthropic&rsquo;s IPO pricing (Nov 18) &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">05 &middot; Model Release &middot; Image</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Kling Image 4.0 claims the first native 8K image model — and 2,000 characters of legible text</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Kuaishou&rsquo;s Kling AI launched Kling Image 4.0 late on November 17, China time, live now on the Kling platform. Kuaishou says it is the first image model to generate natively in 8K rather than rendering small and upscaling, writes up to 2,000 characters of legible text in a single image — in Chinese, English, Japanese, Korean, Spanish, and Portuguese — and turns one prompt into a series of up to 10 coherent images. The weights stay closed, and it follows the Kling 4.0 video model from October.</p>
+<p style="line-height:1.65;margin:0;">Every number here is Kuaishou&rsquo;s own: the company cites a leading position on Artificial Analysis&rsquo;s image leaderboard for a preview version, but no benchmarks, pricing, or API plans have been published, so none of it has been independently checked. (The 2,000-character figure refers to Chinese characters and does not translate one-to-one into 2,000 Latin letters.)</p>
+<p style="margin:12px 0 0;"><a href="https://aiagentupdate.com/post/kling-image-4-0-2026-11-18" style="color:#2563eb;">Source: AI Agent Update, on Kuaishou / Kling (Nov 18) &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">06 &middot; Product Launch &middot; Agents</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Klarna launches an AI assistant that books, shops, and handles the errands</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Klarna unveiled an AI assistant on November 17 meant to handle purchases, returns, bookings, and everyday admin for the company&rsquo;s customers — the latest move in the race to put an agent between the shopper and the checkout. It lands the same week OpenAI put computer-use agents into live healthcare work and a day after Google&rsquo;s threat report showed agents automating attacks end to end: the agent economy&rsquo;s consumer face and its risk face are advancing in lockstep.</p>
+<p style="line-height:1.65;margin:0;">Details beyond the launch announcement are thin so far — no pricing, availability window, or model behind it disclosed yet — so treat the capability claims as the company&rsquo;s own until the assistant is in customers&rsquo; hands.</p>
+<p style="margin:12px 0 0;"><a href="https://ai-skiftet.se/en/index.html" style="color:#2563eb;">Source: AI-skiftet, daily AI news digest (Nov 18) &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">07 &middot; Product Launch &middot; Agents</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">InMobi Accelerate: seven agents run the whole ad campaign, from plan to optimization</h3>
+<p style="line-height:1.65;margin:0 0 8px;">InMobi launched InMobi Accelerate on November 18, a self-serve agentic AI advertising platform in which seven specialized agents work together to plan, build, launch, and optimize omnichannel campaigns across Google Ads, Meta Ads, Microsoft Advertising, TikTok Ads, and ChatGPT Ads from one dashboard. It is built for small and medium businesses without a large in-house marketing function and the agencies that serve them, and is free to start. Research InMobi cites from NewtonX, among 800 U.S. SMB advertisers and agencies in May 2026, found 93% cannot confidently measure performance across the platforms they use — the gap the seven agents are meant to close.</p>
+<p style="line-height:1.65;margin:0;">The launch, at Glance Forward in New York, is the clearest small-business version of the agentic-commerce pattern Anthropic, OpenAI, and Klarna are all chasing this week: the agent does the buying, not just the advising.</p>
+<p style="margin:12px 0 0;"><a href="https://www.businesswire.com/news/home/20261118726828/en/InMobi-Launches-InMobi-Accelerate-an-Agentic-AI-Advertising-Platform-for-Growing-Businesses-and-Agencies" style="color:#2563eb;">Source: Business Wire, InMobi announcement (Nov 18) &rarr;</a></p>
+</section>
+
+<p style="text-align:center;font-size:14px;line-height:1.6;color:#64748b;margin:24px 0 0;">Watch tomorrow: Anthropic debuts on Nasdaq as ANT on Thursday, November 19 — the first frontier AI lab to go public. Huang&rsquo;s closed-door House interview is December 1.</p>
+
+<p style="text-align:center;font-style:italic;color:#64748b;margin:28px 0 0;">by Your Tech Sommelier</p>
+</div>
+</article>
+</div>
+
 <div id="aiTrendDailyNov17" class="edition ai-trends-daily" data-date="2026-11-17" aria-live="polite" hidden style="margin-top:22px;">
 <article style="background:#f8fafc;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
 <div style="max-width:860px;margin:0 auto;">
@@ -1656,91 +1733,6 @@
 <p style="line-height:1.65;margin:0;">It lands the same day a lawsuit asks a court to freeze frontier development — the two responses to the same anxiety, one legal and one operational. A collaboratively built risk-mitigation playbook from MIT, IBM Research, and Stanford is the kind of document compliance teams will actually cite when the board asks what "responsible AI" means in practice.</p>
 <p style="margin:12px 0 0;"><a href="https://www.artiverse.ca/three-ai-releases-push-smaller-models-toward-bigger-possibilities/" style="color:#2563eb;">Source: Artiverse, reporting MIT FutureTech &rarr;</a></p>
 </section>
-
-<p style="text-align:center;font-style:italic;color:#64748b;margin:28px 0 0;">by Your Tech Sommelier</p>
-</div>
-</article>
-</div>
-
-<div id="aiTrendDailyNov12" class="edition ai-trends-daily" data-date="2026-11-12" aria-live="polite" hidden style="margin-top:22px;">
-<article style="background:#f8fafc;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
-<div style="max-width:860px;margin:0 auto;">
-<p style="text-align:center;letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:#64748b;margin:0 0 8px;">AI Trends Daily &middot; November 12, 2026</p>
-<h1 style="text-align:center;color:#0f172a;font-size:42px;line-height:1.05;margin:0 0 12px;">Alibaba's next flagship comes with an expiry date — and the trust question moves into the checkpoint</h1>
-<p style="text-align:center;font-size:17px;line-height:1.6;max-width:680px;margin:0 auto 20px;">Why it matters: the November 11–12 news wasn't about a bigger model — it was about the terms around the models. Alibaba launched its next flagship as a two-week preview that vanishes on November 25, DeepMind's AlphaGenome 2 is research-only by design, and Microsoft showed that fewer than ten dormant neurons can hide a backdoor no standard evaluation would catch. Capability is still advancing, but the day's real story is access, governance, and whether a checkpoint itself can be trusted.</p>
-
-<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#dc2626;font-weight:700;margin:0 0 10px;">Cover Story &middot; Model Release</p>
-<h2 style="color:#0f172a;font-size:30px;line-height:1.15;margin:0 0 12px;">Qwen4-Max-Preview: Alibaba's next flagship arrives for two weeks only, then retires</h2>
-<div style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;">
-<span style="background:#0f172a;color:#fff;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">1M-token context window</span>
-<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">393K max output tokens</span>
-<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">Token Plan only — no pay-as-you-go</span>
-<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">Retires November 25, 2026</span>
-</div>
-<p style="line-height:1.65;margin:0 0 10px;">Alibaba Cloud opened Qwen4-Max-Preview on November 11, the first public model of the Qwen4 generation: a multimodal flagship for reasoning, coding, and agentic tool-using workflows, with text, image, and video understanding, structured outputs, and compatibility with OpenAI- and Anthropic-style APIs. The preview runs from 10:00 on November 11 to midnight on November 25 (UTC+8), and Alibaba says the model will not change during the window and will be retired when it closes.</p>
-<p style="line-height:1.65;margin:0 0 10px;">The catch is how narrow the access is. Qwen4-Max-Preview is available only through Alibaba's Token Plan, a monthly subscription for coding and agent tools — there is no pay-as-you-go API, no published per-token price, no benchmark table, no model card, no parameter count, and no weights. Every quality claim about the model is, for now, Alibaba's own word.</p>
-<p style="line-height:1.65;margin:0;">A launch with a printed expiry date is a new kind of release discipline: teams can evaluate the model for two weeks, but should not build a long-lived production dependency on it. The rest of the Qwen4 family — Qwen4-Plus, Qwen4-Flash, and a 27B model meant for local deployment — has no release date yet.</p>
-<p style="margin:12px 0 0;"><a href="https://aifrontierpost.com/articles/qwen4-max-preview-alibaba-flagship/" style="color:#2563eb;">Source: AI Frontier Post, reporting Alibaba Cloud's documentation &rarr;</a></p>
-</section>
-
-<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">02 &middot; Research</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">AlphaGenome 2: DeepMind reads DNA variant effects cell by cell</h3>
-<p style="line-height:1.65;margin:0 0 8px;">Google DeepMind launched AlphaGenome 2 on November 11, shifting DNA-sequence prediction from broad tissue averages to the behavior of specific cell types and states — a variant that matters in an immune cell may do little in neighboring tissue. Training combined human and mouse molecular data with more than 107 million individual cell profiles across 68 tissues. On the TenK10K immune-cell dataset, DeepMind reports identifying 30% of causal expression variants versus 16% for the original system, and 43% versus 23% for directional gene effects.</p>
-<p style="line-height:1.65;margin:0;">The model is available through the AlphaGenome API for non-commercial research, with commercial research restricted to private preview, and DeepMind explicitly says it is not approved for clinical or diagnostic use. Genome-wide association studies find stretches of DNA linked to disease but not the cell where a variant acts — cell-conditioned prediction bridges association to mechanism, which is what immunology and drug-target work actually need.</p>
-<p style="margin:12px 0 0;"><a href="https://sxf.si/brief/" style="color:#2563eb;">Source: SXF Brief, reporting Google DeepMind &rarr;</a></p>
-</section>
-
-<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">03 &middot; Open-Weights Models</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Runway opens Praxis-1: a 27B-parameter robot action model, free to adapt</h3>
-<p style="line-height:1.65;margin:0 0 8px;">Runway made Praxis-1 generally downloadable on November 11, releasing the weights and fine-tuning code for its video-trained world-action robot model under Apache 2.0. The roughly 27-billion-parameter mixture-of-experts diffusion transformer predicts both an upcoming video segment and the actions a robot should take, with about 2.8 billion active parameters per token in the video backbone. Runway reports a 46.2% success rate over 1,200 simulated episodes on NVIDIA RoboLab-120, against 42.9% for the cited FLUX 3 Action baseline.</p>
-<p style="line-height:1.65;margin:0;">The weights (about 54.4 GB in bf16) ship with inference code and full or LoRA fine-tuning code via Hugging Face and GitHub, with LeRobot support and vLLM-Omni integration. Open robot policies turn a black-box demo into editable infrastructure — one policy adapted across arms and warehouses — though Runway itself flags look-alike targets, vague instructions, and long multi-step tasks as weak spots, and simulator success is no substitute for staged real-robot validation.</p>
-<p style="margin:12px 0 0;"><a href="https://sxf.si/brief/" style="color:#2563eb;">Source: SXF Brief, reporting Runway &rarr;</a></p>
-</section>
-
-<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">04 &middot; Model Release</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Gemini Decision 1: Google's decision-only model answers 1,000 questions at once</h3>
-<p style="line-height:1.65;margin:0 0 8px;">Google DeepMind released Gemini Decision 1 via a new Decisions API — a specialized decision-only model that processes up to 1,000 closed-ended queries simultaneously and returns probability scores in 150–250ms, priced at $0.10 per million input tokens. Google claims roughly 5x lower cost than Gemini 3.5 Flash-Lite for the same routing work.</p>
-<p style="line-height:1.65;margin:0;">This is a routing primitive, not another chatbot: agentic systems constantly branch on yes/no judgments, and a cheap, fast, probability-scored decider is infrastructure for the agent stack. The cost and latency figures are Google's own claims.</p>
-<p style="margin:12px 0 0;"><a href="https://horizon.alchemylab.sh/briefing" style="color:#2563eb;">Source: Today's AI Briefing, reporting Google DeepMind &rarr;</a></p>
-</section>
-
-<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">05 &middot; Product Launch</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">ElevenLabs builds the interaction layer: three voice models, an orchestration engine, and an AI teammate</h3>
-<p style="line-height:1.65;margin:0 0 8px;">ElevenLabs announced a full interaction-layer push on November 12: Scribe v3 for speech-to-text transcription, Eleven v4 for expressive text-to-speech, and Eleven Realtime, a new class of speech-to-speech models for voice agents — three models the company says lead independent benchmarks. It also unveiled Interaction Engine, a system to orchestrate voice models and LLMs across a conversation, upgrades to its ElevenAgents platform, ElevenAI, a new app that acts as an AI teammate for enterprise teams, and a Partner Program with more than 550 partners in 44 countries.</p>
-<p style="line-height:1.65;margin:0;">The company also launched Scribe v3 Medical, a healthcare-optimized transcription model, with more domain-optimized models planned for industries such as financial services. Voice is becoming the default interface for agents, and ElevenLabs is betting the winner owns the whole layer — models, orchestration, and the agent platform — not just one voice model. Benchmark-leadership claims are the company's own.</p>
-<p style="margin:12px 0 0;"><a href="https://the9thestate.com/business/elevenlabs-builds-out-the-interaction-layer-for-ai-with-major-new-model-and-agent-upgrades" style="color:#2563eb;">Source: The 9th Estate, reporting ElevenLabs &rarr;</a></p>
-</section>
-
-<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">06 &middot; Open-Weights Models</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">SpeakLeash ships Bielik 11B v3.1: 56 languages, plus a family of tiny decision models</h3>
-<p style="line-height:1.65;margin:0 0 8px;">SpeakLeash and ACK Cyfronet AGH staged the release of Bielik 11B v3.1, Bielik 11B v3.1 DFlash, and the Bielik-One family between November 10 and 12, with weights on Hugging Face under open-science terms. Version 3.1 was trained on another 500 billion tokens and supports 56 languages, up from 32 in version 3.0. DFlash uses speculative decoding to propose response segments for verification by the main model, cutting generation time without changing response quality.</p>
-<p style="line-height:1.65;margin:0;">Bielik-One is four small models for classification and assessment — routing requests, moderating content, screening documents, and evaluating responses from other AI systems. Small, open, multilingual models plus dedicated decision models are the unglamorous plumbing of real agent deployments: routing and judging at near-zero cost.</p>
-<p style="margin:12px 0 0;"><a href="https://dailyaibrief.com/news/speakleash-releases-bielik-11b-v3-1-decision-models-nETfpOyj" style="color:#2563eb;">Source: AI Brief, reporting SpeakLeash / ACK Cyfronet AGH &rarr;</a></p>
-</section>
-
-<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">07 &middot; Research</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Microsoft's Lazarus: seven reprogrammed neurons can hide a backdoor no eval would catch</h3>
-<p style="line-height:1.65;margin:0 0 8px;">Microsoft Research disclosed Lazarus on November 10, a research attack showing how malicious changes to fewer than ten dormant model neurons can plant a concealed trigger in an AI agent — no conventional retraining required. In the reported Nemotron-Terminal-8B experiment, altering seven neurons reached at least 98.8% trigger-trajectory effectiveness on a held-out evaluation, while the model behaved normally on standard evaluations and only changed behavior when the trigger appeared during a tool-using task.</p>
-<p style="line-height:1.65;margin:0;">Microsoft also reports an AI-based checkpoint auditing method that flagged 91.4% of edited checkpoints with a 9.7% false-positive rate, and says it has not observed threat actors using this specific technique. Teams now download third-party weights and hand agents terminals and repositories — Lazarus makes the checkpoint itself a supply-chain risk, and standard evals can't clear it. Provenance, checkpoint signing, and diff review become mandatory, not nice-to-have.</p>
-<p style="margin:12px 0 0;"><a href="https://sxf.si/brief/" style="color:#2563eb;">Source: SXF Brief, reporting Microsoft Research &rarr;</a></p>
-</section>
-
-<section style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:20px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#64748b;font-weight:700;margin:0 0 8px;">08 &middot; Agent Infrastructure</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">NVIDIA gives OpenShell to the CNCF: an open security runtime for autonomous agents</h3>
-<p style="line-height:1.65;margin:0 0 8px;">NVIDIA announced at KubeCon on November 10 that it is contributing OpenShell, an open-source runtime for securing and governing autonomous agents, to the Cloud Native Computing Foundation's Sandbox ecosystem.</p>
-<p style="line-height:1.65;margin:0;">As agents become services that execute tools and touch infrastructure, the question shifts from how the model reasons to what it is allowed to do in production. An open, inspectable governance layer beats a bespoke policy per agent framework — though a CNCF donation is not the same as ecosystem adoption or hardened production maturity.</p>
-<p style="margin:12px 0 0;"><a href="https://sxf.si/brief/" style="color:#2563eb;">Source: SXF Brief, reporting NVIDIA &rarr;</a></p>
-</section>
-
-<p style="font-size:13px;color:#64748b;line-height:1.6;margin:4px 0 0;">Left out today: no fresh rumor-only model launches surfaced in today's window. Anthropic's IPO roadshow continues — pricing reported for November 18 and first trade November 19, per CNBC sources, not Anthropic-confirmed. Yesterday's edition excluded unconfirmed reports of imminent GPT-6.2 and Grok 4.8 releases; Qwen4, rumor-only yesterday, is now a confirmed preview and leads today's edition.</p>
 
 <p style="text-align:center;font-style:italic;color:#64748b;margin:28px 0 0;">by Your Tech Sommelier</p>
 </div>
@@ -2930,7 +2922,7 @@
     }
 
     let currentIssue = '2026-11-17';
-    let currentAiIssue = '2026-11-17';
+    let currentAiIssue = '2026-11-18';
     let currentSection = 'hardware';
 
     function renderHardwareIssue(key) {
@@ -2990,12 +2982,12 @@
       const isWeeklyOct09 = key === 'weekly-2026-10-09';
       const isWeeklyOct02 = key === 'weekly-2026-10-02';
       const isWeeklySep25 = key === 'weekly-2026-09-25';
+      const isNov18 = key === '2026-11-18';
       const isNov17 = key === '2026-11-17';
       const isNov16 = key === '2026-11-16';
       const isNov15 = key === '2026-11-15';
       const isNov14 = key === '2026-11-14';
       const isNov13 = key === '2026-11-13';
-      const isNov12 = key === '2026-11-12';
       $('#aiTrendWeeklyNov13').hidden = !isWeeklyNov13;
       $('#aiTrendWeeklyNov11').hidden = !isWeeklyNov11;
       $('#aiTrendWeeklyNov06').hidden = !isWeeklyNov06;
@@ -3005,13 +2997,16 @@
       $('#aiTrendWeeklyOct09').hidden = !isWeeklyOct09;
       $('#aiTrendWeeklyOct02').hidden = !isWeeklyOct02;
       $('#aiTrendWeeklySep25').hidden = !isWeeklySep25;
+      $('#aiTrendDailyNov18').hidden = !isNov18;
       $('#aiTrendDailyNov17').hidden = !isNov17;
       $('#aiTrendDailyNov16').hidden = !isNov16;
       $('#aiTrendDailyNov15').hidden = !isNov15;
       $('#aiTrendDailyNov14').hidden = !isNov14;
       $('#aiTrendDailyNov13').hidden = !isNov13;
-      $('#aiTrendDailyNov12').hidden = !isNov12;
-      if (isNov17) {
+      if (isNov18) {
+        $('#issueDate').textContent = 'Wednesday, November 18, 2026';
+        $('#storyCount').textContent = '7 stories';
+      } else if (isNov17) {
         $('#issueDate').textContent = 'Tuesday, November 17, 2026';
         $('#storyCount').textContent = '8 stories';
       } else if (isNov16) {
@@ -3026,10 +3021,7 @@
       } else if (isNov13) {
         $('#issueDate').textContent = 'Friday, November 13, 2026';
         $('#storyCount').textContent = '7 stories';
-      } else if (isNov12) {
-        $('#issueDate').textContent = 'Thursday, November 12, 2026';
-        $('#storyCount').textContent = '8 stories';
-      } else if (isWeeklyNov13) {
+            } else if (isWeeklyNov13) {
         $('#issueDate').textContent = 'Week of November 13, 2026';
         $('#storyCount').textContent = '10 stories';
       } else if (isWeeklyNov11) {
@@ -3088,12 +3080,12 @@
       $('#aiTrendWeeklyOct09').hidden = true;
       $('#aiTrendWeeklyOct02').hidden = true;
       $('#aiTrendWeeklySep25').hidden = true;
+      $('#aiTrendDailyNov18').hidden = true;
       $('#aiTrendDailyNov17').hidden = true;
       $('#aiTrendDailyNov16').hidden = true;
       $('#aiTrendDailyNov15').hidden = true;
       $('#aiTrendDailyNov14').hidden = true;
       $('#aiTrendDailyNov13').hidden = true;
-      $('#aiTrendDailyNov12').hidden = true;
       $('#navHardware').hidden = !isHardware;
       $('#navLlm').hidden = !isLlm;
       if (isLlm) {
