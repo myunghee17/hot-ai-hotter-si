@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="light dark" />
   <link rel="icon" href="data:," />
-  <title>AI Hardware Daily — November 17, 2026</title>
+  <title>AI Hardware Daily — November 18, 2026</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650;8..60,750&display=swap');
 
@@ -728,6 +728,12 @@
       #aiTrendDailyNov13 h2 { font-size: 21px !important; }
     }
 
+    /* November 18 AI Hardware daily edition (inline-styled; responsive overrides) */
+    @media (max-width: 640px) {
+      #hardwareDailyNov18 h1 { font-size: 28px !important; }
+      #hardwareDailyNov18 h2 { font-size: 21px !important; }
+    }
+
     /* November 17 AI Hardware daily edition (inline-styled; responsive overrides) */
     @media (max-width: 640px) {
       #hardwareDailyNov17 h1 { font-size: 28px !important; }
@@ -758,12 +764,6 @@
       #hardwareDailyNov13 h2 { font-size: 21px !important; }
     }
 
-    /* November 12 AI Hardware daily edition (inline-styled; responsive overrides) */
-    @media (max-width: 640px) {
-      #hardwareDailyNov12 h1 { font-size: 28px !important; }
-      #hardwareDailyNov12 h2 { font-size: 21px !important; }
-    }
-
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
     }
@@ -774,7 +774,7 @@
     <div class="issue-bar" aria-label="Section and edition navigation">
       <div class="issue-meta">
         <span class="signal" id="signalName">AI Trends</span>
-        <span id="issueDate">Tuesday, November 17, 2026</span>
+        <span id="issueDate">Wednesday, November 18, 2026</span>
         <span id="storyCount">7 stories</span>
       </div>
       <div class="section-switcher" role="group" aria-label="Choose a section">
@@ -787,12 +787,12 @@
         <div class="edition-group">
           <span class="edition-label">Daily</span>
           <div class="archive-controls" role="group" aria-label="Choose a daily edition">
-            <button class="edition-btn" type="button" data-issue="2026-11-17" aria-pressed="true">Nov 17</button>
+            <button class="edition-btn" type="button" data-issue="2026-11-18" aria-pressed="true">Nov 18</button>
+            <button class="edition-btn" type="button" data-issue="2026-11-17" aria-pressed="false">Nov 17</button>
             <button class="edition-btn" type="button" data-issue="2026-11-16" aria-pressed="false">Nov 16</button>
             <button class="edition-btn" type="button" data-issue="2026-11-15" aria-pressed="false">Nov 15</button>
             <button class="edition-btn" type="button" data-issue="2026-11-14" aria-pressed="false">Nov 14</button>
             <button class="edition-btn" type="button" data-issue="2026-11-13" aria-pressed="false">Nov 13</button>
-            <button class="edition-btn" type="button" data-issue="2026-11-12" aria-pressed="false">Nov 12</button>
             
           </div>
         </div>
@@ -833,7 +833,87 @@
       <p>All information in this blog comes from publicly available sources and has not been independently verified. Please check the linked original sources before relying on it.</p>
     </aside>
 
-<div id="hardwareDailyNov17" aria-live="polite" style="background:#f8fafc;font-family:Georgia,'Times New Roman',serif;color:#334155;">
+<div id="hardwareDailyNov18" aria-live="polite" style="background:#f8fafc;font-family:Georgia,'Times New Roman',serif;color:#334155;">
+<div style="max-width:760px;margin:0 auto;padding:32px 20px 48px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#64748b;margin:0 0 8px;">AI Hardware Daily &nbsp;·&nbsp; Wednesday, November 18, 2026</p>
+<h1 style="font-size:40px;line-height:1.1;color:#0f172a;margin:0 0 16px;">Nvidia's $115.8B quarter says the buildout isn't slowing — but the walls around it are closing in</h1>
+<p style="font-size:17px;line-height:1.6;margin:0 0 28px;"><strong style="color:#0f172a;">Why it matters:</strong> Nvidia's blowout quarter — $115.8 billion in three months, Rubin ramping faster than anything in company history — says AI demand is still accelerating, not stalling. But the same 24 hours showed what now gates that growth: Washington is walling off China's access to advanced chips while Nvidia scrambles to lock in packaging and substrate capacity through 2029, and the challengers — AMD buying inference silicon, Anthropic's chip-supplier-funded IPO — are all racing the same supply chain.</p>
+
+<!-- HERO -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#b45309;margin:0 0 10px;">Cover story</p>
+<h2 style="font-size:28px;line-height:1.2;color:#0f172a;margin:0 0 12px;">Nvidia posts a $115.8B quarter — and guides to $130B — in its first earnings without Huang</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Nvidia reported fiscal third-quarter revenue of $115.8 billion on Tuesday, up 103% from a year earlier and 20% from the prior quarter, beating both its own $108 billion guidance and the roughly $109.1 billion Wall Street consensus. Data Center revenue hit $107.6 billion, up 110% year over year against about $101.9 billion expected, and adjusted earnings of $2.68 a share topped the roughly $2.47 consensus. The company guided the current quarter to $130 billion, plus or minus 3% — above the roughly $125 billion analysts expected — and raised its fiscal 2028 growth outlook to about 75% from 70%. It was the first report under interim CEO Colette Kress since Jensen Huang resigned on November 12, and the board's chair, Harvey C. Jones, said the board does not intend to reinstate him.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The engine is Vera Rubin: the NVL72 platform began volume shipments in the quarter and generated nearly $20 billion in its first quarter of production shipments, which Nvidia calls the fastest product ramp in its history, with racks now running at CoreWeave, Google Cloud, Microsoft Azure, Oracle Cloud and Nebius. The catch sits in the margin line — the 74.9% adjusted gross margin of the third quarter is guided down to 71–72% for the fourth — and in the balance sheet: future contractual commitments surged to $518 billion from $366 billion in the prior quarter, while free cash flow more than doubled to $43.7 billion. The board also formed a National Security and Export Control Oversight Committee on Tuesday. Shares closed at $155.46, down 0.44% in regular trading, then rose about 4.8% after hours to roughly $163.</p>
+<div style="margin:4px 0 16px;">
+<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">$115.8B &nbsp;·&nbsp; Q3 revenue, +103% YoY</span>
+<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">$107.6B &nbsp;·&nbsp; Data Center, +110% YoY</span>
+<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">$130B &nbsp;·&nbsp; Q4 guide, ±3%</span>
+<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">~$20B &nbsp;·&nbsp; Rubin NVL72 first-quarter ramp</span>
+<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">71–72% &nbsp;·&nbsp; Q4 gross margin guide, down from 74.9%</span>
+</div>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.reuters.com/commentary/breakingviews/nvidia-leaves-ai-trade-hanging-purgatory-2026-11-18/" style="color:#2563eb;">Reuters Breakingviews, November 18, 2026</a></p>
+</div>
+
+<!-- 02 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">02</p>
+<h2 style="font-size:24px;line-height:1.25;color:#0f172a;margin:0 0 12px;">Nvidia stops shipping licensed Hopper chips to China</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">On Tuesday's earnings call, interim CEO Colette Kress said Nvidia sold $2.4 billion worth of licensed Hopper-generation data center products to China in the quarter ended October 25 — and then stopped. "Our guidance does not have any licensed Hopper data center products included, and we are no longer shipping licensed Hopper data center products to China," she said, without explaining why or whether the halt is permanent. The Hopper family includes the H200, the chip at the center of the U.S.–China licensing arrangement negotiated earlier this year.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The halt lands days after the Trump administration moved to tighten export scrutiny further, and Reuters had reported earlier this month that around 600,000 H200 chips were being held in Hong Kong awaiting approval for shipment to mainland China. Washington had eased its H200 licensing policy in January and approved sales to ten Chinese companies, including Alibaba, Tencent and ByteDance, according to earlier Reuters reporting. Nvidia's outlook now assumes no data center compute revenue from China at all — the licensed Hopper business is effectively closed until Washington says otherwise.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://bworldonline.com/technology/2026/11/18/794712/nvidia-stops-shipping-us-approved-ai-chips-to-china/" style="color:#2563eb;">BusinessWorld, November 18, 2026</a></p>
+</div>
+
+<!-- 03 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">03</p>
+<h2 style="font-size:24px;line-height:1.25;color:#0f172a;margin:0 0 12px;">Nvidia locks in its supply chain through 2029 — substrates, packaging, wafers</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Nvidia announced expanded commitments with six supply chain partners on Tuesday — Amkor, Foxconn, Kinsus Interconnect Technology, Samsung Electro-Mechanics, SPIL and TSMC — spanning substrates, advanced packaging, wafer fabrication and contract manufacturing for current and next-generation platforms. Kinsus will expand its dedicated ABF substrate capacity for Nvidia by more than 3.5 times at its Taoyuan plant, with production starting in the second half of 2027 and targeted capacity reached in the third quarter of 2028. Amkor's advanced packaging expansion in Arizona and South Korea is backed by multiyear agreements totaling nearly $3 billion, and a new multiyear SPIL agreement, funded with multibillion-dollar support from Nvidia, increases dedicated advanced packaging capacity in Taiwan by mid-2029.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The deals build on agreements announced in October that envisaged a 2.5-fold increase in substrate capacity over three years and a doubling of testing capacity between 2026 and 2027. The same announcement confirmed that volume shipments of Vera Rubin NVL72 and Vera CPUs began in the third quarter, built on TSMC's 5nm and 3nm processes and CoWoS advanced packaging. The message is blunt: with Rubin ramping at $20 billion a quarter, the constraint is no longer demand — it is how fast the packaging and substrate base can grow.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.globenewswire.com/news-release/2026/11/17/3405251/0/en/nvidia-expands-commitments-with-supply-chain-partners-to-support-ai-infrastructure-buildout.html" style="color:#2563eb;">GlobeNewswire (NVIDIA release), November 17, 2026</a></p>
+</div>
+
+<!-- 04 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">04</p>
+<h2 style="font-size:24px;line-height:1.25;color:#0f172a;margin:0 0 12px;">U.S. chip curbs take effect tomorrow — Malaysia orders its data centers to comply</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Malaysia told its data center operators on Wednesday to comply with new U.S. restrictions on advanced AI chips, a day before the rules take effect on November 19. Trade Minister Johari Abdul Ghani said the government will notify all 117 approved data center projects in the country once the requirements are communicated; 55 were operational as of mid-November. The U.S. Bureau of Industry and Security's interim final rule, announced Monday, requires licenses for advanced chips and servers shipped to data centers in Indonesia, Malaysia, Singapore, Thailand and Brazil, and adds a global end-use license for computing capacity above 12 million aggregate total processing performance supplied to designated entities. Existing data centers serving covered companies have 90 days to obtain licenses.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Malaysia has emerged as a regional data center hub, attracting nearly $100 billion in investment since 2021, and it is also investigating the local unit of Singapore-based cloud firm Megaspeed, which faces a U.S. probe into whether it was used to circumvent export controls. Samsung shares fell about 3.3% and TSMC also declined in Asian trading on Tuesday after the rule was announced. Analysts at CGS International called the curbs a speed bump rather than a derailment for the region's data center boom, noting AI data centers are less than 10% of the roughly 1.3GW of installed capacity its covered companies are exposed to.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://duke.fm/2026/11/18/malaysia-says-data-centres-must-comply-with-us-ai-chip-rules/" style="color:#2563eb;">Reuters via Duke FM, November 18, 2026</a></p>
+</div>
+
+<!-- 05 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">05</p>
+<h2 style="font-size:24px;line-height:1.25;color:#0f172a;margin:0 0 12px;">AMD closes its $2.9B Taalas deal — inference silicon that hard-wires the model</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">AMD announced Tuesday it has completed its acquisition of Taalas, a Toronto-based developer of model-specific AI inference silicon, in a cash-and-stock deal valued at approximately $2.9 billion, including up to $1.4 billion contingent on performance milestones. Taalas, founded in 2023, takes a different approach from general-purpose GPUs: it hard-wires a model's weights and architecture directly into the chip's circuitry, merging storage and computation at DRAM-level density. Its HC1 technology demonstrator runs Meta's Llama 3.1 8B and is built on TSMC's 6-nanometer process; Taalas claims it runs that model 48 times faster than an Nvidia B200 accelerator.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">AMD plans to integrate Taalas's technology into its accelerator roadmap and develop system-level solutions alongside Instinct GPUs, EPYC CPUs, ROCm software and the Helios rack-scale platform. It is AMD's second completed acquisition in two days — the $8.2 billion purchase of World Labs closed on Monday — and shares rose 0.82% on Tuesday. The bet is clear: as inference becomes the bulk of AI compute, the winners may be the chips built for one model, not every model.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://newsroom.amd.com/news/amd-completes-acquisition-taalas-advance-ai-inference-innovation/" style="color:#2563eb;">AMD Newsroom, November 17, 2026</a></p>
+</div>
+
+<!-- 06 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">06</p>
+<h2 style="font-size:24px;line-height:1.25;color:#0f172a;margin:0 0 12px;">Anthropic prices tonight — and its chip suppliers are buying $26B of it</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Anthropic is expected to set its IPO price on Wednesday evening, with trading to begin Thursday on the Nasdaq under the ticker ANT. The offering is 825 million shares at $70 to $78 each, for a public raise of up to about $64.4 billion and a fully diluted valuation of up to about $1.4 trillion — the first frontier AI lab to go public. Alongside it, seven chip and compute suppliers have agreed to buy $26 billion of non-voting shares at the IPO price in a private placement: Google and Nvidia about $10 billion each, AMD about $2.5 billion, and Broadcom, Micron and Microsoft about $1 billion each, with TSMC at about $500 million.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Demand is reported to be heavy — Bloomberg reported orders at nearly seven times the shares available, and the Wall Street Journal reported the deal could price above $80 — but neither is confirmed, and the final price is not set until this evening. For the hardware world, the structure is the story: the companies that sell Anthropic its compute are now also its shareholders, tying the biggest AI chip buyers and the biggest AI model builder into the same cap table.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://techxplore.com/news/2026-11-anthropic-price-ipo-key-ai.html" style="color:#2563eb;">TechXplore (AFP), November 18, 2026</a></p>
+</div>
+
+<!-- 07 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">07</p>
+<h2 style="font-size:24px;line-height:1.25;color:#0f172a;margin:0 0 12px;">At SC26, ASUS previews Intel's Diamond Rapids — with a Crescent Island GPU inside</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">ASUS used SC26 in Chicago to preview a server built on Intel's next-generation Diamond Rapids processor, paired with Intel's GPU D-series — formerly code-named Crescent Island — giving the industry its first look at Intel's next CPU-plus-accelerator combination in a vendor system. The ESC8000-E13P preview sits alongside AMD-based systems in the same showcase: servers running 6th Gen AMD EPYC 9006 processors, an Instinct MI350P platform and an air-cooled eight-GPU Instinct MI355X system, plus dual-socket Intel Xeon 6 servers and edge systems for robotics and industrial automation.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">ASUS framed the lineup as an "AI Factory" blueprint — rack-scale systems, enterprise servers and edge boxes from one vendor, with volume shipments of its latest rack-scale AI systems underway this quarter. The Intel preview is the item to watch: Diamond Rapids and Crescent Island are Intel's answer for enterprises evaluating alternatives to the Nvidia-dominated accelerator stack, and their first appearance in a system vendor's roadmap puts a date on when buyers can start testing them.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.tradingview.com/news/prnewswire:e95842cdedf68:0-asus-showcases-full-stack-ai-infrastructure-at-sc26-featuring-intel-and-amd-platforms/" style="color:#2563eb;">PR Newswire via TradingView, November 17, 2026</a></p>
+</div>
+
+<p style="font-family:Georgia,'Times New Roman',serif;font-style:italic;text-align:center;color:#64748b;font-size:15px;margin:28px 0 0;">by Your Tech Sommelier</p>
+</div>
+</div>
+
+<div id="hardwareDailyNov17" aria-live="polite" hidden style="background:#f8fafc;font-family:Georgia,'Times New Roman',serif;color:#334155;">
 <div style="max-width:760px;margin:0 auto;padding:32px 20px 48px;">
 <p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#64748b;margin:0 0 8px;">AI Hardware Daily &nbsp;·&nbsp; Tuesday, November 17, 2026</p>
 <h1 style="font-size:40px;line-height:1.1;color:#0f172a;margin:0 0 16px;">Vera Rubin sweeps MLPerf on debut — and Nvidia builds a 50,000-core GPU for science</h1>
@@ -1191,70 +1271,7 @@
 </div>
 </div>
 
-<div id="hardwareDailyNov12" aria-live="polite" hidden style="background:#f8fafc;font-family:Georgia,'Times New Roman',serif;color:#334155;">
-<div style="max-width:760px;margin:0 auto;padding:32px 20px 48px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#64748b;margin:0 0 8px;">AI Hardware Daily &nbsp;·&nbsp; Thursday, November 12, 2026</p>
-<h1 style="font-size:40px;line-height:1.1;color:#0f172a;margin:0 0 16px;">NVIDIA's board weighs ousting Huang — while the demand data says the AI buildout isn't slowing</h1>
-<p style="font-size:17px;line-height:1.6;margin:0 0 28px;"><strong style="color:#0f172a;">Why it matters:</strong> The AI trade's linchpin is now a governance story: NVIDIA's board met late Wednesday to decide Jensen Huang's future, and the stock slid more than 8% after hours. Yet the demand data released the same day points the other way — Foxconn's record quarter and TSMC's record October revenue both rest on AI server orders, and the ecosystem keeps diversifying around NVIDIA, from SambaNova inference racks to Samsung's $34 billion HBM packaging bet. The question is no longer whether customers want AI capacity. It is who leads the company that supplies most of it.</p>
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#b45309;margin:0 0 10px;">Cover story</p>
-<h2 style="font-size:28px;line-height:1.2;color:#0f172a;margin:0 0 12px;">NVIDIA's board prepares to oust Jensen Huang, reports say — no decision announced</h2>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The Wall Street Journal reported on November 11 that NVIDIA's board is preparing to remove CEO Jensen Huang, and Reuters reported, citing a source familiar with the matter, that the board met late Wednesday to decide whether to oust him. The reports followed a New York Times disclosure the same day of a second extramarital affair, with Kimberly Powell, NVIDIA's vice president of healthcare, who reports to Huang. Reuters said it could not immediately verify the Journal's report, and NVIDIA has made no announcement — as of this morning, no board decision has been reported and Huang remains CEO. The board had opened an independent investigation on November 8 into whether Huang was targeted by a foreign intelligence operation, and says it has no reason to believe company secrets were compromised.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The market reaction was swift: NVIDIA closed the regular session up 2.87% at $173.73, then fell about 8.6% after hours to roughly $158.76, and was down 7.8% in premarket trading on Thursday, putting its market value on course to drop below $4 trillion for the first time since July 2025. Reuters estimates the company has lost about $300 billion in market value since the board announced its investigation on Sunday. Succession speculation centers on two internal names — engineer Ian Buck, an architect of the CUDA software system, and CFO Colette Kress — with no obvious successor anointed; Bernstein downgraded the stock to market perform and halved its price target to $200, while Citi cut its target 21% to $225 but kept a buy rating. Meanwhile Huang's 5 p.m. ET deadline on November 11 to accept a closed-door House briefing on November 18 passed with no public reply from NVIDIA, and the company reports quarterly earnings on November 17 — one day before the requested briefing.</p>
-<div style="margin:4px 0 16px;">
-<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">−8.6% &nbsp;·&nbsp; after hours, to ~$158.76</span>
-<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">&lt;$4T &nbsp;·&nbsp; market cap in premarket</span>
-<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">~$300B &nbsp;·&nbsp; value lost since Nov 8 probe</span>
-</div>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.reuters.com/technology/nvidia-is-preparing-oust-ceo-jensen-huang-wsj-reports-2026-11-11/" style="color:#2563eb;">Reuters, November 11, 2026</a> · <a href="https://www.reuters.com/business/retail-consumer/global-ai-stocks-sink-nvidia-crisis-deepens-sector-selloff-2026-11-12/" style="color:#2563eb;">Reuters, November 12, 2026</a> · <a href="https://www.reuters.com/legal/transactional/whos-next-ceo-nvidia-top-engineer-cfo-favored-candidates-2026-11-12/" style="color:#2563eb;">Reuters on succession, November 12, 2026</a></p>
-</div>
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">02</p>
-<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">Foxconn's record quarter: AI servers now more than half its revenue</h3>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Foxconn — formally Hon Hai Precision Industry — reported third-quarter net profit of NT$77.5 billion (about $2.35 billion) on November 12, up 34% year over year and ahead of the NT$69.6 billion LSEG consensus, on revenue of NT$3.016 trillion, up 46%. Cloud and networking products, which include AI servers, accounted for 54% of revenue, up from 51% in the second quarter — more than the smartphones and consumer devices that made the company famous. Chairman Young Liu said the company expects high double-digit growth in AI server-rack shipments in the fourth quarter and again in 2027, and that cloud and networking should exceed 60% of revenue within three to five years.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The one caution came from the supply side: Liu warned that chips, memory and other key components remain tight across AI and consumer-electronics supply chains, a constraint that could limit how fast rack shipments can actually grow. Foxconn is expanding AI server production in Mexico and Texas to handle NVIDIA orders. The results are the clearest demand signal of the week — the world's largest contract electronics maker is now, by revenue, an AI infrastructure company first.</p>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.morningstar.com/news/dow-jones/202611122501/foxconn-maintains-strong-earnings-growth-on-resilient-ai-tech-hardware-demand" style="color:#2563eb;">Morningstar / Dow Jones, November 12, 2026</a> · <a href="https://www.webpronews.com/foxconn-q3-2026-record-profit-ai-servers-racks-2027/" style="color:#2563eb;">WebProNews, November 12, 2026</a></p>
-</div>
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">03</p>
-<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">Supermicro and SambaNova bet on heterogeneous inference: NVIDIA GPUs for prefill, SN50 RDUs for decode</h3>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Supermicro announced a strategic collaboration with SambaNova on November 11 to build and sell AI inference racks powered by SambaNova's fifth-generation SN50 Reconfigurable Dataflow Unit chips, with an initial plan for 10,000 RDU chips. The architecture splits inference in two: NVIDIA GPUs handle the prefill phase, while SN50 RDUs handle the decode phase, letting customers add inference capacity without waiting for next-generation power and cooling infrastructure. The racks join Supermicro's Data Center Building Block Solutions portfolio, targeting neoclouds and sovereign clouds first, then enterprise data centers, with substantially more inference capacity expected in 2027.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The pitch is pragmatic rather than revolutionary: inference, not training, is where most AI spending is heading, and decode-heavy workloads run more efficiently on specialized dataflow silicon than on general-purpose GPUs. It is also the latest sign that the inference stack is fragmenting — NVIDIA still anchors the system, but the decode layer is now open to challengers.</p>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://futurumgroup.com/insights/supermicro-and-sambanova-bet-on-heterogeneous-inference-at-scale/" style="color:#2563eb;">Futurum Group, November 11, 2026</a></p>
-</div>
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">04</p>
-<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">Supermicro ships H15 servers on 6th Gen AMD EPYC, claims SPEC CPU world records</h3>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Supermicro said on November 11 that its H15 server portfolio, powered by AMD's 6th Gen EPYC 9006 Series processors — the "Venice" line that went generally available on November 10 — is now shipping. The company says its 2U Hyper and CloudDC servers set multiple SPEC CPU world records, with the new generation delivering up to 33% more cores, twice the PCIe bandwidth and 1.6 TB/s of memory bandwidth per socket versus the prior generation. The portfolio spans more than 20 systems, from edge and workstation designs to high-density multi-node and GPU servers, and Supermicro is pairing the CPUs with its Helios and Helion rack-scale solutions built around AMD Instinct MI455X GPUs.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The speed from launch to shipping systems matters: Venice was announced on Monday, and server vendors are already putting it in customers' hands the same week. For AMD, the H15 line is the first broad OEM proof point that the 256-core chip is a shipping product, not just a launch slide.</p>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://cdn.technologue.in/news/037f796aa8/supermicro-now-shipping-next-generation-servers-powered-by-6th-gen-amd-epyc-9006-series-cpus-for-cloud-hpc-and-agentic-ai-workloads" style="color:#2563eb;">Technologue, November 11, 2026</a></p>
-</div>
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">05</p>
-<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">TSMC posts record October revenue and approves $40.9 billion in new investment</h3>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">TSMC reported October revenue of NT$586.9 billion on November 11, its highest-ever monthly figure and up 59.7% from a year earlier, as AI accelerator demand translated directly into foundry sales. The company's board also approved $40.9 billion in new investment on November 10. Processes of 5 nanometers or below accounted for 69% of third-quarter revenue, and TSMC is producing HBM4 base dies in collaboration with SK hynix — a reminder that the foundry's role now extends into the memory stack itself.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The broader signal is a lengthening boom: Samsung and SK hynix forecast that memory supply shortages will persist beyond 2028 as AI data-center investment outruns capacity expansion. TSMC's record month is the foundry-side confirmation of the same demand Foxconn and CoreWeave reported this week.</p>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.mt.co.kr/en/industry/2026/11/11/2026111115330192669" style="color:#2563eb;">MoneyToday, November 11, 2026</a></p>
-</div>
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">06</p>
-<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">Samsung breaks ground on a $34 billion HBM packaging hub at Onyang</h3>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Samsung Electronics broke ground on November 12 on a new advanced packaging plant for high-bandwidth memory at its Onyang campus in Asan, South Korea, with President Lee Jae-myung and Samsung Executive Chairman Jay Y. Lee attending. The company will invest ₩1.3 trillion ($900 million) in the new Line 5 plant — a three-story, 31,000-square-meter cleanroom — as part of a ₩46 trillion (about $34 billion) Onyang investment covering the fab plus roughly ₩40 trillion in advanced equipment, with five HBM packaging lines planned and the campus floor area expanding from 270,000 to 420,000 square meters.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Operations are targeted for June 2028, a year ahead of the original schedule, with HBM mass production from May 2029. Lee called the site — an assembly and test facility since 1991 — the future "heart of AI semiconductors," and Samsung raised its total Chungcheong-region investment to ₩144 trillion. The message is blunt: Samsung intends to compete on advanced packaging, not just memory chips, as HBM becomes the bottleneck in every AI server.</p>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://en.sedaily.com/business/2026/11/12/samsung-breaks-ground-on-900-million-hbm-packaging-plant-in" style="color:#2563eb;">Seoul Economic Daily, November 12, 2026</a> · <a href="https://en.sedaily.com/business/2026/11/12/samsung-raises-chungcheong-investment-to-144-trillion-won" style="color:#2563eb;">Seoul Economic Daily, November 12, 2026</a></p>
-</div>
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">07</p>
-<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">Rackspace signs capacity deals for GB300 racks and AMD compute</h3>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Rackspace Technology signed separate multiyear capacity agreements with Together AI and Blacksmith, reported on November 12. For Together AI, Rackspace will provide and operate dedicated NVIDIA GB300 NVL72 infrastructure, with deployment planned for 2027, managing the power, liquid cooling, networking and storage. Under the Blacksmith agreement, Rackspace will provide about 2 MW of dedicated capacity in Northern Virginia using AMD EPYC processors and storage, with deployment beginning in early 2027.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Rackspace also entered a $66 million private placement with an investor group led by Voss Capital. The deals are small next to the hyperscalers' buildouts, but they show the neocloud layer still expanding — dedicated GB300 capacity, sold years ahead, to AI labs that cannot wait for hyperscaler queues.</p>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://dailyaibrief.com/news/rackspace-capacity-deals-together-ai-blacksmith-VvksYymc" style="color:#2563eb;">AI Brief, November 12, 2026</a></p>
-</div>
-<p style="font-family:Georgia,'Times New Roman',serif;font-style:italic;text-align:center;color:#64748b;font-size:15px;margin:28px 0 0;">by Your Tech Sommelier</p>
-</div>
-</div>
-
-    <article id="issue" aria-live="polite" hidden>
+<article id="issue" aria-live="polite" hidden>
       <section class="hero" aria-labelledby="heroTitle">
         <div class="hero-copy">
           <div>
@@ -2869,7 +2886,7 @@
       $('#hardwareDailyNov15').hidden = true;
       $('#hardwareDailyNov14').hidden = true;
       $('#hardwareDailyNov13').hidden = true;
-      $('#hardwareDailyNov12').hidden = true;
+      $('#hardwareDailyNov18').hidden = true;
       $('#hardwareDailyNov17').hidden = true;
       $('#issue').hidden = false;
       keepBlogTitle();
@@ -2921,19 +2938,19 @@
       window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     }
 
-    let currentIssue = '2026-11-17';
+    let currentIssue = '2026-11-18';
     let currentAiIssue = '2026-11-18';
     let currentSection = 'hardware';
 
     function renderHardwareIssue(key) {
       currentIssue = key;
       const hardwareIssues = {
+        '2026-11-18': { panel: '#hardwareDailyNov18', date: 'Wednesday, November 18, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 18, 2026' },
         '2026-11-17': { panel: '#hardwareDailyNov17', date: 'Tuesday, November 17, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 17, 2026' },
         '2026-11-16': { panel: '#hardwareDailyNov16', date: 'Monday, November 16, 2026', stories: '6 stories', title: 'AI Hardware Daily — November 16, 2026' },
         '2026-11-15': { panel: '#hardwareDailyNov15', date: 'Sunday, November 15, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 15, 2026' },
         '2026-11-14': { panel: '#hardwareDailyNov14', date: 'Saturday, November 14, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 14, 2026' },
         '2026-11-13': { panel: '#hardwareDailyNov13', date: 'Friday, November 13, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 13, 2026' },
-        '2026-11-12': { panel: '#hardwareDailyNov12', date: 'Thursday, November 12, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 12, 2026' },
       };
       const selected = hardwareIssues[key];
       if (!selected) {
@@ -3069,7 +3086,7 @@
       $('#hardwareDailyNov15').hidden = true;
       $('#hardwareDailyNov14').hidden = true;
       $('#hardwareDailyNov13').hidden = true;
-      $('#hardwareDailyNov12').hidden = true;
+      $('#hardwareDailyNov18').hidden = true;
       $('#hardwareDailyNov17').hidden = true;
       $('#aiTrendWeeklyNov13').hidden = true;
       $('#aiTrendWeeklyNov11').hidden = true;
@@ -3095,7 +3112,7 @@
       }
     }
 
-    renderHardwareIssue('2026-11-17');
+    renderHardwareIssue('2026-11-18');
   </script>
 </body>
 </html>
