@@ -698,6 +698,12 @@
       #aiTrendWeeklyOct30 h2 { font-size: 21px !important; }
     }
 
+    /* November 21 AI Trends daily edition (inline-styled; responsive overrides) */
+    @media (max-width: 640px) {
+      #aiTrendDailyNov21 h1 { font-size: 28px !important; }
+      #aiTrendDailyNov21 h2 { font-size: 21px !important; }
+    }
+
     /* November 20 AI Trends daily edition (inline-styled; responsive overrides) */
     @media (max-width: 640px) {
       #aiTrendDailyNov20 h1 { font-size: 28px !important; }
@@ -726,12 +732,6 @@
     @media (max-width: 640px) {
       #aiTrendDailyNov16 h1 { font-size: 28px !important; }
       #aiTrendDailyNov16 h2 { font-size: 21px !important; }
-    }
-
-    /* November 15 AI Trends daily edition (inline-styled; responsive overrides) */
-    @media (max-width: 640px) {
-      #aiTrendDailyNov15 h1 { font-size: 28px !important; }
-      #aiTrendDailyNov15 h2 { font-size: 21px !important; }
     }
 
     /* November 21 AI Hardware daily edition (inline-styled; responsive overrides) */
@@ -825,12 +825,12 @@
         <div class="edition-group">
           <span class="edition-label">Daily</span>
           <div class="archive-controls" role="group" aria-label="Choose an AI Trends edition">
-            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-20" aria-pressed="true">Nov 20</button>
+            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-21" aria-pressed="true">Nov 21</button>
+            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-20" aria-pressed="false">Nov 20</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-19" aria-pressed="false">Nov 19</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-18" aria-pressed="false">Nov 18</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-17" aria-pressed="false">Nov 17</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-16" aria-pressed="false">Nov 16</button>
-            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-15" aria-pressed="false">Nov 15</button>
           </div>
         </div>
       </nav>
@@ -1350,6 +1350,83 @@
 
 
 
+<div id="aiTrendDailyNov21" class="edition ai-trends-daily" data-date="2026-11-21" aria-live="polite" hidden style="margin-top:22px;">
+<article style="background:#f8fafc;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
+<div style="max-width:860px;margin:0 auto;">
+<p style="text-align:center;letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:#64748b;margin:0 0 8px;">AI Trends Daily &middot; November 21, 2026</p>
+<h1 style="text-align:center;color:#0f172a;font-size:42px;line-height:1.05;margin:0 0 12px;">Loops, not size: frontier coding fits on a laptop</h1>
+<p style="text-align:center;font-size:17px;line-height:1.6;max-width:680px;margin:0 auto 20px;">Why it matters: two open-weight releases in one day pulled in opposite directions — a 20GB looped model that out-codes much bigger rivals, and Tencent&rsquo;s 770B multimodal MoE with its weights free to download — while OpenAI&rsquo;s new chemistry benchmark showed exactly where frontier models still fail at real decisions. Capability is decentralizing; evaluation is getting more honest.</p>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#dc2626;font-weight:700;margin:0 0 10px;">Cover Story &middot; Open Weights &middot; Model Release</p>
+<h2 style="color:#0f172a;font-size:30px;line-height:1.15;margin:0 0 12px;">Thinking Machines&rsquo; Inkling 2 Mini: a 20GB model that leads every sub-100B rival on agentic coding</h2>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;">
+<span style="background:#0f172a;color:#fff;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">26.4B total &middot; 3.4B active MoE</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">79.2% SWE-bench Verified</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">48.2% DeepSWE v1.1</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">~20 GB &middot; runs offline on a MacBook Pro</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">Apache 2.0 &middot; Hugging Face + Tinker</span>
+</div>
+<p style="line-height:1.65;margin:0 0 10px;">Thinking Machines released Inkling 2 Mini on November 20, an open-weights model built on a looped-transformer architecture that runs its middle layers three times per token instead of scaling parameters. The trick buys more reasoning per forward pass without proportionally more active weights — and per Thinking Machines&rsquo; launch numbers, it works: 48.2% on DeepSWE v1.1, 77.9% on SWE-bench Pro v2 Hard, and 79.2% on SWE-bench Verified, leading every open-weights model under 100B total parameters. It also leads similar-sized open models on agentic search and tool use, with 79.0% on BrowseComp, 85.3% on DeepSearchQA, and 82.7% on MCP Atlas.</p>
+<p style="line-height:1.65;margin:0;">The practical payoff is the footprint: roughly 20GB, demonstrated running offline on a MacBook Pro during a flight, where it built a playable flight simulator in minutes. Alongside it, the lab shipped a research-only variable-loop sibling (TML-d24-varloop-research) whose middle 12 layers can loop 1 to 5 times at inference, taking active weights from 3.4B to 7.4B per token — a deliberate safety experiment, not a product: it was post-trained at 3 passes and the model card warns it may behave unpredictably at other counts. The findings are striking anyway: no-chain-of-thought time horizon rose from 16 seconds at one pass to 37 at three, serial reasoning kept improving out to ten loops, chains of thought grew shorter but stayed legible, and agentic-sabotage tests showed no increase with looping. Independent results are still arriving — BenchLeader&rsquo;s first read puts Inkling 2 Mini at 57.7 on its index — so treat the launch numbers as the lab&rsquo;s own until the independent board fills in.</p>
+<p style="margin:12px 0 0;"><a href="https://futurumgroup.com/insights/thinking-machines-inkling-2-mini-redraws-the-open-weight-efficiency-frontier/" style="color:#2563eb;">Source: Futurum, on Thinking Machines, &ldquo;Introducing Inkling 2 Mini&rdquo; (Nov 20) &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">02 &middot; Open Weights &middot; Model Release</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Tencent opens Hy4: a 770B multimodal MoE, weights and all</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Tencent published downloadable weights for Hy4 on November 20 — an instruction-tuned checkpoint, an FP8 build, and a separate pretrained base model — turning its earlier flagship announcement into something teams can actually self-host. Hy4 is a 770-billion-parameter multimodal mixture-of-experts backbone with roughly 49 billion parameters active per text token, a separate 1.23-billion-parameter vision encoder, and an advertised maximum context of 1,048,576 tokens, handling text, image, and video understanding.</p>
+<p style="line-height:1.65;margin:0;">The honest framing comes from Tencent itself, which acknowledges gaps against leading proprietary systems on difficult research mathematics, long-horizon coding, and advanced visual tasks. And the scale cuts both ways: sparse activation trims compute per token, but operators still need a storage, memory, and networking plan for the full 770B checkpoint. The release matters most for teams with sensitive workloads that want control over customization and inference costs — with the license and the FP8 stack&rsquo;s hardware requirements as the first things to check before building an endpoint.</p>
+<p style="margin:12px 0 0;"><a href="https://sxf.si/brief/" style="color:#2563eb;">Source: SXF Brief, on Tencent Hy4 model card (Nov 20) &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">03 &middot; Evals &amp; Benchmarks &middot; Research</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">OpenAI&rsquo;s MedChemBench: frontier models ace the molecules, stumble on the decisions</h3>
+<p style="line-height:1.65;margin:0 0 8px;">OpenAI released MedChemBench on November 20, a 99-problem medicinal-chemistry benchmark drawn from 117 published papers and patents and covering 761 molecular structures across seven categories, from hit finding to lead optimization and candidate selection. At the xhigh reasoning setting, GPT-6.2 Astra earned 84.5% of available credit, just ahead of GPT-6 Astra at 83.3% and GPT-6.1 Sol at 82.0%, with GPT-5.6 Sol trailing at 58.2%.</p>
+<p style="line-height:1.65;margin:0;">The shape of the errors says more than the ranking. GPT-6 Astra reconstructed molecular structures correctly 95.4% of the time and earned 91.05% of the scientific-rationale credit — but only about half the credit on compound ranking and selection (50.42%) and numerical property prediction (47.02%), the two task types that gate real drug-advancement decisions. OpenAI states the limits itself: the results do not establish whether models can discover new drugs or improve laboratory decisions, prior exposure to the published sources cannot be ruled out, and each answer was a single attempt without tools, feedback, or new experiments. The benchmark is a diagnostic, not a drug-discovery credential — and it is a useful one precisely because it shows where the frontier still breaks.</p>
+<p style="margin:12px 0 0;"><a href="https://openai.com/index/introducing-medchembench/" style="color:#2563eb;">Source: OpenAI, &ldquo;Can AI help scientists identify promising drug candidates?&rdquo; (Nov 20) &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">04 &middot; Benchmarks &middot; Leaderboard</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Claude Fable 5.2 holds No. 1 as GPT-6.2 Astra and Gemini 4 Neon crash the top 10</h3>
+<p style="line-height:1.65;margin:0 0 8px;">BenchLeader&rsquo;s week-to-date board as of November 21 has Claude Fable 5.2 holding the No. 1 spot on its index at 70.2, 1.6 points ahead of Gemini 4 Carbon at 68.6. The week&rsquo;s two big entrants both landed in the top five: OpenAI&rsquo;s GPT-6.2 Astra debuted at No. 3 with 68.3, and Google&rsquo;s Gemini 4 Neon at No. 4 with 68.0, pushing Gemini 4 Argon and Claude Opus 5 out of the top 10.</p>
+<p style="line-height:1.65;margin:0;">The board is built only from independent results — a maker&rsquo;s own launch numbers are never used — and the week was busy: 968 new benchmark results published, 10 new models arrived, and prices moved both ways, with 8 models cutting list prices and 18 raising them. The biggest riser was Qwen3.5-4B, up 2.6 points to 49.3; the biggest faller was GPT-4o, down 3.4 to 39.4. GPT-6.2 Astra&rsquo;s first independent numbers include 62.1% on Terminal-Bench and 65.5% on DrugDiscoveryBench; Gemini 4 Neon&rsquo;s include 28.9% on MLCR and 1,546 on Arena Hard Prompts.</p>
+<p style="margin:12px 0 0;"><a href="https://www.benchleader.com/state" style="color:#2563eb;">Source: BenchLeader, &ldquo;AI leaderboard this week, 16&ndash;22 Nov 2026&rdquo; (Nov 21) &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">05 &middot; Model Release &middot; Vision</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Mistral&rsquo;s Pixtral Large 2502 lands on its API at $2 in / $6 out</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Mistral&rsquo;s Pixtral Large 2502 appeared on the company&rsquo;s API on November 20, the newest entry in its Pixtral vision-model line, with a 128,000-token context window and list pricing of $2.00 per million input tokens and $6.00 per million output tokens.</p>
+<p style="line-height:1.65;margin:0;">It arrives the same week Mistral&rsquo;s large models are being priced against a crowded field — GPT-6.2 Astra&rsquo;s blended list price sits at $16.00 per million tokens on BenchLeader&rsquo;s tracker — and independent benchmark results for Pixtral Large 2502 have not yet landed. The release is a quiet one, but the positioning is clear: a large vision model priced well under the frontier text flagships, aimed at teams that need image understanding at API scale.</p>
+<p style="margin:12px 0 0;"><a href="https://www.benchleader.com/releases" style="color:#2563eb;">Source: BenchLeader, &ldquo;Latest AI model releases&rdquo; (Nov 21) &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">06 &middot; Agent Tooling &middot; Open Source</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Eclipse Enclave 1.0: a vendor-neutral sandbox for coding agents that run themselves</h3>
+<p style="line-height:1.65;margin:0 0 8px;">The Eclipse Foundation released Eclipse Enclave 1.0 on November 20, an open-source, vendor-neutral execution environment that lets AI coding agents operate autonomously inside isolated, policy-controlled sandboxes. It supports Codex, Claude Code, and OpenCode in an extensible architecture, so the same isolation and policy controls apply regardless of which agent a team runs.</p>
+<p style="line-height:1.65;margin:0;">The timing is the story: the same week saw a wave of agent endpoint-security announcements, and Enclave answers the governance half of the problem with an open standard rather than a vendor console. For teams letting agents touch real repositories, the question is no longer whether agents can run unsupervised — it is what they are allowed to touch while they do, and Enclave puts that boundary in policy instead of trust.</p>
+<p style="margin:12px 0 0;"><a href="https://www.codeandchain.com/en/articles/2026-11-21/article-7f2c7f6cc54f" style="color:#2563eb;">Source: Code &amp; Chain, &ldquo;Eclipse Enclave 1.0 Launches&rdquo; (Nov 20) &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">07 &middot; Applied AI &middot; Safety</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Gemini listens to wildfire radio so humans get the warning in under 30 seconds</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Google and nonprofit Watch Duty detailed on November 20 an applied AI system built by a six-month fellowship team: Gemini transcribes noisy analog wildfire radio dispatch audio, turning speech mixed with static and emergency jargon into searchable transcripts and alerting volunteer monitors when a dispatch needs attention. The system monitors about 400 radio feeds, and on degraded wildfire audio it cut word error rate from 38% to 22.34%.</p>
+<p style="line-height:1.65;margin:0;">The meaningful feature is not generative conversation — it is speech recognition plus dispatch triage plus human verification, in an environment where a missed message can have serious consequences. Every alert still passes a human before it goes public. It is the day&rsquo;s clearest example of the theme running through the other stories: the models are good enough now that the interesting engineering is the system around them.</p>
+<p style="margin:12px 0 0;"><a href="https://sxf.si/brief/" style="color:#2563eb;">Source: SXF Brief, on Google / Watch Duty (Nov 20) &rarr;</a></p>
+</section>
+
+<p style="text-align:center;font-size:14px;line-height:1.6;color:#64748b;margin:24px 0 0;">Watch tomorrow: independent Hy4 benchmarks and Inkling 2 Mini&rsquo;s first independent results fill in; Huang&rsquo;s closed-door House interview is December 1.</p>
+
+<p style="text-align:center;font-style:italic;color:#64748b;margin:28px 0 0;">by Your Tech Sommelier</p>
+</div>
+</article>
+</div>
+
 <div id="aiTrendDailyNov20" class="edition ai-trends-daily" data-date="2026-11-20" aria-live="polite" hidden style="margin-top:22px;">
 <article style="background:#f8fafc;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
 <div style="max-width:860px;margin:0 auto;">
@@ -1718,81 +1795,6 @@
 </section>
 
 <p style="text-align:center;font-size:14px;line-height:1.6;color:#64748b;margin:24px 0 0;">Watch today: MLPerf Endpoints v1.0 results land at 1 PM PT — Endpoints-only; Training v6.1 has no confirmed date. NVIDIA reports Q3 earnings tomorrow, Tuesday, November 17, after the close.</p>
-
-<p style="text-align:center;font-style:italic;color:#64748b;margin:28px 0 0;">by Your Tech Sommelier</p>
-</div>
-</article>
-</div>
-
-<div id="aiTrendDailyNov15" class="edition ai-trends-daily" data-date="2026-11-15" aria-live="polite" hidden style="margin-top:22px;">
-<article style="background:#f8fafc;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
-<div style="max-width:860px;margin:0 auto;">
-<p style="text-align:center;letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:#64748b;margin:0 0 8px;">AI Trends Daily &middot; November 15, 2026</p>
-<h1 style="text-align:center;color:#0f172a;font-size:42px;line-height:1.05;margin:0 0 12px;">The model is the robot now</h1>
-<p style="text-align:center;font-size:17px;line-height:1.6;max-width:680px;margin:0 auto 20px;">Why it matters: Friday was the day the general-purpose model absorbed the specialist's job. OpenAI folded its stand-alone robotics team into the main research org on the argument that GPT-6 Astra can drive robots directly, while NVIDIA's specialist robot brain and Runway's open-weight one staked the opposite claim in the same week. Anthropic published the rulebook for proving a model is safe, and the agent money layer split in two — OpenAI lets agents spend, Google lets Gemini only read. The frontier model is no longer just a product; it is the org chart, the safety case, and the wallet.</p>
-
-<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#dc2626;font-weight:700;margin:0 0 10px;">Cover Story &middot; Robotics &middot; Org Charts</p>
-<h2 style="color:#0f172a;font-size:30px;line-height:1.15;margin:0 0 12px;">OpenAI disbands its stand-alone robotics team — GPT-6 Astra is the robot now</h2>
-<div style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;">
-<span style="background:#0f172a;color:#fff;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">Fortune exclusive &middot; Nov 13</span>
-<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">74.8% on RoboLab-120 (simulated)</span>
-<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">~$36.40 per attempt</span>
-<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">Humanoid demo still 2027</span>
-</div>
-<p style="line-height:1.65;margin:0 0 10px;">Fortune reported on Friday, November 13 that OpenAI has dissolved its stand-alone robotics team and reassigned its people: researchers move into the main research organization under Chief Research Officer Mark Chen, while applied robotics and hardware staff move to the Applied organization under President Greg Brockman. OpenAI confirmed the reorganization to Fortune, though it has published no blog post of its own and has not said how many people were affected. The stated reason is the bet in the headline: general-purpose models such as GPT-6 Astra can now be applied to robots directly, so a separate team building robot-specific models is no longer the fastest way forward.</p>
-<p style="line-height:1.65;margin:0 0 10px;">The evidence OpenAI points to is an NVIDIA study from October 14 that used GPT-6 Astra as a robot controller on RoboLab-120, a simulated pick-and-place benchmark, with no robot-specific training at all. It scored 74.8% success against 51.0% for the best dedicated learned policy — but each attempt cost around $36.40 in tokens and each model call took about 18.56 seconds, and the test was a simulation, not a physical robot. Follow-on reporting on November 14 added real-hardware tests — GPT-6 Astra against Ai2's MolmoAct2 on five bimanual desk tasks with YAM arms (StationeryBench) — to the simulation evidence. This is the second time OpenAI has closed a robotics team; the first, in 2020&ndash;21, was a retreat. A spokesperson told Fortune robotics remains core to the long-term vision and that a humanoid demonstration is still targeted for 2027 — and one OpenAI employee publicly disputed the "disbanded" framing, saying the research joined the main team to improve future core models.</p>
-<p style="line-height:1.65;margin:0;">The org chart is the product strategy now: if the general model is the robot policy, the robotics team becomes the model team. But the $36-an-attempt, 18-seconds-a-call numbers show the general model is not yet a practical robot brain — it is a bet that scale closes that gap before the specialist models win the factory floor.</p>
-<p style="margin:12px 0 0;"><a href="https://explainx.ai/blog/openai-disbands-robotics-team-gpt-6-astra-robots-fortune-2026" style="color:#2563eb;">Source: ExplainX, reporting Fortune (Nov 13) &rarr;</a></p>
-</section>
-
-<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">02 &middot; Robotics &middot; World-Action Models</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">NVIDIA's GR00T 2: the specialist's answer — a robot brain that learns by watching humans</h3>
-<p style="line-height:1.65;margin:0 0 8px;">NVIDIA introduced GR00T 2 on November 9 at the Conference on Robot Learning in Austin, a 2-billion-parameter world-action model built on Cosmos that predicts future video and robot actions together from camera views, an instruction, and the robot's state. It trained on 402,730 hours of first-person human video, 10,184 hours of handheld-gripper demonstrations, and 23,500 hours of robot teleoperation. NVIDIA reports 40% zero-shot success across 50 tasks unseen on the target robot, rising to 71% with one demonstration and 95% with five — after a 30-minute fine-tune on a single RTX 5090. The GR00T 2 Turbo variant runs at 124 milliseconds per prediction on the Jetson Thor computer inside a Unitree G1 humanoid.</p>
-<p style="line-height:1.65;margin:0;">The genuinely open part is the data: 100,000 hours of the human video is released as Human-1M-100K under a CC BY 4.0 license. The model itself is open in a narrower sense — the code arrives in December and no weights release date has been announced, and every performance figure is NVIDIA's own, with no independent verification yet. Foxconn, Siemens, and Nexuni are evaluating it. GR00T 2 is the counter-bet to OpenAI's move: a specialist brain trained on human video, not a general model pointed at a robot.</p>
-<p style="margin:12px 0 0;"><a href="https://techtoday.space/blog/nvidia-groot-2-explained" style="color:#2563eb;">Source: TechToday, reporting NVIDIA (Nov 9) &rarr;</a></p>
-</section>
-
-<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">03 &middot; Evals &middot; Safety</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Anthropic publishes 10 recommendations for building safety evaluations that actually prove something</h3>
-<p style="line-height:1.65;margin:0 0 8px;">Anthropic published an engineering blog post on November 13, "Building Strong Safety Evaluations," laying out ten recommendations for designing, running, and reporting the evaluations that decide whether a model is ready to ship. The headline ideas: preregister how results will be analyzed before seeing the data, so flattering conclusions can't be cherry-picked after the fact; validate automated graders against human expert judgments; and move from single-turn refusal rates to multi-turn simulations that test how a model behaves across a real conversation. The post also stresses matching the test to the question it asks — observational versus causal — and assembling multidisciplinary teams to build the evals.</p>
-<p style="line-height:1.65;margin:0;">The post is candid about Anthropic's own practice: it has paused many tests that hand a model internet access after incidents in its own work, and web-search tests that still need a connection now run under live monitoring. It points teams to existing tooling instead of starting from zero — the UK AI Security Institute's Inspect framework and Anthropic's own Petri toolkit, built on Inspect, for automated multi-turn behavioral testing. The timing is the message: with IPO pricing days away and a November 12 lawsuit asking a court to freeze frontier development, the lab is publishing, in public, how it proves its models are safe — a standard its rivals will now be measured against.</p>
-<p style="margin:12px 0 0;"><a href="https://cryptobriefing.com/anthropic-recommendations-ai-safety-evaluations/" style="color:#2563eb;">Source: Crypto Briefing, reporting Anthropic (Nov 13) &rarr;</a></p>
-</section>
-
-<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">04 &middot; Agents &middot; Money</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Gemini can now read your wallet — but Google won't let it spend a cent</h3>
-<p style="line-height:1.65;margin:0 0 8px;">Google announced on November 13 that all Gemini app users in the US can connect Google Wallet to Gemini's Personal Intelligence, the opt-in connected-apps system. Tag @Google Wallet and ask about spending habits, subscriptions, or a holiday budget; optionally link bank and credit-card accounts through Plaid for deeper insights. The integration is rolling out on web, Android, and iOS — and it is strictly read-only. Google says Gemini "can't move, manage, or invest your money." It is US-only, for personal accounts, age 18 and up.</p>
-<p style="line-height:1.65;margin:0;">The same day produced two opposite philosophies of the agent money layer: OpenAI's ChatGPT Wallet, launched November 13, lets agents complete purchases with user approval; Google's answer is observation, not spending. Anthropic's Claude Personal Finance beta, from November 5, is the third approach in the same race. Which philosophy users trust will decide whether agent commerce becomes a payments category or stays a research feature.</p>
-<p style="margin:12px 0 0;"><a href="https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/" style="color:#2563eb;">Source: Google, The Keyword (Nov 13) &rarr;</a></p>
-</section>
-
-<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">05 &middot; Developer Tools &middot; APIs</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">DeepSeek puts its whole app into the API: search, files, and voice for $0.75 per thousand searches</h3>
-<p style="line-height:1.65;margin:0 0 8px;">DeepSeek announced on November 13 that the capabilities behind its consumer app — cited web search, file parsing, link reading, content safety checks, and voice — are now available through its API on deepseek-flash, the API name for the V4.1-Flash-1017 model. The built-in features work across the Messages, Responses, and Chat Completions endpoints, with tool calls and context assembly handled server-side; with thinking mode on, the search tool becomes a multi-step deep search. Search, Fetch, OCR, speech recognition, and text-to-speech are also available as standalone APIs, and DeepSeek released an open-source chat-demo that can import conversation history from its app.</p>
-<p style="line-height:1.65;margin:0;">The prices are the story: search and web fetch cost $0.75 per 1,000 requests, OCR $0.225 per 1,000 pages, with speech-to-text at $0.058 per audio hour and text-to-speech at $0.225 per 10,000 characters — both speech services half off for a limited time — all on top of token charges. Public-facing apps must enable the safety checks, and developers remain responsible for moderation and AI-content labeling. DeepSeek is turning its consumer app into a developer platform at commodity prices: the cheapest way to ship a search-grounded chatbot just got cheaper.</p>
-<p style="margin:12px 0 0;"><a href="https://www.webpronews.com/deepseek-api-web-search-ocr-speech-tools-pricing/" style="color:#2563eb;">Source: WebProNews, reporting DeepSeek (Nov 13) &rarr;</a></p>
-</section>
-
-<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">06 &middot; Agent Tooling &middot; Platforms</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Cognition launches Devin Apps: the coding agent now hosts what it builds</h3>
-<p style="line-height:1.65;margin:0 0 8px;">Cognition introduced Devin Apps on November 13: private, secure, shareable web applications that run directly on Devin's cloud computer. Describe a software tool and Devin builds it and hosts it at a fixed address on preview.devinapps.com, behind a Devin-account login; a public release over the open internet is not planned. The apps run on memory snapshots that let the underlying machine hibernate between tasks. The feature is rolling out gradually to activated accounts, with no pricing disclosed.</p>
-<p style="line-height:1.65;margin:0;">The move turns Devin from a tool that writes code and hands it back into a platform where the agent's output lives. It lands two months after Cognition's $2 billion Series E at a reported $48 billion valuation in September, with reported annualized revenue above $1 billion — the coding-agent business is now selling the whole loop, build plus hosting, not just the keystrokes.</p>
-<p style="margin:12px 0 0;"><a href="https://news.tulsian.ai/news/company-news/cognition-launches-devin-apps-for-team-web-building.html" style="color:#2563eb;">Source: Tulsian AI News, reporting Cognition (Nov 13) &rarr;</a></p>
-</section>
-
-<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">07 &middot; Open-Weights &middot; Local Inference</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Recursive's Boole-32B: a 1.8-bit MoE that fits a 32B model into 9GB</h3>
-<p style="line-height:1.65;margin:0 0 8px;">Recursive's Precision Numerics released Boole-32B-A2.5B-Preview on November 13, a 1.8-bit version of Recursive's Flint coding model. Using mixed precision, expert pruning, and custom kernels, it cuts size 9x over BF16 and runs 2x faster than INT4, according to the release — 565 tokens per second on a single RTX 5090, vendor-reported. The model carries 32 billion total parameters with 2.5 billion active per token, and the weights are on Hugging Face in GGUF form with a demo on GitHub. It follows Boole-1.7B, the smaller model that proved the approach.</p>
-<p style="line-height:1.65;margin:0;">The local-inference frontier keeps compressing: a 32B-class mixture-of-experts at 9GB means frontier-ish coding models run on a gaming GPU, and 1.8-bit is the new extreme of the quantization race — the question is now how much capability survives the squeeze, not whether the model fits.</p>
-<p style="margin:12px 0 0;"><a href="https://vibingtalk.com/index.php?threads/boole-32b-a2-5b-preview-9gb-1-8-bit-moe-565-token-s-on-1-rtx-5090.1953908/" style="color:#2563eb;">Source: Vibing Talk, reporting Precision Numerics (Nov 13) &rarr;</a></p>
-</section>
 
 <p style="text-align:center;font-style:italic;color:#64748b;margin:28px 0 0;">by Your Tech Sommelier</p>
 </div>
@@ -3083,7 +3085,7 @@
     }
 
     let currentIssue = '2026-11-21';
-    let currentAiIssue = '2026-11-20';
+    let currentAiIssue = '2026-11-21';
     let currentSection = 'hardware';
 
     function renderHardwareIssue(key) {
@@ -3144,12 +3146,12 @@
       const isWeeklyOct09 = key === 'weekly-2026-10-09';
       const isWeeklyOct02 = key === 'weekly-2026-10-02';
       const isWeeklySep25 = key === 'weekly-2026-09-25';
+      const isNov21 = key === '2026-11-21';
       const isNov20 = key === '2026-11-20';
       const isNov19 = key === '2026-11-19';
       const isNov18 = key === '2026-11-18';
       const isNov17 = key === '2026-11-17';
       const isNov16 = key === '2026-11-16';
-      const isNov15 = key === '2026-11-15';
       $('#aiTrendWeeklyNov20').hidden = !isWeeklyNov20;
       $('#aiTrendWeeklyNov13').hidden = !isWeeklyNov13;
       $('#aiTrendWeeklyNov11').hidden = !isWeeklyNov11;
@@ -3160,13 +3162,16 @@
       $('#aiTrendWeeklyOct09').hidden = !isWeeklyOct09;
       $('#aiTrendWeeklyOct02').hidden = !isWeeklyOct02;
       $('#aiTrendWeeklySep25').hidden = !isWeeklySep25;
+      $('#aiTrendDailyNov21').hidden = !isNov21;
       $('#aiTrendDailyNov20').hidden = !isNov20;
       $('#aiTrendDailyNov19').hidden = !isNov19;
       $('#aiTrendDailyNov18').hidden = !isNov18;
       $('#aiTrendDailyNov17').hidden = !isNov17;
       $('#aiTrendDailyNov16').hidden = !isNov16;
-      $('#aiTrendDailyNov15').hidden = !isNov15;
-      if (isNov20) {
+      if (isNov21) {
+        $('#issueDate').textContent = 'Saturday, November 21, 2026';
+        $('#storyCount').textContent = '7 stories';
+      } else if (isNov20) {
         $('#issueDate').textContent = 'Friday, November 20, 2026';
         $('#storyCount').textContent = '7 stories';
       } else if (isNov19) {
@@ -3181,9 +3186,6 @@
       } else if (isNov16) {
         $('#issueDate').textContent = 'Monday, November 16, 2026';
         $('#storyCount').textContent = '6 stories';
-      } else if (isNov15) {
-        $('#issueDate').textContent = 'Sunday, November 15, 2026';
-        $('#storyCount').textContent = '7 stories';
                   } else if (isWeeklyNov20) {
         $('#issueDate').textContent = 'Week of November 20, 2026';
         $('#storyCount').textContent = '10 stories';
@@ -3247,12 +3249,12 @@
       $('#aiTrendWeeklyOct09').hidden = true;
       $('#aiTrendWeeklyOct02').hidden = true;
       $('#aiTrendWeeklySep25').hidden = true;
+      $('#aiTrendDailyNov21').hidden = true;
       $('#aiTrendDailyNov20').hidden = true;
       $('#aiTrendDailyNov19').hidden = true;
       $('#aiTrendDailyNov18').hidden = true;
       $('#aiTrendDailyNov17').hidden = true;
       $('#aiTrendDailyNov16').hidden = true;
-      $('#aiTrendDailyNov15').hidden = true;
       $('#navHardware').hidden = !isHardware;
       $('#navLlm').hidden = !isLlm;
       if (isLlm) {
