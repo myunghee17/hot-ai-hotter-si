@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="light dark" />
   <link rel="icon" href="data:," />
-  <title>AI Hardware Daily — November 20, 2026</title>
+  <title>AI Hardware Daily — November 21, 2026</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650;8..60,750&display=swap');
 
@@ -734,6 +734,12 @@
       #aiTrendDailyNov15 h2 { font-size: 21px !important; }
     }
 
+    /* November 21 AI Hardware daily edition (inline-styled; responsive overrides) */
+    @media (max-width: 640px) {
+      #hardwareDailyNov21 h1 { font-size: 28px !important; }
+      #hardwareDailyNov21 h2 { font-size: 21px !important; }
+    }
+
     /* November 20 AI Hardware daily edition (inline-styled; responsive overrides) */
     @media (max-width: 640px) {
       #hardwareDailyNov20 h1 { font-size: 28px !important; }
@@ -764,12 +770,6 @@
       #hardwareDailyNov16 h2 { font-size: 21px !important; }
     }
 
-    /* November 15 AI Hardware daily edition (inline-styled; responsive overrides) */
-    @media (max-width: 640px) {
-      #hardwareDailyNov15 h1 { font-size: 28px !important; }
-      #hardwareDailyNov15 h2 { font-size: 21px !important; }
-    }
-
 
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
@@ -781,7 +781,7 @@
     <div class="issue-bar" aria-label="Section and edition navigation">
       <div class="issue-meta">
         <span class="signal" id="signalName">AI Trends</span>
-        <span id="issueDate">Friday, November 20, 2026</span>
+        <span id="issueDate">Saturday, November 21, 2026</span>
         <span id="storyCount">7 stories</span>
       </div>
       <div class="section-switcher" role="group" aria-label="Choose a section">
@@ -794,12 +794,12 @@
         <div class="edition-group">
           <span class="edition-label">Daily</span>
           <div class="archive-controls" role="group" aria-label="Choose a daily edition">
-            <button class="edition-btn" type="button" data-issue="2026-11-20" aria-pressed="true">Nov 20</button>
+            <button class="edition-btn" type="button" data-issue="2026-11-21" aria-pressed="true">Nov 21</button>
+            <button class="edition-btn" type="button" data-issue="2026-11-20" aria-pressed="false">Nov 20</button>
             <button class="edition-btn" type="button" data-issue="2026-11-19" aria-pressed="false">Nov 19</button>
             <button class="edition-btn" type="button" data-issue="2026-11-18" aria-pressed="false">Nov 18</button>
             <button class="edition-btn" type="button" data-issue="2026-11-17" aria-pressed="false">Nov 17</button>
             <button class="edition-btn" type="button" data-issue="2026-11-16" aria-pressed="false">Nov 16</button>
-            <button class="edition-btn" type="button" data-issue="2026-11-15" aria-pressed="false">Nov 15</button>
             
           </div>
         </div>
@@ -841,7 +841,86 @@
       <p>All information in this blog comes from publicly available sources and has not been independently verified. Please check the linked original sources before relying on it.</p>
     </aside>
 
-<div id="hardwareDailyNov20" aria-live="polite" style="background:#f8fafc;font-family:Georgia,'Times New Roman',serif;color:#334155;">
+<div id="hardwareDailyNov21" aria-live="polite" style="background:#f8fafc;font-family:Georgia,'Times New Roman',serif;color:#334155;">
+<div style="max-width:760px;margin:0 auto;padding:32px 20px 48px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#64748b;margin:0 0 8px;">AI Hardware Daily &nbsp;·&nbsp; Saturday, November 21, 2026</p>
+<h1 style="font-size:40px;line-height:1.1;color:#0f172a;margin:0 0 16px;">Nvidia's worst week since 2008 — while the machines it sells keep shipping</h1>
+<p style="font-size:17px;line-height:1.6;margin:0 0 28px;"><strong style="color:#0f172a;">Why it matters:</strong> The market and the machine are telling different stories. Nvidia's stock just had its worst week since 2008 after a report that the SEC's probe has turned to its accounting — yet the hardware keeps shipping: Vera Rubin is live in Azure, RTX Spark desktops put 120-billion-parameter models on a desk, and SpaceX just borrowed $32 billion to buy Nvidia chips. The repricing is about governance and trust, not about orders.</p>
+
+<!-- HERO -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#b45309;margin:0 0 10px;">Cover story</p>
+<h2 style="font-size:28px;line-height:1.2;color:#0f172a;margin:0 0 12px;">Nvidia plunges 14% to $125.53 as SEC probe reportedly turns to accounting</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Nvidia fell 14.01% on Friday to close at $125.53 — its worst single-day percentage drop since January 2025 and its seventh straight losing session — after Reuters reported that the Securities and Exchange Commission's enforcement staff are examining potential accounting issues at the chipmaker, citing two people briefed on the matter. The stock has now fallen for seven straight weeks, its longest weekly losing streak since 2008, and has lost roughly $2.7 trillion in market value since its October 6 record high — about the value of Amazon — dropping to fourth place among U.S. companies behind Apple, Microsoft and Alphabet. The Nasdaq fell 5.28% on the day, erasing its year-to-date gains, and AMD lost 13% while Micron fell almost 14%.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The probe itself is reported, not confirmed: Reuters could not determine when the inquiry began or which issues it covers, and the SEC declined to comment. The selloff came just three days after Nvidia reported a record quarter — $115.8 billion in revenue, up 103% — and guided to $130 billion for the current quarter. The contrast is the story: the business is still printing record numbers while the stock trades on leadership transition, a late quarterly filing and Washington scrutiny.</p>
+<div style="margin:4px 0 16px;">
+<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">-14.01% &nbsp;·&nbsp; Friday's fall, close $125.53</span>
+<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">7 &nbsp;·&nbsp; straight losing sessions — and weeks</span>
+<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">~$2.7T &nbsp;·&nbsp; market value lost since the Oct. 6 peak</span>
+<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">No. 4 &nbsp;·&nbsp; now behind Apple, Microsoft and Google</span>
+</div>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://dealroom.co/news/174723-sec-probe-of-nvidia-turns-to-its-accounting-as-shares-fall-14-and-close-/" style="color:#2563eb;">Dealroom (Reuters), November 20, 2026</a> &nbsp;·&nbsp; <a href="https://www.barrons.com/articles/nvidia-stock-fall-ai-chips-835a38ae" style="color:#2563eb;">Barron's, November 20, 2026</a></p>
+</div>
+
+<!-- 02 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">02</p>
+<h2 style="font-size:24px;line-height:1.25;color:#0f172a;margin:0 0 12px;">SpaceX sold $32 billion in bonds to buy Nvidia chips — lenders want them kept on Earth</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">SpaceX sold $32 billion of bonds on Thursday through a trust that buys Nvidia chips and leases them back to the company, with the largest piece — about $25.2 billion — priced at a yield of 8.259%, well above the 5.95% average for high-grade corporate debt that day. The chips, destined for SpaceX data centers, are expected to start arriving in January. The bonds are part of a financing package of more than $40 billion announced in October, structured through a separate entity to keep the debt off SpaceX's books.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The scale of the AI buildout behind the deal is striking: SpaceX's AI unit nearly tripled revenue from $2.6 billion in the second quarter to $7.6 billion in the third, while spending $16.4 billion on capital expenditure in the quarter alone. And in a detail reported by the Financial Times, lenders sought guarantees that the financed chips stay on Earth — apparently worried about the logistics of repossessing hardware circling the planet at about 17,500 mph.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="http://www.fool.com/investing/2026/11/20/spacex-just-raised-32-billion-for-ai-chips-lenders-want-elon-musk-to-keep-them-on-earth/" style="color:#2563eb;">The Motley Fool, November 20, 2026</a></p>
+</div>
+
+<!-- 03 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">03</p>
+<h2 style="font-size:24px;line-height:1.25;color:#0f172a;margin:0 0 12px;">Vera Rubin NVL72 is now running in Azure</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Nvidia and Microsoft announced at Microsoft Ignite on November 19 that Vera Rubin NVL72 systems are running in Azure data centers, built for reasoning, agentic applications and large-scale training and inference. Access to Azure virtual machines powered by the systems is expanding through a limited preview, with public preview planned for early 2027. The two companies are also extending confidential computing to bare-metal and rack-scale AI infrastructure.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The deployment is backed by benchmark receipts: in MLPerf Training v6.1, Azure scaled to 10,240 Nvidia GPUs with GB200 NVL72 systems on the DeepSeek-V3 model — the largest scale in the round — and in MLPerf Inference v6.1, Azure's GB300 NVL72 systems led cloud submissions on DeepSeek-R1 interactive throughput by more than 10%, according to Signal65. The same announcement widened Nemotron open-model support in Microsoft Foundry and extended Azure Local to Jetson Thor and Jetson Orin edge platforms.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.unite.ai/nvidia-expands-microsoft-ai-collaboration-with-vera-rubin-and-nemotron/" style="color:#2563eb;">Unite.AI, November 19, 2026</a> &nbsp;·&nbsp; <a href="https://wccftech.com/nvidia-fuels-accelerated-computing-at-microsoft-across-azure-windows-pcs/" style="color:#2563eb;">Wccftech, November 20, 2026</a></p>
+</div>
+
+<!-- 04 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">04</p>
+<h2 style="font-size:24px;line-height:1.25;color:#0f172a;margin:0 0 12px;">RTX Spark desktops go on sale: 1 petaflop and 128GB on your desk</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Nvidia's RTX Spark compact desktops went on sale on November 18, with systems from ASUS, Dell and MSI shipping first and Acer, Gigabyte and HP to follow, plus Microsoft's Surface RTX Spark Dev Box. Each desktop pairs a 20-core Nvidia Grace processor with a Blackwell RTX GPU carrying 6,144 CUDA cores, sharing up to 128GB of unified memory and rated at up to 1 petaflop of FP4 AI performance. Nvidia says the machines can run language models of up to 120 billion parameters locally, with context windows up to 1 million tokens.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Prices start at $4,399 for the MSI EdgeMesa N AI+ with 64GB of memory, with the 128GB version at $7,499; the ASUS ProArt GR1X starts at $4,499. The pitch is an always-on machine for running models and agents locally instead of renting cloud tokens — Nvidia's own math puts one desktop at 61 million output tokens a month for about $20 of electricity. The desktop chip runs at up to 140W, against 80W at most in the RTX Spark laptops that shipped in October.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://hi-tech.ua/en/nvidia-launches-rtx-spark-ai-workstations-with-128gb-memory-and-1-petaflop/" style="color:#2563eb;">Hi-Tech.ua, November 20, 2026</a> &nbsp;·&nbsp; <a href="https://thethreshold.media/blog/rtx-spark-desktop-mini-pc-price-specs-asus-msi-dell-2026" style="color:#2563eb;">The Threshold, November 18, 2026</a></p>
+</div>
+
+<!-- 05 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">05</p>
+<h2 style="font-size:24px;line-height:1.25;color:#0f172a;margin:0 0 12px;">Samsung names a new memory chief as AI demand reshapes the business</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Samsung Electronics has named Hwang Sang-joon president and head of its memory-chip business, Reuters reported on November 20, putting a former memory-development executive in charge as AI computing pushes demand for advanced semiconductors. Co-chief executive Jun Young-hyun keeps oversight of the broader device-solutions division, while the company also named Cho Sang-yeun to lead System LSI, the logic-chip design business.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The appointment lands as memory becomes the binding constraint on the AI buildout: Samsung's third-quarter chip profit rose roughly fifteenfold as data-center construction tightened supplies and lifted prices. With HBM supply sold out into 2027 across the big three suppliers, the memory chief's job is now as much about allocating scarce capacity as about technology.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.brownstoneworldwide.com/samsung-names-new-memory-chip-leader-as-ai-demand-reshapes-its-business/" style="color:#2563eb;">Brownstone Worldwide (Reuters), November 20, 2026</a></p>
+</div>
+
+<!-- 06 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">06</p>
+<h2 style="font-size:24px;line-height:1.25;color:#0f172a;margin:0 0 12px;">Server-CPU cut talk is "overstated," GF Securities says — Meta is shifting buys to Nvidia's Grace and Vera</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Talk that Meta and Microsoft have cut server CPU orders is inaccurate, GF Securities said in a client note on November 20, with supply-chain checks showing the opposite. Meta has shifted some of its x86 purchases to Nvidia's Grace and Vera server options, and has accelerated general-server deployments for its Muse AI agent, according to the Hong Kong-based firm.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The firm kept a $211 billion server CPU market forecast for 2030 — its own estimate, not an independent one — with 2027 unit growth of 29% as agentic AI expands from 25% to 50% of total inference. It reiterated a Buy on AMD, forecasting Venice CPU shipments of 400,000 this year and 5.4 million in 2027, and a Buy on Intel on its Granite Rapids ramp. The read-through matches this week's data: the CPU is now the other half of the AI rack, not an afterthought.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.tradingview.com/news/seekingalpha:5e05618b7094b:0-nvidia-amd-in-focus-as-gf-securities-says-talk-of-server-cpu-cuts-is-overstated/" style="color:#2563eb;">TradingView (Seeking Alpha), November 20, 2026</a></p>
+</div>
+
+<!-- 07 -->
+<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">07</p>
+<h2 style="font-size:24px;line-height:1.25;color:#0f172a;margin:0 0 12px;">At SC26, inference silicon splits in two: prefill on GPUs, decode on dataflow and LPDDR chips</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Supercomputing 2026 in Chicago crystallized a split in LLM inference hardware: instead of running prompt prefill and token decode on the same expensive liquid-cooled GPUs, vendors are disaggregating by workload phase. SambaNova demonstrated its fifth-generation SN50 dataflow unit — 1,600 TFLOPS BF16, 64GB of HBM2E in a three-tier SRAM/HBM/DDR hierarchy, supporting 10-trillion-parameter models and 10-million-token contexts — paired with air-cooled Intel D270 GPUs handling prefill while SN50 pipelines do low-latency decode. Intel's D270, formerly Crescent Island, carries 160GB of LPDDR5X memory, and Intel claims up to 5.9 times the application throughput of an RTX PRO 6000 Blackwell system — on European Monte Carlo options pricing, not LLM inference, and on pre-production silicon.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">South Korea's HyperAccel attacked HBM cost altogether with its 4nm, 250W LPDDR5X Bertha LPU, claiming more than 3.5 times the token throughput per watt and per dollar of 600W Blackwell workstation GPUs on Llama 3 70B and Qwen 3 32B — vendor-reported internal benchmarks, not independent tests. The common thread is memory economics: with HBM scarce and expensive, inference silicon is being redesigned around cheaper, larger memory pools rather than peak FLOPS.</p>
+<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.reciwo.com/articles/sambanova-sn50-rdu-vs-hyperaccel-bertha-lpu-intel-d270-disaggregated-inference-comparison" style="color:#2563eb;">RECIWO Labs, November 20, 2026</a></p>
+</div>
+
+<p style="font-family:Georgia,'Times New Roman',serif;font-style:italic;text-align:center;color:#64748b;font-size:15px;margin:28px 0 0;">by Your Tech Sommelier</p>
+</div>
+</div>
+
+<div id="hardwareDailyNov20" aria-live="polite" hidden style="background:#f8fafc;font-family:Georgia,'Times New Roman',serif;color:#334155;">
 <div style="max-width:760px;margin:0 auto;padding:32px 20px 48px;">
 <p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#64748b;margin:0 0 8px;">AI Hardware Daily &nbsp;·&nbsp; Friday, November 20, 2026</p>
 <h1 style="font-size:40px;line-height:1.1;color:#0f172a;margin:0 0 16px;">Washington approved 879,000 AI chips for China — and Nvidia's stock can't catch a break</h1>
@@ -1228,70 +1307,6 @@
 <p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.forex.com/en-us/news-and-analysis/weekly-equities-outlook-nvidia-anthropic-walmart/" style="color:#2563eb;">Forex.com, November 14, 2026</a> &nbsp;·&nbsp; <a href="https://www.ig.com/uk/news-and-trade-ideas/_nvidia-q3-earnings-preview--can-ai-growth-outweigh-the-jensen-h-261110" style="color:#2563eb;">IG, November 10, 2026</a></p>
 </div>
 
-<p style="font-family:Georgia,'Times New Roman',serif;font-style:italic;text-align:center;color:#64748b;font-size:15px;margin:28px 0 0;">by Your Tech Sommelier</p>
-</div>
-</div>
-
-<div id="hardwareDailyNov15" aria-live="polite" hidden style="background:#f8fafc;font-family:Georgia,'Times New Roman',serif;color:#334155;">
-<div style="max-width:760px;margin:0 auto;padding:32px 20px 48px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#64748b;margin:0 0 8px;">AI Hardware Daily &nbsp;·&nbsp; Sunday, November 15, 2026</p>
-<h1 style="font-size:40px;line-height:1.1;color:#0f172a;margin:0 0 16px;">The AI buildout's $4.2 trillion repricing — while hardware imports run at a $1 trillion pace</h1>
-<p style="font-size:17px;line-height:1.6;margin:0 0 28px;"><strong style="color:#0f172a;">Why it matters:</strong> The buildout's money story split this weekend: the Financial Times' $4.2 trillion supplier selloff and a $1 trillion annualized hardware-import pace are the same boom seen from opposite ends — capital is still flooding into AI hardware while the stocks of the companies supplying it get repriced. The hardware itself keeps shipping: Rubin's rack-scale ecosystem filled in further, AMD pressed its memory advantage, and the biggest compute contract in AI history is being argued over in public. Tuesday's NVIDIA earnings — interim CEO Colette Kress's first call — are the next verdict.</p>
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#b45309;margin:0 0 10px;">Cover story</p>
-<h2 style="font-size:28px;line-height:1.2;color:#0f172a;margin:0 0 12px;">Data-center suppliers have lost $4.2 trillion since June, FT analysis finds</h2>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Shares in the companies supplying the equipment, energy systems and construction services behind the AI data-center boom have lost about $4.2 trillion in market value since June, according to a Financial Times analysis published Sunday, erasing nearly half of the $9.4 trillion the group added during the previous year. Caterpillar's market value has fallen 44%, while Oklo, Comfort Systems and Corning have each lost about half their value, the report said.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The figure is a loss in market value across listed suppliers, not evidence that $4.2 trillion of data-center projects have been cancelled or that demand for AI hardware has vanished — and the weekend's other data point argues the opposite. U.S. imports of computers, computer accessories and semiconductors jumped 151% year over year in September to $86.9 billion, an annualized pace of roughly $1 trillion. Investors are repricing the picks-and-shovels layer of the AI trade even as the physical buildout accelerates — the same tension that has defined the sector all autumn, now with a number attached.</p>
-<div style="margin:4px 0 16px;">
-<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">$4.2T &nbsp;·&nbsp; market value lost since June</span>
-<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">~½ &nbsp;·&nbsp; of the prior year's $9.4T gains erased</span>
-<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">−44% &nbsp;·&nbsp; Caterpillar's market value</span>
-<span style="display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;color:#0f172a;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:999px;padding:6px 12px;margin:0 6px 6px 0;">~−50% &nbsp;·&nbsp; Oklo, Comfort Systems, Corning</span>
-</div>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://headlinesxtra.com/2026/11/15/ai-infrastructure-stocks-lose-4-2-trillion-data-centre-selloff-november-2026/" style="color:#2563eb;">HeadlinesXtra, November 15, 2026 (reporting the Financial Times analysis)</a></p>
-</div>
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">02</p>
-<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">Musk defends the $45 billion Anthropic compute deal's 90-day exit clause — November 13</h3>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Elon Musk pushed back on November 13 against the idea that SpaceX could use the exit clause in its Anthropic compute contract to reprice the deal, after investor Chamath Palihapitiya argued on the All-In podcast that either side can walk away on 90 days' notice and SpaceX could bring the contract back at two to three times the current price if data-center supply tightens. Musk said the contract "works both ways" — if compute becomes plentiful and cheap, SpaceX revenue will drop. The clause itself is not new: SpaceX disclosed in its May 20, 2026 IPO filing that Anthropic agreed to pay $1.25 billion a month through May 2029 — about $45 billion in total — for dedicated access to 300 megawatts of capacity at the Colossus clusters in Memphis, with more than 220,000 NVIDIA H100, H200 and GB200 GPUs, and either party able to terminate on 90 days' notice.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The deal is the largest publicly disclosed compute commitment in AI history, and it is no longer the only one on Colossus: Google has a separate arrangement reported at roughly $920 million a month, and Reflection AI agreed to pay $150 million a month from July 2026 through 2029 for GB300 capacity. The public argument over the exit clause is the point — the neocloud model now runs on multi-billion-dollar contracts that either side can end in a quarter, so the durability of the AI buildout's biggest revenue lines is a live question, not a settled one.</p>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.teslanewswire.com/articles/musk-spacex-anthropic-compute-deal-works-both-ways-nov-13-2026" style="color:#2563eb;">Tesla News Wire, November 13, 2026</a> · <a href="https://findskill.ai/blog/anthropic-xai-colossus-15-billion-claude-renewal-decision-table/" style="color:#2563eb;">FindSkill, on the SpaceX S-1 filing of May 20, 2026</a></p>
-</div>
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">03</p>
-<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">AMD's MI430X bets the HPC future on native FP64 and 432GB of HBM4 — announced November 12</h3>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">AMD detailed its Instinct MI430X GPU on November 12, pitching it as the first GPU designed from the outset for the convergence of high-precision computing and AI for science. Built on the CDNA 5 architecture, it pairs up to 288 TFLOPS of peak native FP64 with 432GB of HBM4 at 23.3 TB/s and 9.2 petaflops of peak FP4 performance. AMD says the 432GB capacity is 50% more memory than NVIDIA's Vera Rubin — a vendor claim, not an independent measurement. Four GPUs connect to a sixth-generation EPYC "Venice" host in a glue-less Infinity Fabric mesh, with up to 384 GB/s unidirectional bandwidth per GPU and 12.3 Tbps of scale-up bandwidth across the node.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The chip is already booked into flagship systems on two continents: Discovery at Oak Ridge National Laboratory, the successor to Frontier; Alice Recoque, France's first exascale system; Herder at HLRS in Germany; and LUMI-AI and LUMI-IQ at CSC Finland. AMD is also using SC26, which opens in Chicago today, to argue the architectural case: its researchers' paper on Ozaki FP64 emulation finds the technique helps less than 10% of HPC workloads, most of which are not dense-GEMM-shaped. One caveat runs through the whole announcement — the MI430X performance figures are AMD projections from engineering estimates, not measured silicon.</p>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.amd.com/en/blogs/2026/exascale-was-the-beginning-amd-instinct--mi430x-gpus.html" style="color:#2563eb;">AMD, November 12, 2026</a></p>
-</div>
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">04</p>
-<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">Google Cloud puts Vera Rubin bare metal on the menu for SC26</h3>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Google Cloud's SC26 preview, published November 13, leads with newly available A5X bare-metal instances built on NVIDIA's Vera Rubin NVL72 platform, alongside A4 and A4X instances on Blackwell B200 and GB200 NVL72. The menu also includes eighth-generation TPUs — the TPU 8t for pre-training, reinforcement learning and simulation, and the TPU 8i for low-latency reasoning and agentic inference — announced November 9, plus H4D instances with fifth-generation AMD EPYC and Cloud RDMA, including 3TB high-memory shapes, G4 instances with NVIDIA RTX PRO 6000 Blackwell GPUs, and Arm-based C4A instances on Google Axion.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The pitch is agentic HPC rather than raw hardware: reusable skill repositories for building and running HPC workloads, AlphaEvolve packaged into Cloud Batch to optimize algorithms at cloud scale, and live demos at booth 3418 in Chicago through November 20. Rubin reaching a cloud bare-metal menu within weeks of entering full production is the tell — the new platform is moving from announcement to rentable capacity faster than Blackwell did, and Google is selling the whole stack, from TPU to Rubin, as one HPC catalog.</p>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://cloud.google.com/blog/topics/hpc/whats-new-in-hpc-and-ai-at-sc26" style="color:#2563eb;">Google Cloud Blog, November 14, 2026</a> · <a href="https://aiweekly.co/alerts/google-cloud-debuts-agentic-hpc-skills-alphaevolve-for-sc26" style="color:#2563eb;">AI Weekly, November 14, 2026</a></p>
-</div>
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">05</p>
-<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">U.S. AI hardware imports are running at a $1 trillion annual pace</h3>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">U.S. imports of computers, computer accessories and semiconductors jumped 151% year over year in September to $86.9 billion, according to The Kobeissi Letter, the second-largest monthly increase on record. Sustained, that pace implies roughly $1 trillion a year in AI hardware imports — a scale that turns the data-center buildout into a macroeconomic force, reshaping trade flows, industrial demand and the earnings outlook for the biggest chipmakers and infrastructure suppliers.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The open question is whether October and November trade data confirm September as the start of a structural run rate or a one-month spike. Either way, the number reframes the weekend's selloff: the hardware is crossing borders at record volume while the companies that build the facilities around it are being sold off. Demand, on this measure, is not the constraint — supply, power and financing are.</p>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://adalytica.com/news/ai-hardware-imports-surge-trillion-pace-078c2f19" style="color:#2563eb;">Adalytica, November 15, 2026</a></p>
-</div>
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">06</p>
-<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">Gigabyte and Schneider Electric co-design an AI factory blueprint for Vera Rubin NVL72</h3>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Giga Computing, a Gigabyte subsidiary, and Schneider Electric are collaborating on an AI factory reference architecture built on NVIDIA's Vera Rubin NVL72 platform, connecting AI compute and POD-scale management with power, liquid cooling, software and facility infrastructure. Gigabyte contributes its AI compute platforms, networking and POD Manager for POD-scale operations; Schneider Electric contributes power infrastructure, liquid and hybrid cooling, data-center design, software and facility management. The co-engineered blueprint will be showcased at SC26.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">The point of the partnership is to treat the IT and facility layers of the AI factory as one design problem rather than two separate ones — high-density GPU racks create thermal loads that have to be designed into the data center from the start. It is the second Rubin rack-scale infrastructure announcement in two days, after Google's A5X bare metal: the ecosystem around NVIDIA's new platform is filling in at the facility level, not just the chip level.</p>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.europesays.com/france/110731/" style="color:#2563eb;">ET Datacenters via EuropeSays, November 15, 2026</a></p>
-</div>
-<div style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(15,23,42,0.06);margin-bottom:24px;">
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#64748b;margin:0 0 10px;">07</p>
-<h3 style="font-size:21px;line-height:1.3;color:#0f172a;margin:0 0 10px;">DEUS unveils a modular AI Edge Cube: 144 GPUs in a 40-foot module</h3>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">Korean data-center platform company DEUS unveiled its all-in-one modular AI edge data center, the DEUS AI EDGE CUBE, at Data Center Korea 2026. The product integrates power, cooling, IT, fire protection and monitoring into a single nonstandard 40-foot-class module, with direct liquid cooling designed to handle 90% of the GPU heat load at 135 kW per GPU rack. The reference configuration carries a 300 kW IT design load and accommodates 144 GPUs using 18 B300 servers with eight GPUs each, with service launch targeted within approximately six months of contracting.</p>
-<p style="font-size:16px;line-height:1.65;margin:0 0 12px;">It is a small announcement next to the hyperscale news, but it points at where the edge of the buildout is going: liquid-cooled, rack-dense modules that can be dropped in without building a data center first. As GPU racks push past 100 kW each, the modular, pre-integrated format is becoming the way smaller operators get Blackwell-class density at all.</p>
-<p style="font-family:Arial,Helvetica,sans-serif;font-size:13px;margin:0;"><a href="https://www.koreawindintel.com/deus-unveils-modular-ai-edge-cube-integrating-power-cooling-and-it/" style="color:#2563eb;">Korea Wind Intel, November 15, 2026</a></p>
-</div>
 <p style="font-family:Georgia,'Times New Roman',serif;font-style:italic;text-align:center;color:#64748b;font-size:15px;margin:28px 0 0;">by Your Tech Sommelier</p>
 </div>
 </div>
@@ -3012,7 +3027,7 @@
       if (!item) return;
       currentIssue = key;
       $('#hardwareDailyNov16').hidden = true;
-      $('#hardwareDailyNov15').hidden = true;
+      $('#hardwareDailyNov21').hidden = true;
       $('#hardwareDailyNov20').hidden = true;
       $('#hardwareDailyNov19').hidden = true;
       $('#hardwareDailyNov18').hidden = true;
@@ -3067,19 +3082,19 @@
       window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     }
 
-    let currentIssue = '2026-11-20';
+    let currentIssue = '2026-11-21';
     let currentAiIssue = '2026-11-20';
     let currentSection = 'hardware';
 
     function renderHardwareIssue(key) {
       currentIssue = key;
       const hardwareIssues = {
+        '2026-11-21': { panel: '#hardwareDailyNov21', date: 'Saturday, November 21, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 21, 2026' },
         '2026-11-20': { panel: '#hardwareDailyNov20', date: 'Friday, November 20, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 20, 2026' },
         '2026-11-19': { panel: '#hardwareDailyNov19', date: 'Thursday, November 19, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 19, 2026' },
         '2026-11-18': { panel: '#hardwareDailyNov18', date: 'Wednesday, November 18, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 18, 2026' },
         '2026-11-17': { panel: '#hardwareDailyNov17', date: 'Tuesday, November 17, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 17, 2026' },
         '2026-11-16': { panel: '#hardwareDailyNov16', date: 'Monday, November 16, 2026', stories: '6 stories', title: 'AI Hardware Daily — November 16, 2026' },
-        '2026-11-15': { panel: '#hardwareDailyNov15', date: 'Sunday, November 15, 2026', stories: '7 stories', title: 'AI Hardware Daily — November 15, 2026' },
       };
       const selected = hardwareIssues[key];
       if (!selected) {
@@ -3217,7 +3232,7 @@
       });
       $('#issue').hidden = true;
       $('#hardwareDailyNov16').hidden = true;
-      $('#hardwareDailyNov15').hidden = true;
+      $('#hardwareDailyNov21').hidden = true;
       $('#hardwareDailyNov20').hidden = true;
       $('#hardwareDailyNov19').hidden = true;
       $('#hardwareDailyNov18').hidden = true;
@@ -3247,7 +3262,7 @@
       }
     }
 
-    renderHardwareIssue('2026-11-20');
+    renderHardwareIssue('2026-11-21');
   </script>
 </body>
 </html>
