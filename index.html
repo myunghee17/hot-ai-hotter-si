@@ -704,6 +704,12 @@
       #aiTrendWeeklyOct30 h2 { font-size: 21px !important; }
     }
 
+    /* November 27 AI Trends daily edition (inline-styled; responsive overrides) */
+    @media (max-width: 640px) {
+      #aiTrendDailyNov27 h1 { font-size: 28px !important; }
+      #aiTrendDailyNov27 h2 { font-size: 21px !important; }
+    }
+
     /* November 26 AI Trends daily edition (inline-styled; responsive overrides) */
     @media (max-width: 640px) {
       #aiTrendDailyNov26 h1 { font-size: 28px !important; }
@@ -732,12 +738,6 @@
     @media (max-width: 640px) {
       #aiTrendDailyNov22 h1 { font-size: 28px !important; }
       #aiTrendDailyNov22 h2 { font-size: 21px !important; }
-    }
-
-    /* November 21 AI Trends daily edition (inline-styled; responsive overrides) */
-    @media (max-width: 640px) {
-      #aiTrendDailyNov21 h1 { font-size: 28px !important; }
-      #aiTrendDailyNov21 h2 { font-size: 21px !important; }
     }
 
 
@@ -833,12 +833,12 @@
         <div class="edition-group">
           <span class="edition-label">Daily</span>
           <div class="archive-controls" role="group" aria-label="Choose an AI Trends edition">
-            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-26" aria-pressed="true">Nov 26</button>
+            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-27" aria-pressed="true">Nov 27</button>
+            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-26" aria-pressed="false">Nov 26</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-25" aria-pressed="false">Nov 25</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-24" aria-pressed="false">Nov 24</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-23" aria-pressed="false">Nov 23</button>
             <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-22" aria-pressed="false">Nov 22</button>
-            <button class="edition-btn ai-edition-btn" type="button" data-ai-issue="2026-11-21" aria-pressed="false">Nov 21</button>
           </div>
         </div>
       </nav>
@@ -1262,6 +1262,82 @@
 
 
 
+<div id="aiTrendDailyNov27" class="edition ai-trends-daily" data-date="2026-11-27" aria-live="polite" hidden style="margin-top:22px;">
+<article style="background:#f8fafc;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
+<div style="max-width:860px;margin:0 auto;">
+<p style="text-align:center;letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:#64748b;margin:0 0 8px;">AI Trends Daily &middot; November 27, 2026</p>
+<h1 style="text-align:center;color:#0f172a;font-size:42px;line-height:1.05;margin:0 0 12px;">The long matter still breaks every model</h1>
+<p style="text-align:center;font-size:17px;line-height:1.6;max-width:680px;margin:0 auto 20px;">Why it matters: two days after ShellBench showed agents failing roughly 40% of everyday work, MatterBench puts the same wall in law &mdash; the best frontier model completes barely a third of multi-step legal matters, and one completes none. Meanwhile the open layer keeps compounding: a 30B model out-benchmarks a 120B one, a new drafter squeezes 81% more throughput out of sparse models, and NVIDIA opens the data behind its document model &mdash; while OpenAI and Cisco hand agents the keys to defend the systems they run on.</p>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#dc2626;font-weight:700;margin:0 0 10px;">Cover Story &middot; Evals &middot; Legal AI</p>
+<h2 style="color:#0f172a;font-size:30px;line-height:1.15;margin:0 0 12px;">MatterBench: the best frontier model completes only 37.5% of complex legal matters &mdash; one completes none</h2>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;">
+<span style="background:#0f172a;color:#fff;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">37.5% best completion</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">12.5% for GPT-6 Astra</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">0% for DeepSeek V4-Pro</span>
+<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">9 models &middot; 3 real matters</span>
+</div>
+<p style="line-height:1.65;margin:0 0 10px;">Prysm, a San Francisco AI research startup, released MatterBench on November 26, a benchmark that hands nine frontier models &mdash; including OpenAI&rsquo;s GPT-6 Astra, Anthropic&rsquo;s Claude Opus 5.5, Google&rsquo;s Gemini, Z.ai, SpaceX and DeepSeek entries &mdash; the documents and partner instructions from three anonymized, real-life client legal engagements, with four attempts allowed per matter and scoring based on deliverables actually completed. The best performer, Claude Opus 5.5, finished only 37.5% of the ultra-long-horizon tasks. GPT-6 Astra managed 12.5%, and DeepSeek&rsquo;s V4-Pro completed none.</p>
+<p style="line-height:1.65;margin:0;">The design is the point: unlike short-form QA benchmarks, MatterBench tests whether a model can carry a matter &mdash; research, drafting, revision, consistency across documents &mdash; over a long horizon, the shape of work lawyers actually bill for. It lands two days after ShellBench&rsquo;s finding that the best agents fail about 40% of everyday office tasks, and the two benchmarks now rhyme: frontier models are fluent at the step and fragile at the job. For firms weighing AI for real client work, the message is the same in both: human review is not a courtesy, it is the product.</p>
+<p style="margin:12px 0 0;"><a href="https://aiunderstanding.org/news/prysm-s-matterbench-shows-frontier-ai-models-complete-fewer-than-half-of-complex-l" style="color:#2563eb;">Source: AI Understanding, &ldquo;Prysm&rsquo;s MatterBench shows frontier AI models complete fewer than half of complex legal tasks&rdquo; (Nov 26) &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">02 &middot; Model Release &middot; Reasoning</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Sakana&rsquo;s 30B Namazu Small out-benchmarks NVIDIA&rsquo;s 120B Nemotron 3 Super &mdash; on Sakana&rsquo;s own tests</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Sakana AI announced Namazu Small on November 25, a 30-billion-parameter reasoning model built by continued pretraining and post-training on NVIDIA&rsquo;s open Nemotron 3 Nano base. Across 25 benchmarks, Sakana reports a 60.1 average for Namazu Small against 56.2 for the roughly four-times-larger Nemotron 3 Super and 50.2 for Nano itself &mdash; beating Super on 13 of the 25 tests. The gains concentrate in web research and grounded document work: BrowseComp 73.5 versus Super&rsquo;s 36.1, DeepSearchQA 84.3 versus 65.4, and LLM-jp LongBench 86.0 versus 60.0.</p>
+<p style="line-height:1.65;margin:0;">The caveats are in Sakana&rsquo;s own table. On closed-book knowledge the smaller model lags badly &mdash; SimpleQA Verified 6.8 against Super&rsquo;s 18.1 &mdash; and Sakana acknowledges that tasks answered from internal knowledge &ldquo;did not improve much.&rdquo; No weights or API appeared on launch day; on-premises availability details are promised for early to mid-December. Read as a product signal, it is a model for work that supplies its sources, through search or documents, not one to trust for facts it must recall &mdash; and a reminder that a good post-training recipe can now buy more than 4x the parameters.</p>
+<p style="margin:12px 0 0;"><a href="https://www.marktechpost.com/2026/11/26/sakana-ai-namazu-small-30b-nemotron-3-nano/" style="color:#2563eb;">Source: MarkTechPost, &ldquo;Sakana AI Releases Namazu Small, a 30B Model Built on Nemotron 3 Nano&rdquo; (Nov 26) &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">03 &middot; Open Weights &middot; Data</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">NVIDIA open-sources the training data behind Nemotron 3.5 Parse &mdash; nearly 19 million examples</h3>
+<p style="line-height:1.65;margin:0 0 8px;">NVIDIA published a follow-up to Nemotron 3.5 Parse on November 26, open-sourcing three training datasets used for the model: Synthetic Charts V1 with 9.98 million examples, Synthetic Tables V1 with 1 million examples, and OCR Synthetic Multilingual v2 with 7.9 million examples. The release also describes a fine-tuning path for the document-understanding model and a DFlash2 speculator for faster inference.</p>
+<p style="line-height:1.65;margin:0;">Document parsing is the unglamorous layer every agent pipeline sits on &mdash; charts, tables and scanned pages are where retrieval usually breaks &mdash; and NVIDIA handing over the synthetic data, not just the weights, lets anyone reproduce or adapt the capability instead of renting it. It is the second open move from NVIDIA in the same week&rsquo;s flow, and it pairs naturally with the DFly2 story below: the stack around the model is opening faster than the models themselves.</p>
+<p style="margin:12px 0 0;"><a href="https://dailycited.com/d/2026-11-26/" style="color:#2563eb;">Source: DailyCited, &ldquo;Today in AI &middot; Nov 26&rdquo; (Nov 26) &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">04 &middot; Inference &middot; Speculative Decoding</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Tencent&rsquo;s DFly2 reuses the target&rsquo;s own sparse KV cache &mdash; up to 81% more serving throughput at 64K</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Tencent open-sourced DFly2 on November 26, a speculative decoding drafter built for natively sparse LLMs such as DeepSeek-V4.1-Flash, GLM-5.3-Flash and its own Hy4 flash. The trick: each draft layer pairs with a sparse attention layer in the target and reads that layer&rsquo;s latent KV cache and top-k indexer picks, so the drafter keeps no KV cache of its own &mdash; at 32K context, removing the draft cache lets the same memory hold 1.73x as many requests. All figures are Tencent-reported: up to 81% more serving throughput on DeepSeek-V4.1-Flash at 64K (SWE tasks) at matched per-user speed, and 2.97x end-to-end speedup over non-speculative decoding.</p>
+<p style="line-height:1.65;margin:0;">DFly2 ships inside Hy4 flash &mdash; a 220B-total, ~12B-active MoE with 1M context, now live on Fireworks &mdash; with vLLM and SGLang support, and the AngelSpec toolkit lets teams train a drafter for their own sparse models. The smallest reported win is a useful honesty check: only 3.9% over DSpark on Hy4 flash general tasks at temperature 0. The big picture is that speculative decoding, the cheapest latency win in serving, is being rebuilt for the sparse-attention models that now dominate the frontier.</p>
+<p style="margin:12px 0 0;"><a href="https://www.marktechpost.com/2026/11/26/tencent-dfly2-speculative-decoding-sparse-models/" style="color:#2563eb;">Source: MarkTechPost, &ldquo;Tencent Open-Sources DFly2&rdquo; (Nov 26) &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">05 &middot; Inference &middot; Open Source</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">llama.cpp v1.1.0 adds the Inkling 2 family, a full audio stack, and automatic quantization &mdash; plus an AMD benchmark dashboard</h3>
+<p style="line-height:1.65;margin:0 0 8px;">The open-source inference engine llama.cpp released v1.1.0 on November 26, adding the Inkling 2 model family (base, Mini and DSpark), Domyn Edge 4B, Zaya1 8B, RAON-1-mini and Hy4 flash, and splitting DFlash speculative decoding into separate draft methods. The release also brings a large text-to-speech and audio portfolio &mdash; Kokoro, Zonos3-Mini, VoxCPM2, MiniMax-Music3, YuE2, Fish S2 and more &mdash; automatic per-tensor quantization that targets a bits-per-weight or size budget, and a redesigned Llama Chat web UI with voice messages and agent traces. The old llama_batch API is deprecated in favor of llama_batch_ext.</p>
+<p style="line-height:1.65;margin:0;">The same day brought a public Hugging Face dashboard tracking llama.cpp inference speed across AMD Ryzen and Radeon GPUs, comparing models, builds and quantizations in real time. Taken together, the release turns llama.cpp from a text-inference engine into a fuller local stack &mdash; voice in, voice out, on hardware you own &mdash; which is exactly the shape of deployment the open-weights wave keeps pointing toward.</p>
+<p style="margin:12px 0 0;"><a href="https://aiunderstanding.org/news/llama-cpp-v1-1-0-adds-new-model-families-tts-audio-support-and-api-overhaul" style="color:#2563eb;">Source: AI Understanding, &ldquo;llama.cpp v1.1.0 adds new model families, TTS/audio support and API overhaul&rdquo; (Nov 26) &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">06 &middot; Open Weights &middot; Forecasting</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Valory&rsquo;s 27B open-weight forecaster lands within 1.2 points of GPT-5.6</h3>
+<p style="line-height:1.65;margin:0 0 8px;">Valory released Olas-Predict-Qwen3.8-27B on November 26, an open-weight forecasting model built on Qwen3.8-27B with specialist domain training. On an internal test covering 6,824 prediction markets, it posted 67.3% balanced accuracy and a 0.2124 Brier score, against 68.5% and 0.2029 for OpenAI&rsquo;s GPT-5.6 on the same data &mdash; and it improved on Valory&rsquo;s prior 14B model by 8.4 points of accuracy while cutting Brier error roughly 22%. Valory says the model runs on typical organizational hardware and produced 72.5% fewer malformed responses than the untrained Qwen3.8-27B base.</p>
+<p style="line-height:1.65;margin:0;">The comparison is Valory&rsquo;s own internal test, not an independent benchmark, so treat the gap as a claim awaiting third-party checks. But the direction matches the week&rsquo;s pattern &mdash; Sakana&rsquo;s 30B beating a 120B model on research tasks &mdash; that task-specific training is closing the distance between small open models and frontier closed ones, one specialty at a time. Forecasting is a natural first beachhead: the ground truth arrives on a schedule, and the model can be graded without an argument.</p>
+<p style="margin:12px 0 0;"><a href="https://aiunderstanding.org/news/valory-releases-olas-predict-qwen3-8-27b-an-open-weight-model-that-nears-gpt-5-6-o" style="color:#2563eb;">Source: AI Understanding, &ldquo;Valory releases Olas-Predict-Qwen3.8-27B&rdquo; (Nov 26) &rarr;</a></p>
+</section>
+
+<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
+<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">07 &middot; Security &middot; Agent Defense</p>
+<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">OpenAI and Cisco&rsquo;s Shirudo lets agents write shields that block exploits on live Linux &mdash; no restart, no patch yet</h3>
+<p style="line-height:1.65;margin:0 0 8px;">OpenAI and Cisco released Shirudo on November 23 &mdash; coverage surged through November 26 &mdash; an open-source, BSD-2-Clause eBPF runtime that lets AI agents write temporary &ldquo;shields&rdquo; blocking the exact code path an exploit needs, on a running Linux server, while the real patch is still being tested. Built by Cisco&rsquo;s Isovalent team (the Cilium and Tetragon lineage), Shirudo signs every shield cryptographically, verifies it before loading, and records loads in TPM 2.0. The disclosed demo: a Codex-generated shield blocked Java4Shell, a CVSS 9.2 heap-corruption bug in OpenJDK, on a running Elasticsearch 9.5.5 node with no restart and the service still up.</p>
+<p style="line-height:1.65;margin:0;">It is pre-release and deliberately narrow: it needs a specially patched bpf-next kernel plus TPM 2.0, and the agentic loop itself &mdash; agents discovering bugs, drafting and validating shields &mdash; is a design goal, not a shipped product; the release is the runtime and verification layer it will run on. The timing is the story. The same week agents were caught escaping sandboxes and failing safety checks, the two companies shipped infrastructure that assumes agents will be the ones defending systems &mdash; with a human still approving every shield before it is enforced.</p>
+<p style="margin:12px 0 0;"><a href="https://www.marktechpost.com/2026/11/24/openai-cisco-shirudo-ebpf-linux-runtime/" style="color:#2563eb;">Source: MarkTechPost, &ldquo;OpenAI and Cisco Releases Shirudo&rdquo; (Nov 24) &rarr;</a></p>
+</section>
+
+<p style="text-align:center;font-size:14px;line-height:1.6;color:#64748b;margin:24px 0 0;">Watch tomorrow: independent replication of MatterBench&rsquo;s legal-matter results; whether Sakana ships weights or an API for Namazu Small; DFly2 adoption in production vLLM and SGLang serving stacks; and U.S. markets reopening after Thanksgiving, with Huang&rsquo;s closed-door House interview coming December 1.</p>
+
+<p style="text-align:center;font-style:italic;color:#64748b;margin:28px 0 0;">by Your Tech Sommelier</p>
+</div>
+</article>
+</div>
+
 <div id="aiTrendDailyNov26" class="edition ai-trends-daily" data-date="2026-11-26" aria-live="polite" hidden style="margin-top:22px;">
 <article style="background:#f8fafc;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
 <div style="max-width:860px;margin:0 auto;">
@@ -1651,83 +1727,6 @@
 </section>
 
 <p style="text-align:center;font-size:14px;line-height:1.6;color:#64748b;margin:24px 0 0;">Watch tomorrow: whether MiniMax responds to OpenRouter&rsquo;s account request; independent Bison-1 and Sigma numbers; Huang&rsquo;s closed-door House interview is December 1.</p>
-
-<p style="text-align:center;font-style:italic;color:#64748b;margin:28px 0 0;">by Your Tech Sommelier</p>
-</div>
-</article>
-</div>
-
-<div id="aiTrendDailyNov21" class="edition ai-trends-daily" data-date="2026-11-21" aria-live="polite" hidden style="margin-top:22px;">
-<article style="background:#f8fafc;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#334155;">
-<div style="max-width:860px;margin:0 auto;">
-<p style="text-align:center;letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:#64748b;margin:0 0 8px;">AI Trends Daily &middot; November 21, 2026</p>
-<h1 style="text-align:center;color:#0f172a;font-size:42px;line-height:1.05;margin:0 0 12px;">Loops, not size: frontier coding fits on a laptop</h1>
-<p style="text-align:center;font-size:17px;line-height:1.6;max-width:680px;margin:0 auto 20px;">Why it matters: two open-weight releases in one day pulled in opposite directions — a 20GB looped model that out-codes much bigger rivals, and Tencent&rsquo;s 770B multimodal MoE with its weights free to download — while OpenAI&rsquo;s new chemistry benchmark showed exactly where frontier models still fail at real decisions. Capability is decentralizing; evaluation is getting more honest.</p>
-
-<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#dc2626;font-weight:700;margin:0 0 10px;">Cover Story &middot; Open Weights &middot; Model Release</p>
-<h2 style="color:#0f172a;font-size:30px;line-height:1.15;margin:0 0 12px;">Thinking Machines&rsquo; Inkling 2 Mini: a 20GB model that leads every sub-100B rival on agentic coding</h2>
-<div style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;">
-<span style="background:#0f172a;color:#fff;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">26.4B total &middot; 3.4B active MoE</span>
-<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">79.2% SWE-bench Verified</span>
-<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">48.2% DeepSWE v1.1</span>
-<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">~20 GB &middot; runs offline on a MacBook Pro</span>
-<span style="background:#e2e8f0;color:#0f172a;padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700;">Apache 2.0 &middot; Hugging Face + Tinker</span>
-</div>
-<p style="line-height:1.65;margin:0 0 10px;">Thinking Machines released Inkling 2 Mini on November 20, an open-weights model built on a looped-transformer architecture that runs its middle layers three times per token instead of scaling parameters. The trick buys more reasoning per forward pass without proportionally more active weights — and per Thinking Machines&rsquo; launch numbers, it works: 48.2% on DeepSWE v1.1, 77.9% on SWE-bench Pro v2 Hard, and 79.2% on SWE-bench Verified, leading every open-weights model under 100B total parameters. It also leads similar-sized open models on agentic search and tool use, with 79.0% on BrowseComp, 85.3% on DeepSearchQA, and 82.7% on MCP Atlas.</p>
-<p style="line-height:1.65;margin:0;">The practical payoff is the footprint: roughly 20GB, demonstrated running offline on a MacBook Pro during a flight, where it built a playable flight simulator in minutes. Alongside it, the lab shipped a research-only variable-loop sibling (TML-d24-varloop-research) whose middle 12 layers can loop 1 to 5 times at inference, taking active weights from 3.4B to 7.4B per token — a deliberate safety experiment, not a product: it was post-trained at 3 passes and the model card warns it may behave unpredictably at other counts. The findings are striking anyway: no-chain-of-thought time horizon rose from 16 seconds at one pass to 37 at three, serial reasoning kept improving out to ten loops, chains of thought grew shorter but stayed legible, and agentic-sabotage tests showed no increase with looping. Independent results are still arriving — BenchLeader&rsquo;s first read puts Inkling 2 Mini at 57.7 on its index — so treat the launch numbers as the lab&rsquo;s own until the independent board fills in.</p>
-<p style="margin:12px 0 0;"><a href="https://futurumgroup.com/insights/thinking-machines-inkling-2-mini-redraws-the-open-weight-efficiency-frontier/" style="color:#2563eb;">Source: Futurum, on Thinking Machines, &ldquo;Introducing Inkling 2 Mini&rdquo; (Nov 20) &rarr;</a></p>
-</section>
-
-<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">02 &middot; Open Weights &middot; Model Release</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Tencent opens Hy4: a 770B multimodal MoE, weights and all</h3>
-<p style="line-height:1.65;margin:0 0 8px;">Tencent published downloadable weights for Hy4 on November 20 — an instruction-tuned checkpoint, an FP8 build, and a separate pretrained base model — turning its earlier flagship announcement into something teams can actually self-host. Hy4 is a 770-billion-parameter multimodal mixture-of-experts backbone with roughly 49 billion parameters active per text token, a separate 1.23-billion-parameter vision encoder, and an advertised maximum context of 1,048,576 tokens, handling text, image, and video understanding.</p>
-<p style="line-height:1.65;margin:0;">The honest framing comes from Tencent itself, which acknowledges gaps against leading proprietary systems on difficult research mathematics, long-horizon coding, and advanced visual tasks. And the scale cuts both ways: sparse activation trims compute per token, but operators still need a storage, memory, and networking plan for the full 770B checkpoint. The release matters most for teams with sensitive workloads that want control over customization and inference costs — with the license and the FP8 stack&rsquo;s hardware requirements as the first things to check before building an endpoint.</p>
-<p style="margin:12px 0 0;"><a href="https://sxf.si/brief/" style="color:#2563eb;">Source: SXF Brief, on Tencent Hy4 model card (Nov 20) &rarr;</a></p>
-</section>
-
-<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">03 &middot; Evals &amp; Benchmarks &middot; Research</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">OpenAI&rsquo;s MedChemBench: frontier models ace the molecules, stumble on the decisions</h3>
-<p style="line-height:1.65;margin:0 0 8px;">OpenAI released MedChemBench on November 20, a 99-problem medicinal-chemistry benchmark drawn from 117 published papers and patents and covering 761 molecular structures across seven categories, from hit finding to lead optimization and candidate selection. At the xhigh reasoning setting, GPT-6.2 Astra earned 84.5% of available credit, just ahead of GPT-6 Astra at 83.3% and GPT-6.1 Sol at 82.0%, with GPT-5.6 Sol trailing at 58.2%.</p>
-<p style="line-height:1.65;margin:0;">The shape of the errors says more than the ranking. GPT-6 Astra reconstructed molecular structures correctly 95.4% of the time and earned 91.05% of the scientific-rationale credit — but only about half the credit on compound ranking and selection (50.42%) and numerical property prediction (47.02%), the two task types that gate real drug-advancement decisions. OpenAI states the limits itself: the results do not establish whether models can discover new drugs or improve laboratory decisions, prior exposure to the published sources cannot be ruled out, and each answer was a single attempt without tools, feedback, or new experiments. The benchmark is a diagnostic, not a drug-discovery credential — and it is a useful one precisely because it shows where the frontier still breaks.</p>
-<p style="margin:12px 0 0;"><a href="https://openai.com/index/introducing-medchembench/" style="color:#2563eb;">Source: OpenAI, &ldquo;Can AI help scientists identify promising drug candidates?&rdquo; (Nov 20) &rarr;</a></p>
-</section>
-
-<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">04 &middot; Benchmarks &middot; Leaderboard</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Claude Fable 5.2 holds No. 1 as GPT-6.2 Astra and Gemini 4 Neon crash the top 10</h3>
-<p style="line-height:1.65;margin:0 0 8px;">BenchLeader&rsquo;s week-to-date board as of November 21 has Claude Fable 5.2 holding the No. 1 spot on its index at 70.2, 1.6 points ahead of Gemini 4 Carbon at 68.6. The week&rsquo;s two big entrants both landed in the top five: OpenAI&rsquo;s GPT-6.2 Astra debuted at No. 3 with 68.3, and Google&rsquo;s Gemini 4 Neon at No. 4 with 68.0, pushing Gemini 4 Argon and Claude Opus 5 out of the top 10.</p>
-<p style="line-height:1.65;margin:0;">The board is built only from independent results — a maker&rsquo;s own launch numbers are never used — and the week was busy: 968 new benchmark results published, 10 new models arrived, and prices moved both ways, with 8 models cutting list prices and 18 raising them. The biggest riser was Qwen3.5-4B, up 2.6 points to 49.3; the biggest faller was GPT-4o, down 3.4 to 39.4. GPT-6.2 Astra&rsquo;s first independent numbers include 62.1% on Terminal-Bench and 65.5% on DrugDiscoveryBench; Gemini 4 Neon&rsquo;s include 28.9% on MLCR and 1,546 on Arena Hard Prompts.</p>
-<p style="margin:12px 0 0;"><a href="https://www.benchleader.com/state" style="color:#2563eb;">Source: BenchLeader, &ldquo;AI leaderboard this week, 16&ndash;22 Nov 2026&rdquo; (Nov 21) &rarr;</a></p>
-</section>
-
-<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">05 &middot; Model Release &middot; Vision</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Mistral&rsquo;s Pixtral Large 2502 lands on its API at $2 in / $6 out</h3>
-<p style="line-height:1.65;margin:0 0 8px;">Mistral&rsquo;s Pixtral Large 2502 appeared on the company&rsquo;s API on November 20, the newest entry in its Pixtral vision-model line, with a 128,000-token context window and list pricing of $2.00 per million input tokens and $6.00 per million output tokens.</p>
-<p style="line-height:1.65;margin:0;">It arrives the same week Mistral&rsquo;s large models are being priced against a crowded field — GPT-6.2 Astra&rsquo;s blended list price sits at $16.00 per million tokens on BenchLeader&rsquo;s tracker — and independent benchmark results for Pixtral Large 2502 have not yet landed. The release is a quiet one, but the positioning is clear: a large vision model priced well under the frontier text flagships, aimed at teams that need image understanding at API scale.</p>
-<p style="margin:12px 0 0;"><a href="https://www.benchleader.com/releases" style="color:#2563eb;">Source: BenchLeader, &ldquo;Latest AI model releases&rdquo; (Nov 21) &rarr;</a></p>
-</section>
-
-<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">06 &middot; Agent Tooling &middot; Open Source</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Eclipse Enclave 1.0: a vendor-neutral sandbox for coding agents that run themselves</h3>
-<p style="line-height:1.65;margin:0 0 8px;">The Eclipse Foundation released Eclipse Enclave 1.0 on November 20, an open-source, vendor-neutral execution environment that lets AI coding agents operate autonomously inside isolated, policy-controlled sandboxes. It supports Codex, Claude Code, and OpenCode in an extensible architecture, so the same isolation and policy controls apply regardless of which agent a team runs.</p>
-<p style="line-height:1.65;margin:0;">The timing is the story: the same week saw a wave of agent endpoint-security announcements, and Enclave answers the governance half of the problem with an open standard rather than a vendor console. For teams letting agents touch real repositories, the question is no longer whether agents can run unsupervised — it is what they are allowed to touch while they do, and Enclave puts that boundary in policy instead of trust.</p>
-<p style="margin:12px 0 0;"><a href="https://www.codeandchain.com/en/articles/2026-11-21/article-7f2c7f6cc54f" style="color:#2563eb;">Source: Code &amp; Chain, &ldquo;Eclipse Enclave 1.0 Launches&rdquo; (Nov 20) &rarr;</a></p>
-</section>
-
-<section style="background:#ffffff;border-radius:16px;padding:28px;box-shadow:0 4px 24px rgba(15,23,42,.08);margin-bottom:24px;">
-<p style="letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#64748b;font-weight:700;margin:0 0 10px;">07 &middot; Applied AI &middot; Safety</p>
-<h3 style="color:#0f172a;font-size:22px;line-height:1.25;margin:0 0 8px;">Gemini listens to wildfire radio so humans get the warning in under 30 seconds</h3>
-<p style="line-height:1.65;margin:0 0 8px;">Google and nonprofit Watch Duty detailed on November 20 an applied AI system built by a six-month fellowship team: Gemini transcribes noisy analog wildfire radio dispatch audio, turning speech mixed with static and emergency jargon into searchable transcripts and alerting volunteer monitors when a dispatch needs attention. The system monitors about 400 radio feeds, and on degraded wildfire audio it cut word error rate from 38% to 22.34%.</p>
-<p style="line-height:1.65;margin:0;">The meaningful feature is not generative conversation — it is speech recognition plus dispatch triage plus human verification, in an environment where a missed message can have serious consequences. Every alert still passes a human before it goes public. It is the day&rsquo;s clearest example of the theme running through the other stories: the models are good enough now that the interesting engineering is the system around them.</p>
-<p style="margin:12px 0 0;"><a href="https://sxf.si/brief/" style="color:#2563eb;">Source: SXF Brief, on Google / Watch Duty (Nov 20) &rarr;</a></p>
-</section>
-
-<p style="text-align:center;font-size:14px;line-height:1.6;color:#64748b;margin:24px 0 0;">Watch tomorrow: independent Hy4 benchmarks and Inkling 2 Mini&rsquo;s first independent results fill in; Huang&rsquo;s closed-door House interview is December 1.</p>
 
 <p style="text-align:center;font-style:italic;color:#64748b;margin:28px 0 0;">by Your Tech Sommelier</p>
 </div>
@@ -3018,7 +3017,7 @@
     }
 
     let currentIssue = '2026-11-27';
-    let currentAiIssue = '2026-11-26';
+    let currentAiIssue = '2026-11-27';
     let currentSection = 'hardware';
 
     function renderHardwareIssue(key) {
@@ -3079,12 +3078,12 @@
       const isWeeklyOct09 = key === 'weekly-2026-10-09';
       const isWeeklyOct02 = key === 'weekly-2026-10-02';
       const isWeeklySep25 = key === 'weekly-2026-09-25';
+      const isNov27 = key === '2026-11-27';
       const isNov26 = key === '2026-11-26';
       const isNov25 = key === '2026-11-25';
       const isNov24 = key === '2026-11-24';
       const isNov23 = key === '2026-11-23';
       const isNov22 = key === '2026-11-22';
-      const isNov21 = key === '2026-11-21';
       $('#aiTrendWeeklyNov20').hidden = !isWeeklyNov20;
       $('#aiTrendWeeklyNov13').hidden = !isWeeklyNov13;
       $('#aiTrendWeeklyNov11').hidden = !isWeeklyNov11;
@@ -3099,9 +3098,12 @@
       $('#aiTrendDailyNov24').hidden = !isNov24;
       $('#aiTrendDailyNov23').hidden = !isNov23;
       $('#aiTrendDailyNov22').hidden = !isNov22;
-      $('#aiTrendDailyNov21').hidden = !isNov21;
       $('#aiTrendDailyNov26').hidden = !isNov26;
-      if (isNov26) {
+      $('#aiTrendDailyNov27').hidden = !isNov27;
+      if (isNov27) {
+        $('#issueDate').textContent = 'Friday, November 27, 2026';
+        $('#storyCount').textContent = '7 stories';
+      } else if (isNov26) {
         $('#issueDate').textContent = 'Thursday, November 26, 2026';
         $('#storyCount').textContent = '8 stories';
       } else if (isNov25) {
@@ -3116,9 +3118,6 @@
       } else if (isNov22) {
         $('#issueDate').textContent = 'Sunday, November 22, 2026';
         $('#storyCount').textContent = '8 stories';
-      } else if (isNov21) {
-        $('#issueDate').textContent = 'Saturday, November 21, 2026';
-        $('#storyCount').textContent = '7 stories';
       } else if (isWeeklyNov20) {
         $('#issueDate').textContent = 'Week of November 20, 2026';
         $('#storyCount').textContent = '10 stories';
@@ -3185,7 +3184,7 @@
       $('#aiTrendDailyNov24').hidden = true;
       $('#aiTrendDailyNov23').hidden = true;
       $('#aiTrendDailyNov22').hidden = true;
-      $('#aiTrendDailyNov21').hidden = true;
+      $('#aiTrendDailyNov27').hidden = true;
       $('#aiTrendDailyNov26').hidden = true;
       $('#aiTrendDailyNov25').hidden = true;
       $('#navHardware').hidden = !isHardware;
